@@ -1,5 +1,9 @@
 # Overview
 
+Non-comprehensive list of current (popular) deep learning frameworks.
+
+A larger list can be found [here]( https://handong1587.github.io/deep_learning/2015/10/09/dl-frameworks.html).
+
 ## [Tensorflow](https://www.tensorflow.org/)
 #### Elevator Pitch:
 > blah
@@ -99,22 +103,105 @@ def AddLeNetModel(model, data):
 ## [Theano](http://deeplearning.net/software/theano/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](http://deeplearning.net/tutorial/lenet.html)
+```python
+class LeNetConvPoolLayer(object):
+    """Pool Layer of a convolutional network """
+
+    def __init__(self, rng, input, filter_shape, image_shape, poolsize=(2, 2)):
+
+        assert image_shape[1] == filter_shape[1]
+        self.input = input
+
+        # there are "num input feature maps * filter height * filter width"
+        # inputs to each hidden unit
+        fan_in = numpy.prod(filter_shape[1:])
+        # each unit in the lower layer receives a gradient from:
+        # "num output feature maps * filter height * filter width" /
+        #   pooling size
+        fan_out = (filter_shape[0] * numpy.prod(filter_shape[2:]) //
+                   numpy.prod(poolsize))
+        # initialize weights with random weights
+        W_bound = numpy.sqrt(6. / (fan_in + fan_out))
+        self.W = theano.shared(
+            numpy.asarray(
+                rng.uniform(low=-W_bound, high=W_bound, size=filter_shape),
+                dtype=theano.config.floatX
+            ),
+            borrow=True
+        )
+
+        # the bias is a 1D tensor -- one bias per output feature map
+        b_values = numpy.zeros((filter_shape[0],), dtype=theano.config.floatX)
+        self.b = theano.shared(value=b_values, borrow=True)
+
+        # convolve input feature maps with filters
+        conv_out = conv2d(
+            input=input,
+            filters=self.W,
+            filter_shape=filter_shape,
+            input_shape=image_shape
+        )
+
+        # pool each feature map individually, using maxpooling
+        pooled_out = pool.pool_2d(
+            input=conv_out,
+            ds=poolsize,
+            ignore_border=True
+        )
+
+        # add the bias term.
+        self.output = T.tanh(pooled_out + self.b.dimshuffle('x', 0, 'x', 'x'))
+
+        # store parameters of this layer
+        self.params = [self.W, self.b]
+
+        # keep track of model input
+        self.input = input
+```
 
 ## [Keras](https://keras.io/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py)
 ```python
+model = Sequential()
+model.add(Conv2D(32, kernel_size=(3, 3),
+                 activation='relu',
+                 input_shape=input_shape))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+model.add(Flatten())
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(num_classes, activation='softmax'))
+
+model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adadelta(),
+metrics=['accuracy'])
 
 ```
 
 ## [Deeplearning4j](https://deeplearning4j.org/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
-```python
-
+#### MNIST Example [source](https://deeplearning4j.org/mnist-for-beginners.html)
+```java
+.layer(0, new DenseLayer.Builder()
+            .nIn(numRows * numColumns) // Number of input datapoints.
+            .nOut(1000) // Number of output datapoints.
+            .activation("relu") // Activation function.
+            .weightInit(WeightInit.XAVIER) // Weight initialization.
+            .build())
+    .layer(1, new OutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD)
+            .nIn(1000)
+            .nOut(outputNum)
+            .activation("softmax")
+            .weightInit(WeightInit.XAVIER)
+            .build())
+    .pretrain(false).backprop(true)
+    .build();
 ```
 
 ## [MxNet](http://mxnet.io/)
@@ -145,36 +232,133 @@ lenet = mx.sym.SoftmaxOutput(data=fc2, name='softmax')
 ## [PaddlePaddle](http://www.paddlepaddle.org/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](http://book.paddlepaddle.org/02.recognize_digits/)
 ```python
+def convolutional_neural_network(img):
 
+    conv_pool_1 = paddle.networks.simple_img_conv_pool(
+        input=img,
+        filter_size=5,
+        num_filters=20,
+        num_channel=1,
+        pool_size=2,
+        pool_stride=2,
+        act=paddle.activation.Relu())
+
+    conv_pool_2 = paddle.networks.simple_img_conv_pool(
+        input=conv_pool_1,
+        filter_size=5,
+        num_filters=50,
+        num_channel=20,
+        pool_size=2,
+        pool_stride=2,
+        act=paddle.activation.Relu())
+
+    predict = paddle.layer.fc(input=conv_pool_2,
+                              size=10,
+                              act=paddle.activation.Softmax())
+    return predict
 ```
 
 ## [Microsoft Cognitive Toolkit](https://www.microsoft.com/en-us/cognitive-toolkit/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](https://github.com/Microsoft/CNTK/blob/v2.2/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb)
 ```python
-
+def create_model(features):
+    with C.layers.default_options(init=C.glorot_uniform(), activation=C.relu):
+            h = features
+            h = C.layers.Convolution2D(filter_shape=(5,5), 
+                                       num_filters=8, 
+                                       strides=(2,2), 
+                                       pad=True, name='first_conv')(h)
+            h = C.layers.Convolution2D(filter_shape=(5,5), 
+                                       num_filters=16, 
+                                       strides=(2,2), 
+                                       pad=True, name='second_conv')(h)
+            r = C.layers.Dense(num_output_classes, activation=None, name='classify')(h)
+            return r
 ```
 
 ## [Lasagne](https://lasagne.readthedocs.io/en/latest/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py)
+```python
+def build_cnn(input_var=None):
+    # As a third model, we'll create a CNN of two convolution + pooling stages
+    # and a fully-connected hidden layer in front of the output layer.
+
+    # Input layer, as usual:
+    network = lasagne.layers.InputLayer(shape=(None, 1, 28, 28),
+                                        input_var=input_var)
+    # This time we do not apply input dropout, as it tends to work less well
+    # for convolutional layers.
+
+    # Convolutional layer with 32 kernels of size 5x5. Strided and padded
+    # convolutions are supported as well; see the docstring.
+    network = lasagne.layers.Conv2DLayer(
+            network, num_filters=32, filter_size=(5, 5),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+    # Expert note: Lasagne provides alternative convolutional layers that
+    # override Theano's choice of which implementation to use; for details
+    # please see http://lasagne.readthedocs.org/en/latest/user/tutorial.html.
+
+    # Max-pooling layer of factor 2 in both dimensions:
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+
+    # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
+    network = lasagne.layers.Conv2DLayer(
+            network, num_filters=32, filter_size=(5, 5),
+            nonlinearity=lasagne.nonlinearities.rectify)
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+
+    # A fully-connected layer of 256 units with 50% dropout on its inputs:
+    network = lasagne.layers.DenseLayer(
+            lasagne.layers.dropout(network, p=.5),
+            num_units=256,
+            nonlinearity=lasagne.nonlinearities.rectify)
+
+    # And, finally, the 10-unit output layer with 50% dropout on its inputs:
+    network = lasagne.layers.DenseLayer(
+            lasagne.layers.dropout(network, p=.5),
+            num_units=10,
+            nonlinearity=lasagne.nonlinearities.softmax)
+
+return network
+```
 
 ## [BigDL](https://bigdl-project.github.io/master/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source]()
+#### MNIST Example [source](https://bigdl-project.github.io/master/#PythonSupport/python-examples/)
 ```python
+def build_model(class_num):
+    model = Sequential()
 
-```
+    if model_type.lower() == "cnn":
+        model.add(Reshape([embedding_dim, 1, sequence_len]))
+        model.add(SpatialConvolution(embedding_dim, 128, 5, 1))
+        model.add(ReLU())
+        model.add(SpatialMaxPooling(5, 1, 5, 1))
+        model.add(SpatialConvolution(128, 128, 5, 1))
+        model.add(ReLU())
+        model.add(SpatialMaxPooling(5, 1, 5, 1))
+        model.add(Reshape([128]))
+    elif model_type.lower() == "lstm":
+        model.add(Recurrent()
+                  .add(LSTM(embedding_dim, 128)))
+        model.add(Select(2, -1))
+    elif model_type.lower() == "gru":
+        model.add(Recurrent()
+                  .add(GRU(embedding_dim, 128)))
+        model.add(Select(2, -1))
+    else:
+        raise ValueError('model can only be cnn, lstm, or gru')
 
-## [DSSTNE](https://github.com/amzn/amazon-dsstne)
-#### Elevator Pitch:
-> Blah
-#### MNIST Example [source]()
-```python
-
+    model.add(Linear(128, 100))
+    model.add(Linear(100, class_num))
+    model.add(LogSoftMax())
+    return model
 ```
