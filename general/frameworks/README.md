@@ -7,7 +7,7 @@ A larger list can be found [here]( https://handong1587.github.io/deep_learning/2
 ## [Tensorflow](https://www.tensorflow.org/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://www.tensorflow.org/tutorials/layers)
+#### CNN Example [source](https://www.tensorflow.org/tutorials/layers)
 ```python
   # Convolutional Layer #1
   # Computes 32 features using a 5x5 filter with ReLU activation.
@@ -47,7 +47,7 @@ logits = tf.layers.dense(inputs=dropout, units=10)
 ## [PyTorch](http://pytorch.org/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/401_CNN.py)
+#### CNN Example [source](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/401_CNN.py)
 ```python
 class CNN(nn.Module):
     def __init__(self):
@@ -81,7 +81,7 @@ return output, x # return x for visualization
 ## [Caffe2](https://caffe2.ai/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://github.com/caffe2/caffe2/blob/master/caffe2/python/tutorials/MNIST.ipynb)
+#### CNN Example [source](https://github.com/caffe2/caffe2/blob/master/caffe2/python/tutorials/MNIST.ipynb)
 ```python
 def AddLeNetModel(model, data):
     # Image size: 28 x 28 -> 24 x 24
@@ -103,7 +103,7 @@ def AddLeNetModel(model, data):
 ## [Theano](http://deeplearning.net/software/theano/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](http://deeplearning.net/tutorial/lenet.html)
+#### CNN Example [source](http://deeplearning.net/tutorial/lenet.html)
 ```python
 class LeNetConvPoolLayer(object):
     """Pool Layer of a convolutional network """
@@ -163,7 +163,7 @@ class LeNetConvPoolLayer(object):
 ## [Keras](https://keras.io/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py)
+#### CNN Example [source](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py)
 ```python
 model = Sequential()
 model.add(Conv2D(32, kernel_size=(3, 3),
@@ -183,31 +183,10 @@ metrics=['accuracy'])
 
 ```
 
-## [Deeplearning4j](https://deeplearning4j.org/)
-#### Elevator Pitch:
-> blah
-#### MNIST Example [source](https://deeplearning4j.org/mnist-for-beginners.html)
-```java
-.layer(0, new DenseLayer.Builder()
-            .nIn(numRows * numColumns) // Number of input datapoints.
-            .nOut(1000) // Number of output datapoints.
-            .activation("relu") // Activation function.
-            .weightInit(WeightInit.XAVIER) // Weight initialization.
-            .build())
-    .layer(1, new OutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD)
-            .nIn(1000)
-            .nOut(outputNum)
-            .activation("softmax")
-            .weightInit(WeightInit.XAVIER)
-            .build())
-    .pretrain(false).backprop(true)
-    .build();
-```
-
 ## [MxNet](http://mxnet.io/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://mxnet.incubator.apache.org/tutorials/python/mnist.html)
+#### CNN Example [source](https://mxnet.incubator.apache.org/tutorials/python/mnist.html)
 ```python
 data = mx.sym.var('data')
 # first conv layer
@@ -232,7 +211,7 @@ lenet = mx.sym.SoftmaxOutput(data=fc2, name='softmax')
 ## [PaddlePaddle](http://www.paddlepaddle.org/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](http://book.paddlepaddle.org/02.recognize_digits/)
+#### CNN Example [source](http://book.paddlepaddle.org/02.recognize_digits/)
 ```python
 def convolutional_neural_network(img):
 
@@ -263,7 +242,7 @@ def convolutional_neural_network(img):
 ## [Microsoft Cognitive Toolkit](https://www.microsoft.com/en-us/cognitive-toolkit/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://github.com/Microsoft/CNTK/blob/v2.2/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb)
+#### CNN Example [source](https://github.com/Microsoft/CNTK/blob/v2.2/Tutorials/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.ipynb)
 ```python
 def create_model(features):
     with C.layers.default_options(init=C.glorot_uniform(), activation=C.relu):
@@ -283,7 +262,7 @@ def create_model(features):
 ## [Lasagne](https://lasagne.readthedocs.io/en/latest/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py)
+#### CNN Example [source](https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py)
 ```python
 def build_cnn(input_var=None):
     # As a third model, we'll create a CNN of two convolution + pooling stages
@@ -332,7 +311,7 @@ return network
 ## [BigDL](https://bigdl-project.github.io/master/)
 #### Elevator Pitch:
 > blah
-#### MNIST Example [source](https://bigdl-project.github.io/master/#PythonSupport/python-examples/)
+#### CNN Example [source](https://bigdl-project.github.io/master/#PythonSupport/python-examples/)
 ```python
 def build_model(class_num):
     model = Sequential()
@@ -361,4 +340,17 @@ def build_model(class_num):
     model.add(Linear(100, class_num))
     model.add(LogSoftMax())
     return model
+```
+
+## [neon](http://neon.nervanasys.com/docs/latest/)
+#### Elevator Pitch:
+> blah
+#### CNN Example [source](http://neon.nervanasys.com/docs/latest/cifar10.html)
+```python
+layers = [Conv(fshape=(5,5,16), init=init_uni, activation=Rectlin()),
+          Pooling(fshape=2, strides=2),
+          Conv(fshape=(5,5,32), init=init_uni, activation=Rectlin()),
+          Pooling(fshape=2, strides=2),
+          Affine(nout=500, init=init_uni, activation=Rectlin()),
+          Affine(nout=10, init=init_uni, activation=Softmax())]
 ```
