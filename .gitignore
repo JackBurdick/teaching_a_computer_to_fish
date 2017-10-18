@@ -4,3 +4,5 @@ metrics/\.ipynb_checkpoints/
 python/\.ipynb_checkpoints/
 
 structure/\.ipynb_checkpoints/
+
+activation_functions/\.ipynb_checkpoints/
