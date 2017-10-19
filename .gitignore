@@ -6,3 +6,7 @@ python/\.ipynb_checkpoints/
 structure/\.ipynb_checkpoints/
 
 activation_functions/\.ipynb_checkpoints/
+
+mnist_data/
+
+structure/saver/
