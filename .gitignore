@@ -10,3 +10,7 @@ activation_functions/\.ipynb_checkpoints/
 mnist_data/
 
 structure/saver/
+
+opencv/\.ipynb_checkpoints/
+
+nlp/\.ipynb_checkpoints/
