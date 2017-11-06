@@ -14,3 +14,7 @@ structure/saver/
 opencv/\.ipynb_checkpoints/
 
 nlp/\.ipynb_checkpoints/
+
+estimator/\.ipynb_checkpoints/
+
+ROOT_DATA/IRIS/
