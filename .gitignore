@@ -18,3 +18,5 @@ nlp/\.ipynb_checkpoints/
 estimator/\.ipynb_checkpoints/
 
 ROOT_DATA/IRIS/
+
+estimator/saver/iris_model/
