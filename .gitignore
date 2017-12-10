@@ -20,3 +20,11 @@ estimator/\.ipynb_checkpoints/
 ROOT_DATA/IRIS/
 
 estimator/saver/iris_model/
+
+segmentation/\.ipynb_checkpoints/
+
+ROOT_DATA/lesions/segmentation/
+
+segmentation/reduced_dataset/
+
+segmentation/tf_logs/
