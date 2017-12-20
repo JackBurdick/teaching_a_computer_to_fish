@@ -1,6 +1,6 @@
 ## Running with Tensors
 
-This is an incomplete and incomprehensive guide to using tensorflow + common (related) ml libraries in python.
+Much like running with scissors, running with tensors is _dangerous_.  I am not an expert, nor do I claim to be. This is an incomplete and incomprehensive guide to using tensorflow + common (related) ml libraries in python.  This is largely for personal use, but I do hope that I can help alleviate some of the pain of DL/TF growing pains for someone else.
 
 
 #### please note:

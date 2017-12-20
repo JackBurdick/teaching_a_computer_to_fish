@@ -28,3 +28,14 @@ ROOT_DATA/lesions/segmentation/
 segmentation/reduced_dataset/
 
 segmentation/tf_logs/
+misc/knn/\.ipynb_checkpoints/
+
+visualizing_feature_maps/\.ipynb_checkpoints/
+
+libraries/numpy/\.ipynb_checkpoints/
+
+single_operation_examples/\.ipynb_checkpoints/
+
+tf_records/\.ipynb_checkpoints/
+
+dataset/\.ipynb_checkpoints/
