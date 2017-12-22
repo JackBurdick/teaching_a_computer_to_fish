@@ -39,3 +39,13 @@ single_operation_examples/\.ipynb_checkpoints/
 tf_records/\.ipynb_checkpoints/
 
 dataset/\.ipynb_checkpoints/
+
+TODO/misc/knn/\.ipynb_checkpoints/
+
+TODO/nlp/\.ipynb_checkpoints/
+
+TODO/tf_records/\.ipynb_checkpoints/
+
+TODO/visualizing_feature_maps/\.ipynb_checkpoints/
+
+convolution/\.ipynb_checkpoints/
