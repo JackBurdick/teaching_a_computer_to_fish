@@ -49,3 +49,5 @@ TODO/tf_records/\.ipynb_checkpoints/
 TODO/visualizing_feature_maps/\.ipynb_checkpoints/
 
 convolution/\.ipynb_checkpoints/
+
+segmentation/best_params/
