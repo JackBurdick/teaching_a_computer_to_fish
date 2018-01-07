@@ -61,3 +61,9 @@ TODO/basics/\.ipynb_checkpoints/
 libraries/jupyter/\.ipynb_checkpoints/
 
 TODO/tangent/\.ipynb_checkpoints/
+
+TODO/autoencoder/mnist/saver/
+
+TODO/autoencoder/mnist/\.ipynb_checkpoints/
+
+libraries/numba/\.ipynb_checkpoints/
