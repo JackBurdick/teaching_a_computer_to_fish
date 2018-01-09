@@ -67,3 +67,7 @@ TODO/autoencoder/mnist/saver/
 TODO/autoencoder/mnist/\.ipynb_checkpoints/
 
 libraries/numba/\.ipynb_checkpoints/
+
+dataset/record_holder/
+
+TODO/misc/anscombe_quartet/\.ipynb_checkpoints/
