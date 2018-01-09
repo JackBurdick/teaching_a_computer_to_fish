@@ -71,3 +71,5 @@ libraries/numba/\.ipynb_checkpoints/
 dataset/record_holder/
 
 TODO/misc/anscombe_quartet/\.ipynb_checkpoints/
+
+TODO/synthetic_gradients/\.ipynb_checkpoints/
