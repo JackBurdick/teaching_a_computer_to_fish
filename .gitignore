@@ -81,3 +81,7 @@ quick_start/\.ipynb_checkpoints/
 /TODO/synthetic_gradients/tf_logs/
 
 TODO/adversarial_example/\.ipynb_checkpoints/
+
+TODO/adversarial_example/best_params/
+
+TODO/adversarial_example/tf_logs/
