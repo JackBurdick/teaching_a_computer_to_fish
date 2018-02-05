@@ -36,7 +36,7 @@ Much like running with scissors, running with tensors is _dangerous_.  I am not 
 ### Convolution Kernel Examples
 
 [notebook](./convolution/conv_kernel.ipynb)
-![Example of emboss kernel convolution output][[convolution_kernel]]
+![Example of emboss kernel convolution output][convolution_kernel]
 
 #### please note
 
