@@ -33,6 +33,10 @@ Much like running with scissors, running with tensors is _dangerous_.  I am not 
 
 ## Examples
 
+### Transfer Learning
+
+[notebook](./TODO/transfer_learning/mnist_transfer.ipynb)
+
 ### Convolution Kernel Examples
 
 [notebook](./convolution/conv_kernel.ipynb)
