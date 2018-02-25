@@ -123,3 +123,8 @@ experimental/gan_transfer/best_params/
 experimental/gan_transfer_classification/tf_logs
 experimental/gan_transfer_classification/saved_gan_params
 experimental/gan_transfer_classification/best_params
+TODO/iris/\.ipynb_checkpoints/
+
+TODO/pipelines/\.ipynb_checkpoints/
+
+ROOT_DATA/cali_housing/housing\.csv
