@@ -128,3 +128,7 @@ TODO/iris/\.ipynb_checkpoints/
 TODO/pipelines/\.ipynb_checkpoints/
 
 ROOT_DATA/cali_housing/housing\.csv
+
+segmentation/misc/
+
+libraries/pandas/series/\.ipynb_checkpoints/
