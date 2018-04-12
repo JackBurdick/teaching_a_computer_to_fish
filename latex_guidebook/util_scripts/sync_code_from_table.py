@@ -2,6 +2,15 @@
 
 
 def create_latex_entry(code_strs):
+    """Creates a python-like code block for latex
+    
+    Args:
+        code_strs: List of code lines
+            
+    Returns:
+        List of python code lines formated/wrapped for latex. The code block 
+        will be empty if no code was passed in.
+    """
     code_block = []
     code_block.append("\\begin{lstlisting}[language=Python]\n")
     code_block.extend(code_strs)
@@ -9,6 +18,21 @@ def create_latex_entry(code_strs):
     return code_block
 
 def write_code_to_tex(sync_id, l_path, opts, code_block):
+    """write the formatted latex block to the .tex file
+    
+    Args:
+        sync_id: the id of the code block being synched
+        l_path: String path to the tex file
+        opts: any formatting options
+        code_block: the block of code to write to the file
+
+    Returns:
+        Bool: True if "correctly" written
+    """
+
+    # TODO: consider restructuring this function
+    # TODO: bool return value is not currently useful
+
     with open(l_path, 'r') as fh:
         data = fh.readlines()
         idx = 0
@@ -20,7 +44,6 @@ def write_code_to_tex(sync_id, l_path, opts, code_block):
 
         # handling a pre-existing code block vs new code block
         if data[code_idx+1].strip() == "\\begin{lstlisting}[language=Python]":
-            # TODO: need to replace code block
             end_found = False
             for idx, line in enumerate(data[code_idx:]):
                 clean = line.strip()
@@ -93,7 +116,7 @@ def sync_snippet(sync_id, c_path, l_path, opts):
         print("Completed: {}".format(sync_id))
 
 
-def read_sync_table(table_file = "./sync_table.txt"):
+def read_sync_table(table_file):
     with open(table_file) as fh:
         for line in fh:
             cols = [col.strip() for col in line.split("||")]
@@ -102,7 +125,7 @@ def read_sync_table(table_file = "./sync_table.txt"):
 
 
 def main():
-    read_sync_table()
+    read_sync_table(table_file = "./sync_table.txt")
 
 if __name__ == "__main__":
     main()
