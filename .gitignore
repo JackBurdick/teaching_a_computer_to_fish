@@ -132,3 +132,17 @@ ROOT_DATA/cali_housing/housing\.csv
 segmentation/misc/
 
 libraries/pandas/series/\.ipynb_checkpoints/
+
+libraries/pandas/dataframe/\.ipynb_checkpoints/
+
+libraries/pandas/multiIndex/\.ipynb_checkpoints/
+
+latex_guidebook/main.pdf
+latex_guidebook/main.synctex.gz
+latex_guidebook/*.log
+latex_guidebook/*.aux
+latex_guidebook/nested/*.log
+latex_guidebook/nested/*.aux
+latex_guidebook/nested/basics/*.log
+latex_guidebook/nested/basics/*.aux
+latex_guidebook/util_scripts/\.ipynb_checkpoints/

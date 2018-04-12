@@ -2,20 +2,24 @@ import json
 # sync python files
 
 
-def create_latex_entry(code_strs):
+def create_latex_entry(code_list, language="python"):
     """Creates a python-like code block for latex
     
     Args:
-        code_strs: List of code lines
+        code_list: List of code lines
             
     Returns:
-        List of python code lines formated/wrapped for latex. The code block 
-        will be empty if no code was passed in.
+        List of code lines formated/wrapped for latex. The code block will be 
+        empty if no code was passed in.
     """
     code_block = []
-    code_block.append("\\begin{lstlisting}[language=Python]\n")
-    code_block.extend(code_strs)
+    if language == "python":
+        code_block.append("\\begin{lstlisting}[language=Python]\n")
+    else:
+        code_block.append("\\begin{lstlisting}[language=Bash]\n")
+    code_block.extend(code_list)
     code_block.append("\\end{lstlisting}\n")
+    
     return code_block
 
 def create_new_tex_file_data(sync_id, l_path, opts, code_block):
@@ -74,6 +78,7 @@ def get_code_from_py(sync_id, c_path):
                     clean = line.rstrip()
                     if clean == "# {{{" + str(sync_id):
                         code_flag = True
+                        target_idx = idx
                     elif clean == "# END}}}":
                         code_flag = False
                 
@@ -82,12 +87,30 @@ def get_code_from_py(sync_id, c_path):
                         code_strs.append(clean + "\n")
     
     # remove first code string ("# {{{" + str(sync_id)
-    return code_strs[1:], idx
-  
+    return code_strs[1:], target_idx
+
+
+def get_cell_output(c_path, target_index):
+    with open(c_path, 'r') as fh:
+        data = json.load(fh)
+        # this is a "magic path" that is specific to .ipynb
+        target_output = data['cells'][target_index]['outputs'][0]['text']
+    return target_output
+
 
 def sync_snippet(sync_id, c_path, l_path, opts):
     code_strs, target_index = get_code_from_py(sync_id, c_path)
-    fmt_code_block = create_latex_entry(code_strs)
+    opts = opts.split()
+    if "o" in opts:
+        if target_index >= 0:
+            output_strs = get_cell_output(c_path, target_index)
+            fmt_out_block = create_latex_entry(code_list=output_strs, 
+                                               language="bash")
+            print(fmt_out_block)
+        else:
+            print("Error: no ouptput for indicated cell")
+
+    fmt_code_block = create_latex_entry(code_list=code_strs, language="python")
     
     new_data = create_new_tex_file_data(sync_id, l_path, opts, fmt_code_block)
     if new_data:
