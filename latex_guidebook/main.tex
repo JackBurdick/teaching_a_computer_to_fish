@@ -1,0 +1,79 @@
+\documentclass[12pt]{book} 
+
+% The document preamble 
+
+\usepackage{times} % Use PS times fonts 
+
+\usepackage{listings} % code examples
+\usepackage{xcolor} % textcolor
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
+
+%% Used for code samples
+ \lstset{%
+    backgroundcolor=\color{gray!8},
+    basicstyle=\ttfamily,
+    breaklines=true,
+    columns=fullflexible
+ }
+
+% Details of the titlepage 
+\title{Teaching a Computer to Fish} 
+\author{Jack Burdick} 
+\date{Last Update: \today} % Use the system date
+
+% for using paragraphs as a "subsubsubsection"
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\begin{document} 
+
+\maketitle 
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%% Background
+\part{Background}
+
+\include{introduction}
+
+\include{community}
+
+\include{quickref}
+
+%%%%%%%%%%%%%%%%%% Machine Learning
+\part{ML}
+
+\include{basics}
+
+\include{foundations}
+
+\include{terms}
+
+\include{tensorflow}
+
+%%%%%%%%%%%%%%%%%% End to End Examples
+\part{End To End Examples}
+
+\include{examples}
+
+%%%%%%%%%%%%%%%%%% Conclusions
+\part{Moving Forward}
+\include{conclusion}
+
+%%%%%%%%%%%%%%%%%% Helper Examples (appendix of sorts)
+\part{Dump Space - may/maynot include}
+\include{others}
+
+\include{ubuntu}
+
+%%%%%%%%%%%%%%%%%% Research
+\part{Research}
+
+
+\end{document} 

@@ -1,0 +1,53 @@
+\emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
+
+% page 94 of AGtext
+One-versus-all \emph{OvA} (also \emph{one-versus-rest})
+
+One-versus-one (OvO) -- train a binary classifier for every pair
+
+
+\section{Metrics}
+
+%% Confusion matrix
+\begin{table}
+	\centering
+	\begin{tabular}{l|l|c|c|}
+		\multicolumn{2}{c}{}&\multicolumn{2}{c}{Ground Truth}\\ 
+		\cline{3-4}
+		\multicolumn{2}{c|}{}&Positive&Negative\\ 
+		\cline{2-4}
+		\multirow{2}{*}{\rotatebox{90}{Pred}}& Positive & $TP$ & $FP$ \\ 
+		\cline{2-4}
+		& Negative & $FN$ & $TN$ \\ 
+		\cline{2-4}
+	\end{tabular}
+	\caption{Example confusion matrix}
+	\label{tab:sample_conf_matrix}
+\end{table}
+
+
+\begin{itemize}
+	
+\item \textit{Accuracy}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions.
+
+\begin{equation}
+{\frac{TP+TN}{TP+TN+FP+FN}}
+\label{eq:accuracy}
+\end{equation}
+
+\item \textit{Sensitivity}, (Eq.~\ref{eq:sensitivity}): the ratio of true positives that are correctly identified.
+
+\begin{equation}
+{\frac{TP}{TP+FN}}
+\label{eq:sensitivity}
+\end{equation}
+
+\item \textit{Precision}, (Eq.~\ref{eq:precision}): the ratio of positives that are, in fact, positive. If the classifier predicts positive, how often is is correct?
+
+\begin{equation}
+{\frac{TP}{TP+FP}}
+\label{eq:precision}
+\end{equation}
+
+\item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve.
+\end{itemize}

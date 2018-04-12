@@ -1,0 +1,119 @@
+\chapter{Basics}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Types of data
+\textcolor{blue}{categorical or numerical. Numerical can be discrete or continuous}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Measurement Levels
+\textcolor{blue}{qualitative or quantitative.} 
+
+\textcolor{blue}{Qualitative can be nominal (aren't numbers and can't be put in any order -- e.g. the seasons: spring, summer, fall, winter) or ordinal (groups and categories that follow a strict order -- e.g. difficult levels: hard, medium, or easy)}
+
+\textcolor{blue}{Quantitative are represented by numbers but can be interval (0 is meaningless -- e.g. temperature in C or F, where true zero is not 0) or ratio (has a true 0 -- e.g. temperature in K, weight or length)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Acquiring Data
+\input{./nested/basics/acquiring_data}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Data Pre-processing
+\input{./nested/basics/data_preprocessing}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Data sampling and partitioning
+\input{./nested/basics/sampling_partitioning}
+
+\section{Some Terms}
+
+\emph{input variable(s)} -- predictors, independent variables, features, or simply variables.
+
+\emph{output variable(s)} -- response or dependent variable
+
+\emph{relationship} $Y = f(x) + \epsilon$ \textcolor{blue}{estimate $f$. prediction and inference}.
+
+\textcolor{blue}{\emph{reducible error} -- the estimated function $\hat{f}$ will likely not be perfect, and the reducible error is the error that could be corrected.  The \emph{irreducible error} is an error that can not be corrected. The irreducible error may be larger than zero due to \emph{unmeasured variables} \emph{e.g.} varibles that were not measured and \emph{unmeasurable variation} \emph{e.g.} an individual's feelings/emotions or variation in the production of a product. The irreducible error provides an upper bound on the performance of the predicted $\hat{f}$}
+
+
+\section{Supervised vs Unsupervised}
+
+\subsection{supervised} -- 
+
+\subsection{unsupervised} -- observe input variables without corresponding output values.
+
+% clustering
+
+% principal components
+
+\section{Classification vs Regression}
+
+\subsection{Regression} -- predicting a continuous or quantitative output value
+
+\subsection{Classification} -- predicting categorical or qualitative output value (such as a non-numerical value)
+
+\subsection{Bayes Classifier}
+
+
+
+\section{Training}
+
+\section{Quality of Fit}
+
+%% regression example
+
+\subsection{Regression Example}
+
+\textcolor{blue}{Mean Squared Error.$\hat{f}(x_i)$ is the prediction that $\hat{f}$ produces for the $i$th sample. The output will be small for predicted values that are similar to the ground truth}
+
+\begin{equation}
+{MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2}
+\label{eq:MSE_def}
+\end{equation}
+
+%% classification example
+
+\subsection{Classification Example}
+
+\textcolor{blue}{The proportion of mistakes that are made.}
+
+\begin{equation}
+{error\_rate = \frac{1}{n}\sum_{i=1}^{n}(y_i \ne \hat{y_i})}
+\label{eq:class_error_rate_def}
+\end{equation}
+
+\textcolor{blue}{$\hat{y_i}$ is the predicted classification label for the $i$th observation using our predictor/model $\hat{f}$ and $y_i$ is the ground truth label}
+
+\section{(Over|Under)fitting}
+
+\subsection{Overfitting}
+
+\textcolor{blue}{Overfitting refers to a case in which a model fits the training data very well but does not fit validation/test set}
+
+\subsection{Underfitting}
+
+\section{Bias Variance Trade-off}
+
+\subsection{Variance}
+\textcolor{blue}{variance refers to the amount the model would change if it was trained/estimated using a different training data set}
+
+\subsection{Bias}
+\textcolor{blue}{Bias refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the complex problem} 
+% not word-for-word, but example adapted from p35 of ISL
+\textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
+
+\subsection{Trade-Off}
+
+% TODO: see page 34 of ISL for eq and explaination here
+
+\textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
+
+% see page 36 of ISL
+\textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
+
+\textcolor{blue}{It should be noted that in a real world example, it maynot be possible to explicitly calculate the test error, bias, or variance.}
+
+\subsection{Parametric vs non-parametric}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Metrics
+\input{./nested/basics/metrics}
+

@@ -1,0 +1,75 @@
+\subsection{Python}
+
+\textcolor{blue}{This section will not teach how to program in python. Rather, common functionality as well as common XXXXX areas will be introduced.}
+
+\subsubsection{Datatypes}
+
+
+\paragraph{Tuple}
+
+\textcolor{blue}{fixed-length immutable sequence of Python objects.}
+
+\paragraph{List}
+
+\textcolor{blue}{variable-length mutable sequence of Python objects.}
+
+\paragraph{Dict}
+
+\paragraph{Set}
+
+\subsubsection{Functions}
+
+\paragraph{Built-in Sequence Functions}
+
+\subparagraph{enumerate}
+
+\subparagraph{sorted}
+
+\subparagraph{zip}
+
+\subparagraph{reversed}
+
+\subsubsection{Generators}
+
+\subsubsection{Errors and Exception Handling}
+
+\subsubsection{IO}
+
+\subsubsection{Other}
+
+
+\begin{lstlisting}[language=Python]
+######################
+# Sample code snippet
+######################
+import numpy as np
+ 
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+ 
+    #compute the bitwise xor matrix
+    M1 = bitxormatrix(genl1)
+    M2 = np.triu(bitxormatrix(genl2),1) 
+ 
+    for i in range(m-1):
+        for j in range(i+1, m):
+            [r,c] = np.where(M2 == M1[i,j])
+            for k in range(len(r)):
+                VT[(i)*n + r[k]] = 1;
+                VT[(i)*n + c[k]] = 1;
+                VT[(j)*n + r[k]] = 1;
+                VT[(j)*n + c[k]] = 1;
+ 
+                if M is None:
+                    M = np.copy(VT)
+                else:
+                    M = np.concatenate((M, VT), 1)
+ 
+                VT = np.zeros((n*m,1), int)
+ 
+    return M
+\end{lstlisting}
+
