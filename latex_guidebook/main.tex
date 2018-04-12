@@ -11,12 +11,27 @@
 \usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
 
 %% Used for code samples
- \lstset{%
-    backgroundcolor=\color{gray!8},
-    basicstyle=\ttfamily,
-    breaklines=true,
-    columns=fullflexible
- }
+% https://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages
+% \lstset{%
+%    backgroundcolor=\color{gray!8},
+%    basicstyle=\ttfamily,
+%    breaklines=true,
+%    columns=fullflexible
+% }
+
+% Copied from the listings documentation
+\lstdefinestyle{numbers} {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
+\lstdefinestyle{pyinput}{backgroundcolor=\color{gray!8},frame=shadowbox}
+\lstdefinestyle{pyoutput}{backgroundcolor=\color{green!8},frame=shadowbox}
+
+\lstdefinestyle{pyInStyle} {language=Python,style=numbers,style=pyinput,frame=lines}
+\lstdefinestyle{pyOutStyle} {language=Bash,style=numbers,style=pyoutput,frame=none}
+
+\lstset{language=C,frame=lines}
+\lstset{language=C++,frame=none}
+
+
+
 
 % Details of the titlepage 
 \title{Teaching a Computer to Fish} 
