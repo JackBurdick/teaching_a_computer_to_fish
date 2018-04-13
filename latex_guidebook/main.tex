@@ -14,7 +14,11 @@
 \usepackage{rotating}
 \usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
 
-
+% for encoded images
+%\usepackage{filecontents}
+%\newcommand{\generateimage}[2]{%
+%\immediate\write18{convert.cmd #1 > #2}}
+\usepackage{graphicx}	% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 
 % https://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages
 % Copied from the listings documentation
@@ -24,9 +28,6 @@
 
 \lstdefinestyle{pyInStyle} {language=Python,style=numbers,style=pyinput,frame=lines}
 \lstdefinestyle{pyOutStyle} {language=Bash,style=numbers,style=pyoutput,frame=none}
-
-\lstset{language=C,frame=lines}
-\lstset{language=C++,frame=none}
 
 
 

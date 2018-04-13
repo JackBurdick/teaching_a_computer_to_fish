@@ -1,1 +1,1 @@
-act_smooth_sigmoid || ../../activation_functions/act_graphs.ipynb || ../nested/python.tex || 
+act_smooth_sigmoid || ../../activation_functions/act_graphs.ipynb || ../tensorflow/activation_functions.tex || width-0.65
