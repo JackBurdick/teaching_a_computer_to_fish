@@ -1,0 +1,1 @@
+act_smooth_sigmoid || ../../activation_functions/act_graphs.ipynb || ../nested/python.tex || 

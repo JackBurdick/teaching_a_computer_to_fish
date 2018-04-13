@@ -235,7 +235,7 @@ def read_sync_table(table_file):
 
 
 def main():
-    read_sync_table(table_file = "./sync_table.txt")
+    read_sync_table(table_file = "./code_sync_table.txt")
 
 if __name__ == "__main__":
     main()
