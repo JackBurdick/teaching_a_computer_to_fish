@@ -44,10 +44,17 @@ More blah blah blah...
 < sync code > || < path to ipynb > || < path to latex > || < options >
 ```
 
-## TODO: include options
+### include options
 
-*For example*:
+*include cell output*:
 
 ```txt
 o : include cell output in .ipynb
+```
+
+### TODO
+
+- Include comment from cell above/below
+```
+ca : include comment from above
 ```

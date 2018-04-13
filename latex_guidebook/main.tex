@@ -2,6 +2,10 @@
 
 % The document preamble 
 
+% had to add --shell-escape to pdflex command
+\usepackage{markdown}
+%\usepackage[hashEnumerators,smartEllipses]{markdown}
+
 \usepackage{times} % Use PS times fonts 
 
 \usepackage{listings} % code examples
@@ -10,15 +14,9 @@
 \usepackage{rotating}
 \usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
 
-%% Used for code samples
-% https://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages
-% \lstset{%
-%    backgroundcolor=\color{gray!8},
-%    basicstyle=\ttfamily,
-%    breaklines=true,
-%    columns=fullflexible
-% }
 
+
+% https://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages
 % Copied from the listings documentation
 \lstdefinestyle{numbers} {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
 \lstdefinestyle{pyinput}{backgroundcolor=\color{gray!8},frame=shadowbox}

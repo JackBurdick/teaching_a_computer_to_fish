@@ -13,9 +13,15 @@ def create_latex_entry(code_list, language="pyInStyle"):
         empty if no code was passed in.
     """
     code_block = []
-    code_block.append("\\begin{lstlisting}[style="+language+"]\n")
-    code_block.extend(code_list)
-    code_block.append("\\end{lstlisting}\n")
+    if language == "markdown":
+        code_block.append("\\begin{markdown}\n")
+        code_block.extend(code_list)
+        code_block.append("\\end{markdown}\n")
+    
+    else:
+        code_block.append("\\begin{lstlisting}[style="+language+"]\n")
+        code_block.extend(code_list)
+        code_block.append("\\end{lstlisting}\n")
     
     return code_block
 
@@ -100,6 +106,14 @@ def get_cell_output(c_path, target_index):
         target_output = data['cells'][target_index]['outputs'][0]['text']
     return target_output
 
+def get_cell_comment(c_path, target_index):
+    with open(c_path, 'r') as fh:
+        data = json.load(fh)
+        # this is a "magic path" that is specific to .ipynb
+        target_output = data['cells'][target_index-1]['source']
+        if target_output[-1][-2:] != "\n":
+            target_output[-1] += "\n"
+    return target_output
 
 def include_output_block(sync_id, data, fmt_out_block, entry_point, language="pyOutStyle"):
     """create the formatted data including the latex block to write to the .tex file
@@ -129,20 +143,58 @@ def include_output_block(sync_id, data, fmt_out_block, entry_point, language="py
         
         if end_found:
             data[entry_point: entry_point+block_stop_loc+1] = fmt_out_block
+            return data, entry_point+block_stop_loc+1
         else:
             print("ERROR!, no stop code found for code block {}".format(sync_id))
 
     else:
         # embed new code block
         data[entry_point: entry_point] = fmt_out_block
-    return data
+        return data, entry_point
 
+
+def include_md_block(sync_id, data, fmt_md_block, entry_point, language="markdown"):
+    """create the formatted data including the latex block to write to the .tex file
+    
+    Args:
+        sync_id: the id of the code block being synched
+        data: tex file data
+        fmt_out_block: the block of code to write to the file
+        language: the language to specify for latex
+
+    Returns:
+        data: "correctly" created latex data
+    """
+
+    # go to next line
+    entry_point += 1
+
+    # handling a pre-existing code block vs new code block
+    if data[entry_point].strip() == "\\begin{markdown}":
+        end_found = False
+        for idx, line in enumerate(data[entry_point+1:]):
+            clean = line.strip()
+            if clean.strip() == "\\end{markdown}":
+                end_found = True
+                block_stop_loc = idx+1
+                break
+        
+        if end_found:
+            data[entry_point: entry_point+block_stop_loc+1] = fmt_md_block
+            return data, entry_point+block_stop_loc+1
+        else:
+            print("ERROR!, no stop code found for code block {}".format(sync_id))
+
+    else:
+        # embed new code block
+        data[entry_point: entry_point] = fmt_md_block
+        return data, entry_point
 
 def sync_snippet(sync_id, c_path, l_path, opts):
     code_strs, target_index = get_code_from_py(sync_id, c_path)
 
     fmt_code_block = create_latex_entry(code_list=code_strs, language="pyInStyle")
-    new_data, prev_block_stop = create_new_tex_file_data(sync_id, l_path, 
+    new_data, loc = create_new_tex_file_data(sync_id, l_path, 
                                                          fmt_code_block, 
                                                          language="pyInStyle")
 
@@ -153,10 +205,17 @@ def sync_snippet(sync_id, c_path, l_path, opts):
             output_strs = get_cell_output(c_path, target_index)
             fmt_out_block = create_latex_entry(code_list=output_strs, 
                                                language="pyOutStyle")
-            new_data = include_output_block(sync_id, new_data, fmt_out_block, 
-                                            prev_block_stop, language="pyOutStyle")
+            new_data, loc = include_output_block(sync_id, new_data, fmt_out_block, 
+                                            loc, language="pyOutStyle")
         else:
             print("Error: no ouptput for indicated cell")
+
+    if "ca" in opts:
+        comment_strs = get_cell_comment(c_path, target_index)
+        fmt_md_block = create_latex_entry(code_list=comment_strs, 
+                                          language="markdown")
+        new_data, loc = include_md_block(sync_id, new_data, fmt_md_block, 
+                                         loc, language="markdown")
 
     #print(new_data)
     # ===== write to file
