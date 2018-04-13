@@ -229,9 +229,12 @@ def sync_snippet(sync_id, c_path, l_path, opts):
 def read_sync_table(table_file):
     with open(table_file) as fh:
         for line in fh:
-            cols = [col.strip() for col in line.split("||")]
-            sync_snippet(sync_id=cols[0], c_path=cols[1], 
-                         l_path=cols[2], opts=cols[3])
+            if line.startswith("#"):
+                pass
+            else:
+                cols = [col.strip() for col in line.split("||")]
+                sync_snippet(sync_id=cols[0], c_path=cols[1], 
+                             l_path=cols[2], opts=cols[3])
 
 
 def main():
