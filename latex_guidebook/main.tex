@@ -2,6 +2,8 @@
 
 % The document preamble 
 
+\usepackage{makeidx}
+
 % had to add --shell-escape to pdflex command
 \usepackage{markdown}
 %\usepackage[hashEnumerators,smartEllipses]{markdown}
@@ -20,11 +22,13 @@
 %\immediate\write18{convert.cmd #1 > #2}}
 \usepackage{graphicx}	% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 
+\makeindex 
+
 % https://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages
 % Copied from the listings documentation
 \lstdefinestyle{numbers} {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
-\lstdefinestyle{pyinput}{backgroundcolor=\color{gray!8},frame=shadowbox,showspaces=false, basicstyle=\small}
-\lstdefinestyle{pyoutput}{backgroundcolor=\color{green!8},frame=shadowbox,showspaces=false, basicstyle=\small}
+\lstdefinestyle{pyinput}{backgroundcolor=\color{gray!8},frame=shadowbox,showspaces=false, basicstyle=\scriptsize }
+\lstdefinestyle{pyoutput}{backgroundcolor=\color{green!8},frame=shadowbox,showspaces=false, basicstyle=\scriptsize }
 
 \lstdefinestyle{pyInStyle} {language=Python,style=numbers,style=pyinput,frame=lines}
 \lstdefinestyle{pyOutStyle} {language=Bash,style=numbers,style=pyoutput,frame=none}
@@ -88,6 +92,10 @@
 
 %%%%%%%%%%%%%%%%%% Research
 \part{Research}
+
+\backmatter 
+
+\printindex
 
 
 \end{document} 
