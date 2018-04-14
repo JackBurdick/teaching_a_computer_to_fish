@@ -8,6 +8,10 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \section{Metrics}
 
+
+\subsection{Confusion Matrix}
+\textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion) XXXXXXXX}
+
 %% Confusion matrix
 \begin{table}
 	\centering
@@ -25,29 +29,143 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 	\label{tab:sample_conf_matrix}
 \end{table}
 
+\textcolor{blue}{From the confusion matrix:}
 
 \begin{itemize}
 	
-\item \textit{Accuracy}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions.
+\item \textit{TP (True Positive)}: ``hit'', correct positive prediction. The ground truth is positive and the prediction is positive.
+
+\item \textit{TN (True Negative)}: correct rejection. The ground truth is negative and the prediction is negative.
+
+\item \textit{FP (False Positive)}: False alarm or Type I error\index{Type I error}. The ground truth is negative, but the prediction is positive.
+
+\item \textit{FN (False Negative)}: Miss or Type II error\index{Type II error}. The ground truth is positive, but the prediction is negative.
+	
+\end{itemize}
+
+\subsection{Classification Metrics}
+
+\textcolor{blue}{The below measures of performance are calculated with the indicated equation with values obtained from the confusion matrix XXXXXXXX}
+
+\begin{itemize}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Accuracy (ACC)}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions.
 
 \begin{equation}
 {\frac{TP+TN}{TP+TN+FP+FN}}
 \label{eq:accuracy}
 \end{equation}
 
-\item \textit{Sensitivity}, (Eq.~\ref{eq:sensitivity}): the ratio of true positives that are correctly identified.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Sensitivity (recall, hit rate, true positive rate (TPR))}, (Eq.~\ref{eq:sensitivity}): the ratio of true positives that are correctly identified.
 
 \begin{equation}
 {\frac{TP}{TP+FN}}
 \label{eq:sensitivity}
 \end{equation}
 
-\item \textit{Precision}, (Eq.~\ref{eq:precision}): the ratio of positives that are, in fact, positive. If the classifier predicts positive, how often is is correct?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Specificity (true negative rate (TNR))}, (Eq.~\ref{eq:specificity}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{TN}{TN+FP}}
+\label{eq:specificity}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Precision (positive predictive value (PPV))}, (Eq.~\ref{eq:precision}): the ratio of positives that are, in fact, positive. If the classifier predicts positive, how often is is correct?
 
 \begin{equation}
 {\frac{TP}{TP+FP}}
 \label{eq:precision}
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Negative Predictive Value (NPV)}, (Eq.~\ref{eq:npv}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{TN}{TN+FN}}
+\label{eq:npv}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Miss Rate (False Negative Rate (FNR))}, (Eq.~\ref{eq:miss_rate}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{FN}{FN+TP}}
+\label{eq:miss_rate}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Fall-Out (False Positive Rate (FPR))}, (Eq.~\ref{eq:fall_out}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{FP}{FP+TN}}
+\label{eq:fall_out}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{False Discovery Rate (FDR)}, (Eq.~\ref{eq:false_discovery}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{FP}{FP+TP}}
+\label{eq:false_discovery}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{False Omission Rate (FOR)}, (Eq.~\ref{eq:false_omission}): \textcolor{blue}{XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{FN}{FN+TN}}
+\label{eq:false_omission}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TODO: define harmonic mean somewhere
+\item \textit{F-1 Score}, (Eq.~\ref{eq:f1_metric}): \textcolor{blue}{F1 is the \textcolor{red}{harmonic mean} of precision and sensitivity XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{2TP}{2TP+FP+FN}}
+\label{eq:f1_metric}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is the XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}}
+\label{eq:mcc_metric}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Informedness (Bookmaker Informedness (BM))}, (Eq.~\ref{eq:informed_metric}): \textcolor{blue}{Informedness is the XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{TP}{TP+FN}+\frac{TN}{TN+FP}-1}
+\label{eq:informed_metric}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Markedness (MK)}, (Eq.~\ref{eq:markedness_metric}): \textcolor{blue}{Markedness is the XXXXXXXXXX}.
+
+\begin{equation}
+{\frac{TP}{TP+FP}+\frac{TN}{TN+FN}-1}
+\label{eq:markedness_metric}
+\end{equation}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve.
 \end{itemize}
+
+
+\subsection{Additional Metrics}
+
+\textcolor{blue}{TODO: include additional metrics like JI, DC, others}
+
+\subsection{Choosing the "right" metrics}
+
+\textcolor{blue}{TODO: paras on choosing the right metrics -- need to consider balance, others}
+

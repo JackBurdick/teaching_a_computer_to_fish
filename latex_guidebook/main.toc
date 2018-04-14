@@ -154,87 +154,94 @@
 \contentsline {subsection}{\numberline {4.10.3}Trade-Off}{33}
 \contentsline {subsection}{\numberline {4.10.4}Parametric vs non-parametric}{33}
 \contentsline {section}{\numberline {4.11}Metrics}{34}
-\contentsline {chapter}{\numberline {5}Foundational Methods}{35}
-\contentsline {section}{\numberline {5.1}Regression}{35}
-\contentsline {subsection}{\numberline {5.1.1}Simple Linear Regression}{35}
-\contentsline {subsection}{\numberline {5.1.2}Multiple Linear Regression}{35}
-\contentsline {subsection}{\numberline {5.1.3}Polynomial Regression}{35}
-\contentsline {subsection}{\numberline {5.1.4}K-Nearest Neighbors}{35}
-\contentsline {section}{\numberline {5.2}Classification}{36}
-\contentsline {subsection}{\numberline {5.2.1}Logistic Regression}{36}
-\contentsline {chapter}{\numberline {6}Term dump}{37}
-\contentsline {chapter}{\numberline {7}ML with TensorFlow}{39}
-\contentsline {section}{\numberline {7.1}Introduction}{39}
-\contentsline {section}{\numberline {7.2}Artificial Neural Networks}{39}
-\contentsline {section}{\numberline {7.3}Convolutional Neural Networks}{39}
-\contentsline {section}{\numberline {7.4}Recurrent Neural Networks}{39}
-\contentsline {section}{\numberline {7.5}Weight Initialization}{39}
-\contentsline {section}{\numberline {7.6}Activation Functions}{39}
-\contentsline {subsection}{\numberline {7.6.1}Smooth Non-linear}{39}
-\contentsline {subsection}{\numberline {7.6.2}Not Smooth Non-linear}{45}
+\contentsline {subsection}{\numberline {4.11.1}Confusion Matrix}{34}
+\contentsline {subsection}{\numberline {4.11.2}Classification Metrics}{34}
+\contentsline {subsection}{\numberline {4.11.3}Additional Metrics}{36}
+\contentsline {subsection}{\numberline {4.11.4}Choosing the "right" metrics}{36}
+\contentsline {chapter}{\numberline {5}Foundational Methods}{37}
+\contentsline {section}{\numberline {5.1}Regression}{37}
+\contentsline {subsection}{\numberline {5.1.1}Simple Linear Regression}{37}
+\contentsline {subsection}{\numberline {5.1.2}Multiple Linear Regression}{37}
+\contentsline {subsection}{\numberline {5.1.3}Polynomial Regression}{37}
+\contentsline {subsection}{\numberline {5.1.4}K-Nearest Neighbors}{37}
+\contentsline {section}{\numberline {5.2}Classification}{38}
+\contentsline {subsection}{\numberline {5.2.1}Logistic Regression}{38}
+\contentsline {chapter}{\numberline {6}Term dump}{39}
+\contentsline {chapter}{\numberline {7}ML with TensorFlow}{41}
+\contentsline {section}{\numberline {7.1}Introduction}{41}
+\contentsline {section}{\numberline {7.2}Artificial Neural Networks}{41}
+\contentsline {section}{\numberline {7.3}Convolutional Neural Networks}{41}
+\contentsline {section}{\numberline {7.4}Recurrent Neural Networks}{41}
+\contentsline {section}{\numberline {7.5}Weight Initialization}{41}
+\contentsline {section}{\numberline {7.6}Activation Functions}{41}
+\contentsline {subsection}{\numberline {7.6.1}Why Non-linear}{41}
+\contentsline {subsection}{\numberline {7.6.2}Advancements}{41}
+\contentsline {subsection}{\numberline {7.6.3}Popular Activation Functions}{42}
+\contentsline {subsubsection}{\numberline {7.6.3.1}Smooth Non-linear}{42}
+\contentsline {subsubsection}{\numberline {7.6.3.2}Not Smooth Non-linear}{45}
 \contentsline {section}{\numberline {7.7}Optimizers}{45}
 \contentsline {subsection}{\numberline {7.7.1}What are optimizers}{45}
 \contentsline {subsection}{\numberline {7.7.2}Types of optimizers}{45}
 \contentsline {subsection}{\numberline {7.7.3}TF optimizers}{45}
-\contentsline {subsection}{\numberline {7.7.4}Advanced}{46}
-\contentsline {subsubsection}{\numberline {7.7.4.1}Gradient Computation}{46}
-\contentsline {subsubsection}{\numberline {7.7.4.2}Gradient Clipping}{46}
-\contentsline {section}{\numberline {7.8}Hyperparameters}{46}
-\contentsline {subsection}{\numberline {7.8.1}Training Related}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.1}Learning Rate}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.2}Batch Size}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.3}Number of Training Iterations}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.4}Momentum}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.5}Weight Update}{46}
-\contentsline {subsubsection}{\numberline {7.8.1.6}Stopping Criteria}{46}
-\contentsline {subsection}{\numberline {7.8.2}Model Related}{46}
-\contentsline {subsubsection}{\numberline {7.8.2.1}Architecture}{46}
-\contentsline {subsubsection}{\numberline {7.8.2.2}Weight Initialization}{46}
-\contentsline {subsubsection}{\numberline {7.8.2.3}Weight-decay}{46}
-\contentsline {subsubsection}{\numberline {7.8.2.4}Drop-out}{46}
-\contentsline {section}{\numberline {7.9}Hyper-parameter optimization}{46}
-\contentsline {subsubsection}{\numberline {7.9.0.1}Coordinate Descent}{47}
-\contentsline {subsubsection}{\numberline {7.9.0.2}Grid Search}{47}
-\contentsline {subsubsection}{\numberline {7.9.0.3}Random Search}{47}
-\contentsline {subsubsection}{\numberline {7.9.0.4}Automated / Model-based Methods}{47}
-\contentsline {section}{\numberline {7.10}Regulariazation}{47}
-\contentsline {section}{\numberline {7.11}Image Augmentation}{47}
-\contentsline {section}{\numberline {7.12}Serving}{47}
-\contentsline {section}{\numberline {7.13}TensorBoard}{47}
-\contentsline {section}{\numberline {7.14}Estimators}{47}
-\contentsline {section}{\numberline {7.15}Metrics}{47}
-\contentsline {section}{\numberline {7.16}Eager}{47}
-\contentsline {section}{\numberline {7.17}Model Persistence}{47}
-\contentsline {part}{III\hspace {1em}End To End Examples}{49}
-\contentsline {chapter}{\numberline {8}EndToEnd}{51}
-\contentsline {section}{\numberline {8.1}Structured}{52}
-\contentsline {subsection}{\numberline {8.1.1}Linear Regression}{52}
-\contentsline {subsection}{\numberline {8.1.2}KNN}{52}
-\contentsline {section}{\numberline {8.2}Image}{52}
-\contentsline {subsection}{\numberline {8.2.1}Image Classification}{52}
-\contentsline {subsection}{\numberline {8.2.2}Image Segmentation}{52}
-\contentsline {subsection}{\numberline {8.2.3}Adversarial Exmaples}{52}
-\contentsline {subsection}{\numberline {8.2.4}AutoEncoder}{52}
-\contentsline {subsection}{\numberline {8.2.5}Generative Adversarial Network}{52}
-\contentsline {section}{\numberline {8.3}TimeSeries}{52}
-\contentsline {section}{\numberline {8.4}Text}{52}
-\contentsline {subsection}{\numberline {8.4.1}Sentiment Analysis}{52}
-\contentsline {section}{\numberline {8.5}Audio}{52}
-\contentsline {subsection}{\numberline {8.5.1}Audio to Text}{52}
-\contentsline {part}{IV\hspace {1em}Moving Forward}{53}
-\contentsline {section}{\numberline {8.6}Conclusion}{55}
-\contentsline {part}{V\hspace {1em}Dump Space - may/maynot include}{57}
-\contentsline {chapter}{\numberline {9}IOT}{59}
-\contentsline {section}{\numberline {9.1}Micro Processor}{59}
-\contentsline {subsection}{\numberline {9.1.1}Raspberry Pi}{59}
-\contentsline {section}{\numberline {9.2}Micro Controller}{59}
-\contentsline {subsection}{\numberline {9.2.1}Arduino}{59}
-\contentsline {chapter}{\numberline {10}Frequent Roadblocks}{61}
-\contentsline {section}{\numberline {10.1}Excel}{61}
-\contentsline {section}{\numberline {10.2}CSV}{61}
-\contentsline {chapter}{\numberline {11}Ubuntu}{63}
-\contentsline {section}{\numberline {11.1}Trouble Shooting}{63}
-\contentsline {subsection}{\numberline {11.1.1}I/O}{63}
-\contentsline {subsubsection}{\numberline {11.1.1.1}bluetooth}{63}
-\contentsline {paragraph}{\numberline {11.1.1.1.1}Audio}{63}
-\contentsline {part}{VI\hspace {1em}Research}{65}
+\contentsline {subsection}{\numberline {7.7.4}Advanced}{47}
+\contentsline {subsubsection}{\numberline {7.7.4.1}Gradient Computation}{47}
+\contentsline {subsubsection}{\numberline {7.7.4.2}Gradient Clipping}{47}
+\contentsline {section}{\numberline {7.8}Hyperparameters}{47}
+\contentsline {subsection}{\numberline {7.8.1}Training Related}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.1}Learning Rate}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.2}Batch Size}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.3}Number of Training Iterations}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.4}Momentum}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.5}Weight Update}{47}
+\contentsline {subsubsection}{\numberline {7.8.1.6}Stopping Criteria}{48}
+\contentsline {subsection}{\numberline {7.8.2}Model Related}{48}
+\contentsline {subsubsection}{\numberline {7.8.2.1}Architecture}{48}
+\contentsline {subsubsection}{\numberline {7.8.2.2}Weight Initialization}{48}
+\contentsline {subsubsection}{\numberline {7.8.2.3}Weight-decay}{48}
+\contentsline {subsubsection}{\numberline {7.8.2.4}Drop-out}{48}
+\contentsline {section}{\numberline {7.9}Hyper-parameter optimization}{48}
+\contentsline {subsubsection}{\numberline {7.9.0.1}Coordinate Descent}{48}
+\contentsline {subsubsection}{\numberline {7.9.0.2}Grid Search}{49}
+\contentsline {subsubsection}{\numberline {7.9.0.3}Random Search}{49}
+\contentsline {subsubsection}{\numberline {7.9.0.4}Automated / Model-based Methods}{49}
+\contentsline {section}{\numberline {7.10}Regulariazation}{49}
+\contentsline {section}{\numberline {7.11}Image Augmentation}{49}
+\contentsline {section}{\numberline {7.12}Serving}{49}
+\contentsline {section}{\numberline {7.13}TensorBoard}{49}
+\contentsline {section}{\numberline {7.14}Estimators}{49}
+\contentsline {section}{\numberline {7.15}Metrics}{49}
+\contentsline {section}{\numberline {7.16}Eager}{49}
+\contentsline {section}{\numberline {7.17}Model Persistence}{49}
+\contentsline {part}{III\hspace {1em}End To End Examples}{51}
+\contentsline {chapter}{\numberline {8}EndToEnd}{53}
+\contentsline {section}{\numberline {8.1}Structured}{54}
+\contentsline {subsection}{\numberline {8.1.1}Linear Regression}{54}
+\contentsline {subsection}{\numberline {8.1.2}KNN}{54}
+\contentsline {section}{\numberline {8.2}Image}{54}
+\contentsline {subsection}{\numberline {8.2.1}Image Classification}{54}
+\contentsline {subsection}{\numberline {8.2.2}Image Segmentation}{54}
+\contentsline {subsection}{\numberline {8.2.3}Adversarial Exmaples}{54}
+\contentsline {subsection}{\numberline {8.2.4}AutoEncoder}{54}
+\contentsline {subsection}{\numberline {8.2.5}Generative Adversarial Network}{54}
+\contentsline {section}{\numberline {8.3}TimeSeries}{54}
+\contentsline {section}{\numberline {8.4}Text}{54}
+\contentsline {subsection}{\numberline {8.4.1}Sentiment Analysis}{54}
+\contentsline {section}{\numberline {8.5}Audio}{54}
+\contentsline {subsection}{\numberline {8.5.1}Audio to Text}{54}
+\contentsline {part}{IV\hspace {1em}Moving Forward}{55}
+\contentsline {section}{\numberline {8.6}Conclusion}{57}
+\contentsline {part}{V\hspace {1em}Dump Space - may/maynot include}{59}
+\contentsline {chapter}{\numberline {9}IOT}{61}
+\contentsline {section}{\numberline {9.1}Micro Processor}{61}
+\contentsline {subsection}{\numberline {9.1.1}Raspberry Pi}{61}
+\contentsline {section}{\numberline {9.2}Micro Controller}{61}
+\contentsline {subsection}{\numberline {9.2.1}Arduino}{61}
+\contentsline {chapter}{\numberline {10}Frequent Roadblocks}{63}
+\contentsline {section}{\numberline {10.1}Excel}{63}
+\contentsline {section}{\numberline {10.2}CSV}{63}
+\contentsline {chapter}{\numberline {11}Ubuntu}{65}
+\contentsline {section}{\numberline {11.1}Trouble Shooting}{65}
+\contentsline {subsection}{\numberline {11.1.1}I/O}{65}
+\contentsline {subsubsection}{\numberline {11.1.1.1}bluetooth}{65}
+\contentsline {paragraph}{\numberline {11.1.1.1.1}Audio}{65}
+\contentsline {part}{VI\hspace {1em}Research}{67}
