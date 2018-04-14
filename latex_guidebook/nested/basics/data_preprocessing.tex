@@ -1,5 +1,9 @@
 \section{Data Pre-processing}
 
+\textcolor{blue}{Data is rarely obtained in a form that is necessary for optimal performance of a learning algorithm. Data can be missing, can contain a mix of categorical and quantitative, can contain values on vastly different scales, etc.}
+
+\textcolor{blue}{It is important to note that any parameters related to data pre-processing, such as feature scaling and dimensionality reduction, are obtained solely from observing the training set. The parameters for these methods obtained on the training set are then later applied to the test set. This is important since if these preprocessing parameters were obtained on the entire dataset and included the test set, the the model performance may be overoptimistic since then when applying the methods to the unseen data the parameters will not be related to the data as it was before and thus performance could suffer.}
+
 \subsection{Handling Missing Data}
 
 \subsubsection{Filtering Out}
@@ -18,11 +22,21 @@
 
 \subsubsection{Standardization}
 
-\textcolor{blue}{first, subtracts mean, then divides by variance}
+\textcolor{blue}{(Eq.~\ref{eq:preprocess_standardization}) first, subtract the sample mean, then divide by standard deviation variance}
 
-% pros: unlike min-max, not bound to specific range
+\textcolor{blue}{pros: unlike min-max, not bound to specific range}
 
-% standardized values always have a zero mean
+\textcolor{blue}{standardized values always have a zero mean and a standard deviation of 1.}
+
+\textcolor{blue}{gives our data the property of a standard normal distribution}
+
+\begin{equation}
+{X' = \frac{X - \mu}{\sigma}}
+\label{eq:preprocess_standardization}
+\end{equation}
+
+\textcolor{green}{TODO: create code sample - numpy, and sklearn methods}
+
 
 \subsection{Others}
 
