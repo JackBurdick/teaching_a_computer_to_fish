@@ -171,14 +171,24 @@ def sync_snippet(sync_id, c_path, l_path, opts):
 
 
 def read_sync_table(table_file):
+    run_flag = False
     with open(table_file) as fh:
         for line in fh:
             if line.startswith("#"):
                 pass
             else:
-                cols = [col.strip() for col in line.split("||")]
-                sync_snippet(sync_id=cols[0], c_path=cols[1], 
-                         l_path=cols[2], opts=cols[3])
+                if line.startswith("[START]"):
+                    run_flag = True
+                    continue # jump to start of loop
+                elif line.startswith("[END]"):
+                    run_flag = False
+                else:
+                    pass
+                
+                if run_flag:
+                    cols = [col.strip() for col in line.split("||")]
+                    sync_snippet(sync_id=cols[0], c_path=cols[1], 
+                            l_path=cols[2], opts=cols[3])
 
 def main():
     read_sync_table(table_file = "./img_sync_table.txt")

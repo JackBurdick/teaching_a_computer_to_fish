@@ -1,27 +1,5 @@
 \subsection{Python}
 
-\textcolor{blue}{This section will not teach how to program in python. Rather, common functionality as well as common XXXXX areas will be introduced.}
-
-% example python code
-% {{{00000}}}
-\begin{lstlisting}[style=pyInStyle]
-for i in ["a","b","c", 'd']:
-    print(i)
-\end{lstlisting}
-
-\begin{lstlisting}[style=pyOutStyle]
-a
-b
-c
-d
-\end{lstlisting}
-% 0
-\begin{markdown}
-some profound comment about this amazing code block
-\end{markdown}
-% 1
-% hello
-
 \subsubsection{Datatypes}
 
 \paragraph{Tuple}
@@ -32,28 +10,163 @@ some profound comment about this amazing code block
 
 \textcolor{blue}{variable-length mutable sequence of Python objects.}
 
+\subparagraph{Append Vs Extend}
+
+\textcolor{blue}{Append vs extend.}
+
+% {{{py_app_v_ext}}}
+\begin{lstlisting}[style=pyInStyle]
+x = [1, 2, 3]
+x.append([4, 5])
+print("Append: {}".format(x))
+
+x = [1, 2, 3]
+x.extend([4, 5])
+print("Extend: {}".format(x))
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+Append: [1, 2, 3, [4, 5]]
+Extend: [1, 2, 3, 4, 5]
+\end{lstlisting}
+
+
 \paragraph{Dict}
+
+\textcolor{blue}{para about dicts}
 
 \paragraph{Set}
 
+\textcolor{blue}{para about sets}
+
 \subsubsection{Functions}
+
+\textcolor{blue}{para about functions}
+
+\paragraph{Optional Parameters}
+
+\textcolor{blue}{para about optional parameters}
+
+% {{{py_opt_params}}}
+\begin{lstlisting}[style=pyInStyle]
+def log(message, *values):
+    if not values:
+        print(message)
+    else:
+        val_str = ", ".join(str(x) for x in values)
+        print("{}: {}".format(message, val_str))
+
+log("current number")
+log("current numbers are", 1, 2)
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+current number
+current numbers are: 1, 2
+\end{lstlisting}
 
 \paragraph{Built-in Sequence Functions}
 
 \subparagraph{enumerate}
 
+\textcolor{blue}{Enumerate is used for ...}
+
+% {{{py_enumerate_01}}}
+\begin{lstlisting}[style=pyInStyle]
+for i, letter in enumerate(["a", "b", "c", "d"]):
+    print("letter[{}]={}".format(i, letter))
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+letter[0]=a
+letter[1]=b
+letter[2]=c
+letter[3]=d
+\end{lstlisting}
+
+
+% {{{py_enumerate_02}}}
+\begin{lstlisting}[style=pyInStyle]
+for i, letter in enumerate(["a", "b", "c", "d"], 1):
+    print("letter#{}={}".format(i, letter))
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+letter #1=a
+letter #2=b
+letter #3=c
+letter #4=d
+\end{lstlisting}
+
+
 \subparagraph{sorted}
+
+\textcolor{blue}{para about sorted}
 
 \subparagraph{zip}
 
+\textcolor{blue}{para about zip}
+
+% {{{py_zip}}}
+\begin{lstlisting}[style=pyInStyle]
+pets = ["Siren", "Diesel"]
+age = [3, 2]
+for pet_info in zip(pets, age):
+    print(pet_info)
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+('Siren', 3)
+('Diesel', 2)
+\end{lstlisting}
+
+% {{{py_zip_longest}}}
+\begin{lstlisting}[style=pyInStyle]
+pets = ["Siren", "Diesel", "Bella"]
+age = [3, 2]
+print("---- Using zip")
+for pet_info in zip(pets, age):
+    print(pet_info)
+
+print("------ using zip_longest")
+for pet_info in zip_longest(pets, age):
+    print(pet_info)
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+---- Using zip
+('Siren', 3)
+('Diesel', 2)
+------ using zip_longest
+('Siren', 3)
+('Diesel', 2)
+('Bella', None)
+\end{lstlisting}
+
 \subparagraph{reversed}
+
+\textcolor{blue}{para about reversed}
 
 \subsubsection{Generators}
 
+\textcolor{blue}{para about generators}
+
 \subsubsection{Errors and Exception Handling}
+
+\textcolor{blue}{para about errors and exception handling}
+
+% {{{py_tryblock}}}
+\begin{lstlisting}[style=pyInStyle]
+try:
+    # do something
+except MyException as e:
+    # handle exception
+else:
+    # runs when there are no exceptions
+finally:
+    # always runs after try:
+\end{lstlisting}
 
 \subsubsection{IO}
 
+\textcolor{blue}{para about IO}
+
 \subsubsection{Other}
+
+\textcolor{blue}{para about other}
 
 

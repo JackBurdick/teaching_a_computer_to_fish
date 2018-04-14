@@ -1,1 +1,11 @@
-00000 || ./code_sync_sample.ipynb || ../nested/python.tex || o ca 
+# python snippets
+py_sample || ./code_sync_sample.ipynb || ../nested/python.tex || o ca 
+py_enumerate_01 || ../../python/tidbits.ipynb || ../nested/python.tex || o
+py_enumerate_02 || ../../python/tidbits.ipynb || ../nested/python.tex || o
+py_zip || ../../python/tidbits.ipynb || ../nested/python.tex || o
+py_zip_longest || ../../python/tidbits.ipynb || ../nested/python.tex || o
+[START]
+py_tryblock || ../../python/tidbits.ipynb || ../nested/python.tex ||
+py_app_v_ext || ../../python/tidbits.ipynb || ../nested/python.tex || o
+py_opt_params || ../../python/tidbits.ipynb || ../nested/python.tex || o
+[END]

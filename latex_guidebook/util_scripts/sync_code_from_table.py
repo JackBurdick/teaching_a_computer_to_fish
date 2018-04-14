@@ -44,31 +44,35 @@ def create_new_tex_file_data(sync_id, l_path, code_block, language="pyInStyle"):
         data = fh.readlines()
         idx = 0
         prev_block_stop = -1
+        code_idx = None
         for idx, line in enumerate(data):
             clean = line.strip()
             if clean == "% {{{" + str(sync_id) + "}}}":
                 # will insert code block on next line
                 code_idx = idx+1
                 break
+        if code_idx:
+            # handling a pre-existing code block vs new code block
+            if data[code_idx].strip() == "\\begin{lstlisting}[style="+language+"]":
+                end_found = False
+                for idx, line in enumerate(data[code_idx:]):
+                    clean = line.strip()
+                    if clean.strip() == "\\end{lstlisting}":
+                        end_found = True
+                        prev_block_stop = idx+1
+                        break
+                
+                if end_found:
+                    data[code_idx: code_idx+prev_block_stop] = code_block
+                else:
+                    print("ERROR!, no stop code found for code block {}".format(sync_id))
 
-        # handling a pre-existing code block vs new code block
-        if data[code_idx].strip() == "\\begin{lstlisting}[style="+language+"]":
-            end_found = False
-            for idx, line in enumerate(data[code_idx:]):
-                clean = line.strip()
-                if clean.strip() == "\\end{lstlisting}":
-                    end_found = True
-                    prev_block_stop = idx+1
-                    break
-            
-            if end_found:
-                data[code_idx: code_idx+prev_block_stop] = code_block
             else:
-                print("ERROR!, no stop code found for code block {}".format(sync_id))
-
+                # embed new code block
+                data[code_idx: code_idx] = code_block
         else:
-            # embed new code block
-            data[code_idx: code_idx] = code_block
+            print("ERROR: code not found: {}".format(sync_id))
+            return None, None
     
     if prev_block_stop >= 0:
         return data, code_idx+prev_block_stop
@@ -150,7 +154,7 @@ def include_output_block(sync_id, data, fmt_out_block, entry_point, language="py
     else:
         # embed new code block
         data[entry_point: entry_point] = fmt_out_block
-        return data, entry_point
+        return data, entry_point+len(fmt_out_block)
 
 
 def include_md_block(sync_id, data, fmt_md_block, entry_point, language="markdown"):
@@ -198,43 +202,54 @@ def sync_snippet(sync_id, c_path, l_path, opts):
                                                          fmt_code_block, 
                                                          language="pyInStyle")
 
-    # handle options
-    opts = opts.split()
-    if "o" in opts:
-        if target_index >= 0:
-            output_strs = get_cell_output(c_path, target_index)
-            fmt_out_block = create_latex_entry(code_list=output_strs, 
-                                               language="pyOutStyle")
-            new_data, loc = include_output_block(sync_id, new_data, fmt_out_block, 
-                                            loc, language="pyOutStyle")
-        else:
-            print("Error: no ouptput for indicated cell")
-
-    if "ca" in opts:
-        comment_strs = get_cell_comment(c_path, target_index)
-        fmt_md_block = create_latex_entry(code_list=comment_strs, 
-                                          language="markdown")
-        new_data, loc = include_md_block(sync_id, new_data, fmt_md_block, 
-                                         loc, language="markdown")
-
-    #print(new_data)
-    # ===== write to file
     if new_data:
-        # Write to file: overwrite existing file with modifications
-        with open(l_path, 'w') as fh:
-            fh.writelines(new_data)
-        print("Completed: {}".format(sync_id))
+        # handle options
+        opts = opts.split()
+        if "o" in opts:
+            if target_index >= 0:
+                output_strs = get_cell_output(c_path, target_index)
+                fmt_out_block = create_latex_entry(code_list=output_strs, 
+                                                language="pyOutStyle")
+                new_data, loc = include_output_block(sync_id, new_data, fmt_out_block, 
+                                                loc-1, language="pyOutStyle")
+            else:
+                print("Error: no ouptput for indicated cell")
+
+        if "ca" in opts:
+            comment_strs = get_cell_comment(c_path, target_index)
+            fmt_md_block = create_latex_entry(code_list=comment_strs, 
+                                            language="markdown")
+            new_data, loc = include_md_block(sync_id, new_data, fmt_md_block, 
+                                            loc-1, language="markdown")
+
+        #print(new_data)
+        # ===== write to file
+        if new_data:
+            # Write to file: overwrite existing file with modifications
+            with open(l_path, 'w') as fh:
+                fh.writelines(new_data)
+            print("Completed: {}".format(sync_id))
 
 
 def read_sync_table(table_file):
+    run_flag = False
     with open(table_file) as fh:
         for line in fh:
             if line.startswith("#"):
                 pass
             else:
-                cols = [col.strip() for col in line.split("||")]
-                sync_snippet(sync_id=cols[0], c_path=cols[1], 
-                             l_path=cols[2], opts=cols[3])
+                if line.startswith("[START]"):
+                    run_flag = True
+                    continue # jump to start of loop
+                elif line.startswith("[END]"):
+                    run_flag = False
+                else:
+                    pass
+                
+                if run_flag:
+                    cols = [col.strip() for col in line.split("||")]
+                    sync_snippet(sync_id=cols[0], c_path=cols[1], 
+                            l_path=cols[2], opts=cols[3])
 
 
 def main():
