@@ -16,102 +16,104 @@
 \contentsline {subsubsection}{\numberline {3.1.3.1}Datatypes}{17}
 \contentsline {paragraph}{\numberline {3.1.3.1.1}Tuple}{17}
 \contentsline {paragraph}{\numberline {3.1.3.1.2}List}{17}
+\contentsline {subparagraph}{List Comprehensions}{18}
 \contentsline {subparagraph}{Append Vs Extend}{18}
 \contentsline {paragraph}{\numberline {3.1.3.1.3}Dict}{18}
 \contentsline {paragraph}{\numberline {3.1.3.1.4}Set}{18}
 \contentsline {subsubsection}{\numberline {3.1.3.2}Functions}{18}
-\contentsline {paragraph}{\numberline {3.1.3.2.1}Optional Parameters}{18}
-\contentsline {paragraph}{\numberline {3.1.3.2.2}Built-in Sequence Functions}{19}
+\contentsline {paragraph}{\numberline {3.1.3.2.1}Keyword Only Arguments}{19}
+\contentsline {paragraph}{\numberline {3.1.3.2.2}Optional Parameters}{19}
+\contentsline {paragraph}{\numberline {3.1.3.2.3}Built-in Sequence Functions}{19}
 \contentsline {subparagraph}{enumerate}{19}
-\contentsline {subparagraph}{sorted}{19}
-\contentsline {subparagraph}{zip}{19}
-\contentsline {subparagraph}{reversed}{20}
-\contentsline {subsubsection}{\numberline {3.1.3.3}Generators}{20}
-\contentsline {subsubsection}{\numberline {3.1.3.4}Errors and Exception Handling}{20}
-\contentsline {subsubsection}{\numberline {3.1.3.5}IO}{20}
-\contentsline {subsubsection}{\numberline {3.1.3.6}Other}{20}
-\contentsline {subsection}{\numberline {3.1.4}git}{21}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Overview}{21}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Commands}{21}
-\contentsline {subsubsection}{\numberline {3.1.4.3}Github}{21}
-\contentsline {subsection}{\numberline {3.1.5}Jupyter}{21}
-\contentsline {subsubsection}{\numberline {3.1.5.1}Environment}{21}
-\contentsline {paragraph}{\numberline {3.1.5.1.1}Styling}{21}
-\contentsline {paragraph}{\numberline {3.1.5.1.2}Reloading Module Dependencies}{21}
-\contentsline {paragraph}{\numberline {3.1.5.1.3}Profiling}{21}
-\contentsline {subsection}{\numberline {3.1.6}Anaconda}{21}
-\contentsline {subsection}{\numberline {3.1.7}Docker}{21}
-\contentsline {section}{\numberline {3.2}Common Libraries}{21}
-\contentsline {subsection}{\numberline {3.2.1}Numpy}{21}
-\contentsline {subsubsection}{\numberline {3.2.1.1}ndarrays}{22}
-\contentsline {paragraph}{\numberline {3.2.1.1.1}Initialization}{22}
-\contentsline {paragraph}{\numberline {3.2.1.1.2}Indexing}{22}
-\contentsline {paragraph}{\numberline {3.2.1.1.3}Datatypes}{22}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Arithmetic}{22}
-\contentsline {paragraph}{\numberline {3.2.1.2.1}Basic}{22}
-\contentsline {paragraph}{\numberline {3.2.1.2.2}Statistical Methods}{22}
-\contentsline {subsubsection}{\numberline {3.2.1.3}IO}{22}
-\contentsline {subsubsection}{\numberline {3.2.1.4}Other}{22}
-\contentsline {paragraph}{\numberline {3.2.1.4.1}transpose}{22}
-\contentsline {paragraph}{\numberline {3.2.1.4.2}Set Logic}{22}
-\contentsline {section}{\numberline {3.3}Images}{22}
-\contentsline {subsection}{\numberline {3.3.1}OpenCV}{22}
-\contentsline {section}{\numberline {3.4}Natural Language Processing}{22}
-\contentsline {subsection}{\numberline {3.4.1}NLTK}{22}
-\contentsline {section}{\numberline {3.5}Ingesting Data}{22}
-\contentsline {subsection}{\numberline {3.5.1}scrapy}{22}
-\contentsline {subsection}{\numberline {3.5.2}beautifulsoup}{22}
-\contentsline {subsection}{\numberline {3.5.3}sql}{22}
-\contentsline {subsection}{\numberline {3.5.4}mongo}{22}
-\contentsline {section}{\numberline {3.6}Analyzing Data}{22}
-\contentsline {subsection}{\numberline {3.6.1}Pandas}{22}
-\contentsline {subsubsection}{\numberline {3.6.1.1}Series}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.2}Dataframe}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.3}Hierarchical Indexing}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.4}Describing and Visualizing}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.5}Merging, Joining, Pivoting}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.6}Groups}{23}
-\contentsline {subsubsection}{\numberline {3.6.1.7}Data Loading}{23}
-\contentsline {section}{\numberline {3.7}Visualizing Data}{23}
-\contentsline {subsection}{\numberline {3.7.1}Matplotlib}{23}
-\contentsline {subsubsection}{\numberline {3.7.1.1}Basics}{23}
-\contentsline {subsubsection}{\numberline {3.7.1.2}Representation of types of data}{23}
-\contentsline {paragraph}{\numberline {3.7.1.2.1}Categorical Variables}{23}
-\contentsline {subparagraph}{Frequency Distribution Tables}{23}
-\contentsline {subparagraph}{Bar Charts}{23}
-\contentsline {subparagraph}{Pie Charts}{23}
-\contentsline {subparagraph}{Pareto Diagrams}{23}
-\contentsline {paragraph}{\numberline {3.7.1.2.2}Numerical Variables}{24}
-\contentsline {paragraph}{\numberline {3.7.1.2.3}Figures, Subfigures}{24}
-\contentsline {subsubsection}{\numberline {3.7.1.3}Chart Type Examples}{24}
-\contentsline {paragraph}{\numberline {3.7.1.3.1}Line}{24}
-\contentsline {paragraph}{\numberline {3.7.1.3.2}Scatter}{24}
-\contentsline {paragraph}{\numberline {3.7.1.3.3}Bar}{24}
-\contentsline {paragraph}{\numberline {3.7.1.3.4}Histograms}{24}
-\contentsline {paragraph}{\numberline {3.7.1.3.5}Pie}{24}
-\contentsline {subsubsection}{\numberline {3.7.1.4}Customization}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.1}Colors}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.2}Markers}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.3}Ticks}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.4}Labels}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.5}Legends}{24}
-\contentsline {paragraph}{\numberline {3.7.1.4.6}Annotations}{24}
-\contentsline {subsubsection}{\numberline {3.7.1.5}Saving to File}{24}
-\contentsline {section}{\numberline {3.8}Predicting Data}{24}
-\contentsline {subsection}{\numberline {3.8.1}Scikit-Learn}{24}
-\contentsline {subsubsection}{\numberline {3.8.1.1}Transformation Pipelines}{24}
-\contentsline {subsubsection}{\numberline {3.8.1.2}Training}{24}
-\contentsline {paragraph}{\numberline {3.8.1.2.1}Cross-Validation}{24}
-\contentsline {subsubsection}{\numberline {3.8.1.3}Fine-Tuning}{24}
-\contentsline {paragraph}{\numberline {3.8.1.3.1}Hyper-Parameter Optimization}{24}
-\contentsline {subparagraph}{Grid Search}{24}
-\contentsline {subparagraph}{Randomized Search}{25}
-\contentsline {section}{\numberline {3.9}Data Provanece and Reproducibility}{25}
-\contentsline {subsection}{\numberline {3.9.1}Pachyderm}{25}
-\contentsline {section}{\numberline {3.10}Others}{25}
-\contentsline {subsection}{\numberline {3.10.1}Regular Expressions}{25}
-\contentsline {subsection}{\numberline {3.10.2}tangent}{25}
-\contentsline {subsection}{\numberline {3.10.3}Markdown}{25}
+\contentsline {subparagraph}{sorted}{20}
+\contentsline {subparagraph}{zip}{20}
+\contentsline {subparagraph}{reversed}{21}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Generators}{21}
+\contentsline {subsubsection}{\numberline {3.1.3.4}Errors and Exception Handling}{21}
+\contentsline {subsubsection}{\numberline {3.1.3.5}IO}{21}
+\contentsline {subsubsection}{\numberline {3.1.3.6}Other}{21}
+\contentsline {subsection}{\numberline {3.1.4}git}{22}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Overview}{22}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Commands}{22}
+\contentsline {subsubsection}{\numberline {3.1.4.3}Github}{22}
+\contentsline {subsection}{\numberline {3.1.5}Jupyter}{22}
+\contentsline {subsubsection}{\numberline {3.1.5.1}Environment}{22}
+\contentsline {paragraph}{\numberline {3.1.5.1.1}Styling}{22}
+\contentsline {paragraph}{\numberline {3.1.5.1.2}Reloading Module Dependencies}{22}
+\contentsline {paragraph}{\numberline {3.1.5.1.3}Profiling}{22}
+\contentsline {subsection}{\numberline {3.1.6}Anaconda}{22}
+\contentsline {subsection}{\numberline {3.1.7}Docker}{22}
+\contentsline {section}{\numberline {3.2}Common Libraries}{22}
+\contentsline {subsection}{\numberline {3.2.1}Numpy}{22}
+\contentsline {subsubsection}{\numberline {3.2.1.1}ndarrays}{23}
+\contentsline {paragraph}{\numberline {3.2.1.1.1}Initialization}{23}
+\contentsline {paragraph}{\numberline {3.2.1.1.2}Indexing}{23}
+\contentsline {paragraph}{\numberline {3.2.1.1.3}Datatypes}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Arithmetic}{23}
+\contentsline {paragraph}{\numberline {3.2.1.2.1}Basic}{23}
+\contentsline {paragraph}{\numberline {3.2.1.2.2}Statistical Methods}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.3}IO}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Other}{23}
+\contentsline {paragraph}{\numberline {3.2.1.4.1}transpose}{23}
+\contentsline {paragraph}{\numberline {3.2.1.4.2}Set Logic}{23}
+\contentsline {section}{\numberline {3.3}Images}{23}
+\contentsline {subsection}{\numberline {3.3.1}OpenCV}{23}
+\contentsline {section}{\numberline {3.4}Natural Language Processing}{23}
+\contentsline {subsection}{\numberline {3.4.1}NLTK}{23}
+\contentsline {section}{\numberline {3.5}Ingesting Data}{23}
+\contentsline {subsection}{\numberline {3.5.1}scrapy}{23}
+\contentsline {subsection}{\numberline {3.5.2}beautifulsoup}{23}
+\contentsline {subsection}{\numberline {3.5.3}sql}{23}
+\contentsline {subsection}{\numberline {3.5.4}mongo}{23}
+\contentsline {section}{\numberline {3.6}Analyzing Data}{23}
+\contentsline {subsection}{\numberline {3.6.1}Pandas}{23}
+\contentsline {subsubsection}{\numberline {3.6.1.1}Series}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.2}Dataframe}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.3}Hierarchical Indexing}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.4}Describing and Visualizing}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.5}Merging, Joining, Pivoting}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.6}Groups}{24}
+\contentsline {subsubsection}{\numberline {3.6.1.7}Data Loading}{24}
+\contentsline {section}{\numberline {3.7}Visualizing Data}{24}
+\contentsline {subsection}{\numberline {3.7.1}Matplotlib}{24}
+\contentsline {subsubsection}{\numberline {3.7.1.1}Basics}{24}
+\contentsline {subsubsection}{\numberline {3.7.1.2}Representation of types of data}{24}
+\contentsline {paragraph}{\numberline {3.7.1.2.1}Categorical Variables}{24}
+\contentsline {subparagraph}{Frequency Distribution Tables}{24}
+\contentsline {subparagraph}{Bar Charts}{24}
+\contentsline {subparagraph}{Pie Charts}{24}
+\contentsline {subparagraph}{Pareto Diagrams}{24}
+\contentsline {paragraph}{\numberline {3.7.1.2.2}Numerical Variables}{25}
+\contentsline {paragraph}{\numberline {3.7.1.2.3}Figures, Subfigures}{25}
+\contentsline {subsubsection}{\numberline {3.7.1.3}Chart Type Examples}{25}
+\contentsline {paragraph}{\numberline {3.7.1.3.1}Line}{25}
+\contentsline {paragraph}{\numberline {3.7.1.3.2}Scatter}{25}
+\contentsline {paragraph}{\numberline {3.7.1.3.3}Bar}{25}
+\contentsline {paragraph}{\numberline {3.7.1.3.4}Histograms}{25}
+\contentsline {paragraph}{\numberline {3.7.1.3.5}Pie}{25}
+\contentsline {subsubsection}{\numberline {3.7.1.4}Customization}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.1}Colors}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.2}Markers}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.3}Ticks}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.4}Labels}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.5}Legends}{25}
+\contentsline {paragraph}{\numberline {3.7.1.4.6}Annotations}{25}
+\contentsline {subsubsection}{\numberline {3.7.1.5}Saving to File}{25}
+\contentsline {section}{\numberline {3.8}Predicting Data}{25}
+\contentsline {subsection}{\numberline {3.8.1}Scikit-Learn}{25}
+\contentsline {subsubsection}{\numberline {3.8.1.1}Transformation Pipelines}{25}
+\contentsline {subsubsection}{\numberline {3.8.1.2}Training}{25}
+\contentsline {paragraph}{\numberline {3.8.1.2.1}Cross-Validation}{25}
+\contentsline {subsubsection}{\numberline {3.8.1.3}Fine-Tuning}{25}
+\contentsline {paragraph}{\numberline {3.8.1.3.1}Hyper-Parameter Optimization}{25}
+\contentsline {subparagraph}{Grid Search}{25}
+\contentsline {subparagraph}{Randomized Search}{26}
+\contentsline {section}{\numberline {3.9}Data Provanece and Reproducibility}{26}
+\contentsline {subsection}{\numberline {3.9.1}Pachyderm}{26}
+\contentsline {section}{\numberline {3.10}Others}{26}
+\contentsline {subsection}{\numberline {3.10.1}Regular Expressions}{26}
+\contentsline {subsection}{\numberline {3.10.2}tangent}{26}
+\contentsline {subsection}{\numberline {3.10.3}Markdown}{26}
 \contentsline {part}{II\hspace {1em}ML}{27}
 \contentsline {chapter}{\numberline {4}Basics}{29}
 \contentsline {section}{\numberline {4.1}Acquiring Data}{30}

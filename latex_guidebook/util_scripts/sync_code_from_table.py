@@ -100,7 +100,11 @@ def get_code_from_py(sync_id, c_path):
                         code_strs.append(clean + "\n")
     
     # remove first code string ("# {{{" + str(sync_id)
-    return code_strs[1:], target_idx
+    if len(code_strs) > 0:
+        return code_strs[1:], target_idx
+    else:
+        print("ERROR: did not find target code: {}".format(sync_id))
+        return None, None
 
 
 def get_cell_output(c_path, target_index):
@@ -196,11 +200,13 @@ def include_md_block(sync_id, data, fmt_md_block, entry_point, language="markdow
 
 def sync_snippet(sync_id, c_path, l_path, opts):
     code_strs, target_index = get_code_from_py(sync_id, c_path)
-
-    fmt_code_block = create_latex_entry(code_list=code_strs, language="pyInStyle")
-    new_data, loc = create_new_tex_file_data(sync_id, l_path, 
+    if code_strs:
+        fmt_code_block = create_latex_entry(code_list=code_strs, language="pyInStyle")
+        new_data, loc = create_new_tex_file_data(sync_id, l_path, 
                                                          fmt_code_block, 
                                                          language="pyInStyle")
+    else:
+        new_data = None
 
     if new_data:
         # handle options

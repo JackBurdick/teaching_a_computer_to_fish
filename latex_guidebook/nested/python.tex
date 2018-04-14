@@ -10,6 +10,25 @@
 
 \textcolor{blue}{variable-length mutable sequence of Python objects.}
 
+\subparagraph{List Comprehensions}
+
+\textcolor{blue}{para about list comprehensions}
+
+% {{{py_nested_listcomp}}}
+\begin{lstlisting}[style=pyInStyle]
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+# value is multiple of 3 and array sum >= 10
+filtered = [[x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) >= 10]
+print(filtered)
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+[[6], [9]]
+\end{lstlisting}
+\begin{markdown}
+Using nested list comprehensions is possible but gets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
+\end{markdown}
+
 \subparagraph{Append Vs Extend}
 
 \textcolor{blue}{Append vs extend.}
@@ -41,6 +60,33 @@ Extend: [1, 2, 3, 4, 5]
 \subsubsection{Functions}
 
 \textcolor{blue}{para about functions}
+
+\paragraph{Keyword Only Arguments}
+
+\textcolor{blue}{para about keyword only parameters}
+
+% {{{py_func_kwonly}}}
+\begin{lstlisting}[style=pyInStyle]
+def func_with_kwargs(num, a, b,
+                    *,
+                    div_a=False,
+                    div_b=False):
+    if div_a:
+        num /= a
+    if div_b:
+        num /= b
+    return num
+
+# print(func_with_kwargs(12, 2, 2, True, True)) # won't work
+print(func_with_kwargs(12, 2, 2, div_a=True, div_b=True))
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+3.0
+\end{lstlisting}
+\begin{markdown}
+all args after the `*` must be specified
+\end{markdown}
+
 
 \paragraph{Optional Parameters}
 
@@ -93,6 +139,9 @@ letter #2=b
 letter #3=c
 letter #4=d
 \end{lstlisting}
+\begin{markdown}
+Using nested list comprehensions is possible but tgets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
+\end{markdown}
 
 
 \subparagraph{sorted}
