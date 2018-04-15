@@ -1,0 +1,35 @@
+\subsection{IDE}
+
+\subsubsection{Atom}
+
+
+\paragraph{Installation}
+
+Linux (Ubuntu) instructions from https://flight-manual.atom.io/getting-started/sections/installing-atom/. Two options: (i) install package repository on system, or (ii) download and install from `.deb'
+
+\subparagraph{(i) Package Repository}
+
+First, add the official package repository to the system
+\begin{lstlisting}[style=terminalBash]
+curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+\end{lstlisting}
+
+Next, install Atom
+\begin{lstlisting}[style=terminalBash]
+# Install Atom
+sudo apt-get install atom
+# Install Atom Beta
+sudo apt-get install atom-beta
+\end{lstlisting}
+
+\subparagraph{(ii) Using .deb}
+
+First, download `.deb' package from atom. Then execute the following instructions.
+\begin{lstlisting}[style=terminalBash]
+# Install Atom
+sudo dpkg -i atom-amd64.deb
+# Install Atom's dependencies if they are missing
+sudo apt-get -f install
+\end{lstlisting}

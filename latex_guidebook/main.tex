@@ -29,9 +29,13 @@
 \lstdefinestyle{numbers} {numbers=left, stepnumber=1, numberstyle=\tiny, numbersep=10pt}
 \lstdefinestyle{pyinput}{backgroundcolor=\color{gray!8},frame=shadowbox,showspaces=false, basicstyle=\scriptsize }
 \lstdefinestyle{pyoutput}{backgroundcolor=\color{green!8},frame=shadowbox,showspaces=false, basicstyle=\scriptsize }
+\lstdefinestyle{terminal}{backgroundcolor=\color{gray!8},frame=shadowbox,showspaces=false, basicstyle=\scriptsize }
 
+
+% breaklines=true is used to wrap lines
 \lstdefinestyle{pyInStyle} {language=Python,style=numbers,style=pyinput,frame=lines}
 \lstdefinestyle{pyOutStyle} {language=Bash,style=numbers,style=pyoutput,frame=none}
+\lstdefinestyle{terminalBash} {language=Bash,style=numbers,style=terminal,frame=lines, breaklines=true}
 
 
 

@@ -1,5 +1,8 @@
 \chapter{Basics}
 
+%%%%%%%%%%%%%%%%%%%%%%%% obligatory "No Free Lunch"
+I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''
+
 %%%%%%%%%%%%%%%%%%%%%%%% Types of data
 \textcolor{blue}{categorical or numerical. Numerical can be discrete or continuous}
 
@@ -66,6 +69,14 @@
 
 \subsubsection{Classification} -- predicting categorical or qualitative output value (such as a non-numerical value). \textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
 
+% page 94 of AGtext
+One-versus-all \emph{OvA} (also \emph{one-versus-rest}) -- 
+
+One-versus-one (OvO) -- train a binary classifier for every pair
+
+
+\textcolor{blue}{Binary classification can be extended to multi-class classification via the OvR method.}
+
 \subsubsection{Bayes Classifier}
 
 
@@ -102,17 +113,30 @@
 
 \subsection{Overfitting}
 
-\textcolor{blue}{Overfitting refers to a case in which a model fits the training data very well but does not fit validation/test set}
+\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance}
+
+\textcolor{blue}{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
+
+\textcolor{green}{TODO: figure showing an example of overfitting}
 
 \subsection{Underfitting}
+
+\textcolor{blue}{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
+
+\textcolor{blue}{Underfitting can arise from modeling data with too few parameters/too simple of a model.}
+
+\textcolor{green}{TODO: figure showing an example of underfitting}
+
 
 \section{Bias Variance Trade-off}
 
 \subsection{Variance}
-\textcolor{blue}{variance refers to the amount the model would change if it was trained/estimated using a different training data set}
+\textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
+
+
 
 \subsection{Bias}
-\textcolor{blue}{Bias refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the complex problem} 
+\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem} 
 % not word-for-word, but example adapted from p35 of ISL
 \textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
 
@@ -126,6 +150,8 @@
 \textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
 
 \textcolor{blue}{It should be noted that in a real world example, it maynot be possible to explicitly calculate the test error, bias, or variance.}
+
+\textcolor{green}{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}
 
 \subsection{Parametric vs non-parametric}
 

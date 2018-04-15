@@ -1,4 +1,11 @@
 \indexentry{reducible error}{31}
-\indexentry{Type I error}{35}
-\indexentry{Type II error}{35}
-\indexentry{sigmoid}{44}
+\indexentry{Overfitting}{34}
+\indexentry{Underfitting}{34}
+\indexentry{Variance}{34}
+\indexentry{Bias}{34}
+\indexentry{Type I error}{36}
+\indexentry{Type II error}{36}
+\indexentry{odds ratio}{40}
+\indexentry{logit}{40}
+\indexentry{Support Vector Machine (SVM)}{40}
+\indexentry{sigmoid}{46}

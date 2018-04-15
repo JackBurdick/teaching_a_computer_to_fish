@@ -1,14 +1,36 @@
 \begin{theindex}
 
+  \item Bias, 34
+
+  \indexspace
+
+  \item logit, 40
+
+  \indexspace
+
+  \item odds ratio, 40
+  \item Overfitting, 34
+
+  \indexspace
+
   \item reducible error, 31
 
   \indexspace
 
-  \item sigmoid, 42
+  \item sigmoid, 46
+  \item Support Vector Machine (SVM), 40
 
   \indexspace
 
-  \item Type I error, 34
-  \item Type II error, 34
+  \item Type I error, 36
+  \item Type II error, 36
+
+  \indexspace
+
+  \item Underfitting, 34
+
+  \indexspace
+
+  \item Variance, 34
 
 \end{theindex}
