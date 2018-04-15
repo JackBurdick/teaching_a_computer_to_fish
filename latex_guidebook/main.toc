@@ -106,12 +106,13 @@
 \contentsline {subsubsection}{\numberline {3.7.1.5}Saving to File}{25}
 \contentsline {section}{\numberline {3.8}Predicting Data}{25}
 \contentsline {subsection}{\numberline {3.8.1}Scikit-Learn}{25}
-\contentsline {subsubsection}{\numberline {3.8.1.1}Transformation Pipelines}{25}
-\contentsline {subsubsection}{\numberline {3.8.1.2}Training}{25}
-\contentsline {paragraph}{\numberline {3.8.1.2.1}Cross-Validation}{25}
-\contentsline {subsubsection}{\numberline {3.8.1.3}Fine-Tuning}{25}
-\contentsline {paragraph}{\numberline {3.8.1.3.1}Hyper-Parameter Optimization}{25}
-\contentsline {subparagraph}{Grid Search}{25}
+\contentsline {subsubsection}{\numberline {3.8.1.1}Overview}{25}
+\contentsline {subsubsection}{\numberline {3.8.1.2}Transformation Pipelines}{26}
+\contentsline {subsubsection}{\numberline {3.8.1.3}Training}{26}
+\contentsline {paragraph}{\numberline {3.8.1.3.1}Cross-Validation}{26}
+\contentsline {subsubsection}{\numberline {3.8.1.4}Fine-Tuning}{26}
+\contentsline {paragraph}{\numberline {3.8.1.4.1}Hyper-Parameter Optimization}{26}
+\contentsline {subparagraph}{Grid Search}{26}
 \contentsline {subparagraph}{Randomized Search}{26}
 \contentsline {section}{\numberline {3.9}Data Provanece and Reproducibility}{26}
 \contentsline {subsection}{\numberline {3.9.1}Pachyderm}{26}
@@ -163,8 +164,10 @@
 \contentsline {subsection}{\numberline {4.9.2}Bias}{34}
 \contentsline {subsection}{\numberline {4.9.3}Trade-Off}{35}
 \contentsline {subsection}{\numberline {4.9.4}Parametric vs non-parametric}{35}
-\contentsline {section}{\numberline {4.10}Metrics}{35}
-\contentsline {subsection}{\numberline {4.10.1}Confusion Matrix}{35}
+\contentsline {subsubsection}{\numberline {4.9.4.1}parametric}{35}
+\contentsline {subsubsection}{\numberline {4.9.4.2}nonparametric}{35}
+\contentsline {section}{\numberline {4.10}Metrics}{36}
+\contentsline {subsection}{\numberline {4.10.1}Confusion Matrix}{36}
 \contentsline {subsection}{\numberline {4.10.2}Classification Metrics}{36}
 \contentsline {subsection}{\numberline {4.10.3}Additional Metrics}{38}
 \contentsline {subsection}{\numberline {4.10.4}Choosing the "right" metrics}{38}
@@ -184,6 +187,8 @@
 \contentsline {paragraph}{\numberline {5.2.3.1.1}Gini Impurity}{41}
 \contentsline {paragraph}{\numberline {5.2.3.1.2}Entropy}{41}
 \contentsline {paragraph}{\numberline {5.2.3.1.3}Classification Error}{41}
+\contentsline {subsection}{\numberline {5.2.4}Random Forests}{41}
+\contentsline {subsection}{\numberline {5.2.5}K-nearest Neighbors Classifier}{41}
 \contentsline {chapter}{\numberline {6}Term dump}{43}
 \contentsline {chapter}{\numberline {7}ML with TensorFlow}{45}
 \contentsline {section}{\numberline {7.1}Introduction}{45}

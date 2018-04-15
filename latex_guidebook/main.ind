@@ -4,6 +4,7 @@
 
   \indexspace
 
+  \item lazy learner, 41
   \item logit, 40
 
   \indexspace
@@ -18,6 +19,7 @@
   \indexspace
 
   \item sigmoid, 46
+  \item strong learner, 41
   \item Support Vector Machine (SVM), 40
 
   \indexspace
@@ -32,5 +34,9 @@
   \indexspace
 
   \item Variance, 34
+
+  \indexspace
+
+  \item weak learner, 41
 
 \end{theindex}
