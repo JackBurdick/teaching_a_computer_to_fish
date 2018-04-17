@@ -1,14 +1,23 @@
-\indexentry{reducible error}{31}
-\indexentry{Overfitting}{34}
-\indexentry{Underfitting}{34}
-\indexentry{Variance}{34}
-\indexentry{Bias}{34}
-\indexentry{Type I error}{36}
-\indexentry{Type II error}{36}
-\indexentry{odds ratio}{40}
-\indexentry{logit}{40}
-\indexentry{Support Vector Machine (SVM)}{40}
-\indexentry{weak learner}{41}
-\indexentry{strong learner}{41}
-\indexentry{lazy learner}{41}
-\indexentry{sigmoid}{46}
+\indexentry{reducible error}{33}
+\indexentry{Overfitting}{36}
+\indexentry{Underfitting}{36}
+\indexentry{Variance}{36}
+\indexentry{Bias}{36}
+\indexentry{Type I error}{38}
+\indexentry{Type II error}{38}
+\indexentry{odds ratio}{42}
+\indexentry{logit}{42}
+\indexentry{Support Vector Machine (SVM)}{42}
+\indexentry{ID3 algorithm}{44}
+\indexentry{J48}{44}
+\indexentry{weak learner}{44}
+\indexentry{strong learner}{44}
+\indexentry{lazy learner}{44}
+\indexentry{bagging}{45}
+\indexentry{boostrap aggregating}{45}
+\indexentry{sampling with replacement|see{bagging}}{45}
+\indexentry{bootstrap samples}{45}
+\indexentry{subagging}{45}
+\indexentry{sampling without replacement|see{subagging}}{45}
+\indexentry{subspace sampling}{45}
+\indexentry{sigmoid}{50}

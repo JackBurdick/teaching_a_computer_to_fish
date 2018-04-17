@@ -1,10 +1,13 @@
 \begin{theindex}
 
+  \item bagging, 42
   \item Bias, 34
+  \item boostrap aggregating, 42
+  \item bootstrap samples, 42
 
   \indexspace
 
-  \item lazy learner, 41
+  \item lazy learner, 42
   \item logit, 40
 
   \indexspace
@@ -18,8 +21,12 @@
 
   \indexspace
 
-  \item sigmoid, 46
+  \item sampling with replacement, \see{bagging}{42}
+  \item sampling without replacement, \see{subagging}{42}
+  \item sigmoid, 48
   \item strong learner, 41
+  \item subagging, 42
+  \item subspace sampling, 42
   \item Support Vector Machine (SVM), 40
 
   \indexspace
