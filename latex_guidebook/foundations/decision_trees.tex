@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Decision Trees
+\section{Decision Trees}
+
+\textcolor{blue}{\textcolor{green}{(TODO: revise this para!)} Decision trees make classification decisions based on a series of questions that separate the data into subsets. These questions are chained and result in a tree of questions where the leaves are considered pure i.e. they contain samples that belong to the same class.}
+
+\textcolor{blue}{Importance of pruning -- Decision trees can be very deep and can easily lead to overfitting. To help prevent this situation, a limit is set for the maximal depth of a tree. }
+
+\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable.}
+
+\subsection{Criterion -- Maximizing Information Gain}
+
+\textcolor{blue}{Term - Information gain -- difference between the impurity of the parent node and the sum of the child node impurities -- the lower the impurity of the child nodes compared to the parent node, the higher the information gain}
+
+\textcolor{blue}{Three commonly used splitting criteria used in binary decision trees: (i) Gini Impurity, (ii) entropy, and (iii) classification error}
+
+\subsubsection{Gini Impurity}
+
+\subsubsection{Entropy}
+
+\subsubsection{Classification Error}
+
+\subsubsection{ID3 Algorithm}
+
+\textcolor{blue}{top-down, recursive, depth-first partitioning of the dataset.}
+
+\textcolor{blue}{Assumes categorical features without any missing values.}
+
+\textcolor{red}{Can be extended to handle continuous descriptive features and continuous target features}
+
+\subsubsection{C4.5 Algorithm}
+
+\textcolor{blue}{Variant of the {ID3 algorithm}\index{ID3 algorithm} that can handle continuous categorical descriptive features and missing features}
+
+\textcolor{red}{uses post-pruning}
+
+\textcolor{blue}{{J48}\index{J48} is an open source implementation of the C4.5 algorithm}
+
+\subsubsection{CART Algorithm}
+
+\textcolor{blue}{The CART algorithm is another variant of the ID3 algorithm.}
+
+\textcolor{blue}{Uses the Gini index}
+
+\textcolor{blue}{Can handle continuous target features}
+
+\subsection{Pruning}
+
+\textcolor{blue}{Can help address overfitting}
+
+\subsubsection{Pre-pruning}
+
+\subsubsection{Post-pruning}
+
+\section{Random Forests}
+
+\textcolor{blue}{Ensemble method. Combine various decision trees, where some may be weak learners\index{weak learner} (\textcolor{green}{def}) and some may be strong learners\index{strong learner} (\textcolor{green}{def}). The final classification will be determined by majority vote from the number of trees.}

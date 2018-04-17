@@ -5,6 +5,7 @@
 \indexentry{Bias}{54}
 \indexentry{Type I error}{56}
 \indexentry{Type II error}{56}
+\indexentry{lazy learner}{59}
 \indexentry{odds ratio}{60}
 \indexentry{logit}{60}
 \indexentry{Support Vector Machine (SVM)}{60}
@@ -12,7 +13,6 @@
 \indexentry{J48}{62}
 \indexentry{weak learner}{62}
 \indexentry{strong learner}{62}
-\indexentry{lazy learner}{62}
 \indexentry{bagging}{63}
 \indexentry{boostrap aggregating}{63}
 \indexentry{sampling with replacement|see{bagging}}{63}

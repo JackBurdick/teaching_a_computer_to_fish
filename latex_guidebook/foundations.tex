@@ -1,192 +1,26 @@
 \chapter{Foundational Methods}
 
-\section{Regression}
-
-\subsection{Simple Linear Regression}
-
-
-\begin{equation}
-{Y \approx \beta_0 + \beta_1 X}
-\label{eq:slr_ex}
-\end{equation}
-
-\textcolor{blue}{$\approx$ can be read as ``\emph{is approximately modeled as}''. $Y$ is a quantitative response (output/prediction) and $X$ predictor variable(input/feature). $\beta_0$ and $\beta_1$ are two unknown constants representing the intercept and slope, respectively. These unknown values that determine the behavior of the model are known as the model \emph{parameters} or \emph{coefficients}}
-
-% see p62 of ISL for more
-
-\subsection{Multiple Linear Regression}
-
-\textcolor{blue}{Using $n$ predictors:}
-
-\begin{equation}
-{Y \approx \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n}
-\label{eq:mlr_ex}
-\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Regression
+\input{./foundations/regression}
 
 
-\subsection{Polynomial Regression}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% KNN
+\input{./foundations/KNN}
+
+% Classification
 
 
-
-\subsection{K-Nearest Neighbors}
-
-\textcolor{blue}{The optimal value for k will depend on the bias-variance trade-off}
-
-\section{Classification}
-
-\subsection{Logistic Regression}
-
-\textcolor{blue}{Despite the `regression' bit in the name, logistic regression is a classification model}
-
-\textcolor{blue}{odds ratio\index{odds ratio} (Eq.~\ref{eq:odds_ratio}), where $p$ is representative of the probability of a positive (event we aim to predict) event.}
-
-\begin{equation}
-{\frac{p}{1-p}}
-\label{eq:odds_ratio}
-\end{equation}
-
-\textcolor{blue}{A logit\index{logit} function (Eq.~\ref{eq:logit_def}) is the logarithm of the odds ratio (log-odds)}
-
-\begin{equation}
-{logit(p)=\log{\frac{p}{1-p}}}
-\label{eq:logit_def}
-\end{equation}
-
-\textcolor{blue}{logistic function (sigmoid function) (Eq.~\ref{eq:sigmoid_def}) -- the inverse of a logit function and corresponds to the probability that a certain sample belongs to a particular class}
-
-\begin{equation}
-{S(x)={\frac{1}{1+e^{-x}}}={\frac{e^x}{e^x+1}}}
-\label{eq:sigmoid_def}
-\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% KNN
+\input{./foundations/logistic_regression}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Support Vector Machines
-\subsection{Support Vector Machines (SVM)}
+\input{./foundations/svm}
 
-\textcolor{blue}{Support Vector Machine (SVM)\index{Support Vector Machine (SVM)}. In order to minimize misclassification errors, the optimization objective is to maximize the margin (distance between the decision boundary (separating hyperplane) and the nearest training samples. These margins are called support vectors). Maximizing the margins, in theory, tend to have lower generalization error, where smaller margins may be more prone to overfitting.}
 
-\textcolor{blue}{(Slack parameter?)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Support Vector Machines
+\input{./foundations/decision_trees}
 
-\textcolor{blue}{Variable can be used to control the width of the margin and help tune the bias-variance trade-off.}
 
-\textcolor{green}{TODO: figure showing difference in width of margins}
-
-\subsubsection{Kernel SVM}
-
-\textcolor{blue}{kernelized to solve nonlinear classification problems}
-
-\paragraph{The `Kernel Trick'}
-
-\textcolor{green}{TODO: paras about the kernel trick}
-
-\textcolor{blue}{Transform the training data onto a higher dimensional feature space}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Decision Trees
-\subsection{Decision Trees}
-
-\textcolor{blue}{\textcolor{green}{(TODO: revise this para!)} Decision trees make classification decisions based on a series of questions that separate the data into subsets. These questions are chained and result in a tree of questions where the leaves are considered pure i.e. they contain samples that belong to the same class.}
-
-\textcolor{blue}{Importance of pruning -- Decision trees can be very deep and can easily lead to overfitting. To help prevent this situation, a limit is set for the maximal depth of a tree. }
-
-\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable.}
-
-\subsubsection{Criterion -- Maximizing Information Gain}
-
-\textcolor{blue}{Term - Information gain -- difference between the impurity of the parent node and the sum of the child node impurities -- the lower the impurity of the child nodes compared to the parent node, the higher the information gain}
-
-\textcolor{blue}{Three commonly used splitting criteria used in binary decision trees: (i) Gini Impurity, (ii) entropy, and (iii) classification error}
-
-\paragraph{Gini Impurity}
-
-\paragraph{Entropy}
-
-\paragraph{Classification Error}
-
-\paragraph{ID3 Algorithm}
-
-\textcolor{blue}{top-down, recursive, depth-first partitioning of the dataset.}
-
-\textcolor{blue}{Assumes categorical features without any missing values.}
-
-\textcolor{red}{Can be extended to handle continuous descriptive features and continuous target features}
-
-\paragraph{C4.5 Algorithm}
-
-\textcolor{blue}{Variant of the {ID3 algorithm}\index{ID3 algorithm} that can handle continuous categorical descriptive features and missing features}
-
-\textcolor{red}{uses post-pruning}
-
-\textcolor{blue}{{J48}\index{J48} is an open source implementation of the C4.5 algorithm}
-
-\paragraph{CART Algorithm}
-
-\textcolor{blue}{The CART algorithm is another variant of the ID3 algorithm.}
-
-\textcolor{blue}{Uses the Gini index}
-
-\textcolor{blue}{Can handle continuous target features}
-
-\subsubsection{Pruning}
-
-\textcolor{blue}{Can help address overfitting}
-
-\paragraph{Pre-pruning}
-
-\paragraph{Post-pruning}
-
-\subsection{Random Forests}
-
-\textcolor{blue}{Ensemble method. Combine various decision trees, where some may be weak learners\index{weak learner} (\textcolor{green}{def}) and some may be strong learners\index{strong learner} (\textcolor{green}{def}). The final classification will be determined by majority vote from the number of trees.}
-
-
-\subsection{K-nearest Neighbors Classifier}
-
-\textcolor{blue}{KNN is a lazy learner\index{lazy learner} (a special case of instance-based nonparametric model (see \textcolor{red}{local ref?})): the model memorizes the training dataset rather than learn a discriminative function}
-
-\textcolor{blue}{KNN classification involves i) choosing the number of $k$ (nearest neighbors) and a distance metric, ii) finding the $k$ nearest neighbors, and iii) assigning a class label by majority vote.}
-
-\textcolor{blue}{The value of $k$ is important when finding the balance between over and under fitting.}
-
-
-
-\section{Ensemble Methods}
-
-% Machine Learning for Predictive Data Analytics
-
-\textcolor{blue}{A prediction model composed of a set of models. The intuition for using ensemble models is that a group of experts will likely out-perform a single expert.}
-
-\textcolor{blue}{Similar to the issues of group think in real life groups, ensemble models should also be discouraged -- meaning, each model should independently make it's own predictions.}
-
-% p164 of Machine Learning for Predictive Data Analytics
-
-\subsection{Approaches to Creating Ensembles}
-
-\textcolor{blue}{There are two common approaches to creating ensembles}
-
-\subsubsection{Bagging}
-
-\textcolor{blue}{{bagging}\index{bagging} or {boostrap aggregating}\index{boostrap aggregating} involves training a each model in the ensemble is trained on a random sample, in which the random sample is the same size as the set the sample is drawn from. To produce randome subsamples the same size as the set, {sampling with replacement}\index{sampling with replacement|see{bagging}} is used. The random samples produced are known as {bootstrap samples}\index{bootstrap samples}.}
-
-\textcolor{blue}{Sampling with replacement will result in duplicates within each of the bootstrap samples and each therefore each bootstrap sample will be different, thereby creating models that are different.}
-
-\textcolor{blue}{different than subagging\index{subagging}, in which {sampling without replacement}\index{sampling without replacement|see{subagging}} is used. Subagging may be used when working with an exceptionally large dataset in which, given computational constraints, wish to operate on created bootstrap samples that are smaller than the original dataset.}
-
-% p.165 of ML for pred. data analytics
-\textcolor{green}{TODO: para about {subspace sampling}\index{subspace sampling}}
-
-\subsubsection{Boosting}
-
-\textcolor{blue}{When creating new models to add to the ensemble, the new models are biased (by weighting the dataset) to pay extra attention to instances in which the previous models have misclassified.}
-
-\textcolor{blue}{The weighted dataset is composed of the dataset plus weights associated with ``importance'' for each instance. Originally, the weights are initialized to be $\frac{1}{n}$, where $n$ is the number of instances in the dataset.}
-
-% see page 164 of MLforpredictiveDataAnalytics
-\textcolor{green}{TODO: expand on the weighted dataset and the algorithm+iteration steps}
-
-\subsubsection{Bagging Vs Boosting}
-
-\textcolor{green}{TODO: compare contrast these two approaches -- some key literature is oulined on p166 of ML for pred. data analytics}
-
-\subsection{Random Forests}
-
-\textcolor{blue}{Using decision trees with a combination of bagging and subspace sampling -- and a majority vote/median value -- median is generally preferred to mean because of potential outliers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ensemble Methods
+\input{./foundations/ensemble_methods}

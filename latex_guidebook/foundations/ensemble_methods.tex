@@ -1,0 +1,41 @@
+\section{Ensemble Methods}
+
+% Machine Learning for Predictive Data Analytics
+
+\textcolor{blue}{A prediction model composed of a set of models. The intuition for using ensemble models is that a group of experts will likely out-perform a single expert.}
+
+\textcolor{blue}{Similar to the issues of group think in real life groups, ensemble models should also be discouraged -- meaning, each model should independently make it's own predictions.}
+
+% p164 of Machine Learning for Predictive Data Analytics
+
+\subsection{Approaches to Creating Ensembles}
+
+\textcolor{blue}{There are two common approaches to creating ensembles}
+
+\subsubsection{Bagging}
+
+\textcolor{blue}{{bagging}\index{bagging} or {boostrap aggregating}\index{boostrap aggregating} involves training a each model in the ensemble is trained on a random sample, in which the random sample is the same size as the set the sample is drawn from. To produce randome subsamples the same size as the set, {sampling with replacement}\index{sampling with replacement|see{bagging}} is used. The random samples produced are known as {bootstrap samples}\index{bootstrap samples}.}
+
+\textcolor{blue}{Sampling with replacement will result in duplicates within each of the bootstrap samples and each therefore each bootstrap sample will be different, thereby creating models that are different.}
+
+\textcolor{blue}{different than subagging\index{subagging}, in which {sampling without replacement}\index{sampling without replacement|see{subagging}} is used. Subagging may be used when working with an exceptionally large dataset in which, given computational constraints, wish to operate on created bootstrap samples that are smaller than the original dataset.}
+
+% p.165 of ML for pred. data analytics
+\textcolor{green}{TODO: para about {subspace sampling}\index{subspace sampling}}
+
+\subsubsection{Boosting}
+
+\textcolor{blue}{When creating new models to add to the ensemble, the new models are biased (by weighting the dataset) to pay extra attention to instances in which the previous models have misclassified.}
+
+\textcolor{blue}{The weighted dataset is composed of the dataset plus weights associated with ``importance'' for each instance. Originally, the weights are initialized to be $\frac{1}{n}$, where $n$ is the number of instances in the dataset.}
+
+% see page 164 of MLforpredictiveDataAnalytics
+\textcolor{green}{TODO: expand on the weighted dataset and the algorithm+iteration steps}
+
+\subsubsection{Bagging Vs Boosting}
+
+\textcolor{green}{TODO: compare contrast these two approaches -- some key literature is oulined on p166 of ML for pred. data analytics}
+
+\subsection{Random Forests}
+
+\textcolor{blue}{Using decision trees with a combination of bagging and subspace sampling -- and a majority vote/median value -- median is generally preferred to mean because of potential outliers}

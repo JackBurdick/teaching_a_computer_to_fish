@@ -1,0 +1,24 @@
+\section{Logistic Regression}
+
+\textcolor{blue}{Despite the `regression' bit in the name, logistic regression is a classification model}
+
+\textcolor{blue}{odds ratio\index{odds ratio} (Eq.~\ref{eq:odds_ratio}), where $p$ is representative of the probability of a positive (event we aim to predict) event.}
+
+\begin{equation}
+{\frac{p}{1-p}}
+\label{eq:odds_ratio}
+\end{equation}
+
+\textcolor{blue}{A logit\index{logit} function (Eq.~\ref{eq:logit_def}) is the logarithm of the odds ratio (log-odds)}
+
+\begin{equation}
+{logit(p)=\log{\frac{p}{1-p}}}
+\label{eq:logit_def}
+\end{equation}
+
+\textcolor{blue}{logistic function (sigmoid function) (Eq.~\ref{eq:sigmoid_def}) -- the inverse of a logit function and corresponds to the probability that a certain sample belongs to a particular class}
+
+\begin{equation}
+{S(x)={\frac{1}{1+e^{-x}}}={\frac{e^x}{e^x+1}}}
+\label{eq:sigmoid_def}
+\end{equation}

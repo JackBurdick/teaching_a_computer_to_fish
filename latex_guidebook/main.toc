@@ -177,31 +177,29 @@
 \contentsline {subsection}{\numberline {14.1.1}Simple Linear Regression}{59}
 \contentsline {subsection}{\numberline {14.1.2}Multiple Linear Regression}{59}
 \contentsline {subsection}{\numberline {14.1.3}Polynomial Regression}{59}
-\contentsline {subsection}{\numberline {14.1.4}K-Nearest Neighbors}{59}
-\contentsline {section}{\numberline {14.2}Classification}{60}
-\contentsline {subsection}{\numberline {14.2.1}Logistic Regression}{60}
-\contentsline {subsection}{\numberline {14.2.2}Support Vector Machines (SVM)}{60}
-\contentsline {subsubsection}{\numberline {14.2.2.1}Kernel SVM}{60}
-\contentsline {paragraph}{\numberline {14.2.2.1.1}The `Kernel Trick'}{61}
-\contentsline {subsection}{\numberline {14.2.3}Decision Trees}{61}
-\contentsline {subsubsection}{\numberline {14.2.3.1}Criterion -- Maximizing Information Gain}{61}
-\contentsline {paragraph}{\numberline {14.2.3.1.1}Gini Impurity}{61}
-\contentsline {paragraph}{\numberline {14.2.3.1.2}Entropy}{61}
-\contentsline {paragraph}{\numberline {14.2.3.1.3}Classification Error}{61}
-\contentsline {paragraph}{\numberline {14.2.3.1.4}ID3 Algorithm}{61}
-\contentsline {paragraph}{\numberline {14.2.3.1.5}C4.5 Algorithm}{62}
-\contentsline {paragraph}{\numberline {14.2.3.1.6}CART Algorithm}{62}
-\contentsline {subsubsection}{\numberline {14.2.3.2}Pruning}{62}
-\contentsline {paragraph}{\numberline {14.2.3.2.1}Pre-pruning}{62}
-\contentsline {paragraph}{\numberline {14.2.3.2.2}Post-pruning}{62}
-\contentsline {subsection}{\numberline {14.2.4}Random Forests}{62}
-\contentsline {subsection}{\numberline {14.2.5}K-nearest Neighbors Classifier}{62}
-\contentsline {section}{\numberline {14.3}Ensemble Methods}{63}
-\contentsline {subsection}{\numberline {14.3.1}Approaches to Creating Ensembles}{63}
-\contentsline {subsubsection}{\numberline {14.3.1.1}Bagging}{63}
-\contentsline {subsubsection}{\numberline {14.3.1.2}Boosting}{63}
-\contentsline {subsubsection}{\numberline {14.3.1.3}Bagging Vs Boosting}{64}
-\contentsline {subsection}{\numberline {14.3.2}Random Forests}{64}
+\contentsline {section}{\numberline {14.2}K-Nearest Neighbors}{59}
+\contentsline {section}{\numberline {14.3}Logistic Regression}{60}
+\contentsline {section}{\numberline {14.4}Support Vector Machines (SVM)}{60}
+\contentsline {subsection}{\numberline {14.4.1}Kernel SVM}{61}
+\contentsline {subsubsection}{\numberline {14.4.1.1}The `Kernel Trick'}{61}
+\contentsline {section}{\numberline {14.5}Decision Trees}{61}
+\contentsline {subsection}{\numberline {14.5.1}Criterion -- Maximizing Information Gain}{61}
+\contentsline {subsubsection}{\numberline {14.5.1.1}Gini Impurity}{61}
+\contentsline {subsubsection}{\numberline {14.5.1.2}Entropy}{61}
+\contentsline {subsubsection}{\numberline {14.5.1.3}Classification Error}{61}
+\contentsline {subsubsection}{\numberline {14.5.1.4}ID3 Algorithm}{61}
+\contentsline {subsubsection}{\numberline {14.5.1.5}C4.5 Algorithm}{62}
+\contentsline {subsubsection}{\numberline {14.5.1.6}CART Algorithm}{62}
+\contentsline {subsection}{\numberline {14.5.2}Pruning}{62}
+\contentsline {subsubsection}{\numberline {14.5.2.1}Pre-pruning}{62}
+\contentsline {subsubsection}{\numberline {14.5.2.2}Post-pruning}{62}
+\contentsline {section}{\numberline {14.6}Random Forests}{62}
+\contentsline {section}{\numberline {14.7}Ensemble Methods}{62}
+\contentsline {subsection}{\numberline {14.7.1}Approaches to Creating Ensembles}{62}
+\contentsline {subsubsection}{\numberline {14.7.1.1}Bagging}{63}
+\contentsline {subsubsection}{\numberline {14.7.1.2}Boosting}{63}
+\contentsline {subsubsection}{\numberline {14.7.1.3}Bagging Vs Boosting}{63}
+\contentsline {subsection}{\numberline {14.7.2}Random Forests}{63}
 \contentsline {chapter}{\numberline {15}Term dump}{65}
 \contentsline {chapter}{\numberline {16}ML with TensorFlow}{67}
 \contentsline {section}{\numberline {16.1}Introduction}{67}
