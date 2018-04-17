@@ -1,7 +1,100 @@
-\section{K-Nearest Neighbors}
+\section{Nearest Neighbors}
 
 \textcolor{blue}{KNN is a lazy learner\index{lazy learner} (a special case of instance-based nonparametric model (see \textcolor{red}{local ref?})): the model memorizes the training dataset rather than learn a discriminative function}
 
+\textcolor{blue}{Can be used for classification or regression. To adapt a KNN for regression, the approach is modified to return a prediction of the average target value from the nearest neighbors, rather than the majority label.}
+
+
+\subsection{Overview}
+
+
+% page 188 of FofMLforpred data analytics
+
+\textcolor{blue}{set local models (neighborhoods), where each is defined by a subset of the training data (in nearest neighbors, this is a single instance).}
+
+\textcolor{blue}{A global prediction model based on the full dataset creates a decision boundary between regions of the features space which designates the \textcolor{red}{label?(term)}}
+
+\subsubsection{Distance metric}
+
+\textcolor{blue}{There are four basic requirements for the distance metric:}
+
+\begin{itemize}
+	\item Non-negativity: the value must be greater or equal to 0
+	\item Identity: if the distance metric between $a$ and $b$ is zero, the two values must be at the same location
+	\item Symmetry: the distance metric from $a$ to $b$ must be the same as the distance metric from $b$ to $a$
+	\item Triangular inequality: metric($a$,$b$) $\le$ metric($a$,$c$) $+$ metric($b$,$c$)
+\end{itemize}
+
+\textcolor{blue}{When calculating the nearest neighbors the terms \textit{distance} and \textit{similarity} may be used interchangeably -- it is important to keep in mind that though they are the ``same'', they are different terms in that the lowest value for distance is ``best'' and the highest value for similarity is ``best''.}
+
+\textcolor{blue}{The default distance metric is the Euclidean distance}
+
+\textcolor{blue}{both the Euclidean and Manhattan distances are special cases of the Minkowski distance}
+
+% see p184 of FofMLforpred data analytics
+\textcolor{green}{TODO: more about the Minkowski distance def here}
+
+\textcolor{blue}{Minkowski-based Euclidean distance -- a straight line between two points (Eq~\ref{eq:euclidean_distance_def})}
+
+\begin{equation}
+{\sqrt{\sum_{i=1}^{m}{{(a[i] - b[i])}^2}}}
+\label{eq:euclidean_distance_def}
+\end{equation}
+
+\textcolor{blue}{Manhattan distance (Eq.~\ref{eq:manhattan_distance_def}) -- may also be called the taxi-cab distance, since it is similar to how a driver would have to drive from one point to another on a grid based road system like Manhattan.}
+
+\begin{equation}
+{\sum_{i=1}^{m}{abs(a[i] - b[i])}}
+\label{eq:manhattan_distance_def}
+\end{equation}
+
+\textcolor{blue}{When implementing a nearest neighbor using Euclidean distance, the feature space is partitioned into {Voronoi tessellation}\index{Voronoi tessellation}. New points are assigned to a {Voronoi region}\index{Voronoi region}.}
+
+% see p214 of FofMLforpred data analytics
+\textcolor{green}{TODO: More about other similarity measures}
+
+\subsection{K-Nearest Neighbors}
+
+\textcolor{blue}{Since the nearest neighbor algorithm relies on local models, each defined by a single training instance, it is quite sensitive to noise. To address this issue, rather than rely on a single instance, a \textcolor{red}{label} is calculated from a set of $k$ nearest neighbors}
+
 \textcolor{blue}{KNN classification involves i) choosing the number of $k$ (nearest neighbors) and a distance metric, ii) finding the $k$ nearest neighbors, and iii) assigning a class label by majority vote.}
 
-\textcolor{blue}{The optimal value for $k$ will greatly influence the bias-variance trade-off}
+\textcolor{blue}{The optimal value for $k$ will greatly influence the bias-variance trade-off. If the value is too low, there exists a risk of the algorithm being too sensitive to noise and overfitting, where as if the value of $k$ is too high, there is the possibility that a true pattern will be lost.}
+
+\subsection{Considering Imbalanced Data}
+
+\textcolor{blue}{If dealing with imbalanced data, as $k$ increases, the majority label will dominate the feature space.}
+
+\subsubsection{Weighted K-Nearest Neighbors}
+
+
+
+\subsubsection{Distance Weighted K-Nearest Neighbors}
+
+\textcolor{blue}{The weight of each instance is a function of the inverse distance to the instance from the specified location. An easy way to implement this is to calculate the reciprocal of the squared distance (Eq.~\ref{eq:weighted_dist_knn}), where $n$ is the neighbor and $m$ is the specified location}
+
+\begin{equation}
+{\frac{1}{{dist(m,n)}^2}}
+\label{eq:weighted_dist_knn}
+\end{equation}
+
+\textcolor{blue}{When calculating weight of each instance, $k$ is set to be a large value and may even be equal to the number of instances in the training set so that all training instances are included in the prediction process.}
+
+\textcolor{blue}{Votes from neighbors that are close to the specified location are assigned a high weight, while distant neighbors are assigned a lower weight value.}
+
+\subsection{Considerations}
+
+\subsubsection{Memory}
+
+\subsection{Other Variations}
+
+% see p196 of FofMLforpred data analytics for more information
+\textcolor{blue}{k-d tree, k-dimmensional tree -- balanced binary tree}
+
+\textcolor{blue}{R-Trees}
+
+\textcolor{blue}{B-Trees}
+
+\textcolor{blue}{M-Trees}
+
+\textcolor{blue}{VoRTrees}

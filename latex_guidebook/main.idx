@@ -6,18 +6,20 @@
 \indexentry{Type I error}{56}
 \indexentry{Type II error}{56}
 \indexentry{lazy learner}{59}
-\indexentry{odds ratio}{60}
-\indexentry{logit}{60}
-\indexentry{Support Vector Machine (SVM)}{60}
-\indexentry{ID3 algorithm}{62}
-\indexentry{J48}{62}
-\indexentry{weak learner}{62}
-\indexentry{strong learner}{62}
-\indexentry{bagging}{63}
-\indexentry{boostrap aggregating}{63}
-\indexentry{sampling with replacement|see{bagging}}{63}
-\indexentry{bootstrap samples}{63}
-\indexentry{subagging}{63}
-\indexentry{sampling without replacement|see{subagging}}{63}
-\indexentry{subspace sampling}{63}
-\indexentry{sigmoid}{68}
+\indexentry{Voronoi tessellation}{61}
+\indexentry{Voronoi region}{61}
+\indexentry{odds ratio}{62}
+\indexentry{logit}{62}
+\indexentry{Support Vector Machine (SVM)}{63}
+\indexentry{ID3 algorithm}{64}
+\indexentry{J48}{64}
+\indexentry{weak learner}{65}
+\indexentry{strong learner}{65}
+\indexentry{bagging}{65}
+\indexentry{boostrap aggregating}{65}
+\indexentry{sampling with replacement|see{bagging}}{65}
+\indexentry{bootstrap samples}{65}
+\indexentry{subagging}{65}
+\indexentry{sampling without replacement|see{subagging}}{65}
+\indexentry{subspace sampling}{65}
+\indexentry{sigmoid}{70}

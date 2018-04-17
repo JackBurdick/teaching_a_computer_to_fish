@@ -177,114 +177,123 @@
 \contentsline {subsection}{\numberline {14.1.1}Simple Linear Regression}{59}
 \contentsline {subsection}{\numberline {14.1.2}Multiple Linear Regression}{59}
 \contentsline {subsection}{\numberline {14.1.3}Polynomial Regression}{59}
-\contentsline {section}{\numberline {14.2}K-Nearest Neighbors}{59}
-\contentsline {section}{\numberline {14.3}Logistic Regression}{60}
-\contentsline {section}{\numberline {14.4}Support Vector Machines (SVM)}{60}
-\contentsline {subsection}{\numberline {14.4.1}Kernel SVM}{61}
-\contentsline {subsubsection}{\numberline {14.4.1.1}The `Kernel Trick'}{61}
-\contentsline {section}{\numberline {14.5}Decision Trees}{61}
-\contentsline {subsection}{\numberline {14.5.1}Criterion -- Maximizing Information Gain}{61}
-\contentsline {subsubsection}{\numberline {14.5.1.1}Gini Impurity}{61}
-\contentsline {subsubsection}{\numberline {14.5.1.2}Entropy}{61}
-\contentsline {subsubsection}{\numberline {14.5.1.3}Classification Error}{61}
-\contentsline {subsubsection}{\numberline {14.5.1.4}ID3 Algorithm}{61}
-\contentsline {subsubsection}{\numberline {14.5.1.5}C4.5 Algorithm}{62}
-\contentsline {subsubsection}{\numberline {14.5.1.6}CART Algorithm}{62}
-\contentsline {subsection}{\numberline {14.5.2}Pruning}{62}
-\contentsline {subsubsection}{\numberline {14.5.2.1}Pre-pruning}{62}
-\contentsline {subsubsection}{\numberline {14.5.2.2}Post-pruning}{62}
-\contentsline {section}{\numberline {14.6}Random Forests}{62}
-\contentsline {section}{\numberline {14.7}Ensemble Methods}{62}
-\contentsline {subsection}{\numberline {14.7.1}Approaches to Creating Ensembles}{62}
-\contentsline {subsubsection}{\numberline {14.7.1.1}Bagging}{63}
-\contentsline {subsubsection}{\numberline {14.7.1.2}Boosting}{63}
-\contentsline {subsubsection}{\numberline {14.7.1.3}Bagging Vs Boosting}{63}
-\contentsline {subsection}{\numberline {14.7.2}Random Forests}{63}
-\contentsline {chapter}{\numberline {15}Term dump}{65}
-\contentsline {chapter}{\numberline {16}ML with TensorFlow}{67}
-\contentsline {section}{\numberline {16.1}Introduction}{67}
-\contentsline {section}{\numberline {16.2}Artificial Neural Networks}{67}
-\contentsline {subsection}{\numberline {16.2.1}History}{67}
-\contentsline {section}{\numberline {16.3}Convolutional Neural Networks}{68}
-\contentsline {section}{\numberline {16.4}Recurrent Neural Networks}{68}
-\contentsline {section}{\numberline {16.5}Weight Initialization}{68}
-\contentsline {section}{\numberline {16.6}Activation Functions}{68}
-\contentsline {subsection}{\numberline {16.6.1}Why Non-linear}{68}
-\contentsline {subsection}{\numberline {16.6.2}Advancements}{68}
-\contentsline {subsection}{\numberline {16.6.3}Popular Activation Functions}{68}
-\contentsline {subsubsection}{\numberline {16.6.3.1}Smooth Non-linear}{68}
-\contentsline {subsubsection}{\numberline {16.6.3.2}Not Smooth Non-linear}{68}
-\contentsline {section}{\numberline {16.7}Optimizers}{68}
-\contentsline {subsection}{\numberline {16.7.1}Overview}{74}
-\contentsline {subsection}{\numberline {16.7.2}What are optimizers}{74}
-\contentsline {subsection}{\numberline {16.7.3}Types of optimizers}{74}
-\contentsline {subsection}{\numberline {16.7.4}TF optimizers}{74}
-\contentsline {subsection}{\numberline {16.7.5}Advanced}{75}
-\contentsline {subsubsection}{\numberline {16.7.5.1}Gradient Computation}{75}
-\contentsline {subsubsection}{\numberline {16.7.5.2}Gradient Clipping}{75}
-\contentsline {section}{\numberline {16.8}Hyperparameters}{75}
-\contentsline {subsection}{\numberline {16.8.1}Training Related}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.1}Learning Rate}{75}
-\contentsline {paragraph}{\numberline {16.8.1.1.1}Too High vs Too Low}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.2}Batch Size}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.3}Number of Training Iterations}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.4}Momentum}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.5}Weight Update}{75}
-\contentsline {subsubsection}{\numberline {16.8.1.6}Stopping Criteria}{75}
-\contentsline {subsection}{\numberline {16.8.2}Model Related}{75}
-\contentsline {subsubsection}{\numberline {16.8.2.1}Architecture}{75}
-\contentsline {subsubsection}{\numberline {16.8.2.2}Weight Initialization}{75}
-\contentsline {subsubsection}{\numberline {16.8.2.3}Weight-decay}{75}
-\contentsline {subsubsection}{\numberline {16.8.2.4}Drop-out}{76}
-\contentsline {section}{\numberline {16.9}Hyper-parameter optimization}{76}
-\contentsline {subsubsection}{\numberline {16.9.0.1}Coordinate Descent}{76}
-\contentsline {subsubsection}{\numberline {16.9.0.2}Grid Search}{76}
-\contentsline {subsubsection}{\numberline {16.9.0.3}Random Search}{76}
-\contentsline {subsubsection}{\numberline {16.9.0.4}Grid vs Random Search}{76}
-\contentsline {subsubsection}{\numberline {16.9.0.5}Automated / Model-based Methods}{77}
-\contentsline {section}{\numberline {16.10}Regularization}{77}
-\contentsline {subsection}{\numberline {16.10.1}Why Regularization}{77}
-\contentsline {subsection}{\numberline {16.10.2}Types of Regularization}{77}
-\contentsline {subsubsection}{\numberline {16.10.2.1}Regularization Methods and Implementations}{77}
-\contentsline {paragraph}{\numberline {16.10.2.1.1}L2 Regularization}{77}
-\contentsline {paragraph}{\numberline {16.10.2.1.2}L1 Regularization}{77}
-\contentsline {section}{\numberline {16.11}Image Augmentation}{77}
-\contentsline {section}{\numberline {16.12}Serving}{77}
-\contentsline {section}{\numberline {16.13}TensorBoard}{77}
-\contentsline {section}{\numberline {16.14}Estimators}{77}
-\contentsline {section}{\numberline {16.15}Metrics}{77}
-\contentsline {section}{\numberline {16.16}Eager}{77}
-\contentsline {section}{\numberline {16.17}Model Persistence}{77}
-\contentsline {part}{IV\hspace {1em}End To End Examples}{79}
-\contentsline {chapter}{\numberline {17}EndToEnd}{81}
-\contentsline {section}{\numberline {17.1}Structured}{82}
-\contentsline {subsection}{\numberline {17.1.1}Linear Regression}{82}
-\contentsline {subsection}{\numberline {17.1.2}KNN}{82}
-\contentsline {section}{\numberline {17.2}Image}{82}
-\contentsline {subsection}{\numberline {17.2.1}Image Classification}{82}
-\contentsline {subsection}{\numberline {17.2.2}Image Segmentation}{82}
-\contentsline {subsection}{\numberline {17.2.3}Adversarial Exmaples}{82}
-\contentsline {subsection}{\numberline {17.2.4}AutoEncoder}{82}
-\contentsline {subsection}{\numberline {17.2.5}Generative Adversarial Network}{82}
-\contentsline {section}{\numberline {17.3}TimeSeries}{82}
-\contentsline {section}{\numberline {17.4}Text}{82}
-\contentsline {subsection}{\numberline {17.4.1}Sentiment Analysis}{82}
-\contentsline {section}{\numberline {17.5}Audio}{82}
-\contentsline {subsection}{\numberline {17.5.1}Audio to Text}{82}
-\contentsline {part}{V\hspace {1em}Moving Forward}{83}
-\contentsline {section}{\numberline {17.6}Conclusion}{85}
-\contentsline {part}{VI\hspace {1em}Dump Space - may/maynot include}{87}
-\contentsline {chapter}{\numberline {18}IOT}{89}
-\contentsline {section}{\numberline {18.1}Micro Processor}{89}
-\contentsline {subsection}{\numberline {18.1.1}Raspberry Pi}{89}
-\contentsline {section}{\numberline {18.2}Micro Controller}{89}
-\contentsline {subsection}{\numberline {18.2.1}Arduino}{89}
-\contentsline {chapter}{\numberline {19}Frequent Roadblocks}{91}
-\contentsline {section}{\numberline {19.1}Excel}{91}
-\contentsline {section}{\numberline {19.2}CSV}{91}
-\contentsline {chapter}{\numberline {20}Ubuntu}{93}
-\contentsline {section}{\numberline {20.1}Trouble Shooting}{93}
-\contentsline {subsection}{\numberline {20.1.1}I/O}{93}
-\contentsline {subsubsection}{\numberline {20.1.1.1}bluetooth}{93}
-\contentsline {paragraph}{\numberline {20.1.1.1.1}Audio}{93}
-\contentsline {part}{VII\hspace {1em}Research}{95}
+\contentsline {section}{\numberline {14.2}Nearest Neighbors}{59}
+\contentsline {subsection}{\numberline {14.2.1}Overview}{60}
+\contentsline {subsubsection}{\numberline {14.2.1.1}Distance metric}{60}
+\contentsline {subsection}{\numberline {14.2.2}K-Nearest Neighbors}{61}
+\contentsline {subsection}{\numberline {14.2.3}Considering Imbalanced Data}{61}
+\contentsline {subsubsection}{\numberline {14.2.3.1}Weighted K-Nearest Neighbors}{61}
+\contentsline {subsubsection}{\numberline {14.2.3.2}Distance Weighted K-Nearest Neighbors}{61}
+\contentsline {subsection}{\numberline {14.2.4}Considerations}{62}
+\contentsline {subsubsection}{\numberline {14.2.4.1}Memory}{62}
+\contentsline {subsection}{\numberline {14.2.5}Other Variations}{62}
+\contentsline {section}{\numberline {14.3}Logistic Regression}{62}
+\contentsline {section}{\numberline {14.4}Support Vector Machines (SVM)}{63}
+\contentsline {subsection}{\numberline {14.4.1}Kernel SVM}{63}
+\contentsline {subsubsection}{\numberline {14.4.1.1}The `Kernel Trick'}{63}
+\contentsline {section}{\numberline {14.5}Decision Trees}{63}
+\contentsline {subsection}{\numberline {14.5.1}Criterion -- Maximizing Information Gain}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.1}Gini Impurity}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.2}Entropy}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.3}Classification Error}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.4}ID3 Algorithm}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.5}C4.5 Algorithm}{64}
+\contentsline {subsubsection}{\numberline {14.5.1.6}CART Algorithm}{64}
+\contentsline {subsection}{\numberline {14.5.2}Pruning}{64}
+\contentsline {subsubsection}{\numberline {14.5.2.1}Pre-pruning}{65}
+\contentsline {subsubsection}{\numberline {14.5.2.2}Post-pruning}{65}
+\contentsline {section}{\numberline {14.6}Random Forests}{65}
+\contentsline {section}{\numberline {14.7}Ensemble Methods}{65}
+\contentsline {subsection}{\numberline {14.7.1}Approaches to Creating Ensembles}{65}
+\contentsline {subsubsection}{\numberline {14.7.1.1}Bagging}{65}
+\contentsline {subsubsection}{\numberline {14.7.1.2}Boosting}{66}
+\contentsline {subsubsection}{\numberline {14.7.1.3}Bagging Vs Boosting}{66}
+\contentsline {subsection}{\numberline {14.7.2}Random Forests}{66}
+\contentsline {chapter}{\numberline {15}Term dump}{67}
+\contentsline {chapter}{\numberline {16}ML with TensorFlow}{69}
+\contentsline {section}{\numberline {16.1}Introduction}{69}
+\contentsline {section}{\numberline {16.2}Artificial Neural Networks}{69}
+\contentsline {subsection}{\numberline {16.2.1}History}{69}
+\contentsline {section}{\numberline {16.3}Convolutional Neural Networks}{70}
+\contentsline {section}{\numberline {16.4}Recurrent Neural Networks}{70}
+\contentsline {section}{\numberline {16.5}Weight Initialization}{70}
+\contentsline {section}{\numberline {16.6}Activation Functions}{70}
+\contentsline {subsection}{\numberline {16.6.1}Why Non-linear}{70}
+\contentsline {subsection}{\numberline {16.6.2}Advancements}{70}
+\contentsline {subsection}{\numberline {16.6.3}Popular Activation Functions}{70}
+\contentsline {subsubsection}{\numberline {16.6.3.1}Smooth Non-linear}{70}
+\contentsline {subsubsection}{\numberline {16.6.3.2}Not Smooth Non-linear}{70}
+\contentsline {section}{\numberline {16.7}Optimizers}{70}
+\contentsline {subsection}{\numberline {16.7.1}Overview}{76}
+\contentsline {subsection}{\numberline {16.7.2}What are optimizers}{76}
+\contentsline {subsection}{\numberline {16.7.3}Types of optimizers}{76}
+\contentsline {subsection}{\numberline {16.7.4}TF optimizers}{76}
+\contentsline {subsection}{\numberline {16.7.5}Advanced}{77}
+\contentsline {subsubsection}{\numberline {16.7.5.1}Gradient Computation}{77}
+\contentsline {subsubsection}{\numberline {16.7.5.2}Gradient Clipping}{77}
+\contentsline {section}{\numberline {16.8}Hyperparameters}{77}
+\contentsline {subsection}{\numberline {16.8.1}Training Related}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.1}Learning Rate}{77}
+\contentsline {paragraph}{\numberline {16.8.1.1.1}Too High vs Too Low}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.2}Batch Size}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.3}Number of Training Iterations}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.4}Momentum}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.5}Weight Update}{77}
+\contentsline {subsubsection}{\numberline {16.8.1.6}Stopping Criteria}{77}
+\contentsline {subsection}{\numberline {16.8.2}Model Related}{77}
+\contentsline {subsubsection}{\numberline {16.8.2.1}Architecture}{77}
+\contentsline {subsubsection}{\numberline {16.8.2.2}Weight Initialization}{77}
+\contentsline {subsubsection}{\numberline {16.8.2.3}Weight-decay}{77}
+\contentsline {subsubsection}{\numberline {16.8.2.4}Drop-out}{78}
+\contentsline {section}{\numberline {16.9}Hyper-parameter optimization}{78}
+\contentsline {subsubsection}{\numberline {16.9.0.1}Coordinate Descent}{78}
+\contentsline {subsubsection}{\numberline {16.9.0.2}Grid Search}{78}
+\contentsline {subsubsection}{\numberline {16.9.0.3}Random Search}{78}
+\contentsline {subsubsection}{\numberline {16.9.0.4}Grid vs Random Search}{78}
+\contentsline {subsubsection}{\numberline {16.9.0.5}Automated / Model-based Methods}{79}
+\contentsline {section}{\numberline {16.10}Regularization}{79}
+\contentsline {subsection}{\numberline {16.10.1}Why Regularization}{79}
+\contentsline {subsection}{\numberline {16.10.2}Types of Regularization}{79}
+\contentsline {subsubsection}{\numberline {16.10.2.1}Regularization Methods and Implementations}{79}
+\contentsline {paragraph}{\numberline {16.10.2.1.1}L2 Regularization}{79}
+\contentsline {paragraph}{\numberline {16.10.2.1.2}L1 Regularization}{79}
+\contentsline {section}{\numberline {16.11}Image Augmentation}{79}
+\contentsline {section}{\numberline {16.12}Serving}{79}
+\contentsline {section}{\numberline {16.13}TensorBoard}{79}
+\contentsline {section}{\numberline {16.14}Estimators}{79}
+\contentsline {section}{\numberline {16.15}Metrics}{79}
+\contentsline {section}{\numberline {16.16}Eager}{79}
+\contentsline {section}{\numberline {16.17}Model Persistence}{79}
+\contentsline {part}{IV\hspace {1em}End To End Examples}{81}
+\contentsline {chapter}{\numberline {17}EndToEnd}{83}
+\contentsline {section}{\numberline {17.1}Structured}{84}
+\contentsline {subsection}{\numberline {17.1.1}Linear Regression}{84}
+\contentsline {subsection}{\numberline {17.1.2}KNN}{84}
+\contentsline {section}{\numberline {17.2}Image}{84}
+\contentsline {subsection}{\numberline {17.2.1}Image Classification}{84}
+\contentsline {subsection}{\numberline {17.2.2}Image Segmentation}{84}
+\contentsline {subsection}{\numberline {17.2.3}Adversarial Exmaples}{84}
+\contentsline {subsection}{\numberline {17.2.4}AutoEncoder}{84}
+\contentsline {subsection}{\numberline {17.2.5}Generative Adversarial Network}{84}
+\contentsline {section}{\numberline {17.3}TimeSeries}{84}
+\contentsline {section}{\numberline {17.4}Text}{84}
+\contentsline {subsection}{\numberline {17.4.1}Sentiment Analysis}{84}
+\contentsline {section}{\numberline {17.5}Audio}{84}
+\contentsline {subsection}{\numberline {17.5.1}Audio to Text}{84}
+\contentsline {part}{V\hspace {1em}Moving Forward}{85}
+\contentsline {section}{\numberline {17.6}Conclusion}{87}
+\contentsline {part}{VI\hspace {1em}Dump Space - may/maynot include}{89}
+\contentsline {chapter}{\numberline {18}IOT}{91}
+\contentsline {section}{\numberline {18.1}Micro Processor}{91}
+\contentsline {subsection}{\numberline {18.1.1}Raspberry Pi}{91}
+\contentsline {section}{\numberline {18.2}Micro Controller}{91}
+\contentsline {subsection}{\numberline {18.2.1}Arduino}{91}
+\contentsline {chapter}{\numberline {19}Frequent Roadblocks}{93}
+\contentsline {section}{\numberline {19.1}Excel}{93}
+\contentsline {section}{\numberline {19.2}CSV}{93}
+\contentsline {chapter}{\numberline {20}Ubuntu}{95}
+\contentsline {section}{\numberline {20.1}Trouble Shooting}{95}
+\contentsline {subsection}{\numberline {20.1.1}I/O}{95}
+\contentsline {subsubsection}{\numberline {20.1.1.1}bluetooth}{95}
+\contentsline {paragraph}{\numberline {20.1.1.1.1}Audio}{95}
+\contentsline {part}{VII\hspace {1em}Research}{97}
