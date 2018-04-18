@@ -1,12 +1,12 @@
 \indexentry{lucky split}{23}
 \indexentry{reducible error}{24}
 \indexentry{Overfitting}{26}
-\indexentry{Underfitting}{26}
-\indexentry{Variance}{26}
+\indexentry{Underfitting}{27}
+\indexentry{Variance}{27}
 \indexentry{Bias}{27}
-\indexentry{peeking}{28}
-\indexentry{Type I error}{29}
-\indexentry{Type II error}{29}
+\indexentry{peeking}{29}
+\indexentry{Type I error}{30}
+\indexentry{Type II error}{30}
 \indexentry{lazy learner}{33}
 \indexentry{Voronoi tessellation}{35}
 \indexentry{Voronoi region}{35}
@@ -24,4 +24,4 @@
 \indexentry{subagging}{39}
 \indexentry{sampling without replacement|see{subagging}}{39}
 \indexentry{subspace sampling}{40}
-\indexentry{sigmoid}{79}
+\indexentry{sigmoid}{81}

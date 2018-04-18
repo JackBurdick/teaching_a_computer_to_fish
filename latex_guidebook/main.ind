@@ -26,7 +26,7 @@
 
   \indexspace
 
-  \item peeking, 28
+  \item peeking, 29
 
   \indexspace
 
@@ -36,7 +36,7 @@
 
   \item sampling with replacement, \see{bagging}{39}
   \item sampling without replacement, \see{subagging}{39}
-  \item sigmoid, 79
+  \item sigmoid, 81
   \item strong learner, 39
   \item subagging, 39
   \item subspace sampling, 40
@@ -44,16 +44,16 @@
 
   \indexspace
 
-  \item Type I error, 29
-  \item Type II error, 29
+  \item Type I error, 30
+  \item Type II error, 30
 
   \indexspace
 
-  \item Underfitting, 26
+  \item Underfitting, 27
 
   \indexspace
 
-  \item Variance, 26
+  \item Variance, 27
   \item Voronoi region, 35
   \item Voronoi tessellation, 35
 

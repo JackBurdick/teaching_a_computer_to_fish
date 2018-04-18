@@ -1,136 +1,15 @@
-\chapter{Overview}
+% chapter
+\input{./tensorflow/overview}
 
-% TODO: this chapter needs serious restructuring/organization consideration
+% chapter
+\input{./tensorflow/api_components}
 
-\section{Introduction}
+% chapter
+\input{./tensorflow/implementations}
 
-\textcolor{green}{TODO: Tensorflow was XXXXXXXXXX, released XXXXXXXXX}
 
-\textcolor{green}{TODO: There are many different deep learning frameworks}
 
-\textcolor{green}{TODO: why use a deep learning framework}
 
-\section{High-level Overview of Components}
 
-\section{Workflow}
 
-\textcolor{green}{Diagram of a typical workflow}
-
-\subsection{Model Creation}
-
-\subsection{Training}
-
-\subsection{Evaluation}
-
-\subsection{Deploying and Monitoring}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Implementations
-\chapter{Implementing Common Methodologies}
-
-\section{Artificial Neural Networks}
-
-\section{Convolutional Neural Networks}
-
-\section{Recurrent Neural Networks}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Implementations
-\chapter{Design Considerations}
-
-\section{Weight Initialization}
-
-%%%%% activation functions
-\input{./tensorflow/activation_functions}
-
-%%%%% Optimizers
-\input{./tensorflow/optimizers}
-
-\chapter{Hyperparameters}
-
-\section{Training Related}
-
-\subsection{Learning Rate}
-
-\subsubsection{Too High vs Too Low}
-
-\textcolor{blue}{TODO: figure showing a convex cost function and the result of a learning rate being too high (overshoot, diverge) and too small (local minima)}
-
-\subsection{Batch Size}
-
-\subsection{Number of Training Iterations}
-
-\subsection{Momentum}
-
-\subsection{Weight Update}
-
-\textcolor{red}{SGD, CG, L-BFGS, more complex more hyper-parameters}
-
-\subsection{Stopping Criteria}
-
-\section{Model Related}
-
-\subsection{Architecture}
-
-\subsection{Weight Initialization}
-
-\subsection{Weight-decay}
-
-L1
-
-L2
-
-\subsection{Drop-out}
-
-\section{Hyper-parameter optimization}
-
-\textcolor{blue}{OVERVIEW}
-
-\subsubsection{Coordinate Descent}
-
-All hyper-parameters remain fixed, except for the hyper-parameter of interest. The hyper-parameter of interest is then adjusted such that the validation error is minimized.
-
-\subsubsection{Grid Search}
-
-\textcolor{green}{TODO: grid search explanation}
-
-\subsubsection{Random Search}
-
-\textcolor{green}{TODO: random search explanation}
-
-\subsubsection{Grid vs Random Search}
-
-\textcolor{green}{TODO: grid vs random search figure}
-
-\subsubsection{Automated / Model-based Methods}
-
-
-\section{Regularization}
-
-\subsection{Why Regularization}
-
-\subsection{Types of Regularization}
-
-\subsubsection{Regularization Methods and Implementations}
-
-\paragraph{L2 Regularization}
-
-\paragraph{L1 Regularization}
-
-\section{Image Augmentation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tensorflow Components
-\chapter{Tensorflow Components}
-
-\section{Data}
-
-\section{Serving}
-
-\section{TensorBoard}
-
-\section{Estimators}
-
-\section{Metrics}
-
-\section{Eager}
-
-\section{Model Persistence}
 
