@@ -1,59 +1,64 @@
 \begin{theindex}
 
-  \item bagging, 65
-  \item Bias, 54
-  \item boostrap aggregating, 65
-  \item bootstrap samples, 65
+  \item bagging, 39
+  \item Bias, 27
+  \item boostrap aggregating, 39
+  \item bootstrap samples, 39
 
   \indexspace
 
-  \item ID3 algorithm, 64
+  \item ID3 algorithm, 38
 
   \indexspace
 
-  \item J48, 64
+  \item J48, 38
 
   \indexspace
 
-  \item lazy learner, 59
-  \item logit, 62
+  \item lazy learner, 33
+  \item logit, 36
+  \item lucky split, 23
 
   \indexspace
 
-  \item odds ratio, 62
-  \item Overfitting, 54
+  \item odds ratio, 36
+  \item Overfitting, 26
 
   \indexspace
 
-  \item reducible error, 51
+  \item peeking, 28
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{65}
-  \item sampling without replacement, \see{subagging}{65}
-  \item sigmoid, 70
-  \item strong learner, 65
-  \item subagging, 65
-  \item subspace sampling, 65
-  \item Support Vector Machine (SVM), 63
+  \item reducible error, 24
 
   \indexspace
 
-  \item Type I error, 56
-  \item Type II error, 56
+  \item sampling with replacement, \see{bagging}{39}
+  \item sampling without replacement, \see{subagging}{39}
+  \item sigmoid, 79
+  \item strong learner, 39
+  \item subagging, 39
+  \item subspace sampling, 40
+  \item Support Vector Machine (SVM), 37
 
   \indexspace
 
-  \item Underfitting, 54
+  \item Type I error, 29
+  \item Type II error, 29
 
   \indexspace
 
-  \item Variance, 54
-  \item Voronoi region, 61
-  \item Voronoi tessellation, 61
+  \item Underfitting, 26
 
   \indexspace
 
-  \item weak learner, 65
+  \item Variance, 26
+  \item Voronoi region, 35
+  \item Voronoi tessellation, 35
+
+  \indexspace
+
+  \item weak learner, 39
 
 \end{theindex}

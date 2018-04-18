@@ -1,24 +1,40 @@
-\chapter{ML with TensorFlow}
+\chapter{Overview}
 
-Overview
+% TODO: this chapter needs serious restructuring/organization consideration
 
 \section{Introduction}
 
+\textcolor{green}{TODO: Tensorflow was XXXXXXXXXX, released XXXXXXXXX}
+
+\textcolor{green}{TODO: There are many different deep learning frameworks}
+
+\textcolor{green}{TODO: why use a deep learning framework}
+
+\section{High-level Overview of Components}
+
+\section{Workflow}
+
+\textcolor{green}{Diagram of a typical workflow}
+
+\subsection{Model Creation}
+
+\subsection{Training}
+
+\subsection{Evaluation}
+
+\subsection{Deploying and Monitoring}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Implementations
+\chapter{Implementing Common Methodologies}
+
 \section{Artificial Neural Networks}
-
-\subsection{History}
-
-\textcolor{blue}{McCullock and Pitts -- nerve cell as a simple logic gate with binary outputs.  Where multiple input signals are accumulated and if they exceed a certain threshold an output signal is generated}
-
-\textcolor{blue}{Frank Rosenblatt -- the perceptron: an algorithm that would learn the optimal weight coefficients to the input features in order to determine whether an output signal should be produced. The early activation function \textcolor{red}{See more in local ref?} was a simple unit step function.}
-
-\textcolor{blue}{Adaline (\textbf{ADA}ptive \textbf{LI}near \textbf{NE}uron) -- rather than the weights being updated based on a unit step function like the perceptron, the weights are updated based on a linear activation function. A continuous output value (rather than discrete) is used to compute the model error and update the weights.}
-
-\textcolor{blue}{Linear activation function is used for weight updates but a unit step function can still be used to predict the class labels.\textcolor{red}{TODO: figure showing this}}
 
 \section{Convolutional Neural Networks}
 
 \section{Recurrent Neural Networks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Implementations
+\chapter{Design Considerations}
 
 \section{Weight Initialization}
 
@@ -28,42 +44,41 @@ Overview
 %%%%% Optimizers
 \input{./tensorflow/optimizers}
 
+\chapter{Hyperparameters}
 
-\section{Hyperparameters}
+\section{Training Related}
 
-\subsection{Training Related}
+\subsection{Learning Rate}
 
-\subsubsection{Learning Rate}
-
-\paragraph{Too High vs Too Low}
+\subsubsection{Too High vs Too Low}
 
 \textcolor{blue}{TODO: figure showing a convex cost function and the result of a learning rate being too high (overshoot, diverge) and too small (local minima)}
 
-\subsubsection{Batch Size}
+\subsection{Batch Size}
 
-\subsubsection{Number of Training Iterations}
+\subsection{Number of Training Iterations}
 
-\subsubsection{Momentum}
+\subsection{Momentum}
 
-\subsubsection{Weight Update}
+\subsection{Weight Update}
 
 \textcolor{red}{SGD, CG, L-BFGS, more complex more hyper-parameters}
 
-\subsubsection{Stopping Criteria}
+\subsection{Stopping Criteria}
 
-\subsection{Model Related}
+\section{Model Related}
 
-\subsubsection{Architecture}
+\subsection{Architecture}
 
-\subsubsection{Weight Initialization}
+\subsection{Weight Initialization}
 
-\subsubsection{Weight-decay}
+\subsection{Weight-decay}
 
 L1
 
 L2
 
-\subsubsection{Drop-out}
+\subsection{Drop-out}
 
 \section{Hyper-parameter optimization}
 
@@ -101,6 +116,11 @@ All hyper-parameters remain fixed, except for the hyper-parameter of interest. T
 \paragraph{L1 Regularization}
 
 \section{Image Augmentation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tensorflow Components
+\chapter{Tensorflow Components}
+
+\section{Data}
 
 \section{Serving}
 

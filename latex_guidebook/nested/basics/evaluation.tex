@@ -1,0 +1,22 @@
+\section{Evaluation}
+
+\textcolor{blue}{Importance of dataset partitioning \textcolor{red}{local ref?}}
+
+% \textcolor{blue}{The best performance measure will vary depending on the task. For instance, in a medical setting, it may be life threating to classify an event as ``healthy'' when the patient is not healthy.}
+
+\textcolor{blue}{A performance measure is used to capture, empirically, how well a prediction made by the model aligns with the expected, ground truth, value.}
+
+\subsection{Creating a Test Set}
+
+% rough para
+\textcolor{blue}{The most important rule regarding evaluating models, is to ensure that the data used to evaluate the model has never been used before to influence the during training or selection -- this means it was not used during training to update the parameters and it was not used to influence which models are `best' (like a validation set may be used for)}
+
+\textcolor{blue}{The performance of a model on a test set may be indicative of how well the model can generalize to unseen data. (This assumes your data sample is representative of the data population)}
+
+\textcolor{blue}{Hold-out test set -- created by randomly sampling the dataset. Again, it is important to emphasize that the instances in the test set are never used in the training process and are instead reserved for use only during the evaluation phase.}
+
+\textcolor{blue}{peeking\index{peeking}, is an issue that arises when part or all of the test set is included in the training set. This means the model has already seen the data on which the model will be evaluated and so it is possible, probable, that the model will produce high evaluation scores, which will likely translate to an overoptimistic estimation of the models performance when used in production.}
+
+\textcolor{blue}{Evaluating the performance of a model can be challenging and will vary depending on the task. For instance, accuracy may not always be the best measure of performance -- consider a medical setting in which sensitivity may be more important since a false negative may be life threatening where as a false positive may only require additional observation.}
+
+\textcolor{blue}{When comparing various models, it may be challenging to rank them on a single performance measure. \textcolor{green}{TODO: more.}}

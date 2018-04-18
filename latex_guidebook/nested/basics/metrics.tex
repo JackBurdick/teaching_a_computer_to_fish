@@ -1,8 +1,6 @@
-\emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
-
-
 \section{Metrics}
 
+\emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
 
 \subsection{Confusion Matrix}
 \textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion) XXXXXXXX}
@@ -51,6 +49,15 @@
 {\frac{TP+TN}{TP+TN+FP+FN}}
 \label{eq:accuracy}
 \end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textit{Misclassification rate}, (Eq.~\ref{eq:misclassification_def}): \textcolor{blue}{the ``opposite'' of accuracy}.
+
+\begin{equation}
+{\frac{FP+FN}{TP+TN+FP+FN}}
+\label{eq:misclassification_def}
+\end{equation}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item \textit{Sensitivity (recall, hit rate, true positive rate (TPR))}, (Eq.~\ref{eq:sensitivity}): the ratio of true positives that are correctly identified.

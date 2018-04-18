@@ -1,25 +1,27 @@
-\indexentry{reducible error}{51}
-\indexentry{Overfitting}{54}
-\indexentry{Underfitting}{54}
-\indexentry{Variance}{54}
-\indexentry{Bias}{54}
-\indexentry{Type I error}{56}
-\indexentry{Type II error}{56}
-\indexentry{lazy learner}{59}
-\indexentry{Voronoi tessellation}{61}
-\indexentry{Voronoi region}{61}
-\indexentry{odds ratio}{62}
-\indexentry{logit}{62}
-\indexentry{Support Vector Machine (SVM)}{63}
-\indexentry{ID3 algorithm}{64}
-\indexentry{J48}{64}
-\indexentry{weak learner}{65}
-\indexentry{strong learner}{65}
-\indexentry{bagging}{65}
-\indexentry{boostrap aggregating}{65}
-\indexentry{sampling with replacement|see{bagging}}{65}
-\indexentry{bootstrap samples}{65}
-\indexentry{subagging}{65}
-\indexentry{sampling without replacement|see{subagging}}{65}
-\indexentry{subspace sampling}{65}
-\indexentry{sigmoid}{70}
+\indexentry{lucky split}{23}
+\indexentry{reducible error}{24}
+\indexentry{Overfitting}{26}
+\indexentry{Underfitting}{26}
+\indexentry{Variance}{26}
+\indexentry{Bias}{27}
+\indexentry{peeking}{28}
+\indexentry{Type I error}{29}
+\indexentry{Type II error}{29}
+\indexentry{lazy learner}{33}
+\indexentry{Voronoi tessellation}{35}
+\indexentry{Voronoi region}{35}
+\indexentry{odds ratio}{36}
+\indexentry{logit}{36}
+\indexentry{Support Vector Machine (SVM)}{37}
+\indexentry{ID3 algorithm}{38}
+\indexentry{J48}{38}
+\indexentry{weak learner}{39}
+\indexentry{strong learner}{39}
+\indexentry{bagging}{39}
+\indexentry{boostrap aggregating}{39}
+\indexentry{sampling with replacement|see{bagging}}{39}
+\indexentry{bootstrap samples}{39}
+\indexentry{subagging}{39}
+\indexentry{sampling without replacement|see{subagging}}{39}
+\indexentry{subspace sampling}{40}
+\indexentry{sigmoid}{79}
