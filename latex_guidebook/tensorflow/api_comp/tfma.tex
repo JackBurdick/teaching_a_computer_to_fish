@@ -1,1 +1,41 @@
 \subsection{TFMA: TensorFlow Model Analysis}
+
+\subsubsection{Key Features}
+
+\paragraph{Sliced Metrics}
+
+\textcolor{blue}{Typically metrics are aggregated from the entire test dataset. TFMA allows for examining specific slices from the dataset which may indicate that certain instances or groups of instances aren't predicted as well as others.}
+
+\textcolor{green}{TODO: figure showing how this might look}
+
+\paragraph{Full-pass Metrics}
+
+\textcolor{blue}{Metrics that are typically computed and visualized in tensorflow (such as on tensorboard) are actually approximations computed on mini-batches and known as ``streaming metrics''.}
+
+\textcolor{blue}{TFMA performs a ``full pass'' on the evaluation dataset, leveraging \textcolor{yellow}{Apache Beam}. There are two main advantages to this approach: i) \textcolor{red}{more accurate calculation} and ii) scaling up to massive evaluation datasets.}
+
+\subsubsection{Implementation}
+
+\paragraph{Overview}
+
+\textcolor{blue}{An evaluation graph from the trainer needs to be exported and saved as a `SavedModel'. TFMA will then use this saved model to compute metrics and provide visualization tools to analyze the metrics.}
+
+\paragraph{Code}
+
+\textcolor{blue}{The overall process is outlined below and assumes a trained model and test set already exist. At a high level, the steps are i) Exporting the Evaluation Graph ii) Computing Metrics and iii) Visualize Metrics (in a notebook). }
+
+\subparagraph{Exporting the Evaluation Graph}
+
+\textcolor{green}{TODO: code sample}
+
+\subparagraph{Computing Metrics}
+
+\textcolor{green}{TODO: code sample}
+
+\subparagraph{Visualize Metrics (in a notebook)}
+
+\textcolor{green}{TODO: code sample}
+
+
+% Resources:
+% 1. https://medium.com/tensorflow/introducing-tensorflow-model-analysis-scaleable-sliced-and-full-pass-metrics-5cde7baf0b7b
