@@ -1,11 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Decision Trees
 \section{Decision Trees}
 
-\textcolor{blue}{\textcolor{green}{(TODO: revise this para!)} Decision trees make classification decisions based on a series of questions that separate the data into subsets. These questions are chained and result in a tree of questions where the leaves are considered pure i.e. they contain samples that belong to the same class.}
+\textcolor{blue}{\textcolor{green}{(TODO: revise this para!)} Decision trees make classification decisions based on a series of questions that separate the data into subsets. These questions are chained and result in a tree of questions/decisions where the leaves are considered pure i.e. they contain samples that belong to the same class.}
+
+\textcolor{blue}{Minimum Description Length (MDL) - describes how ``deep'' the tree is allowed to grow.}
 
 \textcolor{blue}{Importance of pruning -- Decision trees can be very deep and can easily lead to overfitting. To help prevent this situation, a limit is set for the maximal depth of a tree. }
 
-\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable.}
+\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable and may often resemble a program developed by hand.}
 
 \subsection{Criterion -- Maximizing Information Gain}
 
@@ -20,6 +22,9 @@
 \subsubsection{Classification Error}
 
 \subsubsection{ID3 Algorithm}
+
+\textcolor{blue}{ID3 or ``Iterative Dichotomizer 3''}
+
 
 \textcolor{blue}{top-down, recursive, depth-first partitioning of the dataset.}
 
@@ -45,7 +50,7 @@
 
 \subsection{Pruning}
 
-\textcolor{blue}{Can help address overfitting}
+\textcolor{blue}{Can help address overfitting. Pruning is an attempt to reduce the size of the tree while still maintaining a similar empirical error.}
 
 \subsubsection{Pre-pruning}
 
@@ -53,4 +58,8 @@
 
 \section{Random Forests}
 
+% see Breiman, 2001
 \textcolor{blue}{Ensemble method. Combine various decision trees, where some may be weak learners\index{weak learner} (\textcolor{green}{def}) and some may be strong learners\index{strong learner} (\textcolor{green}{def}). The final classification will be determined by majority vote from the number of trees.}
+
+
+

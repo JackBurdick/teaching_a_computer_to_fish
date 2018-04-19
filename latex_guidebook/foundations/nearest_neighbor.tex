@@ -1,8 +1,12 @@
 \section{Nearest Neighbors}
 
-\textcolor{blue}{KNN is a lazy learner\index{lazy learner} (a special case of instance-based nonparametric model (see \textcolor{red}{local ref?})): the model memorizes the training dataset rather than learn a discriminative function}
+\textcolor{blue}{KNN is a lazy learner\index{lazy learner} (a special case of instance-based nonparametric model (see \textcolor{red}{local ref?})): the model memorizes the training dataset rather than learn a discriminative function.}
+
+\textcolor{blue}{The intuition is that instances look alike must be alike.}
 
 \textcolor{blue}{Can be used for classification or regression. To adapt a KNN for regression, the approach is modified to return a prediction of the average target value from the nearest neighbors, rather than the majority label.}
+
+\textcolor{blue}{Due to the curse-of-dimensionality, In practice, nearest neighbors will usually be performed after a dimensionality reduction preprocessing step.}
 
 
 \subsection{Overview}
@@ -83,6 +87,8 @@
 \textcolor{blue}{Votes from neighbors that are close to the specified location are assigned a high weight, while distant neighbors are assigned a lower weight value.}
 
 \subsection{Considerations}
+
+% see page 225 of Understanding Machine Learning
 
 \subsubsection{Memory}
 
