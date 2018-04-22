@@ -1,15 +1,72 @@
 \section{Regression}
 
+
+
 \subsection{Simple Linear Regression}
 
+% C2 of Mastering ML
+\textcolor{blue}{Model a \emph{linear} relationship between a response variable and a feature representing an explanatory variable. The relationship is modeled with a linear surface called a hyperplane (A subspace that consists of one dimension less than the dimensionality of the space it occupies e.g. a line in a 2D plot, or a 2D plane in a 3D environment).}
+
+\textcolor{blue}{Simple linear regression consists of two total dimensions (a dimension for the response variable and another for the explanatory) -- the hyperplane, as explained above, has one dimension (line)}
+
 \begin{equation}
-{Y \approx \beta_0 + \beta_1 X}
+{Y \approx \beta_0 + \beta_1 x}
 \label{eq:slr_ex}
 \end{equation}
 
 \textcolor{blue}{$\approx$ can be read as ``\emph{is approximately modeled as}''. $Y$ is a quantitative response (output/prediction) and $X$ predictor variable(input/feature). $\beta_0$ and $\beta_1$ are two unknown constants representing the intercept and slope, respectively. These unknown values that determine the behavior of the model are known as the model \emph{parameters} or \emph{coefficients}}
 
+\subsubsection{OLS}
+
+\textcolor{blue}{{Ordinary Lease Squares (OLS)}\index{Ordinary Lease Squares (OLS)}, or {Linear Least Squares}\index{Linear Least Squares} is a method for estimating the parameters for a simple linear regression model.}
+
+\textcolor{blue}{Solving OLS for simple linear regression ($y=\beta_0 + \beta_1 x$).}
+
+\textcolor{blue}{First we'll solve for the slope $\beta_1$, where $\beta_1$ is can be found using Eq.\ref{eq:slr_ols_slope}.}
+
+\begin{equation}
+{\beta_1 =  \frac{cov(x,y)}{var(x)}}
+\label{eq:slr_ols_slope}
+\end{equation}
+
+\textcolor{blue}{Variance (Eq.\ref{eq:variance_def}) is the measure of how far the set of values are spread apart -- if all the numbers in a set were equal, their variance would be zero.}
+
+\begin{equation}
+{var(x) = \frac{\sum_{i=1}^{n}(x_i - \hat{x})^2}{n-1}}
+\label{eq:variance_def}
+\end{equation}
+
+
+\textcolor{blue}{Covariance (Eq.\ref{eq:covariance_def}) is the measure of how much two variable change together -- if two variables increase together, their covariance is positive}
+
+\begin{equation}
+{cov(x) = \frac{\sum_{i=1}^{n}(x_i - \hat{x})(y_i - \hat{y})}{n-1}}
+\label{eq:covariance_def}
+\end{equation}
+
+\textcolor{blue}{After solving for $\beta_1$, $\beta_0$ can be found by rearranging the original equation and \textcolor{red}{substituting in the means of $x$ and $y$}($y=\beta_0 + \beta_1 X$) to become Eq.\ref{eq:slr_ols_intercept}}
+
+\begin{equation}
+{\beta_0 =  \bar{y} - \beta_1 \bar{x}}
+\label{eq:slr_ols_intercept}
+\end{equation}
+
+\subsubsection{Cost}
+
+\textcolor{blue}{Cost or loss function (See \textcolor{red}{local ref?}) is used to define and quantitatively measure the error of the model -- the differences between the predicted and ground truth values. The differences between the training is called the residuals\index{residuals} or training errors where as the differences observed between the test predictions and ground truths are called the prediction or test errors.}
+
+\textcolor{blue}{A common measure of the models fitness may be the {residual sum of squares (RSS)}\index{residual sum of squares (RSS)} (Eq.\ref{eq:rss_def}, where $y_i$ is the observed value and $f(x_i)$ is the predicted value)}
+
+\begin{equation}
+{\sum_{i=1}^{n}{(y_i - f(x_i))^2}}
+\label{eq:rss_def}
+\end{equation}
+
 % see p62 of ISL for more
+
+\subsubsection{Evaluation}
+
+\textcolor{blue}{Several methods exist for measuring the models predictive capability (see \textcolor{red}{local ref?} for more details.)}
 
 \subsection{Multiple Linear Regression}
 

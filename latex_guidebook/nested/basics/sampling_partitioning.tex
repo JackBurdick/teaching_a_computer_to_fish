@@ -4,9 +4,9 @@
 
 \subsection{Types of Splits}
 
-\textcolor{blue}{Training, validation, test}
+\textcolor{blue}{A learning method is trained on a collection of examples called the ``training set''. The performance of the learning method is then evaluated on another collection of examples known as the ``test set''. It is important to ensure that none of the instances in the test set are included in the training set -- a point that will be mentioned many times throughout this test. If the test set were to include examples from the training set, evaluating the whether the learning method has memorized the training set or generalizes well will be difficult.}
 
-\textcolor{blue}{The validation set is typcially used to help avoid overfitting to the training data}
+\textcolor{blue}{An additional set, known as the validation is also used. The validation set is used to tune the hyperparameters of the learning algorithm and help prevent overfitting to the training data.}
 
 \textcolor{green}{TODO: include figure showing when to save the best parameters}
 
@@ -16,9 +16,11 @@
 
 \textcolor{blue}{{lucky split}\index{lucky split} is used to describe an instance in which, by chance, the test set contains easily predicted instances and the training set includes difficult to predict instances.}
 
+\textcolor{blue}{Typically the performance of a machine learning algorithm improves with the number of training instances. However, quality is superior to quantity, in that a lot of ``bad'' data is worse than a smaller amount of ``good'' data -- in this sense, machine learning algorithms follow the ``garbage in, garbage out''.}
+
 \subsection{k-Fold Cross Validation}
 
-
+\textcolor{blue}{cross validation is a method used to train across the entire training dataset without holding out an explicit validation set. The training data is partitioned, into $k$ ``folds'', and the algorithm is trained on all but one of these partitions and evaluated on the remaining partition. The partitions are then rotated such that each fold/partition is included in the training and evaluation of the algorithm. After sufficient training, (as defined by the individual), the model is then evaluated on the test set.}
 
 \subsection{Sampling}
 

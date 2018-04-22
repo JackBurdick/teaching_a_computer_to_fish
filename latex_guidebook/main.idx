@@ -1,28 +1,33 @@
-\indexentry{lucky split}{27}
+\indexentry{lucky split}{28}
 \indexentry{reducible error}{28}
-\indexentry{Overfitting}{30}
-\indexentry{Underfitting}{31}
-\indexentry{Variance}{31}
-\indexentry{Bias}{31}
-\indexentry{peeking}{33}
-\indexentry{Type I error}{34}
-\indexentry{Type II error}{34}
-\indexentry{lazy learner}{37}
-\indexentry{Voronoi tessellation}{39}
-\indexentry{Voronoi region}{39}
-\indexentry{odds ratio}{40}
-\indexentry{logit}{40}
-\indexentry{Support Vector Machine (SVM)}{41}
-\indexentry{ID3 algorithm}{42}
-\indexentry{J48}{42}
-\indexentry{weak learner}{43}
-\indexentry{strong learner}{43}
-\indexentry{bagging}{43}
-\indexentry{boostrap aggregating}{43}
-\indexentry{sampling with replacement|see{bagging}}{44}
-\indexentry{bootstrap samples}{44}
-\indexentry{subagging}{44}
-\indexentry{sampling without replacement|see{subagging}}{44}
-\indexentry{subspace sampling}{44}
-\indexentry{universal approximators}{45}
-\indexentry{sigmoid}{85}
+\indexentry{Overfitting}{31}
+\indexentry{Underfitting}{32}
+\indexentry{Variance}{32}
+\indexentry{Bias}{32}
+\indexentry{peeking}{34}
+\indexentry{Type I error}{35}
+\indexentry{Type II error}{35}
+\indexentry{Pearson's R}{37}
+\indexentry{Ordinary Lease Squares (OLS)}{39}
+\indexentry{Linear Least Squares}{39}
+\indexentry{residuals}{40}
+\indexentry{residual sum of squares (RSS)}{40}
+\indexentry{lazy learner}{41}
+\indexentry{Voronoi tessellation}{42}
+\indexentry{Voronoi region}{42}
+\indexentry{odds ratio}{44}
+\indexentry{logit}{44}
+\indexentry{Support Vector Machine (SVM)}{44}
+\indexentry{ID3 algorithm}{46}
+\indexentry{J48}{46}
+\indexentry{weak learner}{46}
+\indexentry{strong learner}{46}
+\indexentry{bagging}{47}
+\indexentry{boostrap aggregating}{47}
+\indexentry{sampling with replacement|see{bagging}}{47}
+\indexentry{bootstrap samples}{47}
+\indexentry{subagging}{47}
+\indexentry{sampling without replacement|see{subagging}}{47}
+\indexentry{subspace sampling}{47}
+\indexentry{universal approximators}{48}
+\indexentry{sigmoid}{87}

@@ -29,9 +29,11 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \section{Some Terms}
 
-\emph{input variable(s)} -- predictors, independent variables, features, or simply variables.
+\emph{input variable(s)} -- predictors, independent variables, features, regressors, controlled variables, exposure variables or simply variables.
+ 
+\emph{output variable(s)} -- response or dependent variable. May also be known as regressands, criterion variables, measured variables, responding variables, explained variables, outcome variables, experimental variables, labels.
 
-\emph{output variable(s)} -- response or dependent variable
+\textcolor{blue}{Both input and output variables may take on continuous or discrete values.}
 
 \emph{relationship} $Y = f(x) + \epsilon$ \textcolor{blue}{estimate $f$. prediction and inference}.
 
@@ -46,23 +48,37 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \subsection{Supervised}
 
-\textcolor{blue}{observe input variables with corresponding output values. Classification \textcolor{red}{ref} and regression \textcolor{red}{ref} are subcategories of supervised learning}
+\textcolor{blue}{observe input variables with corresponding output values. A program that predicts an output for a in input by learning from pairs of labeled inputs and outputs. Classification \textcolor{red}{ref} and regression \textcolor{red}{ref} are subcategories of supervised learning}
 
 \subsection{Unsupervised}
 
-\textcolor{blue}{observe input variables without corresponding output values.}
+\textcolor{blue}{observe input variables without corresponding output values and attempts to discover patterns in the data.}
 
+% p14 of mastering ml agorithms
+\textcolor{blue}{There is no error signal to measure, rather, performance metrics report some attribute of structure discovered in the data, such as the distances within and between clusters.}
+ 
 % clustering
 \subsubsection{Clustering}
 
-\textcolor{blue}{Finding sub groups. Clustering is sometimes referred to as ``unsupervised classification''}
+\textcolor{blue}{Finding sub groups where observations are more similar to eachother based on some similarity measure. Clustering is sometimes referred to as ``unsupervised classification'' and is often used to explore a dataset.}
+
+\textcolor{blue}{An example of clustering may be to group a collection of documents into categories, or songs into genres.}
 
 % principal components
 \subsubsection{Dimensionality Reduction}
 
 \textcolor{blue}{where the goal is to reduce the dimensionality of the data while retaining as much as the relevant information as possible}
 
+\textcolor{blue}{A high number of features may be computationally costly. Ability to generalize may be reduced if some of the features capture noise or are irrelevant to the underlying relationship. The goal could be to find the features that account for the greatest changes in the response variable}
+
+
+\subsection{Semi-supervised Learning}
+
+\textcolor{blue}{`semi-supervised learning', another type of learning, makes use of both supervised and unsupervised data.}
+
 \subsection{Reinforcement}
+
+\textcolor{blue}{Reinforcement learning does not learn from labeled pairs of inputs and outputs, rather it learns from `feedback' from decisions that are not explicitly corrected.}
 
 \textcolor{blue}{Goal -- develop an \emph{agent} that improves it's performance based on interactions with an \emph{environment} based on a \emph{reward}}
 
@@ -72,7 +88,7 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \subsubsection{Regression} -- Also called regression analysis \textcolor{red}{local ref?} predicting a continuous or quantitative output value. For example attempting to find a relationship between a given predictor/explainatory variables (age, job title, zip code) and a continuous response (an individuals outcome).
 
-\subsubsection{Classification} -- predicting categorical or qualitative output value (such as a non-numerical value). \textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
+\subsubsection{Classification} -- predicting categorical (discrete) or qualitative output value (such as a non-numerical value). \textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
 
 % page 94 of AGtext
 One-versus-all \emph{OvA} (also \emph{one-versus-rest}) -- 
@@ -116,7 +132,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsection{Overfitting}
 
-\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance}
+\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
 
 \textcolor{blue}{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
 
@@ -133,12 +149,20 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \section{Bias Variance Trade-off}
 
+\textcolor{blue}{Two fundamental causes of prediction error in a model -- the bias and the variance.}
+
 \subsection{Variance}
 \textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
 
+\textcolor{blue}{A model with high variance may be described as highly flexible and will likely overfit the data.}
+
 
 \subsection{Bias}
-\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem} 
+\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
+
+\textcolor{blue}{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
+
+
 % not word-for-word, but example adapted from p35 of ISL
 \textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
 
@@ -147,6 +171,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 % TODO: see page 34 of ISL for eq and explaination here
 
 \textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
+
 
 % see page 36 of ISL
 \textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
