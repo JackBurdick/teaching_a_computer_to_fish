@@ -1,33 +1,34 @@
-\indexentry{lucky split}{28}
-\indexentry{reducible error}{28}
-\indexentry{Overfitting}{31}
-\indexentry{Underfitting}{32}
-\indexentry{Variance}{32}
-\indexentry{Bias}{32}
-\indexentry{peeking}{34}
-\indexentry{Type I error}{35}
-\indexentry{Type II error}{35}
-\indexentry{Pearson's R}{37}
-\indexentry{Ordinary Lease Squares (OLS)}{39}
-\indexentry{Linear Least Squares}{39}
-\indexentry{residuals}{40}
-\indexentry{residual sum of squares (RSS)}{40}
-\indexentry{lazy learner}{41}
-\indexentry{Voronoi tessellation}{42}
-\indexentry{Voronoi region}{42}
-\indexentry{odds ratio}{44}
-\indexentry{logit}{44}
-\indexentry{Support Vector Machine (SVM)}{44}
-\indexentry{ID3 algorithm}{46}
-\indexentry{J48}{46}
-\indexentry{weak learner}{46}
-\indexentry{strong learner}{46}
-\indexentry{bagging}{47}
-\indexentry{boostrap aggregating}{47}
-\indexentry{sampling with replacement|see{bagging}}{47}
-\indexentry{bootstrap samples}{47}
-\indexentry{subagging}{47}
-\indexentry{sampling without replacement|see{subagging}}{47}
-\indexentry{subspace sampling}{47}
-\indexentry{universal approximators}{48}
-\indexentry{sigmoid}{87}
+\indexentry{lucky split}{14}
+\indexentry{reducible error}{14}
+\indexentry{Overfitting}{17}
+\indexentry{Underfitting}{17}
+\indexentry{Variance}{18}
+\indexentry{Bias}{18}
+\indexentry{peeking}{21}
+\indexentry{Type I error}{22}
+\indexentry{Type II error}{22}
+\indexentry{Pearson's R}{25}
+\indexentry{Voronoi tessellation}{26}
+\indexentry{Voronoi region}{26}
+\indexentry{Ordinary Lease Squares (OLS)}{27}
+\indexentry{Linear Least Squares}{27}
+\indexentry{residuals}{28}
+\indexentry{residual sum of squares (RSS)}{28}
+\indexentry{lazy learner}{29}
+\indexentry{odds ratio}{31}
+\indexentry{logit}{31}
+\indexentry{Support Vector Machine (SVM)}{32}
+\indexentry{independent and identically distributed (i.i.d)}{33}
+\indexentry{ID3 algorithm}{34}
+\indexentry{J48}{34}
+\indexentry{weak learner}{34}
+\indexentry{strong learner}{34}
+\indexentry{universal approximators}{35}
+\indexentry{bagging}{37}
+\indexentry{boostrap aggregating}{37}
+\indexentry{sampling with replacement|see{bagging}}{37}
+\indexentry{bootstrap samples}{37}
+\indexentry{subagging}{37}
+\indexentry{sampling without replacement|see{subagging}}{37}
+\indexentry{subspace sampling}{38}
+\indexentry{sigmoid}{77}

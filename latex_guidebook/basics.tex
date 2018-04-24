@@ -98,7 +98,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{Binary classification can be extended to multi-class classification via the OvR method.}
 
-\subsubsection{Bayes Classifier}
+%\subsubsection{Bayes Classifier}
 
 \section{Training}
 
@@ -184,23 +184,74 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{parametric}
 
-\textcolor{blue}{parametric models are models that learn a fixed number of parameters that able to classify new data points without requiring the original dataset anymore. First, a function form is selected (linear, polynomial, etc.), then the coefficients for the function are learned form the training data.}
+\textcolor{blue}{parametric models are models that learn a fixed number of parameters, independent from the number of training instances, that able to classify new data points without requiring the original dataset anymore. First, a function form is selected (linear, polynomial, etc.), then the coefficients for the function are learned form the training data.}
 	
 \textcolor{blue}{Examples of parametric models may be simple artificial neural networks, naive bayes, logistic regression, etc.}
 
 \subsubsection{nonparametric}
 
 %% unsure about this! 
-\textcolor{red}{Nonparametric models are models were the number of parameters are not fixed, they grow with the training data}
+\textcolor{red}{Nonparametric models are not models without parameters, rather they are models were the number of parameters are not fixed, they may grow with the number of training instances}
 
 \textcolor{blue}{An Example of a nonparametric model may be k-Nearest neighbors -- where the model does not assume anything about the form of the mapping function and makes predictions based on the k most similar training instances.}
 
 \textcolor{blue}{A disadvantage to this type of approach is that the computational complexity for classifying new samples grow linearly with the number of samples in the training set.}
 
+\textcolor{blue}{May be useful when little is known about the underlying relationship in the data and there is an abundance of data.}
+
+\subsection{Eager vs Lazy Learners}
+
+\textcolor{green}{TODO: Eager vs Lazy overview}
+\textcolor{blue}{Training an eager learner is often more computationally expensive, but typically prediction with the resulting model is inexpensive.}
+
+\subsubsection{Eager Learners}
+
+\textcolor{blue}{Eager learners estimate the parameters of a model that generalize to a training set}
+
+\subsubsection{Lazy Learners}
+
+\textcolor{blue}{Also known as Instance-based Learners}
+
+\textcolor{blue}{Lazy learners store the training dataset with little to no processing.}
+
+
+\subsection{Generative vs Discriminative Models}
+
+\textcolor{green}{TODO: Generative vs Discriminative models overview}
+%\textcolor{blue}{}
+
+\subsubsection{Generative Models}
+
+\textcolor{green}{TODO: Generative Models}
+
+\subsubsection{Discriminative Models}
+
+\textcolor{green}{TODO: Discriminative Models}
+
+\subsection{Strong vs Weak Learners}
+
+\textcolor{green}{TODO: Strong vs Weak learners (classifier, predictor, etc.) overview}
+%\textcolor{blue}{}
+
+\subsubsection{Strong Learners}
+
+\textcolor{green}{TODO: Strong Learners are models that are arbitrarily better than weak learners.}
+
+\subsubsection{Weak Learners}
+
+\textcolor{green}{TODO: Weak Learners are models (typically simple models) that perform only slightly better than random chance. }
+
+
 \section{Online Learning}
 
 % See p.246 of Understanding Machine learning
 \textcolor{blue}{difference to \textcolor{red}{PAC learning?}}
+
+\section{Ensemble Methods}
+
+\textcolor{green}{TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%% Evaluation
 \input{./nested/basics/evaluation}

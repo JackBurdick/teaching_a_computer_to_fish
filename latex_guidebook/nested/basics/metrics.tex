@@ -125,7 +125,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TODO: define harmonic mean somewhere
-\item \textit{F-1 Score}, (Eq.~\ref{eq:f1_metric}): \textcolor{blue}{F1 is the \textcolor{red}{harmonic mean} of precision and sensitivity XXXXXXXXXX}.
+\item \textit{F-1 Score}, (Eq.~\ref{eq:f1_metric}): \textcolor{blue}{F1 is the \textcolor{red}{harmonic mean} of precision and sensitivity XXXXXXXXXX. The F1 score will penalize classifiers more as the difference between the precision and sensitivity increases.}.
 
 \begin{equation}
 {\frac{2TP}{2TP+FP+FN}}
@@ -133,7 +133,7 @@
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is the XXXXXXXXXX}.
+\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is  an alternative to the F1 score for evaluating binary classifiers. MCC is useful even when the ratio of class in the data is severely imbalanced. the XXXXXXXXXX}.
 
 \begin{equation}
 {\frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}}
@@ -162,6 +162,31 @@
 \item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve.
 \end{itemize}
 
+\subsection{Regression Metrics}
+
+\textcolor{blue}{It is important to note that regression performance metrics must ignore the direction of the error, otherwise the positive and negative errors would cancel each other out and the overall score would appear artificially optimistic \textcolor{blue}{see local figure}. This is typically corrected for by either taking the absolute value or the square of the value. An important consideration will be how severely outliers should be penalized, as a squared component will result in a larger penalization than an absolute value.}
+
+\textcolor{green}{todo: Figure showing $\pm$errors and how direction is important}
+
+
+
+\begin{itemize}
+\item \textit{Mean Absolute Error (MAE)}, (Eq.~\ref{eq:mae_def}): \textcolor{blue}{the average of the absolute values of the errors of the predictions}.
+	
+\begin{equation}
+{MAE = \frac{1}{n}\sum_{i=0}^{n-1}|y_i - \hat{y}_i| }
+\label{eq:mae_def}
+\end{equation}
+	
+\item \textit{Mean Squared Error (MSE, or Mean Squared Deviation (MSD))}, (Eq.~\ref{eq:mse_def}): \textcolor{blue}{the average of the squared values of the errors of the predictions}.
+	
+\begin{equation}
+{MSE = \frac{1}{n}\sum_{i=0}^{n-1}(y_i - \hat{y}_i)^2}
+\label{eq:mse_def}
+\end{equation}
+	
+\end{itemize}
+
 
 \subsection{Additional Metrics}
 
@@ -181,11 +206,58 @@
 
 \textcolor{blue}{R-squared can spuriously increase when features are added}
 
-\subsubsection{Similarity Measures?}
+\subsubsection{Distance Metrics}
+
+\textcolor{blue}{There are four basic requirements for the distance metric:}
+
+\begin{itemize}
+	\item Non-negativity: the value must be greater or equal to 0
+	\item Identity: if the distance metric between $a$ and $b$ is zero, the two values must be at the same location
+	\item Symmetry: the distance metric from $a$ to $b$ must be the same as the distance metric from $b$ to $a$
+	\item Triangular inequality: metric($a$,$b$) $\le$ metric($a$,$c$) $+$ metric($b$,$c$)
+\end{itemize}
+
+\textcolor{blue}{When calculating the nearest neighbors the terms \textit{distance} and \textit{similarity} may be used interchangeably -- it is important to keep in mind that though they are the ``same'', they are different terms in that the lowest value for distance is ``best'' and the highest value for similarity is ``best''.}
+
+\textcolor{blue}{The default distance metric is the Euclidean distance}
+
+\textcolor{blue}{both the Euclidean and Manhattan distances are special cases of the Minkowski distance}
+
+% see p184 of FofMLforpred data analytics
+\textcolor{green}{TODO: more about the Minkowski distance def here}
+
+\textcolor{blue}{Minkowski-based Euclidean distance -- a straight line between two points (Eq~\ref{eq:euclidean_distance_def})}
+
+\begin{equation}
+{\sqrt{\sum_{i=1}^{m}{{(a[i] - b[i])}^2}}}
+\label{eq:euclidean_distance_def}
+\end{equation}
+
+
+\textcolor{blue}{Manhattan distance (Eq.~\ref{eq:manhattan_distance_def}) -- may also be called the taxi-cab distance, since it is similar to how a driver would have to drive from one point to another on a grid based road system like Manhattan.}
+
+\begin{equation}
+{\sum_{i=1}^{m}{abs(a[i] - b[i])}}
+\label{eq:manhattan_distance_def}
+\end{equation}
+
+\textcolor{blue}{When implementing a nearest neighbor using Euclidean distance, the feature space is partitioned into {Voronoi tessellation}\index{Voronoi tessellation}. New points are assigned to a {Voronoi region}\index{Voronoi region}.}
+
+% see p214 of FofMLforpred data analytics
+\textcolor{green}{TODO: More about other similarity measures}
+
+
+
+
+\subsubsection{Multi-label Classification}
+
+\textcolor{blue}{Images.}
 
 \textcolor{blue}{TODO: include additional metrics like JI, DC, others}
 
 \subsection{Choosing the "right" metrics}
 
 \textcolor{blue}{TODO: paras on choosing the right metrics -- need to consider balance, others}
+
+
 
