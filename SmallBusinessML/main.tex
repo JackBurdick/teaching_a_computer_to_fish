@@ -1,0 +1,80 @@
+\documentclass[12pt]{book} 
+
+% The document preamble 
+
+\usepackage{makeidx}
+
+% had to add --shell-escape to pdflex command
+\usepackage{markdown}
+%\usepackage[hashEnumerators,smartEllipses]{markdown}
+
+\usepackage{times} % Use PS times fonts 
+
+\usepackage{listings} % code examples
+\usepackage{xcolor} % textcolor
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
+
+% for encoded images
+%\usepackage{filecontents}
+%\newcommand{\generateimage}[2]{%
+%\immediate\write18{convert.cmd #1 > #2}}
+\usepackage{graphicx}	% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+
+\makeindex 
+
+
+
+
+% Details of the titlepage 
+\title{Machine Learning for Small Businesses} 
+\author{Jack Burdick} 
+\date{Last Update: \today} % Use the system date
+
+% for using paragraphs as a "subsubsubsection"
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\begin{document} 
+	
+\frontmatter
+
+\maketitle 
+
+\tableofcontents
+
+
+\mainmatter
+
+\part{Machine Learning}
+
+\include{machine_learning}
+
+
+\part{Use Cases}
+
+\include{use_cases}
+
+
+\part{Implementing}
+
+\include{implementing}
+
+\part{Conclusion}
+
+\include{conclusion}
+
+
+\backmatter 
+
+% TODO: glossary
+
+\printindex
+
+
+\end{document} 

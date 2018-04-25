@@ -1,0 +1,16 @@
+\contentsline {part}{I\hspace {1em}Machine Learning}{1}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}What is Machine Learning}{5}
+\contentsline {chapter}{\numberline {3}Background and Industry Jargon}{7}
+\contentsline {chapter}{\numberline {4}Types of Data}{9}
+\contentsline {chapter}{\numberline {5}How Data May Be Useful}{11}
+\contentsline {part}{II\hspace {1em}Use Cases}{13}
+\contentsline {chapter}{\numberline {6}I Have Data but Don't Yet See it's Utility}{15}
+\contentsline {chapter}{\numberline {7}I Don't Have Data but I'd Like to Start}{17}
+\contentsline {part}{III\hspace {1em}Implementing}{19}
+\contentsline {chapter}{\numberline {8}Getting Started}{21}
+\contentsline {chapter}{\numberline {9}Self Teaching}{23}
+\contentsline {section}{\numberline {9.1}Resources}{23}
+\contentsline {chapter}{\numberline {10}Hiring}{25}
+\contentsline {part}{IV\hspace {1em}Conclusion}{27}
+\contentsline {chapter}{\numberline {11}Putting it All Together}{29}
