@@ -18,9 +18,23 @@
 
 \subsection{Handling Categorical Data}
 
+
+
 \subsubsection{Encoding}
 
+\textcolor{blue}{It may seem intuitive to represent categorical data with an integer value. However, this may not always be best. Let's pretend we're representing United States with arbitrary integer values and we assign values alphabetically; Alabama: 0, Alaska: 1, Arizona: 2, Arkansas: 3, California: 4, ..., Wisconsin: 48, Wyoming: 49. So far so good. \textcolor{red}{However, these values indirectly imply a relationship (that may not actually exist)} -- and imply that some states are more similar to one another than others (for instance, this encoding seemingly indicates that Alabama as most related to Alaska.) }
+
+\textcolor{blue}{{one-hot encoding}\index{one-hot encoding} or one-of-k encoding\index{one-of-k encoding} is a method of encoding which represents each explanatory variable as a binary feature}
+
+\textcolor{blue}{one-hot encoding reduces the relationship}
+
+\textcolor{green}{TODO: show example of one hot encoding}
+
 \subsection{Feature Scaling, Normalization}
+
+\textcolor{blue}{Ensuring variables exist on a similar scale and variance is important. If one variable is orders of magnitude larger than others, the variable may dominate the learning algorithm and prevent influence from the other variables.}
+
+\textcolor{blue}{Additionally, some learning algorithms converge more slowly when the values are not standardized.}
 
 \subsubsection{Min-Max scaling (Normalization)}
 
@@ -43,6 +57,10 @@
 
 \textcolor{green}{TODO: create code sample - numpy, and sklearn methods}
 
+\paragraph{Robust Scaler}
+
+\textcolor{blue}{In order to reduce the effect of large outliers, a \textcolor{blue}{RobustScalar} may be used. Rather than subtract the mean and divide by the standard deviation, the median is subtracted and then the data is divided by the {interquartile range}\index{interquartile range} -- \textcolor{red}{see local ref?}}
+
 
 \subsection{Others}
 
@@ -51,3 +69,4 @@
 \subsubsection{Outliers}
 
 \subsubsection{Discretization and Binning}
+

@@ -1,34 +1,40 @@
-\indexentry{lucky split}{14}
-\indexentry{reducible error}{14}
-\indexentry{Overfitting}{17}
-\indexentry{Underfitting}{17}
-\indexentry{Variance}{18}
-\indexentry{Bias}{18}
-\indexentry{peeking}{21}
-\indexentry{Type I error}{22}
-\indexentry{Type II error}{22}
-\indexentry{Pearson's R}{25}
-\indexentry{Voronoi tessellation}{26}
-\indexentry{Voronoi region}{26}
-\indexentry{Ordinary Lease Squares (OLS)}{27}
-\indexentry{Linear Least Squares}{27}
-\indexentry{residuals}{28}
-\indexentry{residual sum of squares (RSS)}{28}
-\indexentry{lazy learner}{29}
-\indexentry{odds ratio}{31}
-\indexentry{logit}{31}
-\indexentry{Support Vector Machine (SVM)}{32}
-\indexentry{independent and identically distributed (i.i.d)}{33}
-\indexentry{ID3 algorithm}{34}
-\indexentry{J48}{34}
-\indexentry{weak learner}{34}
-\indexentry{strong learner}{34}
-\indexentry{universal approximators}{35}
-\indexentry{bagging}{37}
-\indexentry{boostrap aggregating}{37}
-\indexentry{sampling with replacement|see{bagging}}{37}
-\indexentry{bootstrap samples}{37}
-\indexentry{subagging}{37}
-\indexentry{sampling without replacement|see{subagging}}{37}
-\indexentry{subspace sampling}{38}
-\indexentry{sigmoid}{77}
+\indexentry{one-hot encoding}{12}
+\indexentry{one-of-k encoding}{12}
+\indexentry{interquartile range}{13}
+\indexentry{corpus}{14}
+\indexentry{vocabulary}{14}
+\indexentry{bag-of-words}{15}
+\indexentry{lucky split}{16}
+\indexentry{reducible error}{17}
+\indexentry{Overfitting}{19}
+\indexentry{Underfitting}{20}
+\indexentry{Variance}{20}
+\indexentry{Bias}{20}
+\indexentry{peeking}{23}
+\indexentry{Type I error}{24}
+\indexentry{Type II error}{24}
+\indexentry{Pearson's R}{28}
+\indexentry{Voronoi tessellation}{29}
+\indexentry{Voronoi region}{29}
+\indexentry{Ordinary Lease Squares (OLS)}{31}
+\indexentry{Linear Least Squares}{31}
+\indexentry{residuals}{32}
+\indexentry{residual sum of squares (RSS)}{32}
+\indexentry{lazy learner}{33}
+\indexentry{odds ratio}{35}
+\indexentry{logit}{35}
+\indexentry{Support Vector Machine (SVM)}{36}
+\indexentry{independent and identically distributed (i.i.d)}{37}
+\indexentry{ID3 algorithm}{38}
+\indexentry{J48}{38}
+\indexentry{weak learner}{38}
+\indexentry{strong learner}{38}
+\indexentry{universal approximators}{40}
+\indexentry{bagging}{43}
+\indexentry{boostrap aggregating}{43}
+\indexentry{sampling with replacement|see{bagging}}{43}
+\indexentry{bootstrap samples}{43}
+\indexentry{subagging}{43}
+\indexentry{sampling without replacement|see{subagging}}{43}
+\indexentry{subspace sampling}{44}
+\indexentry{sigmoid}{83}
