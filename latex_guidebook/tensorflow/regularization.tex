@@ -1,11 +1,37 @@
 \subsection{Regularization}
 
+\textcolor{blue}{Collection of techniques used to help prevent overfitting. Typically regularization penalizes complexity of a model.}
+
+\textcolor{blue}{Helps prevent the model from memorizing noise in the training data.}
+
+
 \subsubsection{Why Regularization}
 
+\textcolor{blue}{Overfitting --- too complex --- Occam's razor --- hypothesis with the fewest assumptions is best}
+
+
 \subsubsection{Types of Regularization}
+
+\textcolor{blue}{ L1 regularization (Lasso) L2 (Ridge).}
+
+\textcolor{blue}{key difference is the penalty term}
+
 
 \subsubsection{Regularization Methods and Implementations}
 
 \paragraph{L2 Regularization}
 
+\textcolor{blue}{Ridge regression is also known as {Tikhonov regularization}\index{Tikhonov regularization}}
+
+\textcolor{blue}{penalizes model parameters that become too large. Will force most of the parameters to be small, but still non-zero}
+
+% p91(71) of mastering ML w SKL says "when lambda is equal to zero, ridge regression is equal to linear regression"
+
 \paragraph{L1 Regularization}
+
+\textcolor{blue}{LASSO (Least Absolute Shrinkage and Selection Operator) --- produces sparse parameters. This will force coefficients to zero and cause the model to depend on a small subset of the features.}
+
+
+\paragraph{Elastic Net Regularization}
+
+\textcolor{blue}{Linearly combines the $L^1$ and $L^2$ penalties used by both LASSO and ridge regression.}

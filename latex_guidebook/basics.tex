@@ -89,9 +89,42 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \subsection{Classification vs Regression}
 
-\subsubsection{Regression} -- Also called regression analysis \textcolor{red}{local ref?} predicting a continuous or quantitative output value. For example attempting to find a relationship between a given predictor/explainatory variables (age, job title, zip code) and a continuous response (an individuals outcome).
+\subsubsection{Regression} 
 
-\subsubsection{Classification} -- predicting categorical (discrete) or qualitative output value (such as a non-numerical value). \textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
+Regression, also called regression analysis \textcolor{red}{local ref?} involves predicting a continuous or quantitative output value. For example attempting to find a relationship between a given predictor/explainatory variables (age, job title, zip code) and a continuous response (an individuals outcome).
+
+\subsubsection{Classification} 
+
+Classification involves predicting categorical (discrete) or qualitative output value (such as a non-numerical value). 
+
+\textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
+
+\subsection{Multi-label classification}
+\textcolor{blue}{TODO: {multi-label classification}\index{multi-label classification} --- where a classifier assigns multiple labels to each instance}
+
+
+\subsubsection{Approaches: Problem transformation}
+
+\textcolor{blue}{There are two main approaches to multi-label classification}
+
+\textcolor{blue}{{Problem transformation}\index{Problem transformation} modify the original multi-label problem to a set of single-label classification problems.}
+
+\paragraph{Unique set/combination of labels}
+
+\textcolor{green}{TODO: table and example.}
+
+\textcolor{blue}{Two main concerns with this methodology: i) increasing the number of classes is impractical and will often have very few instances and ii) the classifier can only predict combinations that were seen in the training data.}
+
+\paragraph{Many Binary Classifiers}
+
+% p124[112] of Mastering ML with SKL
+\textcolor{blue}{Train a classifier for each label in the training set. The final prediction is the combination of all the predictions from the binary classifiers.}
+
+\textcolor{blue}{The main concern with this approach is that the relationships between labels is ignored.}
+
+\subsubsection{Evaluating Multi-label Classification}
+
+\textcolor{blue}{see \textcolor{red}{local ref}.}
 
 % page 94 of AGtext
 One-versus-all \emph{OvA} (also \emph{one-versus-rest}) -- 
@@ -131,7 +164,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{$\hat{y_i}$ is the predicted classification label for the $i$th observation using our predictor/model $\hat{f}$ and $y_i$ is the ground truth label}
 
-\section{(Over|Under)fitting}
+\section{(Over$|$Under)fitting}
 
 \subsection{Overfitting}
 
@@ -179,7 +212,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 % see page 36 of ISL
 \textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
 
-\textcolor{blue}{It should be noted that in a real world example, it maynot be possible to explicitly calculate the test error, bias, or variance.}
+\textcolor{blue}{It should be noted that in a real world example, it may not be possible to explicitly calculate the test error, bias, or variance.}
 
 \textcolor{green}{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}
 
@@ -254,7 +287,26 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{green}{TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
 
+\section{Hyper-Parameters}
 
+\subsection{Hyper-Parameter Optimization}
+
+\subsubsection{Grid Search}
+
+\textcolor{blue}{{Grid search}\index{Grid search} Exhaustive search that trains+evaluates a model for each combination of specified hyperparameter configurations and combinations defined by a Cartesian product of the sets of possible values for each hyperparameter.}
+
+\subsubsection{Randomized Search}
+
+\textcolor{blue}{{Randomized search}\index{Randomized search} }
+
+\textcolor{green}{TODO: figure demonstrating difference between grid and randomized search}
+
+\subsubsection{Other Methods}
+
+\textcolor{blue}{See \textcolor{red}{local ref? --- advanced methods and research}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Optimizers
+\input{./nested/basics/optimizers}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Evaluation
 \input{./nested/basics/evaluation}

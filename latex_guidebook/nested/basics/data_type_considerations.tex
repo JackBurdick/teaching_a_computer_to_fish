@@ -25,6 +25,14 @@
 
 \textcolor{green}{TODO: Pre-processing}
 
+\textcolor{blue}{converting all letters to lowercase}
+
+\textcolor{blue}{stemming and lemmatization --- Condensing word forms (derived and inflected) into a single feature. These methods are used to reduce the dimensionality of the features space.}
+
+\paragraph{Stop Word Filtering}
+
+\textcolor{blue}{todo: removing words that are common throughout the language as well as potentially to most of the documents in a corpus. Typically stop words do not convey meaning through their meaning, but rather through their grammatical meaning.}
+
 \paragraph{Tokenization}
 
 \textcolor{blue}{Tokenization is the process of splitting and grouping characters together into meaningful sequences. \textcolor{red}{If a document is tokenized, the result is a set of tokens (words).} Tokens are not limited to words however, and may also be shorter sequences like punctuation characters and affixes.}
@@ -33,30 +41,49 @@
 
 \paragraph{Lemmatization}
 
-\textcolor{green}{TODO: Lemmatization}
+\textcolor{green}{TODO: Lemmatization. converting words into their base form --- determining the lemma (morphological root) of an inflected word.}
 
 \paragraph{Stemming}
 
-\textcolor{green}{TODO: Stemming}
+\textcolor{green}{TODO: Stemming. There exist many stemming algorithms. Stemming removes all character patterns that appear to be affixes to a word. Note: the resulting word may or may not be a valid word e.g. \textcolor{red}{XXXXXXXX}.}
+
+\subparagraph{Porter Stemming}
 
 \subsubsection{Encoding}
 
-\paragraph{Bag-of-Words}
+\paragraph{Encoding Methods}
+
+\subparagraph{Bag-of-Words}
 
 \textcolor{blue}{{bag-of-words}\index{bag-of-words} similar to one-hot-encoding, it encodes words that appear in text as one feature for each word of interest. Does not encode any other information like syntax, grammar, or order of the words.}
 
 \textcolor{blue}{Bag-of-Words encodes the corpus's vocabulary as a feature vector to represent each document. The intuition for using bag-of-words is that documents that contain similar words are likely to be similar to one another.}
 
 
-\paragraph{glove}
+\paragraph{tf-idf}
+
+\textcolor{green}{TODO: tf-idf\index{tf-idf} (Eq.\ref{eq:tf_idf_def}) Inverse Document Frequency is a measure of how common/rare a term is in a corpus --- explain importance}
+
+\begin{equation}
+{log\frac{N}{1|XXXXXXXXTODOXXXXXXXXXX|}}
+\label{eq:tf_idf_def}
+\end{equation}
+
+\subsubsection{Embedding}
+
+\subparagraph{glove}
 
 \textcolor{green}{TODO: glove}
 
-\paragraph{word2vec}
+\subparagraph{word2vec}
 
 \textcolor{green}{TODO: word2vec}
 
+\subsubsection{Other Notes}
+
+% 'hashing trick' --- see p59 of Mastering ML with SKL
 
 \subsection{Audio}
+
 
 \textcolor{green}{TODO: Audio}

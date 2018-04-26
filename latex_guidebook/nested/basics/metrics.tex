@@ -3,7 +3,7 @@
 \emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
 
 \subsection{Confusion Matrix}
-\textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion) XXXXXXXX}
+\textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion, or contingency table) XXXXXXXX}
 
 %% Confusion matrix
 \begin{table}
@@ -43,7 +43,7 @@
 \begin{itemize}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Accuracy (ACC)}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions.
+\item \textit{Accuracy (ACC)}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions. \textcolor{blue}{this is typically the ``go to metric'', however, accuracy may give a false sense of XXXXX and is particularly not very informative if dealing with skewed (unbalanced data) --- see example in \textcolor{red}{local ref?}}
 
 \begin{equation}
 {\frac{TP+TN}{TP+TN+FP+FN}}
@@ -254,6 +254,15 @@
 \textcolor{blue}{Images.}
 
 \textcolor{blue}{TODO: include additional metrics like JI, DC, others}
+
+\textcolor{blue}{Jaccard Similarity}
+
+% p125[113] of Mastering ML with SKL
+\textcolor{blue}{Hamming Loss}
+
+
+
+
 
 \subsection{Choosing the "right" metrics}
 

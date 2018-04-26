@@ -1,10 +1,10 @@
 \begin{theindex}
 
   \item bag-of-words, 15
-  \item bagging, 43
-  \item Bias, 20
-  \item boostrap aggregating, 43
-  \item bootstrap samples, 43
+  \item bagging, 47
+  \item Bias, 21
+  \item boostrap aggregating, 47
+  \item bootstrap samples, 47
 
   \indexspace
 
@@ -12,69 +12,82 @@
 
   \indexspace
 
-  \item ID3 algorithm, 38
-  \item independent and identically distributed (i.i.d), 37
+  \item discrimination threshold, 36
+
+  \indexspace
+
+  \item generalized linear model, 33
+  \item Grid search, 24
+
+  \indexspace
+
+  \item ID3 algorithm, 40
+  \item independent and identically distributed (i.i.d), 39
   \item interquartile range, 13
 
   \indexspace
 
-  \item J48, 38
+  \item J48, 40
 
   \indexspace
 
-  \item lazy learner, 33
-  \item Linear Least Squares, 31
+  \item lazy learner, 36
+  \item Linear Least Squares, 34
   \item logit, 35
-  \item lucky split, 16
+  \item lucky split, 17
 
   \indexspace
 
   \item odds ratio, 35
   \item one-hot encoding, 12
   \item one-of-k encoding, 12
-  \item Ordinary Lease Squares (OLS), 31
-  \item Overfitting, 19
+  \item Ordinary Lease Squares (OLS), 34
+  \item Overfitting, 20
 
   \indexspace
 
-  \item Pearson's R, 28
-  \item peeking, 23
+  \item Pearson's R, 30
+  \item peeking, 26
 
   \indexspace
 
-  \item reducible error, 17
-  \item residual sum of squares (RSS), 32
-  \item residuals, 32
+  \item Randomized search, 24
+  \item reducible error, 18
+  \item residual sum of squares (RSS), 34
+  \item residuals, 34
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{43}
-  \item sampling without replacement, \see{subagging}{43}
-  \item sigmoid, 83
-  \item strong learner, 38
-  \item subagging, 43
-  \item subspace sampling, 44
-  \item Support Vector Machine (SVM), 36
+  \item sampling with replacement, \see{bagging}{47}
+  \item sampling without replacement, \see{subagging}{47}
+  \item sigmoid, 88
+  \item sparse vectors, 13
+  \item strong learner, 41
+  \item subagging, 47
+  \item subspace sampling, 48
+  \item Support Vector Machine (SVM), 38
 
   \indexspace
 
-  \item Type I error, 24
-  \item Type II error, 24
+  \item tf-idf, 16
+  \item Tikhonov regularization, 87
+  \item Type I error, 27
+  \item Type II error, 27
 
   \indexspace
 
-  \item Underfitting, 20
-  \item universal approximators, 40
+  \item Underfitting, 21
+  \item universal approximators, 44
 
   \indexspace
 
-  \item Variance, 20
+  \item Variance, 21
   \item vocabulary, 14
-  \item Voronoi region, 29
-  \item Voronoi tessellation, 29
+  \item Voronoi region, 31
+  \item Voronoi tessellation, 31
 
   \indexspace
 
-  \item weak learner, 38
+  \item weak learner, 41
 
 \end{theindex}

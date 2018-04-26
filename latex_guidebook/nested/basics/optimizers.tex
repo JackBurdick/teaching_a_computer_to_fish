@@ -1,0 +1,36 @@
+\section{Estimating Model Parameters}
+
+\subsection{Optimizers}
+
+\textcolor{blue}{Estimate the values of the model's parameters that minimize the value of the cost function}
+
+\subsubsection{Gradient Descent}
+
+\textcolor{blue}{Gradient Descent --- overview --- optimization algorithm that can be used to estimate the local minimum of a function}
+
+\textcolor{blue}{Iteratively updates the model parameters by calculating the partial derivatives of the cost function at each step during training}
+
+\textcolor{blue}{Gradient descent is only guaranteed to find the local minimum of the cost function.}
+
+
+\paragraph{Batch Gradient Descent}
+
+\textcolor{blue}{batch gradient descent --- taking a step (update the weights) opposite (down) the gradient calculated from the entire training set}
+
+\textcolor{blue}{Batch gradient descent is deterministic --- will produce the same paramter values if the same dataset is used multiple times.}
+
+
+\paragraph{Stochastic Gradient Descent}
+
+\textcolor{blue}{Stochastic Gradient Descent (sometimes called iterative or on-line gradient descent) --- rather than update the weights based on the sum of the accumulated errors, the weights are updated for each training sample}
+
+\textcolor{blue}{Stochastic gradient descent is deterministic --- may produce the different parameter values if the same dataset is used multiple times. May not minimize the cost function as well as gradient descent but the approximation is often ``close enough''.}
+
+
+\paragraph{Mini-batch Gradient Descent}
+
+\textcolor{blue}{mini-batch gradient descent --- compromise between batch and stochastic gradient descent where the gradient is calculated over a batch of training data}
+
+\textcolor{blue}{Since the gradient is calculated on a single example, the error surface will appear noisier than if it was calculated over a batch or the entire training set.}
+
+\textcolor{blue}{When using stochastic gradient descent, it is important to shuffle the data after each epoch.}
