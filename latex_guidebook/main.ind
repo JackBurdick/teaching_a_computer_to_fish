@@ -18,16 +18,18 @@
   \indexspace
 
   \item generalized linear model, 35
-  \item Grid search, 25
+  \item Grid search, 26
 
   \indexspace
 
   \item Heaviside step function, 46
+  \item hidden layer, 47
 
   \indexspace
 
   \item ID3 algorithm, 43
   \item independent and identically distributed (i.i.d), 41
+  \item input layer, 47
   \item interquartile range, 13
 
   \indexspace
@@ -51,12 +53,13 @@
   \item one-hot encoding, 12
   \item one-of-k encoding, 12
   \item Ordinary Lease Squares (OLS), 36
+  \item output layer, 47
   \item Overfitting, 21
 
   \indexspace
 
   \item Pearson's R, 32
-  \item peeking, 27
+  \item peeking, 28
   \item Problem transformation, 20
 
   \indexspace
@@ -70,6 +73,7 @@
 
   \item sampling with replacement, \see{bagging}{51}
   \item sampling without replacement, \see{subagging}{52}
+  \item Sequential Minimal Optimization (SMO), 40
   \item sigmoid, 94
   \item sparse vectors, 13
   \item strong learner, 44
@@ -81,7 +85,7 @@
 
   \item tf-idf, 16
   \item Tikhonov regularization, 93
-  \item Type I error, 28
+  \item Type I error, 29
   \item Type II error, 29
 
   \indexspace

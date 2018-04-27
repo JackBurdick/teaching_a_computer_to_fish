@@ -172,19 +172,24 @@
 \contentsline {subsubsection}{\numberline {6.1.5.2}Directed Graph}{46}
 \contentsline {subsection}{\numberline {6.1.6}Notes}{47}
 \contentsline {section}{\numberline {6.2}Artificial Neural Networks (ANN)}{47}
-\contentsline {subsection}{\numberline {6.2.1}Types: Feedback vs Feed-forward}{47}
-\contentsline {subsubsection}{\numberline {6.2.1.1}Feed-forward}{47}
-\contentsline {subsubsection}{\numberline {6.2.1.2}Feedback}{47}
-\contentsline {subsection}{\numberline {6.2.2}Learning: Backpropagation}{47}
-\contentsline {subsection}{\numberline {6.2.3}Multi-layer perceptrons}{47}
-\contentsline {section}{\numberline {6.3}Feedback or Recurrent}{47}
+\contentsline {subsection}{\numberline {6.2.1}Multi-layer Perceptron}{47}
+\contentsline {subsection}{\numberline {6.2.2}Architecture}{47}
+\contentsline {subsection}{\numberline {6.2.3}Components}{47}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Activation Function}{47}
+\contentsline {subsection}{\numberline {6.2.4}Types: Feedback vs Feed-forward}{47}
+\contentsline {subsection}{\numberline {6.2.5}Learning: Backpropagation}{48}
+\contentsline {subsubsection}{\numberline {6.2.5.1}Backward Propagation}{48}
+\contentsline {subsubsection}{\numberline {6.2.5.2}Chain Rule}{48}
+\contentsline {subsection}{\numberline {6.2.6}Multi-layer perceptrons}{48}
+\contentsline {section}{\numberline {6.3}Feed-forward}{48}
+\contentsline {section}{\numberline {6.4}Feedback or Recurrent}{48}
 \contentsline {chapter}{\numberline {7}Unsupervised}{49}
 \contentsline {section}{\numberline {7.1}Clustering}{49}
 \contentsline {subsection}{\numberline {7.1.1}K-means}{49}
 \contentsline {subsubsection}{\numberline {7.1.1.1}Local Optima}{49}
 \contentsline {subsection}{\numberline {7.1.2}Selecting K}{49}
-\contentsline {subsubsection}{\numberline {7.1.2.1}Elbow Method}{49}
-\contentsline {subsection}{\numberline {7.1.3}Evaluating}{49}
+\contentsline {subsubsection}{\numberline {7.1.2.1}Elbow Method}{50}
+\contentsline {subsection}{\numberline {7.1.3}Evaluating}{50}
 \contentsline {subsubsection}{\numberline {7.1.3.1}Silhouette Coefficient}{50}
 \contentsline {section}{\numberline {7.2}Dimensionality Reduction}{50}
 \contentsline {subsection}{\numberline {7.2.1}Principal Component Analysis}{50}

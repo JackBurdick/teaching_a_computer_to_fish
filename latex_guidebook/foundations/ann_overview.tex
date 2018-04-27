@@ -1,0 +1,61 @@
+\section{Artificial Neural Networks (ANN)}
+
+\textcolor{blue}{Principals and basic feed forward networks}
+
+\textcolor{blue}{The most computationally expensive component is calculating the gradient of the loss function with respect to the parameters of the network}
+
+% see page 233 of Understanding Machine Learning
+\textcolor{blue}{Artificial neural networks are {universal approximators}\index{universal approximators} -- \textcolor{red}{expand}}
+
+\subsection{Multi-layer Perceptron}
+
+\textcolor{blue}{Not a single multi-layer perceptron with multiple layers, rather it is a network composed of multiple layers of perceptrons.}
+
+\subsection{Architecture}
+
+\textcolor{blue}{{input layer}\index{input layer}, {hidden layer}\index{hidden layer}, {output layer}\index{output layer}}
+
+\textcolor{blue}{the input layer is not counted in the number of layers in a network}
+
+\textcolor{green}{TODO: diagram of neural network showing layers}
+
+\subsection{Components}
+
+\textcolor{blue}{nodes (weights and biases), connections, activation functions}
+
+\subsubsection{Activation Function}
+
+\textcolor{green}{TODO: I think this is where I'll talk about activation functions}
+
+\textcolor{green}{TODO: explain the need for non-linearity.}
+
+\textcolor{green}{TODO: step function to sigmoid function -- smoothed version of the step function -- can understand how an input changes the output.}
+
+\subsection{Types: Feedback vs Feed-forward}
+
+\textcolor{blue}{Feed-forward --- Directed acyclic graph of artificial neurons.}
+
+\subsection{Learning: Backpropagation}
+
+% see p196[184] of Mastering ML w/SKL
+\textcolor{green}{TODO: whoooo, this is going to be a big one. understand how each component contributes to the error and adjust accordingly.}
+
+\textcolor{blue}{Iterative algorithm consisting of two main components --- in order, the forward, then the reverse pass}
+
+\textcolor{blue}{In the forward pass inputs are propagated through the network}
+
+\textcolor{blue}{In the Backward pass, errors from the forward function and  are propagated in reverse through the network (from cost function to input layer) and each node is updated -- \textcolor{green}{TODO: expand}.}
+
+\subsubsection{Backward Propagation}
+
+% see p197-201[180] of Mastering ML w/SKL
+
+\textcolor{green}{TODO: figure showing sample calculation}
+
+\subsubsection{Chain Rule}
+
+\textcolor{green}{TODO: chain rule}
+
+\textcolor{blue}{Backpropagation is typically used with an optimization algorithm (see \textcolor{red}{local ref?})}
+
+\subsection{Multi-layer perceptrons}

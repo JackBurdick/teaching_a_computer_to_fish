@@ -41,6 +41,9 @@
 \indexentry{Heaviside step function}{46}
 \indexentry{unit step function}{46}
 \indexentry{universal approximators}{47}
+\indexentry{input layer}{47}
+\indexentry{hidden layer}{47}
+\indexentry{output layer}{47}
 \indexentry{bagging}{51}
 \indexentry{boostrap aggregating}{51}
 \indexentry{sampling with replacement|see{bagging}}{51}
