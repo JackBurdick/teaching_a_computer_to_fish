@@ -1,3 +1,67 @@
 \section{Perceptron}
 
 \textcolor{green}{TODO: overview}
+
+\textcolor{green}{Obligatory Biology figure}
+
+\subsection{History}
+
+\textcolor{blue}{McCullock and Pitts -- nerve cell as a simple logic gate with binary outputs.  Where multiple input signals are accumulated and if they exceed a certain threshold an output signal is generated}
+
+\textcolor{blue}{Frank Rosenblatt at Cornell Aeonautical Laboratory in late 1950s -- motivated by efforts to simulate the human brain -- the perceptron: an algorithm that would learn the optimal weight coefficients to the input features in order to determine whether an output signal should be produced. The early activation function \textcolor{red}{See more in local ref?} was a simple unit step function.}
+
+\textcolor{blue}{Adaline (\textbf{ADA}ptive \textbf{LI}near \textbf{NE}uron) -- rather than the weights being updated based on a unit step function like the perceptron, the weights are updated based on a linear activation function. A continuous output value (rather than discrete) is used to compute the model error and update the weights.}
+
+\textcolor{blue}{Linear activation function is used for weight updates but a unit step function can still be used to predict the class labels.\textcolor{red}{TODO: figure showing this}}
+
+\subsection{Overview}
+
+\textcolor{blue}{advantage: perceptrons are capable of online learning --- the models parameters can be updated on a single training instance rather than a batch of instances}
+
+\textcolor{blue}{Though not used too frequently in practice, the perceptron is a building block that later sections in this chapter on artificial neural networks are built upon.}
+
+\subsection{Activation Function Basics}
+
+\textcolor{blue}{Basic activation function (Eq.\ref{eq:act_func_basic_def}) where $w$ represents the model's parameters and $b$ represents a bias terms and $act$ is representative of the activation function.}
+
+\begin{equation}
+{y = act (\sum_{i=1}^{n}(w_i x_i + b)}
+\label{eq:act_func_basic_def}
+\end{equation}
+
+\textcolor{blue}{There are many different types of activation functions that may be used. A more in-depth discussion on activation functions is discussed in \textcolor{red}{local ref?}}
+
+\textcolor{blue}{The linear combination of parameters and inputs may sometimes be referred to as the preactivation}
+
+\textcolor{blue}{Rosenblatt's original activation function is the {Heaviside step function}\index{Heaviside step function} ({unit step function}\index{unit step function}), show in Eq.\ref{eq:heaviside_step_func}]}
+
+\begin{equation}
+{out(x) = \left\{
+	\begin{array}{ll}
+	1 & \quad $if $ x > 0 \\
+	0 & \quad $elsewhere$
+	\end{array}
+	\right.}
+\label{eq:heaviside_step_func}
+\end{equation}
+
+% see p164[152] of Mastering ML w/SKL *para*
+
+
+\subsection{Limitations}
+
+\textcolor{blue}{linear hyperplane}
+
+\subsection{Extending to model linearly inseparable data}
+
+\subsubsection{Kernelization}
+
+\textcolor{blue}{projecting linearly inseparable data into a higher dimensional space (with the intent to make the data linearly separable)}
+
+\subsubsection{Directed Graph}
+
+\textcolor{blue}{Artificial neural network (discussed next, in \textcolor{red}{local ref?}) is a universal function approximator make of a directed graph of perceptrons}
+
+\subsection{Notes}
+
+\textcolor{blue}{If the activation function is a logistic sigmoid activation function, the model is the same as logistic regression.  The difference, however, is that the perceptron can be trained with an online, error driven, approach}

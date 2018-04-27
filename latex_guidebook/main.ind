@@ -1,10 +1,11 @@
 \begin{theindex}
 
   \item bag-of-words, 15
-  \item bagging, 47
-  \item Bias, 21
-  \item boostrap aggregating, 47
-  \item bootstrap samples, 47
+  \item bagging, 51
+  \item Bias, 22
+  \item blending, 53
+  \item boostrap aggregating, 51
+  \item bootstrap samples, 51
 
   \indexspace
 
@@ -12,82 +13,92 @@
 
   \indexspace
 
-  \item discrimination threshold, 36
+  \item discrimination threshold, 38
 
   \indexspace
 
-  \item generalized linear model, 33
-  \item Grid search, 24
+  \item generalized linear model, 35
+  \item Grid search, 25
 
   \indexspace
 
-  \item ID3 algorithm, 40
-  \item independent and identically distributed (i.i.d), 39
+  \item Heaviside step function, 46
+
+  \indexspace
+
+  \item ID3 algorithm, 43
+  \item independent and identically distributed (i.i.d), 41
   \item interquartile range, 13
 
   \indexspace
 
-  \item J48, 40
+  \item J48, 43
 
   \indexspace
 
-  \item lazy learner, 36
-  \item Linear Least Squares, 34
-  \item logit, 35
+  \item lazy learner, 38
+  \item Linear Least Squares, 36
+  \item logit, 37
   \item lucky split, 17
 
   \indexspace
 
-  \item odds ratio, 35
+  \item multi-label classification, 20
+
+  \indexspace
+
+  \item odds ratio, 37
   \item one-hot encoding, 12
   \item one-of-k encoding, 12
-  \item Ordinary Lease Squares (OLS), 34
-  \item Overfitting, 20
+  \item Ordinary Lease Squares (OLS), 36
+  \item Overfitting, 21
 
   \indexspace
 
-  \item Pearson's R, 30
-  \item peeking, 26
+  \item Pearson's R, 32
+  \item peeking, 27
+  \item Problem transformation, 20
 
   \indexspace
 
-  \item Randomized search, 24
+  \item Randomized search, 26
   \item reducible error, 18
-  \item residual sum of squares (RSS), 34
-  \item residuals, 34
+  \item residual sum of squares (RSS), 36
+  \item residuals, 36
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{47}
-  \item sampling without replacement, \see{subagging}{47}
-  \item sigmoid, 88
+  \item sampling with replacement, \see{bagging}{51}
+  \item sampling without replacement, \see{subagging}{52}
+  \item sigmoid, 94
   \item sparse vectors, 13
-  \item strong learner, 41
-  \item subagging, 47
-  \item subspace sampling, 48
-  \item Support Vector Machine (SVM), 38
+  \item strong learner, 44
+  \item subagging, 52
+  \item subspace sampling, 52
+  \item Support Vector Machine (SVM), 40
 
   \indexspace
 
   \item tf-idf, 16
-  \item Tikhonov regularization, 87
-  \item Type I error, 27
-  \item Type II error, 27
+  \item Tikhonov regularization, 93
+  \item Type I error, 28
+  \item Type II error, 29
 
   \indexspace
 
-  \item Underfitting, 21
-  \item universal approximators, 44
+  \item Underfitting, 22
+  \item unit step function, 46
+  \item universal approximators, 47
 
   \indexspace
 
-  \item Variance, 21
+  \item Variance, 22
   \item vocabulary, 14
-  \item Voronoi region, 31
-  \item Voronoi tessellation, 31
+  \item Voronoi region, 33
+  \item Voronoi tessellation, 33
 
   \indexspace
 
-  \item weak learner, 41
+  \item weak learner, 44
 
 \end{theindex}

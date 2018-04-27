@@ -7,7 +7,11 @@
 
 \textcolor{blue}{Importance of pruning -- Decision trees can be very deep and can easily lead to overfitting. To help prevent this situation, a limit is set for the maximal depth of a tree. }
 
-\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable and may often resemble a program developed by hand.}
+\textcolor{blue}{The main advantage to using decision trees is that they are easily interpretable and may often resemble a program developed by hand. Another advantage is that decision trees do not require data to be standardized and they can also tolerate missing feature values.}
+
+\textcolor{blue}{Can be used to determine which features are most useful, support multi-output tasks, and a single decision tree can be used for multi-class classification without having to employ strategies like one versus all.}
+
+\textcolor{blue}{Leaf nodes specify the predicted value of a response variable. When decision trees are used for classification, the leaf nodes represent classes. When used for regression tasks, the leaf nodes are averaged to produce an estimate a response variable.}
 
 \subsection{Criterion -- Maximizing Information Gain}
 
@@ -15,18 +19,36 @@
 
 \textcolor{blue}{Three commonly used splitting criteria used in binary decision trees: (i) Gini Impurity, (ii) entropy, and (iii) classification error}
 
+\textcolor{blue}{There are no hard rules to determine which criterion to use in a particular instance.}
+
+% see p148[136] of Mastering ML with SKL
 \subsubsection{Gini Impurity}
 
+\textcolor{blue}{Measures the proportions of classes in a set}
+
+\textcolor{red}{is greatest when each classes has an equal probability of being selected, like entropy}
+
 \subsubsection{Entropy}
+
+% see p140[128] of Mastering ML with SKL
+\textcolor{green}{Entropy is used to quantify the amount of uncertainty}
+
+\paragraph{Information Gain}
+
+% see p144[132] of Mastering ML with SKL
+\textcolor{blue}{Information Gain is the measure of reduction in entropy and is the difference between the entropy of the parent node and the weighted average of the children nodes' entropies}
 
 \subsubsection{Classification Error}
 
 \subsubsection{ID3 Algorithm}
 
-\textcolor{blue}{ID3 or ``Iterative Dichotomizer 3''}
+\textcolor{blue}{ID3 or ``Iterative Dichotomizer 3'', created by Ross Quinlan.}
 
+\textcolor{blue}{considered greedy --- making locally optimal decisions, not necessarily globally optimal decisions}
 
 \textcolor{blue}{top-down, recursive, depth-first partitioning of the dataset.}
+
+\textcolor{blue}{where each feature is selected because the feature reduces uncertainty in the node more than the other features.}
 
 \textcolor{blue}{Assumes categorical features without any missing values.}
 
@@ -35,6 +57,8 @@
 \subsubsection{C4.5 Algorithm}
 
 \textcolor{blue}{Variant of the {ID3 algorithm}\index{ID3 algorithm} that can handle continuous categorical descriptive features and missing features}
+
+\textcolor{blue}{supports pruning}
 
 \textcolor{red}{uses post-pruning}
 

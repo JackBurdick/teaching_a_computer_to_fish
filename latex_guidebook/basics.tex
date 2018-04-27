@@ -164,9 +164,11 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{$\hat{y_i}$ is the predicted classification label for the $i$th observation using our predictor/model $\hat{f}$ and $y_i$ is the ground truth label}
 
-\section{(Over$|$Under)fitting}
+\section{Describing Learners}
 
-\subsection{Overfitting}
+\subsection{(Over$|$Under)fitting}
+
+\subsubsection{Overfitting}
 
 \textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
 
@@ -174,7 +176,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{green}{TODO: figure showing an example of overfitting}
 
-\subsection{Underfitting}
+\subsubsection{Underfitting}
 
 \textcolor{blue}{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
 
@@ -183,17 +185,17 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \textcolor{green}{TODO: figure showing an example of underfitting}
 
 
-\section{Bias Variance Trade-off}
+\subsection{Bias Variance Trade-off}
 
 \textcolor{blue}{Two fundamental causes of prediction error in a model -- the bias and the variance.}
 
-\subsection{Variance}
+\subsubsection{Variance}
 \textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
 
 \textcolor{blue}{A model with high variance may be described as highly flexible and will likely overfit the data.}
 
 
-\subsection{Bias}
+\subsubsection{Bias}
 \textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
 
 \textcolor{blue}{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
@@ -202,7 +204,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 % not word-for-word, but example adapted from p35 of ISL
 \textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
 
-\subsection{Trade-Off}
+\subsubsection{Trade-Off}
 
 % TODO: see page 34 of ISL for eq and explaination here
 
@@ -242,11 +244,13 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Eager Learners}
 
-\textcolor{blue}{Eager learners estimate the parameters of a model that generalize to a training set}
+\textcolor{blue}{Eager learners estimate the parameters of a model that generalize to a training set --- build an input-independent model}
 
 \subsubsection{Lazy Learners}
 
 \textcolor{blue}{Also known as Instance-based Learners}
+
+\textcolor{blue}{do not spend time traioning, but may predict responses slowly (relatively) compared to eager learners}
 
 \textcolor{blue}{Lazy learners store the training dataset with little to no processing.}
 
@@ -256,13 +260,26 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \textcolor{green}{TODO: Generative vs Discriminative models overview}
 %\textcolor{blue}{}
 
-\subsubsection{Generative Models}
-
-\textcolor{green}{TODO: Generative Models}
-
 \subsubsection{Discriminative Models}
 
-\textcolor{green}{TODO: Discriminative Models}
+\textcolor{green}{TODO: Discriminative Models --- learn a decision boundary that is used to \textit{discriminate} between classes. There exist both probabilistic and non-probabilistic discriminative models}
+
+\paragraph{Probabilistic Discriminative}
+
+\textcolor{blue}{Probabilistic discriminative models learn to estimate the conditional probability i.e. which class is most probable given the input features.}
+
+\paragraph{Non-probabilistic Discriminative}
+
+\textcolor{blue}{Non-probabilistic discriminative models directly map features to classes.}
+
+\subsubsection{Generative Models}
+
+% see p129[117] of Mastering ML w/SKL
+\textcolor{green}{TODO: Generative Models --- do not learn a decision boundary, rather, they model the joint probability distribution of the features and classes i.e. they model how the classes generate features. Then, using Bayes' theorem, they are able to estimate the conditional probability of a class given the features.}
+
+
+% see p130[118] of Mastering ML w/SKL
+\textcolor{blue}{One advantage of generative models is that they can be used to generate new examples of data}
 
 \subsection{Strong vs Weak Learners}
 
@@ -286,6 +303,21 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \section{Ensemble Methods}
 
 \textcolor{green}{TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
+
+\section{Kernel Trick}
+
+\textcolor{blue}{Transform the training data onto a higher dimensional feature space}
+
+% see p177[165] of mastering ML with SKL
+
+\textcolor{blue}{The kernel is a function that XXXXXXXXXX}
+
+\textcolor{blue}{Choosing an appropriate kernel can be challenging}
+
+% see p180[168] of mastering ML w/SKL for more on kernels
+\textcolor{blue}{Some commonly used kernels include polynomial, sigmoid, Guassian, and linear kernels}
+
+\textcolor{blue}{commonly used in SVMs (see \textcolor{red}{local ref}), the kernel trick can be used with any model that can be expressed in terms of the dot product of two feature vectors.}
 
 \section{Hyper-Parameters}
 

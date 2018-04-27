@@ -14,31 +14,51 @@
 
 \subsubsection{Bagging}
 
-\textcolor{blue}{{bagging}\index{bagging} or {boostrap aggregating}\index{boostrap aggregating} involves training a each model in the ensemble is trained on a random sample, in which the random sample is the same size as the set the sample is drawn from. To produce randome subsamples the same size as the set, {sampling with replacement}\index{sampling with replacement|see{bagging}} is used. The random samples produced are known as {bootstrap samples}\index{bootstrap samples}.}
+\textcolor{blue}{{bagging}\index{bagging} or {boostrap aggregating}\index{boostrap aggregating} aims to reduce variance by training each model in the ensemble on a random sub-sample, in which the random sample is the same size as the set the sample is drawn from. To produce random subsamples the same size as the set, {sampling with replacement}\index{sampling with replacement|see{bagging}} is used. The random samples produced are known as {bootstrap samples}\index{bootstrap samples}.}
+
+%p 154[142] of Mastering ML w/SKL
+\textcolor{red}{``boostrap resampling is a method of estimating uncertainty in a statistic"(only if the subsample is drawn from the sample independently)}
 
 \textcolor{blue}{Sampling with replacement will result in duplicates within each of the bootstrap samples and each therefore each bootstrap sample will be different, thereby creating models that are different.}
 
+\textcolor{blue}{ensemble meta-algorithm used to  in an estimator by fitting multiple models on subsets of the training data}
+
 \textcolor{blue}{different than subagging\index{subagging}, in which {sampling without replacement}\index{sampling without replacement|see{subagging}} is used. Subagging may be used when working with an exceptionally large dataset in which, given computational constraints, wish to operate on created bootstrap samples that are smaller than the original dataset.}
+
+\textcolor{blue}{classification: mode class}
+
+\textcolor{blue}{regression: averages of the predictions}
 
 % p.165 of ML for pred. data analytics
 \textcolor{green}{TODO: para about {subspace sampling}\index{subspace sampling}}
 
 \subsubsection{Boosting}
 
-\textcolor{blue}{When creating new models to add to the ensemble, the new models are biased (by weighting the dataset) to pay extra attention to instances in which the previous models have misclassified.}
+\textcolor{blue}{Boosting is a family of ensemble methods used primarily to reduce the bias of an estimator. When creating new models to add to the ensemble, the new models are biased (by weighting the dataset) to pay extra attention to instances in which the previous models have misclassified.}
+
+\textcolor{blue}{can be used on both regression and classification}
 
 \textcolor{blue}{The weighted dataset is composed of the dataset plus weights associated with ``importance'' for each instance. Originally, the weights are initialized to be $\frac{1}{n}$, where $n$ is the number of instances in the dataset.}
 
 % see page 164 of MLforpredictiveDataAnalytics
 \textcolor{green}{TODO: expand on the weighted dataset and the algorithm+iteration steps}
 
+\paragraph{AdaBoost}
+
+\textcolor{blue}{TODO: Adaptive Boosting (AdaBoost) --- 1995 (Yoav Freund and Robert Schapire).}
+
+\textcolor{blue}{iterative algorithm. On first iteration equal weights are assigned to all the training instances and a weak learner is trained. On subsequent iterations, weights of training instances are modified such that weights are increased on instances that were predicted incorrectly and decreased on instances that were predicted correctly before training a new learner. This methodology causes the following learners to increasingly focus on the instances that the ensemble is predicting incorrectly. The methodology is considered complete either after a set number of iterations, or when perfect performance is achieved.}
+
 \subsubsection{Bagging Vs Boosting}
 
 \textcolor{green}{TODO: compare contrast these two approaches -- some key literature is outlined on p166 of ML for pred. data analytics}
 
+\textcolor{blue}{Bagging can reduce variance, boosting can reduce bias.}
+
 \subsection{Stacking}
 
-\textcolor{green}{TODO: more about stacking}
+%see p158[146] of Mastering ML w/SKL
+\textcolor{green}{Sometimes called {blending}\index{blending}. TODO: more about stacking --- can be used to combine different types of base estimators}
 
 \subsection{Random Forests}
 
