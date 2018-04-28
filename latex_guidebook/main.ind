@@ -1,11 +1,11 @@
 \begin{theindex}
 
   \item bag-of-words, 15
-  \item bagging, 51
+  \item bagging, 53
   \item Bias, 22
-  \item blending, 53
-  \item boostrap aggregating, 51
-  \item bootstrap samples, 51
+  \item blending, 55
+  \item boostrap aggregating, 53
+  \item bootstrap samples, 53
 
   \indexspace
 
@@ -71,20 +71,21 @@
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{51}
-  \item sampling without replacement, \see{subagging}{52}
+  \item sampling with replacement, \see{bagging}{53}
+  \item sampling without replacement, \see{subagging}{54}
   \item Sequential Minimal Optimization (SMO), 40
-  \item sigmoid, 94
+  \item sigmoid, 96
+  \item silhouette coefficient, 50
   \item sparse vectors, 13
   \item strong learner, 44
-  \item subagging, 52
-  \item subspace sampling, 52
+  \item subagging, 54
+  \item subspace sampling, 54
   \item Support Vector Machine (SVM), 40
 
   \indexspace
 
   \item tf-idf, 16
-  \item Tikhonov regularization, 93
+  \item Tikhonov regularization, 95
   \item Type I error, 29
   \item Type II error, 29
 

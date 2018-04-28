@@ -4,11 +4,23 @@
 
 \textcolor{blue}{examples --- recommendation system}
 
+\textcolor{blue}{Clustering may be used to perform {image quantization}\index{image quantization}, a lossy compression methods that will replace similar colors with a single color to reduce the size of the image file.}
+
 \subsection{K-means}
 
 \textcolor{green}{todo: Overview}
 
-\textcolor{blue}{}
+\textcolor{blue}{iterative process -- moves centroid (center of cluster) to mean position of instances then reassigning instances to clusters by closest centroid}
+
+\textcolor{blue}{will continue to iterate until some stopping criteria is satisfied.}
+
+\textcolor{blue}{To avoid unlucky initialization leading to convergence on local optima, K-means may be repeated many times (dozens to hundreds) with a random initialization. The initialization values that lead to the minimum cost function is then determined to be best.}
+
+\textcolor{blue}{$k$ (positive integer less than the number of instances in the training set) specifies the number of clusters/centroids}
+
+\textcolor{green}{TODO: k-means cost function}
+
+\textcolor{blue}{important to note that K-means will not necessarily converge on the global optimum}
 
 \subsubsection{Local Optima}
 
@@ -18,10 +30,35 @@
 
 \textcolor{green}{todo: Overview}
 
+\textcolor{blue}{optimal number found by minimizing the cost function}
+
 \subsubsection{Elbow Method}
+
+\textcolor{blue}{The elbow method is used to select the optimal number of clusters if $k$ is not specified by the problems context.}
+
+% rough
+\textcolor{blue}{plot of the final cost function value is plotted against the value of $k$. As $k$ increases, the average distortion will decrease as each cluster will have fewer instances and they will be closer to their respective centroid. This decline in dispersion will decline most at a point and then slowly continue to decline -- the point at which the dispersion decreases the most can be considered the elbow (and considered by the elbow method to be the best value for $k$)}
+
+\textcolor{green}{TODO: diagram showing data clusters}
+
+\textcolor{green}{TODO: diagram showing $k$ vs dispersion related to above cluster diagram}
 
 \subsection{Evaluating}
 
 \textcolor{blue}{There are no labels - can still evaluate using intrinsic measures}
 
+\textcolor{blue}{measuring distortion of clusters}
+
 \subsubsection{Silhouette Coefficient}
+
+\textcolor{blue}{The {silhouette coefficient}\index{silhouette coefficient} is a measure of compactness and separation of clusters. The silhoette coefficient is calculated per instance or for a set of instances (where the value is calculated to be the mean of the individual instances in the group). Eq.\ref{eq:silhouette_coef_def} can be used to calculate the silhouette per instance, where $d$ is the mean distance between the instance and the instances in the next closest cluster and $b$ is hte mean distance between the instances in the indicated cluster.}
+
+\begin{equation}
+{s = \frac{db}{max(d,b)}}
+\label{eq:silhouette_coef_def}
+\end{equation}
+
+
+
+
+

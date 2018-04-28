@@ -44,13 +44,15 @@
 \indexentry{input layer}{47}
 \indexentry{hidden layer}{47}
 \indexentry{output layer}{47}
-\indexentry{bagging}{51}
-\indexentry{boostrap aggregating}{51}
-\indexentry{sampling with replacement|see{bagging}}{51}
-\indexentry{bootstrap samples}{51}
-\indexentry{subagging}{52}
-\indexentry{sampling without replacement|see{subagging}}{52}
-\indexentry{subspace sampling}{52}
-\indexentry{blending}{53}
-\indexentry{Tikhonov regularization}{93}
-\indexentry{sigmoid}{94}
+\indexentry{image quantization}{49}
+\indexentry{silhouette coefficient}{50}
+\indexentry{bagging}{55}
+\indexentry{boostrap aggregating}{55}
+\indexentry{sampling with replacement|see{bagging}}{55}
+\indexentry{bootstrap samples}{55}
+\indexentry{subagging}{56}
+\indexentry{sampling without replacement|see{subagging}}{56}
+\indexentry{subspace sampling}{56}
+\indexentry{blending}{57}
+\indexentry{Tikhonov regularization}{97}
+\indexentry{sigmoid}{98}
