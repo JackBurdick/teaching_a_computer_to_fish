@@ -2,6 +2,8 @@
 
 % The document preamble 
 
+\usepackage[superscript,biblabel]{cite}
+
 \usepackage{makeidx}
 
 % had to add --shell-escape to pdflex command
@@ -113,11 +115,20 @@
 
 \part{Research}
 
+
+\include{research/overview}
+
+
 \backmatter 
 
 % TODO: glossary
 
 \printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography
+
+\bibliographystyle{unsrt}
+\bibliography{TCF}
 
 
 \end{document} 

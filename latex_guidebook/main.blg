@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: community.aux
+A level-1 auxiliary file: prerequisites.aux
+A level-1 auxiliary file: basics.aux
+A level-1 auxiliary file: foundations.aux
+A level-1 auxiliary file: ensembles.aux
+A level-1 auxiliary file: terms.aux
+A level-1 auxiliary file: quickref.aux
+A level-1 auxiliary file: tensorflow.aux
+A level-1 auxiliary file: examples.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: others.aux
+A level-1 auxiliary file: ubuntu.aux
+A level-1 auxiliary file: research/overview.aux
+The style file: unsrt.bst
+Database file #1: TCF.bib
+Warning--empty journal in dozat2016incorporating
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            488 strings with 4323 characters,
+and the built_in function-call counts, 917 in all, are:
+= -- 82
+> -- 31
+< -- 0
++ -- 13
+- -- 8
+* -- 54
+:= -- 159
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 42
+empty$ -- 93
+format.name$ -- 8
+if$ -- 194
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 5
+pop$ -- 13
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 16
+stack$ -- 0
+substring$ -- 56
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 9
+width$ -- 6
+write$ -- 53
+(There was 1 warning)

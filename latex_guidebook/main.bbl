@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{qian1999momentum}
+Ning Qian.
+\newblock On the momentum term in gradient descent learning algorithms.
+\newblock {\em Neural networks}, 12(1):145--151, 1999.
+
+\bibitem{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem{dozat2016incorporating}
+Timothy Dozat.
+\newblock Incorporating nesterov momentum into adam.
+\newblock 2016.
+
+\bibitem{duchi2011adaptive}
+John Duchi, Elad Hazan, and Yoram Singer.
+\newblock Adaptive subgradient methods for online learning and stochastic
+  optimization.
+\newblock {\em Journal of Machine Learning Research}, 12(Jul):2121--2159, 2011.
+
+\bibitem{zeiler2012adadelta}
+Matthew~D Zeiler.
+\newblock Adadelta: an adaptive learning rate method.
+\newblock {\em arXiv preprint arXiv:1212.5701}, 2012.
+
+\end{thebibliography}

@@ -18,10 +18,10 @@
 \indexentry{Randomized search}{26}
 \indexentry{peeking}{28}
 \indexentry{Type I error}{29}
-\indexentry{Type II error}{29}
-\indexentry{Pearson's R}{32}
-\indexentry{Voronoi tessellation}{33}
-\indexentry{Voronoi region}{33}
+\indexentry{Type II error}{30}
+\indexentry{Pearson's R}{33}
+\indexentry{Voronoi tessellation}{34}
+\indexentry{Voronoi region}{34}
 \indexentry{generalized linear model}{35}
 \indexentry{Ordinary Lease Squares (OLS)}{36}
 \indexentry{Linear Least Squares}{36}
@@ -46,6 +46,9 @@
 \indexentry{output layer}{47}
 \indexentry{image quantization}{49}
 \indexentry{silhouette coefficient}{50}
+\indexentry{Principal Component Analysis (PCA)}{51}
+\indexentry{Karhunen-Love Transform (KLM)}{51}
+\indexentry{covarience matrix}{51}
 \indexentry{bagging}{55}
 \indexentry{boostrap aggregating}{55}
 \indexentry{sampling with replacement|see{bagging}}{55}
