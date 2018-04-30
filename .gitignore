@@ -155,8 +155,11 @@ latex_guidebook/tensorflow/*.log
 latex_guidebook/tensorflow/*.aux
 latex_guidebook/main\.synctex\.gz\(busy\)
 latex_guidebook/main\.ilg
+latex_guidebook/research/*.log
+latex_guidebook/research/*.aux
 
 SmallBusinessML/main.pdf
 SmallBusinessML/main.synctex.gz
 SmallBusinessML/*.log
 SmallBusinessML/*.aux
+ROOT_DATA/generated/\.ipynb_checkpoints/
