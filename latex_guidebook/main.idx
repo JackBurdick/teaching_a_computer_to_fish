@@ -1,61 +1,61 @@
-\indexentry{one-hot encoding}{12}
-\indexentry{one-of-k encoding}{12}
+\indexentry{one-hot encoding}{13}
+\indexentry{one-of-k encoding}{13}
 \indexentry{sparse vectors}{13}
-\indexentry{interquartile range}{13}
-\indexentry{corpus}{14}
-\indexentry{vocabulary}{14}
-\indexentry{bag-of-words}{15}
-\indexentry{tf-idf}{16}
-\indexentry{lucky split}{17}
-\indexentry{reducible error}{18}
-\indexentry{multi-label classification}{20}
-\indexentry{Problem transformation}{20}
-\indexentry{Overfitting}{21}
-\indexentry{Underfitting}{22}
-\indexentry{Variance}{22}
-\indexentry{Bias}{22}
-\indexentry{Grid search}{26}
-\indexentry{Randomized search}{26}
-\indexentry{peeking}{28}
-\indexentry{Type I error}{29}
-\indexentry{Type II error}{30}
-\indexentry{Pearson's R}{33}
-\indexentry{Voronoi tessellation}{34}
-\indexentry{Voronoi region}{34}
-\indexentry{generalized linear model}{35}
-\indexentry{Ordinary Lease Squares (OLS)}{36}
-\indexentry{Linear Least Squares}{36}
-\indexentry{residuals}{36}
-\indexentry{residual sum of squares (RSS)}{36}
-\indexentry{odds ratio}{37}
-\indexentry{logit}{37}
-\indexentry{discrimination threshold}{38}
-\indexentry{lazy learner}{38}
-\indexentry{Support Vector Machine (SVM)}{40}
-\indexentry{Sequential Minimal Optimization (SMO)}{40}
-\indexentry{independent and identically distributed (i.i.d)}{41}
-\indexentry{ID3 algorithm}{43}
-\indexentry{J48}{43}
-\indexentry{weak learner}{44}
-\indexentry{strong learner}{44}
-\indexentry{Heaviside step function}{46}
-\indexentry{unit step function}{46}
-\indexentry{universal approximators}{47}
-\indexentry{input layer}{47}
-\indexentry{hidden layer}{47}
-\indexentry{output layer}{47}
-\indexentry{image quantization}{49}
-\indexentry{silhouette coefficient}{50}
-\indexentry{Principal Component Analysis (PCA)}{51}
-\indexentry{Karhunen-Love Transform (KLM)}{51}
-\indexentry{covarience matrix}{51}
-\indexentry{bagging}{55}
-\indexentry{boostrap aggregating}{55}
-\indexentry{sampling with replacement|see{bagging}}{55}
-\indexentry{bootstrap samples}{55}
-\indexentry{subagging}{56}
-\indexentry{sampling without replacement|see{subagging}}{56}
-\indexentry{subspace sampling}{56}
-\indexentry{blending}{57}
-\indexentry{Tikhonov regularization}{97}
-\indexentry{sigmoid}{98}
+\indexentry{interquartile range}{14}
+\indexentry{corpus}{15}
+\indexentry{vocabulary}{15}
+\indexentry{bag-of-words}{16}
+\indexentry{tf-idf}{17}
+\indexentry{lucky split}{18}
+\indexentry{reducible error}{19}
+\indexentry{multi-label classification}{21}
+\indexentry{Problem transformation}{21}
+\indexentry{Overfitting}{22}
+\indexentry{Underfitting}{23}
+\indexentry{Variance}{23}
+\indexentry{Bias}{23}
+\indexentry{Grid search}{27}
+\indexentry{Randomized search}{27}
+\indexentry{peeking}{29}
+\indexentry{Type I error}{30}
+\indexentry{Type II error}{31}
+\indexentry{Pearson's R}{34}
+\indexentry{Voronoi tessellation}{35}
+\indexentry{Voronoi region}{35}
+\indexentry{generalized linear model}{37}
+\indexentry{Ordinary Lease Squares (OLS)}{38}
+\indexentry{Linear Least Squares}{38}
+\indexentry{residuals}{38}
+\indexentry{residual sum of squares (RSS)}{38}
+\indexentry{odds ratio}{39}
+\indexentry{logit}{39}
+\indexentry{discrimination threshold}{40}
+\indexentry{lazy learner}{40}
+\indexentry{Support Vector Machine (SVM)}{42}
+\indexentry{Sequential Minimal Optimization (SMO)}{42}
+\indexentry{independent and identically distributed (i.i.d)}{43}
+\indexentry{ID3 algorithm}{45}
+\indexentry{J48}{45}
+\indexentry{weak learner}{46}
+\indexentry{strong learner}{46}
+\indexentry{Heaviside step function}{48}
+\indexentry{unit step function}{48}
+\indexentry{universal approximators}{49}
+\indexentry{input layer}{49}
+\indexentry{hidden layer}{49}
+\indexentry{output layer}{49}
+\indexentry{image quantization}{51}
+\indexentry{silhouette coefficient}{52}
+\indexentry{Principal Component Analysis (PCA)}{53}
+\indexentry{Karhunen-Love Transform (KLM)}{53}
+\indexentry{covarience matrix}{53}
+\indexentry{bagging}{57}
+\indexentry{boostrap aggregating}{57}
+\indexentry{sampling with replacement|see{bagging}}{57}
+\indexentry{bootstrap samples}{57}
+\indexentry{subagging}{58}
+\indexentry{sampling without replacement|see{subagging}}{58}
+\indexentry{subspace sampling}{58}
+\indexentry{blending}{59}
+\indexentry{Tikhonov regularization}{99}
+\indexentry{sigmoid}{100}

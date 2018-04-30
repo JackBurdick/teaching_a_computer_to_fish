@@ -26,4 +26,10 @@ Matthew~D Zeiler.
 \newblock Adadelta: an adaptive learning rate method.
 \newblock {\em arXiv preprint arXiv:1212.5701}, 2012.
 
+\bibitem{huang2017snapshot}
+Gao Huang, Yixuan Li, Geoff Pleiss, Zhuang Liu, John~E Hopcroft, and Kilian~Q
+  Weinberger.
+\newblock Snapshot ensembles: Train 1, get m for free.
+\newblock {\em arXiv preprint arXiv:1704.00109}, 2017.
+
 \end{thebibliography}

@@ -1,109 +1,116 @@
 \begin{theindex}
 
-  \item bag-of-words, 15
-  \item bagging, 53
-  \item Bias, 22
-  \item blending, 55
-  \item boostrap aggregating, 53
-  \item bootstrap samples, 53
+  \item bag-of-words, 16
+  \item bagging, 57
+  \item Bias, 23
+  \item blending, 59
+  \item boostrap aggregating, 57
+  \item bootstrap samples, 57
 
   \indexspace
 
-  \item corpus, 14
+  \item corpus, 15
+  \item covarience matrix, 53
 
   \indexspace
 
-  \item discrimination threshold, 38
+  \item discrimination threshold, 40
 
   \indexspace
 
-  \item generalized linear model, 35
-  \item Grid search, 26
+  \item generalized linear model, 37
+  \item Grid search, 27
 
   \indexspace
 
-  \item Heaviside step function, 46
-  \item hidden layer, 47
+  \item Heaviside step function, 48
+  \item hidden layer, 49
 
   \indexspace
 
-  \item ID3 algorithm, 43
-  \item independent and identically distributed (i.i.d), 41
-  \item input layer, 47
-  \item interquartile range, 13
+  \item ID3 algorithm, 45
+  \item image quantization, 51
+  \item independent and identically distributed (i.i.d), 43
+  \item input layer, 49
+  \item interquartile range, 14
 
   \indexspace
 
-  \item J48, 43
+  \item J48, 45
 
   \indexspace
 
-  \item lazy learner, 38
-  \item Linear Least Squares, 36
-  \item logit, 37
-  \item lucky split, 17
+  \item Karhunen-Love Transform (KLM), 53
 
   \indexspace
 
-  \item multi-label classification, 20
+  \item lazy learner, 40
+  \item Linear Least Squares, 38
+  \item logit, 39
+  \item lucky split, 18
 
   \indexspace
 
-  \item odds ratio, 37
-  \item one-hot encoding, 12
-  \item one-of-k encoding, 12
-  \item Ordinary Lease Squares (OLS), 36
-  \item output layer, 47
-  \item Overfitting, 21
+  \item multi-label classification, 21
 
   \indexspace
 
-  \item Pearson's R, 32
-  \item peeking, 28
-  \item Problem transformation, 20
+  \item odds ratio, 39
+  \item one-hot encoding, 13
+  \item one-of-k encoding, 13
+  \item Ordinary Lease Squares (OLS), 38
+  \item output layer, 49
+  \item Overfitting, 22
 
   \indexspace
 
-  \item Randomized search, 26
-  \item reducible error, 18
-  \item residual sum of squares (RSS), 36
-  \item residuals, 36
+  \item Pearson's R, 34
+  \item peeking, 29
+  \item Principal Component Analysis (PCA), 53
+  \item Problem transformation, 21
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{53}
-  \item sampling without replacement, \see{subagging}{54}
-  \item Sequential Minimal Optimization (SMO), 40
-  \item sigmoid, 96
-  \item silhouette coefficient, 50
+  \item Randomized search, 27
+  \item reducible error, 19
+  \item residual sum of squares (RSS), 38
+  \item residuals, 38
+
+  \indexspace
+
+  \item sampling with replacement, \see{bagging}{57}
+  \item sampling without replacement, \see{subagging}{58}
+  \item Sequential Minimal Optimization (SMO), 42
+  \item sigmoid, 100
+  \item silhouette coefficient, 52
   \item sparse vectors, 13
-  \item strong learner, 44
-  \item subagging, 54
-  \item subspace sampling, 54
-  \item Support Vector Machine (SVM), 40
+  \item strong learner, 46
+  \item subagging, 58
+  \item subspace sampling, 58
+  \item Support Vector Machine (SVM), 42
 
   \indexspace
 
-  \item tf-idf, 16
-  \item Tikhonov regularization, 95
-  \item Type I error, 29
-  \item Type II error, 29
+  \item tf-idf, 17
+  \item Tikhonov regularization, 99
+  \item Type I error, 30
+  \item Type II error, 31
 
   \indexspace
 
-  \item Underfitting, 22
-  \item unit step function, 46
-  \item universal approximators, 47
+  \item Underfitting, 23
+  \item unit step function, 48
+  \item universal approximators, 49
 
   \indexspace
 
-  \item Variance, 22
-  \item vocabulary, 14
-  \item Voronoi region, 33
-  \item Voronoi tessellation, 33
+  \item Variance, 23
+  \item vocabulary, 15
+  \item Voronoi region, 35
+  \item Voronoi tessellation, 35
 
   \indexspace
 
-  \item weak learner, 44
+  \item weak learner, 46
 
 \end{theindex}
