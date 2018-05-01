@@ -19,7 +19,7 @@
   \indexspace
 
   \item generalized linear model, 37
-  \item Grid search, 27
+  \item Grid search, 28
 
   \indexspace
 
@@ -64,14 +64,14 @@
 
   \indexspace
 
-  \item Pearson's R, 34
-  \item peeking, 29
+  \item Pearson's R, 35
+  \item peeking, 30
   \item Principal Component Analysis (PCA), 53
   \item Problem transformation, 21
 
   \indexspace
 
-  \item Randomized search, 27
+  \item Randomized search, 28
   \item reducible error, 19
   \item residual sum of squares (RSS), 38
   \item residuals, 38
@@ -93,7 +93,7 @@
 
   \item tf-idf, 17
   \item Tikhonov regularization, 99
-  \item Type I error, 30
+  \item Type I error, 31
   \item Type II error, 31
 
   \indexspace
@@ -106,8 +106,8 @@
 
   \item Variance, 23
   \item vocabulary, 15
-  \item Voronoi region, 35
-  \item Voronoi tessellation, 35
+  \item Voronoi region, 36
+  \item Voronoi tessellation, 36
 
   \indexspace
 

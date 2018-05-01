@@ -321,6 +321,37 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \section{Hyper-Parameters}
 
+\subsection{Parameters}
+
+\subsubsection{Learning Rate}
+
+\textcolor{green}{TODO: Learning rate overview}
+
+%%%% learning rates
+\textcolor{blue}{cyclic learning rate~\cite{smith2017cyclical}}
+
+\textcolor{blue}{sgdr: stochastic gradient descent with restarts~\cite{loshchilov2016sgdr}. The learning rate is decreased from the max value along a curve (cosine, shown in Eq.\ref{eq:sgdr_def}, where $n_{max}^i$ and $n_{min}^i$ are ranges for the learning rate, $T_i$ represents epochs, $T_{cur}$ is how many epochs have been performed since the last restart). The authors also suggest making each next cycle longer than the previous cycle by a constant $T_mul$ may be beneficial.}
+
+\begin{equation}
+{n_t = n_{min}^i + 1/2(n_{max}^i - n_{min}^i)(1 + cos(\frac{T_{cur}}{T_i}\pi))}
+\label{eq:sgdr_def}
+\end{equation}
+
+\subsubsection{Batch size}
+
+\textcolor{green}{TODO: batch size overview}
+
+%%%%% small batch size
+\textcolor{blue}{small minibatch sizes (between 2 and 32) may be better than large batch sizes~\cite{masters2018revisiting}.}
+
+\textcolor{blue}{``generalization gap'' may not be due to large mini-batches, rather, due to the number of updates made to the system~\cite{hoffer2017train}}
+
+%%%% minibatch
+\textcolor{blue}{Batch training is almost always slower to converge than on-line/mini-batch training, which is likely due to the fact that on-line/mini-batches learning will follow the error surface, allowing for larger learning rates, and thus faster convergence~\cite{wilson2003general}.}
+
+% incrementing batchsize over time
+\textcolor{blue}{Increasing the batch size may achieve similar benefits to decaying the learning rate ~\cite{smith2017don} -- which could lead to use of larger batch sizes, reducing the number of parameter updates and therefore reducing training time.}
+
 \subsection{Hyper-Parameter Optimization}
 
 \subsubsection{Grid Search}

@@ -1,4 +1,27 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{masters2018revisiting}
+Dominic Masters and Carlo Luschi.
+\newblock Revisiting small batch training for deep neural networks.
+\newblock {\em arXiv preprint arXiv:1804.07612}, 2018.
+
+\bibitem{hoffer2017train}
+Elad Hoffer, Itay Hubara, and Daniel Soudry.
+\newblock Train longer, generalize better: closing the generalization gap in
+  large batch training of neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  1729--1739, 2017.
+
+\bibitem{wilson2003general}
+D~Randall Wilson and Tony~R Martinez.
+\newblock The general inefficiency of batch training for gradient descent
+  learning.
+\newblock {\em Neural Networks}, 16(10):1429--1451, 2003.
+
+\bibitem{smith2017don}
+Samuel~L Smith, Pieter-Jan Kindermans, and Quoc~V Le.
+\newblock Don't decay the learning rate, increase the batch size.
+\newblock {\em arXiv preprint arXiv:1711.00489}, 2017.
 
 \bibitem{qian1999momentum}
 Ning Qian.
@@ -31,5 +54,16 @@ Gao Huang, Yixuan Li, Geoff Pleiss, Zhuang Liu, John~E Hopcroft, and Kilian~Q
   Weinberger.
 \newblock Snapshot ensembles: Train 1, get m for free.
 \newblock {\em arXiv preprint arXiv:1704.00109}, 2017.
+
+\bibitem{smith2017cyclical}
+Leslie~N Smith.
+\newblock Cyclical learning rates for training neural networks.
+\newblock In {\em Applications of Computer Vision (WACV), 2017 IEEE Winter
+  Conference on}, pages 464--472. IEEE, 2017.
+
+\bibitem{loshchilov2016sgdr}
+Ilya Loshchilov and Frank Hutter.
+\newblock Sgdr: stochastic gradient descent with restarts.
+\newblock {\em Learning}, 10:3, 2016.
 
 \end{thebibliography}
