@@ -138,6 +138,12 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \section{Training}
 
+\textcolor{red}{Cost and Loss functions -- I'm not sure why I didn't have this yet?}
+
+\textcolor{red}{example of plots - step by step}
+
+\textcolor{red}{contour maps}
+
 \section{Quality of Fit}
 
 %% regression example
@@ -165,58 +171,6 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \textcolor{blue}{$\hat{y_i}$ is the predicted classification label for the $i$th observation using our predictor/model $\hat{f}$ and $y_i$ is the ground truth label}
 
 \section{Describing Learners}
-
-\subsection{(Over$|$Under)fitting}
-
-\subsubsection{Overfitting}
-
-\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
-
-\textcolor{blue}{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
-
-\textcolor{green}{TODO: figure showing an example of overfitting}
-
-\subsubsection{Underfitting}
-
-\textcolor{blue}{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
-
-\textcolor{blue}{Underfitting can arise from modeling data with too few parameters/too simple of a model.}
-
-\textcolor{green}{TODO: figure showing an example of underfitting}
-
-
-\subsection{Bias Variance Trade-off}
-
-\textcolor{blue}{Two fundamental causes of prediction error in a model -- the bias and the variance.}
-
-\subsubsection{Variance}
-\textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
-
-\textcolor{blue}{A model with high variance may be described as highly flexible and will likely overfit the data.}
-
-
-\subsubsection{Bias}
-\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
-
-\textcolor{blue}{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
-
-
-% not word-for-word, but example adapted from p35 of ISL
-\textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
-
-\subsubsection{Trade-Off}
-
-% TODO: see page 34 of ISL for eq and explaination here
-
-\textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
-
-
-% see page 36 of ISL
-\textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
-
-\textcolor{blue}{It should be noted that in a real world example, it may not be possible to explicitly calculate the test error, bias, or variance.}
-
-\textcolor{green}{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}
 
 \subsection{Parametric vs non-parametric}
 
@@ -319,62 +273,20 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{commonly used in SVMs (see \textcolor{red}{local ref}), the kernel trick can be used with any model that can be expressed in terms of the dot product of two feature vectors.}
 
-\section{Hyper-Parameters}
-
-\subsection{Parameters}
-
-\subsubsection{Learning Rate}
-
-\textcolor{green}{TODO: Learning rate overview}
-
-%%%% learning rates
-\textcolor{blue}{cyclic learning rate~\cite{smith2017cyclical}}
-
-\textcolor{blue}{sgdr: stochastic gradient descent with restarts~\cite{loshchilov2016sgdr}. The learning rate is decreased from the max value along a curve (cosine, shown in Eq.\ref{eq:sgdr_def}, where $n_{max}^i$ and $n_{min}^i$ are ranges for the learning rate, $T_i$ represents epochs, $T_{cur}$ is how many epochs have been performed since the last restart). The authors also suggest making each next cycle longer than the previous cycle by a constant $T_mul$ may be beneficial.}
-
-\begin{equation}
-{n_t = n_{min}^i + 1/2(n_{max}^i - n_{min}^i)(1 + cos(\frac{T_{cur}}{T_i}\pi))}
-\label{eq:sgdr_def}
-\end{equation}
-
-\subsubsection{Batch size}
-
-\textcolor{green}{TODO: batch size overview}
-
-%%%%% small batch size
-\textcolor{blue}{small minibatch sizes (between 2 and 32) may be better than large batch sizes~\cite{masters2018revisiting}.}
-
-\textcolor{blue}{``generalization gap'' may not be due to large mini-batches, rather, due to the number of updates made to the system~\cite{hoffer2017train}}
-
-%%%% minibatch
-\textcolor{blue}{Batch training is almost always slower to converge than on-line/mini-batch training, which is likely due to the fact that on-line/mini-batches learning will follow the error surface, allowing for larger learning rates, and thus faster convergence~\cite{wilson2003general}.}
-
-% incrementing batchsize over time
-\textcolor{blue}{Increasing the batch size may achieve similar benefits to decaying the learning rate ~\cite{smith2017don} -- which could lead to use of larger batch sizes, reducing the number of parameter updates and therefore reducing training time.}
-
-\subsection{Hyper-Parameter Optimization}
-
-\subsubsection{Grid Search}
-
-\textcolor{blue}{{Grid search}\index{Grid search} Exhaustive search that trains+evaluates a model for each combination of specified hyperparameter configurations and combinations defined by a Cartesian product of the sets of possible values for each hyperparameter.}
-
-\subsubsection{Randomized Search}
-
-\textcolor{blue}{{Randomized search}\index{Randomized search} }
-
-\textcolor{green}{TODO: figure demonstrating difference between grid and randomized search}
-
-\subsubsection{Other Methods}
-
-\textcolor{blue}{See \textcolor{red}{local ref? --- advanced methods and research}}
+%%%%%%%%%%%%%%%%%%% Hyper-parameters
+\input{./nested/basics/hyperparams}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Optimizers
+
+\section{Estimating Model Parameters}
+\input{./nested/basics/initialization}
+
 \input{./nested/basics/optimizers}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Evaluation
 \input{./nested/basics/evaluation}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% Metrics
+%%%%%%%%%%% Metrics (subsec nested under sec.Eval)
 \input{./nested/basics/metrics}
 

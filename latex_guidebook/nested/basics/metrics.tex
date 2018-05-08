@@ -1,8 +1,8 @@
-\section{Metrics}
+\subsection{Qualitative Evalutation: Metrics}
 
 \emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
 
-\subsection{Confusion Matrix}
+\subsubsection{Confusion Matrix}
 \textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion, or contingency table) XXXXXXXX}
 
 %% Confusion matrix
@@ -36,7 +36,7 @@
 	
 \end{itemize}
 
-\subsection{Classification Metrics}
+\subsubsection{Classification Metrics}
 
 \textcolor{blue}{The below measures of performance are calculated with the indicated equation with values obtained from the confusion matrix XXXXXXXX}
 
@@ -162,7 +162,7 @@
 \item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve.
 \end{itemize}
 
-\subsection{Regression Metrics}
+\subsubsection{Regression Metrics}
 
 \textcolor{blue}{It is important to note that regression performance metrics must ignore the direction of the error, otherwise the positive and negative errors would cancel each other out and the overall score would appear artificially optimistic \textcolor{blue}{see local figure}. This is typically corrected for by either taking the absolute value or the square of the value. An important consideration will be how severely outliers should be penalized, as a squared component will result in a larger penalization than an absolute value.}
 
@@ -188,10 +188,10 @@
 \end{itemize}
 
 
-\subsection{Additional Metrics}
+\subsubsection{Additional Metrics}
 
 
-\subsubsection{Linear Evaluation}
+\paragraph{Linear Evaluation}
 
 \textcolor{green}{TODO: overview of linear evaluation metrics}
 
@@ -206,7 +206,7 @@
 
 \textcolor{blue}{R-squared can spuriously increase when features are added}
 
-\subsubsection{Distance Metrics}
+\paragraph{Distance Metrics}
 
 \textcolor{blue}{There are four basic requirements for the distance metric:}
 
@@ -249,7 +249,7 @@
 
 
 
-\subsubsection{Multi-label Classification}
+\paragraph{Multi-label Classification}
 
 \textcolor{blue}{Images.}
 
@@ -264,7 +264,7 @@
 
 
 
-\subsection{Choosing the "right" metrics}
+\subsubsection{Choosing the "right" metrics}
 
 \textcolor{blue}{TODO: paras on choosing the right metrics -- need to consider balance, others}
 

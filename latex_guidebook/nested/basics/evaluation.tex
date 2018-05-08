@@ -20,3 +20,57 @@
 \textcolor{blue}{Evaluating the performance of a model can be challenging and will vary depending on the task. For instance, accuracy may not always be the best measure of performance -- consider a medical setting in which sensitivity may be more important since a false negative may be life threatening where as a false positive may only require additional observation.}
 
 \textcolor{blue}{When comparing various models, it may be challenging to rank them on a single performance measure. \textcolor{green}{TODO: more.}}
+
+\subsection{Qualitative Evaluation}
+
+\subsubsection{(Over$|$Under)fitting}
+
+\paragraph{Overfitting}
+
+\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
+
+\textcolor{blue}{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
+
+\textcolor{green}{TODO: figure showing an example of overfitting}
+
+\paragraph{Underfitting}
+
+\textcolor{blue}{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
+
+\textcolor{blue}{Underfitting can arise from modeling data with too few parameters/too simple of a model.}
+
+\textcolor{green}{TODO: figure showing an example of underfitting}
+
+
+\subsubsection{Bias Variance Trade-off}
+
+\textcolor{blue}{Two fundamental causes of prediction error in a model -- the bias and the variance.}
+
+\paragraph{Variance}
+\textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
+
+\textcolor{blue}{A model with high variance may be described as highly flexible and will likely overfit the data.}
+
+
+\paragraph{Bias}
+\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
+
+\textcolor{blue}{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
+
+
+% not word-for-word, but example adapted from p35 of ISL
+\textcolor{red}{For example, linear regression assumes a linear relationship between the features and labels. However, it is unlikely that a true linear relationship exists and so using linear regression to model this type of particular problem will likely introduce some bias.}
+
+\paragraph{Trade-Off}
+
+% TODO: see page 34 of ISL for eq and explaination here
+
+\textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
+
+
+% see page 36 of ISL
+\textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
+
+\textcolor{blue}{It should be noted that in a real world example, it may not be possible to explicitly calculate the test error, bias, or variance.}
+
+\textcolor{green}{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}
