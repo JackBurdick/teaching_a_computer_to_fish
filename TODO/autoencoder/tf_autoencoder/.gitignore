@@ -1,0 +1,11 @@
+mnist_data
+
+mnist/simple/saver/
+
+mnist/mlp/saver/
+
+mnist/mlp/\.ipynb_checkpoints/
+
+mnist/cnn/\.ipynb_checkpoints/
+
+mnist/cnn/saver/
