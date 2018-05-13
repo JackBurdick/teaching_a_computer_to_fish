@@ -1,3 +1,4 @@
+[START]
 # python snippets
 py_sample || ./code_sync_sample.ipynb || ../nested/python.tex || o ca 
 py_enumerate_01 || ../../python/tidbits.ipynb || ../nested/python.tex || o
@@ -9,7 +10,6 @@ py_app_v_ext || ../../python/tidbits.ipynb || ../nested/python.tex || o
 py_opt_params || ../../python/tidbits.ipynb || ../nested/python.tex || o
 py_func_kwonly || ../../python/tidbits.ipynb || ../nested/python.tex || o ca 
 py_nested_listcomp || ../../python/tidbits.ipynb || ../nested/python.tex || o ca 
-[START]
 datagen_blobs_2dcode || ../../ROOT_DATA/generated/make_blobs.ipynb || ../nested/basics/acquiring_data.tex || 
 datagen_blobs_3dcode || ../../ROOT_DATA/generated/make_blobs.ipynb || ../nested/basics/acquiring_data.tex || 
 [END]
