@@ -34,9 +34,10 @@
 \contentsline {subsection}{\numberline {4.3.2}Handling Categorical Data}{14}
 \contentsline {subsubsection}{\numberline {4.3.2.1}Encoding}{14}
 \contentsline {subsection}{\numberline {4.3.3}Feature Scaling, Normalization}{15}
-\contentsline {subsubsection}{\numberline {4.3.3.1}Min-Max scaling (Normalization)}{15}
-\contentsline {subsubsection}{\numberline {4.3.3.2}Standardization}{15}
-\contentsline {paragraph}{\numberline {4.3.3.2.1}Robust Scaler}{15}
+\contentsline {subsubsection}{\numberline {4.3.3.1}Mean Normalization}{15}
+\contentsline {subsubsection}{\numberline {4.3.3.2}Min-Max scaling (Normalization)}{15}
+\contentsline {subsubsection}{\numberline {4.3.3.3}Standardization}{15}
+\contentsline {paragraph}{\numberline {4.3.3.3.1}Robust Scaler}{16}
 \contentsline {subsection}{\numberline {4.3.4}Others}{16}
 \contentsline {subsubsection}{\numberline {4.3.4.1}Removing Duplicates}{16}
 \contentsline {subsubsection}{\numberline {4.3.4.2}Outliers}{16}
@@ -65,74 +66,75 @@
 \contentsline {subsection}{\numberline {4.5.1}Types of Splits}{18}
 \contentsline {subsection}{\numberline {4.5.2}k-Fold Cross Validation}{19}
 \contentsline {subsection}{\numberline {4.5.3}Sampling}{19}
-\contentsline {section}{\numberline {4.6}Some Terms}{19}
+\contentsline {section}{\numberline {4.6}Some Terms}{20}
 \contentsline {section}{\numberline {4.7}Type of Learning}{20}
 \contentsline {subsection}{\numberline {4.7.1}Supervised}{20}
 \contentsline {subsection}{\numberline {4.7.2}Unsupervised}{20}
-\contentsline {subsubsection}{\numberline {4.7.2.1}Clustering}{20}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Clustering}{21}
 \contentsline {subsubsection}{\numberline {4.7.2.2}Dimensionality Reduction}{21}
 \contentsline {subsection}{\numberline {4.7.3}Semi-supervised Learning}{21}
 \contentsline {subsection}{\numberline {4.7.4}Reinforcement}{21}
 \contentsline {subsection}{\numberline {4.7.5}Supervised vs Unsupervised}{21}
 \contentsline {subsection}{\numberline {4.7.6}Classification vs Regression}{21}
 \contentsline {subsubsection}{\numberline {4.7.6.1}Regression}{21}
-\contentsline {subsubsection}{\numberline {4.7.6.2}Classification}{21}
+\contentsline {subsubsection}{\numberline {4.7.6.2}Classification}{22}
 \contentsline {subsection}{\numberline {4.7.7}Multi-label classification}{22}
 \contentsline {subsubsection}{\numberline {4.7.7.1}Approaches: Problem transformation}{22}
 \contentsline {paragraph}{\numberline {4.7.7.1.1}Unique set/combination of labels}{22}
 \contentsline {paragraph}{\numberline {4.7.7.1.2}Many Binary Classifiers}{22}
 \contentsline {subsubsection}{\numberline {4.7.7.2}Evaluating Multi-label Classification}{22}
-\contentsline {section}{\numberline {4.8}Training}{22}
+\contentsline {section}{\numberline {4.8}Training}{23}
 \contentsline {section}{\numberline {4.9}Quality of Fit}{23}
 \contentsline {subsection}{\numberline {4.9.1}Regression Example}{23}
 \contentsline {subsection}{\numberline {4.9.2}Classification Example}{23}
 \contentsline {section}{\numberline {4.10}Describing Learners}{23}
 \contentsline {subsection}{\numberline {4.10.1}Parametric vs non-parametric}{23}
 \contentsline {subsubsection}{\numberline {4.10.1.1}parametric}{23}
-\contentsline {subsubsection}{\numberline {4.10.1.2}nonparametric}{23}
+\contentsline {subsubsection}{\numberline {4.10.1.2}nonparametric}{24}
 \contentsline {subsection}{\numberline {4.10.2}Eager vs Lazy Learners}{24}
 \contentsline {subsubsection}{\numberline {4.10.2.1}Eager Learners}{24}
 \contentsline {subsubsection}{\numberline {4.10.2.2}Lazy Learners}{24}
 \contentsline {subsection}{\numberline {4.10.3}Generative vs Discriminative Models}{24}
-\contentsline {subsubsection}{\numberline {4.10.3.1}Discriminative Models}{24}
+\contentsline {subsubsection}{\numberline {4.10.3.1}Discriminative Models}{25}
 \contentsline {paragraph}{\numberline {4.10.3.1.1}Probabilistic Discriminative}{25}
 \contentsline {paragraph}{\numberline {4.10.3.1.2}Non-probabilistic Discriminative}{25}
 \contentsline {subsubsection}{\numberline {4.10.3.2}Generative Models}{25}
 \contentsline {subsection}{\numberline {4.10.4}Strong vs Weak Learners}{25}
 \contentsline {subsubsection}{\numberline {4.10.4.1}Strong Learners}{25}
 \contentsline {subsubsection}{\numberline {4.10.4.2}Weak Learners}{25}
-\contentsline {section}{\numberline {4.11}Online Learning}{25}
-\contentsline {section}{\numberline {4.12}Ensemble Methods}{25}
+\contentsline {section}{\numberline {4.11}Online Learning}{26}
+\contentsline {section}{\numberline {4.12}Ensemble Methods}{26}
 \contentsline {section}{\numberline {4.13}Kernel Trick}{26}
 \contentsline {section}{\numberline {4.14}Hyper-Parameters}{26}
 \contentsline {subsection}{\numberline {4.14.1}Parameters: "tuning knobs"}{26}
 \contentsline {subsubsection}{\numberline {4.14.1.1}Learning Rate}{26}
-\contentsline {subsubsection}{\numberline {4.14.1.2}Batch size}{26}
+\contentsline {paragraph}{\numberline {4.14.1.1.1}research}{26}
+\contentsline {subsubsection}{\numberline {4.14.1.2}Batch size}{27}
 \contentsline {subsection}{\numberline {4.14.2}Hyper-Parameter Optimization}{27}
 \contentsline {subsubsection}{\numberline {4.14.2.1}Grid Search}{27}
 \contentsline {subsubsection}{\numberline {4.14.2.2}Randomized Search}{27}
 \contentsline {subsubsection}{\numberline {4.14.2.3}Other Methods}{27}
-\contentsline {section}{\numberline {4.15}Estimating Model Parameters}{27}
-\contentsline {subsection}{\numberline {4.15.1}Initialization}{27}
-\contentsline {subsubsection}{\numberline {4.15.1.1}Strategies}{27}
-\contentsline {paragraph}{\numberline {4.15.1.1.1}glotrot}{27}
-\contentsline {paragraph}{\numberline {4.15.1.1.2}he}{27}
-\contentsline {subsubsection}{\numberline {4.15.1.2}Implementation}{27}
+\contentsline {section}{\numberline {4.15}Estimating Model Parameters}{28}
+\contentsline {subsection}{\numberline {4.15.1}Initialization}{28}
+\contentsline {subsubsection}{\numberline {4.15.1.1}Strategies}{28}
+\contentsline {paragraph}{\numberline {4.15.1.1.1}glotrot}{28}
+\contentsline {paragraph}{\numberline {4.15.1.1.2}he}{28}
+\contentsline {subsubsection}{\numberline {4.15.1.2}Implementation}{28}
 \contentsline {paragraph}{\numberline {4.15.1.2.1}Weights}{28}
 \contentsline {paragraph}{\numberline {4.15.1.2.2}Biases}{28}
 \contentsline {subsection}{\numberline {4.15.2}Optimizers}{28}
 \contentsline {subsubsection}{\numberline {4.15.2.1}Gradient Descent}{28}
-\contentsline {paragraph}{\numberline {4.15.2.1.1}Batch Gradient Descent}{28}
-\contentsline {paragraph}{\numberline {4.15.2.1.2}Stochastic Gradient Descent}{28}
+\contentsline {paragraph}{\numberline {4.15.2.1.1}Batch Gradient Descent}{29}
+\contentsline {paragraph}{\numberline {4.15.2.1.2}Stochastic Gradient Descent}{29}
 \contentsline {paragraph}{\numberline {4.15.2.1.3}Mini-batch Gradient Descent}{29}
 \contentsline {subsection}{\numberline {4.15.3}Improved Optimizers}{29}
 \contentsline {subsubsection}{\numberline {4.15.3.1}Momentum}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.2}RMSProp}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.3}Nesterov}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.4}Adam}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.5}Nadam}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.6}Adagrad}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.7}Adadelta}{29}
+\contentsline {subsubsection}{\numberline {4.15.3.2}RMSProp}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.3}Nesterov}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.4}Adam}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.5}Nadam}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.6}Adagrad}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.7}Adadelta}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.8}AdaMax}{30}
 \contentsline {section}{\numberline {4.16}Evaluation}{30}
 \contentsline {subsection}{\numberline {4.16.1}Creating a Test Set}{30}
@@ -140,19 +142,19 @@
 \contentsline {subsubsection}{\numberline {4.16.2.1}(Over$|$Under)fitting}{31}
 \contentsline {paragraph}{\numberline {4.16.2.1.1}Overfitting}{31}
 \contentsline {paragraph}{\numberline {4.16.2.1.2}Underfitting}{31}
-\contentsline {subsubsection}{\numberline {4.16.2.2}Bias Variance Trade-off}{31}
-\contentsline {paragraph}{\numberline {4.16.2.2.1}Variance}{31}
-\contentsline {paragraph}{\numberline {4.16.2.2.2}Bias}{31}
+\contentsline {subsubsection}{\numberline {4.16.2.2}Bias Variance Trade-off}{32}
+\contentsline {paragraph}{\numberline {4.16.2.2.1}Variance}{32}
+\contentsline {paragraph}{\numberline {4.16.2.2.2}Bias}{32}
 \contentsline {paragraph}{\numberline {4.16.2.2.3}Trade-Off}{32}
-\contentsline {subsection}{\numberline {4.16.3}Qualitative Evalutation: Metrics}{32}
-\contentsline {subsubsection}{\numberline {4.16.3.1}Confusion Matrix}{32}
+\contentsline {subsection}{\numberline {4.16.3}Qualitative Evalutation: Metrics}{33}
+\contentsline {subsubsection}{\numberline {4.16.3.1}Confusion Matrix}{33}
 \contentsline {subsubsection}{\numberline {4.16.3.2}Classification Metrics}{33}
-\contentsline {subsubsection}{\numberline {4.16.3.3}Regression Metrics}{35}
+\contentsline {subsubsection}{\numberline {4.16.3.3}Regression Metrics}{36}
 \contentsline {subsubsection}{\numberline {4.16.3.4}Additional Metrics}{36}
 \contentsline {paragraph}{\numberline {4.16.3.4.1}Linear Evaluation}{36}
-\contentsline {paragraph}{\numberline {4.16.3.4.2}Distance Metrics}{36}
-\contentsline {paragraph}{\numberline {4.16.3.4.3}Multi-label Classification}{37}
-\contentsline {subsubsection}{\numberline {4.16.3.5}Choosing the "right" metrics}{37}
+\contentsline {paragraph}{\numberline {4.16.3.4.2}Distance Metrics}{37}
+\contentsline {paragraph}{\numberline {4.16.3.4.3}Multi-label Classification}{38}
+\contentsline {subsubsection}{\numberline {4.16.3.5}Choosing the "right" metrics}{38}
 \contentsline {chapter}{\numberline {5}Foundational Methods}{39}
 \contentsline {section}{\numberline {5.1}Regression}{39}
 \contentsline {subsection}{\numberline {5.1.1}Simple Linear Regression}{39}
@@ -165,7 +167,7 @@
 \contentsline {section}{\numberline {5.3}Nearest Neighbors}{42}
 \contentsline {subsection}{\numberline {5.3.1}Overview}{42}
 \contentsline {subsubsection}{\numberline {5.3.1.1}Distance metric}{42}
-\contentsline {subsection}{\numberline {5.3.2}K-Nearest Neighbors}{42}
+\contentsline {subsection}{\numberline {5.3.2}K-Nearest Neighbors}{43}
 \contentsline {subsubsection}{\numberline {5.3.2.1}Regression Considerations}{43}
 \contentsline {subsection}{\numberline {5.3.3}Considering Imbalanced Data}{43}
 \contentsline {subsubsection}{\numberline {5.3.3.1}Weighted K-Nearest Neighbors}{43}
@@ -176,7 +178,7 @@
 \contentsline {section}{\numberline {5.4}Support Vector Machines (SVM)}{44}
 \contentsline {subsection}{\numberline {5.4.1}Maximizing Geometric Margin}{44}
 \contentsline {subsubsection}{\numberline {5.4.1.1}Sequential Minimal Optimization}{44}
-\contentsline {subsection}{\numberline {5.4.2}Kernel SVM}{44}
+\contentsline {subsection}{\numberline {5.4.2}Kernel SVM}{45}
 \contentsline {subsubsection}{\numberline {5.4.2.1}The `Kernel Trick'}{45}
 \contentsline {section}{\numberline {5.5}Naive Bayes}{45}
 \contentsline {subsection}{\numberline {5.5.1}Bayes' Theorem}{45}

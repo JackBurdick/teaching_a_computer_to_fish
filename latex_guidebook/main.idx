@@ -1,7 +1,7 @@
 \indexentry{one-hot encoding}{14}
 \indexentry{one-of-k encoding}{14}
 \indexentry{sparse vectors}{15}
-\indexentry{interquartile range}{15}
+\indexentry{interquartile range}{16}
 \indexentry{corpus}{16}
 \indexentry{vocabulary}{16}
 \indexentry{bag-of-words}{17}
@@ -12,11 +12,11 @@
 \indexentry{Problem transformation}{22}
 \indexentry{Grid search}{27}
 \indexentry{Randomized search}{27}
-\indexentry{peeking}{30}
+\indexentry{peeking}{31}
 \indexentry{Overfitting}{31}
 \indexentry{Underfitting}{31}
-\indexentry{Variance}{31}
-\indexentry{Bias}{31}
+\indexentry{Variance}{32}
+\indexentry{Bias}{32}
 \indexentry{Type I error}{33}
 \indexentry{Type II error}{33}
 \indexentry{Pearson's R}{36}

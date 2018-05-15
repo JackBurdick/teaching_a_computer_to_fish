@@ -18,8 +18,6 @@
 
 \subsection{Handling Categorical Data}
 
-
-
 \subsubsection{Encoding}
 
 \textcolor{blue}{It may seem intuitive to represent categorical data with an integer value. However, this may not always be best. Let's pretend we're representing United States with arbitrary integer values and we assign values alphabetically; Alabama: 0, Alaska: 1, Arizona: 2, Arkansas: 3, California: 4, ..., Wisconsin: 48, Wyoming: 49. So far so good. \textcolor{red}{However, these values indirectly imply a relationship (that may not actually exist)} -- and imply that some states are more similar to one another than others (for instance, this encoding seemingly indicates that Alabama as most related to Alaska.) }
@@ -34,9 +32,24 @@
 
 \subsection{Feature Scaling, Normalization}
 
+% TODO: this section needs to be restructured to present ideas in a logical flow/building on one another and the cost(time)/benefit
+
 \textcolor{blue}{Ensuring variables exist on a similar scale and variance is important. If one variable is orders of magnitude larger than others, the variable may dominate the learning algorithm and prevent influence from the other variables.}
 
-\textcolor{blue}{Additionally, some learning algorithms converge more slowly when the values are not standardized.}
+\textcolor{blue}{Generally would like to get each feature into the $-1 \le X_i \le 1$ or the $-0.5 \le X_i le 0.5$ range.}
+
+\textcolor{blue}{"OK" if not exact, different people have different rules of thumb for when it is necessary to scale a feature into this range.}
+
+\textcolor{blue}{Additionally, some learning algorithms converge more slowly.}
+
+% TODO: Give an example
+
+
+\subsubsection{Mean Normalization}
+
+\textcolor{blue}{feature $x$ is replaced by $x - \mu$ to create a zero mean}
+
+% TODO: 2D figure showing a circle vs oval contour plot and how gradient descent may take longer on the "oval"
 
 \subsubsection{Min-Max scaling (Normalization)}
 
