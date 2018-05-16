@@ -165,4 +165,5 @@ SmallBusinessML/*.aux
 ROOT_DATA/generated/\.ipynb_checkpoints/
 
 # ignore mypy_cache
-python/type_checking/.mypy_cache/*
+python/types/type_checking/.mypy_cache/*
+python/types/examples/\.ipynb_checkpoints/
