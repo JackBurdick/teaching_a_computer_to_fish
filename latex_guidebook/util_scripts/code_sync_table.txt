@@ -1,6 +1,6 @@
 [START]
 # python snippets
-py_sample || ./code_sync_sample.ipynb || ../nested/python.tex || o ca 
+# py_sample || ./code_sync_sample.ipynb || ../nested/python.tex || o ca 
 py_enumerate_01 || ../../python/tidbits.ipynb || ../nested/python.tex || o
 py_enumerate_02 || ../../python/tidbits.ipynb || ../nested/python.tex || o
 py_zip || ../../python/tidbits.ipynb || ../nested/python.tex || o

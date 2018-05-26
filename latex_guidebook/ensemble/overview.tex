@@ -43,11 +43,14 @@
 % see page 164 of MLforpredictiveDataAnalytics
 \textcolor{green}{TODO: expand on the weighted dataset and the algorithm+iteration steps}
 
-\paragraph{AdaBoost}
+\paragraph{Examples}
+
+\subparagraph{AdaBoost}
 
 \textcolor{blue}{TODO: Adaptive Boosting (AdaBoost) --- 1995 (Yoav Freund and Robert Schapire).}
 
 \textcolor{blue}{iterative algorithm. On first iteration equal weights are assigned to all the training instances and a weak learner is trained. On subsequent iterations, weights of training instances are modified such that weights are increased on instances that were predicted incorrectly and decreased on instances that were predicted correctly before training a new learner. This methodology causes the following learners to increasingly focus on the instances that the ensemble is predicting incorrectly. The methodology is considered complete either after a set number of iterations, or when perfect performance is achieved.}
+
 
 \subsubsection{Bagging Vs Boosting}
 
@@ -60,6 +63,11 @@
 %see p158[146] of Mastering ML w/SKL
 \textcolor{green}{Sometimes called {blending}\index{blending}. TODO: more about stacking --- can be used to combine different types of base estimators}
 
-\subsection{Random Forests}
+
+\subsection{Examples}
+
+\subsubsection{Random Forests}
 
 \textcolor{blue}{Using decision trees with a combination of bagging and subspace sampling -- and a majority vote/median value -- median is generally preferred to mean because of potential outliers}
+
+\textcolor{blue}{similar bias, but lower variance when compared to a standard decision tree.}

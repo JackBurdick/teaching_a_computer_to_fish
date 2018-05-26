@@ -21,137 +21,142 @@
 \contentsline {part}{II\hspace {1em}ML}{9}
 \contentsline {chapter}{\numberline {4}Basics}{11}
 \contentsline {section}{\numberline {4.1}Overview}{11}
-\contentsline {section}{\numberline {4.2}Data Acquisition}{11}
-\contentsline {subsection}{\numberline {4.2.1}Resources}{11}
-\contentsline {subsection}{\numberline {4.2.2}Public Indexing}{11}
-\contentsline {subsection}{\numberline {4.2.3}Notable Database Sites}{12}
-\contentsline {subsection}{\numberline {4.2.4}Data Portal Search}{12}
-\contentsline {subsection}{\numberline {4.2.5}Generating Fake Data}{12}
-\contentsline {section}{\numberline {4.3}Data Pre-processing}{12}
-\contentsline {subsection}{\numberline {4.3.1}Handling Missing Data}{14}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Filtering Out}{14}
-\contentsline {subsubsection}{\numberline {4.3.1.2}Filling In}{14}
-\contentsline {subsection}{\numberline {4.3.2}Handling Categorical Data}{14}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Encoding}{14}
-\contentsline {subsection}{\numberline {4.3.3}Feature Scaling, Normalization}{15}
-\contentsline {subsubsection}{\numberline {4.3.3.1}Mean Normalization}{15}
-\contentsline {subsubsection}{\numberline {4.3.3.2}Min-Max scaling (Normalization)}{15}
-\contentsline {subsubsection}{\numberline {4.3.3.3}Standardization}{15}
-\contentsline {paragraph}{\numberline {4.3.3.3.1}Robust Scaler}{16}
-\contentsline {subsection}{\numberline {4.3.4}Others}{16}
-\contentsline {subsubsection}{\numberline {4.3.4.1}Removing Duplicates}{16}
-\contentsline {subsubsection}{\numberline {4.3.4.2}Outliers}{16}
-\contentsline {subsubsection}{\numberline {4.3.4.3}Discretization and Binning}{16}
-\contentsline {section}{\numberline {4.4}Feature Extraction from Various Datatypes}{16}
-\contentsline {subsection}{\numberline {4.4.1}Images}{16}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Video}{16}
-\contentsline {subsection}{\numberline {4.4.2}Natural Language}{16}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Terminology}{16}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Pre-processing}{16}
-\contentsline {paragraph}{\numberline {4.4.2.2.1}Stop Word Filtering}{17}
-\contentsline {paragraph}{\numberline {4.4.2.2.2}Tokenization}{17}
-\contentsline {paragraph}{\numberline {4.4.2.2.3}Lemmatization}{17}
-\contentsline {paragraph}{\numberline {4.4.2.2.4}Stemming}{17}
-\contentsline {subparagraph}{Porter Stemming}{17}
-\contentsline {subsubsection}{\numberline {4.4.2.3}Encoding}{17}
-\contentsline {paragraph}{\numberline {4.4.2.3.1}Encoding Methods}{17}
-\contentsline {subparagraph}{Bag-of-Words}{17}
-\contentsline {paragraph}{\numberline {4.4.2.3.2}tf-idf}{18}
-\contentsline {subsubsection}{\numberline {4.4.2.4}Embedding}{18}
+\contentsline {section}{\numberline {4.2}Bias}{12}
+\contentsline {subsection}{\numberline {4.2.1}Types of Bias}{12}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Interaction Bias}{12}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Latent Bias}{12}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Selection Bias}{12}
+\contentsline {subsection}{\numberline {4.2.2}Evaluation}{12}
+\contentsline {section}{\numberline {4.3}Data Acquisition}{12}
+\contentsline {subsection}{\numberline {4.3.1}Resources}{12}
+\contentsline {subsection}{\numberline {4.3.2}Public Indexing}{12}
+\contentsline {subsection}{\numberline {4.3.3}Notable Database Sites}{12}
+\contentsline {subsection}{\numberline {4.3.4}Data Portal Search}{13}
+\contentsline {subsection}{\numberline {4.3.5}Generating Fake Data}{13}
+\contentsline {section}{\numberline {4.4}Data Pre-processing}{13}
+\contentsline {subsection}{\numberline {4.4.1}Handling Missing Data}{14}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Filtering Out}{14}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Filling In}{14}
+\contentsline {subsection}{\numberline {4.4.2}Handling Categorical Data}{15}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Encoding}{15}
+\contentsline {subsection}{\numberline {4.4.3}Feature Scaling, Normalization}{15}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Mean Normalization}{15}
+\contentsline {subsubsection}{\numberline {4.4.3.2}Min-Max scaling (Normalization)}{15}
+\contentsline {subsubsection}{\numberline {4.4.3.3}Standardization}{16}
+\contentsline {paragraph}{\numberline {4.4.3.3.1}Robust Scaler}{16}
+\contentsline {subsection}{\numberline {4.4.4}Others}{16}
+\contentsline {subsubsection}{\numberline {4.4.4.1}Removing Duplicates}{16}
+\contentsline {subsubsection}{\numberline {4.4.4.2}Outliers}{16}
+\contentsline {subsubsection}{\numberline {4.4.4.3}Discretization and Binning}{16}
+\contentsline {section}{\numberline {4.5}Feature Extraction from Various Datatypes}{16}
+\contentsline {subsection}{\numberline {4.5.1}Images}{16}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Video}{16}
+\contentsline {subsection}{\numberline {4.5.2}Natural Language}{17}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Terminology}{17}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Pre-processing}{17}
+\contentsline {paragraph}{\numberline {4.5.2.2.1}Stop Word Filtering}{17}
+\contentsline {paragraph}{\numberline {4.5.2.2.2}Tokenization}{17}
+\contentsline {paragraph}{\numberline {4.5.2.2.3}Lemmatization}{17}
+\contentsline {paragraph}{\numberline {4.5.2.2.4}Stemming}{17}
+\contentsline {subparagraph}{Porter Stemming}{18}
+\contentsline {subsubsection}{\numberline {4.5.2.3}Encoding}{18}
+\contentsline {paragraph}{\numberline {4.5.2.3.1}Encoding Methods}{18}
+\contentsline {subparagraph}{Bag-of-Words}{18}
+\contentsline {paragraph}{\numberline {4.5.2.3.2}tf-idf}{18}
+\contentsline {subsubsection}{\numberline {4.5.2.4}Embedding}{18}
 \contentsline {subparagraph}{glove}{18}
 \contentsline {subparagraph}{word2vec}{18}
-\contentsline {subsubsection}{\numberline {4.4.2.5}Other Notes}{18}
-\contentsline {subsection}{\numberline {4.4.3}Audio}{18}
-\contentsline {section}{\numberline {4.5}Partitioning Data}{18}
-\contentsline {subsection}{\numberline {4.5.1}Types of Splits}{18}
-\contentsline {subsection}{\numberline {4.5.2}k-Fold Cross Validation}{19}
-\contentsline {subsection}{\numberline {4.5.3}Sampling}{19}
-\contentsline {section}{\numberline {4.6}Some Terms}{20}
-\contentsline {section}{\numberline {4.7}Type of Learning}{20}
-\contentsline {subsection}{\numberline {4.7.1}Supervised}{20}
-\contentsline {subsection}{\numberline {4.7.2}Unsupervised}{20}
-\contentsline {subsubsection}{\numberline {4.7.2.1}Clustering}{21}
-\contentsline {subsubsection}{\numberline {4.7.2.2}Dimensionality Reduction}{21}
-\contentsline {subsection}{\numberline {4.7.3}Semi-supervised Learning}{21}
-\contentsline {subsection}{\numberline {4.7.4}Reinforcement}{21}
-\contentsline {subsection}{\numberline {4.7.5}Supervised vs Unsupervised}{21}
-\contentsline {subsection}{\numberline {4.7.6}Classification vs Regression}{21}
-\contentsline {subsubsection}{\numberline {4.7.6.1}Regression}{21}
-\contentsline {subsubsection}{\numberline {4.7.6.2}Classification}{22}
-\contentsline {subsection}{\numberline {4.7.7}Multi-label classification}{22}
-\contentsline {subsubsection}{\numberline {4.7.7.1}Approaches: Problem transformation}{22}
-\contentsline {paragraph}{\numberline {4.7.7.1.1}Unique set/combination of labels}{22}
-\contentsline {paragraph}{\numberline {4.7.7.1.2}Many Binary Classifiers}{22}
-\contentsline {subsubsection}{\numberline {4.7.7.2}Evaluating Multi-label Classification}{22}
-\contentsline {section}{\numberline {4.8}Training}{23}
-\contentsline {section}{\numberline {4.9}Quality of Fit}{23}
-\contentsline {subsection}{\numberline {4.9.1}Regression Example}{23}
-\contentsline {subsection}{\numberline {4.9.2}Classification Example}{23}
-\contentsline {section}{\numberline {4.10}Describing Learners}{23}
-\contentsline {subsection}{\numberline {4.10.1}Parametric vs non-parametric}{23}
-\contentsline {subsubsection}{\numberline {4.10.1.1}parametric}{23}
-\contentsline {subsubsection}{\numberline {4.10.1.2}nonparametric}{24}
-\contentsline {subsection}{\numberline {4.10.2}Eager vs Lazy Learners}{24}
-\contentsline {subsubsection}{\numberline {4.10.2.1}Eager Learners}{24}
-\contentsline {subsubsection}{\numberline {4.10.2.2}Lazy Learners}{24}
-\contentsline {subsection}{\numberline {4.10.3}Generative vs Discriminative Models}{24}
-\contentsline {subsubsection}{\numberline {4.10.3.1}Discriminative Models}{25}
-\contentsline {paragraph}{\numberline {4.10.3.1.1}Probabilistic Discriminative}{25}
-\contentsline {paragraph}{\numberline {4.10.3.1.2}Non-probabilistic Discriminative}{25}
-\contentsline {subsubsection}{\numberline {4.10.3.2}Generative Models}{25}
-\contentsline {subsection}{\numberline {4.10.4}Strong vs Weak Learners}{25}
-\contentsline {subsubsection}{\numberline {4.10.4.1}Strong Learners}{25}
-\contentsline {subsubsection}{\numberline {4.10.4.2}Weak Learners}{25}
-\contentsline {section}{\numberline {4.11}Online Learning}{26}
-\contentsline {section}{\numberline {4.12}Ensemble Methods}{26}
+\contentsline {subsubsection}{\numberline {4.5.2.5}Other Notes}{18}
+\contentsline {subsection}{\numberline {4.5.3}Audio}{18}
+\contentsline {section}{\numberline {4.6}Partitioning Data}{18}
+\contentsline {subsection}{\numberline {4.6.1}Types of Splits}{19}
+\contentsline {subsection}{\numberline {4.6.2}k-Fold Cross Validation}{19}
+\contentsline {subsection}{\numberline {4.6.3}Sampling}{20}
+\contentsline {section}{\numberline {4.7}Some Terms}{20}
+\contentsline {section}{\numberline {4.8}Type of Learning}{20}
+\contentsline {subsection}{\numberline {4.8.1}Supervised}{20}
+\contentsline {subsection}{\numberline {4.8.2}Unsupervised}{21}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Clustering}{21}
+\contentsline {subsubsection}{\numberline {4.8.2.2}Dimensionality Reduction}{21}
+\contentsline {subsection}{\numberline {4.8.3}Semi-supervised Learning}{21}
+\contentsline {subsection}{\numberline {4.8.4}Reinforcement}{21}
+\contentsline {subsection}{\numberline {4.8.5}Supervised vs Unsupervised}{22}
+\contentsline {subsection}{\numberline {4.8.6}Classification vs Regression}{22}
+\contentsline {subsubsection}{\numberline {4.8.6.1}Regression}{22}
+\contentsline {subsubsection}{\numberline {4.8.6.2}Classification}{22}
+\contentsline {subsection}{\numberline {4.8.7}Multi-label classification}{22}
+\contentsline {subsubsection}{\numberline {4.8.7.1}Approaches: Problem transformation}{22}
+\contentsline {paragraph}{\numberline {4.8.7.1.1}Unique set/combination of labels}{22}
+\contentsline {paragraph}{\numberline {4.8.7.1.2}Many Binary Classifiers}{22}
+\contentsline {subsubsection}{\numberline {4.8.7.2}Evaluating Multi-label Classification}{23}
+\contentsline {section}{\numberline {4.9}Training}{23}
+\contentsline {section}{\numberline {4.10}Quality of Fit}{23}
+\contentsline {subsection}{\numberline {4.10.1}Regression Example}{23}
+\contentsline {subsection}{\numberline {4.10.2}Classification Example}{24}
+\contentsline {section}{\numberline {4.11}Describing Learners}{24}
+\contentsline {subsection}{\numberline {4.11.1}Parametric vs non-parametric}{24}
+\contentsline {subsubsection}{\numberline {4.11.1.1}parametric}{24}
+\contentsline {subsubsection}{\numberline {4.11.1.2}nonparametric}{24}
+\contentsline {subsection}{\numberline {4.11.2}Eager vs Lazy Learners}{25}
+\contentsline {subsubsection}{\numberline {4.11.2.1}Eager Learners}{25}
+\contentsline {subsubsection}{\numberline {4.11.2.2}Lazy Learners}{25}
+\contentsline {subsection}{\numberline {4.11.3}Generative vs Discriminative Models}{25}
+\contentsline {subsubsection}{\numberline {4.11.3.1}Discriminative Models}{25}
+\contentsline {paragraph}{\numberline {4.11.3.1.1}Probabilistic Discriminative}{25}
+\contentsline {paragraph}{\numberline {4.11.3.1.2}Non-probabilistic Discriminative}{25}
+\contentsline {subsubsection}{\numberline {4.11.3.2}Generative Models}{26}
+\contentsline {subsection}{\numberline {4.11.4}Strong vs Weak Learners}{26}
+\contentsline {subsubsection}{\numberline {4.11.4.1}Strong Learners}{26}
+\contentsline {subsubsection}{\numberline {4.11.4.2}Weak Learners}{26}
+\contentsline {section}{\numberline {4.12}Online Learning}{26}
 \contentsline {section}{\numberline {4.13}Kernel Trick}{26}
-\contentsline {section}{\numberline {4.14}Hyper-Parameters}{26}
-\contentsline {subsection}{\numberline {4.14.1}Parameters: "tuning knobs"}{26}
-\contentsline {subsubsection}{\numberline {4.14.1.1}Learning Rate}{26}
-\contentsline {paragraph}{\numberline {4.14.1.1.1}research}{26}
+\contentsline {section}{\numberline {4.14}Hyper-Parameters}{27}
+\contentsline {subsection}{\numberline {4.14.1}Parameters: "tuning knobs"}{27}
+\contentsline {subsubsection}{\numberline {4.14.1.1}Learning Rate}{27}
+\contentsline {paragraph}{\numberline {4.14.1.1.1}research}{27}
 \contentsline {subsubsection}{\numberline {4.14.1.2}Batch size}{27}
-\contentsline {subsection}{\numberline {4.14.2}Hyper-Parameter Optimization}{27}
-\contentsline {subsubsection}{\numberline {4.14.2.1}Grid Search}{27}
-\contentsline {subsubsection}{\numberline {4.14.2.2}Randomized Search}{27}
-\contentsline {subsubsection}{\numberline {4.14.2.3}Other Methods}{27}
+\contentsline {subsection}{\numberline {4.14.2}Hyper-Parameter Optimization}{28}
+\contentsline {subsubsection}{\numberline {4.14.2.1}Grid Search}{28}
+\contentsline {subsubsection}{\numberline {4.14.2.2}Randomized Search}{28}
+\contentsline {subsubsection}{\numberline {4.14.2.3}Other Methods}{28}
 \contentsline {section}{\numberline {4.15}Estimating Model Parameters}{28}
 \contentsline {subsection}{\numberline {4.15.1}Initialization}{28}
 \contentsline {subsubsection}{\numberline {4.15.1.1}Strategies}{28}
 \contentsline {paragraph}{\numberline {4.15.1.1.1}glotrot}{28}
 \contentsline {paragraph}{\numberline {4.15.1.1.2}he}{28}
 \contentsline {subsubsection}{\numberline {4.15.1.2}Implementation}{28}
-\contentsline {paragraph}{\numberline {4.15.1.2.1}Weights}{28}
-\contentsline {paragraph}{\numberline {4.15.1.2.2}Biases}{28}
-\contentsline {subsection}{\numberline {4.15.2}Optimizers}{28}
-\contentsline {subsubsection}{\numberline {4.15.2.1}Gradient Descent}{28}
+\contentsline {paragraph}{\numberline {4.15.1.2.1}Weights}{29}
+\contentsline {paragraph}{\numberline {4.15.1.2.2}Biases}{29}
+\contentsline {subsection}{\numberline {4.15.2}Optimizers}{29}
+\contentsline {subsubsection}{\numberline {4.15.2.1}Gradient Descent}{29}
 \contentsline {paragraph}{\numberline {4.15.2.1.1}Batch Gradient Descent}{29}
 \contentsline {paragraph}{\numberline {4.15.2.1.2}Stochastic Gradient Descent}{29}
-\contentsline {paragraph}{\numberline {4.15.2.1.3}Mini-batch Gradient Descent}{29}
-\contentsline {subsection}{\numberline {4.15.3}Improved Optimizers}{29}
-\contentsline {subsubsection}{\numberline {4.15.3.1}Momentum}{29}
+\contentsline {paragraph}{\numberline {4.15.2.1.3}Mini-batch Gradient Descent}{30}
+\contentsline {subsection}{\numberline {4.15.3}Improved Optimizers}{30}
+\contentsline {subsubsection}{\numberline {4.15.3.1}Momentum}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.2}RMSProp}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.3}Nesterov}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.4}Adam}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.5}Nadam}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.6}Adagrad}{30}
 \contentsline {subsubsection}{\numberline {4.15.3.7}Adadelta}{30}
-\contentsline {subsubsection}{\numberline {4.15.3.8}AdaMax}{30}
-\contentsline {section}{\numberline {4.16}Evaluation}{30}
-\contentsline {subsection}{\numberline {4.16.1}Creating a Test Set}{30}
-\contentsline {subsection}{\numberline {4.16.2}Qualitative Evaluation}{31}
-\contentsline {subsubsection}{\numberline {4.16.2.1}(Over$|$Under)fitting}{31}
-\contentsline {paragraph}{\numberline {4.16.2.1.1}Overfitting}{31}
-\contentsline {paragraph}{\numberline {4.16.2.1.2}Underfitting}{31}
+\contentsline {subsubsection}{\numberline {4.15.3.8}AdaMax}{31}
+\contentsline {section}{\numberline {4.16}Evaluation}{31}
+\contentsline {subsection}{\numberline {4.16.1}Creating a Test Set}{31}
+\contentsline {subsection}{\numberline {4.16.2}Qualitative Evaluation}{32}
+\contentsline {subsubsection}{\numberline {4.16.2.1}(Over$|$Under)fitting}{32}
+\contentsline {paragraph}{\numberline {4.16.2.1.1}Overfitting}{32}
+\contentsline {paragraph}{\numberline {4.16.2.1.2}Underfitting}{32}
 \contentsline {subsubsection}{\numberline {4.16.2.2}Bias Variance Trade-off}{32}
 \contentsline {paragraph}{\numberline {4.16.2.2.1}Variance}{32}
 \contentsline {paragraph}{\numberline {4.16.2.2.2}Bias}{32}
-\contentsline {paragraph}{\numberline {4.16.2.2.3}Trade-Off}{32}
+\contentsline {paragraph}{\numberline {4.16.2.2.3}Trade-Off}{33}
 \contentsline {subsection}{\numberline {4.16.3}Qualitative Evalutation: Metrics}{33}
 \contentsline {subsubsection}{\numberline {4.16.3.1}Confusion Matrix}{33}
-\contentsline {subsubsection}{\numberline {4.16.3.2}Classification Metrics}{33}
+\contentsline {subsubsection}{\numberline {4.16.3.2}Classification Metrics}{34}
 \contentsline {subsubsection}{\numberline {4.16.3.3}Regression Metrics}{36}
-\contentsline {subsubsection}{\numberline {4.16.3.4}Additional Metrics}{36}
-\contentsline {paragraph}{\numberline {4.16.3.4.1}Linear Evaluation}{36}
+\contentsline {subsubsection}{\numberline {4.16.3.4}Additional Metrics}{37}
+\contentsline {paragraph}{\numberline {4.16.3.4.1}Linear Evaluation}{37}
 \contentsline {paragraph}{\numberline {4.16.3.4.2}Distance Metrics}{37}
 \contentsline {paragraph}{\numberline {4.16.3.4.3}Multi-label Classification}{38}
 \contentsline {subsubsection}{\numberline {4.16.3.5}Choosing the "right" metrics}{38}
@@ -185,13 +190,13 @@
 \contentsline {section}{\numberline {5.6}Decision Trees}{45}
 \contentsline {subsection}{\numberline {5.6.1}Criterion -- Maximizing Information Gain}{46}
 \contentsline {subsubsection}{\numberline {5.6.1.1}Gini Impurity}{46}
-\contentsline {subsubsection}{\numberline {5.6.1.2}Entropy}{46}
+\contentsline {subsubsection}{\numberline {5.6.1.2}Entropy}{47}
 \contentsline {paragraph}{\numberline {5.6.1.2.1}Information Gain}{47}
 \contentsline {subsubsection}{\numberline {5.6.1.3}Classification Error}{47}
 \contentsline {subsubsection}{\numberline {5.6.1.4}ID3 Algorithm}{47}
 \contentsline {subsubsection}{\numberline {5.6.1.5}C4.5 Algorithm}{47}
 \contentsline {subsubsection}{\numberline {5.6.1.6}CART Algorithm}{47}
-\contentsline {subsection}{\numberline {5.6.2}Pruning}{47}
+\contentsline {subsection}{\numberline {5.6.2}Pruning}{48}
 \contentsline {subsubsection}{\numberline {5.6.2.1}Pre-pruning}{48}
 \contentsline {subsubsection}{\numberline {5.6.2.2}Post-pruning}{48}
 \contentsline {section}{\numberline {5.7}Random Forests}{48}
@@ -235,10 +240,12 @@
 \contentsline {subsection}{\numberline {9.1.1}Approaches to Creating Ensembles}{59}
 \contentsline {subsubsection}{\numberline {9.1.1.1}Bagging}{59}
 \contentsline {subsubsection}{\numberline {9.1.1.2}Boosting}{60}
-\contentsline {paragraph}{\numberline {9.1.1.2.1}AdaBoost}{60}
+\contentsline {paragraph}{\numberline {9.1.1.2.1}Examples}{60}
+\contentsline {subparagraph}{AdaBoost}{60}
 \contentsline {subsubsection}{\numberline {9.1.1.3}Bagging Vs Boosting}{60}
 \contentsline {subsection}{\numberline {9.1.2}Stacking}{61}
-\contentsline {subsection}{\numberline {9.1.3}Random Forests}{61}
+\contentsline {subsection}{\numberline {9.1.3}Examples}{61}
+\contentsline {subsubsection}{\numberline {9.1.3.1}Random Forests}{61}
 \contentsline {chapter}{\numberline {10}Term dump}{63}
 \contentsline {subsection}{\numberline {10.0.1}Distributions}{63}
 \contentsline {part}{III\hspace {1em}Brief Reference}{65}
@@ -420,17 +427,17 @@
 \contentsline {subsubsection}{\numberline {22.3.6.2}Advancements}{104}
 \contentsline {subsubsection}{\numberline {22.3.6.3}Popular Activation Functions}{104}
 \contentsline {paragraph}{\numberline {22.3.6.3.1}Smooth Non-linear}{104}
-\contentsline {paragraph}{\numberline {22.3.6.3.2}Not Smooth Non-linear}{104}
-\contentsline {section}{\numberline {22.4}Fine-Tuning Architectures}{104}
-\contentsline {subsection}{\numberline {22.4.1}Profiler}{104}
-\contentsline {subsection}{\numberline {22.4.2}Debugger}{104}
-\contentsline {section}{\numberline {22.5}Model Evaluation}{104}
+\contentsline {paragraph}{\numberline {22.3.6.3.2}Not Smooth Non-linear}{110}
+\contentsline {section}{\numberline {22.4}Fine-Tuning Architectures}{110}
+\contentsline {subsection}{\numberline {22.4.1}Profiler}{110}
+\contentsline {subsection}{\numberline {22.4.2}Debugger}{110}
+\contentsline {section}{\numberline {22.5}Model Evaluation}{110}
 \contentsline {subsection}{\numberline {22.5.1}Metrics}{110}
 \contentsline {subsection}{\numberline {22.5.2}TensorBoard}{110}
 \contentsline {subsection}{\numberline {22.5.3}TFMA: TensorFlow Model Analysis}{110}
 \contentsline {subsubsection}{\numberline {22.5.3.1}Key Features}{110}
 \contentsline {paragraph}{\numberline {22.5.3.1.1}Sliced Metrics}{110}
-\contentsline {paragraph}{\numberline {22.5.3.1.2}Full-pass Metrics}{110}
+\contentsline {paragraph}{\numberline {22.5.3.1.2}Full-pass Metrics}{111}
 \contentsline {subsubsection}{\numberline {22.5.3.2}Implementation}{111}
 \contentsline {paragraph}{\numberline {22.5.3.2.1}Overview}{111}
 \contentsline {paragraph}{\numberline {22.5.3.2.2}Code}{111}

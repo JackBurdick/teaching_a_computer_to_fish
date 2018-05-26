@@ -16,6 +16,10 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 \textcolor{blue}{Quantitative are represented by numbers but can be interval (0 is meaningless -- e.g. temperature in C or F, where true zero is not 0) or ratio (has a true 0 -- e.g. temperature in K, weight or length)}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% Bias
+\input{./nested/basics/bias}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%% Acquiring Data
 \input{./nested/basics/acquiring_data}
 
@@ -40,6 +44,9 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 \emph{relationship} $Y = f(x) + \epsilon$ \textcolor{blue}{estimate $f$. prediction and inference}.
 
 \textcolor{blue}{\emph{reducible error\index{reducible error}} -- the estimated function $\hat{f}$ will likely not be perfect, and the reducible error is the error that could be corrected.  The \emph{irreducible error} is an error that can not be corrected. The irreducible error may be larger than zero due to \emph{unmeasured variables} \emph{e.g.} varibles that were not measured and \emph{unmeasurable variation} \emph{e.g.} an individual's feelings/emotions or variation in the production of a product. The irreducible error provides an upper bound on the performance of the predicted $\hat{f}$}
+
+% TODO: not sure ~exactly where this fits yet..
+\textcolor{blue}{parameters -- model variables that change during training. Hyper-parameters are set before training.}
 
 \section{Type of Learning}
 
@@ -139,9 +146,19 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{red}{Cost and Loss functions -- I'm not sure why I didn't have this yet?}
 
+\textcolor{blue}{TODO: general definitions}
+
 \textcolor{red}{example of plots - step by step}
 
 \textcolor{red}{contour maps}
+
+\textcolor{blue}{TODO: general loss plot example/figure}
+
+\textcolor{blue}{TODO: section (maybe in another location) that shows how to "troubleshoot" a loss plot. So examples of what a noisy loss plot vs a flat loss plot might indicate. Would also be nice to expand to include examples of the loss plot of the training and validation (likely another section, but with a reference in this section pointing to it.)}
+
+\textcolor{blue}{TODO: talk about "convexity" -- show 3D loss plot (2D for params, 3rd for loss), and explain how running/re-running a model may result in slightly different values.}
+
+\textcolor{blue}{Loss calculation. TODO: example for linear linear regression and why sum of loss will cancel out terms. \textcolor{red}{point to local ref.}}
 
 \section{Quality of Fit}
 
@@ -149,12 +166,28 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsection{Regression Example}
 
-\textcolor{blue}{Mean Squared Error.$\hat{f}(x_i)$ is the prediction that $\hat{f}$ produces for the $i$th sample. The output will be small for predicted values that are similar to the ground truth}
+% TODO: need to think about placement of these and how to organize the general case.
+
+\textcolor{blue}{Mean Squared Error.$\hat{f}(x_i)$ is the prediction that $\hat{f}$ produces for the $i$th sample (\ref{eq:MSE_def}). The output will be small for predicted values that are similar to the ground truth}
 
 \begin{equation}
 {MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2}
 \label{eq:MSE_def}
 \end{equation}
+
+\textcolor{blue}{The MSE may be hard to interpret since the error is squared. \textcolor{red}{example}}
+
+\textcolor{blue}{Root mean squared error, which is simply the root of the MSE. (\ref{eq:RMSE_def})}
+
+\begin{equation}
+{RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2}}
+\label{eq:RMSE_def}
+\end{equation}
+
+\textcolor{blue}{"problem" with this loss function is that it does not follow the intuition that really bad predictions should be penalized more harshly than predictions that are just "a little bad"}
+
+% TODO: again, need to devise a better way to organize this section (loss functions)
+\textcolor{red}{Cross entropy or log loss.}
 
 %% classification example
 
@@ -245,7 +278,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Weak Learners}
 
-\textcolor{green}{TODO: Weak Learners are models (typically simple models) that perform only slightly better than random chance.}
+\textcolor{green}{TODO: Weak Learners are models (typically simple models) that perform only slightly better than random chance.} \textcolor{blue}{typically used in ensemble methods --- TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
 
 
 \section{Online Learning}
@@ -253,9 +286,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 % See p.246 of Understanding Machine learning
 \textcolor{blue}{difference to \textcolor{red}{PAC learning?}}
 
-\section{Ensemble Methods}
 
-\textcolor{green}{TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
 
 \section{Kernel Trick}
 
