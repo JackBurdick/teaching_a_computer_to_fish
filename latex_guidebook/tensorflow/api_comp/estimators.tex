@@ -1,1 +1,119 @@
 \subsection{Estimators}
+
+% TODO: entire section
+
+% boilerplate code
+% graph and session management
+%\textcolor{blue}{}
+\subsubsection{Input data}
+
+% TODO: input function overview
+
+\paragraph{Specifying Hyper Parameters}
+
+\subparagraph{Epochs}
+\textcolor{blue}{by default, training will continue until the training data is exhausted, or the number of specified epochs is reached}
+
+Options:
+
+%TODO: code example
+\begin{enumerate}
+	\item input\_fn
+	\item steps
+	\item max\_steps --- will potentially do nothing if the checkpoint has already reached this value
+\end{enumerate}
+
+
+\paragraph{In Memory Data}
+
+\textcolor{blue}{Usually this is in the form of either numpy arrays or pandas dataframes. These can both be used directly.}
+
+% TODO: examples for Numpy array
+
+% TODO: examples for Pandas DF
+
+\paragraph{Out of Memory Data}
+
+\textcolor{blue}{In the ``real world'' the dataset will likely not fit into memory. To (sanely) address this, estimators play nicely with the tf.Data API (please see \textcolor{red}{local ref} for more information)}
+
+% TODO: show quick demo example
+
+% tf.estimator base class allows you to build your own model 
+
+% premade models (TODO: Show quick list)
+
+% main advantage -- estimators are interchangable
+
+% "reasonable" defaults for each estimator
+
+\subsubsection{Checkpoints}
+
+\textcolor{blue}{directory specified when creating model. By default, predictions will be made from the latest checkpoints in this directory. training also resumes from the latest checkpoint in the directory. --- to start from scratch, the directory will need to be deleted or specified to a new location.}
+
+\subsubsection{Distributed}
+
+% you need: 1. estimator, 2. run config, 3. train spec, eval spec
+
+% final call tf.estimator.train_and_evaluate(estimator, train_spec, eval_spec)
+
+\paragraph{tf.estimator.RunConfig}
+
+% TODO: example
+
+\textcolor{blue}{the directory for checkpoints and Tensorboard logs and freq of checkpoints (save\_checkpoint\_steps) and frequency of logs (save\_summary\_steps)  }
+
+\paragraph{tf.estimator.TrainSpec}
+
+\textcolor{blue}{pass in input function (likely through data API (see \textcolor{red}{localref})), }
+
+
+\paragraph{tf.estimator.EvalSpec}
+
+\textcolor{blue}{pass in input function for evaluation dataset (likely through data API (see \textcolor{red}{local ref})),}
+
+\textcolor{blue}{creates model and loads latest checkpoint, then runs eval. Therefore, you cannot get a frequency greater than the checkpoints created. They can be obtained less frequently by using the `throttle\_specs` parameter}
+
+\paragraph{Notes}
+
+\textcolor{blue}{Shuffling considerations.use the dataset = tf.data.Dataset().list\_files().shuffle() command --- each worker a different seed? Even if the data is shuffled on disk. Can also use the dataset().shuffle()}
+
+\subsubsection{TensorBoard}
+
+% TODO: example -- to create: tf.estimator.RunConfig(model_dir='some_dif')
+
+\textcolor{blue}{to visualize, then open tensorboard by issuing `tensorboard --logdir output\_dir` and the dashboard will appear on localhost:6006}
+
+\textcolor{blue}{pre-made estimators already export relevant metrics, embeddings, histograms, etc.. for more information on how to use tensorboard please see \textcolor{red}{local ref}}
+
+\textcolor{blue}{if building a custom estimator or would like to add additional information to tensorboard, summaries can be added with any of the following: tf.summary.scalar, tf.summary.image, tf.summary.audio, tf.summary.text, tf.summary.histogram}
+
+\paragraph{Adding Custom}
+
+% tf.summary.scalar('meanVar_01', tf.reduce_mean(var_01))
+
+\subparagraph{tf.summary.scalar}
+
+\subparagraph{tf.summary.image}
+
+\subparagraph{tf.summary.audio}
+
+\subparagraph{tf.summary.text}
+
+\subparagraph{tf.summary.histogram}
+
+
+\subsubsection{Deployment}
+
+% TODO: examples
+
+%\textcolor{blue}{two things 1) export\_latest = tf.estimator.LatestExporter(serving\_input\_receiver\_fn=serving\_input\_fn) and then eval_spec = tf.estimator.EvalSpec(input\_fn=eval\_input\_fn, exporters=export\_latest)}
+
+% will map from JSON from REST API and the model
+
+% important to use tf commands in the input transformation/parsing function
+
+\paragraph{Exporters}
+
+\textcolor{blue}{there are many types of exporters and exporter schemes. The simplest may be the tf.estimator.LatestExporter}
+
+

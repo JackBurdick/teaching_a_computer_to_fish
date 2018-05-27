@@ -4,7 +4,7 @@
 
 \section{Introduction}
 
-\textcolor{green}{TODO: Tensorflow was XXXXXXXXXX, released XXXXXXXXX}
+\textcolor{green}{TODO: Tensorflow is an open-source library for numerical computation (not only as a deep/machine learning framework), released by google XXXXXXXXX.}
 
 \textcolor{green}{TODO: There are many different deep learning frameworks}
 
@@ -16,6 +16,97 @@
 
 \textcolor{green}{TODO: Diagram of tensorflow at a high level}
 
+
+\section{TensorFlow Essentials}
+
+\subsection{API Hierarchy}
+
+\subsection{Placeholders, feed\_dict, Variables and Constants}
+
+\textcolor{blue}{using get\_variable to create the variable}
+
+\subsection{Coding Style}
+
+\textcolor{blue}{Imperative vs lazy evaluation.}
+
+\subsection{Graphs}
+
+\textcolor{blue}{TODO: Graphs.}
+
+\textcolor{blue}{directed}
+
+\textcolor{blue}{acyclic}
+
+\textcolor{blue}{Why directed acyclic graph (DAG) representation? Language and Hardware Portability -- Developers get to develop programs in a high level language (like python) and have the TensorFlow execution engine execute (written in C++) the model on different platforms (targeted for exact hardware)}
+
+\subsection{Sessions}
+
+\textcolor{blue}{TODO: Sessions.}
+
+\subsection{Tensors}
+
+\textcolor{blue}{TODO: what is a tensor. Tensor --- an n dimensional array of data. they ``flow" through the (directed, acyclic) graph --- hence, TensorFlow}
+
 \section{Workflow}
 
 \textcolor{green}{TODO: Diagram of a typical workflow}
+
+% lazy evaluation
+\textcolor{blue}{first step is to build the graph, the second step is to execute the graph (in a session, which will evaluate to numpy arrays)}
+
+% eager mention
+\textcolor{blue}{There exists another mode of operation called ``eager'', in which the operations are executed imperatively (tf.eager is discussed in further detail in \textcolor{red}{local ref})}
+
+\textcolor{blue}{TODO: list of overloaded operations, common arithmetic operators/shorthand}
+
+% TODO: this belongs somewhere else
+\textcolor{blue}{Note about how training is more computationally expensive than inference}
+
+\section{Debugging TensorFlow}
+
+\textcolor{blue}{Before writing any TensorFlow, I'd like to share some tips and tools to debug TensorFlow programs.}
+
+
+\textcolor{blue}{error messages are your friend. Use the error message to isolate and debug the operation that is causing problems.}
+
+\textcolor{blue}{two pieces of information: i) stack trace and ii) error message (type+message and operation) }
+
+\subsection{Common Errors}
+% tensor shape
+% scalar-vector mismatch
+\subsubsection{Shape}
+
+% TODO: show how to use these common operations and their output
+\textcolor{blue}{some common operations to change the shape of a tensor may included i) tf.reshape() ii) tf.expand\_dims(), iii) tf.slice(), and iv) tf.squeeze() --- expand and squeeze are inverses} 
+
+\subsubsection{Data Type}
+% data type mismatch
+
+\subsection{Debugging Tools}
+
+\subsubsection{tf.Print}
+% log specific tensor values
+%TODO: Code Examples
+
+\subsubsection{tfdbg}
+
+%TODO: Code Examples
+
+% python super_tf_model.py --debug
+
+\subsubsection{TensorBoard}
+
+%TODO: diagram examples
+
+\textcolor{blue}{Using TensorBoard for monitoring is discussed in a later section(\textcolor{red}{local ref}). The scope in this section will focus on using TensorBoard to debug a program}
+
+\subsubsection{Logging and Verbosity}
+
+% different modes overview debug --> fatal
+% info = development, warn = production
+% tf.logging.set_verbosity(tf.logging.INFO)
+
+
+
+
+
