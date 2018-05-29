@@ -8,6 +8,40 @@
 
 \textcolor{blue}{TODO: features are learned,not engineered in deep learning models}
 
+\subsubsection{Feature Crosses}
+
+% TODO: figure of linearly separable dataset and or a xor dataset
+% makes some non-linear problems (xor) linear
+
+\textcolor{blue}{combine two or more categorical features. Feature crossing is only possible when working with categorical features. When working with continuous features, the values can be discretized prior to the feature cross}
+
+
+% how much to translate feature 1 and 2 are parameters that need to be learned
+% "discreteize" the input space
+% feature crosses "memorize" -- "Memorization works when LOTS of data for a 
+% single cell in the input space & the distribution of data is statistically significant."
+% not used as often in traditional ML, but powerful on large datasets
+% Rome/New york yellow/white Taxi example
+
+\textcolor{blue}{number of inputs.}
+% example of 24hrs a day, 7 days a week = 168 inputs in a feature cross of the two.
+% TF uses a sparse representation for inputs to address this (one hot encoding and feature crosses)
+% input will only activate one input at a time, thus the input is very sparse
+
+\textcolor{blue}{It is possible that the feature cross may cause the model to overfit the data.}
+
+% TODO: show example of this happening -- X1,X2 (2 blobs ) = good, X1X1,X2X2,X1X2 = overfit
+
+\textcolor{blue}{it is possible to look at the relative weights for the inputs and determine how much each feature is contributing to the decision. This can help determine if maybe the features cross isn't necessary -- L1 regularization (see \textcolor{red}{local ref}) may work to zero out this feature as well.}
+
+% TODO: implementation details and choosing the number of hashbuckets.
+% if too small, there could be collisions, "rule of thumb" 1/2sqrt(N) and 2N
+% trade off is memorization vs sparsity
+
+% adding an embedded layer (real values, learned)
+% learns how to ``embedd'' the feature cross in a lower dimesnsional space
+% the features learned in embedded features may be useful to other problems from a seperate/maybe related domain
+% using learned embeddings in one city for another city on the same types of inputs
 
 \subsection{Images}
 

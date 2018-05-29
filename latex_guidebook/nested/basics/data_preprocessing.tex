@@ -1,8 +1,25 @@
-\section{Data Pre-processing}
+\section{Feature Engineering: Data Pre-processing}
 
 \textcolor{blue}{Data is rarely obtained in a form that is necessary for optimal performance of a learning algorithm. Data can be missing, can contain a mix of categorical and quantitative, can contain values on vastly different scales, etc.}
 
 \textcolor{blue}{It is important to note that any parameters related to data pre-processing, such as feature scaling and dimensionality reduction, are obtained solely from observing the training set. The parameters for these methods obtained on the training set are then later applied to the test set. This is important since if these preprocessing parameters were obtained on the entire dataset and included the test set, the the model performance may be overoptimistic since then when applying the methods to the unseen data.}
+
+\textcolor{blue}{make sure to use data that is relevant to the objective/problem.}
+
+% TODO: case study example
+
+\textcolor{blue}{make sure the data can be known at prediction time. e.g. will there be a delay between activity and being able to access that data at the data repository?}
+
+% TODO: case study example
+
+% TODO: expand
+\textcolor{blue}{features should be numeric and have a meaningful magnitue (see below)}
+
+% TODO: case study example
+
+\textcolor{blue}{make sure ``enough'' examples exist for the particular feature}
+
+\textcolor{blue}{Don't mix magic values with values you already have. For example, if we have ratings 0-10, don't include a new column for rated vs not rated.}
 
 \subsection{Handling Missing Data}
 
@@ -83,5 +100,28 @@
 
 \subsubsection{Outliers}
 
+\textcolor{blue}{rather than remove outliers, the values may be capped.}
+% TODO: example, in the California housing data, there are datapoints with 50 rooms per house
+
 \subsubsection{Discretization and Binning}
 
+\textcolor{blue}{An example for this may be housing prices and latitude.}
+
+% ? tf.feature_column.bucketized_column
+
+
+\textcolor{blue}{rather than store a floating point, bins could be created. would like to keep the information (latitude may be useful, but the magnitude here is not useful (even if normalized) and so binning may be a great option)}
+
+% TODO: figure for latitude (housing prices) and values pre/post binning
+
+\subsection{Where to do preprocessing}
+
+\textcolor{blue}{1. at execution time/with the TF graph}
+\textcolor{blue}{2. apache beam ``in front'' of the graph (can use time windows)}
+\textcolor{blue}{3. }
+
+
+
+\textcolor{blue}{Batch vs Streaming}
+
+% calculating rolling average

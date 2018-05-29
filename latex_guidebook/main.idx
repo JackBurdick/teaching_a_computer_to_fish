@@ -2,27 +2,27 @@
 \indexentry{one-of-k encoding}{15}
 \indexentry{sparse vectors}{15}
 \indexentry{interquartile range}{16}
-\indexentry{corpus}{17}
-\indexentry{vocabulary}{17}
-\indexentry{bag-of-words}{18}
-\indexentry{tf-idf}{18}
-\indexentry{lucky split}{19}
-\indexentry{reducible error}{20}
-\indexentry{multi-label classification}{22}
-\indexentry{Problem transformation}{22}
-\indexentry{inappropriate minima}{24}
+\indexentry{corpus}{18}
+\indexentry{vocabulary}{18}
+\indexentry{bag-of-words}{19}
+\indexentry{tf-idf}{19}
+\indexentry{lucky split}{20}
+\indexentry{reducible error}{21}
+\indexentry{multi-label classification}{23}
+\indexentry{Problem transformation}{23}
+\indexentry{inappropriate minima}{25}
 \indexentry{Grid search}{29}
-\indexentry{Randomized search}{29}
-\indexentry{peeking}{32}
-\indexentry{Overfitting}{33}
-\indexentry{Underfitting}{33}
-\indexentry{Variance}{33}
-\indexentry{Bias}{33}
-\indexentry{Type I error}{35}
-\indexentry{Type II error}{35}
-\indexentry{Pearson's R}{38}
-\indexentry{Voronoi tessellation}{39}
-\indexentry{Voronoi region}{39}
+\indexentry{Randomized search}{30}
+\indexentry{peeking}{33}
+\indexentry{Overfitting}{34}
+\indexentry{Underfitting}{34}
+\indexentry{Variance}{34}
+\indexentry{Bias}{34}
+\indexentry{Type I error}{36}
+\indexentry{Type II error}{36}
+\indexentry{Pearson's R}{39}
+\indexentry{Voronoi tessellation}{40}
+\indexentry{Voronoi region}{40}
 \indexentry{generalized linear model}{41}
 \indexentry{Ordinary Lease Squares (OLS)}{42}
 \indexentry{Linear Least Squares}{42}
