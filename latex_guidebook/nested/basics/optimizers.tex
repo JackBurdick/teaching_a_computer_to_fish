@@ -46,7 +46,7 @@
 
 \subsubsection{Momentum}
 
-\textcolor{blue}{Momentum~\cite{qian1999momentum}}
+\textcolor{blue}{Momentum~\cite{qian1999momentum}, will reduce the learning rate when the gradient is small}
 
 \subsubsection{RMSProp}
 
@@ -67,15 +67,20 @@
 
 \textcolor{blue}{Nadam (Nesterov-accelerated Adaptive Moment Estimation)~\cite{dozat2016incorporating}}
 
-\subsubsection{Adagrad}
+\subsubsection{AdaGrad}
 
-\textcolor{blue}{Adagrad~\cite{duchi2011adaptive}}
+\textcolor{blue}{Adagrad~\cite{duchi2011adaptive}, will assign frequently occurring features low learning rates}
 
-\subsubsection{Adadelta}
+\subsubsection{AdaDelta}
 
-\textcolor{blue}{Adadelta~\cite{zeiler2012adadelta}}
+\textcolor{blue}{Adadelta~\cite{zeiler2012adadelta}, expands on AdaGrad by avoiding reducing the learning rate to zero.}
 
 \subsubsection{AdaMax}
+
+\subsubsection{Ftrl}
+
+\textcolor{blue}{``follow the regularized leader'', \textcolor{red}{CITE}, \textcolor{red}{works well on wide modes?}}
+
 
 
 

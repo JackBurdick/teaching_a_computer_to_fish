@@ -2,7 +2,9 @@
 
 % TODO: this section/file may belong in basics, not here
 
-\textcolor{blue}{Collection of techniques used to help prevent overfitting. Typically regularization penalizes complexity of a model.}
+\textcolor{blue}{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
+
+% TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
 
 \textcolor{blue}{Helps prevent the model from memorizing noise in the training data.}
 
@@ -14,7 +16,22 @@
 
 \subsubsection{Types of Regularization}
 
-\textcolor{blue}{ L1 regularization (Lasso) L2 (Ridge).}
+\textcolor{blue}{Regularization is an active area of research.}
+
+\begin{itemize}
+	\item Early Stopping
+	\item Parameter Norm Penalties
+	\begin{itemize}
+		\item L1 regularization
+		\item L2 regularization
+	\end{itemize}
+	\item Dataset Augmentation
+	\item Noise Robustness
+	\item Sparse Representations
+\end{itemize}
+
+
+\textcolor{blue}{L1 regularization (Lasso) L2 (Ridge).}
 
 \textcolor{blue}{key difference is the penalty term}
 

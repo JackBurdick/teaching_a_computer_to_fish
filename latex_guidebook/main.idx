@@ -11,7 +11,7 @@
 \indexentry{multi-label classification}{23}
 \indexentry{Problem transformation}{23}
 \indexentry{inappropriate minima}{25}
-\indexentry{Grid search}{29}
+\indexentry{Grid search}{30}
 \indexentry{Randomized search}{30}
 \indexentry{peeking}{33}
 \indexentry{Overfitting}{34}
@@ -33,7 +33,7 @@
 \indexentry{discrimination threshold}{44}
 \indexentry{lazy learner}{44}
 \indexentry{Support Vector Machine (SVM)}{46}
-\indexentry{Sequential Minimal Optimization (SMO)}{46}
+\indexentry{Sequential Minimal Optimization (SMO)}{47}
 \indexentry{independent and identically distributed (i.i.d)}{47}
 \indexentry{ID3 algorithm}{49}
 \indexentry{J48}{49}
@@ -58,5 +58,6 @@
 \indexentry{sampling without replacement|see{subagging}}{62}
 \indexentry{subspace sampling}{62}
 \indexentry{blending}{63}
-\indexentry{Tikhonov regularization}{109}
+\indexentry{Tikhonov regularization}{110}
 \indexentry{sigmoid}{111}
+\indexentry{ReLUN}{115}
