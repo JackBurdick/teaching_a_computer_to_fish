@@ -113,6 +113,9 @@ Classification involves predicting categorical (discrete) or qualitative output 
 \subsection{Multi-label classification}
 \textcolor{blue}{TODO: {multi-label classification}\index{multi-label classification} --- where a classifier assigns multiple labels to each instance}
 
+% TODO: placement
+\textcolor{blue}{Evaluating every output node for every example can quickly become computationally expensive. approximate version of softmax. i) candidate sampling (tf.nn.sampled\_softmax\_loss()) \textcolor{red}{calculates the output for all of the positive labels, but will only calculate the label for a random sample of negatives. Where the number of negatives sampled is a a hyperparameter} ii) noise-contrastive estimation (tf.nn.nce\_loss()) \textcolor{red}{approximates the denominator of softmax by modeling the distribution of outputs}. Typically, these two methods may be used during training, but the full softmax function will be used during inference.}
+
 
 \subsubsection{Approaches: Problem transformation}
 
@@ -138,7 +141,7 @@ Classification involves predicting categorical (discrete) or qualitative output 
 \textcolor{blue}{see \textcolor{red}{local ref}.}
 
 % page 94 of AGtext
-One-versus-all \emph{OvA} (also \emph{one-versus-rest}) -- 
+One-versus-all \emph{OvA} (also \emph{one-versus-rest}) -- $n$, separate binary classification problems, where the $n$ is the number of classes. The target class may be assigned as the positive class and `all' the `rest' of the classes may be assigned as the negative class.
 
 One-versus-one (OvO) -- train a binary classifier for every pair
 

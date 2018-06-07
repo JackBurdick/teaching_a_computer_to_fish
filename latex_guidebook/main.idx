@@ -9,55 +9,55 @@
 \indexentry{lucky split}{20}
 \indexentry{reducible error}{21}
 \indexentry{multi-label classification}{23}
-\indexentry{Problem transformation}{23}
+\indexentry{Problem transformation}{24}
 \indexentry{inappropriate minima}{25}
 \indexentry{Grid search}{30}
 \indexentry{Randomized search}{30}
 \indexentry{peeking}{33}
 \indexentry{Overfitting}{34}
 \indexentry{Underfitting}{34}
-\indexentry{Variance}{34}
-\indexentry{Bias}{34}
+\indexentry{Variance}{35}
+\indexentry{Bias}{35}
 \indexentry{Type I error}{36}
 \indexentry{Type II error}{36}
 \indexentry{Pearson's R}{39}
 \indexentry{Voronoi tessellation}{40}
 \indexentry{Voronoi region}{40}
-\indexentry{generalized linear model}{41}
-\indexentry{Ordinary Lease Squares (OLS)}{42}
-\indexentry{Linear Least Squares}{42}
-\indexentry{residuals}{42}
-\indexentry{residual sum of squares (RSS)}{42}
-\indexentry{odds ratio}{43}
-\indexentry{logit}{43}
-\indexentry{discrimination threshold}{44}
-\indexentry{lazy learner}{44}
-\indexentry{Support Vector Machine (SVM)}{46}
-\indexentry{Sequential Minimal Optimization (SMO)}{47}
-\indexentry{independent and identically distributed (i.i.d)}{47}
-\indexentry{ID3 algorithm}{49}
-\indexentry{J48}{49}
-\indexentry{weak learner}{50}
-\indexentry{strong learner}{50}
-\indexentry{Heaviside step function}{52}
-\indexentry{unit step function}{52}
-\indexentry{universal approximators}{53}
-\indexentry{input layer}{53}
-\indexentry{hidden layer}{53}
-\indexentry{output layer}{53}
-\indexentry{image quantization}{55}
-\indexentry{silhouette coefficient}{56}
-\indexentry{Principal Component Analysis (PCA)}{57}
-\indexentry{Karhunen-Love Transform (KLM)}{57}
-\indexentry{covarience matrix}{57}
-\indexentry{bagging}{61}
-\indexentry{boostrap aggregating}{61}
-\indexentry{sampling with replacement|see{bagging}}{61}
-\indexentry{bootstrap samples}{61}
-\indexentry{subagging}{62}
-\indexentry{sampling without replacement|see{subagging}}{62}
-\indexentry{subspace sampling}{62}
-\indexentry{blending}{63}
-\indexentry{Tikhonov regularization}{110}
-\indexentry{sigmoid}{111}
-\indexentry{ReLUN}{115}
+\indexentry{generalized linear model}{43}
+\indexentry{Ordinary Lease Squares (OLS)}{44}
+\indexentry{Linear Least Squares}{44}
+\indexentry{residuals}{44}
+\indexentry{residual sum of squares (RSS)}{44}
+\indexentry{odds ratio}{45}
+\indexentry{logit}{45}
+\indexentry{discrimination threshold}{46}
+\indexentry{lazy learner}{46}
+\indexentry{Support Vector Machine (SVM)}{48}
+\indexentry{Sequential Minimal Optimization (SMO)}{49}
+\indexentry{independent and identically distributed (i.i.d)}{49}
+\indexentry{ID3 algorithm}{51}
+\indexentry{J48}{51}
+\indexentry{weak learner}{52}
+\indexentry{strong learner}{52}
+\indexentry{Heaviside step function}{54}
+\indexentry{unit step function}{54}
+\indexentry{universal approximators}{55}
+\indexentry{input layer}{55}
+\indexentry{hidden layer}{55}
+\indexentry{output layer}{55}
+\indexentry{image quantization}{57}
+\indexentry{silhouette coefficient}{58}
+\indexentry{Principal Component Analysis (PCA)}{59}
+\indexentry{Karhunen-Love Transform (KLM)}{59}
+\indexentry{covarience matrix}{59}
+\indexentry{bagging}{63}
+\indexentry{boostrap aggregating}{63}
+\indexentry{sampling with replacement|see{bagging}}{63}
+\indexentry{bootstrap samples}{63}
+\indexentry{subagging}{64}
+\indexentry{sampling without replacement|see{subagging}}{64}
+\indexentry{subspace sampling}{64}
+\indexentry{blending}{65}
+\indexentry{Tikhonov regularization}{112}
+\indexentry{sigmoid}{113}
+\indexentry{ReLUN}{117}

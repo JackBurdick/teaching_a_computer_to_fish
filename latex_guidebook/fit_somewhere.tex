@@ -32,3 +32,12 @@
 
 %%%
 \textcolor{blue}{Each layer in a DNN is a composition of the previous layer. i.e. if layer 1 = f(x), then layer 1 = g(f(x)), layer three is h(g(f(x)) \textcolor{green}{TODO: create diagram}}
+
+
+
+%%%%
+\textcolor{blue}{SavedModel is the universal serializion format for TensorFlow models. SavedModel has support for multiple metagraphs -- this is important in serving where the model is slightly different than in training (removing dropout layers), and allows storage/access of models with tags. Supports SignatureDefs -- allows the specification of nodes as input/output (also supports multiple signatureDefs for multi-headed inference (see \textcolor{red}{local ref}))}
+
+
+%%%% rough...
+%\textcolor{red}{Multi-headed inference. Useful when using the same model for different tasks. e.g. using a model for one task, then later deciding to perform a similar task on the same data -- rather than train an entirely new model, the original model may be performing may of the same computations. }

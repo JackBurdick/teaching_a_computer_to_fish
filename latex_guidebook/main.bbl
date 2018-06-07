@@ -1,69 +1,57 @@
 \begin{thebibliography}{10}
 
-\bibitem{masters2018revisiting}
-Dominic Masters and Carlo Luschi.
-\newblock Revisiting small batch training for deep neural networks.
-\newblock {\em arXiv preprint arXiv:1804.07612}, 2018.
-
-\bibitem{hoffer2017train}
-Elad Hoffer, Itay Hubara, and Daniel Soudry.
-\newblock Train longer, generalize better: closing the generalization gap in
-  large batch training of neural networks.
-\newblock In {\em Advances in Neural Information Processing Systems}, pages
-  1729--1739, 2017.
-
-\bibitem{wilson2003general}
-D~Randall Wilson and Tony~R Martinez.
-\newblock The general inefficiency of batch training for gradient descent
-  learning.
-\newblock {\em Neural Networks}, 16(10):1429--1451, 2003.
-
-\bibitem{smith2017don}
-Samuel~L Smith, Pieter-Jan Kindermans, and Quoc~V Le.
-\newblock Don't decay the learning rate, increase the batch size.
-\newblock {\em arXiv preprint arXiv:1711.00489}, 2017.
-
-\bibitem{qian1999momentum}
-Ning Qian.
-\newblock On the momentum term in gradient descent learning algorithms.
-\newblock {\em Neural networks}, 12(1):145--151, 1999.
-
-\bibitem{kingma2014adam}
-Diederik~P Kingma and Jimmy Ba.
-\newblock Adam: A method for stochastic optimization.
-\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
-
 \bibitem{dozat2016incorporating}
-Timothy Dozat.
-\newblock Incorporating nesterov momentum into adam.
-\newblock 2016.
+{\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
 \bibitem{duchi2011adaptive}
-John Duchi, Elad Hazan, and Yoram Singer.
-\newblock Adaptive subgradient methods for online learning and stochastic
-  optimization.
-\newblock {\em Journal of Machine Learning Research}, 12(Jul):2121--2159, 2011.
+{\sc J.~Duchi, E.~Hazan, and Y.~Singer}, {\em Adaptive subgradient methods for
+  online learning and stochastic optimization}, Journal of Machine Learning
+  Research, 12 (2011), pp.~2121--2159.
 
-\bibitem{zeiler2012adadelta}
-Matthew~D Zeiler.
-\newblock Adadelta: an adaptive learning rate method.
-\newblock {\em arXiv preprint arXiv:1212.5701}, 2012.
+\bibitem{hoffer2017train}
+{\sc E.~Hoffer, I.~Hubara, and D.~Soudry}, {\em Train longer, generalize
+  better: closing the generalization gap in large batch training of neural
+  networks}, in Advances in Neural Information Processing Systems, 2017,
+  pp.~1729--1739.
 
 \bibitem{huang2017snapshot}
-Gao Huang, Yixuan Li, Geoff Pleiss, Zhuang Liu, John~E Hopcroft, and Kilian~Q
-  Weinberger.
-\newblock Snapshot ensembles: Train 1, get m for free.
-\newblock {\em arXiv preprint arXiv:1704.00109}, 2017.
+{\sc G.~Huang, Y.~Li, G.~Pleiss, Z.~Liu, J.~E. Hopcroft, and K.~Q. Weinberger},
+  {\em Snapshot ensembles: Train 1, get m for free}, arXiv preprint
+  arXiv:1704.00109,  (2017).
 
-\bibitem{smith2017cyclical}
-Leslie~N Smith.
-\newblock Cyclical learning rates for training neural networks.
-\newblock In {\em Applications of Computer Vision (WACV), 2017 IEEE Winter
-  Conference on}, pages 464--472. IEEE, 2017.
+\bibitem{kingma2014adam}
+{\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
+  arXiv preprint arXiv:1412.6980,  (2014).
 
 \bibitem{loshchilov2016sgdr}
-Ilya Loshchilov and Frank Hutter.
-\newblock Sgdr: stochastic gradient descent with restarts.
-\newblock {\em Learning}, 10:3, 2016.
+{\sc I.~Loshchilov and F.~Hutter}, {\em Sgdr: stochastic gradient descent with
+  restarts}, Learning, 10 (2016), p.~3.
+
+\bibitem{masters2018revisiting}
+{\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
+  neural networks}, arXiv preprint arXiv:1804.07612,  (2018).
+
+\bibitem{qian1999momentum}
+{\sc N.~Qian}, {\em On the momentum term in gradient descent learning
+  algorithms}, Neural networks, 12 (1999), pp.~145--151.
+
+\bibitem{smith2017cyclical}
+{\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
+  in Applications of Computer Vision (WACV), 2017 IEEE Winter Conference on,
+  IEEE, 2017, pp.~464--472.
+
+\bibitem{smith2017don}
+{\sc S.~L. Smith, P.-J. Kindermans, and Q.~V. Le}, {\em Don't decay the
+  learning rate, increase the batch size}, arXiv preprint arXiv:1711.00489,
+  (2017).
+
+\bibitem{wilson2003general}
+{\sc D.~R. Wilson and T.~R. Martinez}, {\em The general inefficiency of batch
+  training for gradient descent learning}, Neural Networks, 16 (2003),
+  pp.~1429--1451.
+
+\bibitem{zeiler2012adadelta}
+{\sc M.~D. Zeiler}, {\em Adadelta: an adaptive learning rate method}, arXiv
+  preprint arXiv:1212.5701,  (2012).
 
 \end{thebibliography}
