@@ -35,6 +35,11 @@
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
 
+\bibitem{ruderman2018learned}
+{\sc A.~Ruderman, N.~Rabinowitz, A.~S. Morcos, and D.~Zoran}, {\em Learned
+  deformation stability in convolutional neural networks}, arXiv preprint
+  arXiv:1804.04438,  (2018).
+
 \bibitem{smith2017cyclical}
 {\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
   in Applications of Computer Vision (WACV), 2017 IEEE Winter Conference on,

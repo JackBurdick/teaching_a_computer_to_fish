@@ -58,6 +58,6 @@
 \indexentry{sampling without replacement|see{subagging}}{64}
 \indexentry{subspace sampling}{64}
 \indexentry{blending}{65}
-\indexentry{Tikhonov regularization}{112}
-\indexentry{sigmoid}{113}
-\indexentry{ReLUN}{117}
+\indexentry{Tikhonov regularization}{114}
+\indexentry{sigmoid}{115}
+\indexentry{ReLUN}{119}

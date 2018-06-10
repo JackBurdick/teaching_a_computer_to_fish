@@ -17,45 +17,45 @@ A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
 Database file #1: TCF.bib
 Warning--empty journal in dozat2016incorporating
-You've used 12 entries,
+You've used 13 entries,
             2030 wiz_defined-function locations,
-            576 strings with 5685 characters,
-and the built_in function-call counts, 3897 in all, are:
-= -- 369
-> -- 167
+            580 strings with 5871 characters,
+and the built_in function-call counts, 4186 in all, are:
+= -- 392
+> -- 190
 < -- 0
-+ -- 67
-- -- 54
-* -- 303
-:= -- 616
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 63
++ -- 76
+- -- 62
+* -- 331
+:= -- 669
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 70
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 188
-empty$ -- 291
-format.name$ -- 54
-if$ -- 817
+cite$ -- 14
+duplicate$ -- 199
+empty$ -- 307
+format.name$ -- 62
+if$ -- 870
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 12
-newline$ -- 39
-num.names$ -- 24
-pop$ -- 62
+int.to.str$ -- 13
+missing$ -- 13
+newline$ -- 42
+num.names$ -- 26
+pop$ -- 69
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 57
 quote$ -- 0
-skip$ -- 144
+skip$ -- 149
 stack$ -- 0
-substring$ -- 247
-swap$ -- 72
+substring$ -- 252
+swap$ -- 74
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 52
 warning$ -- 1
-while$ -- 40
-width$ -- 14
-write$ -- 104
+while$ -- 42
+width$ -- 15
+write$ -- 112
 (There was 1 warning)

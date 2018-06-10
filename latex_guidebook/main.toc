@@ -319,245 +319,268 @@
 \contentsline {chapter}{\numberline {15}Ingesting Data}{87}
 \contentsline {section}{\numberline {15.1}scrapy}{87}
 \contentsline {section}{\numberline {15.2}beautifulsoup}{87}
-\contentsline {section}{\numberline {15.3}sql}{87}
-\contentsline {section}{\numberline {15.4}mongo}{87}
-\contentsline {chapter}{\numberline {16}Analyzing Data}{89}
-\contentsline {section}{\numberline {16.1}Pandas}{89}
-\contentsline {subsection}{\numberline {16.1.1}Series}{89}
-\contentsline {subsection}{\numberline {16.1.2}Dataframe}{89}
-\contentsline {subsection}{\numberline {16.1.3}Hierarchical Indexing}{89}
-\contentsline {subsection}{\numberline {16.1.4}Describing and Visualizing}{89}
-\contentsline {subsection}{\numberline {16.1.5}Merging, Joining, Pivoting}{89}
-\contentsline {subsection}{\numberline {16.1.6}Groups}{89}
-\contentsline {subsection}{\numberline {16.1.7}Data Loading}{89}
-\contentsline {chapter}{\numberline {17}Visualizing Data}{91}
-\contentsline {section}{\numberline {17.1}Matplotlib}{91}
-\contentsline {subsection}{\numberline {17.1.1}Basics}{91}
-\contentsline {subsection}{\numberline {17.1.2}Representation of types of data}{91}
-\contentsline {subsubsection}{\numberline {17.1.2.1}Categorical Variables}{91}
-\contentsline {paragraph}{\numberline {17.1.2.1.1}Frequency Distribution Tables}{91}
-\contentsline {paragraph}{\numberline {17.1.2.1.2}Bar Charts}{91}
-\contentsline {paragraph}{\numberline {17.1.2.1.3}Pie Charts}{91}
-\contentsline {paragraph}{\numberline {17.1.2.1.4}Pareto Diagrams}{92}
-\contentsline {subsubsection}{\numberline {17.1.2.2}Numerical Variables}{92}
-\contentsline {subsubsection}{\numberline {17.1.2.3}Figures, Subfigures}{92}
-\contentsline {subsection}{\numberline {17.1.3}Chart Type Examples}{92}
-\contentsline {subsubsection}{\numberline {17.1.3.1}Line}{92}
-\contentsline {subsubsection}{\numberline {17.1.3.2}Scatter}{92}
-\contentsline {subsubsection}{\numberline {17.1.3.3}Bar}{92}
-\contentsline {subsubsection}{\numberline {17.1.3.4}Histograms}{92}
-\contentsline {subsubsection}{\numberline {17.1.3.5}Pie}{92}
-\contentsline {subsection}{\numberline {17.1.4}Customization}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.1}Colors}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.2}Markers}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.3}Ticks}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.4}Labels}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.5}Legends}{92}
-\contentsline {subsubsection}{\numberline {17.1.4.6}Annotations}{92}
-\contentsline {subsection}{\numberline {17.1.5}Saving to File}{92}
-\contentsline {section}{\numberline {17.2}D3}{92}
-\contentsline {chapter}{\numberline {18}Predicting Data}{93}
-\contentsline {section}{\numberline {18.1}Scikit-Learn}{93}
-\contentsline {subsection}{\numberline {18.1.1}Overview}{93}
-\contentsline {subsection}{\numberline {18.1.2}Transformation Pipelines}{94}
-\contentsline {subsection}{\numberline {18.1.3}Training}{94}
-\contentsline {subsubsection}{\numberline {18.1.3.1}Cross-Validation}{94}
-\contentsline {subsection}{\numberline {18.1.4}Fine-Tuning}{94}
-\contentsline {subsubsection}{\numberline {18.1.4.1}Hyper-Parameter Optimization}{94}
-\contentsline {paragraph}{\numberline {18.1.4.1.1}Grid Search}{94}
-\contentsline {paragraph}{\numberline {18.1.4.1.2}Randomized Search}{94}
-\contentsline {chapter}{\numberline {19}Data Provanece and Reproducibility}{95}
-\contentsline {section}{\numberline {19.1}Pachyderm}{95}
-\contentsline {chapter}{\numberline {20}Others}{97}
-\contentsline {section}{\numberline {20.1}Regular Expressions}{97}
-\contentsline {section}{\numberline {20.2}tangent}{97}
-\contentsline {section}{\numberline {20.3}Markdown}{97}
-\contentsline {part}{IV\hspace {1em}TensorFlow}{99}
-\contentsline {chapter}{\numberline {21}Overview}{101}
-\contentsline {section}{\numberline {21.1}Introduction}{101}
-\contentsline {section}{\numberline {21.2}High-level Overview of Components}{101}
-\contentsline {section}{\numberline {21.3}TensorFlow Essentials}{101}
-\contentsline {subsection}{\numberline {21.3.1}API Hierarchy}{101}
-\contentsline {subsection}{\numberline {21.3.2}Placeholders, feed\_dict, Variables and Constants}{101}
-\contentsline {subsection}{\numberline {21.3.3}Coding Style}{101}
-\contentsline {subsection}{\numberline {21.3.4}Graphs}{102}
-\contentsline {subsection}{\numberline {21.3.5}Sessions}{102}
-\contentsline {subsection}{\numberline {21.3.6}Tensors}{102}
-\contentsline {section}{\numberline {21.4}Workflow}{102}
-\contentsline {section}{\numberline {21.5}Debugging TensorFlow}{102}
-\contentsline {subsection}{\numberline {21.5.1}Common Errors}{103}
-\contentsline {subsubsection}{\numberline {21.5.1.1}Shape}{103}
-\contentsline {subsubsection}{\numberline {21.5.1.2}Data Type}{103}
-\contentsline {subsection}{\numberline {21.5.2}Debugging Tools}{103}
-\contentsline {subsubsection}{\numberline {21.5.2.1}tf.Print}{103}
-\contentsline {subsubsection}{\numberline {21.5.2.2}tfdbg}{103}
-\contentsline {subsubsection}{\numberline {21.5.2.3}TensorBoard}{103}
-\contentsline {subsubsection}{\numberline {21.5.2.4}Logging and Verbosity}{103}
-\contentsline {chapter}{\numberline {22}Tensorflow API and Components}{105}
-\contentsline {section}{\numberline {22.1}Datasets}{105}
-\contentsline {subsection}{\numberline {22.1.1}Data}{105}
-\contentsline {subsubsection}{\numberline {22.1.1.1}Reading in Data}{105}
-\contentsline {paragraph}{\numberline {22.1.1.1.1}Different file formats}{105}
-\contentsline {subparagraph}{tf.data.Dataset.TextLineDataset}{105}
-\contentsline {subparagraph}{tf.data.Dataset.TFRecordDataset}{105}
-\contentsline {subparagraph}{tf.data.Dataset.FixedLengthRecordDataset}{105}
-\contentsline {paragraph}{\numberline {22.1.1.1.2}Reading from Sharded Files}{105}
-\contentsline {subsubsection}{\numberline {22.1.1.2}Transforming Data}{105}
-\contentsline {subsection}{\numberline {22.1.2}Transform}{105}
-\contentsline {subsubsection}{\numberline {22.1.2.1}Overview}{105}
-\contentsline {subsubsection}{\numberline {22.1.2.2}Installation}{106}
-\contentsline {subsubsection}{\numberline {22.1.2.3}Implementation}{106}
-\contentsline {section}{\numberline {22.2}Building Architectures}{106}
-\contentsline {subsection}{\numberline {22.2.1}Layers}{106}
-\contentsline {subsection}{\numberline {22.2.2}Estimators}{106}
-\contentsline {subsubsection}{\numberline {22.2.2.1}Input data}{106}
-\contentsline {paragraph}{\numberline {22.2.2.1.1}Specifying Hyper Parameters}{106}
-\contentsline {subparagraph}{Epochs}{106}
-\contentsline {paragraph}{\numberline {22.2.2.1.2}In Memory Data}{106}
-\contentsline {paragraph}{\numberline {22.2.2.1.3}Out of Memory Data}{107}
-\contentsline {subsubsection}{\numberline {22.2.2.2}Checkpoints}{107}
-\contentsline {subsubsection}{\numberline {22.2.2.3}Distributed}{107}
-\contentsline {paragraph}{\numberline {22.2.2.3.1}tf.estimator.RunConfig}{107}
-\contentsline {paragraph}{\numberline {22.2.2.3.2}tf.estimator.TrainSpec}{107}
-\contentsline {paragraph}{\numberline {22.2.2.3.3}tf.estimator.EvalSpec}{107}
-\contentsline {paragraph}{\numberline {22.2.2.3.4}Notes}{107}
-\contentsline {subsubsection}{\numberline {22.2.2.4}TensorBoard}{108}
-\contentsline {paragraph}{\numberline {22.2.2.4.1}Adding Custom}{108}
-\contentsline {subparagraph}{tf.summary.scalar}{108}
-\contentsline {subparagraph}{tf.summary.image}{108}
-\contentsline {subparagraph}{tf.summary.audio}{108}
-\contentsline {subparagraph}{tf.summary.text}{108}
-\contentsline {subparagraph}{tf.summary.histogram}{108}
-\contentsline {subsubsection}{\numberline {22.2.2.5}Deployment}{108}
-\contentsline {paragraph}{\numberline {22.2.2.5.1}Exporters}{108}
-\contentsline {subsection}{\numberline {22.2.3}Eager}{108}
-\contentsline {section}{\numberline {22.3}Design and Component Considerations}{108}
-\contentsline {subsection}{\numberline {22.3.1}Initialization Strategies}{108}
-\contentsline {subsection}{\numberline {22.3.2}Hyperparameters}{109}
-\contentsline {subsubsection}{\numberline {22.3.2.1}Training Related}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.1}Learning Rate}{109}
-\contentsline {subparagraph}{Too High vs Too Low}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.2}Batch Size}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.3}Number of Training Iterations}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.4}Momentum}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.5}Weight Update}{109}
-\contentsline {paragraph}{\numberline {22.3.2.1.6}Stopping Criteria}{109}
-\contentsline {subsubsection}{\numberline {22.3.2.2}Model Related}{109}
-\contentsline {paragraph}{\numberline {22.3.2.2.1}Architecture}{109}
-\contentsline {paragraph}{\numberline {22.3.2.2.2}Weight Initialization}{109}
-\contentsline {paragraph}{\numberline {22.3.2.2.3}Weight-decay}{109}
-\contentsline {paragraph}{\numberline {22.3.2.2.4}Drop-out}{109}
-\contentsline {subsection}{\numberline {22.3.3}Hyper-parameter optimization}{109}
-\contentsline {subsubsection}{\numberline {22.3.3.1}Coordinate Descent}{110}
-\contentsline {subsubsection}{\numberline {22.3.3.2}Grid Search}{110}
-\contentsline {subsubsection}{\numberline {22.3.3.3}Random Search}{110}
-\contentsline {subsubsection}{\numberline {22.3.3.4}Grid vs Random Search}{110}
-\contentsline {subsubsection}{\numberline {22.3.3.5}Automated / Model-based Methods}{110}
-\contentsline {subsection}{\numberline {22.3.4}Optimizers}{110}
-\contentsline {subsubsection}{\numberline {22.3.4.1}Overview}{110}
-\contentsline {subsubsection}{\numberline {22.3.4.2}What are optimizers}{110}
-\contentsline {subsubsection}{\numberline {22.3.4.3}Types of optimizers}{110}
-\contentsline {subsubsection}{\numberline {22.3.4.4}TF optimizers}{110}
-\contentsline {subsubsection}{\numberline {22.3.4.5}Advanced}{111}
-\contentsline {paragraph}{\numberline {22.3.4.5.1}Gradient Computation}{111}
-\contentsline {paragraph}{\numberline {22.3.4.5.2}Gradient Clipping}{111}
-\contentsline {subsection}{\numberline {22.3.5}Regularization}{111}
-\contentsline {subsubsection}{\numberline {22.3.5.1}Why Regularization}{111}
-\contentsline {subsubsection}{\numberline {22.3.5.2}Types of Regularization}{111}
-\contentsline {subsubsection}{\numberline {22.3.5.3}Regularization Methods and Implementations}{112}
-\contentsline {paragraph}{\numberline {22.3.5.3.1}L2 Regularization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.3.2}L1 Regularization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.3.3}Elastic Net Regularization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.3.4}Dropout}{112}
-\contentsline {subsubsection}{\numberline {22.3.5.4}Normalization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.4.1}Instance normalization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.4.2}Layer normalization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.4.3}Batch normalization}{112}
-\contentsline {paragraph}{\numberline {22.3.5.4.4}Group normalization}{112}
-\contentsline {subsection}{\numberline {22.3.6}Activation Functions}{112}
-\contentsline {subsubsection}{\numberline {22.3.6.1}Why Non-linear}{113}
-\contentsline {subsubsection}{\numberline {22.3.6.2}Advancements}{113}
-\contentsline {subsubsection}{\numberline {22.3.6.3}Popular Activation Functions}{113}
-\contentsline {paragraph}{\numberline {22.3.6.3.1}Smooth Non-linear}{113}
-\contentsline {subparagraph}{Sigmoid}{113}
-\contentsline {subparagraph}{ELU}{113}
-\contentsline {subparagraph}{Softplus}{113}
-\contentsline {paragraph}{\numberline {22.3.6.3.2}Not Smooth Non-linear}{117}
-\contentsline {subparagraph}{ReLU}{117}
-\contentsline {subparagraph}{Leaky ReLU}{117}
-\contentsline {subparagraph}{ReLU6}{117}
-\contentsline {subparagraph}{PReLU}{118}
-\contentsline {section}{\numberline {22.4}Fine-Tuning Architectures}{119}
-\contentsline {subsection}{\numberline {22.4.1}Profiler}{119}
-\contentsline {subsection}{\numberline {22.4.2}Debugger}{119}
-\contentsline {section}{\numberline {22.5}Distributed Training}{119}
-\contentsline {subsection}{\numberline {22.5.1}Methods}{119}
-\contentsline {subsubsection}{\numberline {22.5.1.1}Data Parallelism}{120}
-\contentsline {subsubsection}{\numberline {22.5.1.2}Model Parallelism}{120}
-\contentsline {subsubsection}{\numberline {22.5.1.3}Federated learning}{120}
-\contentsline {section}{\numberline {22.6}Model Evaluation}{120}
-\contentsline {subsection}{\numberline {22.6.1}Metrics}{120}
-\contentsline {subsection}{\numberline {22.6.2}TensorBoard}{121}
-\contentsline {subsection}{\numberline {22.6.3}TFMA: TensorFlow Model Analysis}{121}
-\contentsline {subsubsection}{\numberline {22.6.3.1}Key Features}{121}
-\contentsline {paragraph}{\numberline {22.6.3.1.1}Sliced Metrics}{121}
-\contentsline {paragraph}{\numberline {22.6.3.1.2}Full-pass Metrics}{121}
-\contentsline {subsubsection}{\numberline {22.6.3.2}Implementation}{121}
-\contentsline {paragraph}{\numberline {22.6.3.2.1}Overview}{121}
-\contentsline {paragraph}{\numberline {22.6.3.2.2}Code}{121}
-\contentsline {subparagraph}{Exporting the Evaluation Graph}{121}
-\contentsline {subparagraph}{Computing Metrics}{121}
-\contentsline {subparagraph}{Visualize Metrics (in a notebook)}{122}
-\contentsline {section}{\numberline {22.7}Model Persistence}{122}
-\contentsline {subsection}{\numberline {22.7.1}Saver}{122}
-\contentsline {subsection}{\numberline {22.7.2}Hub}{122}
-\contentsline {section}{\numberline {22.8}Deployment with TF Serving}{122}
-\contentsline {subsection}{\numberline {22.8.1}Overview}{122}
-\contentsline {subsubsection}{\numberline {22.8.1.1}Standard Abstractions}{122}
-\contentsline {paragraph}{\numberline {22.8.1.1.1}ServableHandle}{122}
-\contentsline {paragraph}{\numberline {22.8.1.1.2}Manager}{122}
-\contentsline {paragraph}{\numberline {22.8.1.1.3}Loader}{122}
-\contentsline {paragraph}{\numberline {22.8.1.1.4}Source}{122}
-\contentsline {subsubsection}{\numberline {22.8.1.2}Plugins into Abstractions}{122}
-\contentsline {paragraph}{\numberline {22.8.1.2.1}File System (Source)}{122}
-\contentsline {paragraph}{\numberline {22.8.1.2.2}Version Policy (Manager)}{123}
-\contentsline {subsubsection}{\numberline {22.8.1.3}FIT}{123}
-\contentsline {paragraph}{\numberline {22.8.1.3.1}ServerCore}{123}
-\contentsline {paragraph}{\numberline {22.8.1.3.2}Binaries and APIs}{123}
-\contentsline {subparagraph}{Predict}{123}
-\contentsline {paragraph}{\numberline {22.8.1.3.3}Servables}{123}
-\contentsline {paragraph}{\numberline {22.8.1.3.4}Loaders}{123}
-\contentsline {subsection}{\numberline {22.8.2}Example}{124}
-\contentsline {section}{\numberline {22.9}Other}{124}
-\contentsline {subsection}{\numberline {22.9.1}Probability}{124}
-\contentsline {subsection}{\numberline {22.9.2}TensorFlow Extended}{124}
-\contentsline {subsection}{\numberline {22.9.3}Keras}{124}
-\contentsline {subsection}{\numberline {22.9.4}Image}{124}
-\contentsline {subsection}{\numberline {22.9.5}Image Augmentation}{124}
-\contentsline {subsection}{\numberline {22.9.6}Edward 2.0}{124}
-\contentsline {subsection}{\numberline {22.9.7}TensorFlow Lite}{124}
-\contentsline {chapter}{\numberline {23}Implementing Common Methodologies}{125}
-\contentsline {section}{\numberline {23.1}Artificial Neural Networks}{125}
-\contentsline {section}{\numberline {23.2}Convolutional Neural Networks}{125}
-\contentsline {section}{\numberline {23.3}Recurrent Neural Networks}{125}
-\contentsline {part}{V\hspace {1em}End To End Examples}{127}
-\contentsline {chapter}{\numberline {24}EndToEnd}{129}
-\contentsline {section}{\numberline {24.1}Structured}{130}
-\contentsline {subsection}{\numberline {24.1.1}Linear Regression}{130}
-\contentsline {subsection}{\numberline {24.1.2}KNN}{130}
-\contentsline {section}{\numberline {24.2}Image}{130}
-\contentsline {subsection}{\numberline {24.2.1}Image Classification}{130}
-\contentsline {subsection}{\numberline {24.2.2}Image Segmentation}{130}
-\contentsline {subsection}{\numberline {24.2.3}Adversarial Exmaples}{130}
-\contentsline {subsection}{\numberline {24.2.4}AutoEncoder}{130}
-\contentsline {subsection}{\numberline {24.2.5}Generative Adversarial Network}{130}
-\contentsline {section}{\numberline {24.3}TimeSeries}{130}
-\contentsline {section}{\numberline {24.4}Text}{130}
-\contentsline {subsection}{\numberline {24.4.1}Sentiment Analysis}{130}
-\contentsline {section}{\numberline {24.5}Audio}{130}
-\contentsline {subsection}{\numberline {24.5.1}Audio to Text}{130}
-\contentsline {part}{VI\hspace {1em}Moving Forward}{131}
-\contentsline {section}{\numberline {24.6}Conclusion}{133}
-\contentsline {part}{VII\hspace {1em}Dump Space}{135}
-\contentsline {part}{VIII\hspace {1em}Research}{139}
-\contentsline {chapter}{\numberline {25}Ongoing Research}{141}
+\contentsline {section}{\numberline {15.3}SQL}{87}
+\contentsline {subsection}{\numberline {15.3.1}Structure}{87}
+\contentsline {subsubsection}{\numberline {15.3.1.1}Tables}{87}
+\contentsline {paragraph}{\numberline {15.3.1.1.1}Table Name}{88}
+\contentsline {paragraph}{\numberline {15.3.1.1.2}Table Columns}{88}
+\contentsline {paragraph}{\numberline {15.3.1.1.3}Primary Key}{88}
+\contentsline {paragraph}{\numberline {15.3.1.1.4}Foreign Key}{88}
+\contentsline {subsection}{\numberline {15.3.2}Relationships}{88}
+\contentsline {subsection}{\numberline {15.3.3}Views}{88}
+\contentsline {subsection}{\numberline {15.3.4}Writing Queries}{88}
+\contentsline {subsubsection}{\numberline {15.3.4.1}Overview}{89}
+\contentsline {subsubsection}{\numberline {15.3.4.2}Basic Query Statements}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.1}SELECT}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.2}FROM}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.3}WHERE}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.4}HAVING}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.5}AND}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.6}ORDER BY}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.7}GROUP BY}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.8}LIMIT}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.9}COUNT}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.10}BETWEEN}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.11}JOIN}{89}
+\contentsline {paragraph}{\numberline {15.3.4.2.12}Other}{89}
+\contentsline {section}{\numberline {15.4}mongo}{89}
+\contentsline {chapter}{\numberline {16}Analyzing Data}{91}
+\contentsline {section}{\numberline {16.1}Pandas}{91}
+\contentsline {subsection}{\numberline {16.1.1}Series}{91}
+\contentsline {subsection}{\numberline {16.1.2}Dataframe}{91}
+\contentsline {subsection}{\numberline {16.1.3}Hierarchical Indexing}{91}
+\contentsline {subsection}{\numberline {16.1.4}Describing and Visualizing}{91}
+\contentsline {subsection}{\numberline {16.1.5}Merging, Joining, Pivoting}{91}
+\contentsline {subsection}{\numberline {16.1.6}Groups}{91}
+\contentsline {subsection}{\numberline {16.1.7}Data Loading}{91}
+\contentsline {chapter}{\numberline {17}Visualizing Data}{93}
+\contentsline {section}{\numberline {17.1}Matplotlib}{93}
+\contentsline {subsection}{\numberline {17.1.1}Basics}{93}
+\contentsline {subsection}{\numberline {17.1.2}Representation of types of data}{93}
+\contentsline {subsubsection}{\numberline {17.1.2.1}Categorical Variables}{93}
+\contentsline {paragraph}{\numberline {17.1.2.1.1}Frequency Distribution Tables}{93}
+\contentsline {paragraph}{\numberline {17.1.2.1.2}Bar Charts}{93}
+\contentsline {paragraph}{\numberline {17.1.2.1.3}Pie Charts}{93}
+\contentsline {paragraph}{\numberline {17.1.2.1.4}Pareto Diagrams}{94}
+\contentsline {subsubsection}{\numberline {17.1.2.2}Numerical Variables}{94}
+\contentsline {subsubsection}{\numberline {17.1.2.3}Figures, Subfigures}{94}
+\contentsline {subsection}{\numberline {17.1.3}Chart Type Examples}{94}
+\contentsline {subsubsection}{\numberline {17.1.3.1}Line}{94}
+\contentsline {subsubsection}{\numberline {17.1.3.2}Scatter}{94}
+\contentsline {subsubsection}{\numberline {17.1.3.3}Bar}{94}
+\contentsline {subsubsection}{\numberline {17.1.3.4}Histograms}{94}
+\contentsline {subsubsection}{\numberline {17.1.3.5}Pie}{94}
+\contentsline {subsection}{\numberline {17.1.4}Customization}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.1}Colors}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.2}Markers}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.3}Ticks}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.4}Labels}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.5}Legends}{94}
+\contentsline {subsubsection}{\numberline {17.1.4.6}Annotations}{94}
+\contentsline {subsection}{\numberline {17.1.5}Saving to File}{94}
+\contentsline {section}{\numberline {17.2}D3}{94}
+\contentsline {chapter}{\numberline {18}Predicting Data}{95}
+\contentsline {section}{\numberline {18.1}Scikit-Learn}{95}
+\contentsline {subsection}{\numberline {18.1.1}Overview}{95}
+\contentsline {subsection}{\numberline {18.1.2}Transformation Pipelines}{96}
+\contentsline {subsection}{\numberline {18.1.3}Training}{96}
+\contentsline {subsubsection}{\numberline {18.1.3.1}Cross-Validation}{96}
+\contentsline {subsection}{\numberline {18.1.4}Fine-Tuning}{96}
+\contentsline {subsubsection}{\numberline {18.1.4.1}Hyper-Parameter Optimization}{96}
+\contentsline {paragraph}{\numberline {18.1.4.1.1}Grid Search}{96}
+\contentsline {paragraph}{\numberline {18.1.4.1.2}Randomized Search}{96}
+\contentsline {chapter}{\numberline {19}Data Provanece and Reproducibility}{97}
+\contentsline {section}{\numberline {19.1}Pachyderm}{97}
+\contentsline {chapter}{\numberline {20}Others}{99}
+\contentsline {section}{\numberline {20.1}Regular Expressions}{99}
+\contentsline {section}{\numberline {20.2}tangent}{99}
+\contentsline {section}{\numberline {20.3}Markdown}{99}
+\contentsline {part}{IV\hspace {1em}TensorFlow}{101}
+\contentsline {chapter}{\numberline {21}Overview}{103}
+\contentsline {section}{\numberline {21.1}Introduction}{103}
+\contentsline {section}{\numberline {21.2}High-level Overview of Components}{103}
+\contentsline {section}{\numberline {21.3}TensorFlow Essentials}{103}
+\contentsline {subsection}{\numberline {21.3.1}API Hierarchy}{103}
+\contentsline {subsection}{\numberline {21.3.2}Placeholders, feed\_dict, Variables and Constants}{103}
+\contentsline {subsection}{\numberline {21.3.3}Coding Style}{103}
+\contentsline {subsection}{\numberline {21.3.4}Graphs}{104}
+\contentsline {subsection}{\numberline {21.3.5}Sessions}{104}
+\contentsline {subsection}{\numberline {21.3.6}Tensors}{104}
+\contentsline {section}{\numberline {21.4}Workflow}{104}
+\contentsline {section}{\numberline {21.5}Debugging TensorFlow}{104}
+\contentsline {subsection}{\numberline {21.5.1}Common Errors}{105}
+\contentsline {subsubsection}{\numberline {21.5.1.1}Shape}{105}
+\contentsline {subsubsection}{\numberline {21.5.1.2}Data Type}{105}
+\contentsline {subsection}{\numberline {21.5.2}Debugging Tools}{105}
+\contentsline {subsubsection}{\numberline {21.5.2.1}tf.Print}{105}
+\contentsline {subsubsection}{\numberline {21.5.2.2}tfdbg}{105}
+\contentsline {subsubsection}{\numberline {21.5.2.3}TensorBoard}{105}
+\contentsline {subsubsection}{\numberline {21.5.2.4}Logging and Verbosity}{105}
+\contentsline {chapter}{\numberline {22}Tensorflow API and Components}{107}
+\contentsline {section}{\numberline {22.1}Datasets}{107}
+\contentsline {subsection}{\numberline {22.1.1}Data}{107}
+\contentsline {subsubsection}{\numberline {22.1.1.1}Reading in Data}{107}
+\contentsline {paragraph}{\numberline {22.1.1.1.1}Different file formats}{107}
+\contentsline {subparagraph}{tf.data.Dataset.TextLineDataset}{107}
+\contentsline {subparagraph}{tf.data.Dataset.TFRecordDataset}{107}
+\contentsline {subparagraph}{tf.data.Dataset.FixedLengthRecordDataset}{107}
+\contentsline {paragraph}{\numberline {22.1.1.1.2}Reading from Sharded Files}{107}
+\contentsline {subsubsection}{\numberline {22.1.1.2}Transforming Data}{107}
+\contentsline {subsection}{\numberline {22.1.2}Transform}{107}
+\contentsline {subsubsection}{\numberline {22.1.2.1}Overview}{107}
+\contentsline {subsubsection}{\numberline {22.1.2.2}Installation}{108}
+\contentsline {subsubsection}{\numberline {22.1.2.3}Implementation}{108}
+\contentsline {section}{\numberline {22.2}Building Architectures}{108}
+\contentsline {subsection}{\numberline {22.2.1}Layers}{108}
+\contentsline {subsection}{\numberline {22.2.2}Estimators}{108}
+\contentsline {subsubsection}{\numberline {22.2.2.1}Input data}{108}
+\contentsline {paragraph}{\numberline {22.2.2.1.1}Specifying Hyper Parameters}{108}
+\contentsline {subparagraph}{Epochs}{108}
+\contentsline {paragraph}{\numberline {22.2.2.1.2}In Memory Data}{108}
+\contentsline {paragraph}{\numberline {22.2.2.1.3}Out of Memory Data}{109}
+\contentsline {subsubsection}{\numberline {22.2.2.2}Checkpoints}{109}
+\contentsline {subsubsection}{\numberline {22.2.2.3}Distributed}{109}
+\contentsline {paragraph}{\numberline {22.2.2.3.1}tf.estimator.RunConfig}{109}
+\contentsline {paragraph}{\numberline {22.2.2.3.2}tf.estimator.TrainSpec}{109}
+\contentsline {paragraph}{\numberline {22.2.2.3.3}tf.estimator.EvalSpec}{109}
+\contentsline {paragraph}{\numberline {22.2.2.3.4}Notes}{109}
+\contentsline {subsubsection}{\numberline {22.2.2.4}TensorBoard}{110}
+\contentsline {paragraph}{\numberline {22.2.2.4.1}Adding Custom}{110}
+\contentsline {subparagraph}{tf.summary.scalar}{110}
+\contentsline {subparagraph}{tf.summary.image}{110}
+\contentsline {subparagraph}{tf.summary.audio}{110}
+\contentsline {subparagraph}{tf.summary.text}{110}
+\contentsline {subparagraph}{tf.summary.histogram}{110}
+\contentsline {subsubsection}{\numberline {22.2.2.5}Deployment}{110}
+\contentsline {paragraph}{\numberline {22.2.2.5.1}Exporters}{110}
+\contentsline {subsection}{\numberline {22.2.3}Eager}{110}
+\contentsline {section}{\numberline {22.3}Design and Component Considerations}{110}
+\contentsline {subsection}{\numberline {22.3.1}Initialization Strategies}{110}
+\contentsline {subsection}{\numberline {22.3.2}Hyperparameters}{111}
+\contentsline {subsubsection}{\numberline {22.3.2.1}Training Related}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.1}Learning Rate}{111}
+\contentsline {subparagraph}{Too High vs Too Low}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.2}Batch Size}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.3}Number of Training Iterations}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.4}Momentum}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.5}Weight Update}{111}
+\contentsline {paragraph}{\numberline {22.3.2.1.6}Stopping Criteria}{111}
+\contentsline {subsubsection}{\numberline {22.3.2.2}Model Related}{111}
+\contentsline {paragraph}{\numberline {22.3.2.2.1}Architecture}{111}
+\contentsline {paragraph}{\numberline {22.3.2.2.2}Weight Initialization}{111}
+\contentsline {paragraph}{\numberline {22.3.2.2.3}Weight-decay}{111}
+\contentsline {paragraph}{\numberline {22.3.2.2.4}Drop-out}{111}
+\contentsline {subsection}{\numberline {22.3.3}Hyper-parameter optimization}{111}
+\contentsline {subsubsection}{\numberline {22.3.3.1}Coordinate Descent}{112}
+\contentsline {subsubsection}{\numberline {22.3.3.2}Grid Search}{112}
+\contentsline {subsubsection}{\numberline {22.3.3.3}Random Search}{112}
+\contentsline {subsubsection}{\numberline {22.3.3.4}Grid vs Random Search}{112}
+\contentsline {subsubsection}{\numberline {22.3.3.5}Automated / Model-based Methods}{112}
+\contentsline {subsection}{\numberline {22.3.4}Optimizers}{112}
+\contentsline {subsubsection}{\numberline {22.3.4.1}Overview}{112}
+\contentsline {subsubsection}{\numberline {22.3.4.2}What are optimizers}{112}
+\contentsline {subsubsection}{\numberline {22.3.4.3}Types of optimizers}{112}
+\contentsline {subsubsection}{\numberline {22.3.4.4}TF optimizers}{112}
+\contentsline {subsubsection}{\numberline {22.3.4.5}Advanced}{113}
+\contentsline {paragraph}{\numberline {22.3.4.5.1}Gradient Computation}{113}
+\contentsline {paragraph}{\numberline {22.3.4.5.2}Gradient Clipping}{113}
+\contentsline {subsection}{\numberline {22.3.5}Regularization}{113}
+\contentsline {subsubsection}{\numberline {22.3.5.1}Why Regularization}{113}
+\contentsline {subsubsection}{\numberline {22.3.5.2}Types of Regularization}{113}
+\contentsline {subsubsection}{\numberline {22.3.5.3}Regularization Methods and Implementations}{114}
+\contentsline {paragraph}{\numberline {22.3.5.3.1}L2 Regularization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.3.2}L1 Regularization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.3.3}Elastic Net Regularization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.3.4}Dropout}{114}
+\contentsline {subsubsection}{\numberline {22.3.5.4}Normalization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.4.1}Instance normalization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.4.2}Layer normalization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.4.3}Batch normalization}{114}
+\contentsline {paragraph}{\numberline {22.3.5.4.4}Group normalization}{114}
+\contentsline {subsection}{\numberline {22.3.6}Activation Functions}{114}
+\contentsline {subsubsection}{\numberline {22.3.6.1}Why Non-linear}{115}
+\contentsline {subsubsection}{\numberline {22.3.6.2}Advancements}{115}
+\contentsline {subsubsection}{\numberline {22.3.6.3}Popular Activation Functions}{115}
+\contentsline {paragraph}{\numberline {22.3.6.3.1}Smooth Non-linear}{115}
+\contentsline {subparagraph}{Sigmoid}{115}
+\contentsline {subparagraph}{ELU}{115}
+\contentsline {subparagraph}{Softplus}{115}
+\contentsline {paragraph}{\numberline {22.3.6.3.2}Not Smooth Non-linear}{119}
+\contentsline {subparagraph}{ReLU}{119}
+\contentsline {subparagraph}{Leaky ReLU}{119}
+\contentsline {subparagraph}{ReLU6}{119}
+\contentsline {subparagraph}{PReLU}{120}
+\contentsline {section}{\numberline {22.4}Fine-Tuning Architectures}{121}
+\contentsline {subsection}{\numberline {22.4.1}Profiler}{121}
+\contentsline {subsection}{\numberline {22.4.2}Debugger}{121}
+\contentsline {section}{\numberline {22.5}Distributed Training}{121}
+\contentsline {subsection}{\numberline {22.5.1}Methods}{121}
+\contentsline {subsubsection}{\numberline {22.5.1.1}Data Parallelism}{122}
+\contentsline {subsubsection}{\numberline {22.5.1.2}Model Parallelism}{122}
+\contentsline {subsubsection}{\numberline {22.5.1.3}Federated learning}{122}
+\contentsline {section}{\numberline {22.6}Model Evaluation}{122}
+\contentsline {subsection}{\numberline {22.6.1}Metrics}{122}
+\contentsline {subsection}{\numberline {22.6.2}TensorBoard}{123}
+\contentsline {subsection}{\numberline {22.6.3}TFMA: TensorFlow Model Analysis}{123}
+\contentsline {subsubsection}{\numberline {22.6.3.1}Key Features}{123}
+\contentsline {paragraph}{\numberline {22.6.3.1.1}Sliced Metrics}{123}
+\contentsline {paragraph}{\numberline {22.6.3.1.2}Full-pass Metrics}{123}
+\contentsline {subsubsection}{\numberline {22.6.3.2}Implementation}{123}
+\contentsline {paragraph}{\numberline {22.6.3.2.1}Overview}{123}
+\contentsline {paragraph}{\numberline {22.6.3.2.2}Code}{123}
+\contentsline {subparagraph}{Exporting the Evaluation Graph}{123}
+\contentsline {subparagraph}{Computing Metrics}{123}
+\contentsline {subparagraph}{Visualize Metrics (in a notebook)}{124}
+\contentsline {section}{\numberline {22.7}Model Persistence}{124}
+\contentsline {subsection}{\numberline {22.7.1}Saver}{124}
+\contentsline {subsection}{\numberline {22.7.2}Hub}{124}
+\contentsline {section}{\numberline {22.8}Deployment with TF Serving}{124}
+\contentsline {subsection}{\numberline {22.8.1}Overview}{124}
+\contentsline {subsubsection}{\numberline {22.8.1.1}Standard Abstractions}{124}
+\contentsline {paragraph}{\numberline {22.8.1.1.1}ServableHandle}{124}
+\contentsline {paragraph}{\numberline {22.8.1.1.2}Manager}{124}
+\contentsline {paragraph}{\numberline {22.8.1.1.3}Loader}{124}
+\contentsline {paragraph}{\numberline {22.8.1.1.4}Source}{124}
+\contentsline {subsubsection}{\numberline {22.8.1.2}Plugins into Abstractions}{124}
+\contentsline {paragraph}{\numberline {22.8.1.2.1}File System (Source)}{124}
+\contentsline {paragraph}{\numberline {22.8.1.2.2}Version Policy (Manager)}{125}
+\contentsline {subsubsection}{\numberline {22.8.1.3}FIT}{125}
+\contentsline {paragraph}{\numberline {22.8.1.3.1}ServerCore}{125}
+\contentsline {paragraph}{\numberline {22.8.1.3.2}Binaries and APIs}{125}
+\contentsline {subparagraph}{Predict}{125}
+\contentsline {paragraph}{\numberline {22.8.1.3.3}Servables}{125}
+\contentsline {paragraph}{\numberline {22.8.1.3.4}Loaders}{125}
+\contentsline {subsection}{\numberline {22.8.2}Example}{126}
+\contentsline {section}{\numberline {22.9}Other}{126}
+\contentsline {subsection}{\numberline {22.9.1}Probability}{126}
+\contentsline {subsection}{\numberline {22.9.2}TensorFlow Extended}{126}
+\contentsline {subsection}{\numberline {22.9.3}Keras}{126}
+\contentsline {subsection}{\numberline {22.9.4}Image}{126}
+\contentsline {subsection}{\numberline {22.9.5}Image Augmentation}{126}
+\contentsline {subsection}{\numberline {22.9.6}Edward 2.0}{126}
+\contentsline {subsection}{\numberline {22.9.7}TensorFlow Lite}{126}
+\contentsline {chapter}{\numberline {23}Implementing Common Methodologies}{127}
+\contentsline {section}{\numberline {23.1}Artificial Neural Networks}{127}
+\contentsline {section}{\numberline {23.2}Convolutional Neural Networks}{127}
+\contentsline {section}{\numberline {23.3}Recurrent Neural Networks}{127}
+\contentsline {part}{V\hspace {1em}End To End Examples}{129}
+\contentsline {chapter}{\numberline {24}EndToEnd}{131}
+\contentsline {section}{\numberline {24.1}Structured}{132}
+\contentsline {subsection}{\numberline {24.1.1}Linear Regression}{132}
+\contentsline {subsection}{\numberline {24.1.2}KNN}{132}
+\contentsline {section}{\numberline {24.2}Image}{132}
+\contentsline {subsection}{\numberline {24.2.1}Image Classification}{132}
+\contentsline {subsection}{\numberline {24.2.2}Image Segmentation}{132}
+\contentsline {subsection}{\numberline {24.2.3}Adversarial Exmaples}{132}
+\contentsline {subsection}{\numberline {24.2.4}AutoEncoder}{132}
+\contentsline {subsection}{\numberline {24.2.5}Generative Adversarial Network}{132}
+\contentsline {section}{\numberline {24.3}TimeSeries}{132}
+\contentsline {section}{\numberline {24.4}Text}{132}
+\contentsline {subsection}{\numberline {24.4.1}Sentiment Analysis}{132}
+\contentsline {section}{\numberline {24.5}Audio}{132}
+\contentsline {subsection}{\numberline {24.5.1}Audio to Text}{132}
+\contentsline {part}{VI\hspace {1em}Moving Forward}{133}
+\contentsline {section}{\numberline {24.6}Conclusion}{135}
+\contentsline {part}{VII\hspace {1em}Dump Space}{137}
+\contentsline {part}{VIII\hspace {1em}Research}{141}
+\contentsline {chapter}{\numberline {25}Ongoing Research}{143}
