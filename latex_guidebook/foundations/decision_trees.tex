@@ -16,6 +16,8 @@
 % from coursera lec
 \textcolor{red}{finding the optimal splitting for a tree is considered an NP-hard problem -- greedy algorithms are used to create splitting schemes that are as close to optimal as possible.}
 
+%\textcolor{blue}{feature importance}
+
 \subsection{Criterion -- Maximizing Information Gain}
 
 \textcolor{blue}{Term - Information gain -- difference between the impurity of the parent node and the sum of the child node impurities -- the lower the impurity of the child nodes compared to the parent node, the higher the information gain}
@@ -86,9 +88,15 @@
 \section{Random Forests}
 
 % see Breiman, 2001
-\textcolor{blue}{Ensemble method. Combine various decision trees, where some may be weak learners\index{weak learner} (\textcolor{green}{def}) and some may be strong learners\index{strong learner} (\textcolor{green}{def}). The final classification will be determined by majority vote from the number of trees.}
+\textcolor{blue}{Ensemble method. Combine various decision trees, where each tree is slightly different. Further, some may be weak learners (\textcolor{red}{local ref}) and some may be strong learners (\textcolor{red}{local ref}). The final classification will be determined by majority vote from the number of trees.}
 
-\textcolor{blue}{Ensemble methods are discussed more in depth in \textcolor{red}{local ref}}
+%% whoa, this needs to be re-written....
+\textcolor{blue}{The general idea behind using an ensemble of trees in a random forest, much like other ensemble methods (which are discussed more in depth in \textcolor{red}{local ref}) is that each component (decision tree in this case), though it may predict the data well, it is likely to overfit the training data, and each component, being slightly different may overfit on different features in the data and the amount overall overfitting is reduced by averaging their results.  each component (tree) randomized by either i) selecting the features to split on or ii) selecting the data to train on}
+
+\textcolor{blue}{``soft'' prediction -- each tree provides a probability for each possible output lable and the probabilities are averaged and the class with the highest probability is predicted.}
+
+% implementation note
+\textcolor{blue}{It is important to set the random state and/or seed the random number generator as each random forest could have drastically different results. However, this randomness should decrease with the number of trees implemented in the forest as using more trees will lead to a more robust ensemble.}
 
 
 

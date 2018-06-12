@@ -1,116 +1,114 @@
 \begin{theindex}
 
-  \item bag-of-words, 16
-  \item bagging, 57
-  \item Bias, 23
-  \item blending, 59
-  \item boostrap aggregating, 57
-  \item bootstrap samples, 57
+  \item bag-of-words, 19
+  \item bagging, 63
+  \item Bias, 35
+  \item blending, 65
+  \item boostrap aggregating, 63
+  \item bootstrap samples, 63
 
   \indexspace
 
-  \item corpus, 15
-  \item covarience matrix, 53
+  \item corpus, 18
+  \item covarience matrix, 59
 
   \indexspace
 
-  \item discrimination threshold, 40
+  \item discrimination threshold, 46
 
   \indexspace
 
-  \item generalized linear model, 37
-  \item Grid search, 28
+  \item generalized linear model, 43
+  \item Grid search, 30
 
   \indexspace
 
-  \item Heaviside step function, 48
-  \item hidden layer, 49
+  \item Heaviside step function, 54
+  \item hidden layer, 55
 
   \indexspace
 
-  \item ID3 algorithm, 45
-  \item image quantization, 51
-  \item independent and identically distributed (i.i.d), 43
-  \item input layer, 49
-  \item interquartile range, 14
+  \item ID3 algorithm, 51
+  \item image quantization, 57
+  \item inappropriate minima, 25
+  \item independent and identically distributed (i.i.d), 49
+  \item input layer, 55
+  \item interquartile range, 16
 
   \indexspace
 
-  \item J48, 45
+  \item J48, 51
 
   \indexspace
 
-  \item Karhunen-Love Transform (KLM), 53
+  \item Karhunen-Love Transform (KLM), 59
 
   \indexspace
 
-  \item lazy learner, 40
-  \item Linear Least Squares, 38
-  \item logit, 39
-  \item lucky split, 18
+  \item lazy learner, 46
+  \item Linear Least Squares, 44
+  \item logit, 45
+  \item lucky split, 20
 
   \indexspace
 
-  \item multi-label classification, 21
+  \item multi-label classification, 23
 
   \indexspace
 
-  \item odds ratio, 39
-  \item one-hot encoding, 13
-  \item one-of-k encoding, 13
-  \item Ordinary Lease Squares (OLS), 38
-  \item output layer, 49
-  \item Overfitting, 22
+  \item odds ratio, 45
+  \item one-hot encoding, 15
+  \item one-of-k encoding, 15
+  \item Ordinary Lease Squares (OLS), 44
+  \item output layer, 55
+  \item Overfitting, 34
 
   \indexspace
 
-  \item Pearson's R, 35
-  \item peeking, 30
-  \item Principal Component Analysis (PCA), 53
-  \item Problem transformation, 21
+  \item Pearson's R, 39
+  \item peeking, 33
+  \item Principal Component Analysis (PCA), 59
+  \item Problem transformation, 24
 
   \indexspace
 
-  \item Randomized search, 28
-  \item reducible error, 19
-  \item residual sum of squares (RSS), 38
-  \item residuals, 38
+  \item Randomized search, 30
+  \item reducible error, 21
+  \item ReLUN, 119
+  \item residual sum of squares (RSS), 44
+  \item residuals, 44
+  \item Ridge regression, 114
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{57}
-  \item sampling without replacement, \see{subagging}{58}
-  \item Sequential Minimal Optimization (SMO), 42
-  \item sigmoid, 100
-  \item silhouette coefficient, 52
-  \item sparse vectors, 13
-  \item strong learner, 46
-  \item subagging, 58
-  \item subspace sampling, 58
-  \item Support Vector Machine (SVM), 42
+  \item sampling with replacement, \see{bagging}{63}
+  \item sampling without replacement, \see{subagging}{64}
+  \item Sequential Minimal Optimization (SMO), 49
+  \item sigmoid, 115
+  \item silhouette coefficient, 58
+  \item sparse vectors, 15
+  \item subagging, 64
+  \item subspace sampling, 64
+  \item Support Vector Machine (SVM), 48
 
   \indexspace
 
-  \item tf-idf, 17
-  \item Tikhonov regularization, 99
-  \item Type I error, 31
-  \item Type II error, 31
+  \item tf-idf, 19
+  \item Tikhonov regularization, 114
+  \item Type I error, 36
+  \item Type II error, 36
 
   \indexspace
 
-  \item Underfitting, 23
-  \item unit step function, 48
-  \item universal approximators, 49
+  \item Underfitting, 34
+  \item unit step function, 54
+  \item universal approximators, 55
 
   \indexspace
 
-  \item Variance, 23
-  \item vocabulary, 15
-  \item Voronoi region, 36
-  \item Voronoi tessellation, 36
-
-  \indexspace
-
-  \item weak learner, 46
+  \item Variance, 35
+  \item vocabulary, 18
+  \item Voronoi region, 40
+  \item Voronoi tessellation, 40
 
 \end{theindex}

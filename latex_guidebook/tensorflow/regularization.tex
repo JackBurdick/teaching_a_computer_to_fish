@@ -39,9 +39,13 @@
 
 \subsubsection{Regularization Methods and Implementations}
 
+\textcolor{green}{TODO: DIGRAM OF L2 + L1 + elastic nets}
+
 \paragraph{L2 Regularization}
 
-\textcolor{blue}{Ridge regression is also known as {Tikhonov regularization}\index{Tikhonov regularization}}
+\textcolor{green}{TODO: DIAGRAM OF L2}
+
+\textcolor{blue}{L2, ({Ridge regression}\index{Ridge regression}) may also be known as {Tikhonov regularization}\index{Tikhonov regularization}}
 
 \textcolor{blue}{penalizes model parameters that become too large. Will force most of the parameters to be small, but still non-zero}
 
@@ -49,12 +53,16 @@
 
 \paragraph{L1 Regularization}
 
+\textcolor{green}{TODO: DIAGRAM OF L1}
+
 \textcolor{blue}{LASSO (Least Absolute Shrinkage and Selection Operator) --- produces sparse parameters. This will force coefficients to zero and cause the model to depend on a small subset of the features.}
+
+\textcolor{blue}{It could be argued that using L1 regularization may help to make a mode more interpretable, by using less (presumably more important/relevant) features when making predictions.}
 
 
 \paragraph{Elastic Net Regularization}
 
-\textcolor{blue}{Linearly combines the $L^1$ and $L^2$ penalties used by both LASSO and ridge regression.}
+\textcolor{blue}{Linearly combines the $L^1$ and $L^2$ penalties used by both LASSO and ridge regression. The cost is having two parameters (as opposed to just one when using either L1 or L2).}
 
 
 \paragraph{Dropout}

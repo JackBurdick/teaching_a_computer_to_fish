@@ -1,5 +1,10 @@
 \contentsline {part}{I\hspace {1em}Background}{1}
 \contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Motivation}{3}
+\contentsline {section}{\numberline {1.2}What \& Why ML}{3}
+\contentsline {section}{\numberline {1.3}Notes}{4}
+\contentsline {subsection}{\numberline {1.3.1}Target Audience}{4}
+\contentsline {subsection}{\numberline {1.3.2}How to Read this Book}{4}
 \contentsline {chapter}{\numberline {2}Resources and Communities}{5}
 \contentsline {section}{\numberline {2.1}Online Communities}{5}
 \contentsline {section}{\numberline {2.2}Blogs}{5}
@@ -250,7 +255,7 @@
 \contentsline {subsubsection}{\numberline {9.1.1.2}Boosting}{64}
 \contentsline {paragraph}{\numberline {9.1.1.2.1}Examples}{64}
 \contentsline {subparagraph}{AdaBoost}{64}
-\contentsline {subsubsection}{\numberline {9.1.1.3}Bagging Vs Boosting}{64}
+\contentsline {subsubsection}{\numberline {9.1.1.3}Bagging Vs Boosting}{65}
 \contentsline {subsection}{\numberline {9.1.2}Stacking}{65}
 \contentsline {subsection}{\numberline {9.1.3}Examples}{65}
 \contentsline {subsubsection}{\numberline {9.1.3.1}Random Forests}{65}
@@ -494,17 +499,17 @@
 \contentsline {paragraph}{\numberline {22.3.5.3.4}Dropout}{114}
 \contentsline {subsubsection}{\numberline {22.3.5.4}Normalization}{114}
 \contentsline {paragraph}{\numberline {22.3.5.4.1}Instance normalization}{114}
-\contentsline {paragraph}{\numberline {22.3.5.4.2}Layer normalization}{114}
-\contentsline {paragraph}{\numberline {22.3.5.4.3}Batch normalization}{114}
-\contentsline {paragraph}{\numberline {22.3.5.4.4}Group normalization}{114}
-\contentsline {subsection}{\numberline {22.3.6}Activation Functions}{114}
+\contentsline {paragraph}{\numberline {22.3.5.4.2}Layer normalization}{115}
+\contentsline {paragraph}{\numberline {22.3.5.4.3}Batch normalization}{115}
+\contentsline {paragraph}{\numberline {22.3.5.4.4}Group normalization}{115}
+\contentsline {subsection}{\numberline {22.3.6}Activation Functions}{115}
 \contentsline {subsubsection}{\numberline {22.3.6.1}Why Non-linear}{115}
 \contentsline {subsubsection}{\numberline {22.3.6.2}Advancements}{115}
 \contentsline {subsubsection}{\numberline {22.3.6.3}Popular Activation Functions}{115}
 \contentsline {paragraph}{\numberline {22.3.6.3.1}Smooth Non-linear}{115}
 \contentsline {subparagraph}{Sigmoid}{115}
 \contentsline {subparagraph}{ELU}{115}
-\contentsline {subparagraph}{Softplus}{115}
+\contentsline {subparagraph}{Softplus}{117}
 \contentsline {paragraph}{\numberline {22.3.6.3.2}Not Smooth Non-linear}{119}
 \contentsline {subparagraph}{ReLU}{119}
 \contentsline {subparagraph}{Leaky ReLU}{119}
