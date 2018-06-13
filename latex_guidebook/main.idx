@@ -56,7 +56,7 @@
 \indexentry{sampling without replacement|see{subagging}}{64}
 \indexentry{subspace sampling}{64}
 \indexentry{blending}{65}
-\indexentry{Ridge regression}{114}
-\indexentry{Tikhonov regularization}{114}
-\indexentry{sigmoid}{115}
-\indexentry{ReLUN}{119}
+\indexentry{Ridge regression}{116}
+\indexentry{Tikhonov regularization}{116}
+\indexentry{sigmoid}{117}
+\indexentry{ReLUN}{121}
