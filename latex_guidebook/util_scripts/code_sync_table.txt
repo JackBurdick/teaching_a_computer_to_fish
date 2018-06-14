@@ -10,6 +10,24 @@ py_opt_params || ../../python/tidbits.ipynb || ../nested/python.tex || o
 py_func_kwonly || ../../python/tidbits.ipynb || ../nested/python.tex || o ca 
 py_nested_listcomp || ../../python/tidbits.ipynb || ../nested/python.tex || o ca 
 datagen_blobs_2dcode || ../../ROOT_DATA/generated/make_blobs.ipynb || ../nested/basics/acquiring_data.tex || 
-[START]
 datagen_blobs_3dcode || ../../ROOT_DATA/generated/make_blobs.ipynb || ../nested/basics/acquiring_data.tex || 
+# numpy
+[START]
+np_init_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex ||
+np_info_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_index_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_index_02 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_index_03 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_dtypearg_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_dtype_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_zeros_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_ones_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_empty_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_eye_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_full_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_arange_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o ca
+np_reshape_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_reshape_02 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_reshape_03 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
+np_asarray_01 || ../../libraries/numpy/01_numpy_initialization_and_viewing.ipynb || ../nested/numpy.tex || o
 [END]
