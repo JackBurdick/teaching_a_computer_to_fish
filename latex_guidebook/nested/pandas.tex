@@ -1,10 +1,80 @@
 \section{Pandas}
 
-\textcolor{blue}{Designed to work with tabular or heterogeneous data}
+\textcolor{blue}{Open source data analysis and manipulation tool designed to make working with ``relational'' or ``labeled'' data.}
+
+\textcolor{blue}{When working with pandas, there are two primary data structures (described below), the \code{series} (1-dimensional / single column) and the \code{DataFrame} (2-dimensional / rows+columnsv).}
+
+\subsection{Installation}
+
+Installation instructions can be found on the main website (https://pandas.pydata.org/) otherwise, if using anaconda (\textcolor{red}{local ref}) the following command may be used.
+
+\code{conda install -c anaconda pandas}
 
 \subsection{Series}
 
+% TODO: create series
+
+% TODO: create from other type
+
+% TODO: read from file
+
+\subsubsection{Attributes}
+
+\textcolor{blue}{Attributes do not modify the data, they only view the data.}
+
+% TODO: common
+
+\textcolor{blue}{\code{.head()}}
+\textcolor{blue}{\code{.tail()}}
+\textcolor{blue}{\code{.count()}}
+\textcolor{blue}{\code{.isnull()}}
+\textcolor{blue}{\code{.sum()}}
+\textcolor{blue}{\code{.mean()}}
+
+% TODO: TRAP
+\textcolor{red}{\code{.len()} vs \code{.count()}}
+
+\textcolor{blue}{\code{.std()}}
+\textcolor{blue}{\code{.min()}}
+\textcolor{blue}{\code{.max()}}
+\textcolor{blue}{\code{.median()}}
+\textcolor{blue}{\code{.mode()}}
+\textcolor{blue}{\code{.value\_counts()}}
+\textcolor{blue}{\code{.describe()}}
+
+\textcolor{blue}{\code{.idxmax()}}
+\textcolor{blue}{\code{.idxmin()}}
+
+
 \subsection{Dataframe}
+
+\subsection{XXXXXX}
+
+\textcolor{blue}{examples for both series and df}
+
+\subsubsection{apply}
+
+%TODO: overview + example series
+
+%TODO: overview + example DF
+
+\subsubsection{map}
+
+%TODO: overview + example series
+
+%TODO: overview + example DF
+
+\subsubsection{sort}
+
+%TODO: overview + example series
+
+%TODO: overview + example DF
+
+\subsubsection{inplace}
+
+%TODO: overview + example series
+
+%TODO: overview + example DF
 
 \subsection{Hierarchical Indexing}
 
