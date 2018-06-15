@@ -9,15 +9,15 @@
 \indexentry{lucky split}{21}
 \indexentry{reducible error}{22}
 \indexentry{multi-label classification}{24}
-\indexentry{Problem transformation}{24}
+\indexentry{Problem transformation}{25}
 \indexentry{inappropriate minima}{26}
 \indexentry{Grid search}{31}
 \indexentry{Randomized search}{31}
-\indexentry{peeking}{34}
+\indexentry{peeking}{35}
 \indexentry{Overfitting}{35}
 \indexentry{Underfitting}{35}
-\indexentry{Variance}{35}
-\indexentry{Bias}{35}
+\indexentry{Variance}{36}
+\indexentry{Bias}{36}
 \indexentry{Type I error}{37}
 \indexentry{Type II error}{37}
 \indexentry{Pearson's R}{40}
