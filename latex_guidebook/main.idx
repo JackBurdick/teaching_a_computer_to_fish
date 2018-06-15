@@ -2,61 +2,62 @@
 \indexentry{one-of-k encoding}{15}
 \indexentry{sparse vectors}{15}
 \indexentry{interquartile range}{16}
+\indexentry{kernel trick}{17}
 \indexentry{corpus}{19}
 \indexentry{vocabulary}{19}
 \indexentry{bag-of-words}{20}
 \indexentry{tf-idf}{20}
-\indexentry{lucky split}{21}
+\indexentry{lucky split}{22}
 \indexentry{reducible error}{22}
-\indexentry{multi-label classification}{24}
+\indexentry{multi-label classification}{25}
 \indexentry{Problem transformation}{25}
 \indexentry{inappropriate minima}{26}
-\indexentry{Grid search}{31}
-\indexentry{Randomized search}{31}
-\indexentry{peeking}{35}
-\indexentry{Overfitting}{35}
-\indexentry{Underfitting}{35}
-\indexentry{Variance}{36}
-\indexentry{Bias}{36}
-\indexentry{Type I error}{37}
-\indexentry{Type II error}{37}
-\indexentry{Pearson's R}{40}
-\indexentry{Voronoi tessellation}{41}
-\indexentry{Voronoi region}{41}
-\indexentry{generalized linear model}{43}
-\indexentry{Ordinary Lease Squares (OLS)}{44}
-\indexentry{Linear Least Squares}{44}
-\indexentry{residuals}{44}
-\indexentry{residual sum of squares (RSS)}{44}
-\indexentry{odds ratio}{45}
-\indexentry{logit}{45}
-\indexentry{discrimination threshold}{46}
-\indexentry{lazy learner}{46}
-\indexentry{Support Vector Machine (SVM)}{48}
-\indexentry{Sequential Minimal Optimization (SMO)}{49}
-\indexentry{independent and identically distributed (i.i.d)}{49}
-\indexentry{ID3 algorithm}{51}
-\indexentry{J48}{51}
-\indexentry{Heaviside step function}{54}
-\indexentry{unit step function}{54}
-\indexentry{universal approximators}{55}
-\indexentry{input layer}{55}
-\indexentry{hidden layer}{55}
-\indexentry{output layer}{55}
-\indexentry{image quantization}{57}
-\indexentry{silhouette coefficient}{58}
-\indexentry{Principal Component Analysis (PCA)}{59}
-\indexentry{Karhunen-Love Transform (KLM)}{59}
-\indexentry{covarience matrix}{59}
-\indexentry{bagging}{63}
-\indexentry{boostrap aggregating}{63}
-\indexentry{sampling with replacement|see{bagging}}{63}
-\indexentry{bootstrap samples}{63}
-\indexentry{subagging}{64}
-\indexentry{sampling without replacement|see{subagging}}{64}
-\indexentry{subspace sampling}{64}
-\indexentry{blending}{65}
-\indexentry{Ridge regression}{124}
-\indexentry{Tikhonov regularization}{124}
-\indexentry{sigmoid}{125}
-\indexentry{ReLUN}{129}
+\indexentry{Grid search}{32}
+\indexentry{Randomized search}{32}
+\indexentry{peeking}{36}
+\indexentry{Overfitting}{36}
+\indexentry{Underfitting}{36}
+\indexentry{Variance}{37}
+\indexentry{Bias}{37}
+\indexentry{Type I error}{38}
+\indexentry{Type II error}{38}
+\indexentry{Pearson's R}{41}
+\indexentry{Voronoi tessellation}{42}
+\indexentry{Voronoi region}{42}
+\indexentry{generalized linear model}{45}
+\indexentry{Ordinary Lease Squares (OLS)}{46}
+\indexentry{Linear Least Squares}{46}
+\indexentry{residuals}{46}
+\indexentry{residual sum of squares (RSS)}{46}
+\indexentry{odds ratio}{47}
+\indexentry{logit}{47}
+\indexentry{discrimination threshold}{48}
+\indexentry{lazy learner}{48}
+\indexentry{Support Vector Machine (SVM)}{50}
+\indexentry{Sequential Minimal Optimization (SMO)}{51}
+\indexentry{independent and identically distributed (i.i.d)}{51}
+\indexentry{ID3 algorithm}{53}
+\indexentry{J48}{53}
+\indexentry{Heaviside step function}{56}
+\indexentry{unit step function}{56}
+\indexentry{universal approximators}{57}
+\indexentry{input layer}{57}
+\indexentry{hidden layer}{57}
+\indexentry{output layer}{57}
+\indexentry{image quantization}{59}
+\indexentry{silhouette coefficient}{60}
+\indexentry{Principal Component Analysis (PCA)}{61}
+\indexentry{Karhunen-Love Transform (KLM)}{61}
+\indexentry{covarience matrix}{61}
+\indexentry{bagging}{65}
+\indexentry{boostrap aggregating}{65}
+\indexentry{sampling with replacement|see{bagging}}{65}
+\indexentry{bootstrap samples}{65}
+\indexentry{subagging}{66}
+\indexentry{sampling without replacement|see{subagging}}{66}
+\indexentry{subspace sampling}{66}
+\indexentry{blending}{67}
+\indexentry{Ridge regression}{126}
+\indexentry{Tikhonov regularization}{126}
+\indexentry{sigmoid}{127}
+\indexentry{ReLUN}{131}

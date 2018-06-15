@@ -1,15 +1,15 @@
 \begin{theindex}
 
-  \item bag-of-words, 19
+  \item bag-of-words, 20
   \item bagging, 63
-  \item Bias, 35
+  \item Bias, 36
   \item blending, 65
   \item boostrap aggregating, 63
   \item bootstrap samples, 63
 
   \indexspace
 
-  \item corpus, 18
+  \item corpus, 19
   \item covarience matrix, 59
 
   \indexspace
@@ -19,7 +19,7 @@
   \indexspace
 
   \item generalized linear model, 43
-  \item Grid search, 30
+  \item Grid search, 31
 
   \indexspace
 
@@ -30,7 +30,7 @@
 
   \item ID3 algorithm, 51
   \item image quantization, 57
-  \item inappropriate minima, 25
+  \item inappropriate minima, 26
   \item independent and identically distributed (i.i.d), 49
   \item input layer, 55
   \item interquartile range, 16
@@ -42,17 +42,18 @@
   \indexspace
 
   \item Karhunen-Love Transform (KLM), 59
+  \item kernel trick, 17
 
   \indexspace
 
   \item lazy learner, 46
   \item Linear Least Squares, 44
   \item logit, 45
-  \item lucky split, 20
+  \item lucky split, 22
 
   \indexspace
 
-  \item multi-label classification, 23
+  \item multi-label classification, 25
 
   \indexspace
 
@@ -61,30 +62,30 @@
   \item one-of-k encoding, 15
   \item Ordinary Lease Squares (OLS), 44
   \item output layer, 55
-  \item Overfitting, 34
+  \item Overfitting, 36
 
   \indexspace
 
-  \item Pearson's R, 39
-  \item peeking, 33
+  \item Pearson's R, 41
+  \item peeking, 35
   \item Principal Component Analysis (PCA), 59
-  \item Problem transformation, 24
+  \item Problem transformation, 25
 
   \indexspace
 
-  \item Randomized search, 30
-  \item reducible error, 21
-  \item ReLUN, 119
+  \item Randomized search, 31
+  \item reducible error, 22
+  \item ReLUN, 129
   \item residual sum of squares (RSS), 44
   \item residuals, 44
-  \item Ridge regression, 114
+  \item Ridge regression, 124
 
   \indexspace
 
   \item sampling with replacement, \see{bagging}{63}
   \item sampling without replacement, \see{subagging}{64}
   \item Sequential Minimal Optimization (SMO), 49
-  \item sigmoid, 115
+  \item sigmoid, 125
   \item silhouette coefficient, 58
   \item sparse vectors, 15
   \item subagging, 64
@@ -93,22 +94,22 @@
 
   \indexspace
 
-  \item tf-idf, 19
-  \item Tikhonov regularization, 114
-  \item Type I error, 36
-  \item Type II error, 36
+  \item tf-idf, 20
+  \item Tikhonov regularization, 124
+  \item Type I error, 38
+  \item Type II error, 38
 
   \indexspace
 
-  \item Underfitting, 34
+  \item Underfitting, 36
   \item unit step function, 54
   \item universal approximators, 55
 
   \indexspace
 
-  \item Variance, 35
-  \item vocabulary, 18
-  \item Voronoi region, 40
-  \item Voronoi tessellation, 40
+  \item Variance, 36
+  \item vocabulary, 19
+  \item Voronoi region, 42
+  \item Voronoi tessellation, 42
 
 \end{theindex}

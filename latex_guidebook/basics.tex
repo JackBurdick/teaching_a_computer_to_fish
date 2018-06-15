@@ -312,7 +312,12 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 
 
-\section{Kernel Trick}
+\section{Kernel Methods}
+\label{sec:kernel_trick}
+
+\textcolor{blue}{Adding non-linear features to data in attempt linearly separate the data.}
+
+ %Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting
 
 \textcolor{blue}{Transform the training data onto a higher dimensional feature space}
 
@@ -322,10 +327,62 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{Choosing an appropriate kernel can be challenging}
 
+% computing the distance (scalar products) of data points for the expanded feature representation --- but doesn't compute the expansion
+
 % see p180[168] of mastering ML w/SKL for more on kernels
-\textcolor{blue}{Some commonly used kernels include polynomial, sigmoid, Guassian, and linear kernels}
+\textcolor{blue}{Some commonly used kernels include polynomial, RBF, sigmoid, Guassian, and linear kernels}
 
 \textcolor{blue}{commonly used in SVMs (see \textcolor{red}{local ref}), the kernel trick can be used with any model that can be expressed in terms of the dot product of two feature vectors.}
+
+\textcolor{blue}{the mapping function is not fully computed due to the kernel trick}
+
+\subsection{Kernel Trick}
+
+\subsection{Kernels}
+
+\textcolor{blue}{There are many kernel functions. Choosing the ``best'' kernel will depend on the current problem.}
+
+\textcolor{red}{kernel functions are continuous and symmetric}
+
+\textcolor{red}{TODO: put these into context and/or give an example}
+
+\textcolor{blue}{the word kernels is representative of a weighting function \textcolor{red}{or weighted sum or integral}}
+
+
+% https://data-flair.training/blogs/svm-kernel-functions/
+% http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/
+
+\textcolor{red}{TODO: automatic kernel selection}
+
+\subsubsection{Polynomial}
+
+\textcolor{blue}{polynomial}
+
+\textcolor{blue}{parameters: slope ($\alpha$), constant $c$, polynomial degree $d$}
+\begin{equation}
+{k(x, y) = (\alpha x^T y + c)^d}
+\label{eq:kernel_polynomial_eq}
+\end{equation}
+% TODO: double check
+
+\subsubsection{RBF (Radial Basis Function)}
+
+\textcolor{blue}{circles/hypersphere}
+
+\subsubsection{Gaussian}
+
+
+\subsection{Less Common Kernels}
+
+
+
+%\subsubsection{Laplace RBF}
+
+%\subsubsection{Hyperbolic Tangent}
+
+%\subsubsection{ANOVA Radial Basis Kernel}
+
+%\subsubsection{Sigmoid}
 
 %%%%%%%%%%%%%%%%%%% Hyper-parameters
 \input{./nested/basics/hyperparams}
