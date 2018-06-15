@@ -169,3 +169,5 @@ python/types/type_checking/.mypy_cache/*
 python/types/examples/\.ipynb_checkpoints/
 
 estimator/iris_custom_est/
+
+TODO/nonlinear/\.ipynb_checkpoints/

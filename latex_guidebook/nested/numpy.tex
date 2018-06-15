@@ -24,6 +24,8 @@ np_ex.dtype = int64
 
 \subsubsection{Indexing}
 
+\textcolor{blue}{Indexing and slicing numpy arrays is similar to indexing an slicing a python \code{list}.}
+
 % {{{np_index_01}}}
 \begin{lstlisting}[style=pyInStyle]
 print("np_ex[3] = {}".format(np_ex[3]))
@@ -108,6 +110,8 @@ Note what happens if just one is specified as a float
 
 \subsubsection{Special Initialization}
 
+\paragraph{zeros}
+
 % {{{np_zeros_01}}}
 \begin{lstlisting}[style=pyInStyle]
 np_ex = np.zeros(shape=(3,6))
@@ -121,6 +125,7 @@ np_ex.shape = (3, 6)
 np_ex.dtype = float64
 \end{lstlisting}
 
+\paragraph{ones}
 
 % {{{np_ones_01}}}
 \begin{lstlisting}[style=pyInStyle]
@@ -135,6 +140,7 @@ np_ex.shape = (3, 6)
 np_ex.dtype = float64
 \end{lstlisting}
 
+\paragraph{empty}
 
 % {{{np_empty_01}}}
 \begin{lstlisting}[style=pyInStyle]
@@ -151,6 +157,7 @@ np_ex.dtype = float64
 The output will vary
 \end{markdown}
 
+\paragraph{eye}
 
 % {{{np_eye_01}}}
 \begin{lstlisting}[style=pyInStyle]
@@ -169,6 +176,8 @@ Identity matrix
 \end{markdown}
 
 
+\paragraph{full}
+
 % {{{np_full_01}}}
 \begin{lstlisting}[style=pyInStyle]
 np_ex = np.full((3,3), 9)
@@ -185,6 +194,22 @@ np_ex.dtype = int64
 Constant
 \end{markdown}
 
+\paragraph{asarray}
+
+\textcolor{blue}{\code{asarray} will convert a python \code{list} to an numpy array}
+
+% {{{np_asarray_01}}}
+\begin{lstlisting}[style=pyInStyle]
+some_list = [1,2,3,4,5,6,7]
+list_as_arr = np.asarray(some_list)
+\end{lstlisting}
+\begin{lstlisting}[style=pyOutStyle]
+some_list: [1, 2, 3, 4, 5, 6, 7]
+list_as_arr: [1 2 3 4 5 6 7]
+list_as_arr.shape: (7,)
+\end{lstlisting}
+
+\paragraph{arange}
 
 % {{{np_arange_01}}}
 \begin{lstlisting}[style=pyInStyle]
@@ -201,19 +226,10 @@ vals_1D.shape = (27,)
 \end{markdown}
 
 
-% {{{np_asarray_01}}}
-\begin{lstlisting}[style=pyInStyle]
-some_list = [1,2,3,4,5,6,7]
-list_as_arr = np.asarray(some_list)
-\end{lstlisting}
-\begin{lstlisting}[style=pyOutStyle]
-some_list: [1, 2, 3, 4, 5, 6, 7]
-list_as_arr: [1 2 3 4 5 6 7]
-list_as_arr.shape: (7,)
-\end{lstlisting}
-
 
 \subsubsection{Reshape}
+
+\textcolor{blue}{\code{reshape} can be used to reshape a matrix.}
 
 % {{{np_reshape_01}}}
 \begin{lstlisting}[style=pyInStyle]
