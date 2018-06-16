@@ -1,13 +1,27 @@
-\section{IDE}
+\subsection{TextEditor}
 
-\subsection{Atom}
+\subsubsection{Code}
 
+\paragraph{Installation}
 
-\subsubsection{Installation}
+% TODO: link to installation instructions
+
+\begin{lstlisting}[style=terminalBash]
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+sudo apt-get install code # or code-insiders
+\end{lstlisting}
+
+\subsubsection{Atom}
+
+\paragraph{Installation}
 
 Linux (Ubuntu) instructions from https://flight-manual.atom.io/getting-started/sections/installing-atom/. Two options: (i) install package repository on system, or (ii) download and install from `.deb'
 
-\paragraph{(i) Package Repository}
+\subparagraph{(i) Package Repository}
 
 First, add the official package repository to the system
 \begin{lstlisting}[style=terminalBash]
@@ -24,7 +38,7 @@ sudo apt-get install atom
 sudo apt-get install atom-beta
 \end{lstlisting}
 
-\paragraph{(ii) Using .deb}
+\subparagraph{(ii) Using .deb}
 
 First, download `.deb' package from atom. Then execute the following instructions.
 \begin{lstlisting}[style=terminalBash]

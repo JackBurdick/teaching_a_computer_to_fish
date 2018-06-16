@@ -15,15 +15,15 @@
 \indexentry{Grid search}{32}
 \indexentry{Randomized search}{32}
 \indexentry{peeking}{36}
-\indexentry{Overfitting}{36}
-\indexentry{Underfitting}{36}
+\indexentry{Overfitting}{37}
+\indexentry{Underfitting}{37}
 \indexentry{Variance}{37}
 \indexentry{Bias}{37}
-\indexentry{Type I error}{38}
-\indexentry{Type II error}{38}
-\indexentry{Pearson's R}{41}
-\indexentry{Voronoi tessellation}{42}
-\indexentry{Voronoi region}{42}
+\indexentry{Type I error}{39}
+\indexentry{Type II error}{39}
+\indexentry{Pearson's R}{42}
+\indexentry{Voronoi tessellation}{43}
+\indexentry{Voronoi region}{43}
 \indexentry{generalized linear model}{45}
 \indexentry{Ordinary Lease Squares (OLS)}{46}
 \indexentry{Linear Least Squares}{46}
@@ -44,20 +44,20 @@
 \indexentry{input layer}{57}
 \indexentry{hidden layer}{57}
 \indexentry{output layer}{57}
-\indexentry{image quantization}{59}
-\indexentry{silhouette coefficient}{60}
-\indexentry{Principal Component Analysis (PCA)}{61}
-\indexentry{Karhunen-Love Transform (KLM)}{61}
-\indexentry{covarience matrix}{61}
-\indexentry{bagging}{65}
-\indexentry{boostrap aggregating}{65}
-\indexentry{sampling with replacement|see{bagging}}{65}
-\indexentry{bootstrap samples}{65}
-\indexentry{subagging}{66}
-\indexentry{sampling without replacement|see{subagging}}{66}
-\indexentry{subspace sampling}{66}
-\indexentry{blending}{67}
-\indexentry{Ridge regression}{126}
-\indexentry{Tikhonov regularization}{126}
-\indexentry{sigmoid}{127}
-\indexentry{ReLUN}{131}
+\indexentry{image quantization}{61}
+\indexentry{silhouette coefficient}{62}
+\indexentry{Principal Component Analysis (PCA)}{63}
+\indexentry{Karhunen-Love Transform (KLM)}{63}
+\indexentry{covarience matrix}{63}
+\indexentry{bagging}{67}
+\indexentry{boostrap aggregating}{67}
+\indexentry{sampling with replacement|see{bagging}}{67}
+\indexentry{bootstrap samples}{67}
+\indexentry{subagging}{68}
+\indexentry{sampling without replacement|see{subagging}}{68}
+\indexentry{subspace sampling}{68}
+\indexentry{blending}{69}
+\indexentry{Ridge regression}{128}
+\indexentry{Tikhonov regularization}{128}
+\indexentry{sigmoid}{129}
+\indexentry{ReLUN}{133}

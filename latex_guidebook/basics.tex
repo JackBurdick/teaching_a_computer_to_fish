@@ -356,7 +356,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Polynomial}
 
-\textcolor{blue}{polynomial}
+\textcolor{blue}{polynomial computes all possible polynomials of the original features up to a certain degree}
 
 \textcolor{blue}{parameters: slope ($\alpha$), constant $c$, polynomial degree $d$}
 \begin{equation}
@@ -365,11 +365,19 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \end{equation}
 % TODO: double check
 
-\subsubsection{RBF (Radial Basis Function)}
+\subsubsection{Gaussian / RBF (Radial Basis Function)}
 
 \textcolor{blue}{circles/hypersphere}
+\textcolor{red}{infinite-dimensional feature space}
 
-\subsubsection{Gaussian}
+\begin{equation}
+{k(x, y) = exp(- \gamma || x_1 - x_2 || ^2 ) }
+\label{eq:kernel_guassian_rbf_eq}
+\end{equation}
+
+\textcolor{blue}{$|| x_1 - x_2 ||$ represents the euclidean distance and $\gamma$ represents the parameter that controls the width of the Gaussian kernel (the inverse width of the Gaussian kernel). $\gamma$ controls how far the influence of a single training instance reaches --- high values correspond to a limited reach (typically result in lower complexity) and low values correspond to a far reach (typically result in higher complexity).}
+
+\textcolor{green}{Would be nice to have a figure with low - medium - high values for the hyperparameters and the outcome}
 
 
 \subsection{Less Common Kernels}
