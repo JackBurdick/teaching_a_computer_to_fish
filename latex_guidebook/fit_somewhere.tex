@@ -53,6 +53,38 @@
 
 %%%
 \textcolor{blue}{TODO: parameter calculation -- use VGG example (conv + dense)}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{5}{|c|}{\textbf{Number of VGG-16 Parameters}}     \\ \hline
+		Layer & Out Shape & Weights & Bias & Total  \\ \hline
+		\emph{Convolution}        & & $(in)\times(h\times w)\times(out)$ & $(out)$ & $weights+bias$    \\ \hline
+		Conv3-64          & $224\times224\times64$ & $3\times(3\times3)\times64$ & $64$ & 1792    \\ \hline
+		Conv3-64 (p)      & $112\times112\times64$ & $64\times(3\times3)\times64$ & $64$ & 36928    \\ \hline
+		Conv3-128         & $112\times112\times128$ & $64\times(3\times3)\times128$ & $128$ & 73856     \\ \hline
+		Conv3-128 (p)     & $56\times 56\times 128$ & $128\times(3\times3)\times128$ & $128$ & 147584   \\ \hline
+		Conv3-256         & $56\times 56\times 256$ & $128\times(3\times3)\times256$ & $256$ & 295168   \\ \hline
+		Conv3-256         & $56\times 56\times 256$ & $256\times(3\times3)\times256$ & $256$ & 590080   \\ \hline
+		Conv3-256 (p)     & $28\times 28\times 256$ & $256\times(3\times3)\times256$ & $256$ & 590080   \\ \hline
+		Conv3-512         & $28\times 28\times 512$ & $256\times(3\times3)\times512$ & $512$ & 1180160  \\ \hline
+		Conv3-512         & $28\times 28\times 512$ & $512\times(3\times3)\times512$ & $512$ & 2359808  \\ \hline
+		Conv3-512 (p)     & $14\times 14\times 512$ & $512\times(3\times3)\times512$ & $512$ & 2359808  \\ \hline
+		Conv3-512         & $14\times 14\times 512$ & $512\times(3\times3)\times512$ & $512$ & 2359808  \\ \hline
+		Conv3-512         & $14\times 14\times 512$ & $512\times(3\times3)\times512$ & $512$ & 2359808  \\ \hline
+		Conv3-512 (p)     & $7\times 7\times 512$ & $512\times(3\times3)\times512$ & $512$ & 2359808    \\ \hline
+		\emph{dense}         & & $(in)\times(num)$ & $(out)$ & $weights+bias$    \\ \hline
+		fc1 (4096)        & 4096 &$(512\times7\times7)\times4096$ & $4096$ & $102764544$    \\ \hline
+		fc2 (4096)        & 4096 &$(4096)\times4096$ & $4096$ & $16781312$    \\ \hline
+		fc3 (1000)        & 1000 &$(4096)\times1000$ & $1000$ & $4097000$    \\ \hline
+		\emph{Total} & & & & 138,357,544 \\ \hline
+	\end{tabular}
+	\caption{Calculation of VGG parameters. (p) denotes that the layer is followed by a pooling layer (which does not affect the parameter count)}
+	\label{tab:vgg_parameter_count}
+\end{table}
+
+
+
 
 %%%
 \textcolor{blue}{NN from scratch in appendix}
