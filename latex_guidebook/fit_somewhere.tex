@@ -31,24 +31,20 @@
 
 
 
-%%%%
-\textcolor{blue}{SavedModel is the universal serializion format for TensorFlow models. SavedModel has support for multiple metagraphs -- this is important in serving where the model is slightly different than in training (removing dropout layers), and allows storage/access of models with tags. Supports SignatureDefs -- allows the specification of nodes as input/output (also supports multiple signatureDefs for multi-headed inference (see \textcolor{red}{local ref}))}
-
-
 %%%% rough...
 %\textcolor{red}{Multi-headed inference. Useful when using the same model for different tasks. e.g. using a model for one task, then later deciding to perform a similar task on the same data -- rather than train an entirely new model, the original model may be performing may of the same computations. }
 
 
-%%%%%%
+%%%%%% research
 \textcolor{blue}{Pooling may not fully determine learned deformation stability -- possibly filter smoothness\cite{ruderman2018learned}}
 
-%%%% % plus index
+%%%% % plus index - unsupervised method
 \textcolor{blue}{manifold learning}
 
 %%%  preprocessing, this wasn't already somewhere? % plus index
 \textcolor{blue}{whitening}
 
-%%%
+%%% unsupervised method
 \textcolor{blue}{NFM (Non-Negative Matrix Factorization)}
 
 %%%
@@ -87,10 +83,15 @@
 
 
 %%%
-\textcolor{blue}{NN from scratch in appendix}
+\textcolor{green}{TODO: NN from scratch in appendix}
 
 %%%
-\textcolor{blue}{CNN without layers API -- in github}
+\textcolor{green}{TODO: CNN without layers API -- in github}
+
+%%% interactive
+\textcolor{blue}{The TensorFlow playground~\cite{tf_playground} (\textcolor{green}{TODO: screen shot}).  There are two other notable projects --- deeplearn.js~\cite{deeplearnjs} and ConvNetJS~\cite{convnet_js}.}
 
 
+%%% distributed
+\textcolor{blue}{Distributed TensorFlow Section}
 

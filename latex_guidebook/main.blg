@@ -16,46 +16,54 @@ A level-1 auxiliary file: fit_somewhere.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
 Database file #1: TCF.bib
+Warning--to sort, need author or key in cloudHW_amazon_aws
+Warning--to sort, need author or key in cloudHW_floydhub
+Warning--to sort, need author or key in cloudHW_google_cloud
+Warning--to sort, need author or key in cloudHW_micro_azure
+Warning--to sort, need author or key in cloudHW_nvidia_cloud
+Warning--to sort, need author or key in tf_playground
+Warning--to sort, need author or key in deeplearnjs
+Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-You've used 13 entries,
+You've used 21 entries,
             2030 wiz_defined-function locations,
-            580 strings with 5871 characters,
-and the built_in function-call counts, 4186 in all, are:
-= -- 392
-> -- 190
+            610 strings with 6659 characters,
+and the built_in function-call counts, 5500 in all, are:
+= -- 512
+> -- 198
 < -- 0
-+ -- 76
++ -- 85
 - -- 62
-* -- 331
-:= -- 669
-add.period$ -- 13
-call.type$ -- 13
-change.case$ -- 70
+* -- 387
+:= -- 829
+add.period$ -- 37
+call.type$ -- 21
+change.case$ -- 94
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 199
-empty$ -- 307
+cite$ -- 30
+duplicate$ -- 263
+empty$ -- 483
 format.name$ -- 62
-if$ -- 870
+if$ -- 1182
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 21
 missing$ -- 13
-newline$ -- 42
+newline$ -- 82
 num.names$ -- 26
-pop$ -- 69
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 73
 quote$ -- 0
-skip$ -- 149
+skip$ -- 181
 stack$ -- 0
-substring$ -- 252
-swap$ -- 74
+substring$ -- 293
+swap$ -- 82
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 1
+type$ -- 84
+warning$ -- 9
 while$ -- 42
-width$ -- 15
-write$ -- 112
-(There was 1 warning)
+width$ -- 23
+write$ -- 184
+(There were 9 warnings)

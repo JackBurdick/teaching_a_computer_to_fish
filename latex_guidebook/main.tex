@@ -144,7 +144,11 @@
 %\bibliographystyle{unsrt}
 %\bibliographystyle{plain}
 %\bibliographystyle{abbrv}
-\bibliography{TCF}
+
+% ``hack'' to shrink size of bibliography : https://tex.stackexchange.com/questions/329/how-to-change-font-size-for-bibliography
+{\footnotesize
+	\bibliography{TCF}}
+%\bibliography{TCF}
 
 
 \end{document} 

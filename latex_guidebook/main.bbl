@@ -1,5 +1,46 @@
 \begin{thebibliography}{10}
 
+\bibitem{cloudHW_amazon_aws}
+{\em Amazon aws. [{O}nline]}.
+\newblock \url{https://aws.amazon.com/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{convnet_js}
+{\em Convnetjs. [{O}nline]}.
+\newblock \url{http://cs.stanford.edu/people/karpathy/convnetjs/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{deeplearnjs}
+{\em deeplearn.js. [{O}nline]}.
+\newblock \url{https://deeplearnjs.org/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{cloudHW_floydhub}
+{\em Floydhub. [{O}nline]}.
+\newblock \url{https://www.floydhub.com/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{cloudHW_google_cloud}
+{\em Google cloud. [{O}nline]}.
+\newblock \url{https://cloud.google.com/gpu/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{cloudHW_micro_azure}
+{\em Microsoft azure. [{O}nline]}.
+\newblock
+  \url{https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{tf_playground}
+{\em A neural network playground. [{O}nline]}.
+\newblock \url{http://playground.tensorflow.org}.
+\newblock Accessed: 2018-06-21.
+
+\bibitem{cloudHW_nvidia_cloud}
+{\em Nvidia gpu cloud. [{O}nline]}.
+\newblock \url{https://www.nvidia.com/en-us/gpu-cloud/}.
+\newblock Accessed: 2018-06-21.
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
