@@ -24,40 +24,40 @@
 \indexentry{Pearson's R}{42}
 \indexentry{Voronoi tessellation}{43}
 \indexentry{Voronoi region}{43}
-\indexentry{generalized linear model}{45}
-\indexentry{Ordinary Lease Squares (OLS)}{46}
-\indexentry{Linear Least Squares}{46}
-\indexentry{residuals}{46}
-\indexentry{residual sum of squares (RSS)}{46}
-\indexentry{odds ratio}{47}
-\indexentry{logit}{47}
-\indexentry{discrimination threshold}{48}
-\indexentry{lazy learner}{48}
-\indexentry{Support Vector Machine (SVM)}{50}
-\indexentry{Sequential Minimal Optimization (SMO)}{51}
-\indexentry{independent and identically distributed (i.i.d)}{51}
-\indexentry{ID3 algorithm}{53}
-\indexentry{J48}{53}
-\indexentry{Heaviside step function}{56}
-\indexentry{unit step function}{56}
-\indexentry{universal approximators}{57}
-\indexentry{input layer}{57}
-\indexentry{hidden layer}{57}
-\indexentry{output layer}{57}
-\indexentry{image quantization}{61}
-\indexentry{silhouette coefficient}{63}
-\indexentry{Principal Component Analysis (PCA)}{63}
-\indexentry{Karhunen-Love Transform (KLM)}{63}
-\indexentry{covarience matrix}{63}
-\indexentry{bagging}{67}
-\indexentry{boostrap aggregating}{67}
-\indexentry{sampling with replacement|see{bagging}}{67}
-\indexentry{bootstrap samples}{67}
-\indexentry{subagging}{68}
-\indexentry{sampling without replacement|see{subagging}}{68}
-\indexentry{subspace sampling}{68}
-\indexentry{blending}{69}
-\indexentry{Ridge regression}{128}
-\indexentry{Tikhonov regularization}{128}
-\indexentry{sigmoid}{129}
-\indexentry{ReLUN}{133}
+\indexentry{Ridge regression}{45}
+\indexentry{Tikhonov regularization}{45}
+\indexentry{generalized linear model}{47}
+\indexentry{Ordinary Lease Squares (OLS)}{48}
+\indexentry{Linear Least Squares}{48}
+\indexentry{residuals}{48}
+\indexentry{residual sum of squares (RSS)}{48}
+\indexentry{odds ratio}{49}
+\indexentry{logit}{49}
+\indexentry{discrimination threshold}{50}
+\indexentry{lazy learner}{50}
+\indexentry{Support Vector Machine (SVM)}{52}
+\indexentry{Sequential Minimal Optimization (SMO)}{53}
+\indexentry{independent and identically distributed (i.i.d)}{53}
+\indexentry{ID3 algorithm}{55}
+\indexentry{J48}{55}
+\indexentry{Heaviside step function}{58}
+\indexentry{unit step function}{58}
+\indexentry{universal approximators}{59}
+\indexentry{input layer}{59}
+\indexentry{hidden layer}{59}
+\indexentry{output layer}{59}
+\indexentry{image quantization}{63}
+\indexentry{silhouette coefficient}{65}
+\indexentry{Principal Component Analysis (PCA)}{65}
+\indexentry{Karhunen-Love Transform (KLM)}{65}
+\indexentry{covarience matrix}{65}
+\indexentry{bagging}{69}
+\indexentry{boostrap aggregating}{69}
+\indexentry{sampling with replacement|see{bagging}}{69}
+\indexentry{bootstrap samples}{69}
+\indexentry{subagging}{70}
+\indexentry{sampling without replacement|see{subagging}}{70}
+\indexentry{subspace sampling}{70}
+\indexentry{blending}{71}
+\indexentry{sigmoid}{131}
+\indexentry{ReLUN}{135}

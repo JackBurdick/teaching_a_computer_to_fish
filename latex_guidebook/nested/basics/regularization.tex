@@ -1,0 +1,107 @@
+\section{Improving Generalizability}
+
+\subsection{Regularization}
+
+\textcolor{blue}{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
+
+% TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
+
+\textcolor{blue}{Helps prevent the model from memorizing noise in the training data.}
+
+
+\subsubsection{Why Regularization}
+
+\textcolor{blue}{Overfitting --- too complex --- Occam's razor --- hypothesis with the fewest assumptions is best}
+
+\textcolor{blue}{modification made to improve generalization.}
+
+\begin{itemize}
+	\item Data --- Increase amount of data (even potentially artificially e.g. augmentation)
+	\item Architecture --- Reduce complexity of model e.g. applying parameter constraints, and/or reduce overall number of parameters
+\end{itemize}
+
+
+\subsubsection{Types of Regularization}
+
+\textcolor{blue}{Regularization is an active area of research.}
+
+\begin{itemize}
+	\item Early Stopping (implementation: \textcolor{red}{local ref})
+	\item Parameter Norm Penalties (implementation: \textcolor{red}{local ref})
+	\begin{itemize}
+		\item L1 (Lasso) Regularization
+		\item L2 (Ridge) Regularization
+		\item Elastic Nets
+	\end{itemize}
+	\item Dataset Augmentation (implementation: \textcolor{red}{local ref})
+	\item Noise Robustness
+	\item Sparse Representations
+	\item Dropout (implementation: \textcolor{red}{local ref})
+\end{itemize}
+
+
+\subsubsection{Early Stopping}
+
+
+\subsubsection{Parameter Norm Penalties}
+
+\textcolor{blue}{key difference is the penalty term}
+
+\textcolor{green}{TODO: DIGRAM OF L2 + L1 + elastic nets}
+
+\paragraph{L2 Regularization}
+
+\textcolor{green}{TODO: DIAGRAM OF L2}
+
+\textcolor{blue}{L2, ({Ridge regression}\index{Ridge regression}) may also be known as {Tikhonov regularization}\index{Tikhonov regularization}}
+
+\textcolor{blue}{penalizes model parameters that become too large. Will force most of the parameters to be small, but still non-zero}
+
+% p91(71) of mastering ML w SKL says "when lambda is equal to zero, ridge regression is equal to linear regression"
+
+\paragraph{L1 Regularization}
+
+\textcolor{green}{TODO: DIAGRAM OF L1}
+
+\textcolor{blue}{LASSO (Least Absolute Shrinkage and Selection Operator) --- produces sparse parameters. This will force coefficients to zero and cause the model to depend on a small subset of the features.}
+
+\textcolor{blue}{It could be argued that using L1 regularization may help to make a mode more interpretable, by using less (presumably more important/relevant) features when making predictions.}
+
+
+\paragraph{Elastic Net Regularization}
+
+\textcolor{blue}{Linearly combines the $L^1$ (feature selection) and $L^2$ (generalizability) penalties used by both LASSO and ridge regression. The cost is having two parameters (as opposed to just one when using either L1 or L2).}
+
+\textcolor{green}{TODO: figure}.
+
+\subsubsection{Dataset Augmentation}
+
+\textcolor{blue}{Dataset augmentation is \textcolor{green}{TODO}}
+
+\paragraph{Image Augmentation}
+
+
+
+\subsubsection{Dropout}
+
+% TODO: explain dropout
+
+% helps learn ``multiple paths''/simulates ensembles
+
+
+% TODO: this may not belong here...
+\subsubsection{Normalization}
+
+\textcolor{blue}{TODO: overview para + importance}
+
+\textcolor{green}{TODO: figure showing differences}
+
+\paragraph{Instance normalization}
+
+\textcolor{blue}{see section in preprocessing \textcolor{red}{local ref?}}
+
+\paragraph{Layer normalization}
+
+\paragraph{Batch normalization}
+
+\paragraph{Group normalization}
