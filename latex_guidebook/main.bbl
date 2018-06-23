@@ -41,6 +41,12 @@
 \newblock \url{https://www.nvidia.com/en-us/gpu-cloud/}.
 \newblock Accessed: 2018-06-21.
 
+\bibitem{abadi2016tensorflow_device_placement}
+{\sc M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S.
+  Corrado, A.~Davis, J.~Dean, M.~Devin, et~al.}, {\em Tensorflow: Large-scale
+  machine learning on heterogeneous distributed systems}, arXiv preprint
+  arXiv:1603.04467,  (2016).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 

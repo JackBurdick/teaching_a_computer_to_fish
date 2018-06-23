@@ -1,7 +1,55 @@
+\textcolor{blue}{see \textcolor{red}{local ref} for more detailed information about distributed training/evaluation.}
 
+
+\subsection{Resource Management (GPU RAM)}
 % TODO: implementation
 
-\textcolor{blue}{see \textcolor{red}{local ref} for more information}
+\textcolor{blue}{By default, TensorFlow will allocate, and hold, all available GPU resources. This means if using \code{/GPU:0}, that 100\% of the resources will be dedicated to this program and so another tensorflow program cannot access this resource. Additionally, this means that if there are multiple GPU devices 100\% of those devices will also be allocated. If attempting to run two programs on the same device, with default settings, the following error will likely be encountered \code{CUDA\_ERROR\_OUT\_OF\_MEMORY}. This behavior can be controlled by either setting the device visibility or setting a device allocation threshold}
 
-%% device placement
+\paragraph{Device Visibility}
+
+\textcolor{blue}{The environment variable \code{CUDA\_VISIBLE\_DEVICES} can be set to define specific device access for a program. e.g. \code{CUDA\_VISIBLE\_DEVICES=0,1} would allow the program access to only GPU devices 1 and 2.  Another program could then be started with \code{CUDA\_VISIBLE\_DEVICES=2,3} that would restrict it's access to GPUs 3 and 4}
+\textcolor{blue}{For Example, if we only wanted the 3rd GPU to be accessed by a specific program, we could do the following (remember 0 based indexing):}
+
+\begin{lstlisting}[style=pyInStyle]
+import os
+...
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
+\end{lstlisting}
+
+
+
+\paragraph{Device Allocation}
+
+\textcolor{blue}{It is also possible to only allow access to a specified fraction of a device i.e. n\% of a GPU.  This can be managed by altering the \code{ConfigProto} object. The \code{ConfigProto} object contains, among other configuration defaults (as messages), a message called \code{GPUOptions}. When running a session, these defaults can be changed. Within \code{GPUOptions}, there is a variable \code{per\_process\_gpu\_memory\_fraction} that is responsible for allocating a fraction of GPU memory.}
+
+\textcolor{blue}{For example, if we wish to only allocate 40\% of a GPUs memory, we could do the following:}
+
+\begin{lstlisting}[style=pyInStyle]
+myConfig = tf.ConfigProto()
+myConfig.gpu_options.per_process_gpu_memory_fraction = 0.4
+session = tf.Session(config=myConfig)
+\end{lstlisting}
+
+
+\subparagraph{Allow Growth}
+
+\textcolor{blue}{There is another option when managing the device memory. Rather than set a hard threshold, it is possible to allow TensorFlow to only allocate as much memory as it needs. This can be done by setting the \code{allow\_growth} bool to \code{True}. However, use caution with this option! \textbf{Once TensorFlow allocates memory, it is never released \textcolor{red}{``to avoid memory fragmentation''} i.e. running out of memory later is possible}}
+
+\begin{lstlisting}[style=pyInStyle]
+myConfig = tf.ConfigProto()
+myConfig.gpu_options.allow_growth = True
+session = tf.Session(config=myConfig)
+\end{lstlisting}
+
+
+\subsection{Device Placement}
+
+\textcolor{blue}{A \textit{dynamic placer} algorithm is presented in the {TensorFlow whitepaper}~\cite{abadi2016tensorflow_device_placement} that is capable of automatically distributing operations across devices. This algorithm takes into consideration  estimates of the sizes of input and output tensors, computation time for each node, \textcolor{green}{OTHERS - TODO:read entire paper}.}
+
+\textcolor{blue}{There is another (manual) placer called a \textit{simple placer}.}
+
+% TODO: MORE...
+
+% TODO: implementation
 

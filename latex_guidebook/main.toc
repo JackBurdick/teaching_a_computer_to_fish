@@ -607,69 +607,74 @@
 \contentsline {subsection}{\numberline {24.4.1}Profiler}{136}
 \contentsline {subsection}{\numberline {24.4.2}Debugger}{136}
 \contentsline {section}{\numberline {24.5}Distributed Training}{136}
-\contentsline {section}{\numberline {24.6}Model Evaluation}{137}
-\contentsline {subsection}{\numberline {24.6.1}Metrics}{137}
-\contentsline {subsection}{\numberline {24.6.2}TensorBoard}{138}
-\contentsline {subsection}{\numberline {24.6.3}TFMA: TensorFlow Model Analysis}{138}
-\contentsline {subsubsection}{\numberline {24.6.3.1}Key Features}{138}
-\contentsline {paragraph}{\numberline {24.6.3.1.1}Sliced Metrics}{138}
-\contentsline {paragraph}{\numberline {24.6.3.1.2}Full-pass Metrics}{138}
-\contentsline {subsubsection}{\numberline {24.6.3.2}Implementation}{138}
-\contentsline {paragraph}{\numberline {24.6.3.2.1}Overview}{138}
-\contentsline {paragraph}{\numberline {24.6.3.2.2}Code}{138}
-\contentsline {subparagraph}{Exporting the Evaluation Graph}{138}
-\contentsline {subparagraph}{Computing Metrics}{138}
-\contentsline {subparagraph}{Visualize Metrics (in a notebook)}{139}
-\contentsline {section}{\numberline {24.7}Model Persistence}{139}
-\contentsline {subsection}{\numberline {24.7.1}Saver}{139}
-\contentsline {subsection}{\numberline {24.7.2}Hub}{139}
-\contentsline {section}{\numberline {24.8}Deployment with TF Serving}{139}
-\contentsline {subsection}{\numberline {24.8.1}Overview}{139}
-\contentsline {subsubsection}{\numberline {24.8.1.1}Standard Abstractions}{139}
-\contentsline {paragraph}{\numberline {24.8.1.1.1}ServableHandle}{139}
-\contentsline {paragraph}{\numberline {24.8.1.1.2}Manager}{139}
-\contentsline {paragraph}{\numberline {24.8.1.1.3}Loader}{139}
-\contentsline {paragraph}{\numberline {24.8.1.1.4}Source}{140}
-\contentsline {subsubsection}{\numberline {24.8.1.2}Plugins into Abstractions}{140}
-\contentsline {paragraph}{\numberline {24.8.1.2.1}File System (Source)}{140}
-\contentsline {paragraph}{\numberline {24.8.1.2.2}Version Policy (Manager)}{140}
-\contentsline {subsubsection}{\numberline {24.8.1.3}FIT}{140}
-\contentsline {paragraph}{\numberline {24.8.1.3.1}ServerCore}{140}
-\contentsline {paragraph}{\numberline {24.8.1.3.2}Binaries and APIs}{140}
-\contentsline {subparagraph}{Predict}{140}
-\contentsline {paragraph}{\numberline {24.8.1.3.3}Servables}{140}
-\contentsline {paragraph}{\numberline {24.8.1.3.4}Loaders}{141}
-\contentsline {subsection}{\numberline {24.8.2}Example}{141}
-\contentsline {section}{\numberline {24.9}Other}{141}
-\contentsline {subsection}{\numberline {24.9.1}Probability}{141}
-\contentsline {subsection}{\numberline {24.9.2}TensorFlow Extended}{141}
-\contentsline {subsection}{\numberline {24.9.3}Keras}{141}
-\contentsline {subsection}{\numberline {24.9.4}Image}{141}
-\contentsline {subsection}{\numberline {24.9.5}Image Augmentation}{141}
-\contentsline {subsection}{\numberline {24.9.6}Edward 2.0}{141}
-\contentsline {subsection}{\numberline {24.9.7}TensorFlow Lite}{141}
-\contentsline {chapter}{\numberline {25}Implementing Common Methodologies}{143}
-\contentsline {section}{\numberline {25.1}Artificial Neural Networks}{143}
-\contentsline {section}{\numberline {25.2}Convolutional Neural Networks}{143}
-\contentsline {section}{\numberline {25.3}Recurrent Neural Networks}{143}
-\contentsline {part}{V\hspace {1em}End To End Examples}{145}
-\contentsline {chapter}{\numberline {26}EndToEnd}{147}
-\contentsline {section}{\numberline {26.1}Structured}{148}
-\contentsline {subsection}{\numberline {26.1.1}Linear Regression}{148}
-\contentsline {subsection}{\numberline {26.1.2}KNN}{148}
-\contentsline {section}{\numberline {26.2}Image}{148}
-\contentsline {subsection}{\numberline {26.2.1}Image Classification}{148}
-\contentsline {subsection}{\numberline {26.2.2}Image Segmentation}{148}
-\contentsline {subsection}{\numberline {26.2.3}Adversarial Exmaples}{148}
-\contentsline {subsection}{\numberline {26.2.4}AutoEncoder}{148}
-\contentsline {subsection}{\numberline {26.2.5}Generative Adversarial Network}{148}
-\contentsline {section}{\numberline {26.3}TimeSeries}{148}
-\contentsline {section}{\numberline {26.4}Text}{148}
-\contentsline {subsection}{\numberline {26.4.1}Sentiment Analysis}{148}
-\contentsline {section}{\numberline {26.5}Audio}{148}
-\contentsline {subsection}{\numberline {26.5.1}Audio to Text}{148}
-\contentsline {part}{VI\hspace {1em}Moving Forward}{149}
-\contentsline {section}{\numberline {26.6}Conclusion}{151}
-\contentsline {part}{VII\hspace {1em}Dump Space}{153}
-\contentsline {part}{VIII\hspace {1em}Research}{157}
-\contentsline {chapter}{\numberline {27}Ongoing Research}{159}
+\contentsline {subsection}{\numberline {24.5.1}Resource Management (GPU RAM)}{137}
+\contentsline {paragraph}{\numberline {24.5.1.0.1}Device Visibility}{137}
+\contentsline {paragraph}{\numberline {24.5.1.0.2}Device Allocation}{138}
+\contentsline {subparagraph}{Allow Growth}{138}
+\contentsline {subsection}{\numberline {24.5.2}Device Placement}{138}
+\contentsline {section}{\numberline {24.6}Model Evaluation}{138}
+\contentsline {subsection}{\numberline {24.6.1}Metrics}{139}
+\contentsline {subsection}{\numberline {24.6.2}TensorBoard}{139}
+\contentsline {subsection}{\numberline {24.6.3}TFMA: TensorFlow Model Analysis}{139}
+\contentsline {subsubsection}{\numberline {24.6.3.1}Key Features}{139}
+\contentsline {paragraph}{\numberline {24.6.3.1.1}Sliced Metrics}{139}
+\contentsline {paragraph}{\numberline {24.6.3.1.2}Full-pass Metrics}{139}
+\contentsline {subsubsection}{\numberline {24.6.3.2}Implementation}{140}
+\contentsline {paragraph}{\numberline {24.6.3.2.1}Overview}{140}
+\contentsline {paragraph}{\numberline {24.6.3.2.2}Code}{140}
+\contentsline {subparagraph}{Exporting the Evaluation Graph}{140}
+\contentsline {subparagraph}{Computing Metrics}{140}
+\contentsline {subparagraph}{Visualize Metrics (in a notebook)}{140}
+\contentsline {section}{\numberline {24.7}Model Persistence}{140}
+\contentsline {subsection}{\numberline {24.7.1}Saver}{140}
+\contentsline {subsection}{\numberline {24.7.2}Hub}{141}
+\contentsline {section}{\numberline {24.8}Deployment with TF Serving}{141}
+\contentsline {subsection}{\numberline {24.8.1}Overview}{141}
+\contentsline {subsubsection}{\numberline {24.8.1.1}Standard Abstractions}{141}
+\contentsline {paragraph}{\numberline {24.8.1.1.1}ServableHandle}{141}
+\contentsline {paragraph}{\numberline {24.8.1.1.2}Manager}{141}
+\contentsline {paragraph}{\numberline {24.8.1.1.3}Loader}{141}
+\contentsline {paragraph}{\numberline {24.8.1.1.4}Source}{141}
+\contentsline {subsubsection}{\numberline {24.8.1.2}Plugins into Abstractions}{141}
+\contentsline {paragraph}{\numberline {24.8.1.2.1}File System (Source)}{141}
+\contentsline {paragraph}{\numberline {24.8.1.2.2}Version Policy (Manager)}{141}
+\contentsline {subsubsection}{\numberline {24.8.1.3}FIT}{142}
+\contentsline {paragraph}{\numberline {24.8.1.3.1}ServerCore}{142}
+\contentsline {paragraph}{\numberline {24.8.1.3.2}Binaries and APIs}{142}
+\contentsline {subparagraph}{Predict}{142}
+\contentsline {paragraph}{\numberline {24.8.1.3.3}Servables}{142}
+\contentsline {paragraph}{\numberline {24.8.1.3.4}Loaders}{142}
+\contentsline {subsection}{\numberline {24.8.2}Example}{143}
+\contentsline {section}{\numberline {24.9}Other}{143}
+\contentsline {subsection}{\numberline {24.9.1}Probability}{143}
+\contentsline {subsection}{\numberline {24.9.2}TensorFlow Extended}{143}
+\contentsline {subsection}{\numberline {24.9.3}Keras}{143}
+\contentsline {subsection}{\numberline {24.9.4}Image}{143}
+\contentsline {subsection}{\numberline {24.9.5}Image Augmentation}{143}
+\contentsline {subsection}{\numberline {24.9.6}Edward 2.0}{143}
+\contentsline {subsection}{\numberline {24.9.7}TensorFlow Lite}{143}
+\contentsline {chapter}{\numberline {25}Implementing Common Methodologies}{145}
+\contentsline {section}{\numberline {25.1}Artificial Neural Networks}{145}
+\contentsline {section}{\numberline {25.2}Convolutional Neural Networks}{145}
+\contentsline {section}{\numberline {25.3}Recurrent Neural Networks}{145}
+\contentsline {part}{V\hspace {1em}End To End Examples}{147}
+\contentsline {chapter}{\numberline {26}EndToEnd}{149}
+\contentsline {section}{\numberline {26.1}Structured}{150}
+\contentsline {subsection}{\numberline {26.1.1}Linear Regression}{150}
+\contentsline {subsection}{\numberline {26.1.2}KNN}{150}
+\contentsline {section}{\numberline {26.2}Image}{150}
+\contentsline {subsection}{\numberline {26.2.1}Image Classification}{150}
+\contentsline {subsection}{\numberline {26.2.2}Image Segmentation}{150}
+\contentsline {subsection}{\numberline {26.2.3}Adversarial Exmaples}{150}
+\contentsline {subsection}{\numberline {26.2.4}AutoEncoder}{150}
+\contentsline {subsection}{\numberline {26.2.5}Generative Adversarial Network}{150}
+\contentsline {section}{\numberline {26.3}TimeSeries}{150}
+\contentsline {section}{\numberline {26.4}Text}{150}
+\contentsline {subsection}{\numberline {26.4.1}Sentiment Analysis}{150}
+\contentsline {section}{\numberline {26.5}Audio}{150}
+\contentsline {subsection}{\numberline {26.5.1}Audio to Text}{150}
+\contentsline {part}{VI\hspace {1em}Moving Forward}{151}
+\contentsline {section}{\numberline {26.6}Conclusion}{153}
+\contentsline {part}{VII\hspace {1em}Dump Space}{155}
+\contentsline {part}{VIII\hspace {1em}Research}{159}
+\contentsline {chapter}{\numberline {27}Ongoing Research}{161}

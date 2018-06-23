@@ -25,45 +25,45 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-You've used 21 entries,
+You've used 22 entries,
             2030 wiz_defined-function locations,
-            610 strings with 6659 characters,
-and the built_in function-call counts, 5500 in all, are:
-= -- 512
-> -- 198
+            614 strings with 6997 characters,
+and the built_in function-call counts, 6003 in all, are:
+= -- 549
+> -- 256
 < -- 0
-+ -- 85
-- -- 62
-* -- 387
-:= -- 829
-add.period$ -- 37
-call.type$ -- 21
-change.case$ -- 94
++ -- 108
+- -- 84
+* -- 442
+:= -- 924
+add.period$ -- 38
+call.type$ -- 22
+change.case$ -- 107
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 263
-empty$ -- 483
-format.name$ -- 62
-if$ -- 1182
+cite$ -- 31
+duplicate$ -- 274
+empty$ -- 499
+format.name$ -- 84
+if$ -- 1270
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 13
-newline$ -- 82
-num.names$ -- 26
-pop$ -- 141
+int.to.str$ -- 22
+missing$ -- 14
+newline$ -- 85
+num.names$ -- 28
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 85
 quote$ -- 0
-skip$ -- 181
+skip$ -- 187
 stack$ -- 0
-substring$ -- 293
-swap$ -- 82
+substring$ -- 298
+swap$ -- 84
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 88
 warning$ -- 9
-while$ -- 42
-width$ -- 23
-write$ -- 184
+while$ -- 44
+width$ -- 24
+write$ -- 192
 (There were 9 warnings)
