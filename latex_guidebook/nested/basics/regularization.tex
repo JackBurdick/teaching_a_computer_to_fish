@@ -37,10 +37,14 @@
 	\item Noise Robustness
 	\item Sparse Representations
 	\item Dropout (implementation: \textcolor{red}{local ref})
+	\item Ensemble methods (implementation: \textcolor{red}{local ref})
+	\item Adversarial Training
 \end{itemize}
 
 
 \subsubsection{Early Stopping}
+
+\textcolor{blue}{see p.243 of DL, papers Bishop 1995 and Sjoberg and Ljung 1995}
 
 
 \subsubsection{Parameter Norm Penalties}
@@ -67,6 +71,8 @@
 
 \textcolor{blue}{It could be argued that using L1 regularization may help to make a mode more interpretable, by using less (presumably more important/relevant) features when making predictions.}
 
+\textcolor{blue}{The use of L1 regularization for feature selection}
+
 
 \paragraph{Elastic Net Regularization}
 
@@ -75,6 +81,10 @@
 \textcolor{green}{TODO: figure}.
 
 \subsubsection{Dataset Augmentation}
+
+\textcolor{blue}{Arguably the best way to increase generalizability of a model is to train the model on more data. However, as readers may already be aware, this is not always easy. Collecting more data may not be time/cost effective, or even possible.}
+
+\textcolor{blue}{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
 
 \textcolor{blue}{Dataset augmentation is \textcolor{green}{TODO}}
 
@@ -86,8 +96,29 @@
 
 % TODO: explain dropout
 
+% TODO: include Srivastava et al 2014 (ref on p251 of DL)
+\textcolor{blue}{Dropout}
+
+% TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Graph of an example function including dropout, \textcolor{green}{TODO}}
+	\label{fig:regularization_dropout_overview}
+\end{figure}
+\textcolor{green}{TODO: graph of function and it's derivative overlaid.}
+
 % helps learn ``multiple paths''/simulates ensembles
 
+\subsubsection{Ensemble Methods}
+
+\textcolor{blue}{see \textcolor{red}{local ref} for more information on ensemble basics and see \textcolor{red}{local ref} for implementation details.}
+
+% TODO: find Breiman 1994 paper referenced in p249 of Deep Learning
+\textcolor{blue}{As described in \textcolor{red}{local ref} ensemble methods act as a form of regularization by combining several different models \textcolor{green}{Breiman 1994}. This often improves generalizability since the included models will often make independent, different, errors on the data.}
+
+\subsubsection{Adversarial Training}
 
 % TODO: this may not belong here...
 \subsubsection{Normalization}

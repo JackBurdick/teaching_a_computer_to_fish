@@ -7,6 +7,8 @@
 % see page 233 of Understanding Machine Learning
 \textcolor{blue}{Artificial neural networks are {universal approximators}\index{universal approximators} -- \textcolor{red}{expand}}
 
+\textcolor{blue}{universal approximation theorem \textcolor{green}{(Hornik 1989, Cybenko, 1989)}. Regardless of the function that is attempted to being learned, a large MLP will be able to \textbf{represent} this function. However, it is not guaranteed that the large MLP, despite being a universal \textcolor{red}{approximator} capable of representing the function, is able to \textit{learn} the function}
+
 \subsection{Multi-layer Perceptron}
 
 \textcolor{blue}{Not a single multi-layer perceptron with multiple layers, rather it is a network composed of multiple layers of perceptrons.}
@@ -39,9 +41,21 @@
 
 \textcolor{green}{TODO: step function to sigmoid function -- smoothed version of the step function -- can understand how an input changes the output.}
 
-\subsection{Types: Feedback vs Feed-forward}
 
-\textcolor{blue}{Feed-forward --- Directed acyclic graph of artificial neurons.}
+\subsection{Characterization}
+
+\subsubsection{Types: Feed-forward vs Feedback}
+
+\textcolor{blue}{Feed-forward --- Directed acyclic graph of artificial neurons. Feedback contain feedback connections that are fed back into itself. When feedforward are include these feedback connections, they become considered recurrent neural networks.}
+
+\subsubsection{Terminology}
+
+\textcolor{blue}{Considered \textit{networks} since they are typically composed of many different functions --- creating a ``network''.}
+
+\textcolor{blue}{Considered \textit{neural} since they are \textbf{loosely} inspired by neuroscience.}
+
+\textcolor{blue}{layer --- a layer may be considered a group of units that act in parallel.}
+
 
 \subsection{Learning: Backpropagation}
 
@@ -60,7 +74,11 @@
 
 \textcolor{green}{TODO: figure showing sample calculation}
 
+% See p207 of DL
+
 \subsubsection{Chain Rule}
+
+\textcolor{red}{See \textcolor{red}{local ref to math prereq section}}
 
 \textcolor{green}{TODO: chain rule}
 

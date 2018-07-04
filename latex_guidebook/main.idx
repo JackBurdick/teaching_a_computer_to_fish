@@ -1,5 +1,9 @@
 \indexentry{tensor}{7}
 \indexentry{rank}{7}
+\indexentry{Critical points}{8}
+\indexentry{stationary points}{8}
+\indexentry{global minimum}{8}
+\indexentry{global maximum}{8}
 \indexentry{one-hot encoding}{17}
 \indexentry{one-of-k encoding}{17}
 \indexentry{sparse vectors}{17}
@@ -29,38 +33,39 @@
 \indexentry{Voronoi region}{45}
 \indexentry{Ridge regression}{47}
 \indexentry{Tikhonov regularization}{47}
-\indexentry{generalized linear model}{49}
-\indexentry{Ordinary Lease Squares (OLS)}{50}
-\indexentry{Linear Least Squares}{50}
-\indexentry{residuals}{50}
-\indexentry{residual sum of squares (RSS)}{50}
-\indexentry{odds ratio}{51}
-\indexentry{logit}{51}
-\indexentry{discrimination threshold}{52}
-\indexentry{lazy learner}{52}
-\indexentry{Support Vector Machine (SVM)}{54}
-\indexentry{Sequential Minimal Optimization (SMO)}{55}
-\indexentry{independent and identically distributed (i.i.d)}{55}
-\indexentry{ID3 algorithm}{57}
-\indexentry{J48}{57}
-\indexentry{Heaviside step function}{60}
-\indexentry{unit step function}{60}
-\indexentry{universal approximators}{61}
-\indexentry{input layer}{61}
-\indexentry{hidden layer}{61}
-\indexentry{output layer}{61}
-\indexentry{image quantization}{65}
-\indexentry{silhouette coefficient}{67}
-\indexentry{Principal Component Analysis (PCA)}{67}
-\indexentry{Karhunen-Love Transform (KLM)}{67}
-\indexentry{covarience matrix}{67}
-\indexentry{bagging}{71}
-\indexentry{boostrap aggregating}{71}
-\indexentry{sampling with replacement|see{bagging}}{71}
-\indexentry{bootstrap samples}{71}
-\indexentry{subagging}{72}
-\indexentry{sampling without replacement|see{subagging}}{72}
-\indexentry{subspace sampling}{72}
-\indexentry{blending}{73}
-\indexentry{sigmoid}{133}
-\indexentry{ReLUN}{137}
+\indexentry{generalized linear model}{51}
+\indexentry{Ordinary Lease Squares (OLS)}{52}
+\indexentry{Linear Least Squares}{52}
+\indexentry{residuals}{52}
+\indexentry{residual sum of squares (RSS)}{52}
+\indexentry{odds ratio}{53}
+\indexentry{logit}{53}
+\indexentry{discrimination threshold}{54}
+\indexentry{lazy learner}{54}
+\indexentry{Support Vector Machine (SVM)}{56}
+\indexentry{Sequential Minimal Optimization (SMO)}{57}
+\indexentry{independent and identically distributed (i.i.d)}{57}
+\indexentry{ID3 algorithm}{59}
+\indexentry{J48}{59}
+\indexentry{Heaviside step function}{62}
+\indexentry{unit step function}{62}
+\indexentry{universal approximators}{63}
+\indexentry{input layer}{63}
+\indexentry{hidden layer}{63}
+\indexentry{output layer}{63}
+\indexentry{image quantization}{67}
+\indexentry{silhouette coefficient}{69}
+\indexentry{Principal Component Analysis (PCA)}{69}
+\indexentry{Karhunen-Love Transform (KLM)}{69}
+\indexentry{covarience matrix}{69}
+\indexentry{bagging}{73}
+\indexentry{boostrap aggregating}{73}
+\indexentry{sampling with replacement|see{bagging}}{73}
+\indexentry{bootstrap samples}{73}
+\indexentry{subagging}{74}
+\indexentry{sampling without replacement|see{subagging}}{74}
+\indexentry{subspace sampling}{74}
+\indexentry{blending}{75}
+\indexentry{sigmoid}{135}
+\indexentry{ReLUN}{139}
+\indexentry{manifold}{161}

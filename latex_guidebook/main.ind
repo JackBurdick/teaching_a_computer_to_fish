@@ -1,115 +1,123 @@
 \begin{theindex}
 
-  \item bag-of-words, 20
-  \item bagging, 63
-  \item Bias, 36
-  \item blending, 65
-  \item boostrap aggregating, 63
-  \item bootstrap samples, 63
+  \item bag-of-words, 22
+  \item bagging, 73
+  \item Bias, 40
+  \item blending, 75
+  \item boostrap aggregating, 73
+  \item bootstrap samples, 73
 
   \indexspace
 
-  \item corpus, 19
-  \item covarience matrix, 59
+  \item corpus, 21
+  \item covarience matrix, 69
+  \item Critical points, 8
 
   \indexspace
 
-  \item discrimination threshold, 46
+  \item discrimination threshold, 54
 
   \indexspace
 
-  \item generalized linear model, 43
-  \item Grid search, 31
+  \item generalized linear model, 51
+  \item global maximum, 8
+  \item global minimum, 8
+  \item Grid search, 34
 
   \indexspace
 
-  \item Heaviside step function, 54
-  \item hidden layer, 55
+  \item Heaviside step function, 62
+  \item hidden layer, 63
 
   \indexspace
 
-  \item ID3 algorithm, 51
-  \item image quantization, 57
-  \item inappropriate minima, 26
-  \item independent and identically distributed (i.i.d), 49
-  \item input layer, 55
-  \item interquartile range, 16
+  \item ID3 algorithm, 59
+  \item image quantization, 67
+  \item inappropriate minima, 28
+  \item independent and identically distributed (i.i.d), 57
+  \item input layer, 63
+  \item interquartile range, 18
 
   \indexspace
 
-  \item J48, 51
+  \item J48, 59
 
   \indexspace
 
-  \item Karhunen-Love Transform (KLM), 59
-  \item kernel trick, 17
+  \item Karhunen-Love Transform (KLM), 69
+  \item kernel trick, 19
 
   \indexspace
 
-  \item lazy learner, 46
-  \item Linear Least Squares, 44
-  \item logit, 45
-  \item lucky split, 22
+  \item lazy learner, 54
+  \item Linear Least Squares, 52
+  \item logit, 53
+  \item lucky split, 24
 
   \indexspace
 
-  \item multi-label classification, 25
+  \item manifold, 161
+  \item model capacity, 38
+  \item multi-label classification, 27
 
   \indexspace
 
-  \item odds ratio, 45
-  \item one-hot encoding, 15
-  \item one-of-k encoding, 15
-  \item Ordinary Lease Squares (OLS), 44
-  \item output layer, 55
-  \item Overfitting, 36
+  \item odds ratio, 53
+  \item one-hot encoding, 17
+  \item one-of-k encoding, 17
+  \item Ordinary Lease Squares (OLS), 52
+  \item output layer, 63
+  \item Overfitting, 39
 
   \indexspace
 
-  \item Pearson's R, 41
-  \item peeking, 35
-  \item Principal Component Analysis (PCA), 59
-  \item Problem transformation, 25
+  \item Pearson's R, 44
+  \item peeking, 38
+  \item Principal Component Analysis (PCA), 69
+  \item Problem transformation, 27
 
   \indexspace
 
-  \item Randomized search, 31
-  \item reducible error, 22
-  \item ReLUN, 129
-  \item residual sum of squares (RSS), 44
-  \item residuals, 44
-  \item Ridge regression, 124
+  \item Randomized search, 34
+  \item rank, 7
+  \item reducible error, 24
+  \item ReLUN, 139
+  \item residual sum of squares (RSS), 52
+  \item residuals, 52
+  \item Ridge regression, 47
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{63}
-  \item sampling without replacement, \see{subagging}{64}
-  \item Sequential Minimal Optimization (SMO), 49
-  \item sigmoid, 125
-  \item silhouette coefficient, 58
-  \item sparse vectors, 15
-  \item subagging, 64
-  \item subspace sampling, 64
-  \item Support Vector Machine (SVM), 48
+  \item sampling with replacement, \see{bagging}{73}
+  \item sampling without replacement, \see{subagging}{74}
+  \item Sequential Minimal Optimization (SMO), 57
+  \item sigmoid, 135
+  \item silhouette coefficient, 69
+  \item sparse vectors, 17
+  \item stationary points, 8
+  \item subagging, 74
+  \item subspace sampling, 74
+  \item Support Vector Machine (SVM), 56
 
   \indexspace
 
-  \item tf-idf, 20
-  \item Tikhonov regularization, 124
-  \item Type I error, 38
-  \item Type II error, 38
+  \item tensor, 7
+  \item tf-idf, 22
+  \item Tikhonov regularization, 47
+  \item Type I error, 41
+  \item Type II error, 41
 
   \indexspace
 
-  \item Underfitting, 36
-  \item unit step function, 54
-  \item universal approximators, 55
+  \item Underfitting, 39
+  \item unit step function, 62
+  \item universal approximators, 63
 
   \indexspace
 
-  \item Variance, 36
-  \item vocabulary, 19
-  \item Voronoi region, 42
-  \item Voronoi tessellation, 42
+  \item Variance, 39
+  \item vocabulary, 21
+  \item Voronoi region, 45
+  \item Voronoi tessellation, 45
 
 \end{theindex}
