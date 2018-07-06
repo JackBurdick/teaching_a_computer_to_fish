@@ -54,7 +54,10 @@
 
 \textcolor{blue}{Considered \textit{neural} since they are \textbf{loosely} inspired by neuroscience.}
 
-\textcolor{blue}{layer --- a layer may be considered a group of units that act in parallel.}
+\textcolor{blue}{layer --- a layer may be considered a group of units that act in parallel. The layer will extract representations from the input, that are (in theory) more useful to the specific task.  Chaining together these layers results in a form of progressive {data distillation}\index{data distillation}.}
+
+\textcolor{blue}{Visible and Hidden Layers. Visible layers are called visible since they contain variables that are ``visible'', where as the hidden layers extract increasingly abstract features -- hidden since their values are not given in the raw data, but rather an output from a previous layer.}
+
 
 
 \subsection{Learning: Backpropagation}
@@ -74,7 +77,12 @@
 
 \textcolor{green}{TODO: figure showing sample calculation}
 
+
 % See p207 of DL
+
+\textcolor{blue}{also sometimes called {reverse-mode differentiation}\index{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
+
+\textcolor{blue}{{symbolic differentiation}\index{symbolic differentiation} --- compute a gradient function for the chain (chain rule) mapping parameter values to gradient values}
 
 \subsubsection{Chain Rule}
 
