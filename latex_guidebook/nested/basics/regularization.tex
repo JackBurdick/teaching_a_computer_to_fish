@@ -61,6 +61,8 @@
 
 \textcolor{blue}{penalizes model parameters that become too large. Will force most of the parameters to be small, but still non-zero}
 
+\textcolor{blue}{square of the absolute value of the coefficient}
+
 % p91(71) of mastering ML w SKL says "when lambda is equal to zero, ridge regression is equal to linear regression"
 
 \paragraph{L1 Regularization}
@@ -68,6 +70,8 @@
 \textcolor{green}{TODO: DIAGRAM OF L1}
 
 \textcolor{blue}{LASSO (Least Absolute Shrinkage and Selection Operator) --- produces sparse parameters. This will force coefficients to zero and cause the model to depend on a small subset of the features.}
+
+\textcolor{blue}{absolute value of the weight coefficient}
 
 \textcolor{blue}{It could be argued that using L1 regularization may help to make a mode more interpretable, by using less (presumably more important/relevant) features when making predictions.}
 
@@ -96,8 +100,10 @@
 
 % TODO: explain dropout
 
+\textcolor{blue}{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation.}
+
 % TODO: include Srivastava et al 2014 (ref on p251 of DL)
-\textcolor{blue}{Dropout}
+\textcolor{blue}{Dropout -- ref original paper (Hinton? -- inspired by bank -- that defrauding hte bank would require cooperation between employees to defraud the bank)}
 
 % TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
 

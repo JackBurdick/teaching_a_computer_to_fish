@@ -6,22 +6,71 @@
 
 \textcolor{blue}{A learning method is trained on a collection of examples called the ``training set''. The performance of the learning method is then evaluated on another collection of examples known as the ``test set''. It is important to ensure that none of the instances in the test set are included in the training set -- a point that will be mentioned many times throughout this test. If the test set were to include examples from the training set, evaluating the whether the learning method has memorized the training set or generalizes well will be difficult.}
 
-\textcolor{blue}{An additional set, known as the validation is also used. The validation set is used to tune the hyperparameters of the learning algorithm and help prevent overfitting to the training data.}
+\textcolor{blue}{An additional set, known as the validation is typically used. The validation set is used to tune the hyperparameters of the learning algorithm and help prevent overfitting to the training data. Though the model does not train directly on the validation dataset (exception being when using k-folds cross validation) it is still possible to overfit the validation set since we are manually adjusting the hyperparameters to give the best result on the validation set. This situation is related to the concept of {information leaks}\index{information leaks} --- some information from the validation data \textit{leaks} into the model by tuning hyperparameters with regard to this information. This will generally lead to a  model that performs artificially well on the validation set (since this is what was optimized for)}
 
-\textcolor{green}{TODO: include figure showing when to save the best parameters}
+\textcolor{blue}{Along these same lines, it should be noted that evaluating on the test set should only be performed \textbf{once}. There are questions on stack overflow like ``how many times should I test the test set?''(\textcolor{green}{TODO: LINK}) and the answer is \textbf{ONCE}. Otherwise, the model will be tuned to the test set, resulting in overly optimistic results. To compare different design choices to one another, it is best to compare and finalize them based on their performance on the validation set, before ``locking'' the model and evaluating its performance on test set.}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure showing when to save best parameters (plus link to ``early stopping''), \textcolor{green}{TODO}}
+	\label{fig:sample_split_save_best_params}
+\end{figure}
 
 \textcolor{blue}{There are no hard rules that clearly define how a dataset should be divided into training, validation, and test sets and usually the ratio of data in each split depends on the overall size of the dataset.}
 
 \textcolor{blue}{Some common dataset splits (training:validation:test) are 50:20:30 and 40:20:40}
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
+	\caption{Figure showing hold and common dataset splits, \textcolor{green}{TODO}}
+	\label{fig:sample_split_hold_out}
+\end{figure}
+
+\textcolor{blue}{``hold out'' split}
+
 \textcolor{blue}{{lucky split}\index{lucky split} is used to describe an instance in which, by chance, the test set contains easily predicted instances and the training set includes difficult to predict instances.}
 
 \textcolor{blue}{Typically the performance of a machine learning algorithm improves with the number of training instances. However, quality is superior to quantity, in that a lot of ``bad'' data is worse than a smaller amount of ``good'' data -- in this sense, machine learning algorithms follow the ``garbage in, garbage out''.}
+
+
 
 \subsection{k-Fold Cross Validation}
 
 \textcolor{blue}{cross validation is a method used to train across the entire training dataset without holding out an explicit validation set. The training data is partitioned, into $k$ ``folds'', and the algorithm is trained on all but one of these partitions and evaluated on the remaining partition. The partitions are then rotated such that each fold/partition is included in the training and evaluation of the algorithm. After sufficient training, (as defined by the individual), the model is then evaluated on the test set.}
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure showing how k-fold cross validation works, \textcolor{green}{TODO}}
+	\label{fig:sample_split_k_fold}
+\end{figure}
+
+\subsubsection{k-Fold Validation with shuffling}
+
+\textcolor{blue}{shuffle the data before splitting it k-ways --- where k-fold validation is performed multiple times}
+
+% TODO: design a warn/caution/watch-out box
+\textcolor{green}{WARN: every time you fold in the data/train on the data, the ``information leak'' is greater -- leading to likely overfitting}
+
 \subsection{Sampling}
+
+\textcolor{blue}{Things to consider when performing splits. How representative your data is -- compared to the population and compared to each split.}
+
+\paragraph{Representative Data}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
+	\caption{Figure showing importance of shuffling data. one figure where the data isn't shuffled well and a split leads to a case where one split contains only a subset of the classes (not all the classes) \textcolor{green}{TODO}}
+	\label{fig:sample_split_shuffle_importance}
+\end{figure}
+
+\textcolor{blue}{NOTE/WARN: only perform shuffling when it makes sense --- e.g. shuffling time series data would not be wise.}
+
+\textcolor{blue}{WARN: It would be smart to check your data for any points where the same instance is included across both splits training/validation/test. If the dataset contains multiple samples of the same instance, and they are inluded in different splits, there is now redundancy and even worse: imagine a situation in which the same instance (e.g. the same image or an image of the same object, just at a different angle) we now are training on our test set!  Bottom line: it is important to ensure the training, validation, and test sets are all disjoint.}
+
+\paragraph{Representative Data}
 
 \textcolor{blue}{Random vs \textcolor{red}{stratified}}

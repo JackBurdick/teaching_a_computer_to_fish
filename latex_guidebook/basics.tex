@@ -15,10 +15,29 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \textcolor{blue}{Quantitative are represented by numbers but can be interval (0 is meaningless -- e.g. temperature in C or F, where true zero is not 0) or ratio (has a true 0 -- e.g. temperature in K, weight or length)}
 
-\section{Workflow Overview}
+\section{Workflow Overview / Blue Print}
+
 
 % TODO: this will need to be checked+rechecked+redone
 \textcolor{blue}{1. explore, 2. create datasets, 3. benchmark}
+\begin{enumerate}
+	\item Problem definition
+	\item Hypothesis?
+	\item explore data
+	\item (shuffle? representative)
+	\item remove split for testing
+	\item prepare data
+	\item split into train/val
+	\item Choose measure of success
+	\item Perform baseline -- what performance is expected/realistic goal expectations/ how does a simple, well tested, classifier work?
+	\item Develop model
+	\begin{enumerate}
+		\item Can you (over)fit the training data? - more data?
+		\item Fit the validation as best as possible (regularization, augmentation) (WARN: \textcolor{red}{local ref to information leak})
+	\end{enumerate}
+	\item OTHERS...
+	\item Evaluate
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%% Bias

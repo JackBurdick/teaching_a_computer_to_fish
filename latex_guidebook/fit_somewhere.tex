@@ -35,14 +35,10 @@
 %\textcolor{red}{Multi-headed inference. Useful when using the same model for different tasks. e.g. using a model for one task, then later deciding to perform a similar task on the same data -- rather than train an entirely new model, the original model may be performing may of the same computations. }
 
 
-%%%%%% research
-\textcolor{blue}{Pooling may not fully determine learned deformation stability -- possibly filter smoothness\cite{ruderman2018learned}}
-
 %%%% % plus index - unsupervised method
 % see p156 of DL for more
 \textcolor{blue}{manifold learning --- {manifold}\index{manifold}, though having a more formal mathematical meaning, will be considered a conected region for our machine learning purposes.}
 
-\
 
 %%%  preprocessing, this wasn't already somewhere? % plus index
 \textcolor{blue}{whitening}
@@ -123,4 +119,34 @@
 
 
 % TODO: figure -- [tensorflow ] -> cudnn -> cuda -> GPU | -> cuda -> GPU | -> [lib] -> CPU
+
+
+%%
+\textcolor{blue}{nonstationary problems --- unsolvable --- need data that makes sense for the problem. Predicting rentals of snowmobiles doesn't make as much sense if you only have data from summer. predicting cloth purchases during summer doesn't make sense if you only have data from winter.}
+
+%% not sure how this wasn't mentioned yet
+\textcolor{green}{TODO: transfer learning -- explanation, implementation in TensorFlow, and in YamlFlow \r{if general enough, the lower features may be reusable}}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure example layer hierarchy and where/when to transfer/freeze params -- this will be 1-2 figures and include many sub-figures \textcolor{green}{TODO}}
+	\label{fig:transfer_learning_subfigs_a}
+\end{figure}
+
+\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable'' see \textcolor{red}{local TF ref} for the TensorFlow implementation and \textcolor{red}{local YF ref} for the YamlFlow implementation. In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network}
+
+%%%
+\textcolor{green}{Visualizing the output of a CNN}
+
+\begin{enumerate}
+	\item Filters: \r{help understand what visual patter a filter is receptive to \textcolor{green}{TODO: lots of examples and refs to implementations}}
+	\item Intermediate outputs: \r{help understand the hierarchy of what is important to the classification task \textcolor{green}{TODO: lots of examples and refs to implementations}}
+	\item Heatmaps of activation: \r{Help understand what parts (and by relatively how much) of an image were in its classification. \textcolor{green}{TODO: lots of examples and refs to implementations}}
+\end{enumerate}
+
+
+%%
+\r{NOTE: somewhere about terms 'higher' and 'lower' levels of an architecture and how they're meaningless/interchangable and depend on context e.g. a diagram vs concept of lower=being closer to raw input.}
+
 

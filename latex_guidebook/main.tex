@@ -19,7 +19,7 @@
 \usepackage{times} % Use PS times fonts 
 
 \usepackage{listings} % code examples
-\usepackage{xcolor} % textcolor
+\usepackage[dvipsnames]{xcolor} % textcolor
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
@@ -42,6 +42,13 @@
 % TODO: need common code style
 \def\code#1{\texttt{#1}}
 
+% used to determine level of rough-drafted-ness, where r= most rough, rrr= presumably less rough (3 passes)
+\def\r#1{\textcolor{SeaGreen}{#1}}
+\def\rr#1{\textcolor{ProcessBlue}{#1}}
+\def\rrr#1{\textcolor{NavyBlue}{#1}}
+
+
+
 % breaklines=true is used to wrap lines
 \lstdefinestyle{pyInStyle} {language=Python,style=numbers,style=pyinput,frame=lines}
 \lstdefinestyle{pyOutStyle} {language=Bash,style=numbers,style=pyoutput,frame=none}
@@ -52,10 +59,8 @@
 \DeclareCaptionType{equ}[][]
 
 
-
-
 % Details of the titlepage 
-\title{Teaching a Computer to Fish: Machine+Deep Learning with TensorFlow} 
+\title{Teaching a Computer to Fish: Machine+Deep Learning with TensorFlow and YamlFlow} 
 \author{Jack Burdick} 
 \date{Last Update: \today} % Use the system date
 

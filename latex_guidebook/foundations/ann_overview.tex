@@ -93,3 +93,78 @@
 \textcolor{blue}{Backpropagation is typically used with an optimization algorithm (see \textcolor{red}{local ref?})}
 
 \subsection{Multi-layer perceptrons}
+
+\subsection{Common Architectures/Patterns}
+
+\subsubsection{Convolutional Neural Networks}
+
+\r{translational invariant --- if a feature is learned in one corner, it can be observed in another area as well.}
+
+\r{spatial hierarchies --- \textcolor{green}{TODO: figure raw data, abstract edges+, then more distinct images, then closer output to the output, then the final label}}
+
+\textcolor{red}{local ref to TensorFlow implementation}
+
+\r{typcially a feature extraction phase (consisting of convolutional and pooling layers) followed by a classifier block (dense layers).}
+
+\subsubsection{Capsule Networks (capsnets)}
+
+\subsubsection{Recurrent Neural Networks}
+
+\subsubsection{GANs}
+
+% TODO: this doesn't really belong here.. will need ot work on placement
+
+\subsection{Operations}
+
+\subsection{Convolution}
+% TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them
+
+%%%% popular layer types
+\textcolor{green}{TODO: feature maps, (height, width, and depth (also called channels axis)). Stride, filter size, depth. talk about params}
+
+\r{The ourput feature map (every dimension in the depth axis is a feature/filter) --- after a convolution operation the depth of a layer is no longer representative of a color channel (like RGB), it is now representative of a feature extracted by the convolutional operation, these are called filters.}
+
+\textcolor{green}{TODO: figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure example of convolution operation on 2d image \textcolor{green}{TODO}}
+	\label{fig:conv_2d_example_calc}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
+	\caption{Figure example of convolution operation on 3d image \textcolor{green}{TODO}}
+	\label{fig:conv_2d_depth_example_calc}
+\end{figure}
+
+\textcolor{green}{TODO: examples of how different filter values and strides can effect the output dimensions.}
+
+
+\subsection{Pooling}
+% TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them -- pooling really does not belong under feed forward
+
+\textcolor{green}{TODO: examples of max vs average pooling}
+
+%%%%%% research
+\textcolor{blue}{Pooling may not fully determine learned deformation stability -- possibly filter smoothness\cite{ruderman2018learned}}
+
+\r{downsampling}
+
+\r{Why? importance of reducing the number of params.}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure example of max pooling operation on 2d image \textcolor{green}{TODO: I want this figure to be basic 2d}}
+	\label{fig:pooling_max_2d_ex_a}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
+	\caption{Figure example of average pooling operation on 3d image \textcolor{green}{TODO: I want this figure to be 3d}}
+	\label{fig:pooling_avg_3d_ex_a}
+\end{figure}

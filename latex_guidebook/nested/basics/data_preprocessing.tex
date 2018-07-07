@@ -1,4 +1,8 @@
-\section{Feature Engineering: Data Pre-processing}
+\section{Data Preparation}
+
+\textcolor{blue}{TODO: direct and indirect importance of datapreparation. indirect: feature engineering allows for more elegant and efficient solutions (e.g. calculating the time with a CNN of a clock face vs engineered features for the angles of the large and small hand.) }
+
+\subsection{Data Pre-processing}
 
 \textcolor{blue}{Data is rarely obtained in a form that is necessary for optimal performance of a learning algorithm. Data can be missing, can contain a mix of categorical and quantitative, can contain values on vastly different scales, etc.}
 
@@ -15,7 +19,7 @@
 % TODO: case study example
 
 % TODO: expand
-\textcolor{blue}{features should be numeric and have a meaningful magnitue (see below)}
+\textcolor{blue}{features should be numeric and have a meaningful magnitude (see below). In addition to being meaningf, the magnitude should be on a similar (small) range. e.g. if some data has one feature on a range 70,000-500,000 (estimated home value) and another feature on a 0-5 range (maybe number of bathrooms in a house), the higher values, in addition to being viewed as more meaningful (higher weights), large gradient updates may result that don't allow the network to converge (the updates are not fine grained enough).}
 
 % TODO: case study example
 
@@ -23,21 +27,21 @@
 
 \textcolor{blue}{Don't mix magic values with values you already have. For example, if we have ratings 0-10, don't include a new column for rated vs not rated.}
 
-\subsection{Handling Missing Data}
+\subsubsection{Handling Missing Data}
 
-\subsubsection{Filtering Out}
+\paragraph{Filtering Out}
 
-\textcolor{blue}{Simply removing any entries that are missing data. This is convenient and easy but may not be practical -- any time data is being removed, potentially useful information is lost and too much data may be removed.}
+\textcolor{blue}{Simply removing any entbasicsries that are missing data. This is convenient and easy but may not be practical -- any time data is being removed, potentially useful information is lost and too much data may be removed.}
 
 \textcolor{green}{TODO: Code in jupyter on how to do this with pandas and dropna -- key params - how, thresh, subset}
 
-\subsubsection{Filling In}
+\paragraph{Filling In}
 
 \textcolor{blue}{Estimating the missing data}
 
-\subsection{Handling Categorical Data}
+\subsubsection{Handling Categorical Data}
 
-\subsubsection{Encoding}
+\paragraph{Encoding}
 
 \textcolor{blue}{It may seem intuitive to represent categorical data with an integer value. However, this may not always be best. Let's pretend we're representing United States with arbitrary integer values and we assign values alphabetically; Alabama: 0, Alaska: 1, Arizona: 2, Arkansas: 3, California: 4, ..., Wisconsin: 48, Wyoming: 49. So far so good. \textcolor{red}{However, these values indirectly imply a relationship (that may not actually exist)} -- and imply that some states are more similar to one another than others (for instance, this encoding seemingly indicates that Alabama as most related to Alaska.) }
 
@@ -49,7 +53,7 @@
 
 \textcolor{blue}{will lead to {sparse vectors}\index{sparse vectors} -- high dimensional vectors. This is memory intensive (some libraries have methods to address this --- SciPy and Pandas).}
 
-\subsection{Feature Scaling, Normalization}
+\subsubsection{Feature Scaling, Normalization}
 
 % TODO: this section needs to be restructured to present ideas in a logical flow/building on one another and the cost(time)/benefit
 
@@ -68,17 +72,17 @@
 % TODO: Give an example
 
 
-\subsubsection{Mean Normalization}
+\paragraph{Mean Normalization}
 
 \textcolor{blue}{feature $x$ is replaced by $x - \mu$ to create a zero mean}
 
 % TODO: 2D figure showing a circle vs oval contour plot and how gradient descent may take longer on the "oval"
 
-\subsubsection{Min-Max scaling (Normalization)}
+\paragraph{Min-Max scaling (Normalization)}
 
 \textcolor{blue}{values are shifted and rescaled so they end up on a [0,1] range}
 
-\subsubsection{Standardization}
+\paragraph{Standardization}
 
 \textcolor{blue}{(Eq.~\ref{eq:preprocess_standardization}) first, subtract the sample mean, then divide by standard deviation variance}
 
@@ -95,32 +99,31 @@
 
 \textcolor{green}{TODO: create code sample - numpy, and sklearn methods}
 
-\paragraph{Robust Scaler}
+\subparagraph{Robust Scaler}
 
 \textcolor{blue}{In order to reduce the effect of large outliers, a \textcolor{blue}{RobustScalar} may be used. Rather than subtract the mean and divide by the standard deviation, the median is subtracted and then the data is divided by the {interquartile range}\index{interquartile range} -- \textcolor{red}{see local ref?}}
 
 
-\subsection{Others}
+\subsubsection{Others}
 
-\subsubsection{Removing Duplicates}
+\paragraph{Removing Duplicates}
 
-\subsubsection{Outliers}
+\paragraph{Outliers}
 
 \textcolor{blue}{rather than remove outliers, the values may be capped.}
 % TODO: example, in the California housing data, there are datapoints with 50 rooms per house
 
-\subsubsection{Discretization and Binning}
+\paragraph{Discretization and Binning}
 
 \textcolor{blue}{An example for this may be housing prices and latitude.}
 
 % ? tf.feature_column.bucketized_column
 
-
 \textcolor{blue}{rather than store a floating point, bins could be created. would like to keep the information (latitude may be useful, but the magnitude here is not useful (even if normalized) and so binning may be a great option)}
 
 % TODO: figure for latitude (housing prices) and values pre/post binning
 
-\subsection{Where to do preprocessing}
+\subsubsection{Where to do preprocessing}
 
 \textcolor{blue}{1. at execution time/with the TF graph}
 \textcolor{blue}{2. apache beam ``in front'' of the graph (can use time windows)}
@@ -131,3 +134,9 @@
 \textcolor{blue}{Batch vs Streaming}
 
 % calculating rolling average
+
+\subsubsection{Feature Engineering}
+
+\textcolor{blue}{feature engineering is the process of altering the values of the data such that the problem becomes easier to solve as a result of expressing the data in a simplier/more relevant way. this usually required domain knowledge.}
+
+\textcolor{green}{TODO: p.102 of Keras book fchollete uses a clock example that is very nice.}
