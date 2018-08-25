@@ -23,6 +23,8 @@
 
 \subsection{Qualitative Evaluation}
 
+\r{generalization is a measure of how well the system preforms on previously unseen data.}
+
 \subsubsection{(Over$|$Under)fitting and Capacity}
 
 \textcolor{blue}{{Model capacity}\index{model capacity} helps control how likely a model is to overfit or underfit. Where a model with low capacity may have difficulty fitting a a training set and a model with high capacity may ``overfit'' the data by essentially memorizing the training data.}
@@ -40,6 +42,15 @@
 \textcolor{green}{TODO: figure showing an example of overfitting}
 
 % addressing overfitting: 1) reduce number of features (manual selection or w/model selection algor) 2) regularization
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{Figure example showing the same 2d dataset and an underfitting, overfitting, and ``good'' fitting. \textcolor{green}{TODO} circles=training, x=test -- include scores for each.. slight curve' under=linear, over=extreme poly, good=``smooth''}
+	\label{fig:basics_eval_fitting_examples}
+\end{figure}
 
 \paragraph{Underfitting}
 
@@ -74,6 +85,8 @@
 % TODO: see page 34 of ISL for eq and explaination here
 
 \textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
+
+\r{One reason to choose a more restrictive model is that they are often more interpretable.}
 
 
 % see page 36 of ISL

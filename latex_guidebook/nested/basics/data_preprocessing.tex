@@ -19,9 +19,11 @@
 % TODO: case study example
 
 % TODO: expand
-\textcolor{blue}{features should be numeric and have a meaningful magnitude (see below). In addition to being meaningf, the magnitude should be on a similar (small) range. e.g. if some data has one feature on a range 70,000-500,000 (estimated home value) and another feature on a 0-5 range (maybe number of bathrooms in a house), the higher values, in addition to being viewed as more meaningful (higher weights), large gradient updates may result that don't allow the network to converge (the updates are not fine grained enough).}
+\textcolor{blue}{features should be numeric and have a meaningful magnitude (see below). In addition to being meaningful, the magnitude should be on a similar (small) range. e.g. if some data has one feature on a range 70,000-500,000 (estimated home value) and another feature on a 0-5 range (maybe number of bathrooms in a house), the higher values, in addition to being viewed as more meaningful (higher weights), large gradient updates may result that don't allow the network to converge (the updates are not fine grained enough).}
 
 % TODO: case study example
+
+\r{pre-processing may be used to reduce the dimensionality of the data, before training.}
 
 \textcolor{blue}{make sure ``enough'' examples exist for the particular feature}
 
@@ -31,7 +33,7 @@
 
 \paragraph{Filtering Out}
 
-\textcolor{blue}{Simply removing any entbasicsries that are missing data. This is convenient and easy but may not be practical -- any time data is being removed, potentially useful information is lost and too much data may be removed.}
+\textcolor{blue}{Simply removing any entries that are missing data. This is convenient and easy but may not be practical -- any time data is being removed, potentially useful information is lost and too much data may be removed.}
 
 \textcolor{green}{TODO: Code in jupyter on how to do this with pandas and dropna -- key params - how, thresh, subset}
 
