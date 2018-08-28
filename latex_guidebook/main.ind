@@ -1,22 +1,23 @@
 \begin{theindex}
 
-  \item bag-of-words, 24
-  \item bagging, 75
-  \item Bias, 42
-  \item blending, 77
-  \item boostrap aggregating, 75
-  \item bootstrap samples, 75
+  \item bag-of-words, 25
+  \item bagging, 89
+  \item Bias, 47
+  \item blending, 91
+  \item boostrap aggregating, 89
+  \item bootstrap samples, 89
 
   \indexspace
 
-  \item corpus, 23
-  \item covarience matrix, 71
+  \item corpus, 24
+  \item covarience matrix, 85
+  \item credit assignment problem, 75
   \item Critical points, 10
 
   \indexspace
 
-  \item data distillation, 66
-  \item discrimination threshold, 56
+  \item data distillation, 77
+  \item discrimination threshold, 62
 
   \indexspace
 
@@ -24,107 +25,112 @@
 
   \indexspace
 
-  \item generalized linear model, 53
+  \item freezing, 188
+
+  \indexspace
+
+  \item generalized linear model, 59
   \item global maximum, 10
   \item global minimum, 10
-  \item Grid search, 37
+  \item Grid search, 41
 
   \indexspace
 
-  \item Heaviside step function, 64
-  \item hidden layer, 65
+  \item Heaviside step function, 72
+  \item hidden layer, 74
 
   \indexspace
 
-  \item ID3 algorithm, 61
-  \item image quantization, 69
-  \item inappropriate minima, 31
-  \item independent and identically distributed (i.i.d), 59
-  \item input layer, 65
-  \item interquartile range, 20
+  \item ID3 algorithm, 68
+  \item image quantization, 83
+  \item inappropriate minima, 35
+  \item independent and identically distributed (i.i.d), 66
+  \item information leaks, 26
+  \item input layer, 74
+  \item interquartile range, 21
 
   \indexspace
 
-  \item J48, 61
+  \item J48, 68
 
   \indexspace
 
-  \item Karhunen-Love Transform (KLM), 71
-  \item kernel trick, 21
+  \item Karhunen-Love Transform (KLM), 85
+  \item kernel trick, 23
 
   \indexspace
 
-  \item lazy learner, 56
-  \item Linear Least Squares, 54
-  \item logit, 55
-  \item lucky split, 26
+  \item lazy learner, 62
+  \item Linear Least Squares, 60
+  \item logit, 62
+  \item lucky split, 27
 
   \indexspace
 
-  \item manifold, 173
-  \item model capacity, 41
-  \item multi-label classification, 29
+  \item manifold, 187
+  \item model capacity, 46
+  \item multi-label classification, 32
 
   \indexspace
 
-  \item odds ratio, 55
-  \item one-hot encoding, 19
-  \item one-of-k encoding, 19
-  \item Ordinary Lease Squares (OLS), 54
-  \item output layer, 65
-  \item Overfitting, 41
+  \item odds ratio, 62
+  \item one-hot encoding, 20
+  \item one-of-k encoding, 20
+  \item Ordinary Lease Squares (OLS), 60
+  \item output layer, 74
+  \item Overfitting, 46
 
   \indexspace
 
-  \item Pearson's R, 46
-  \item peeking, 40
-  \item Principal Component Analysis (PCA), 71
-  \item Problem transformation, 29
+  \item Pearson's R, 51
+  \item peeking, 45
+  \item Principal Component Analysis (PCA), 85
+  \item Problem transformation, 32
 
   \indexspace
 
-  \item Randomized search, 37
+  \item Randomized search, 42
   \item rank, 9
-  \item reducible error, 26
-  \item ReLUN, 141
-  \item residual sum of squares (RSS), 54
-  \item residuals, 54
-  \item reverse-mode differentiation, 67
-  \item Ridge regression, 49
+  \item reducible error, 30
+  \item ReLUN, 155
+  \item residual sum of squares (RSS), 61
+  \item residuals, 60
+  \item reverse-mode differentiation, 78
+  \item Ridge regression, 54
 
   \indexspace
 
-  \item sampling with replacement, \see{bagging}{75}
-  \item sampling without replacement, \see{subagging}{76}
-  \item Sequential Minimal Optimization (SMO), 59
-  \item sigmoid, 138
-  \item silhouette coefficient, 71
-  \item sparse vectors, 19
+  \item sampling with replacement, \see{bagging}{89}
+  \item sampling without replacement, \see{subagging}{90}
+  \item Sequential Minimal Optimization (SMO), 65
+  \item sigmoid, 152
+  \item silhouette coefficient, 85
+  \item sparse vectors, 20
   \item stationary points, 10
-  \item subagging, 76
-  \item subspace sampling, 76
-  \item Support Vector Machine (SVM), 58
-  \item symbolic differentiation, 67
+  \item subagging, 90
+  \item subspace sampling, 90
+  \item Support Vector Machine (SVM), 64
+  \item symbolic differentiation, 78
 
   \indexspace
 
   \item tensor, 9
-  \item tf-idf, 24
-  \item Tikhonov regularization, 49
-  \item Type I error, 43
-  \item Type II error, 43
+  \item tf-idf, 25
+  \item Tikhonov regularization, 54
+  \item Type I error, 48
+  \item Type II error, 48
 
   \indexspace
 
-  \item Underfitting, 41
-  \item unit step function, 64
-  \item universal approximators, 65
+  \item Underfitting, 46
+  \item unit step function, 72
+  \item universal approximators, 73
 
   \indexspace
 
-  \item Variance, 42
-  \item vocabulary, 23
-  \item Voronoi region, 47
-  \item Voronoi tessellation, 47
+  \item Variance, 47
+  \item vocabulary, 24
+  \item Voronoi region, 52
+  \item Voronoi tessellation, 52
 
 \end{theindex}

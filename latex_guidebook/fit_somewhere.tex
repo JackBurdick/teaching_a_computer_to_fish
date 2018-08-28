@@ -182,7 +182,7 @@
 
 
 %%
-\r{\textit{joint probablity} --- $x_a$ and $x_b$. \textit{conditional probability} --- P of $x_b$, given $x_a$}
+\r{\textit{joint probability} --- $x_a$ and $x_b$. \textit{conditional probability} --- P of $x_b$, given $x_a$}
 
 
 %%
@@ -191,4 +191,35 @@
 
 
 %%
-\textcolor{green}{TODO: bayesian vs frequentist --- see page 21 of neural networks (p36 on tablet)}
+\textcolor{green}{TODO: Bayesian vs frequentist --- see page 21 of neural networks (p36 on tablet)}
+
+%%
+\r{sigmoid == `S-shaped' == the logistic form of sigmoid maps $(-\infty, \infty)$ to $(0, 1)$}
+
+%%
+\r{linearly seperable --- where a dataset can be correctly seperated by a linear (hyperplanar) decision boundry}
+\r{non linearly separable --- two-dimensional excllusive OR problem. --- generalized to d-dimensions when it is knowns as the d-bit parity problem.}
+
+%%
+\r{small changes in inputs, ideally, should not generally lead to dramatic changes in the outputs --- leading to a mapping that is represented relatively smoothly.}
+
+%%
+\r{colinear --- \textcolor{green}{TODO}}
+
+%%
+\TD{robbins-monro procedure}
+
+%%
+\r{\TD{perceptron convergence theorem} --- ``for any linearly separable data set, the learning rule (see fig 3.68 in NN - p100), is guaranteed to find a solution in a finite number of steps.'')}
+
+\TD{the ``pocket algorithm'' --- finding solutions to problems which are not linearly separable.}
+
+%%
+\r{``projection pursuit regression'' --- similar to a two-layer feed-forward neural network --- typcially the parameters, rather than being all updated simultaneously such as in a nerual network ,are optimized cyclically in groups. Training takes place for one hidden unit at a time}
+% another framework for non-linear regression
+\r{``generalized additive models \TD{Hastie and Tibshirani, 1990} --- restrictive class of models since it does not allow for interactions between the input variables. === a generalization that does allow for interactions is the ``multi-variate adaptive regression splies (MARS) \TD{(Friedman, 1991)}}
+
+
+%%
+% this is pretty interesting... checkout p136 of NN_bishop, p152 tablet
+\TD{Kolmogorov's Theorem}

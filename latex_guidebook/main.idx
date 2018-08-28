@@ -19,59 +19,60 @@
 \indexentry{reducible error}{30}
 \indexentry{multi-label classification}{32}
 \indexentry{Problem transformation}{32}
-\indexentry{inappropriate minima}{34}
-\indexentry{Grid search}{40}
-\indexentry{Randomized search}{41}
-\indexentry{peeking}{44}
-\indexentry{model capacity}{45}
-\indexentry{Overfitting}{45}
-\indexentry{Underfitting}{45}
-\indexentry{Variance}{46}
-\indexentry{Bias}{46}
-\indexentry{Type I error}{47}
-\indexentry{Type II error}{47}
-\indexentry{Pearson's R}{50}
-\indexentry{Voronoi tessellation}{51}
-\indexentry{Voronoi region}{51}
-\indexentry{Ridge regression}{53}
-\indexentry{Tikhonov regularization}{53}
-\indexentry{generalized linear model}{57}
-\indexentry{Ordinary Lease Squares (OLS)}{58}
-\indexentry{Linear Least Squares}{58}
-\indexentry{residuals}{58}
-\indexentry{residual sum of squares (RSS)}{59}
-\indexentry{odds ratio}{60}
-\indexentry{logit}{60}
-\indexentry{discrimination threshold}{60}
-\indexentry{lazy learner}{60}
-\indexentry{Support Vector Machine (SVM)}{62}
-\indexentry{Sequential Minimal Optimization (SMO)}{63}
-\indexentry{independent and identically distributed (i.i.d)}{64}
-\indexentry{ID3 algorithm}{66}
-\indexentry{J48}{66}
-\indexentry{Heaviside step function}{70}
-\indexentry{unit step function}{70}
-\indexentry{universal approximators}{71}
-\indexentry{input layer}{71}
-\indexentry{hidden layer}{71}
-\indexentry{output layer}{71}
-\indexentry{data distillation}{72}
-\indexentry{reverse-mode differentiation}{73}
-\indexentry{symbolic differentiation}{73}
-\indexentry{image quantization}{77}
-\indexentry{silhouette coefficient}{79}
-\indexentry{Principal Component Analysis (PCA)}{79}
-\indexentry{Karhunen-Love Transform (KLM)}{79}
-\indexentry{covarience matrix}{79}
-\indexentry{bagging}{83}
-\indexentry{boostrap aggregating}{83}
-\indexentry{sampling with replacement|see{bagging}}{83}
-\indexentry{bootstrap samples}{83}
-\indexentry{subagging}{84}
-\indexentry{sampling without replacement|see{subagging}}{84}
-\indexentry{subspace sampling}{84}
-\indexentry{blending}{85}
-\indexentry{sigmoid}{146}
-\indexentry{ReLUN}{149}
-\indexentry{manifold}{181}
-\indexentry{freezing}{182}
+\indexentry{inappropriate minima}{35}
+\indexentry{Grid search}{41}
+\indexentry{Randomized search}{42}
+\indexentry{peeking}{45}
+\indexentry{model capacity}{46}
+\indexentry{Overfitting}{46}
+\indexentry{Underfitting}{46}
+\indexentry{Variance}{47}
+\indexentry{Bias}{47}
+\indexentry{Type I error}{48}
+\indexentry{Type II error}{48}
+\indexentry{Pearson's R}{51}
+\indexentry{Voronoi tessellation}{52}
+\indexentry{Voronoi region}{52}
+\indexentry{Ridge regression}{54}
+\indexentry{Tikhonov regularization}{54}
+\indexentry{generalized linear model}{59}
+\indexentry{Ordinary Lease Squares (OLS)}{60}
+\indexentry{Linear Least Squares}{60}
+\indexentry{residuals}{60}
+\indexentry{residual sum of squares (RSS)}{61}
+\indexentry{odds ratio}{62}
+\indexentry{logit}{62}
+\indexentry{discrimination threshold}{62}
+\indexentry{lazy learner}{62}
+\indexentry{Support Vector Machine (SVM)}{64}
+\indexentry{Sequential Minimal Optimization (SMO)}{65}
+\indexentry{independent and identically distributed (i.i.d)}{66}
+\indexentry{ID3 algorithm}{68}
+\indexentry{J48}{68}
+\indexentry{Heaviside step function}{72}
+\indexentry{unit step function}{72}
+\indexentry{universal approximators}{73}
+\indexentry{input layer}{74}
+\indexentry{hidden layer}{74}
+\indexentry{output layer}{74}
+\indexentry{credit assignment problem}{75}
+\indexentry{data distillation}{77}
+\indexentry{reverse-mode differentiation}{78}
+\indexentry{symbolic differentiation}{78}
+\indexentry{image quantization}{83}
+\indexentry{silhouette coefficient}{85}
+\indexentry{Principal Component Analysis (PCA)}{85}
+\indexentry{Karhunen-Love Transform (KLM)}{85}
+\indexentry{covarience matrix}{85}
+\indexentry{bagging}{89}
+\indexentry{boostrap aggregating}{89}
+\indexentry{sampling with replacement|see{bagging}}{89}
+\indexentry{bootstrap samples}{89}
+\indexentry{subagging}{90}
+\indexentry{sampling without replacement|see{subagging}}{90}
+\indexentry{subspace sampling}{90}
+\indexentry{blending}{91}
+\indexentry{sigmoid}{152}
+\indexentry{ReLUN}{155}
+\indexentry{manifold}{187}
+\indexentry{freezing}{188}

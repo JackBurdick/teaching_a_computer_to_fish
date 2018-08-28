@@ -208,6 +208,36 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \textcolor{blue}{Loss calculation. TODO: example for linear linear regression and why sum of loss will cancel out terms. \textcolor{red}{point to local ref.}}
 
+\subsection{Error Functions}
+
+\r{discussion of techniques used for training networks}
+
+\r{the training of a network consists of a suitable error function to be minimized with respect to teh parameters (weights and biases) of a network.}
+
+\subsubsection{Least-squares techniques}
+
+\r{simple error function, typically most suitable for regression problems, but could also be used for classificaiton problems, though other error functions typcially perform better for classification (\textcolor{red}{local ref})}
+
+\paragraph{Sum-of-squares error function}
+
+\paragraph{Normal Equations}
+
+\r{find an explicity solution to the function}
+
+\paragraph{Singular Value Decomposition (SVD)}
+
+\r{Singular Value Decomposition (SVD) --- technique used to help solve problems like ``near degeneracies'' (\textcolor{green}{TODO: unsure of this --- also see Press et al. 1992 for an introduction})}
+
+
+\paragraph{Gradient Descent}
+
+\r{\textcolor{green}{TODO: is this the first time I've talked about this?}. Finding the weight values of a sum-of-squares error function can be found explicityly in terms of the \TD{pseudo inverse of a matrix} (if a linear network). However, if a non-liear activation fuction is used, then the closed form of a solution is no longer possible.}
+
+\r{If a derivative of the activation function is differentiable, the derivatives of the error function with respect to the weight parameters can then be evaluated. The derivatives can then be used by gradient-based optimization algorithms to find the minimum of the error function \TD{local ref - sec on optimizers}}
+
+\r{update the parameters one iteration at a time --- sequential, pattern-based, update}
+
+
 \subsubsection{Global vs Local Minima}
 
 % TODO: this needs to be placed elsewhere

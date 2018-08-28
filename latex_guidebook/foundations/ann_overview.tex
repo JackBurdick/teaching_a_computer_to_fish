@@ -2,45 +2,75 @@
 
 \textcolor{blue}{Principals and basic feed forward networks}
 
-\textcolor{blue}{The most computationally expensive component is calculating the gradient of the loss function with respect to the parameters of the network}
+\r{The most computationally expensive component is calculating the gradient of the loss function with respect to the parameters of the network}
 
 % see page 233 of Understanding Machine Learning
-\textcolor{blue}{Artificial neural networks are {universal approximators}\index{universal approximators} -- \textcolor{red}{expand}}
+\r{Artificial neural networks are {universal approximators}\index{universal approximators} -- \textcolor{red}{expand}}
 
-\textcolor{blue}{universal approximation theorem \textcolor{green}{(Hornik 1989, Cybenko, 1989)}. Regardless of the function that is attempted to being learned, a large MLP will be able to \textbf{represent} this function. However, it is not guaranteed that the large MLP, despite being a universal \textcolor{red}{approximator} capable of representing the function, is able to \textit{learn} the function}
+\r{universal approximation theorem \textcolor{green}{(Hornik 1989, Cybenko, 1989)}. Regardless of the function that is attempted to being learned, a large MLP will be able to \textbf{represent} this function. However, it is not guaranteed that the large MLP, despite being a universal \textcolor{red}{approximator} capable of representing the function, is able to \textit{learn} the function}
 
 \subsection{Multi-layer Perceptron}
 
-\textcolor{blue}{Not a single multi-layer perceptron with multiple layers, rather it is a network composed of multiple layers of perceptrons.}
+\r{Not a single multi-layer perceptron with multiple layers, rather it is a network composed of multiple layers of perceptrons. Multi-layer perceptrons, through use of sucessive transformations (multipel layers of adaptive weights) address some of the limitations presented with a single layer perceptron \TD{local ref}.  MLPs, even composed of just two layers, are capable of approximating any continuous functional mapping --- the restriction being that the network must be feed-forward (described in \TD{local ref}) ensuring the outouts are possible to calcualted from as explicit functions of the inputs.}
 
 \subsection{Architecture}
 
-\textcolor{blue}{{input layer}\index{input layer}, {hidden layer}\index{hidden layer}, {output layer}\index{output layer}}
+\r{{input layer}\index{input layer}, {hidden layer}\index{hidden layer}, {output layer}\index{output layer}}
 
-\textcolor{blue}{the input layer is not counted in the number of layers in a network}
+\r{the input layer is not counted in the number of layers in a network}
 
-\textcolor{green}{TODO: diagram of neural network showing layers}
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{\TD{TODO: diagram of neural network showing layers}}
+	\label{fig:foundations_ann_overview}
+\end{figure}
+
 
 \subsection{Components}
 
-\textcolor{green}{TODO: labeled diagram of nodes (weights and biases), connections, activation functions}
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{\TD{TODO: labeled diagram of nodes (weights and biases), connections, activation functions}}
+	\label{fig:foundations_ann_overview}
+\end{figure}
+
 
 \subsubsection{Nodes / units}
 
 \paragraph{Initialization}
 
-\textcolor{green}{TODO: initialization methods and for different layers}
-
+\TD{TODO: initialization methods and for different layers}
 
 
 \subsubsection{Activation Function}
 
-\textcolor{green}{TODO: I think this is where I'll talk about activation functions}
+\TD{TODO: I think this is where I'll talk about activation functions}
 
-\textcolor{green}{TODO: explain the need for non-linearity.}
+%% need for non-linearity
+\r{If all the activation functions in the hidden layers of the network were to be linear then it is possible to create a equivalent network without the hidden units. This is due to the principle that the composition of successive linear transformations is itself a linear transformation \TD{show + detail more clearly}. \textcolor{red}{the activation functions of the hidden and output layers may be different.}}
 
-\textcolor{green}{TODO: step function to sigmoid function -- smoothed version of the step function -- can understand how an input changes the output.}
+\TD{TODO: step function to sigmoid function -- smoothed version of the step function -- can understand how an input changes the output.}
 
+\r{When considering networks only consisting of threshold activations, we run into the {credit assignment}~\index{credit assignment problem} during training. That is we have no way of determining which of the hidden units is more/less responsible for the incorrect output.  A solution to this issue is to use differentiable activation functions, this then allows for the activation of the output to become differentiable functions of both the input variables and the parameters (weights and biases).}
+
+%% TODO: placement
+\r{A sigmoidal hidden unit can be used to approximate a hidden linear unit by scaling the input parameters (weights and biases) to be very small such that the values are small and lie on the linear part of the sigmoidal curve near the origin. Similarly a step function may be approximated by scaling the input parameters (weights and biases) to be very large such that the values are either in the activated or not activated state. Nearly any continuous functional mapping can be represetned by a network consisting of two layers of sigmoidal hidden units.  A network consisting of three or more sigmoidal hidden units can approximate any smooth mapping \TD{Lapedes and Farber 1988}}
+
+\TD{local ref to a more in depth discussion of activation functions.}
+
+%% this likely doesn't belong here
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{\TD{TODO: three images of possible decision boundaries created by NN with threshold act.fn and 1,2, and 3 layers. one is a single linear hyperplane, 2 is a non convex and 3 is a disjoint}}
+	\label{fig:foundations_ann_layers_decision_region}
+\end{figure}
+
+\r{networks having three or more layers of weights can create non-convex and disjoint decision regions. \TD{see Huang and Lippmann 1988 for examples of 2 layers.}. Networks with two layers are not capable of creating arbitrary decision boundries \TD{Gibson and Cownan 1990, Blum and Li, 1991} (also see \TD{fig ref}). However, if the activation function is converted to a sigmoidal activation, it is possible to arbitrarily closely approximate an given decision boundry.}
 
 \subsection{Characterization}
 
@@ -48,49 +78,86 @@
 
 \textcolor{blue}{Feed-forward --- Directed acyclic graph of artificial neurons. Feedback contain feedback connections that are fed back into itself. When feedforward are include these feedback connections, they become considered recurrent neural networks.}
 
+\paragraph{Feed-forward}
+
+\r{``general framework for representing non-linear functional mappings between a set of input variables and a set of output variables''}
+
+\subparagraph{Layered networks}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{\TD{TODO: layered network diagram}}
+	\label{fig:foundations_ann_layered_network}
+\end{figure}
+
+\r{Whereas a single layer network is composed of linear combination of input variables, that are then, transformed by a non-linear activation function, more general functions are creating layered networks that are composed of successive layers of processing units (adaptive weights) with connections running from every unit in one layer to every unit in the next.}
+
+\subparagraph{General topologies}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
+	\caption{\TD{TODO: general topology}}
+	\label{fig:foundations_ann_general_topology}
+\end{figure}
+
+\r{general topologies}
+
+\paragraph{Feedback}
+
 \subsubsection{Terminology}
 
-\textcolor{blue}{Considered \textit{networks} since they are typically composed of many different functions --- creating a ``network''.}
+\r{Considered \textit{networks} since they are typically composed of many different functions --- creating a ``network''.}
 
-\textcolor{blue}{Considered \textit{neural} since they are \textbf{loosely} inspired by neuroscience.}
+\r{Considered \textit{neural} since they are \textbf{loosely} inspired by neuroscience.}
 
-\textcolor{blue}{layer --- a layer may be considered a group of units that act in parallel. The layer will extract representations from the input, that are (in theory) more useful to the specific task.  Chaining together these layers results in a form of progressive {data distillation}\index{data distillation}.}
+\r{layer --- a layer may be considered a group of units that act in parallel. The layer will extract representations from the input, that are (in theory) more useful to the specific task.  Chaining together these layers results in a form of progressive \IDI{data distillation}.}
 
-\textcolor{blue}{Visible and Hidden Layers. Visible layers are called visible since they contain variables that are ``visible'', where as the hidden layers extract increasingly abstract features -- hidden since their values are not given in the raw data, but rather an output from a previous layer.}
+\r{Visible and Hidden Layers. Visible layers are called visible since they contain variables that are ``visible'', where as the hidden layers extract increasingly abstract features -- hidden since their values are not given in the raw data, but rather an output from a previous layer.}
 
 
 
 \subsection{Learning: Backpropagation}
 
 % see p196[184] of Mastering ML w/SKL
-\textcolor{green}{TODO: whoooo, this is going to be a big one. understand how each component contributes to the error and adjust accordingly.}
+\TD{TODO: whoooo, this is going to be a big one. understand how each component contributes to the error and adjust accordingly.}
 
-\textcolor{blue}{Iterative algorithm consisting of two main components --- in order, the forward, then the reverse pass}
+\r{popularized by \TD{Rumelhard, Hinton and Williams (1986)}, but similar ideas were discussed earlier by \TD{Werbos 1974}, and \TD{Parker 1985}}
 
-\textcolor{blue}{In the forward pass inputs are propagated through the network}
+\r{error backpropagation is used for evaluating the dervivatives of an error function with respect to the parameters (weights and biases) of the network}
 
-\textcolor{blue}{In the Backward pass, errors from the forward function and  are propagated in reverse through the network (from cost function to input layer) and each node is updated -- \textcolor{green}{TODO: expand}.}
+\r{Iterative algorithm consisting of two main components --- in order, the forward, then the reverse pass}
+
+\r{In the forward pass inputs are propagated through the network}
+
+\r{In the Backward pass, errors from the forward function and  are propagated in reverse through the network (from cost function to input layer) and each node is updated -- \TD{TODO: expand}.}
+
+\r{The calculated derivatives are used by the majority of training algorithms}
+
+%% p116 of neural networks, p131 on tablet
+\textcolor{red}{Second derivative of the error function = elements of a Hessian matrix}
 
 \subsubsection{Backward Propagation}
 
 % see p197-201[180] of Mastering ML w/SKL
 
-\textcolor{green}{TODO: figure showing sample calculation}
+\TD{TODO: figure showing sample calculation}
 
 
 % See p207 of DL
 
-\textcolor{blue}{also sometimes called {reverse-mode differentiation}\index{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
+\r{also sometimes called \IDI{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
 
-\textcolor{blue}{{symbolic differentiation}\index{symbolic differentiation} --- compute a gradient function for the chain (chain rule) mapping parameter values to gradient values}
+\r{\IDI{symbolic differentiation} --- compute a gradient function for the chain (chain rule) mapping parameter values to gradient values}
 
 \subsubsection{Chain Rule}
 
-\textcolor{red}{See \textcolor{red}{local ref to math prereq section}}
+\r{See \textcolor{red}{local ref to math prereq section}}
 
-\textcolor{green}{TODO: chain rule}
+\TD{TODO: chain rule}
 
-\textcolor{blue}{Backpropagation is typically used with an optimization algorithm (see \textcolor{red}{local ref?})}
+\r{Backpropagation is typically used with an optimization algorithm (see \textcolor{red}{local ref?})}
 
 \subsection{Multi-layer perceptrons}
 
@@ -100,7 +167,7 @@
 
 \r{translational invariant --- if a feature is learned in one corner, it can be observed in another area as well.}
 
-\r{spatial hierarchies --- \textcolor{green}{TODO: figure raw data, abstract edges+, then more distinct images, then closer output to the output, then the final label}}
+\r{spatial hierarchies --- \TD{TODO: figure raw data, abstract edges+, then more distinct images, then closer output to the output, then the final label}}
 
 \textcolor{red}{local ref to TensorFlow implementation}
 
@@ -146,7 +213,7 @@
 \subsection{Pooling}
 % TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them -- pooling really does not belong under feed forward
 
-\textcolor{green}{TODO: examples of max vs average pooling}
+\TD{TODO: examples of max vs average pooling}
 
 %%%%%% research
 \textcolor{blue}{Pooling may not fully determine learned deformation stability -- possibly filter smoothness\cite{ruderman2018learned}}
