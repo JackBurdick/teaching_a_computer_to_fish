@@ -1,25 +1,25 @@
 \section{Evaluation}
 
-\textcolor{blue}{Importance of dataset partitioning \textcolor{red}{local ref?}}
+\r{Importance of dataset partitioning \textcolor{red}{local ref?}}
 
 % \textcolor{blue}{The best performance measure will vary depending on the task. For instance, in a medical setting, it may be life threating to classify an event as ``healthy'' when the patient is not healthy.}
 
-\textcolor{blue}{A performance measure is used to capture, empirically, how well a prediction made by the model aligns with the expected, ground truth, value.}
+\r{A performance measure is used to capture, empirically, how well a prediction made by the model aligns with the expected, ground truth, value.}
 
 \subsection{Creating a Test Set}
 
 % rough para
-\textcolor{blue}{The most important rule regarding evaluating models, is to ensure that the data used to evaluate the model has never been used before to influence the during training or selection -- this means it was not used during training to update the parameters and it was not used to influence which models are `best' (like a validation set may be used for)}
+\r{The most important rule regarding evaluating models, is to ensure that the data used to evaluate the model has never been used before to influence the during training or selection -- this means it was not used during training to update the parameters and it was not used to influence which models are `best' (like a validation set may be used for)}
 
-\textcolor{blue}{The performance of a model on a test set may be indicative of how well the model can generalize to unseen data. (This assumes your data sample is representative of the data population)}
+\r{The performance of a model on a test set may be indicative of how well the model can generalize to unseen data. (This assumes your data sample is representative of the data population)}
 
-\textcolor{blue}{Hold-out test set -- created by randomly sampling the dataset. Again, it is important to emphasize that the instances in the test set are never used in the training process and are instead reserved for use only during the evaluation phase.}
+\r{Hold-out test set -- created by randomly sampling the dataset. Again, it is important to emphasize that the instances in the test set are never used in the training process and are instead reserved for use only during the evaluation phase.}
 
-\textcolor{blue}{peeking\index{peeking}, is an issue that arises when part or all of the test set is included in the training set. This means the model has already seen the data on which the model will be evaluated and so it is possible, probable, that the model will produce high evaluation scores, which will likely translate to an overoptimistic estimation of the models performance when used in production.}
+\r{peeking\index{peeking}, is an issue that arises when part or all of the test set is included in the training set. This means the model has already seen the data on which the model will be evaluated and so it is possible, probable, that the model will produce high evaluation scores, which will likely translate to an overoptimistic estimation of the models performance when used in production.}
 
-\textcolor{blue}{Evaluating the performance of a model can be challenging and will vary depending on the task. For instance, accuracy may not always be the best measure of performance -- consider a medical setting in which sensitivity may be more important since a false negative may be life threatening where as a false positive may only require additional observation.}
+\r{Evaluating the performance of a model can be challenging and will vary depending on the task. For instance, accuracy may not always be the best measure of performance -- consider a medical setting in which sensitivity may be more important since a false negative may be life threatening where as a false positive may only require additional observation.}
 
-\textcolor{blue}{When comparing various models, it may be challenging to rank them on a single performance measure. \textcolor{green}{TODO: more.}}
+\r{When comparing various models, it may be challenging to rank them on a single performance measure. \textcolor{green}{TODO: more.}}
 
 \subsection{Qualitative Evaluation}
 
@@ -27,19 +27,19 @@
 
 \subsubsection{(Over$|$Under)fitting and Capacity}
 
-\textcolor{blue}{{Model capacity}\index{model capacity} helps control how likely a model is to overfit or underfit. Where a model with low capacity may have difficulty fitting a a training set and a model with high capacity may ``overfit'' the data by essentially memorizing the training data.}
+\r{{Model capacity}\index{model capacity} helps control how likely a model is to overfit or underfit. Where a model with low capacity may have difficulty fitting a a training set and a model with high capacity may ``overfit'' the data by essentially memorizing the training data.}
 
-\textcolor{blue}{Model capcity is closely related to model complexity and the models {hypothesis space}index{hypothesis space} (The set of functions available to the learning algorithm --- \textcolor{green}{TODO: expand - for example a linear vs polynomial model})}
+\r{Model capcity is closely related to model complexity and the models {hypothesis space}index{hypothesis space} (The set of functions available to the learning algorithm --- \textcolor{green}{TODO: expand - for example a linear vs polynomial model})}
 
-\textcolor{green}{TODO: figure showing training and validation error and 1) optimal capacity, 2) under and overfitting region 3)generalization gap, 4) capacity}
+\TD{TODO: figure showing training and validation error and 1) optimal capacity, 2) under and overfitting region 3)generalization gap, 4) capacity}
 
 \paragraph{Overfitting}
 
-\textcolor{blue}{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
+\r{Overfitting\index{Overfitting} refers to a case in which a model fits the training data very well but does not fit validation/test set. If a model is overfitting, it is said to have a high variance and is analogous to memorizing the training set.}
 
-\textcolor{blue}{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
+\r{Overfitting can arise from modeling data with too many parameters/too complex of a model.}
 
-\textcolor{green}{TODO: figure showing an example of overfitting}
+\TD{TODO: figure showing an example of overfitting}
 
 % addressing overfitting: 1) reduce number of features (manual selection or w/model selection algor) 2) regularization
 
@@ -54,27 +54,27 @@
 
 \paragraph{Underfitting}
 
-\textcolor{blue}{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
+\r{Underfitting\index{Underfitting} refers to a case in which a model does not fit the training data well. If a model is underfitting, it is said to have a high bias}
 
-\textcolor{blue}{Underfitting can arise from modeling data with too few parameters/too simple of a model.}
+\r{Underfitting can arise from modeling data with too few parameters/too simple of a model.}
 
-\textcolor{green}{TODO: figure showing an example of underfitting}
+\TD{TODO: figure showing an example of underfitting}
 
 
 \subsubsection{Bias Variance Trade-off}
 
-\textcolor{blue}{Two fundamental causes of prediction error in a model -- the bias and the variance.}
+\r{Two fundamental causes of prediction error in a model -- the bias and the variance.}
 
 \paragraph{Variance}
-\textcolor{blue}{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
+\r{variance\index{Variance} refers to the amount the model would change (consistency or variability) if it was re-trained/estimated multiple using a different subsets of the training data set. A model that has high variance is sensitive to randomness in the training data}
 
-\textcolor{blue}{A model with high variance may be described as highly flexible and will likely overfit the data.}
+\r{A model with high variance may be described as highly flexible and will likely overfit the data.}
 
 
 \paragraph{Bias}
-\textcolor{blue}{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
+\r{Bias\index{Bias} refers to the amount of error that is introduced by approximating a problem with a model that is simpler than the (complex) problem}
 
-\textcolor{blue}{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
+\r{A model with high bias will produce similar errors for instances regardless of the training data that is used to train the model -- the model is more strongly ``biased'' to its own assumptions of the relationship (as defined by the model), than the relationship the data may be indicating. A model with high bias may also be described as inflexible and will likely underfit the data.}
 
 
 % not word-for-word, but example adapted from p35 of ISL
@@ -84,14 +84,49 @@
 
 % TODO: see page 34 of ISL for eq and explaination here
 
-\textcolor{blue}{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
+\r{In general, as a more ``flexible'' model is used, the variance will increase and the bias will decrease.}
 
 \r{One reason to choose a more restrictive model is that they are often more interpretable.}
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.4\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.4\textwidth]{example-image-b}\hfil
+	\caption{\TD{side by side figure: a: complex vs simple training on trainnig data (nth poly vs linear), b: same models on test data}}
+	\label{fig:basics_eval_tradeoff_examples}
+\end{figure}
+
 
 % see page 36 of ISL
-\textcolor{blue}{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
+\r{It is easy to obtain a model with low bias but high variance (\emph{e.g.} drawing a squiggly line through every training observation) and it is easy to obtain a model with low variance but high bias (\emph{e.g.} drawing a straight line approximating every training observation) but it is difficult to obtain a model that has both low variance and low bias.}
 
 \textcolor{blue}{It should be noted that in a real world example, it may not be possible to explicitly calculate the test error, bias, or variance.}
 
-\textcolor{green}{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{\TD{same 2D dataset with 3 layers and the hidden layer in a has few nodes, b: normal amount of nodes, and c: many nodes} \r{illistrative that the number of connections and complexity increases the chances for overfitting also increases}}
+	\label{fig:basics_eval_nodesinhidden}
+\end{figure}
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.2\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.2\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.2\textwidth]{example-image-c}\hfil
+	\includegraphics[width=0.2\textwidth]{example-image-a}\hfil
+	\caption{\TD{same 2D dataset with one, two, three and four hidden layers}}
+	\label{fig:basics_eval_numlayers}
+\end{figure}
+
+\r{observing a direct trade-off between overfitting and model complexity.}
+
+\r{When we talk about deep learning, we're talking about deep and powerful models that are attempting to solve complex problems that are prone to overfitting and thus usually employ additional countermeasures, such as regularization, to help prevent overfitting.}
+
+
+\TD{TODO: para about using regularization here/finding the right balance \textcolor{red}{local ref to regularization?}}

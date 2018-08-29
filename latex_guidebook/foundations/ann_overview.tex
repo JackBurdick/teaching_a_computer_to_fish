@@ -127,21 +127,33 @@
 
 \r{error backpropagation is used for evaluating the dervivatives of an error function with respect to the parameters (weights and biases) of the network}
 
-\r{Iterative algorithm consisting of two main components --- in order, the forward, then the reverse pass}
+\r{Iterative algorithm consisting of two main components --- the forward, then reverse, pass.}
 
-\r{In the forward pass inputs are propagated through the network}
+% see p.141(156) - 146(161) of NNbishop
+\TD{MORE}
 
-\r{In the Backward pass, errors from the forward function and  are propagated in reverse through the network (from cost function to input layer) and each node is updated -- \TD{TODO: expand}.}
+\TD{Example}
+
+\paragraph{Forward pass}
+
+\r{In the forward pass inputs are propagated through the network and derivatives of the error functuion, with respect to the parameters (weights and biases) are evaluated. Propagation o ferrors through the network, calculating the derivatives, can be applied to may different error functions.}
+
+\r{it becomes important to use a computationally efficient method for evaluating these derivatives \TD{local ref}}
+
+\r{During this stage is when the errors are propagated through the network.}
+
+\paragraph{Backward pass}
+
+\r{In the Backward pass, the previously calcuated derivatives are used to compute the adjustments to the parameters --- propagated in reverse through the network (from cost function to input layer) and each node is updated -- \TD{TODO: expand}.}
+
+\r{Many optimization schemes \TD{local ref} may be used to adjust the parameters by using the calculated derivatives from the forward pass.}
 
 \r{The calculated derivatives are used by the majority of training algorithms}
 
 %% p116 of neural networks, p131 on tablet
 \textcolor{red}{Second derivative of the error function = elements of a Hessian matrix}
 
-\subsubsection{Backward Propagation}
-
 % see p197-201[180] of Mastering ML w/SKL
-
 \TD{TODO: figure showing sample calculation}
 
 
@@ -150,6 +162,10 @@
 \r{also sometimes called \IDI{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
 
 \r{\IDI{symbolic differentiation} --- compute a gradient function for the chain (chain rule) mapping parameter values to gradient values}
+
+\subsubsection{Back-propagation efficiency}
+
+%% see para in p146(161) of bishop NN
 
 \subsubsection{Chain Rule}
 

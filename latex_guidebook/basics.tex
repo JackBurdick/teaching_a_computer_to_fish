@@ -210,9 +210,15 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsection{Error Functions}
 
-\r{discussion of techniques used for training networks}
+\TD{discussion of techniques used for training networks}
 
-\r{the training of a network consists of a suitable error function to be minimized with respect to teh parameters (weights and biases) of a network.}
+\r{the training of a network consists of a suitable error function to be minimized with respect to the parameters (weights and biases) of a network.}
+
+
+
+\subsubsection{forward pass}
+
+\subsubsection{backward pass}
 
 \subsubsection{Least-squares techniques}
 
@@ -220,6 +226,22 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \paragraph{Sum-of-squares error function}
 
+\r{potential negative --- the largest contributions are from points with the largest error. If the dataset contains many outliers (or if the distribution contains long tails), the the adjustments can be dominated by these outliers. NOTE: in this case especially, it is essential to ensure there are no mislabeled data, as these can have dramatic effects. Techniques used to address this problem are known as robust statistics \TD{local ref -- create subsec for this == \textcolor{red}{see (Huber 1981)}}}
+
+% see p.211 of NN by bishop (p.226 on tablet)
+\textcolor{red}{input-dependent variance}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.4\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.4\textwidth]{example-image-b}\hfil
+	\caption{ \TD{figure of how a model is affected by outliers. left: the data does not have any outliers and a linear line fits the data fairly well. right: a single outlier dramatically alters the linear line}}
+	\label{fig:basics_error_fn_sumofsquares_outlier}
+\end{figure}
+
+\r{can be used for regression or classification (though typically for regression)}
+
+ 
 \paragraph{Normal Equations}
 
 \r{find an explicity solution to the function}

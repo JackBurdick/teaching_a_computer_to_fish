@@ -1,12 +1,12 @@
 \section{Feature Extraction from Various Datatypes}
 
-\textcolor{green}{TODO: Feature Extraction}
+\TD{TODO: Feature Extraction}
 
 \subsection{Feature Engineering}
 
-\textcolor{blue}{acquisition and/or systematic improvement of features}
+\r{acquisition and/or systematic improvement of features}
 
-\textcolor{blue}{TODO: features are learned,not engineered in deep learning models}
+\r{TODO: features are learned,not engineered in deep learning models}
 
 % TODO: placement and naming
 \subsubsection{Kernel}
@@ -20,7 +20,7 @@
 \label{fig:kernelized_2class4clust_2dimg}
 \end{figure}
 
-\textcolor{blue}{but what if we produce a new feature (feature 1 ** 2). Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting. The {kernel trick}\index{kernel trick} (discussed in more detail in \ref{sec:kernel_trick}) allows for a classifier to learn in a higher-dimensional space, without actually computing these (potentially computationally limiting) representations.}
+\r{but what if we produce a new feature (feature 1 ** 2). Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting. The {kernel trick}\index{kernel trick} (discussed in more detail in \ref{sec:kernel_trick}) allows for a classifier to learn in a higher-dimensional space, without actually computing these (potentially computationally limiting) representations.}
 
 % {{{kernelized_2class4clust_3dimg}}}
 \begin{figure}
@@ -35,7 +35,7 @@
 % TODO: figure of linearly separable dataset and or a xor dataset
 % makes some non-linear problems (xor) linear
 
-\textcolor{blue}{combine two or more categorical features. Feature crossing is only possible when working with categorical features. When working with continuous features, the values can be discretized prior to the feature cross}
+\r{combine two or more categorical features. Feature crossing is only possible when working with categorical features. When working with continuous features, the values can be discretized prior to the feature cross}
 
 
 % how much to translate feature 1 and 2 are parameters that need to be learned
@@ -45,16 +45,16 @@
 % not used as often in traditional ML, but powerful on large datasets
 % Rome/New york yellow/white Taxi example
 
-\textcolor{blue}{number of inputs.}
+\r{number of inputs.}
 % example of 24hrs a day, 7 days a week = 168 inputs in a feature cross of the two.
 % TF uses a sparse representation for inputs to address this (one hot encoding and feature crosses)
 % input will only activate one input at a time, thus the input is very sparse
 
-\textcolor{blue}{It is possible that the feature cross may cause the model to overfit the data.}
+\r{It is possible that the feature cross may cause the model to overfit the data.}
 
 % TODO: show example of this happening -- X1,X2 (2 blobs ) = good, X1X1,X2X2,X1X2 = overfit
 
-\textcolor{blue}{it is possible to look at the relative weights for the inputs and determine how much each feature is contributing to the decision. This can help determine if maybe the features cross isn't necessary -- L1 regularization (see \textcolor{red}{local ref}) may work to zero out this feature as well.}
+\r{it is possible to look at the relative weights for the inputs and determine how much each feature is contributing to the decision. This can help determine if maybe the features cross isn't necessary -- L1 regularization (see \textcolor{red}{local ref}) may work to zero out this feature as well.}
 
 % TODO: implementation details and choosing the number of hashbuckets.
 % if too small, there could be collisions, "rule of thumb" 1/2sqrt(N) and 2N
@@ -67,47 +67,47 @@
 
 \subsection{Images}
 
-\textcolor{green}{TODO: Images}
+\TD{TODO: Images}
 
 
 \subsubsection{Video}
 
-\textcolor{green}{TODO: Video}
+\TD{TODO: Video}
 
 
 \subsection{Natural Language}
 
-\textcolor{green}{TODO: Natural Language}
+\TD{TODO: Natural Language}
 
 \subsubsection{Terminology}
 
-\textcolor{blue}{A {corpus}\index{corpus} is a collection of documents. {vocabulary}\index{vocabulary} is a corpus's unique words}
+\r{A {corpus}\index{corpus} is a collection of documents. {vocabulary}\index{vocabulary} is a corpus's unique words}
 
 \subsubsection{Pre-processing}
 
-\textcolor{green}{TODO: Pre-processing}
+\TD{TODO: Pre-processing}
 
-\textcolor{blue}{converting all letters to lowercase}
+\r{converting all letters to lowercase}
 
-\textcolor{blue}{stemming and lemmatization --- Condensing word forms (derived and inflected) into a single feature. These methods are used to reduce the dimensionality of the features space.}
+\r{stemming and lemmatization --- Condensing word forms (derived and inflected) into a single feature. These methods are used to reduce the dimensionality of the features space.}
 
 \paragraph{Stop Word Filtering}
 
-\textcolor{blue}{todo: removing words that are common throughout the language as well as potentially to most of the documents in a corpus. Typically stop words do not convey meaning through their meaning, but rather through their grammatical meaning.}
+\TD{todo: removing words that are common throughout the language as well as potentially to most of the documents in a corpus. Typically stop words do not convey meaning through their meaning, but rather through their grammatical meaning.}
 
 \paragraph{Tokenization}
 
-\textcolor{blue}{Tokenization is the process of splitting and grouping characters together into meaningful sequences. \textcolor{red}{If a document is tokenized, the result is a set of tokens (words).} Tokens are not limited to words however, and may also be shorter sequences like punctuation characters and affixes.}
+\r{Tokenization is the process of splitting and grouping characters together into meaningful sequences. \textcolor{red}{If a document is tokenized, the result is a set of tokens (words).} Tokens are not limited to words however, and may also be shorter sequences like punctuation characters and affixes.}
 
-\textcolor{green}{TODO: Tokenization example}
+\TD{TODO: Tokenization example}
 
 \paragraph{Lemmatization}
 
-\textcolor{green}{TODO: Lemmatization. converting words into their base form --- determining the lemma (morphological root) of an inflected word.}
+\TD{TODO: Lemmatization. converting words into their base form --- determining the lemma (morphological root) of an inflected word.}
 
 \paragraph{Stemming}
 
-\textcolor{green}{TODO: Stemming. There exist many stemming algorithms. Stemming removes all character patterns that appear to be affixes to a word. Note: the resulting word may or may not be a valid word e.g. \textcolor{red}{XXXXXXXX}.}
+\TD{TODO: Stemming. There exist many stemming algorithms. Stemming removes all character patterns that appear to be affixes to a word. Note: the resulting word may or may not be a valid word e.g. \textcolor{red}{XXXXXXXX}.}
 
 \subparagraph{Porter Stemming}
 
@@ -117,14 +117,14 @@
 
 \subparagraph{Bag-of-Words}
 
-\textcolor{blue}{{bag-of-words}\index{bag-of-words} similar to one-hot-encoding, it encodes words that appear in text as one feature for each word of interest. Does not encode any other information like syntax, grammar, or order of the words.}
+\r{{bag-of-words}\index{bag-of-words} similar to one-hot-encoding, it encodes words that appear in text as one feature for each word of interest. Does not encode any other information like syntax, grammar, or order of the words.}
 
-\textcolor{blue}{Bag-of-Words encodes the corpus's vocabulary as a feature vector to represent each document. The intuition for using bag-of-words is that documents that contain similar words are likely to be similar to one another.}
+\r{Bag-of-Words encodes the corpus's vocabulary as a feature vector to represent each document. The intuition for using bag-of-words is that documents that contain similar words are likely to be similar to one another.}
 
 
 \paragraph{tf-idf}
 
-\textcolor{green}{TODO: tf-idf\index{tf-idf} (Eq.\ref{eq:tf_idf_def}) Inverse Document Frequency is a measure of how common/rare a term is in a corpus --- explain importance}
+\TD{TODO: tf-idf\index{tf-idf} (Eq.\ref{eq:tf_idf_def}) Inverse Document Frequency is a measure of how common/rare a term is in a corpus --- explain importance}
 
 \begin{equation}
 {log\frac{N}{1|XXXXXXXXTODOXXXXXXXXXX|}}
@@ -145,11 +145,11 @@
 
 \subparagraph{glove}
 
-\textcolor{green}{TODO: glove}
+\TD{TODO: glove}
 
 \subparagraph{word2vec}
 
-\textcolor{green}{TODO: word2vec}
+\TD{TODO: word2vec}
 
 \subsubsection{Other Notes}
 

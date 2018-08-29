@@ -1,8 +1,8 @@
 \subsection{Optimizers}
 
-\textcolor{blue}{Estimate the values of the model's parameters that minimize the value of the cost function based on the data it observes}
+\r{Estimate the values of the model's parameters that minimize the value of the cost function based on the data it observes}
 
-\textcolor{blue}{"turning a loss function into a search strategy"}
+\r{"turning a loss function into a search strategy"}
 
 % this may belong elsewhere
 % alternatives to gradient descent 
@@ -12,45 +12,51 @@
 % pro: faster, don't need to pick the LR con: more complex
 % line search algorithm
 
+\TD{Error surface definition} --- \r{the error surface may include flat region which, in high-dimensional spaces is considered a saddle point.}
+
 \subsubsection{Gradient Descent}
 
-\textcolor{blue}{Gradient Descent --- overview --- optimization algorithm that can be used to estimate the local minimum of a function}
+\r{Gradient Descent --- overview --- optimization algorithm that can be used to estimate the local minimum of a function}
 
-\textcolor{blue}{Iteratively updates the model parameters by calculating the partial derivatives of the cost function at each step during training}
+\r{Iteratively updates the model parameters by calculating the partial derivatives of the cost function at each step during training}
 
-\textcolor{blue}{Gradient descent is only guaranteed to find the local minimum of the cost function.}
+\r{Gradient descent is only guaranteed to find the local minimum of the cost function.}
 
-\textcolor{blue}{simultaneous update.}
+\r{simultaneous update.}
 
 
 \paragraph{Batch Gradient Descent}
 
-\textcolor{blue}{batch gradient descent --- taking a step (update the weights) opposite (down) the gradient calculated from the entire training set}
+\r{batch gradient descent --- taking a step (update the weights) opposite (down) the gradient calculated from the entire training set}
 
-\textcolor{blue}{Batch gradient descent is deterministic --- will produce the same paramter values if the same dataset is used multiple times.}
+\r{Batch gradient descent is deterministic --- will produce the same paramter values if the same dataset is used multiple times.}
+
+\r{single static error surface}
 
 
 \paragraph{Stochastic Gradient Descent}
 
-\textcolor{blue}{Stochastic Gradient Descent (sometimes called iterative or on-line gradient descent) --- rather than update the weights based on the sum of the accumulated errors, the weights are updated for each training sample}
+\r{Stochastic Gradient Descent (sometimes called iterative or on-line gradient descent) --- rather than update the weights based on the sum of the accumulated errors, the weights are updated for each training sample}
 
-\textcolor{blue}{Stochastic gradient descent is deterministic --- may produce the different parameter values if the same dataset is used multiple times. May not minimize the cost function as well as gradient descent but the approximation is often ``close enough''.}
+\r{Stochastic gradient descent is deterministic --- may produce the different parameter values if the same dataset is used multiple times. May not minimize the cost function as well as gradient descent but the approximation is often ``close enough''. One potential downside is that if the approximation of the error surface is not ``good enough'' minimization could take a, relatively speaking, long time.}
+
+\r{rather than the single static error surface, the error surface is now dynamic as it is being estimated during every iteration with respect to only one training example.}
 
 
 \paragraph{Mini-batch Gradient Descent}
 
-\textcolor{blue}{mini-batch gradient descent --- compromise between batch and stochastic gradient descent where the gradient is calculated over a batch of training data}
+\r{mini-batch gradient descent --- compromise between batch and stochastic gradient descent where the gradient is calculated over a subset of training data (minibatch). The minibatch size then acts as another hyper-parameter.}
 
-\textcolor{blue}{Since the gradient is calculated on a single example, the error surface will appear noisier than if it was calculated over a batch or the entire training set.}
+\r{Since the gradient is calculated on a single example, the error surface will appear noisier than if it was calculated over a batch or the entire training set.}
 
-\textcolor{blue}{When using stochastic gradient descent, it is important to shuffle the data after each epoch.}
+\r{When using stochastic gradient descent, it is important to shuffle the data after each epoch.}
 
 
 % when looking at specific optimizers, http://ruder.io/optimizing-gradient-descent/ was a useful resource
 
 \subsection{Improved Optimizers}
 
-\textcolor{blue}{Some of the common optimizers are listed below. Additional optimizers are discussed in \textcolor{red}{local ref?}}
+\r{Some of the common optimizers are listed below. Additional optimizers are discussed in \textcolor{red}{local ref?}}
 
 \subsubsection{Momentum}
 
