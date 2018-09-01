@@ -118,6 +118,14 @@
 
 \r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation.}
 
+\r{keeps a neuron active by a hyperparameterized probability.}
+
+\r{Forces the network to learn mappings even in the absence of all the information.}
+
+\r{prevents the network from becoming too dependent on certain inputs or groups of inputs.}
+
+\r{combines \textcolor{red}{similarly to ensembling} many different nerual network architectures}
+
 % TODO: include Srivastava et al 2014 (ref on p251 of DL)
 \r{Dropout -- ref original paper (Hinton? -- inspired by bank -- that defrauding hte bank would require cooperation between employees to defraud the bank)}
 
@@ -125,11 +133,25 @@
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
-	\caption{Graph of an example function including dropout, \textcolor{green}{TODO}}
-	\label{fig:regularization_dropout_overview}
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{\TD{Graph of an example function including dropout. three seperate training iterations and how the network changes}}
+	\label{fig:regularization_dropout_overview_training}
 \end{figure}
-\TD{TODO: graph of function and it's derivative overlaid.}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{Same graph during test --- no dropout applied}}
+	\label{fig:regularization_dropout_overview_test}
+\end{figure}
+
+\r{some important notes about the implementation. The outputs at test time should be equivalent to their expected outputs at training time (which is altered due to the application of dropout).}
+
+\r{One potential solution to this problem is to scale the outputs during inference in a way that compensates for the dropout probability.  For example, if the dropout rate was set to $0.5$, then it would become necessary to halve the neurons outputs at test time in order to keep the expected output the neurons have learned during training.  However, this may not be ideal in practice since it would require scaling all the neuron outputs at test time (where performance is often critical and more important).}
+
+\r{Another, perhaps more desirable solution, would be to use \IDI{inverted dropout}. This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
 
 % helps learn ``multiple paths''/simulates ensembles
 

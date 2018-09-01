@@ -4,26 +4,57 @@
 
 \section{Introduction}
 
-\textcolor{green}{TODO: Tensorflow is an open-source library for numerical computation (not only as a deep/machine learning framework), released by google XXXXXXXXX.}
+\r{TODO: Tensorflow is an open-source library for numerical computation (not only as a deep/machine learning framework, though this does currently appear to be the primary use), released by google in 2015.}
 
-\textcolor{green}{TODO: There are many different deep learning frameworks}
+\r{originated as an internal library for Google developers.}
 
-\textcolor{green}{TODO: why use a deep learning framework}
+\r{computational graph of data flows}
 
-\section{High-level Overview of Components}
+\r{nodes represent mathematical operations}
+\r{edges represent data communication}
 
-\textcolor{green}{TODO: paras with local refs to components}
+\TD{TODO: There are many different deep learning frameworks}
 
-\textcolor{green}{TODO: Diagram of tensorflow at a high level}
+\TD{TODO: why use a deep learning framework}
 
 
 \section{TensorFlow Essentials}
 
 \subsection{API Hierarchy}
 
-\subsection{Placeholders, feed\_dict, Variables and Constants}
+\subsection{Working with data}
 
-\textcolor{blue}{using get\_variable to create the variable}
+\subsubsection{Variables}
+
+\r{when \code{tf.Variable} is called, three operations are added to the graph.}
+
+%% double check.
+\r{
+\begin{itemize}
+	\item initialization operation --- responsible for initialization scheme (e.g. \code{tf.random normal})
+	\item assignment operation --- \code{tf.assign}; responsible for assigning the initialization of the variable with the initialization scheme
+	\item variable operation --- the variable that holds the current value for the variable
+\end{itemize}
+}
+
+\r{before a variable can be used, it must first be initialized.  This is performed by running the corresponding \code{tf.assign} operation.  Note: to run all \code{tf.assign} operations, the \code{tf.global\_variables\_initializer()} can be run to initialize all global variables. Also note that to initialize local variables \code{tf.local\_variables\_initializer()} can be used. \TD{examples plus explain better} Otherwise, \code{tf.variables\_initializer(varA, varB, ...)} to initialize specified variables.}
+
+\subsubsection{Placeholder and feed\_dict}
+
+\r{a component that is populated every time the dependant operations are run. A \code{feed\_dict} is used to fills the placeholders during execution.}
+
+\subsubsection{Constants}
+
+\subsection{Operations}
+
+\r{TensorFlow operations are used to perform abstract transformations on tensors}
+
+\r{operations may have attributes that are applied or inferred before or during runtime.  Some of these attribues may include: the datatype and the name.}
+
+\r{An operation may have one or more kernels that allow for the operation to be executed efficiently on different device-specifi implementations. For example, an operation may have seperate GPU and CPU implementations.}
+
+
+\textcolor{blue}{using \code{tf.get\_variable()} to create a variable rather than \code{tf.Variable()} is recommended since \code{tf.get\_variable()} will check to see if the variable has already been created \TD{MORE -- check and link the SO comment}}
 
 \subsection{Coding Style}
 
@@ -39,14 +70,30 @@
 
 \textcolor{blue}{Why directed acyclic graph (DAG) representation? Language and Hardware Portability -- Developers get to develop programs in a high level language (like python) and have the TensorFlow execution engine execute (written in C++) the model on different platforms (targeted for exact hardware)}
 
+
+\subsubsection{scoping}
+
+\r{variable scoping is used to organize a computational graph. \TD{as a note, this is changing in tensorflow 2}}
+
+\r{mainly controlled by two functions}
+
+\r{\code{tf.get\_variable()} which will check if a variable exists then either retrieve the variable or create a new variable if it doesn't and \code{tf.varible\_scope()} that manages the namespace and determines the scope which the operation will reside.}
+
 \subsection{Sessions}
 
-\textcolor{blue}{TODO: Sessions.}
+\r{The computation graph is interfaced by a program through the use of a \IDI{session} --- including building, initializing, and running the graph}
+
+\r{\code{sess.run()} traverses the computational graph from the root (the operation passed) to identify all dependencies of the intended operation and that all the \code{place\_holder} operations are filled by a \code{feed\_dict} before then executing all operations back to the root operation which.}
 
 \subsection{Tensors}
 
 \textcolor{blue}{TODO: what is a tensor. Tensor --- an n dimensional array of data. they ``flow" through the (directed, acyclic) graph --- hence, TensorFlow \textcolor{red}{local ref to tensor/matrix}}
 
+\section{High-level Overview of Components}
+
+\TD{TODO: paras with local refs to components}
+
+\TD{TODO: Diagram of tensorflow at a high level}
 
 
 \section{Workflow}

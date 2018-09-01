@@ -45,9 +45,49 @@ session = tf.Session(config=myConfig)
 
 \subsection{Device Placement}
 
-\textcolor{blue}{A \textit{dynamic placer} algorithm is presented in the {TensorFlow whitepaper}~\cite{abadi2016tensorflow_device_placement} that is capable of automatically distributing operations across devices. This algorithm takes into consideration  estimates of the sizes of input and output tensors, computation time for each node, \textcolor{green}{OTHERS - TODO:read entire paper}.}
+\r{A \textit{dynamic placer} algorithm is presented in the {TensorFlow whitepaper}~\cite{abadi2016tensorflow_device_placement} that is capable of automatically distributing operations across devices. This algorithm takes into consideration  estimates of the sizes of input and output tensors, computation time for each node, \textcolor{green}{OTHERS - TODO:read entire paper}.}
 
-\textcolor{blue}{There is another (manual) placer called a \textit{simple placer}.}
+\r{There is another (manual) placer called a \textit{simple placer}.}
+
+
+\r{it is possible to manually  . If we want to log and inspect the which operations are being placed on which devices the TensorFlow session can be initialized wiht \code{log\_device\_placement} set to \code{true}. This would look similar to the following example: }
+
+\begin{lstlisting}[style=pyInStyle]
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+\end{lstlisting}
+
+\r{to manually select the devices, \code{tf.device()} can be used. Devices on a machine are labeled according to the shcme indicated below.}
+
+\r{\begin{itemize}
+		\item \code{/cpu:0} -- the first cpu on the machine
+		\item \code{/cpu:1} -- the second cpu on the machine
+		\item \code{/cpu:2} -- the third cpu on the machine
+		\item \code{/gpu:0} -- the first gpu on the machine
+		\item \code{/gpu:1} -- the second gpu on the machine
+\end{itemize}}
+
+\r{an example may look similar to the follwing}
+
+\begin{lstlisting}[style=pyInStyle]
+with device('/gpu:1'):
+	# operations to be completed with the indicated device
+\end{lstlisting}
+
+\r{This should be used carefully though since if the device is not available an error will be thrown (for instance, if you were to run the same script on different machines with different device configurations and resources.).  One way around this is to set the \code{allow\_soft\_placement} flag to true.}
+
+\begin{lstlisting}[style=pyInStyle]
+sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True))
+\end{lstlisting}
+
+
+\TD{Example here of a multi device placement and execution.}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{\TD{example of the multi deviceplacement code in diagram form (preferably from tensorboard with coloring that is labeled by device)}}
+	\label{fig:tf_api_distributed_multidevice_example}
+\end{figure}
 
 % TODO: MORE...
 

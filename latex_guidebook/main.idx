@@ -35,6 +35,7 @@
 \indexentry{Voronoi region}{54}
 \indexentry{Ridge regression}{56}
 \indexentry{Tikhonov regularization}{56}
+\indexentry{inverted dropout}{59}
 \indexentry{generalized linear model}{61}
 \indexentry{Ordinary Lease Squares (OLS)}{62}
 \indexentry{Linear Least Squares}{62}
@@ -72,7 +73,8 @@
 \indexentry{sampling without replacement|see{subagging}}{92}
 \indexentry{subspace sampling}{92}
 \indexentry{blending}{93}
-\indexentry{sigmoid}{154}
-\indexentry{ReLUN}{157}
-\indexentry{manifold}{189}
-\indexentry{freezing}{190}
+\indexentry{session}{143}
+\indexentry{sigmoid}{156}
+\indexentry{ReLUN}{159}
+\indexentry{manifold}{191}
+\indexentry{freezing}{192}
