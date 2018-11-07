@@ -8,10 +8,12 @@
 
 \usepackage{makeidx}
 
+
+
 \usepackage{amssymb} % math notation (R)
 
 \usepackage{url}
-
+\usepackage[dvipsnames]{xcolor} % needs to loaded before \usepackage{markdown}
 % had to add --shell-escape to pdflex command
 \usepackage{markdown}
 %\usepackage[hashEnumerators,smartEllipses]{markdown}
@@ -19,7 +21,8 @@
 \usepackage{times} % Use PS times fonts 
 
 \usepackage{listings} % code examples
-\usepackage[dvipsnames]{xcolor} % textcolor
+ % textcolor
+
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{titlesec} % for using paragraphs as a "subsubsubsection"
@@ -29,6 +32,8 @@
 %\newcommand{\generateimage}[2]{%
 %\immediate\write18{convert.cmd #1 > #2}}
 \usepackage{graphicx}	% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+
+\usepackage{enumitem}
 
 \makeindex 
 
@@ -44,6 +49,7 @@
 
 % used to determine level of rough-drafted-ness, where r= most rough, rrr= presumably less rough (3 passes)
 \def\r#1{\textcolor{SeaGreen}{#1}}
+%SpringGreen
 \def\rr#1{\textcolor{ProcessBlue}{#1}}
 \def\rrr#1{\textcolor{NavyBlue}{#1}}
 \def\TD#1{\textcolor{green}{#1}}
@@ -51,6 +57,9 @@
 %% indexing w/it and w/o it
 \def\IDI#1{{\textit{#1}}\index{#1}}
 \def\ID#1{{#1}\index{#1}}
+
+\def\ALR{\textcolor{red}{ADD LOCAL REF}}
+
 
 
 % breaklines=true is used to wrap lines

@@ -9,32 +9,32 @@
 \indexentry{one-of-k encoding}{20}
 \indexentry{sparse vectors}{20}
 \indexentry{interquartile range}{21}
-\indexentry{kernel trick}{23}
+\indexentry{kernel trick}{22}
 \indexentry{corpus}{24}
 \indexentry{vocabulary}{24}
 \indexentry{bag-of-words}{25}
-\indexentry{tf-idf}{25}
-\indexentry{information leaks}{26}
-\indexentry{lucky split}{27}
+\indexentry{tf-idf}{26}
+\indexentry{information leaks}{27}
+\indexentry{lucky split}{28}
 \indexentry{reducible error}{30}
 \indexentry{multi-label classification}{32}
-\indexentry{Problem transformation}{32}
+\indexentry{Problem transformation}{33}
 \indexentry{inappropriate minima}{36}
-\indexentry{Grid search}{42}
-\indexentry{Randomized search}{42}
-\indexentry{peeking}{46}
-\indexentry{model capacity}{46}
+\indexentry{Grid search}{43}
+\indexentry{Randomized search}{43}
+\indexentry{peeking}{47}
+\indexentry{model capacity}{47}
 \indexentry{Overfitting}{47}
-\indexentry{Underfitting}{47}
+\indexentry{Underfitting}{48}
 \indexentry{Variance}{48}
 \indexentry{Bias}{48}
-\indexentry{Type I error}{50}
-\indexentry{Type II error}{50}
-\indexentry{Pearson's R}{53}
-\indexentry{Voronoi tessellation}{54}
-\indexentry{Voronoi region}{54}
-\indexentry{Ridge regression}{56}
-\indexentry{Tikhonov regularization}{56}
+\indexentry{Type I error}{51}
+\indexentry{Type II error}{51}
+\indexentry{Pearson's R}{54}
+\indexentry{Voronoi tessellation}{55}
+\indexentry{Voronoi region}{55}
+\indexentry{Ridge regression}{57}
+\indexentry{Tikhonov regularization}{57}
 \indexentry{inverted dropout}{59}
 \indexentry{generalized linear model}{61}
 \indexentry{Ordinary Lease Squares (OLS)}{62}
@@ -60,21 +60,21 @@
 \indexentry{data distillation}{79}
 \indexentry{reverse-mode differentiation}{81}
 \indexentry{symbolic differentiation}{81}
-\indexentry{image quantization}{85}
-\indexentry{silhouette coefficient}{87}
-\indexentry{Principal Component Analysis (PCA)}{87}
-\indexentry{Karhunen-Love Transform (KLM)}{87}
-\indexentry{covarience matrix}{87}
-\indexentry{bagging}{91}
-\indexentry{boostrap aggregating}{91}
-\indexentry{sampling with replacement|see{bagging}}{91}
-\indexentry{bootstrap samples}{91}
-\indexentry{subagging}{92}
-\indexentry{sampling without replacement|see{subagging}}{92}
-\indexentry{subspace sampling}{92}
-\indexentry{blending}{93}
-\indexentry{session}{143}
-\indexentry{sigmoid}{156}
-\indexentry{ReLUN}{159}
-\indexentry{manifold}{191}
-\indexentry{freezing}{192}
+\indexentry{image quantization}{87}
+\indexentry{silhouette coefficient}{89}
+\indexentry{Principal Component Analysis (PCA)}{89}
+\indexentry{Karhunen-Love Transform (KLM)}{89}
+\indexentry{covarience matrix}{89}
+\indexentry{bagging}{93}
+\indexentry{boostrap aggregating}{93}
+\indexentry{sampling with replacement|see{bagging}}{93}
+\indexentry{bootstrap samples}{93}
+\indexentry{subagging}{94}
+\indexentry{sampling without replacement|see{subagging}}{94}
+\indexentry{subspace sampling}{94}
+\indexentry{blending}{95}
+\indexentry{session}{145}
+\indexentry{sigmoid}{158}
+\indexentry{ReLUN}{161}
+\indexentry{manifold}{193}
+\indexentry{freezing}{194}

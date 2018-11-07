@@ -7,3 +7,50 @@
 \textcolor{blue}{LSTM}
 
 \textcolor{blue}{GRU}
+
+\r{RNNs or ``\textit{\textbf{r}}ecurrent \textit{\textbf{n}}eural \textit{\textbf{n}}etworks'' are used for a variety of purposes but are typically designed with sequences of data as an input in mind. They are similarin concept to a standard/feed-forward netowrk, with the major distinction being that they also have connections that point ``backwards'' i.e. they have connections that feed into themselves.}
+
+\r{Are capable fo working on sequences of arbitrary lengths, rather than fixed-sized inputs}
+
+\subsection{Foundation}
+
+\r{An example of an RNN diagram is shown in \TD{fig}. However, this representation is misleading since it does not show ``every'' connection in the model --- most notably, the recurrent connections.  RNNs may also be often represented in diagrams as ``unrolled'' (\TD{fig}). The unrolled RNN is easier to visualize how these recurrent connections are included.  This makes it easier to understand how each timestep is dependent on not only the current input (at the particular time step), but also dependent on ``all'' previous time steps. It is often stated that at a certain timestep (n), the output has ``memory'' since it is a function of all the previous time steps.}
+
+
+\footnotetext{the term ``all'' is emphasized here since it is the goal to include information from all previous time steps. This is true in theory, however, this is not always the case in practice. This is discussed further in \ALR{}}
+
+\subsection{Simple RNN and Recurrent Neuron}
+
+\TD{Diagram of the inside of a RNN neuron}
+
+\subsubsection{Common Use Cases}
+
+\begin{enumerate}[noitemsep,topsep=0pt]
+	\item Sequence to Sequence
+	\begin{enumerate}[noitemsep,topsep=0pt]
+		\item Sequence to Sequence
+		\item Delayed Sequence to Sequence
+	\end{enumerate}
+	\item Sequence to Vector
+\end{enumerate}
+
+
+\paragraph{Sequence to Sequence}
+
+
+\paragraph{Sequence to Sequence}
+
+
+\paragraph{Delayed Sequence to Sequence}
+
+
+\section{Common Problems}
+
+Two well known main problems with RNNs.
+
+\begin{enumerate}[noitemsep,topsep=0pt]
+	\item Maintaining states are expensive
+	\item Vanishing and/or exploding gradients
+\end{enumerate}
+
+\paragraph{Sequence to Vector}
