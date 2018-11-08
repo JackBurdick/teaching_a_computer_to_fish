@@ -32,16 +32,52 @@
 		\item Delayed Sequence to Sequence
 	\end{enumerate}
 	\item Sequence to Vector
+	\item Vector to Sequence
 \end{enumerate}
 
 
 \paragraph{Sequence to Sequence}
 
+\subparagraph{Overview}
 
-\paragraph{Sequence to Sequence}
+\TD{todo}
 
+\r{Sequence to sequence models are typically associated with translation tasks.}
+
+\r{stock prices --- a model may be given prices of a stock for a given number of days and the model will attempt to predict the prices shifted by a day in the future.}
+
+
+\paragraph{Sequence to Vector}
+
+\r{Sequence to vector models may be used to predict a vector associated with a time series}
+
+\r{all outputs are typically ignored, except for the last one.}
+
+\r{model may be given a sequence of text and attempt to predict a sentiment for a given sequence.}
+
+\subparagraph{Overview}
+
+\TD{todo}
+
+\paragraph{Vector to Sequence}
+
+\r{implementation --- model given a single value at the first timestep and (0s for the rest of the timesteps) and a sequence could be output.}
+
+\r{may be sued in image captioning --- where an image is fed to a network in the first timestep and a sequence associated with that image may be output.}
+
+\subparagraph{Overview}
+
+\TD{todo}
 
 \paragraph{Delayed Sequence to Sequence}
+
+\r{Delayed sequence to sequence models are two step models, composed of an encoder and decoder. They are typically associated with translation tasks.  In this architecture, the encoder \textit{encodes} the sequence to a vector and the decoder \textit{decodes} the vector to a sequence.}l
+
+\r{This type of model may perform better than a standard sequence to sequence model for translation since the last word or part of a sequence may influence the overall meaning of the original input.}
+
+\subparagraph{Overview}
+
+\TD{todo}
 
 
 \section{Common Problems}
