@@ -60,21 +60,21 @@
 \indexentry{data distillation}{79}
 \indexentry{reverse-mode differentiation}{81}
 \indexentry{symbolic differentiation}{81}
-\indexentry{image quantization}{87}
-\indexentry{silhouette coefficient}{89}
-\indexentry{Principal Component Analysis (PCA)}{89}
-\indexentry{Karhunen-Love Transform (KLM)}{89}
-\indexentry{covarience matrix}{89}
-\indexentry{bagging}{93}
-\indexentry{boostrap aggregating}{93}
-\indexentry{sampling with replacement|see{bagging}}{93}
-\indexentry{bootstrap samples}{93}
-\indexentry{subagging}{94}
-\indexentry{sampling without replacement|see{subagging}}{94}
-\indexentry{subspace sampling}{94}
-\indexentry{blending}{95}
-\indexentry{session}{145}
-\indexentry{sigmoid}{158}
-\indexentry{ReLUN}{161}
-\indexentry{manifold}{193}
-\indexentry{freezing}{194}
+\indexentry{image quantization}{91}
+\indexentry{silhouette coefficient}{93}
+\indexentry{Principal Component Analysis (PCA)}{93}
+\indexentry{Karhunen-Love Transform (KLM)}{93}
+\indexentry{covarience matrix}{93}
+\indexentry{bagging}{97}
+\indexentry{boostrap aggregating}{97}
+\indexentry{sampling with replacement|see{bagging}}{97}
+\indexentry{bootstrap samples}{97}
+\indexentry{subagging}{98}
+\indexentry{sampling without replacement|see{subagging}}{98}
+\indexentry{subspace sampling}{98}
+\indexentry{blending}{99}
+\indexentry{session}{149}
+\indexentry{sigmoid}{162}
+\indexentry{ReLUN}{165}
+\indexentry{manifold}{197}
+\indexentry{freezing}{198}
