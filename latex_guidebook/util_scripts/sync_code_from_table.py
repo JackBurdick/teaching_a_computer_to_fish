@@ -17,7 +17,10 @@ def create_latex_entry(code_list, language="pyInStyle"):
         code_block.append("\\begin{markdown}\n")
         code_block.extend(code_list)
         code_block.append("\\end{markdown}\n")
-    
+    elif language == "python":
+        code_block.append("\\begin{python}\n")
+        code_block.extend(code_list)
+        code_block.append("\\end{python}\n")
     else:
         code_block.append("\\begin{lstlisting}[style="+language+"]\n")
         code_block.extend(code_list)
@@ -53,23 +56,40 @@ def create_new_tex_file_data(sync_id, l_path, code_block, language="pyInStyle"):
                 break
         if code_idx:
             # handling a pre-existing code block vs new code block
-            if data[code_idx].strip() == "\\begin{lstlisting}[style="+language+"]":
-                end_found = False
-                for idx, line in enumerate(data[code_idx:]):
-                    clean = line.strip()
-                    if clean.strip() == "\\end{lstlisting}":
-                        end_found = True
-                        prev_block_stop = idx+1
-                        break
-                
-                if end_found:
-                    data[code_idx: code_idx+prev_block_stop] = code_block
+            if language == "python":
+                if data[code_idx].strip() == "\\begin{python}":
+                    end_found = False
+                    for idx, line in enumerate(data[code_idx:]):
+                        clean = line.strip()
+                        if clean.strip() == "\\end{python}":
+                            end_found = True
+                            prev_block_stop = idx+1
+                            break
+                    if end_found:
+                        data[code_idx: code_idx+prev_block_stop] = code_block
+                    else:
+                        print("ERROR!, no stop code found for code block {}".format(sync_id))
                 else:
-                    print("ERROR!, no stop code found for code block {}".format(sync_id))
+                    # embed new code block
+                    data[code_idx: code_idx] = code_block
 
             else:
-                # embed new code block
-                data[code_idx: code_idx] = code_block
+                if data[code_idx].strip() == "\\begin{lstlisting}[style="+language+"]":
+                    end_found = False
+                    for idx, line in enumerate(data[code_idx:]):
+                        clean = line.strip()
+                        if clean.strip() == "\\end{lstlisting}":
+                            end_found = True
+                            prev_block_stop = idx+1
+                            break
+                    
+                    if end_found:
+                        data[code_idx: code_idx+prev_block_stop] = code_block
+                    else:
+                        print("ERROR!, no stop code found for code block {}".format(sync_id))
+                else:
+                    # embed new code block
+                    data[code_idx: code_idx] = code_block
         else:
             print("ERROR: code not found: {}".format(sync_id))
             return None, None
@@ -139,26 +159,44 @@ def include_output_block(sync_id, data, fmt_out_block, entry_point, language="py
     # go to next line
     entry_point += 1
 
-    # handling a pre-existing code block vs new code block
-    if data[entry_point].strip() == "\\begin{lstlisting}[style="+language+"]":
-        end_found = False
-        for idx, line in enumerate(data[entry_point+1:]):
-            clean = line.strip()
-            if clean.strip() == "\\end{lstlisting}":
-                end_found = True
-                block_stop_loc = idx+1
-                break
-        
-        if end_found:
-            data[entry_point: entry_point+block_stop_loc+1] = fmt_out_block
-            return data, entry_point+block_stop_loc+1
-        else:
-            print("ERROR!, no stop code found for code block {}".format(sync_id))
+    #print("woof")
 
-    else:
-        # embed new code block
-        data[entry_point: entry_point] = fmt_out_block
-        return data, entry_point+len(fmt_out_block)
+    # handling a pre-existing code block vs new code block
+    if language == "python":
+        if data[entry_point].strip() == "\\begin{python}\n":
+            end_found = False
+            for idx, line in enumerate(data[entry_point+1:]):
+                clean = line.strip()
+                if clean.strip() == "\\end{python}\n":
+                    end_found = True
+                    block_stop_loc = idx+1
+                    break
+            
+            if end_found:
+                data[entry_point: entry_point+block_stop_loc+1] = fmt_out_block
+                return data, entry_point+block_stop_loc+1
+            else:
+                print("ERROR!, no stop code found for code block {}".format(sync_id))
+    elif len(language) > 0:
+        if data[entry_point].strip() == "\\begin{lstlisting}[style="+language+"]":
+            end_found = False
+            for idx, line in enumerate(data[entry_point+1:]):
+                clean = line.strip()
+                if clean.strip() == "\\end{lstlisting}":
+                    end_found = True
+                    block_stop_loc = idx+1
+                    break
+            #print(end_found)
+            if end_found:
+                data[entry_point: entry_point+block_stop_loc+1] = fmt_out_block
+                return data, entry_point+block_stop_loc+1
+            else:
+                print("ERROR!, no stop code found for code block {}".format(sync_id))
+
+        else:
+            # embed new code block
+            data[entry_point: entry_point] = fmt_out_block
+            return data, entry_point+len(fmt_out_block)
 
 
 def include_md_block(sync_id, data, fmt_md_block, entry_point, language="markdown"):
@@ -201,10 +239,10 @@ def include_md_block(sync_id, data, fmt_md_block, entry_point, language="markdow
 def sync_snippet(sync_id, c_path, l_path, opts):
     code_strs, target_index = get_code_from_py(sync_id, c_path)
     if code_strs:
-        fmt_code_block = create_latex_entry(code_list=code_strs, language="pyInStyle")
+        fmt_code_block = create_latex_entry(code_list=code_strs, language="python")
         new_data, loc = create_new_tex_file_data(sync_id, l_path, 
                                                          fmt_code_block, 
-                                                         language="pyInStyle")
+                                                         language="python")
     else:
         new_data = None
 

@@ -11,11 +11,11 @@
 \textcolor{blue}{The environment variable \code{CUDA\_VISIBLE\_DEVICES} can be set to define specific device access for a program. e.g. \code{CUDA\_VISIBLE\_DEVICES=0,1} would allow the program access to only GPU devices 1 and 2.  Another program could then be started with \code{CUDA\_VISIBLE\_DEVICES=2,3} that would restrict it's access to GPUs 3 and 4}
 \textcolor{blue}{For Example, if we only wanted the 3rd GPU to be accessed by a specific program, we could do the following (remember 0 based indexing):}
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 import os
 ...
 os.environ['CUDA_VISIBLE_DEVICES'] = '2'
-\end{lstlisting}
+\end{python}
 
 
 
@@ -25,22 +25,22 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 
 \textcolor{blue}{For example, if we wish to only allocate 40\% of a GPUs memory, we could do the following:}
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 myConfig = tf.ConfigProto()
 myConfig.gpu_options.per_process_gpu_memory_fraction = 0.4
 session = tf.Session(config=myConfig)
-\end{lstlisting}
+\end{python}
 
 
 \subparagraph{Allow Growth}
 
 \textcolor{blue}{There is another option when managing the device memory. Rather than set a hard threshold, it is possible to allow TensorFlow to only allocate as much memory as it needs. This can be done by setting the \code{allow\_growth} bool to \code{True}. However, use caution with this option! \textbf{Once TensorFlow allocates memory, it is never released \textcolor{red}{``to avoid memory fragmentation''} i.e. running out of memory later is possible}}
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 myConfig = tf.ConfigProto()
 myConfig.gpu_options.allow_growth = True
 session = tf.Session(config=myConfig)
-\end{lstlisting}
+\end{python}
 
 
 \subsection{Device Placement}
@@ -52,9 +52,9 @@ session = tf.Session(config=myConfig)
 
 \r{it is possible to manually  . If we want to log and inspect the which operations are being placed on which devices the TensorFlow session can be initialized wiht \code{log\_device\_placement} set to \code{true}. This would look similar to the following example: }
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
-\end{lstlisting}
+\end{python}
 
 \r{to manually select the devices, \code{tf.device()} can be used. Devices on a machine are labeled according to the shcme indicated below.}
 
@@ -68,16 +68,16 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
 \r{an example may look similar to the follwing}
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 with device('/gpu:1'):
 	# operations to be completed with the indicated device
-\end{lstlisting}
+\end{python}
 
 \r{This should be used carefully though since if the device is not available an error will be thrown (for instance, if you were to run the same script on different machines with different device configurations and resources.).  One way around this is to set the \code{allow\_soft\_placement} flag to true.}
 
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True))
-\end{lstlisting}
+\end{python}
 
 
 \TD{Example here of a multi device placement and execution.}

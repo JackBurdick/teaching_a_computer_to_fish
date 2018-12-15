@@ -20,13 +20,52 @@
 \textcolor{blue}{para about list comprehensions}
 
 % {{{py_nested_listcomp}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 matrix = [[1,2,3], [4,5,6], [7,8,9]]
 # value is multiple of 3 and array sum >= 10
 filtered = [[x for x in row if x % 3 == 0]
             for row in matrix if sum(row) >= 10]
 print(filtered)
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+[[6], [9]]
 \end{lstlisting}
+\begin{markdown}
+Using nested list comprehensions is possible but gets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
+\end{markdown}
+\begin{python}
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+# value is multiple of 3 and array sum >= 10
+filtered = [[x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) >= 10]
+print(filtered)
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+[[6], [9]]
+\end{lstlisting}
+\begin{markdown}
+Using nested list comprehensions is possible but gets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
+\end{markdown}
+\begin{python}
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+# value is multiple of 3 and array sum >= 10
+filtered = [[x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) >= 10]
+print(filtered)
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+[[6], [9]]
+\end{lstlisting}
+\begin{markdown}
+Using nested list comprehensions is possible but gets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
+\end{markdown}
+\begin{python}
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+# value is multiple of 3 and array sum >= 10
+filtered = [[x for x in row if x % 3 == 0]
+            for row in matrix if sum(row) >= 10]
+print(filtered)
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 [[6], [9]]
 \end{lstlisting}
@@ -39,7 +78,7 @@ Using nested list comprehensions is possible but gets a little messy -- the rule
 \textcolor{blue}{Append vs extend.}
 
 % {{{py_app_v_ext}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 x = [1, 2, 3]
 x.append([4, 5])
 print("Append: {}".format(x))
@@ -47,7 +86,46 @@ print("Append: {}".format(x))
 x = [1, 2, 3]
 x.extend([4, 5])
 print("Extend: {}".format(x))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+Append: [1, 2, 3, [4, 5]]
+Extend: [1, 2, 3, 4, 5]
 \end{lstlisting}
+\begin{python}
+x = [1, 2, 3]
+x.append([4, 5])
+print("Append: {}".format(x))
+
+x = [1, 2, 3]
+x.extend([4, 5])
+print("Extend: {}".format(x))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+Append: [1, 2, 3, [4, 5]]
+Extend: [1, 2, 3, 4, 5]
+\end{lstlisting}
+\begin{python}
+x = [1, 2, 3]
+x.append([4, 5])
+print("Append: {}".format(x))
+
+x = [1, 2, 3]
+x.extend([4, 5])
+print("Extend: {}".format(x))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+Append: [1, 2, 3, [4, 5]]
+Extend: [1, 2, 3, 4, 5]
+\end{lstlisting}
+\begin{python}
+x = [1, 2, 3]
+x.append([4, 5])
+print("Append: {}".format(x))
+
+x = [1, 2, 3]
+x.extend([4, 5])
+print("Extend: {}".format(x))
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 Append: [1, 2, 3, [4, 5]]
 Extend: [1, 2, 3, 4, 5]
@@ -71,7 +149,7 @@ Extend: [1, 2, 3, 4, 5]
 \textcolor{blue}{para about keyword only parameters}
 
 % {{{py_func_kwonly}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 def func_with_kwargs(num, a, b,
                     *,
                     div_a=False,
@@ -84,7 +162,7 @@ def func_with_kwargs(num, a, b,
 
 # print(func_with_kwargs(12, 2, 2, True, True)) # won't work
 print(func_with_kwargs(12, 2, 2, div_a=True, div_b=True))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 3.0
 \end{lstlisting}
@@ -98,7 +176,7 @@ all args after the `*` must be specified
 \textcolor{blue}{para about optional parameters}
 
 % {{{py_opt_params}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 def log(message, *values):
     if not values:
         print(message)
@@ -108,7 +186,7 @@ def log(message, *values):
 
 log("current number")
 log("current numbers are", 1, 2)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 current number
 current numbers are: 1, 2
@@ -121,10 +199,10 @@ current numbers are: 1, 2
 \textcolor{blue}{Enumerate is used for ...}
 
 % {{{py_enumerate_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 for i, letter in enumerate(["a", "b", "c", "d"]):
     print("letter[{}]={}".format(i, letter))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 letter[0]=a
 letter[1]=b
@@ -134,20 +212,16 @@ letter[3]=d
 
 
 % {{{py_enumerate_02}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 for i, letter in enumerate(["a", "b", "c", "d"], 1):
     print("letter#{}={}".format(i, letter))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 letter #1=a
 letter #2=b
 letter #3=c
 letter #4=d
 \end{lstlisting}
-\begin{markdown}
-Using nested list comprehensions is possible but tgets a little messy -- the rule of thumb is to not use more than 2 expressions in list comprehensions
-\end{markdown}
-
 
 \subparagraph{sorted}
 
@@ -158,19 +232,20 @@ Using nested list comprehensions is possible but tgets a little messy -- the rul
 \textcolor{blue}{para about zip}
 
 % {{{py_zip}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 pets = ["Siren", "Diesel"]
 age = [3, 2]
 for pet_info in zip(pets, age):
     print(pet_info)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 ('Siren', 3)
 ('Diesel', 2)
 \end{lstlisting}
 
+
 % {{{py_zip_longest}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 pets = ["Siren", "Diesel", "Bella"]
 age = [3, 2]
 print("---- Using zip")
@@ -180,7 +255,7 @@ for pet_info in zip(pets, age):
 print("------ using zip_longest")
 for pet_info in zip_longest(pets, age):
     print(pet_info)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 ---- Using zip
 ('Siren', 3)
@@ -204,7 +279,7 @@ for pet_info in zip_longest(pets, age):
 \textcolor{blue}{para about errors and exception handling}
 
 % {{{py_tryblock}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 try:
     # do something
 except MyException as e:
@@ -213,7 +288,8 @@ else:
     # runs when there are no exceptions
 finally:
     # always runs after try:
-\end{lstlisting}
+\end{python}
+
 
 \subsubsection{IO}
 

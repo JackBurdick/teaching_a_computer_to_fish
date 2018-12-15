@@ -51,11 +51,12 @@
 \textcolor{blue}{make\_blobs}
 
 % {{{datagen_blobs_2dcode}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 X, y = datagen.make_blobs(centers=4, n_samples=100, n_features=2,cluster_std=1.0,
                           center_box=(-10, 10),
                           random_state=42, shuffle=True)
-\end{lstlisting}
+\end{python}
+
 
 % {{{datagen_blobs_2dimg}}}
 \begin{figure}
@@ -67,9 +68,11 @@ X, y = datagen.make_blobs(centers=4, n_samples=100, n_features=2,cluster_std=1.0
 \textcolor{blue}{Data can also be generated in three (multiple) dimensions}
 
 % {{{datagen_blobs_3dcode}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 X, y = datagen.make_blobs(centers=4, n_samples=100, n_features=3, random_state=42)
-\end{lstlisting}
+\end{python}
+
+
 
 % {{{datagen_blobs_3dimg}}}
 \begin{figure}

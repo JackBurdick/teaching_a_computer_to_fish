@@ -6,66 +6,119 @@
 \subsubsection{Initialization}
 
 % {{{np_init_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20])
-\end{lstlisting}
+\end{python}
+\begin{python}
+np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20])
+\end{python}
+
 
 % {{{np_info_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 print("np_ex = {}".format(np_ex))
 print("np_ex.shape = {}".format(np_ex.shape))
 print("np_ex.dtype = {}".format(np_ex.dtype))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex = [10 11 12 13 14 15 16 17 18 19 20]
+np_ex.shape = (11,)
+np_ex.dtype = int64
 \end{lstlisting}
+\begin{python}
+print("np_ex = {}".format(np_ex))
+print("np_ex.shape = {}".format(np_ex.shape))
+print("np_ex.dtype = {}".format(np_ex.dtype))
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = [10 11 12 13 14 15 16 17 18 19 20]
 np_ex.shape = (11,)
 np_ex.dtype = int64
 \end{lstlisting}
 
+
 \subsubsection{Indexing}
 
 \textcolor{blue}{Indexing and slicing numpy arrays is similar to indexing an slicing a python \code{list}.}
 
 % {{{np_index_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 print("np_ex[3] = {}".format(np_ex[3]))
 print("np_ex[-1] = {}".format(np_ex[-1]))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex[3] = 13
+np_ex[-1] = 20
 \end{lstlisting}
+\begin{python}
+print("np_ex[3] = {}".format(np_ex[3]))
+print("np_ex[-1] = {}".format(np_ex[-1]))
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex[3] = 13
 np_ex[-1] = 20
 \end{lstlisting}
 
+
 % {{{np_index_02}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 print("np_ex[:] = {}".format(np_ex[:]))
 print("np_ex[:3] = {}".format(np_ex[:3]))
 print("np_ex[3:] = {}".format(np_ex[3:]))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex[:] = [10 11 12 13 14 15 16 17 18 19 20]
+np_ex[:3] = [10 11 12]
+np_ex[3:] = [13 14 15 16 17 18 19 20]
 \end{lstlisting}
+\begin{python}
+print("np_ex[:] = {}".format(np_ex[:]))
+print("np_ex[:3] = {}".format(np_ex[:3]))
+print("np_ex[3:] = {}".format(np_ex[3:]))
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex[:] = [10 11 12 13 14 15 16 17 18 19 20]
 np_ex[:3] = [10 11 12]
 np_ex[3:] = [13 14 15 16 17 18 19 20]
 \end{lstlisting}
 
+
 % {{{np_index_03}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 print("np_ex[::2] = {}".format(np_ex[::2]))
 print("np_ex[::-1] = {}".format(np_ex[::-1]))
 print("np_ex[::-3] = {}".format(np_ex[::-3]))
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex[::2] = [10 12 14 16 18 20]
+np_ex[::-1] = [20 19 18 17 16 15 14 13 12 11 10]
+np_ex[::-3] = [20 17 14 11]
 \end{lstlisting}
+\begin{python}
+print("np_ex[::2] = {}".format(np_ex[::2]))
+print("np_ex[::-1] = {}".format(np_ex[::-1]))
+print("np_ex[::-3] = {}".format(np_ex[::-3]))
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex[::2] = [10 12 14 16 18 20]
 np_ex[::-1] = [20 19 18 17 16 15 14 13 12 11 10]
 np_ex[::-3] = [20 17 14 11]
 \end{lstlisting}
 
-\subsubsection{Datatypes}
 
 % {{{np_dtypearg_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20], dtype=np.float64)
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex.dtype = float64
 \end{lstlisting}
+\begin{markdown}
+Using dtype to specify the type
+\end{markdown}
+\begin{python}
+np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20], dtype=np.float64)
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex.dtype = float64
 \end{lstlisting}
@@ -74,16 +127,27 @@ Using dtype to specify the type
 \end{markdown}
 
 
+
 % {{{np_dtype_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.array([10,11.,12,13,14,15,16,17,18,19,20])
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex.dtype = float64
 \end{lstlisting}
 \begin{markdown}
 Note what happens if just one is specified as a float
 \end{markdown}
+\begin{python}
+np_ex = np.array([10,11.,12,13,14,15,16,17,18,19,20])
+\end{python}
+\begin{lstlisting}[style=pyOutStyle]
+np_ex.dtype = float64
+\end{lstlisting}
+\begin{markdown}
+Note what happens if just one is specified as a float
+\end{markdown}
+
 
 
 \textcolor{blue}{The most common types will be the \code{bool}, \code{int64}, and the \code{float64} }
@@ -113,9 +177,9 @@ Note what happens if just one is specified as a float
 \paragraph{zeros}
 
 % {{{np_zeros_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.zeros(shape=(3,6))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = 
 [[0. 0. 0. 0. 0. 0.]
@@ -128,9 +192,9 @@ np_ex.dtype = float64
 \paragraph{ones}
 
 % {{{np_ones_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.ones((3,6))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = 
 [[1. 1. 1. 1. 1. 1.]
@@ -140,12 +204,13 @@ np_ex.shape = (3, 6)
 np_ex.dtype = float64
 \end{lstlisting}
 
+
 \paragraph{empty}
 
 % {{{np_empty_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.empty((2,2))
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = 
 [[2.72876563e+114 5.58294180e-322]
@@ -157,12 +222,13 @@ np_ex.dtype = float64
 The output will vary
 \end{markdown}
 
+
 \paragraph{eye}
 
 % {{{np_eye_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.eye(3)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = 
 [[1. 0. 0.]
@@ -176,12 +242,13 @@ Identity matrix
 \end{markdown}
 
 
+
 \paragraph{full}
 
 % {{{np_full_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 np_ex = np.full((3,3), 9)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 np_ex = 
 [[9 9 9]
@@ -199,22 +266,21 @@ Constant
 \textcolor{blue}{\code{asarray} will convert a python \code{list} to an numpy array}
 
 % {{{np_asarray_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 some_list = [1,2,3,4,5,6,7]
 list_as_arr = np.asarray(some_list)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 some_list: [1, 2, 3, 4, 5, 6, 7]
 list_as_arr: [1 2 3 4 5 6 7]
 list_as_arr.shape: (7,)
 \end{lstlisting}
 
-\paragraph{arange}
 
 % {{{np_arange_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 vals_1D = np.arange(27)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 vals_1D = 
 [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
@@ -225,16 +291,14 @@ vals_1D.shape = (27,)
 .arange will create a 1D array in the range [0,value)
 \end{markdown}
 
-
-
 \subsubsection{Reshape}
 
 \textcolor{blue}{\code{reshape} can be used to reshape a matrix.}
 
 % {{{np_reshape_01}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 vals_2D = vals_1D.reshape(9,3)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 vals_2D = 
 [[ 0  1  2]
@@ -250,10 +314,11 @@ vals_2D.shape = (9, 3)
 \end{lstlisting}
 
 
+
 % {{{np_reshape_02}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 vals_2D = vals_1D.reshape(3,9)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 vals_2D = 
 [[ 0  1  2  3  4  5  6  7  8]
@@ -263,10 +328,11 @@ vals_2D.shape = (3, 9)
 \end{lstlisting}
 
 
+
 % {{{np_reshape_03}}}
-\begin{lstlisting}[style=pyInStyle]
+\begin{python}
 vals_3D = vals_1D.reshape(3,3,3)
-\end{lstlisting}
+\end{python}
 \begin{lstlisting}[style=pyOutStyle]
 vals_3D = 
 [[[ 0  1  2]
