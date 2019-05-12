@@ -8,39 +8,158 @@
 
 \r{project the raw high-dimensuional input data into  a lower-dimensional space by only \TD{iteratively removing the least explainatory dimensions.}}
 
-\TD{Two major branches of dimensionality --- linear and nonlinear}
+\TD{Two major branches of dimensionality --- linear and nonlinear (manifold). The difference is in the projection, one is linear and the other is, you guessed it, nonlinear.}
 
 \subsection{Principal Component Analysis}
 
 \textcolor{green}{{Principal Component Analysis (PCA)}\index{Principal Component Analysis (PCA)} may also be known as the {Karhunen-Love Transform (KLM)}\index{Karhunen-Love Transform (KLM)} }
 
+\textcolor{red}{eigen-decomposition of the covariance matrix}
+
 %p232[220] of Masstering ML w/SKL
-\textcolor{red}{``PCA is most useful when'the variance of the dataset is distributed unevenly across the dimensions'' }
+\textcolor{red}{``PCA is most useful whe 'the variance of the dataset is distributed unevenly across the dimensions'' }
 
 % TODO: get var/covar defs (currently in regression tex)
 \textcolor{blue}{carvariances between each par of dimensions in a dataset are described in a {covarience matrix}\index{covarience matrix} }
 
-\r{retains as much of the variation as possible (some is lost)}
+\r{combine highly correlated features -- represent with fewer (linearly uncorrelated) features}
+
+\r{searches for linear combinations in all input variables --- retains as much of the variation (salient information) as possible (some is lost)}
 
 \TD{several variants --- incremental PCA, nonlinear (kernel PCA), sparse (sparse PCA)}
 
-\subsection{TODO: others}
-\TD{Singular value decomposition SVD}
+\TD{NOTE: it is important to ensure the features are on the same scale before performing PCA.}
 
-\TD{Random Projection}
+\subsubsection{Linear}
+
+\paragraph{Incremental PCA}
+
+\r{small batches.}
+
+\paragraph{Sparse PCA}
+
+\TD{generates PCs slightly differently than normal PCA. Searches for linear combinations in only some of the input variables.}
+
+\subsubsection{Nonlinear}
+
+\paragraph{Kernel PCA}
+
+\TD{more}
+
+\r{similarity funciton (kernel method). Effective when the original feature set is not linear separable}
+
+\TD{type of kernel}
+
+\TD{kernel coefficient (gamma) -- \ALR -- popular radial basis function kernel}
+
+
+\subsection{Singular value decomposition (SVD)}
+
+\TD{TODO}
+
+\TD{rank matrix}
+
+\subsection{Random Projection}
+
+\TD{TODO}
+
+\textcolor{red}{Johnson-Lindenstrauss lemma}
+
+\r{two versions: standard (gaussian random projection) and sparse (sparse random projection)}
+
+\subsubsection{Gaussian Random Projection}
+
+\r{linear projection}
+
+\subsubsection{Sparse Random Projection}
+
+\TD{TODO}
+
+\section{Nonlinear dimensionality reduction}
 
 %%%% % plus index - unsupervised method
 % see p156 of DL for more
 \TD{manifold learning (or nonlinear dimensionality reduction)--- {manifold}\index{manifold}, though having a more formal mathematical meaning, will be considered a connected region for our machine learning purposes. --- Nonlinear transormation. PCA and random projection project the data linearly from high to low dimension.}
 
+\subsection{Isomap}
+
 \TD{isomap -- type of manifold learning. estimates the geodesic or curved distance (rather than euclidean) between a point and its neighbors}
+
+\r{relative to neighbors on a manifold \textcolor{red}{rather than a plane?}}
+
+\subsection{Multidimensional Scaling (MDS)}
+
+\TD{TODO}
+
+\subsection{Locally Linear Embedding (LLE)}
+
+\r{segments data into smaller components (neighborhoods), \textcolor{red}{models each component as a linear embedding}}
+
+\r{preserves distance within neighborhoods}
+
+\TD{TODO}
+
+\subsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
+
+\TD{TODO}
 
 \TD{t-distributed stochastic neighbor embedding (t-SNE) --- non-linear --- }
 
-\TD{dictionary learning --- learning sparse representation (binary vectors) --- easily identify vectors with the most nonzero values}
+
+\r{two probability distributions, one over pairs of points in a high-dimensional space and another in a low dimensional space. minimizes the \TD{kullback-Leibler divergences} between these two probability distributions.}
+
+
+\textcolor{red}{nonconvex cost function}
+
+\r{different initializations will generate different results --- no stable solution}
+
+\textcolor{red}{HELLO}
+
+\section{Non-geometric, no distance metric}
+
+\subsection{Dictionary Learning}
+
+\TD{TODO}
+
+\r{learns sparse representation of the original data}
+
+\r{atoms --- vectors in the dictonary. vectors are binary vectors. instances are reconstructed as weighted sum of atoms. easily identify vectors with the most nonzero values}
+
+\r{the dictionary can be undercomplete or overcomplete. undercomplete: atoms $<$ features in the original dataset, or overcomplete: atoms $>$ features in the original dataset.}
+
+\TD{mini-batch version of dictionary learning}
+
+
+\subsection{independent component analysis (ICA)}
+
+\TD{Separate blended signals into individual components (signal processing)}
+
+\subsection{TODO: others}
+
 
 % TODO: find a good text on this -- this should be an in depth section
 % TODO: dataset for individual voices ina coffeehouse
-\TD{independent component analysis (ICA) --- separate blended signals into individual components (signal processing)}
+
 
 \TD{Latent Dirichlet allocation}
+
+\r{nonlinear --- multidimensional scaling (MDS), locally linear embedding (LLE), independent componenet analysis (ICA), t-distributed stochastic neighbor embedding (t-SNE), dictionary learning, random trees embedding}
+
+\subsection{Autoencoders}
+% TODO: this may not belong here
+
+\TD{discussed more in depth in \ALR}
+
+\r{reconstructs original features --- hidden layers, reduce parameters, subsequent layers learn increasingly complex relations from the preceeding layers.}
+
+\subsection{Generative Adversarial Networks}
+% TODO: this may not belong here
+
+\r{described in more detail in \ref{generative_adversarial_network}}
+
+\subsection{Hidden Markov Model}
+% TODO: this may not belong here
+
+\r{simple markov model -- states change stochastically. future states only depend on current state (not prior states)}
+
+\r{Hidden Markov model -- learn propbable next state given what is known about hte sequence of previous states}

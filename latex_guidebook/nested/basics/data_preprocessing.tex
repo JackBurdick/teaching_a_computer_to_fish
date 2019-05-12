@@ -29,17 +29,19 @@
 
 \textcolor{blue}{Don't mix magic values with values you already have. For example, if we have ratings 0-10, don't include a new column for rated vs not rated.}
 
-\subsubsection{Handling Missing Data}
+\subsection{Handling Missing Data}
 
-\paragraph{Filtering Out}
+\subsubsection{Filtering Out}
 
 \textcolor{blue}{Simply removing any entries that are missing data. This is convenient and easy but may not be practical -- any time data is being removed, potentially useful information is lost and too much data may be removed.}
 
 \textcolor{green}{TODO: Code in jupyter on how to do this with pandas and dropna -- key params - how, thresh, subset}
 
-\paragraph{Filling In}
+\subsubsection{Filling In}
 
-\textcolor{blue}{Estimating the missing data}
+\r{Estimating the missing data}
+
+\r{More detailed imputation information can be found in \ref{appendix:imputing_missing_values}}
 
 \subsubsection{Handling Categorical Data}
 
