@@ -92,12 +92,15 @@
 \section{Random Forests}
 
 % see Breiman, 2001
-\textcolor{blue}{Ensemble method. Combine various decision trees, where each tree is slightly different. Further, some may be weak learners (\textcolor{red}{local ref}) and some may be strong learners (\textcolor{red}{local ref}). The final classification will be determined by majority vote from the number of trees.}
+\r{Ensemble method. Combine various decision trees, where each tree is slightly different. Further, some may be weak learners (\textcolor{red}{local ref}) and some may be strong learners (\textcolor{red}{local ref}). The final classification will be determined by majority vote from the number of trees.}
 
 %% whoa, this needs to be re-written....
-\textcolor{blue}{The general idea behind using an ensemble of trees in a random forest, much like other ensemble methods (which are discussed more in depth in \textcolor{red}{local ref}) is that each component (decision tree in this case), though it may predict the data well, it is likely to overfit the training data, and each component, being slightly different may overfit on different features in the data and the amount overall overfitting is reduced by averaging their results.  each component (tree) randomized by either i) selecting the features to split on or ii) selecting the data to train on}
+\r{The general idea behind using an ensemble of trees in a random forest, much like other ensemble methods (which are discussed more in depth in \textcolor{red}{local ref}) is that each component (decision tree in this case), though it may predict the data well, it is likely to overfit the training data, and each component, being slightly different may overfit on different features in the data and the amount overall overfitting is reduced by averaging their results.  each component (tree) randomized by either i) selecting the features to split on or ii) selecting the data to train on}
 
-\textcolor{blue}{``soft'' prediction -- each tree provides a probability for each possible output lable and the probabilities are averaged and the class with the highest probability is predicted.}
+\r{``soft'' prediction -- each tree provides a probability for each possible output lable and the probabilities are averaged and the class with the highest probability is predicted.}
+
+% usually the square root of the total number of predictors
+\TD{number of predictors considered for each split}
 
 % implementation note
 \textcolor{blue}{It is important to set the random state and/or seed the random number generator as each random forest could have drastically different results. However, this randomness should decrease with the number of trees implemented in the forest as using more trees will lead to a more robust ensemble.}

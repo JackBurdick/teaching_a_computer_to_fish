@@ -1,12 +1,14 @@
 \section{Dimensionality Reduction}
 
-\textcolor{green}{todo: Overview}
+\r{Dimensionality reduction is typically used to reduce the dimensions in a feature representation while retaining as much information as possible.}
 
-\textcolor{blue}{Dimensionality reduction is typically used to reduce the dimensions in a feature representation while retaining as much information as possible.}
+\r{Motivation: i) mitigate issues caused by the curse of dimensionality ii) compress data iii) visualize and explore datasets and improve interpretability -- interpreting data in high dimensions is harder than in lower dimension spaces (particularly three or less). May also be used to compress data before being used by another learning algorithm.}
 
-\textcolor{blue}{Motivation: i) mitigate issues caused by the curse of dimensionality ii) compress data iii) visualize and explore datasets and improve interpretability -- interpreting data in high dimensions is harder than in lower dimension spaces (particularly three or less). May also be used to compress data before being used by another learning algorithm.}
+\r{Example --- projecting 3D data into a 2D space.}
 
-\textcolor{blue}{Example --- projecting 3D data into a 2D space.}
+\r{project the raw high-dimensuional input data into  a lower-dimensional space by only \TD{iteratively removing the least explainatory dimensions.}}
+
+\TD{Two major branches of dimensionality --- linear and nonlinear}
 
 \subsection{Principal Component Analysis}
 
@@ -17,3 +19,28 @@
 
 % TODO: get var/covar defs (currently in regression tex)
 \textcolor{blue}{carvariances between each par of dimensions in a dataset are described in a {covarience matrix}\index{covarience matrix} }
+
+\r{retains as much of the variation as possible (some is lost)}
+
+\TD{several variants --- incremental PCA, nonlinear (kernel PCA), sparse (sparse PCA)}
+
+\subsection{TODO: others}
+\TD{Singular value decomposition SVD}
+
+\TD{Random Projection}
+
+%%%% % plus index - unsupervised method
+% see p156 of DL for more
+\TD{manifold learning (or nonlinear dimensionality reduction)--- {manifold}\index{manifold}, though having a more formal mathematical meaning, will be considered a connected region for our machine learning purposes. --- Nonlinear transormation. PCA and random projection project the data linearly from high to low dimension.}
+
+\TD{isomap -- type of manifold learning. estimates the geodesic or curved distance (rather than euclidean) between a point and its neighbors}
+
+\TD{t-distributed stochastic neighbor embedding (t-SNE) --- non-linear --- }
+
+\TD{dictionary learning --- learning sparse representation (binary vectors) --- easily identify vectors with the most nonzero values}
+
+% TODO: find a good text on this -- this should be an in depth section
+% TODO: dataset for individual voices ina coffeehouse
+\TD{independent component analysis (ICA) --- separate blended signals into individual components (signal processing)}
+
+\TD{Latent Dirichlet allocation}

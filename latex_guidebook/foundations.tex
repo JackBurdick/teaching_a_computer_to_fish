@@ -42,21 +42,31 @@
 
 \chapter{Unsupervised}
 
+\r{The reality is that data is not always labeled.}
+
+\r{unsupervised learning is capable of finding hidden patterns in the underlying structure of hte data.}
+
+\r{attempts to represent data with increaingly fewer parameters}
+
 \textcolor{blue}{Discovering hidden structures or patterns in unlabeled training data.}
+
+\TD{Neighborhood-Based Methods \ref{nearest_neighbors} \r{lazy learners  -- learn how to label new instances based on proximity to existing instances}}
 
 % TODO: placement / may need to rename+restructure sections
 \textcolor{blue}{unsupervised methods may be commonly used in two main settings:}
-\begin{enumerate}
+\begin{enumerate}[noitemsep,topsep=0pt]
 	\item Data Exploration
-	\begin{itemize}
+	\begin{itemize}[noitemsep,topsep=0pt]
 		\item Visualization (clustering \textcolor{red}{local ref})
 	\end{itemize}
-	\item Preprocessing (e.g. prior to a supervised method)
-	\begin{itemize}
+	\item Preprocessing (e.g. prior to a supervised method): unsupervised pretraining may be considered a form of regularization
+	\begin{itemize}[noitemsep,topsep=0pt]
 		\item Compressing (dimensionality reduction \textcolor{red}{local ref})
 		\item Creating new/different representations
 	\end{itemize}
 \end{enumerate}
+
+r{regularization, feature engineering, detecting outliers -- also used for detecting how different new (incoming) training data is from the current distribution.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% clustering
 \input{./foundations/unsupervised/clustering}
