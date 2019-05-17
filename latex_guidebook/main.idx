@@ -62,19 +62,19 @@
 \indexentry{symbolic differentiation}{83}
 \indexentry{image quantization}{94}
 \indexentry{silhouette coefficient}{96}
-\indexentry{Principal Component Analysis (PCA)}{96}
-\indexentry{Karhunen-Love Transform (KLM)}{96}
-\indexentry{covarience matrix}{96}
+\indexentry{Principal Component Analysis (PCA)}{97}
+\indexentry{Karhunen-Love Transform (KLM)}{97}
+\indexentry{covarience matrix}{97}
 \indexentry{manifold}{98}
-\indexentry{bagging}{103}
-\indexentry{boostrap aggregating}{103}
-\indexentry{sampling with replacement|see{bagging}}{103}
-\indexentry{bootstrap samples}{103}
-\indexentry{subagging}{104}
-\indexentry{sampling without replacement|see{subagging}}{104}
-\indexentry{subspace sampling}{104}
-\indexentry{blending}{105}
-\indexentry{session}{157}
-\indexentry{sigmoid}{170}
-\indexentry{ReLUN}{173}
-\indexentry{freezing}{211}
+\indexentry{bagging}{105}
+\indexentry{boostrap aggregating}{105}
+\indexentry{sampling with replacement|see{bagging}}{105}
+\indexentry{bootstrap samples}{105}
+\indexentry{subagging}{106}
+\indexentry{sampling without replacement|see{subagging}}{106}
+\indexentry{subspace sampling}{106}
+\indexentry{blending}{107}
+\indexentry{session}{159}
+\indexentry{sigmoid}{172}
+\indexentry{ReLUN}{175}
+\indexentry{freezing}{213}

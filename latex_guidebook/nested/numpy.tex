@@ -9,9 +9,7 @@
 \begin{python}
 np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20])
 \end{python}
-\begin{python}
-np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20])
-\end{python}
+
 
 
 % {{{np_info_01}}}
@@ -25,16 +23,7 @@ np_ex = [10 11 12 13 14 15 16 17 18 19 20]
 np_ex.shape = (11,)
 np_ex.dtype = int64
 \end{lstlisting}
-\begin{python}
-print("np_ex = {}".format(np_ex))
-print("np_ex.shape = {}".format(np_ex.shape))
-print("np_ex.dtype = {}".format(np_ex.dtype))
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex = [10 11 12 13 14 15 16 17 18 19 20]
-np_ex.shape = (11,)
-np_ex.dtype = int64
-\end{lstlisting}
+
 
 
 \subsubsection{Indexing}
@@ -50,27 +39,9 @@ print("np_ex[-1] = {}".format(np_ex[-1]))
 np_ex[3] = 13
 np_ex[-1] = 20
 \end{lstlisting}
-\begin{python}
-print("np_ex[3] = {}".format(np_ex[3]))
-print("np_ex[-1] = {}".format(np_ex[-1]))
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex[3] = 13
-np_ex[-1] = 20
-\end{lstlisting}
 
 
 % {{{np_index_02}}}
-\begin{python}
-print("np_ex[:] = {}".format(np_ex[:]))
-print("np_ex[:3] = {}".format(np_ex[:3]))
-print("np_ex[3:] = {}".format(np_ex[3:]))
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex[:] = [10 11 12 13 14 15 16 17 18 19 20]
-np_ex[:3] = [10 11 12]
-np_ex[3:] = [13 14 15 16 17 18 19 20]
-\end{lstlisting}
 \begin{python}
 print("np_ex[:] = {}".format(np_ex[:]))
 print("np_ex[:3] = {}".format(np_ex[:3]))
@@ -94,28 +65,9 @@ np_ex[::2] = [10 12 14 16 18 20]
 np_ex[::-1] = [20 19 18 17 16 15 14 13 12 11 10]
 np_ex[::-3] = [20 17 14 11]
 \end{lstlisting}
-\begin{python}
-print("np_ex[::2] = {}".format(np_ex[::2]))
-print("np_ex[::-1] = {}".format(np_ex[::-1]))
-print("np_ex[::-3] = {}".format(np_ex[::-3]))
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex[::2] = [10 12 14 16 18 20]
-np_ex[::-1] = [20 19 18 17 16 15 14 13 12 11 10]
-np_ex[::-3] = [20 17 14 11]
-\end{lstlisting}
 
 
 % {{{np_dtypearg_01}}}
-\begin{python}
-np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20], dtype=np.float64)
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex.dtype = float64
-\end{lstlisting}
-\begin{markdown}
-Using dtype to specify the type
-\end{markdown}
 \begin{python}
 np_ex = np.array([10,11,12,13,14,15,16,17,18,19,20], dtype=np.float64)
 \end{python}
@@ -129,15 +81,6 @@ Using dtype to specify the type
 
 
 % {{{np_dtype_01}}}
-\begin{python}
-np_ex = np.array([10,11.,12,13,14,15,16,17,18,19,20])
-\end{python}
-\begin{lstlisting}[style=pyOutStyle]
-np_ex.dtype = float64
-\end{lstlisting}
-\begin{markdown}
-Note what happens if just one is specified as a float
-\end{markdown}
 \begin{python}
 np_ex = np.array([10,11.,12,13,14,15,16,17,18,19,20])
 \end{python}

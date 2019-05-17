@@ -2,6 +2,8 @@
 
 \r{Dimensionality reduction is typically used to reduce the dimensions in a feature representation while retaining as much information as possible.}
 
+\r{reproduce the orginal dataset from teh reduced feature set as well as possible.}
+
 \r{Motivation: i) mitigate issues caused by the curse of dimensionality ii) compress data iii) visualize and explore datasets and improve interpretability -- interpreting data in high dimensions is harder than in lower dimension spaces (particularly three or less). May also be used to compress data before being used by another learning algorithm.}
 
 \r{Example --- projecting 3D data into a 2D space.}
@@ -150,7 +152,20 @@
 
 \TD{discussed more in depth in \ALR}
 
-\r{reconstructs original features --- hidden layers, reduce parameters, subsequent layers learn increasingly complex relations from the preceeding layers.}
+\r{encoder and decoder --- trained at once}
+
+\r{May be described as a network that learns an approximation of an identity function. reconstructs original features --- hidden layers, reduce parameters (forced to learn salient features), subsequent layers learn increasingly complex relations from the preceeding layers.}
+
+\r{if given too much capacity (``too'' many parameters), the autoencoder may (likely should) simply memorize the observations.}
+
+\paragraph{Undercomplete vs Overcomplete}
+\r{undercomplete --- if the constrain encoders output to fewer dimensions than the input}
+
+\r{overcomplete --- when the encoders output dimensions are larger than the input dimensions. typically used in addition to a form of regularization.}
+
+%\paragraph{Sparse vs Dense}
+
+
 
 \subsection{Generative Adversarial Networks}
 % TODO: this may not belong here

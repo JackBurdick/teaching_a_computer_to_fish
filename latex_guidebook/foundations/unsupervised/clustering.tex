@@ -8,6 +8,7 @@
 
 \subsection{Common Algorithms}
 
+\r{Major clustering algorithms}
 \begin{itemize}[noitemsep,topsep=0pt]
 	\item k-means
 	\item hierarchical clustering
@@ -24,19 +25,23 @@
 
 \r{$k$ (positive integer less than the number of instances in the training set) specifies the number of clusters/centroids}
 
-\r{minimizes the within-cluster/group variation (also known as initeria)}
+\r{minimizes the within-cluster/group variation (also known as the initeria)}
+
+\r{the more clusters, the initeria decreases}
 
 \TD{TODO: k-means cost function}
 
-\r{important to note that K-means will not necessarily converge on the global optimum}
+\r{important to note that K-means will not necessarily converge on the global optimum. Different runs will result in slightly different cluster assignments.}
 
 \r{randomly assigns each observation to one of the k clusters}
 
 \r{reassigns obervations in order to minimize the Euclidean distance between the observation and cluster's center.}
 
-\r{lowest total sum of within-cluster variation}
+\r{several runs -- lowest total sum of within-cluster variation}
 
 \TD{TODO: variations such as mini-batch k-means}
+
+\r{}
 
 \paragraph{Local Optima}
 
@@ -60,6 +65,7 @@
 \textcolor{green}{TODO: diagram showing $k$ vs dispersion related to above cluster diagram}
 
 
+
 \subsubsection{Hierarchical Clustering}
 
 \TD{overview}
@@ -72,6 +78,9 @@
 
 \TD{figure example}
 
+% TODO: this likely diens't fit here
+\TD{Ward --- Ward's minimum variance method}
+
 \subsubsection{DBSCAN}
 
 \TD{\textbf{D}ensity-\textbf{b}ased \textbf{s}patial \textbf{c}lustering of \textbf{a}pplications with \textbf{n}oise.}
@@ -82,7 +91,9 @@
 
 \r{arbitrarily shaped clusters}
 
+\subsubsection{HDBSCAN}
 
+\r{Hierarchical DBSCAN --- groups on density then uses distance measure on the created groups iteratively}
 
 
 \subsection{Evaluating}
