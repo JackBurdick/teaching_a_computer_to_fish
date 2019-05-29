@@ -3,17 +3,17 @@
 \section{Overview}
 
 %%%%%%%%%%%%%%%%%%%%%%%% obligatory "No Free Lunch"
-I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''
+\r{I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Types of data
-\textcolor{blue}{categorical or numerical. Numerical can be discrete or continuous}
+\r{categorical or numerical. Numerical can be discrete or continuous}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Measurement Levels
-\textcolor{blue}{qualitative or quantitative.} 
+\r{qualitative or quantitative.} 
 
-\textcolor{blue}{Qualitative can be nominal (aren't numbers and can't be put in any order -- e.g. the seasons: spring, summer, fall, winter) or ordinal (groups and categories that follow a strict order -- e.g. difficult levels: hard, medium, or easy)}
+\r{Qualitative can be nominal (aren't numbers and can't be put in any order -- e.g. the seasons: spring, summer, fall, winter) or ordinal (groups and categories that follow a strict order -- e.g. difficult levels: hard, medium, or easy)}
 
-\textcolor{blue}{Quantitative are represented by numbers but can be interval (0 is meaningless -- e.g. temperature in C or F, where true zero is not 0) or ratio (has a true 0 -- e.g. temperature in K, weight or length)}
+\r{Quantitative are represented by numbers but can be interval (0 is meaningless -- e.g. temperature in C or F, where true zero is not 0) or ratio (has a true 0 -- e.g. temperature in K, weight or length)}
 
 \section{Workflow Overview / Blue Print}
 
@@ -22,7 +22,7 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 % TODO: this will need to be checked+rechecked+redone
 \r{1. explore, 2. create datasets, 3. benchmark}
-\begin{enumerate}
+\begin{enumerate}[noitemsep,topsep=0pt]
 	\item Problem definition
 	\item Hypothesis?
 	\item explore data
@@ -33,7 +33,7 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 	\item Choose measure of success
 	\item Perform baseline -- what performance is expected/realistic goal expectations/ how does a simple, well tested, classifier work?
 	\item Develop model
-	\begin{enumerate}
+	\begin{enumerate}[noitemsep,topsep=0pt]
 		\item Can you (over)fit the training data? - more data?
 		\item Fit the validation as best as possible (regularization, augmentation) (WARN: \textcolor{red}{local ref to information leak})
 	\end{enumerate}
@@ -78,57 +78,32 @@ I'm not sure it's possible to discuss machine learning without at least mentioni
 
 \section{Type of Learning}
 
-\textcolor{blue}{Three main types of machine learning: supervised, unsupervised, and reinforcement.}
+\r{Three main types of machine learning: supervised, unsupervised, and reinforcement. Semi-supervised learning is yet another area of machine learning, which lies somewhere between supervised and unsupervised learning.}
 
 % From ML for Predictive Data Analytics
 \textcolor{blue}{Another way to group types of learning -- Information-based, similarity-based, probability-based, and error-based}
 
-\subsection{Supervised}
-
-\textcolor{blue}{observe input variables with corresponding output values. A program that predicts an output for an input by learning from pairs of labeled inputs and outputs. Classification \textcolor{red}{ref} and regression \textcolor{red}{ref} are subcategories of supervised learning}
-
-\textcolor{blue}{Examples: OCR, Fraudulent banking transactions, medical images}
-
-\subsection{Unsupervised}
-
-\textcolor{blue}{observe input variables without corresponding output values and attempts to discover patterns in the data.}
-
-% p14 of mastering ml agorithms
-\textcolor{blue}{There is no error signal to measure, rather, performance metrics report some attribute of structure discovered in the data, such as the distances within and between clusters.}
-
-\textcolor{blue}{Determining whether the method learned ``something'' useful is inherently difficult --- since, by definition, there are no labels. \textcolor{green}{TODO: example}.}
 
 
-\textcolor{blue}{these methods are described in more detail in \textcolor{red}{local ref}}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Supervised Learning (\ALR)
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{observe input variables with corresponding output values. A program that predicts an output for an input by learning from pairs of labeled inputs and outputs. Classification \ALR and regression \ALR are subcategories of supervised learning}
+	\end{itemize}
+	\item Unsupervised (\ALR)
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{observe input variables without corresponding output values and attempts to discover patterns in the data. There is no error signal to measure, rather, performance metrics report some attribute of structure discovered in the data, such as the distances within and between clusters. Determining whether the method learned ``something'' useful is inherently difficult --- since, by definition, there are no labels.}
+	\end{itemize}
+	\item{Reinforcement (\ALR)}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{Reinforcement learning does not learn from labeled pairs of inputs and outputs, rather it learns from `feedback' from decisions that are not explicitly corrected. Information is still supplied to the system as to whether the networks outputs are good or bad, but no actual desired values are given. Goal -- develop an \emph{agent} that improves it's performance based on interactions with an \emph{environment} based on a \emph{reward}}
+	\end{itemize}
+	\item Semisupervised Learning (\ALR)
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{makes use of both supervised and unsupervised data.}
+	\end{itemize}
+\end{itemize}
 
-\textcolor{blue}{Examples: segmenting customers...}
- 
-% clustering
-\subsubsection{Clustering}
-
-\textcolor{blue}{Finding sub groups where observations are more similar to eachother based on some similarity measure. Clustering is sometimes referred to as ``unsupervised classification'' and is often used to explore a dataset.}
-
-\textcolor{blue}{An example of clustering may be to group a collection of documents into categories, or songs into genres.}
-
-% principal components
-\subsubsection{Unsupervised Transformations}
-
-\textcolor{blue}{Dimensionality Reduction --- where the goal is to reduce the dimensionality of the data while retaining as much as the relevant information as possible}
-
-%% topic extraction
-
-\textcolor{blue}{A high number of features may be computationally costly. Ability to generalize may be reduced if some of the features capture noise or are irrelevant to the underlying relationship. The goal could be to find the features that account for the greatest changes in the response variable}
-
-
-\subsection{Semi-supervised Learning}
-
-\textcolor{blue}{`semi-supervised learning', another type of learning, makes use of both supervised and unsupervised data.}
-
-\subsection{Reinforcement}
-
-\r{Reinforcement learning does not learn from labeled pairs of inputs and outputs, rather it learns from `feedback' from decisions that are not explicitly corrected. Information is still supplied to the system as to whether the networks outputs are good or bad, but no actual desired values are given.}
-
-\textcolor{blue}{Goal -- develop an \emph{agent} that improves it's performance based on interactions with an \emph{environment} based on a \emph{reward}}
 
 \subsection{Supervised vs Unsupervised}
 
@@ -363,58 +338,59 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Lazy Learners}
 
-\textcolor{blue}{Also known as Instance-based Learners}
+\r{Also known as Instance-based Learners}
 
-\textcolor{blue}{do not spend time training, but may predict responses slowly (relatively) compared to eager learners}
+\r{do not spend time training, but may predict responses slowly (relatively) compared to eager learners}
 
-\textcolor{blue}{Lazy learners store the training dataset with little to no processing.}
+\r{Lazy learners store the training dataset with little to no processing.}
 
 
 \subsection{Generative vs Discriminative Models}
 
-\textcolor{green}{TODO: Generative vs Discriminative models overview}
-%\textcolor{blue}{}
+\TD{TODO: Generative vs Discriminative models overview}
+
 
 \subsubsection{Discriminative Models}
 
-\textcolor{green}{TODO: Discriminative Models --- learn a decision boundary that is used to \textit{discriminate} between classes. There exist both probabilistic and non-probabilistic discriminative models}
+\r{learn a decision boundary that is used to \textit{discriminate} between classes. There exist both probabilistic and non-probabilistic discriminative models}
 
 \paragraph{Probabilistic Discriminative}
 
-\textcolor{blue}{Probabilistic discriminative models learn to estimate the conditional probability i.e. which class is most probable given the input features.}
+\r{Probabilistic discriminative models learn to estimate the conditional probability i.e. which class is most probable given the input features.}
 
 \paragraph{Non-probabilistic Discriminative}
 
-\textcolor{blue}{Non-probabilistic discriminative models directly map features to classes.}
+\r{Non-probabilistic discriminative models directly map features to classes.}
 
 \subsubsection{Generative Models}
 
 % see p129[117] of Mastering ML w/SKL
-\textcolor{green}{TODO: Generative Models --- do not learn a decision boundary, rather, they model the joint probability distribution of the features and classes i.e. they model how the classes generate features. Then, using Bayes' theorem, they are able to estimate the conditional probability of a class given the features.}
+\TD{TODO: Generative Models --- do not learn a decision boundary, rather, they model the joint probability distribution of the features and classes i.e. they model how the classes generate features. Then, using Bayes' theorem, they are able to estimate the conditional probability of a class given the features.}
 
 
 % see p130[118] of Mastering ML w/SKL
-\textcolor{blue}{One advantage of generative models is that they can be used to generate new examples of data}
+\r{One advantage of generative models is that they can be used to generate new examples of data}
 
 \subsection{Strong vs Weak Learners}
 
-\textcolor{green}{TODO: Strong vs Weak learners (classifier, predictor, etc.) overview}
+\TD{TODO: Strong vs Weak learners (classifier, predictor, etc.) overview}
 %\textcolor{blue}{}
 
-\subsubsection{Strong Learners}
-
-\textcolor{green}{TODO: Strong Learners are models that are arbitrarily better than weak learners.}
-
-\subsubsection{Weak Learners}
-
-\textcolor{green}{TODO: Weak Learners are models (typically simple models) that perform only slightly better than random chance.} \textcolor{blue}{typically used in ensemble methods --- TODO: overview - discussed in more detail in \textcolor{red}{local ref?}}
-
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Strong Learners
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{Strong Learners are models that are arbitrarily better than weak learners.}
+	\end{itemize}
+	\item Weak Learners
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{Models (typically simple models) that perform only slightly better than random chance. Typically used in ensemble methods (discussed in more detail in \ALR)}
+	\end{itemize}
+\end{itemize}
 
 \section{Online Learning}
 
 % See p.246 of Understanding Machine learning
 \textcolor{blue}{difference to \textcolor{red}{PAC learning?}}
-
 
 
 \section{Kernel Methods}
