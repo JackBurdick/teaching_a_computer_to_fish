@@ -3,7 +3,8 @@
 \section{Overview}
 
 %%%%%%%%%%%%%%%%%%%%%%%% obligatory "No Free Lunch"
-\r{I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''}
+% TODO: there is more to the no free lunch than simply this.
+\r{I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''~\cite{wolpert1997no}}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Types of data
 \r{categorical or numerical. Numerical can be discrete or continuous}
@@ -41,23 +42,6 @@
 	\item Evaluate
 \end{enumerate}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%% Bias
-\input{./nested/basics/bias}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% Acquiring Data
-\input{./nested/basics/acquiring_data}
-
-%%%%%%%%%%%%%%%%%%%%%%%% Data Pre-processing
-\input{./nested/basics/data_preprocessing}
-
-%%%%%%%%%%%%%%%%%%%%%%%% Data Type Considerations + Feature Extraction
-\input{./nested/basics/data_type_considerations}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% Data sampling and partitioning
-\input{./nested/basics/sampling_partitioning}
 
 \section{Some Terms}
 
@@ -228,7 +212,10 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \paragraph{Gradient Descent}
 
-\r{\textcolor{green}{TODO: is this the first time I've talked about this?}. Finding the weight values of a sum-of-squares error function can be found explicityly in terms of the \TD{pseudo inverse of a matrix} (if a linear network). However, if a non-liear activation fuction is used, then the closed form of a solution is no longer possible.}
+\r{repeatedly choosing and moving toward a descent direction until convergence} \TD{local descent may be another name}. \TD{there are many schemes for choosing the size of the step, discussed further in \ALR.}
+
+%\r{\textcolor{green}{TODO: is this the first time I've talked about this?}. Finding the weight values of a sum-of-squares error function can be found explicitly in terms of the \TD{pseudo inverse of a matrix} (if a linear network).}
+% However, if a non-linear activation fuction is used, then the closed form of a solution is no longer possible ? % what is the source for this?
 
 \r{If a derivative of the activation function is differentiable, the derivatives of the error function with respect to the weight parameters can then be evaluated. The derivatives can then be used by gradient-based optimization algorithms to find the minimum of the error function \TD{local ref - sec on optimizers}}
 
@@ -237,10 +224,14 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Global vs Local Minima}
 
+\ALR to calculus section
+
 % TODO: this needs to be placed elsewhere
 \textcolor{blue}{show how a simple problem may get "stuck" in a local mimima (plot decision boundary for 2D feature space) and show how it changes with different initialization (use different random seeds). }
 
 \textcolor{blue}{{inappropriate minima}\index{inappropriate minima} -- don't reflect the relationship between features and output and/or don't generalize well.}
+
+\r{a local minimum will have a zero derivative, as it is not possible for a nonzero derivative to be a mimima.  However, just because a point has a nonzero derivative, it does not mean that it is a minima, it could also be local maxima or an inflection point. A positive second derivative would indicate that the point is a local minima.}
 
 \section{Quality of Fit}
 
@@ -478,7 +469,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 %%%%%%%%%%%%%%%%%%%%%%%% Optimizers
 
-\section{Estimating Model Parameters}
+\chapter{Estimating Model Parameters}
 
 \textcolor{green}{Iterative Estimation vs Calculation}
 

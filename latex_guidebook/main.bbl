@@ -102,6 +102,11 @@
   training for gradient descent learning}, Neural Networks, 16 (2003),
   pp.~1429--1451.
 
+\bibitem{wolpert1997no}
+{\sc D.~H. Wolpert, W.~G. Macready, et~al.}, {\em No free lunch theorems for
+  optimization}, IEEE transactions on evolutionary computation, 1 (1997),
+  pp.~67--82.
+
 \bibitem{zeiler2012adadelta}
 {\sc M.~D. Zeiler}, {\em Adadelta: an adaptive learning rate method}, arXiv
   preprint arXiv:1212.5701,  (2012).

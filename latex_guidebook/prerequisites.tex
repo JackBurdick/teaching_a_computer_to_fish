@@ -1,13 +1,13 @@
 \chapter{Prerequisites}
 
-\textcolor{blue}{The following sections are a non-exhaustive, brief, refresher on some of the important underlying concepts and methodologies used by later concepts. Resources to further explore and learn these concepts are shared.}
+\r{The following sections are a non-exhaustive refresher on some of the important underlying concepts underpinning later concepts. Resources to further explore and learn these concepts are shared.}
 
-\textcolor{blue}{But first, let's start by answering the million dollar question: what the heck is a tensor?  {Tensors}\index{tensor} are a generalization of matrices and can have an arbitrary number of dimensions (axis). The number of axes tensors of a tensor is also called the {rank}\index{rank}.}
+\r{But first, let's start by answering the million dollar question: what is a tensor?  {Tensors}\index{tensor} are a generalization of matrices and can have an arbitrary number of dimensions (axis). The number of axes in a tensor is also called the {rank}\index{rank} of the tensor. For example, a $224\times224\times3$ image, would be considered a rank three tensor. If the batch dimension were included, ($n\times224\times224\times3$, where $n$ is the number of samples in a batch), we would have a rank four tensor.}
 
 
 \section{Math Notation}
 
-\textcolor{blue}{Depending on the resource, the level of formal math education required to understand a passage may vary greatly. In order to demystify some of the resources that do not expand on the proofs and notations, below are some of the symbols and XXXXX used in math notation and their interpretation in simple text/natural language form.}
+\r{Depending on the resource, the level of formal math education required to understand a se tion may vary greatly. In order to demystify some of the resources that do not expand on the proofs and notations, below are some of the symbols and XXXXX used in math notation and their interpretation in simple text/natural language form.}
 
 \textcolor{green}{TODO: Show symbols and examples in both equation and simple text/natural language form.}
 
@@ -15,9 +15,11 @@
 
 \section{Calculus}
 
-\textcolor{yellow}{Don't worry we won't be proving any theorems and I won't be assigning 45 questions due tomorrow. But, there is some basic terminology that should be revisited.}
+% TODO: tie this to loss functions
 
-\textcolor{blue}{{Critical points}\index{Critical points} or {stationary points}\index{stationary points} are points where the derivative is equal to zero and therefore doesn't provide any useful information about the gradient/slope (which direction and how far to move)}
+\r{We won't be proving any theorems and we won't assign 45 questions due tomorrow. But, there is some basic terminology that should be revisited.}
+
+\r{{Critical points}\index{critical points} or {stationary points}\index{stationary points} are points where the derivative is equal to zero and therefore doesn't provide any useful information about the gradient/slope (which direction and how far to move)}
 
 \begin{figure}
 	\centering
@@ -35,6 +37,8 @@
 	\item \textcolor{blue}{saddle point} -- 
 \end{itemize}
 
+
+% global + local min (strong and weak), inflection point
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
@@ -45,26 +49,27 @@
 \end{figure}
 
 
-\textcolor{blue}{Functions may have many local minimal and plateaus. The point at which the absoluet lowest value is considered the {global minimum}\index{global minimum}. Similarly a value located at the largest absolute value of the function is considered the {global maximum}\index{global maximum}. }
+
+\r{Local minimal are minimal values within a local region. It is possible, nearly certain actually, that a loss function for a given model will have many local minima. The point at which the absolute lowest value is present is considered the {global minimum}\index{global minimum}. Similarly, a value located at the absolute largest point is considered the {global maximum}\index{global maximum}. }
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
-	\caption{Graph of an example function with many (labeled) local minima and plateaus. the global minima should also be labeled. \textcolor{green}{TODO}}
+	\includegraphics[width=0.8\textwidth]{./misc/critical_points.png}\hfil
+	\caption{Example function with labeled local and global minima.}
 	\label{fig:calc_fn_deriv}
 \end{figure}
 
 \subsection{Chain Rule}
 
-\textcolor{blue}{(not the chain rule of probability)}
+\r{(not the chain rule of probability)}
 
 
 
 \section{Boolean Logic}
 
-\textcolor{green}{TODO: background/overview on boolean logic and importance}
+\TD{TODO: background/overview on boolean logic and importance}
 
-\textcolor{green}{TODO: Examples}
+\TD{TODO: Examples}
 
 
 \section{Linear Algebra}
@@ -82,7 +87,6 @@
 \textcolor{blue}{scalar -- single value (not a vector or matrix)}
 
 \textcolor{green}{example: a single value}
-
 
 
 \subsubsection{Vectors (1D tensors)}

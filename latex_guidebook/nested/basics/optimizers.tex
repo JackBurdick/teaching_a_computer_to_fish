@@ -1,4 +1,7 @@
-\subsection{Optimizers}
+\section{Optimization}
+\label{subsec:optimization}
+
+\TD{This may need it's own chapter!}
 
 \r{Estimate the values of the model's parameters that minimize the value of the cost function based on the data it observes}
 
@@ -14,6 +17,10 @@
 
 \TD{Error surface definition} --- \r{the error surface may include flat region which, in high-dimensional spaces is considered a saddle point.}
 
+\r{Simply stepping in the direction of the steepest descent for a given location (or batch) is not always the best strategy for convergence. \TD{a figure of this would be nice}}
+
+\subsection{First-order}
+
 \subsubsection{Gradient Descent}
 
 \r{Gradient Descent --- overview --- optimization algorithm that can be used to estimate the local minimum of a function}
@@ -24,7 +31,8 @@
 
 \r{simultaneous update.}
 
-\TD{First Order (\ALR), Second Order (\ALR) optimizers}
+\TD{First Order (\ALR), Second Order (\ALR) optimizers. Second-order approximations are based on the Hessian (\ALR) or the objective function and are capable of informing not only the direction to step in, but also the step size.}
+
 
 
 \paragraph{Batch Gradient Descent}
@@ -56,21 +64,32 @@
 
 % when looking at specific optimizers, http://ruder.io/optimizing-gradient-descent/ was a useful resource
 
-\subsection{Common Optimizers}
+\subsection{second-order}
+
+\subsection{direct methods}
+
+\subsection{stochastic methods}
+
+\subsection{population methods}
+
+\subsection{Further optimization information}
+
+
+\section{Common Optimizers}
 
 \r{Some of the common optimizers are listed below. Additional optimizers are discussed in \textcolor{red}{local ref?}}
 
-\subsubsection{Momentum}
+\subsection{Momentum}
 
 \textcolor{blue}{Momentum~\cite{qian1999momentum}, will reduce the learning rate when the gradient is small}
 
-\subsubsection{RMSProp}
+\subsection{RMSProp}
 
-\subsubsection{Nesterov}
+\subsection{Nesterov}
 
 \textcolor{blue}{Nesterov accelerated gradient (NAG)}
 
-\subsubsection{Adam}
+\subsection{Adam}
 
 \textcolor{blue}{Adaptive Moment Estimation (Adam)~\cite{kingma2014adam}}
 
@@ -79,21 +98,21 @@
 %%%%%% TODO: Cut off -- these optimizers will be moved to another location (research?)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Nadam}
+\subsection{Nadam}
 
 \textcolor{blue}{Nadam (Nesterov-accelerated Adaptive Moment Estimation)~\cite{dozat2016incorporating}}
 
-\subsubsection{AdaGrad}
+\subsection{AdaGrad}
 
 \textcolor{blue}{Adagrad~\cite{duchi2011adaptive}, will assign frequently occurring features low learning rates}
 
-\subsubsection{AdaDelta}
+\subsection{AdaDelta}
 
 \textcolor{blue}{Adadelta~\cite{zeiler2012adadelta}, expands on AdaGrad by avoiding reducing the learning rate to zero.}
 
-\subsubsection{AdaMax}
+\subsection{AdaMax}
 
-\subsubsection{Ftrl}
+\subsection{Ftrl}
 
 \textcolor{blue}{``follow the regularized leader'', \textcolor{red}{CITE}, \textcolor{red}{works well on wide modes?}}
 
