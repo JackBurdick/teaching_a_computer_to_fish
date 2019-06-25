@@ -59,6 +59,34 @@
 	\label{fig:calc_fn_deriv}
 \end{figure}
 
+\subsection{Derivatives}
+
+\r{The derivative of a fuction is the rate at which the value of the function changes with respect to how the a single input changes. The derivative can be thought of as the ratio between the functions output and input. A gradient is a generalization of a derivative to multi-input (multivariate) function.}
+
+\TD{a partial derivative --- derivative with respect to one variable while all others are held constant.}
+
+
+\r{Hyperplane: A subspace that consists of one dimension less than the dimensionality of the space it occupies e.g. a line in a 2D plot, or a 2D plane in a 3D environment}
+
+\r{numerical differentiation is a process used to estimate derivatives numerically.}
+
+\r{Two main methods for differentiating $f$ using a computational graph --- forward or reverse accumulation.}
+
+\r{reverse accumulation\cite{linnainmaa1970representation} only requires a run to compute the complete gradient, but requires two passes through the graph (forward and reverse). \TD{more}}
+
+\TD{importance of reverse accumulation in backpropagation\cite{rumelhart1988learning}}
+
+\r{calculated by calculating the change over an infinitesimally small step \TD{illustration?}.}
+
+\r{in theory, the smaller the step, the accurate the derivative estimate, however, in practice, steps that become too small may result in numerical errors}
+
+\r{The step may be definited by the forward difference, the central diference, or the backward difference. \TD{figure?}}
+
+% TODO: there likely is a better source for this.
+\r{default step size is are the square (or cube) root of the machine precison for pointing point values\cite{kochenderfer2019algorithms} and are used as a balance between round-off error and step size error }
+
+\r{more information on derivatives\cite{griewank2008evaluating}}
+
 \subsection{Chain Rule}
 
 \r{(not the chain rule of probability)}

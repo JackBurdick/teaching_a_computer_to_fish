@@ -47,6 +47,10 @@
   machine learning on heterogeneous distributed systems}, arXiv preprint
   arXiv:1603.04467,  (2016).
 
+\bibitem{alber2018backprop}
+{\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
+  Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
@@ -54,6 +58,15 @@
 {\sc J.~Duchi, E.~Hazan, and Y.~Singer}, {\em Adaptive subgradient methods for
   online learning and stochastic optimization}, Journal of Machine Learning
   Research, 12 (2011), pp.~2121--2159.
+
+\bibitem{griewank2008evaluating}
+{\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
+  techniques of algorithmic differentiation}, vol.~105, Siam, 2008.
+
+\bibitem{hansen1990neural}
+{\sc L.~K. Hansen and P.~Salamon}, {\em Neural network ensembles}, IEEE
+  Transactions on Pattern Analysis \& Machine Intelligence,  (1990),
+  pp.~993--1001.
 
 \bibitem{hoffer2017train}
 {\sc E.~Hoffer, I.~Hubara, and D.~Soudry}, {\em Train longer, generalize
@@ -69,6 +82,15 @@
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
   arXiv preprint arXiv:1412.6980,  (2014).
+
+\bibitem{kochenderfer2019algorithms}
+{\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
+  Mit Press, 2019.
+
+\bibitem{linnainmaa1970representation}
+{\sc S.~Linnainmaa}, {\em The representation of the cumulative rounding error
+  of an algorithm as a taylor expansion of the local rounding errors}, Master's
+  Thesis (in Finnish), Univ. Helsinki,  (1970), pp.~6--7.
 
 \bibitem{loshchilov2016sgdr}
 {\sc I.~Loshchilov and F.~Hutter}, {\em Sgdr: stochastic gradient descent with
@@ -86,6 +108,11 @@
 {\sc A.~Ruderman, N.~Rabinowitz, A.~S. Morcos, and D.~Zoran}, {\em Learned
   deformation stability in convolutional neural networks}, arXiv preprint
   arXiv:1804.04438,  (2018).
+
+\bibitem{rumelhart1988learning}
+{\sc D.~E. Rumelhart, G.~E. Hinton, R.~J. Williams, et~al.}, {\em Learning
+  representations by back-propagating errors}, Cognitive modeling, 5 (1988),
+  p.~1.
 
 \bibitem{smith2017cyclical}
 {\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
