@@ -175,21 +175,26 @@
 \contentsline {paragraph}{\numberline {5.2.2.1.1}Batch Gradient Descent}{51}
 \contentsline {paragraph}{\numberline {5.2.2.1.2}Stochastic Gradient Descent}{51}
 \contentsline {paragraph}{\numberline {5.2.2.1.3}Mini-batch Gradient Descent}{51}
-\contentsline {subsection}{\numberline {5.2.3}second-order}{52}
-\contentsline {subsection}{\numberline {5.2.4}direct methods}{52}
-\contentsline {subsection}{\numberline {5.2.5}stochastic methods}{52}
-\contentsline {subsection}{\numberline {5.2.6}population methods}{52}
-\contentsline {subsection}{\numberline {5.2.7}Further optimization information}{52}
-\contentsline {section}{\numberline {5.3}Common Optimizers}{52}
-\contentsline {subsection}{\numberline {5.3.1}Momentum}{52}
-\contentsline {subsection}{\numberline {5.3.2}RMSProp}{52}
-\contentsline {subsection}{\numberline {5.3.3}Nesterov}{52}
-\contentsline {subsection}{\numberline {5.3.4}Adam}{52}
-\contentsline {subsection}{\numberline {5.3.5}Nadam}{52}
-\contentsline {subsection}{\numberline {5.3.6}AdaGrad}{52}
-\contentsline {subsection}{\numberline {5.3.7}AdaDelta}{53}
-\contentsline {subsection}{\numberline {5.3.8}AdaMax}{53}
-\contentsline {subsection}{\numberline {5.3.9}Ftrl}{53}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Conjugate Gradient}{52}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Momentum Descent}{52}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Nesterov Momentum Descent}{52}
+\contentsline {subsubsection}{\numberline {5.2.2.5}Adagrad Descent}{52}
+\contentsline {paragraph}{\numberline {5.2.2.5.1}Adagrad Extensions: (RMSProp, Adadelta, Adam)}{52}
+\contentsline {subparagraph}{RMSProp}{53}
+\contentsline {subparagraph}{Adadelta}{53}
+\contentsline {subparagraph}{Adam}{53}
+\contentsline {subsubsection}{\numberline {5.2.2.6}AdaMax}{53}
+\contentsline {subsubsection}{\numberline {5.2.2.7}Hypergradient Descent}{53}
+\contentsline {subsubsection}{\numberline {5.2.2.8}FTRL}{53}
+\contentsline {subsection}{\numberline {5.2.3}Nadam}{53}
+\contentsline {subsection}{\numberline {5.2.4}second-order}{53}
+\contentsline {subsubsection}{\numberline {5.2.4.1}Newton's Method}{54}
+\contentsline {subsubsection}{\numberline {5.2.4.2}Secant Method}{54}
+\contentsline {subsubsection}{\numberline {5.2.4.3}Quasi-Newton Method}{54}
+\contentsline {subsection}{\numberline {5.2.5}Direct methods}{54}
+\contentsline {subsection}{\numberline {5.2.6}stochastic methods}{54}
+\contentsline {subsection}{\numberline {5.2.7}population methods}{54}
+\contentsline {subsection}{\numberline {5.2.8}Further optimization information}{54}
 \contentsline {chapter}{\numberline {6}Evaluation}{55}
 \contentsline {subsection}{\numberline {6.0.1}Creating a Test Set}{55}
 \contentsline {subsection}{\numberline {6.0.2}Qualitative Evaluation}{56}

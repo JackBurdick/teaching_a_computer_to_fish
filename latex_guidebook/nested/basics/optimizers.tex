@@ -17,7 +17,24 @@
 
 \TD{Error surface definition} --- \r{the error surface may include flat region which, in high-dimensional spaces is considered a saddle point.}
 
+
+\r{choosing:}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Step direction
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{.}
+	\end{itemize}
+	\item Step size
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \r{.}
+	\end{itemize}
+\end{itemize}
+
 \r{Simply stepping in the direction of the steepest descent for a given location (or batch) is not always the best strategy for convergence. \TD{a figure of this would be nice}}
+
+
+
 \subsection{Descent Direction Methods}
 
 \TD{overview of descent direction methods.}
@@ -27,17 +44,21 @@
 
 \subsection{First-order}
 
-\r{first-order methods rely on the first derivative (gradient) to select direction to descend.}
+\r{first-order methods rely on the first derivative (gradient) of the objective function to select the direction to descend.}
+
+\r{The value and gradient for a location can help guide the direction to step, but this first order information does not directly guide the step size.}
 
 \subsubsection{Gradient Descent}
+% not sure this belongs right here
 
-\r{Gradient Descent --- overview --- optimization algorithm that can be used to estimate the local minimum of a function}
+\r{Gradient descent refers to descending the gradient of the objective function and is an optimization algorithm that can be used to estimate the local minimum of a function}
 
 \r{Iteratively updates the model parameters by calculating the partial derivatives of the cost function at each step during training}
 
 \r{Gradient descent is only guaranteed to find the local minimum of the cost function.}
 
 \r{simultaneous update.}
+
 
 \TD{First Order (\ALR), Second Order (\ALR) optimizers. Second-order approximations are based on the Hessian (\ALR) or the objective function and are capable of informing not only the direction to step in, but also the step size.}
 
@@ -72,59 +93,135 @@
 
 % when looking at specific optimizers, http://ruder.io/optimizing-gradient-descent/ was a useful resource
 
+% TODO: these are really subcategories/improvements of gradient descent
+
+\subsubsection{Conjugate Gradient}
+
+% gd can perform poorly in narrow valleys -- orthoganal steps
+
+\TD{include? paragraph?}
+
+\subsubsection{Momentum Descent}
+
+Momentum~\cite{qian1999momentum}
+
+\r{gradient descent can take a long time to traverse flat surfaces}
+
+\r{momentum is intuitively what it sounds like. -- can imagine a ball rolling down a hill where it gains speed as it travels down the slope.}
+
+\TD{figure of momentum}
+
+\TD{figure of gradient descent with and without momentum side by side on the same surfaces.}
+
+\subsubsection{Nesterov Momentum Descent}
+
+% ok. blast probably isn't the best choice here..
+\r{Nesterov accelerated gradient (NAG). One issue with momentum can be that the momentum may be ``too strong'' and blast through the bottom and climb the other side}
+
+\r{modifies the momentum values -- \TD{original paper}}
+
+\TD{explain how Nesterov works}
+
+\TD{figure of momentum vs Nesterov}
+
+
+
+\subsubsection{Adagrad Descent}
+% see p.77 of optimization
+
+\r{Adagrad~\cite{duchi2011adaptive}, \textcolor{red}{will assign frequently occurring features low learning rates}}
+
+\r{\textit{Ada}ptive sub\textit{grad}ient method (\textit{adagrad})}
+
+\r{apdapts a learning rate for each component. Nesterov and Momentum use the same learning rate for each component}
+
+\r{one problem is that the effective learning rate decreases}
+
+\paragraph{Adagrad Extensions: (RMSProp, Adadelta, Adam)}
+
+\TD{extension of adagrad to overcome the decreasing learning rate ...}
+
+\subparagraph{RMSProp}
+
+\r{unpublished -- from Geoff Hinton's lecture for a coursera course}
+
+\subparagraph{Adadelta}
+
+\TD{explanation}
+
+\r{Adadelta~\cite{zeiler2012adadelta}, expands on AdaGrad by avoiding reducing the learning rate to zero.}
+
+
+\subparagraph{Adam}
+% not 100% sure this belongs here
+
+\r{Adaptive Moment Estimation (Adam)~\cite{kingma2014adam}}
+
+\r{Adaptive moment estimation method (adam)}
+
+\r{similar to both RMSProp and Adadelta in that it stores the exponentially decaying squared gradient}
+
+\r{also uses an exponentially decaying gradient like momentum}
+
+% TODO:
+\TD{bias correction step (bias caused by initializing the gradient to zero?)}
+
+\subsubsection{AdaMax}
+
+\TD{TODO:}
+
+\subsubsection{Hypergradient Descent}
+
+% see p.80 of optimizers
+\TD{overview}
+
+\r{the derivative of the learning rate may be useful. A hyperparameter gradient, (Hypergradient) is what it sounds like, a derivative taken with respect to a hyperparameter.}
+
+\r{applies gradient descent to the learning rate}
+
+\TD{paper\cite{baydin2017online}}
+
+
+\subsubsection{FTRL}
+
+\TD{``follow the regularized leader'' -- TODO}
+
+
+\subsection{Nadam}
+
+\r{Nadam (Nesterov-accelerated Adaptive Moment Estimation)~\cite{dozat2016incorporating}}
+
+
+\subsubsection{AMSGrad}
+
+\r{paper\cite{reddi2019convergence}}
+
+
 \subsection{second-order}
 
-\subsection{direct methods}
+\r{use the second derivative (in univariate optimization) or the Hessian (in multivariate optimization) to help guide the direction and step size of descent methods.}
 
-\subsection{stochastic methods}
+\r{The second order information can be used to speed up convergence since it also helps determine the step size}
 
-\subsection{population methods}
+\subsubsection{Newton's Method}
+
+\subsubsection{Secant Method}
+
+\subsubsection{Quasi-Newton Method}
+
+\r{approximate Newton's method when second-order information is not directly available.}
+
+\subsection{Direct methods}
+
+\r{may also be called zero-oder, black box, pattern search, or derivative-free methods.}
+
+\subsection{Stochastic methods}
+
+\subsection{Population methods}
 
 \subsection{Further optimization information}
 
 
-\section{Common Optimizers}
-
-\r{Some of the common optimizers are listed below. Additional optimizers are discussed in \textcolor{red}{local ref?}}
-
-\subsection{Momentum}
-
-\textcolor{blue}{Momentum~\cite{qian1999momentum}, will reduce the learning rate when the gradient is small}
-
-\subsection{RMSProp}
-
-\subsection{Nesterov}
-
-\textcolor{blue}{Nesterov accelerated gradient (NAG)}
-
-\subsection{Adam}
-
-\textcolor{blue}{Adaptive Moment Estimation (Adam)~\cite{kingma2014adam}}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% TODO: Cut off -- these optimizers will be moved to another location (research?)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Nadam}
-
-\textcolor{blue}{Nadam (Nesterov-accelerated Adaptive Moment Estimation)~\cite{dozat2016incorporating}}
-
-\subsection{AdaGrad}
-
-\textcolor{blue}{Adagrad~\cite{duchi2011adaptive}, will assign frequently occurring features low learning rates}
-
-\subsection{AdaDelta}
-
-\textcolor{blue}{Adadelta~\cite{zeiler2012adadelta}, expands on AdaGrad by avoiding reducing the learning rate to zero.}
-
-\subsection{AdaMax}
-
-\subsection{Ftrl}
-
-\textcolor{blue}{``follow the regularized leader'', \textcolor{red}{CITE}, \textcolor{red}{works well on wide modes?}}
-
-
-
+\subsection{Parallelizing and distributing SGD}
 
 

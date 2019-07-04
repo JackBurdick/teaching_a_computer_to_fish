@@ -51,6 +51,11 @@
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
 
+\bibitem{baydin2017online}
+{\sc A.~G. Baydin, R.~Cornish, D.~M. Rubio, M.~Schmidt, and F.~Wood}, {\em
+  Online learning rate adaptation with hypergradient descent}, arXiv preprint
+  arXiv:1703.04782,  (2017).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
