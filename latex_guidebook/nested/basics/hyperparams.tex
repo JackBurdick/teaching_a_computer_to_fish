@@ -32,6 +32,8 @@
 
 \textcolor{green}{TODO: batch size overview}
 
+\r{anywhere from a single instance to the entire training set size.}
+
 \textcolor{blue}{optimal batch size is problem dependent}
 
 \textcolor{blue}{TODO: notebook and plots showing how the smoothness is affected when comparing batch sizes of 1 vs 10 vs 20 etc.}
@@ -39,17 +41,22 @@
 % related to shuffling - the gradients are computed on a batch and so a batch should be representative of the data
 
 %%%%% small batch size
-\textcolor{blue}{small minibatch sizes (between 2 and 32) may be better than large batch sizes~\cite{masters2018revisiting}.}
+\r{small minibatch sizes (between 2 and 32) may be better than large batch sizes~\cite{masters2018revisiting}.}
 
-\textcolor{blue}{``generalization gap'' may not be due to large mini-batches, rather, due to the number of updates made to the system~\cite{hoffer2017train}}
+\r{``generalization gap'' may not be due to large mini-batches, rather, due to the number of updates made to the system~\cite{hoffer2017train}}
 
 %%%% minibatch
-\textcolor{blue}{Batch training is almost always slower to converge than on-line/mini-batch training, which is likely due to the fact that on-line/mini-batches learning will follow the error surface, allowing for larger learning rates, and thus faster convergence~\cite{wilson2003general}.}
+\r{Batch training is almost always slower to converge than on-line/mini-batch training, which is likely due to the fact that on-line/mini-batches learning will follow the error surface, allowing for larger learning rates, and thus faster convergence~\cite{wilson2003general}.}
 
 % incrementing batchsize over time
-\textcolor{blue}{Increasing the batch size may achieve similar benefits to decaying the learning rate ~\cite{smith2017don} -- which could lead to use of larger batch sizes, reducing the number of parameter updates and therefore reducing training time.}
+\r{Increasing the batch size may achieve similar benefits to decaying the learning rate ~\cite{smith2017don} -- which could lead to use of larger batch sizes, reducing the number of parameter updates and therefore reducing training time.}
+
+\r{minibatches use the hardware more efficiently}
+
 
 \subsection{Hyper-Parameter Optimization}
+
+\r{bayesian $>$ random $>$ grid}
 
 \subsubsection{Grid Search}
 
@@ -57,10 +64,14 @@
 
 \subsubsection{Randomized Search}
 
-\textcolor{blue}{{Randomized search}\index{Randomized search} }
+\r{{Randomized search}\index{Randomized search} }
 
-\textcolor{green}{TODO: figure demonstrating difference between grid and randomized search}
+\r{TODO: figure demonstrating difference between grid and randomized search}
 
 \subsubsection{Other Methods}
 
 \textcolor{blue}{See \textcolor{red}{local ref? --- advanced methods and research}}
+
+\paragraph{Bayesian Methods}
+
+\TD{todo:}

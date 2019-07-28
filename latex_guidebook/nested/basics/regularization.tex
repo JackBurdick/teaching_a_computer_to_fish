@@ -1,6 +1,6 @@
 \chapter{Improving Generalizability}
 
-\subsection{Regularization}
+\subsection{Parameter Regularization}
 
 \r{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
 
@@ -103,19 +103,73 @@
 
 \TD{TODO: figure}.
 
-\subsubsection{Dataset Augmentation}
+
+\subsection{Dataset Augmentation}
+
+% NOTE: maybe I need to nest this?
+\r{regularization technique}
 
 \r{Arguably the best way to increase generalizability of a model is to train the model on more data. However, as readers may already be aware, this is not always easy. Collecting more data may not be time/cost effective, or even possible.}
 
 \r{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
 
+
+\r{invariances in the data}
+
+%TODO: here!
+
 \r{Dataset augmentation is \textcolor{green}{TODO}}
 
-\paragraph{Image Augmentation}
+% TODO: this might be the wrong heading.. Originally I was thinking ``spatial`` but I think that's worse
+\subsubsection{Two Dimensional Data}
+
+\r{Including Imagery}
+
+\r{flip, rotate. color/channel manipulation}
+
+\r{mixup\cite{zhang2017mixup}}
+
+\r{cutout\cite{devries2017improved}}
+
+\r{cutmix\cite{yun2019cutmix}}
+
+\TD{language -- back translation\cite{sennrich2015improving}}
+
+% TODO: blog about this: https://ai.googleblog.com/2019/07/advancing-semi-supervised-learning-with.html
+\TD{unsupervised augmentation\cite{xie2019unsupervised}}
+
+
+\subsubsection{Learning Augmentation}
+
+% TODO: not sure this belongs here
+\r{Sample Pairing\cite{inoue2018data}}
+
+\r{Smart Augmentation\cite{lemley2017smart}}
+
+\r{GAN\cite{shrivastava2017learning}}
+
+\r{population based augmentation (PBA)\cite{ho2019population}}
+
+\r{Bayesian data augmentation\cite{tran2017bayesian}}
+
+
+\paragraph{AutoAugment}
+
+\r{AutoAugment\cite{cubuk2018autoaugment}}
+
+\r{Comment that AutoAugment can be applied directly to a dataset as well as transfer the learned policies to new datasets.}
+
+\TD{figure of loop. controller, strategy, child network, update controller}
+
+\r{Fast AutoAugment\cite{lim2019fast} improves upon the original search strategy in the original AutoAugment paper.}
+
+\r{Unsupervised Augmentation}
+
+\TD{autoaugment for object detection \cite{zoph2019learning}}
 
 
 
-\subsubsection{Dropout}
+\subsection{Dropout}
 
 % TODO: explain dropout
 
@@ -132,6 +186,8 @@
 % TODO: include Srivastava et al 2014 (ref on p251 of DL)
 \r{Dropout -- ref original paper (Hinton? -- inspired by bank -- that defrauding hte bank would require cooperation between employees to defraud the bank)}
 
+\r{one way to view this is to imagine dropout as a way to push units that are not only useful inthe presence of other units and prevent units from co-adopting one another.}
+
 % TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
 
 \begin{figure}[htp]
@@ -139,7 +195,7 @@
 	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
 	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
 	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
-	\caption{\TD{Graph of an example function including dropout. three seperate training iterations and how the network changes}}
+	\caption{\TD{Graph of an example function including dropout. three separate training iterations and how the network changes}}
 	\label{fig:regularization_dropout_overview_training}
 \end{figure}
 
@@ -154,20 +210,46 @@
 
 \r{One potential solution to this problem is to scale the outputs during inference in a way that compensates for the dropout probability.  For example, if the dropout rate was set to $0.5$, then it would become necessary to halve the neurons outputs at test time in order to keep the expected output the neurons have learned during training.  However, this may not be ideal in practice since it would require scaling all the neuron outputs at test time (where performance is often critical and more important).}
 
+r{at test time, multiply the values by the expectation, not the on/off mask}
+
+\r{dropout creates an ensemble of many networks (in a cheap way)}
+
+\TD{create figure of this ensemble of many networks.}
+
 \r{Another, perhaps more desirable solution, would be to use \IDI{inverted dropout}. This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
+
+% `drop block''?
+\TD{investigate more structured dropout.}
 
 % helps learn ``multiple paths''/simulates ensembles
 
-\subsubsection{Ensemble Methods}
+\subsection{Ensemble Methods}
 
 \r{see \textcolor{red}{local ref} for more information on ensemble basics and see \textcolor{red}{local ref} for implementation details.}
 
 % TODO: find Breiman 1994 paper referenced in p249 of Deep Learning
 \r{As described in \textcolor{red}{local ref} ensemble methods act as a form of regularization by combining several different models \TD{Breiman 1994}. This often improves generalizability since the included models will often make independent, different, errors on the data.}
 
-\subsubsection{Adversarial Training}
+\subsection{Adversarial Training}
 
-% TODO: this may not belong here...
+
+
+\subsection{Transfer Learning}
+
+% TODO: is this talked about anywhere else? this is probably the best place for it.
+
+\textcolor{green}{TODO: transfer learning -- explanation, implementation in TensorFlow, and in YamlFlow \r{if general enough, the lower features may be reusable}}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{Figure example layer hierarchy and where/when to transfer/freeze params -- this will be 1-2 figures and include many sub-figures \textcolor{green}{TODO}}
+	\label{fig:transfer_learning_subfigs_a}
+\end{figure}
+
+\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable'' see \textcolor{red}{local TF ref} for the TensorFlow implementation and \textcolor{red}{local YF ref} for the YamlFlow implementation. In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network}
+
+% TODO: this likely does not belong here...
 \subsubsection{Normalization}
 
 \TD{TODO: overview para + importance}
@@ -182,4 +264,62 @@
 
 \paragraph{Batch normalization}
 
+%TODO: here!
+
+\r{An adaptive re-parameterization.}
+
+\r{reduce sensitivity to hyperparameterization.}
+
+\TD{TODO: transfer learning considerations --- will likely have to unfreeze these params}
+
+% HUGO talk
+\r{``making the optimization easier''. batch norm is not effective in RNNs -- more so layer norm}
+
+\r{seems to help when both under and over fitting.}
+
+\r{order: pre-act, then batch norm, then activate.}
+
+\r{$\gamma$ and $\beta$ parameters that are learned parameters. These params could effectively undo the normalization caused (if ``learned'' to do so.)}
+
+\begin{enumerate}[noitemsep,topsep=0pt]
+	\item batch statistics
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item mean
+		\item variance
+	\end{itemize}
+	\item normalize the pre-activation
+	\item $\gamma$ and $\beta$ --- learned rescalling
+\end{enumerate}
+
+
+% Graham Taylor talk
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item turn down other regularization
+	\item fixes first and second moments which may suppress information in these moments.
+\end{itemize}
+
+\TD{work related to adversarial spheres. --- with batch norm, the result was more reflective of the batch, not the entire dataset (which makes sense, right?)}
+
+
 \paragraph{Group normalization}
+
+
+\section{Adversarial Examples}
+%TODO: I'm not convinced this is the right location for this section
+
+\TD{\cite{papernot2018deep}}
+
+
+\section{Output regularization}
+
+\r{confidence penalty on predictions that are extrememly confident\cite{pereyra2017regularizing}. Originally an RL idea to promote expoloration. In SL, we would prefer fast convergence i) anneal confidence penalty ii) only penalize at a certain confidence threshold (lower entropy threshold). Intuitive (or not), can improve generalization.}
+
+%TODO:
+\r{label smoothing\cite{szegedy2016rethinking}}
+
+\r{Adding label noise\cite{xie2016disturblabel}}
+
+\r{smooth labels -- either via a ``teacher model''\cite{hinton2015distilling} or using it's own distribution\cite{reed2014training}}
+
+
+\r{virtual adversarial training\cite{miyato2018virtual}}

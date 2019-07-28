@@ -1,26 +1,36 @@
 \section{Perceptron}
 
-\textcolor{green}{TODO: overview}
+\r{TODO: overview}
 
-\textcolor{green}{Obligatory Biology figure}
+\r{Obligatory Biology figure}
 
 \subsection{History}
 
-\textcolor{blue}{McCullock and Pitts -- nerve cell as a simple logic gate with binary outputs.  Where multiple input signals are accumulated and if they exceed a certain threshold an output signal is generated}
+\r{McCullock and Pitts -- nerve cell as a simple logic gate with binary outputs.  Where multiple input signals are accumulated and if they exceed a certain threshold an output signal is generated}
 
 \r{$x_i$ represent the input (maybe raw features or output from previous neurons), weights $w_i$ represetn the strengths of the interconnections (analygous to synapses) between the neurons, and the bias $w_0$ represent the threshold for a neuron to be activated.}
 
-\textcolor{blue}{Frank Rosenblatt at Cornell Aeonautical Laboratory in late 1950s -- motivated by efforts to simulate the human brain -- the perceptron: an algorithm that would learn the optimal weight coefficients to the input features in order to determine whether an output signal should be produced. The early activation function \textcolor{red}{See more in local ref?} was a simple unit step function.}
+\r{Frank Rosenblatt at Cornell Aeonautical Laboratory in late 1950s -- motivated by efforts to simulate the human brain -- the perceptron: an algorithm that would learn the optimal weight coefficients to the input features in order to determine whether an output signal should be produced. The early activation function \textcolor{red}{See more in local ref?} was a simple unit step function.}
 
-\textcolor{blue}{Adaline (\textbf{ADA}ptive \textbf{LI}near \textbf{NE}uron) \textcolor{green}{(TODO: WIdrow and Hoff (1960))} -- rather than the weights being updated based on a unit step function like the perceptron, the weights are updated based on a linear activation function. A continuous output value (rather than discrete) is used to compute the model error and update the weights.}
+\r{Adaline (\textbf{ADA}ptive \textbf{LI}near \textbf{NE}uron) \r{(TODO: WIdrow and Hoff (1960))} -- rather than the weights being updated based on a unit step function like the perceptron, the weights are updated based on a linear activation function. A continuous output value (rather than discrete) is used to compute the model error and update the weights.}
 
-\textcolor{blue}{Linear activation function is used for weight updates but a unit step function can still be used to predict the class labels.\textcolor{red}{TODO: figure showing this}}
+\r{Linear activation function is used for weight updates but a unit step function can still be used to predict the class labels.\textcolor{red}{TODO: figure showing this}}
 
 \subsection{Overview}
 
-\textcolor{blue}{advantage: perceptrons are capable of online learning --- the models parameters can be updated on a single training instance rather than a batch of instances}
+\r{advantage: perceptrons are capable of online learning --- the models parameters can be updated on a single training instance rather than a batch of instances}
 
-\textcolor{blue}{Though not used too frequently in practice, the perceptron is a building block that later sections in this chapter on artificial neural networks are built upon.}
+\r{Though not used too frequently in practice, the perceptron is a building block that later sections in this chapter on artificial neural networks are built upon.}
+
+\r{activation (pre-act(weight $\times$ input - linear transform))}
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+	\caption{\TD{TODO: diagram of decision space -- 3D change in ``riff'' position. bias - change in position -- model leads to arbitrary complex decision space}}
+	\label{fig:ann_decision_space}
+\end{figure}
 
 \subsection{Activation Function Basics}
 

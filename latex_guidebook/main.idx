@@ -10,16 +10,16 @@
 \indexentry{sparse vectors}{22}
 \indexentry{interquartile range}{23}
 \indexentry{kernel trick}{24}
-\indexentry{corpus}{26}
-\indexentry{vocabulary}{26}
-\indexentry{bag-of-words}{27}
+\indexentry{corpus}{27}
+\indexentry{vocabulary}{27}
+\indexentry{bag-of-words}{28}
 \indexentry{tf-idf}{28}
 \indexentry{information leaks}{29}
-\indexentry{lucky split}{30}
+\indexentry{lucky split}{29}
 \indexentry{reducible error}{36}
 \indexentry{multi-label classification}{38}
 \indexentry{Problem transformation}{38}
-\indexentry{inappropriate minima}{41}
+\indexentry{inappropriate minima}{42}
 \indexentry{Grid search}{48}
 \indexentry{Randomized search}{48}
 \indexentry{peeking}{55}
@@ -35,46 +35,46 @@
 \indexentry{Voronoi region}{64}
 \indexentry{Ridge regression}{66}
 \indexentry{Tikhonov regularization}{66}
-\indexentry{inverted dropout}{68}
-\indexentry{generalized linear model}{75}
-\indexentry{Ordinary Lease Squares (OLS)}{76}
-\indexentry{Linear Least Squares}{76}
-\indexentry{residuals}{76}
-\indexentry{residual sum of squares (RSS)}{77}
-\indexentry{odds ratio}{78}
-\indexentry{logit}{78}
-\indexentry{discrimination threshold}{78}
-\indexentry{lazy learner}{78}
-\indexentry{Support Vector Machine (SVM)}{81}
-\indexentry{Sequential Minimal Optimization (SMO)}{81}
-\indexentry{independent and identically distributed (i.i.d)}{82}
-\indexentry{ID3 algorithm}{84}
-\indexentry{J48}{84}
-\indexentry{Heaviside step function}{88}
-\indexentry{unit step function}{88}
-\indexentry{universal approximators}{89}
-\indexentry{input layer}{90}
-\indexentry{hidden layer}{90}
-\indexentry{output layer}{90}
-\indexentry{credit assignment problem}{91}
-\indexentry{data distillation}{93}
-\indexentry{reverse-mode differentiation}{95}
-\indexentry{symbolic differentiation}{95}
-\indexentry{image quantization}{106}
-\indexentry{silhouette coefficient}{108}
-\indexentry{Principal Component Analysis (PCA)}{109}
-\indexentry{Karhunen-Love Transform (KLM)}{109}
-\indexentry{covarience matrix}{109}
-\indexentry{manifold}{111}
-\indexentry{bagging}{119}
-\indexentry{boostrap aggregating}{119}
-\indexentry{sampling with replacement|see{bagging}}{119}
-\indexentry{bootstrap samples}{119}
-\indexentry{subagging}{120}
-\indexentry{sampling without replacement|see{subagging}}{120}
-\indexentry{subspace sampling}{120}
-\indexentry{blending}{121}
-\indexentry{session}{173}
-\indexentry{sigmoid}{186}
-\indexentry{ReLUN}{189}
-\indexentry{freezing}{227}
+\indexentry{inverted dropout}{69}
+\indexentry{freezing}{70}
+\indexentry{generalized linear model}{79}
+\indexentry{Ordinary Lease Squares (OLS)}{80}
+\indexentry{Linear Least Squares}{80}
+\indexentry{residuals}{80}
+\indexentry{residual sum of squares (RSS)}{81}
+\indexentry{odds ratio}{82}
+\indexentry{logit}{82}
+\indexentry{discrimination threshold}{82}
+\indexentry{lazy learner}{82}
+\indexentry{Support Vector Machine (SVM)}{85}
+\indexentry{Sequential Minimal Optimization (SMO)}{85}
+\indexentry{independent and identically distributed (i.i.d)}{86}
+\indexentry{ID3 algorithm}{88}
+\indexentry{J48}{88}
+\indexentry{Heaviside step function}{93}
+\indexentry{unit step function}{93}
+\indexentry{universal approximators}{94}
+\indexentry{input layer}{94}
+\indexentry{hidden layer}{94}
+\indexentry{output layer}{94}
+\indexentry{credit assignment problem}{96}
+\indexentry{data distillation}{98}
+\indexentry{reverse-mode differentiation}{99}
+\indexentry{symbolic differentiation}{99}
+\indexentry{image quantization}{112}
+\indexentry{silhouette coefficient}{114}
+\indexentry{Principal Component Analysis (PCA)}{115}
+\indexentry{Karhunen-Love Transform (KLM)}{115}
+\indexentry{covarience matrix}{115}
+\indexentry{manifold}{117}
+\indexentry{bagging}{127}
+\indexentry{boostrap aggregating}{127}
+\indexentry{sampling with replacement|see{bagging}}{127}
+\indexentry{bootstrap samples}{127}
+\indexentry{subagging}{128}
+\indexentry{sampling without replacement|see{subagging}}{128}
+\indexentry{subspace sampling}{128}
+\indexentry{blending}{129}
+\indexentry{session}{181}
+\indexentry{sigmoid}{194}
+\indexentry{ReLUN}{197}

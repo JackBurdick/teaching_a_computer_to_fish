@@ -4,6 +4,7 @@ A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
 A level-1 auxiliary file: data.aux
 A level-1 auxiliary file: basics.aux
+A level-1 auxiliary file: ethics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
@@ -21,6 +22,10 @@ Repeated entry---line 256 of file TCF.bib
  : @article{zeiler2012adadelta
  :                            ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 452 of file TCF.bib
+ : @article{reed2014training
+ :                          ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
 Warning--to sort, need author or key in cloudHW_google_cloud
@@ -30,4 +35,4 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-(There was 1 error message)
+(There were 2 error messages)

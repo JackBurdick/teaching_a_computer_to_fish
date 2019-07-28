@@ -56,6 +56,16 @@
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
 
+\bibitem{cubuk2018autoaugment}
+{\sc E.~D. Cubuk, B.~Zoph, D.~Mane, V.~Vasudevan, and Q.~V. Le}, {\em
+  Autoaugment: Learning augmentation policies from data}, arXiv preprint
+  arXiv:1805.09501,  (2018).
+
+\bibitem{devries2017improved}
+{\sc T.~DeVries and G.~W. Taylor}, {\em Improved regularization of
+  convolutional neural networks with cutout}, arXiv preprint arXiv:1708.04552,
+  (2017).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
@@ -73,16 +83,33 @@
   Transactions on Pattern Analysis \& Machine Intelligence,  (1990),
   pp.~993--1001.
 
+\bibitem{hinton2015distilling}
+{\sc G.~Hinton, O.~Vinyals, and J.~Dean}, {\em Distilling the knowledge in a
+  neural network}, arXiv preprint arXiv:1503.02531,  (2015).
+
+\bibitem{ho2019population}
+{\sc D.~Ho, E.~Liang, I.~Stoica, P.~Abbeel, and X.~Chen}, {\em Population based
+  augmentation: Efficient learning of augmentation policy schedules}, arXiv
+  preprint arXiv:1905.05393,  (2019).
+
 \bibitem{hoffer2017train}
 {\sc E.~Hoffer, I.~Hubara, and D.~Soudry}, {\em Train longer, generalize
   better: closing the generalization gap in large batch training of neural
   networks}, in Advances in Neural Information Processing Systems, 2017,
   pp.~1729--1739.
 
+\bibitem{hornik1991approximation}
+{\sc K.~Hornik}, {\em Approximation capabilities of multilayer feedforward
+  networks}, Neural networks, 4 (1991), pp.~251--257.
+
 \bibitem{huang2017snapshot}
 {\sc G.~Huang, Y.~Li, G.~Pleiss, Z.~Liu, J.~E. Hopcroft, and K.~Q. Weinberger},
   {\em Snapshot ensembles: Train 1, get m for free}, arXiv preprint
   arXiv:1704.00109,  (2017).
+
+\bibitem{inoue2018data}
+{\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
+  classification}, arXiv preprint arXiv:1801.02929,  (2018).
 
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
@@ -91,6 +118,15 @@
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
+
+\bibitem{lemley2017smart}
+{\sc J.~Lemley, S.~Bazrafkan, and P.~Corcoran}, {\em Smart augmentation
+  learning an optimal data augmentation strategy}, Ieee Access, 5 (2017),
+  pp.~5858--5869.
+
+\bibitem{lim2019fast}
+{\sc S.~Lim, I.~Kim, T.~Kim, C.~Kim, and S.~Kim}, {\em Fast autoaugment}, arXiv
+  preprint arXiv:1905.00397,  (2019).
 
 \bibitem{linnainmaa1970representation}
 {\sc S.~Linnainmaa}, {\em The representation of the cumulative rounding error
@@ -105,9 +141,34 @@
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
   neural networks}, arXiv preprint arXiv:1804.07612,  (2018).
 
+\bibitem{miyato2018virtual}
+{\sc T.~Miyato, S.-i. Maeda, M.~Koyama, and S.~Ishii}, {\em Virtual adversarial
+  training: a regularization method for supervised and semi-supervised
+  learning}, IEEE transactions on pattern analysis and machine intelligence, 41
+  (2018), pp.~1979--1993.
+
+\bibitem{papernot2018deep}
+{\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
+  confident, interpretable and robust deep learning}, arXiv preprint
+  arXiv:1803.04765,  (2018).
+
+\bibitem{pereyra2017regularizing}
+{\sc G.~Pereyra, G.~Tucker, J.~Chorowski, {\L}.~Kaiser, and G.~Hinton}, {\em
+  Regularizing neural networks by penalizing confident output distributions},
+  arXiv preprint arXiv:1701.06548,  (2017).
+
 \bibitem{qian1999momentum}
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
+
+\bibitem{reddi2019convergence}
+{\sc S.~J. Reddi, S.~Kale, and S.~Kumar}, {\em On the convergence of adam and
+  beyond}, arXiv preprint arXiv:1904.09237,  (2019).
+
+\bibitem{reed2014training}
+{\sc S.~Reed, H.~Lee, D.~Anguelov, C.~Szegedy, D.~Erhan, and A.~Rabinovich},
+  {\em Training deep neural networks on noisy labels with bootstrapping}, arXiv
+  preprint arXiv:1412.6596,  (2014).
 
 \bibitem{ruderman2018learned}
 {\sc A.~Ruderman, N.~Rabinowitz, A.~S. Morcos, and D.~Zoran}, {\em Learned
@@ -119,15 +180,47 @@
   representations by back-propagating errors}, Cognitive modeling, 5 (1988),
   p.~1.
 
+\bibitem{sennrich2015improving}
+{\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
+  translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
+  (2015).
+
+\bibitem{shrivastava2017learning}
+{\sc A.~Shrivastava, T.~Pfister, O.~Tuzel, J.~Susskind, W.~Wang, and R.~Webb},
+  {\em Learning from simulated and unsupervised images through adversarial
+  training}, in Proceedings of the IEEE conference on computer vision and
+  pattern recognition, 2017, pp.~2107--2116.
+
 \bibitem{smith2017cyclical}
 {\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
   in Applications of Computer Vision (WACV), 2017 IEEE Winter Conference on,
   IEEE, 2017, pp.~464--472.
 
+\bibitem{smith2018disciplined}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em A disciplined
+  approach to neural network hyper-parameters: Part 1--learning rate, batch
+  size, momentum, and weight decay}, arXiv preprint arXiv:1803.09820,  (2018).
+
 \bibitem{smith2017don}
 {\sc S.~L. Smith, P.-J. Kindermans, and Q.~V. Le}, {\em Don't decay the
   learning rate, increase the batch size}, arXiv preprint arXiv:1711.00489,
   (2017).
+
+\bibitem{springenberg2014striving}
+{\sc J.~T. Springenberg, A.~Dosovitskiy, T.~Brox, and M.~Riedmiller}, {\em
+  Striving for simplicity: The all convolutional net}, arXiv preprint
+  arXiv:1412.6806,  (2014).
+
+\bibitem{szegedy2016rethinking}
+{\sc C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna}, {\em
+  Rethinking the inception architecture for computer vision}, in Proceedings of
+  the IEEE conference on computer vision and pattern recognition, 2016,
+  pp.~2818--2826.
+
+\bibitem{tran2017bayesian}
+{\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
+  data augmentation approach for learning deep models}, in Advances in neural
+  information processing systems, 2017, pp.~2797--2806.
 
 \bibitem{wilson2003general}
 {\sc D.~R. Wilson and T.~R. Martinez}, {\em The general inefficiency of batch
@@ -139,8 +232,31 @@
   optimization}, IEEE transactions on evolutionary computation, 1 (1997),
   pp.~67--82.
 
+\bibitem{xie2016disturblabel}
+{\sc L.~Xie, J.~Wang, Z.~Wei, M.~Wang, and Q.~Tian}, {\em Disturblabel:
+  Regularizing cnn on the loss layer}, in Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition, 2016, pp.~4753--4762.
+
+\bibitem{xie2019unsupervised}
+{\sc Q.~Xie, Z.~Dai, E.~Hovy, M.-T. Luong, and Q.~V. Le}, {\em Unsupervised
+  data augmentation}, arXiv preprint arXiv:1904.12848,  (2019).
+
+\bibitem{yun2019cutmix}
+{\sc S.~Yun, D.~Han, S.~J. Oh, S.~Chun, J.~Choe, and Y.~Yoo}, {\em Cutmix:
+  Regularization strategy to train strong classifiers with localizable
+  features}, arXiv preprint arXiv:1905.04899,  (2019).
+
 \bibitem{zeiler2012adadelta}
 {\sc M.~D. Zeiler}, {\em Adadelta: an adaptive learning rate method}, arXiv
   preprint arXiv:1212.5701,  (2012).
+
+\bibitem{zhang2017mixup}
+{\sc H.~Zhang, M.~Cisse, Y.~N. Dauphin, and D.~Lopez-Paz}, {\em mixup: Beyond
+  empirical risk minimization}, arXiv preprint arXiv:1710.09412,  (2017).
+
+\bibitem{zoph2019learning}
+{\sc B.~Zoph, E.~D. Cubuk, G.~Ghiasi, T.-Y. Lin, J.~Shlens, and Q.~V. Le}, {\em
+  Learning data augmentation strategies for object detection}, arXiv preprint
+  arXiv:1906.11172,  (2019).
 
 \end{thebibliography}

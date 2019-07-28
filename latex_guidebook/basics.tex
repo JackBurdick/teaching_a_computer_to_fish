@@ -6,6 +6,10 @@
 % TODO: there is more to the no free lunch than simply this.
 \r{I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''~\cite{wolpert1997no}}
 
+% “You can’t learn from data without making assumptions”
+\TD{A Lot to unpack here.}
+\TD{https://peekaboo-vision.blogspot.com/2019/07/dont-cite-no-free-lunch-theorem.html}
+
 %%%%%%%%%%%%%%%%%%%%%%%% Types of data
 \r{categorical or numerical. Numerical can be discrete or continuous}
 
@@ -166,6 +170,8 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \textcolor{blue}{TODO: talk about "convexity" -- show 3D loss plot (2D for params, 3rd for loss), and explain how running/re-running a model may result in slightly different values.}
 
 \textcolor{blue}{Loss calculation. TODO: example for linear linear regression and why sum of loss will cancel out terms. \textcolor{red}{point to local ref.}}
+
+\r{``surrogate loss'' --- takes a classification problem and turns it to a continuous/smooth surface.}
 
 \subsection{Error Functions}
 

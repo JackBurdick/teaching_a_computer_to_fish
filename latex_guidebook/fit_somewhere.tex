@@ -120,17 +120,6 @@
 %%
 \textcolor{blue}{nonstationary problems --- unsolvable --- need data that makes sense for the problem. Predicting rentals of snowmobiles doesn't make as much sense if you only have data from summer. predicting cloth purchases during summer doesn't make sense if you only have data from winter.}
 
-%% not sure how this wasn't mentioned yet
-\textcolor{green}{TODO: transfer learning -- explanation, implementation in TensorFlow, and in YamlFlow \r{if general enough, the lower features may be reusable}}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
-	\caption{Figure example layer hierarchy and where/when to transfer/freeze params -- this will be 1-2 figures and include many sub-figures \textcolor{green}{TODO}}
-	\label{fig:transfer_learning_subfigs_a}
-\end{figure}
-
-\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable'' see \textcolor{red}{local TF ref} for the TensorFlow implementation and \textcolor{red}{local YF ref} for the YamlFlow implementation. In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network}
 
 %%%
 \textcolor{green}{Visualizing the output of a CNN}
@@ -180,6 +169,29 @@
 %%
 \r{\textit{joint probability} --- $x_a$ and $x_b$. \textit{conditional probability} --- P of $x_b$, given $x_a$}
 
+%% TODO: stylegan
+\TD{https://arxiv.org/abs/1812.04948}
+
+
+%% BERT - GPT2
+
+%%
+\TD{\cite{smith2018disciplined}}
+
+
+%%
+\r{read this https://ai.googleblog.com/2019/06/innovations-in-graph-representation.html}
+
+%% curiousity and "...allow the agent to create rewards for itself..."
+\r{- (link: https://www.frontiersin.org/articles/10.3389/neuro.12.006.2007/full)
+	- https://pathak22.github.io/noreward-rl/
+	- (link: https://arxiv.org/abs/1705.05363) arxiv.org/abs/1705.05363
+	- (link: https://arxiv.org/abs/1810.02274) arxiv.org/abs/1810.02274)
+	- https://ai.googleblog.com/2018/10/curiosity-and-procrastination-in.html}
+
+
+%%
+\TD{Kohonen networks (self-organizing maps)}
 
 %%
 % p.20 of Neural Networks 
@@ -256,3 +268,49 @@
 
 %%
 \r{code resuse and \code{tf.reuse}}
+
+%%
+\r{trying to learn the activation function -- however, this is partially already done by using multiple layers}
+
+%%
+\r{``learning is cast as an optimization problem -- minimize the loss with regularization''}
+
+%% debugging
+\TD{practical advice --- 1) looking at the norm of the outputs? 2) looking at the gradients at different layers and making sure they're relatively in the same magnitude i.e. you wouldn't want very small gradients at one level and super large gradients in another layer. 3) finite-difference approximation of the gradient (``gradient checking''). forward pass + epsilon vs forward pass - epsilon should be roughly the same.  $\frac{f(x+\epsilon) - f(x-\epsilon)}{2\epsilon}$ 4) ensure overfitting is possible on a small dataset, this should reach ``perfect'' (at least for classification on say a sample size of 50)}
+
+
+
+%% Hugo talk
+\r{relu may act as a gate, in which values are on or off}
+
+%% increasing generalization
+\r{dropout on the input layer of an autoencoder}
+
+
+%%
+\r{previously thought that the neural networkworks were difficult to train because they often get stuck in local minima --- however, this is now thought to be untrue and that many of the local minima points are saddle points.}
+
+\TD{flat minima generalize better --- 1997 paper Hock}
+
+
+%% padding -- how has this not been written about yet?
+\TD{padding --- padding examples --- half(same), full / valid, no padding, reflect padding.}
+
+
+% in relation to imagery/spatial data
+\r{local contrast normalization}
+
+%%% upsampling
+\r{\begin{itemize}[noitemsep,topsep=0pt]
+		\item nearest neighbors
+		\item ``bed of nails'' - copy to one position
+		\item ``max unpooling'' -- remember which position the value came from
+		\item learnable (transpose convolution) --- fractional stride -- ratio of in to out, stride of 1 on input and n on output.
+	\end{itemize}
+}
+
+
+% TODO: see slides I downloaded by Andrew Zisserman
+\r{self-supervised learning}
+
+

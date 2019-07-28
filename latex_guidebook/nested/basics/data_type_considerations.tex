@@ -69,14 +69,33 @@
 % the features learned in embedded features may be useful to other problems from a seperate/maybe related domain
 % using learned embeddings in one city for another city on the same types of inputs
 
-\subsection{Images}
+\subsection{2D Images}
 
 \TD{TODO: Images}
 
+\subsection{3D Imagery}
 
-\subsubsection{Video}
+Representations
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item surface --- triangular mesh
+	\item multi-view
+	\item voxels
+	\item point cloud
+\end{itemize}
+
+\r{surface -- can be difficult to use with CNN, graph CNN}
+
+\r{multiview --- set of images}
+
+
+\r{voxel --- extention of pixels. $H \times W \times D \times C$. inefficent use of memory. more than occupancy (color, distance, etc.)}
+
+\r{point cloud -- set of point, lidar -- x,y,z position --- ``bag of points'' no connectivity --- transform invariant. pointnet - pointnet$++$ - pointCNN - PCNN. Transform invariant}
+
+\subsection{Video}
 
 \TD{TODO: Video}
+
 
 
 \subsection{Natural Language}
@@ -97,7 +116,9 @@
 
 \paragraph{Stop Word Filtering}
 
-\TD{todo: removing words that are common throughout the language as well as potentially to most of the documents in a corpus. Typically stop words do not convey meaning through their meaning, but rather through their grammatical meaning.}
+\TD{todo: removing words that are common throughout the language as well as potentially to most of the documents in a corpus. Typically stop words do not convey meaning through their own word meaning, but rather through their grammatical meaning.}
+
+\TD{may be better not not remove in DL type applications, as they may provide context.}
 
 \paragraph{Tokenization}
 
