@@ -466,83 +466,39 @@
 \contentsline {subsubsection}{\numberline {20.5.2.2}tfdbg}{154}
 \contentsline {subsubsection}{\numberline {20.5.2.3}TensorBoard}{154}
 \contentsline {subsubsection}{\numberline {20.5.2.4}Logging and Verbosity}{155}
-\contentsline {chapter}{\numberline {21}Tensorflow API and Components}{157}
-\contentsline {section}{\numberline {21.1}Model Evaluation}{157}
-\contentsline {subsection}{\numberline {21.1.1}TFMA: TensorFlow Model Analysis}{157}
-\contentsline {subsubsection}{\numberline {21.1.1.1}Key Features}{157}
-\contentsline {paragraph}{\numberline {21.1.1.1.1}Sliced Metrics}{157}
-\contentsline {paragraph}{\numberline {21.1.1.1.2}Full-pass Metrics}{158}
-\contentsline {subsubsection}{\numberline {21.1.1.2}Implementation}{158}
-\contentsline {paragraph}{\numberline {21.1.1.2.1}Overview}{158}
-\contentsline {paragraph}{\numberline {21.1.1.2.2}Code}{158}
-\contentsline {subparagraph}{Exporting the Evaluation Graph}{158}
-\contentsline {subparagraph}{Computing Metrics}{158}
-\contentsline {subparagraph}{Visualize Metrics (in a notebook)}{158}
-\contentsline {section}{\numberline {21.2}Model Persistence}{158}
-\contentsline {subsection}{\numberline {21.2.1}Saver}{158}
-\contentsline {subsection}{\numberline {21.2.2}Hub}{159}
-\contentsline {section}{\numberline {21.3}Deployment with TF Serving}{159}
-\contentsline {subsection}{\numberline {21.3.1}Overview}{159}
-\contentsline {subsubsection}{\numberline {21.3.1.1}Standard Abstractions}{159}
-\contentsline {paragraph}{\numberline {21.3.1.1.1}ServableHandle}{159}
-\contentsline {paragraph}{\numberline {21.3.1.1.2}Manager}{159}
-\contentsline {paragraph}{\numberline {21.3.1.1.3}Loader}{159}
-\contentsline {paragraph}{\numberline {21.3.1.1.4}Source}{159}
-\contentsline {subsubsection}{\numberline {21.3.1.2}Plugins into Abstractions}{159}
-\contentsline {paragraph}{\numberline {21.3.1.2.1}File System (Source)}{159}
-\contentsline {paragraph}{\numberline {21.3.1.2.2}Version Policy (Manager)}{160}
-\contentsline {subsubsection}{\numberline {21.3.1.3}FIT}{160}
-\contentsline {paragraph}{\numberline {21.3.1.3.1}ServerCore}{160}
-\contentsline {paragraph}{\numberline {21.3.1.3.2}Binaries and APIs}{160}
-\contentsline {subparagraph}{Predict}{160}
-\contentsline {paragraph}{\numberline {21.3.1.3.3}Servables}{160}
-\contentsline {paragraph}{\numberline {21.3.1.3.4}Loaders}{160}
-\contentsline {subsection}{\numberline {21.3.2}Example}{161}
-\contentsline {section}{\numberline {21.4}Other}{161}
-\contentsline {subsection}{\numberline {21.4.1}Probability}{161}
-\contentsline {subsection}{\numberline {21.4.2}TensorFlow Extended}{161}
-\contentsline {subsection}{\numberline {21.4.3}Keras}{161}
-\contentsline {subsection}{\numberline {21.4.4}Image}{161}
-\contentsline {subsection}{\numberline {21.4.5}Image Augmentation}{161}
-\contentsline {subsection}{\numberline {21.4.6}Edward 2.0}{161}
-\contentsline {subsection}{\numberline {21.4.7}TensorFlow Lite}{161}
-\contentsline {chapter}{\numberline {22}Implementing Common Methodologies}{163}
-\contentsline {section}{\numberline {22.1}Artificial Neural Networks}{163}
-\contentsline {section}{\numberline {22.2}Convolutional Neural Networks}{163}
-\contentsline {section}{\numberline {22.3}Recurrent Neural Networks}{163}
-\contentsline {part}{VIII\hspace {1em}End To End Examples}{165}
-\contentsline {chapter}{\numberline {23}EndToEnd}{167}
-\contentsline {section}{\numberline {23.1}Structured}{167}
-\contentsline {subsection}{\numberline {23.1.1}Linear Regression}{167}
-\contentsline {subsection}{\numberline {23.1.2}KNN}{167}
-\contentsline {section}{\numberline {23.2}Image}{167}
-\contentsline {subsection}{\numberline {23.2.1}Image Classification}{167}
-\contentsline {subsection}{\numberline {23.2.2}Image Segmentation}{167}
-\contentsline {subsection}{\numberline {23.2.3}Adversarial Exmaples}{167}
-\contentsline {subsection}{\numberline {23.2.4}AutoEncoder}{167}
-\contentsline {subsection}{\numberline {23.2.5}Generative Adversarial Network}{167}
-\contentsline {section}{\numberline {23.3}TimeSeries}{168}
-\contentsline {section}{\numberline {23.4}Text}{168}
-\contentsline {subsection}{\numberline {23.4.1}Sentiment Analysis}{168}
-\contentsline {section}{\numberline {23.5}Audio}{168}
-\contentsline {subsection}{\numberline {23.5.1}Audio to Text}{168}
-\contentsline {part}{IX\hspace {1em}Yeahml}{169}
-\contentsline {chapter}{\numberline {24}Overview}{171}
-\contentsline {chapter}{\numberline {25}What is YamlFlow}{173}
-\contentsline {chapter}{\numberline {26}Introduction}{175}
-\contentsline {subsection}{\numberline {26.0.1}Motivation}{175}
-\contentsline {chapter}{\numberline {27}End to End Problems Revisited}{177}
-\contentsline {part}{X\hspace {1em}Moving Forward}{179}
-\contentsline {section}{\numberline {27.1}Conclusion}{181}
-\contentsline {part}{XI\hspace {1em}appendix}{183}
-\contentsline {chapter}{\numberline {28}TODO:}{185}
-\contentsline {section}{\numberline {28.1}Imputing Missing Values}{185}
-\contentsline {section}{\numberline {28.2}Anomaly Detection}{185}
-\contentsline {subsection}{\numberline {28.2.1}methods}{185}
-\contentsline {subsubsection}{\numberline {28.2.1.1}PCA}{185}
-\contentsline {section}{\numberline {28.3}labeling data}{186}
-\contentsline {section}{\numberline {28.4}Group Segmentation}{186}
-\contentsline {part}{XII\hspace {1em}Dump Space}{187}
-\contentsline {subsection}{\numberline {28.4.1}Restricted Boltzmann Machines}{192}
-\contentsline {part}{XIII\hspace {1em}Research}{195}
-\contentsline {chapter}{\numberline {29}Ongoing Research}{197}
+\contentsline {part}{VIII\hspace {1em}End To End Examples}{157}
+\contentsline {chapter}{\numberline {21}EndToEnd}{159}
+\contentsline {section}{\numberline {21.1}Structured}{159}
+\contentsline {subsection}{\numberline {21.1.1}Linear Regression}{159}
+\contentsline {subsection}{\numberline {21.1.2}KNN}{159}
+\contentsline {section}{\numberline {21.2}Image}{159}
+\contentsline {subsection}{\numberline {21.2.1}Image Classification}{159}
+\contentsline {subsection}{\numberline {21.2.2}Image Segmentation}{159}
+\contentsline {subsection}{\numberline {21.2.3}Adversarial Exmaples}{159}
+\contentsline {subsection}{\numberline {21.2.4}AutoEncoder}{159}
+\contentsline {subsection}{\numberline {21.2.5}Generative Adversarial Network}{159}
+\contentsline {section}{\numberline {21.3}TimeSeries}{160}
+\contentsline {section}{\numberline {21.4}Text}{160}
+\contentsline {subsection}{\numberline {21.4.1}Sentiment Analysis}{160}
+\contentsline {section}{\numberline {21.5}Audio}{160}
+\contentsline {subsection}{\numberline {21.5.1}Audio to Text}{160}
+\contentsline {part}{IX\hspace {1em}Yeahml}{161}
+\contentsline {chapter}{\numberline {22}Overview}{163}
+\contentsline {chapter}{\numberline {23}What is YamlFlow}{165}
+\contentsline {chapter}{\numberline {24}Introduction}{167}
+\contentsline {subsection}{\numberline {24.0.1}Motivation}{167}
+\contentsline {chapter}{\numberline {25}End to End Problems Revisited}{169}
+\contentsline {part}{X\hspace {1em}Moving Forward}{171}
+\contentsline {section}{\numberline {25.1}Conclusion}{173}
+\contentsline {part}{XI\hspace {1em}appendix}{175}
+\contentsline {chapter}{\numberline {26}TODO:}{177}
+\contentsline {section}{\numberline {26.1}Imputing Missing Values}{177}
+\contentsline {section}{\numberline {26.2}Anomaly Detection}{177}
+\contentsline {subsection}{\numberline {26.2.1}methods}{177}
+\contentsline {subsubsection}{\numberline {26.2.1.1}PCA}{177}
+\contentsline {section}{\numberline {26.3}labeling data}{178}
+\contentsline {section}{\numberline {26.4}Group Segmentation}{178}
+\contentsline {part}{XII\hspace {1em}Dump Space}{179}
+\contentsline {subsection}{\numberline {26.4.1}Restricted Boltzmann Machines}{184}
+\contentsline {part}{XIII\hspace {1em}Research}{187}
+\contentsline {chapter}{\numberline {27}Ongoing Research}{189}
