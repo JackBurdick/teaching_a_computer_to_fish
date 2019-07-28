@@ -1,1 +1,0 @@
-# At-a-glance comparison of specified frameworks
