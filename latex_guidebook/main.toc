@@ -440,65 +440,39 @@
 \contentsline {chapter}{\numberline {17}Mistakes and Bloopers}{143}
 \contentsline {chapter}{\numberline {18}Environment}{145}
 \contentsline {chapter}{\numberline {19}Common Libraries}{147}
-\contentsline {part}{VII\hspace {1em}TensorFlow}{149}
-\contentsline {chapter}{\numberline {20}Overview}{151}
-\contentsline {section}{\numberline {20.1}Introduction}{151}
-\contentsline {section}{\numberline {20.2}TensorFlow Essentials}{151}
-\contentsline {subsection}{\numberline {20.2.1}API Hierarchy}{151}
-\contentsline {subsection}{\numberline {20.2.2}Working with data}{151}
-\contentsline {subsubsection}{\numberline {20.2.2.1}Variables}{151}
-\contentsline {subsubsection}{\numberline {20.2.2.2}Placeholder and feed\_dict}{152}
-\contentsline {subsubsection}{\numberline {20.2.2.3}Constants}{152}
-\contentsline {subsection}{\numberline {20.2.3}Operations}{152}
-\contentsline {subsection}{\numberline {20.2.4}Coding Style}{152}
-\contentsline {subsection}{\numberline {20.2.5}Graphs}{152}
-\contentsline {subsubsection}{\numberline {20.2.5.1}scoping}{153}
-\contentsline {subsection}{\numberline {20.2.6}Sessions}{153}
-\contentsline {subsection}{\numberline {20.2.7}Tensors}{153}
-\contentsline {section}{\numberline {20.3}High-level Overview of Components}{153}
-\contentsline {section}{\numberline {20.4}Workflow}{154}
-\contentsline {section}{\numberline {20.5}Debugging TensorFlow}{154}
-\contentsline {subsection}{\numberline {20.5.1}Common Errors}{154}
-\contentsline {subsubsection}{\numberline {20.5.1.1}Shape}{154}
-\contentsline {subsubsection}{\numberline {20.5.1.2}Data Type}{154}
-\contentsline {subsection}{\numberline {20.5.2}Debugging Tools}{154}
-\contentsline {subsubsection}{\numberline {20.5.2.1}tf.Print}{154}
-\contentsline {subsubsection}{\numberline {20.5.2.2}tfdbg}{154}
-\contentsline {subsubsection}{\numberline {20.5.2.3}TensorBoard}{154}
-\contentsline {subsubsection}{\numberline {20.5.2.4}Logging and Verbosity}{155}
-\contentsline {part}{VIII\hspace {1em}End To End Examples}{157}
-\contentsline {chapter}{\numberline {21}EndToEnd}{159}
-\contentsline {section}{\numberline {21.1}Structured}{159}
-\contentsline {subsection}{\numberline {21.1.1}Linear Regression}{159}
-\contentsline {subsection}{\numberline {21.1.2}KNN}{159}
-\contentsline {section}{\numberline {21.2}Image}{159}
-\contentsline {subsection}{\numberline {21.2.1}Image Classification}{159}
-\contentsline {subsection}{\numberline {21.2.2}Image Segmentation}{159}
-\contentsline {subsection}{\numberline {21.2.3}Adversarial Exmaples}{159}
-\contentsline {subsection}{\numberline {21.2.4}AutoEncoder}{159}
-\contentsline {subsection}{\numberline {21.2.5}Generative Adversarial Network}{159}
-\contentsline {section}{\numberline {21.3}TimeSeries}{160}
-\contentsline {section}{\numberline {21.4}Text}{160}
-\contentsline {subsection}{\numberline {21.4.1}Sentiment Analysis}{160}
-\contentsline {section}{\numberline {21.5}Audio}{160}
-\contentsline {subsection}{\numberline {21.5.1}Audio to Text}{160}
-\contentsline {part}{IX\hspace {1em}Yeahml}{161}
-\contentsline {chapter}{\numberline {22}Overview}{163}
-\contentsline {chapter}{\numberline {23}What is YamlFlow}{165}
-\contentsline {chapter}{\numberline {24}Introduction}{167}
-\contentsline {subsection}{\numberline {24.0.1}Motivation}{167}
-\contentsline {chapter}{\numberline {25}End to End Problems Revisited}{169}
-\contentsline {part}{X\hspace {1em}Moving Forward}{171}
-\contentsline {section}{\numberline {25.1}Conclusion}{173}
-\contentsline {part}{XI\hspace {1em}appendix}{175}
-\contentsline {chapter}{\numberline {26}TODO:}{177}
-\contentsline {section}{\numberline {26.1}Imputing Missing Values}{177}
-\contentsline {section}{\numberline {26.2}Anomaly Detection}{177}
-\contentsline {subsection}{\numberline {26.2.1}methods}{177}
-\contentsline {subsubsection}{\numberline {26.2.1.1}PCA}{177}
-\contentsline {section}{\numberline {26.3}labeling data}{178}
-\contentsline {section}{\numberline {26.4}Group Segmentation}{178}
-\contentsline {part}{XII\hspace {1em}Dump Space}{179}
-\contentsline {subsection}{\numberline {26.4.1}Restricted Boltzmann Machines}{184}
-\contentsline {part}{XIII\hspace {1em}Research}{187}
-\contentsline {chapter}{\numberline {27}Ongoing Research}{189}
+\contentsline {part}{VII\hspace {1em}End To End Examples}{149}
+\contentsline {chapter}{\numberline {20}EndToEnd}{151}
+\contentsline {section}{\numberline {20.1}Structured}{151}
+\contentsline {subsection}{\numberline {20.1.1}Linear Regression}{151}
+\contentsline {subsection}{\numberline {20.1.2}KNN}{151}
+\contentsline {section}{\numberline {20.2}Image}{151}
+\contentsline {subsection}{\numberline {20.2.1}Image Classification}{151}
+\contentsline {subsection}{\numberline {20.2.2}Image Segmentation}{151}
+\contentsline {subsection}{\numberline {20.2.3}Adversarial Exmaples}{151}
+\contentsline {subsection}{\numberline {20.2.4}AutoEncoder}{151}
+\contentsline {subsection}{\numberline {20.2.5}Generative Adversarial Network}{151}
+\contentsline {section}{\numberline {20.3}TimeSeries}{152}
+\contentsline {section}{\numberline {20.4}Text}{152}
+\contentsline {subsection}{\numberline {20.4.1}Sentiment Analysis}{152}
+\contentsline {section}{\numberline {20.5}Audio}{152}
+\contentsline {subsection}{\numberline {20.5.1}Audio to Text}{152}
+\contentsline {part}{VIII\hspace {1em}Yeahml}{153}
+\contentsline {chapter}{\numberline {21}Overview}{155}
+\contentsline {chapter}{\numberline {22}What is YamlFlow}{157}
+\contentsline {chapter}{\numberline {23}Introduction}{159}
+\contentsline {subsection}{\numberline {23.0.1}Motivation}{159}
+\contentsline {chapter}{\numberline {24}End to End Problems Revisited}{161}
+\contentsline {part}{IX\hspace {1em}Moving Forward}{163}
+\contentsline {section}{\numberline {24.1}Conclusion}{165}
+\contentsline {part}{X\hspace {1em}appendix}{167}
+\contentsline {chapter}{\numberline {25}TODO:}{169}
+\contentsline {section}{\numberline {25.1}Imputing Missing Values}{169}
+\contentsline {section}{\numberline {25.2}Anomaly Detection}{169}
+\contentsline {subsection}{\numberline {25.2.1}methods}{169}
+\contentsline {subsubsection}{\numberline {25.2.1.1}PCA}{169}
+\contentsline {section}{\numberline {25.3}labeling data}{170}
+\contentsline {section}{\numberline {25.4}Group Segmentation}{170}
+\contentsline {part}{XI\hspace {1em}Dump Space}{171}
+\contentsline {subsection}{\numberline {25.4.1}Restricted Boltzmann Machines}{176}
+\contentsline {part}{XII\hspace {1em}Research}{179}
+\contentsline {chapter}{\numberline {26}Ongoing Research}{181}
