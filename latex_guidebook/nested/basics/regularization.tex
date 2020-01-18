@@ -111,6 +111,8 @@
 
 \r{Arguably the best way to increase generalizability of a model is to train the model on more data. However, as readers may already be aware, this is not always easy. Collecting more data may not be time/cost effective, or even possible.}
 
+\r{``free'' data in that the ``cost'' is minor computation}
+
 \r{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
 
 
@@ -121,6 +123,10 @@
 \r{Dataset augmentation is \textcolor{green}{TODO}}
 
 % TODO: this might be the wrong heading.. Originally I was thinking ``spatial`` but I think that's worse
+
+\TD{Augmenting the test set. A simple augmentation (horizontal filliping) was performed on the test set in \cite{simonyan2014very} -- where the prediction of the original and augmented images are averaged to obtain the final output score.}
+
+
 \subsubsection{Two Dimensional Data}
 
 \r{Including Imagery}
@@ -173,7 +179,7 @@
 
 % TODO: explain dropout
 
-\r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation.}
+\r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation if using dropout in the ``standard way''. However dropout is occassionally used for evaluation in attempt to quantify model uncertainty \TD{CITATION}}
 
 \r{keeps a neuron active by a hyperparameterized probability.}
 
@@ -184,7 +190,8 @@
 \r{combines \textcolor{red}{similarly to ensembling} many different nerual network architectures}
 
 % TODO: include Srivastava et al 2014 (ref on p251 of DL)
-\r{Dropout -- ref original paper (Hinton? -- inspired by bank -- that defrauding hte bank would require cooperation between employees to defraud the bank)}
+\r{Dropout -- ref original paper (Hinton? -- intuitive, inspired by bank -- that defrauding the bank would require cooperation between employees to defraud the bank)}.
+
 
 \r{one way to view this is to imagine dropout as a way to push units that are not only useful inthe presence of other units and prevent units from co-adopting one another.}
 

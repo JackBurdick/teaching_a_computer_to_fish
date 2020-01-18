@@ -279,6 +279,8 @@
 	\caption{where $\alpha$ is a parameterized --- a learned parameter from training.}
 \end{equ}
 
+\r{Parametric Rectified Linear Unit (PReLU) \cite{he2015delving}}
+
 \textcolor{blue}{$\alpha$, rather than being hard coded, is determined during training by the data. The logic being that the value would be more optimal than we could set \textcolor{red}{CITE}}
 
 % {{{act_notsmooth_prelu}}}
@@ -432,7 +434,7 @@
 \r{typcially a feature extraction phase (consisting of convolutional and pooling layers) followed by a classifier block (dense layers).}
 
 %%%% popular layer types
-\textcolor{green}{TODO: feature maps, (height, width, and depth (also called channels axis)). Stride, filter size, depth. talk about params}
+\textcolor{green}{TODO: feature maps, (height, width, and depth (also called channels axis)). Stride, filter size, depth. talk about parameters}
 
 \r{The output feature map (every dimension in the depth axis is a feature/filter) --- after a convolution operation the depth of a layer is no longer representative of a color channel (like RGB), it is now representative of a feature extracted by the convolutional operation, these are called filters.}
 
@@ -440,6 +442,7 @@
 
 \TD{Dilated Convolution --- `atrous' convolution. (famously used by wavenet), which is convenient in time series analysis.}
 
+\r{weight tieing}
 
 
 \textcolor{green}{TODO: figure}

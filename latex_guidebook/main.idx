@@ -9,9 +9,9 @@
 \indexentry{one-of-k encoding}{22}
 \indexentry{sparse vectors}{22}
 \indexentry{interquartile range}{23}
-\indexentry{kernel trick}{24}
-\indexentry{corpus}{27}
-\indexentry{vocabulary}{27}
+\indexentry{kernel trick}{25}
+\indexentry{corpus}{26}
+\indexentry{vocabulary}{26}
 \indexentry{bag-of-words}{28}
 \indexentry{tf-idf}{28}
 \indexentry{information leaks}{29}
@@ -21,7 +21,7 @@
 \indexentry{Problem transformation}{38}
 \indexentry{inappropriate minima}{42}
 \indexentry{Grid search}{48}
-\indexentry{Randomized search}{48}
+\indexentry{Randomized search}{49}
 \indexentry{peeking}{57}
 \indexentry{model capacity}{58}
 \indexentry{Overfitting}{58}
@@ -35,8 +35,8 @@
 \indexentry{Voronoi region}{66}
 \indexentry{Ridge regression}{68}
 \indexentry{Tikhonov regularization}{68}
-\indexentry{inverted dropout}{71}
-\indexentry{freezing}{72}
+\indexentry{inverted dropout}{72}
+\indexentry{freezing}{73}
 \indexentry{generalized linear model}{81}
 \indexentry{Ordinary Lease Squares (OLS)}{82}
 \indexentry{Linear Least Squares}{82}

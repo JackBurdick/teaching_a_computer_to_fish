@@ -349,7 +349,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Discriminative Models}
 
-\r{learn a decision boundary that is used to \textit{discriminate} between classes. There exist both probabilistic and non-probabilistic discriminative models}
+\r{learn a decision boundary that is used to \textit{discriminate} between classes. There exist both probabilistic and non-probabilistic discriminative models.}
 
 \paragraph{Probabilistic Discriminative}
 
@@ -362,7 +362,17 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \subsubsection{Generative Models}
 
 % see p129[117] of Mastering ML w/SKL
-\TD{TODO: Generative Models --- do not learn a decision boundary, rather, they model the joint probability distribution of the features and classes i.e. they model how the classes generate features. Then, using Bayes' theorem, they are able to estimate the conditional probability of a class given the features.}
+\TD{TODO: Generative Models --- ``do not learn a decision boundary, rather, they model the joint probability distribution of the features and classes i.e. they model how the classes generate features. Then, using Bayes' theorem, they are able to estimate the conditional probability of a class given the features.''}
+
+\r{must be probabilistic, not deterministic and also some degree of randomness (otherwise the same output would be generated each time).}
+
+\TD{TODO: will need to expand into a much larger section and talk about some types of generative models}
+
+\TD{TODO: ``important'' examples --- GPT2, StyleGAN}
+
+\TD{TODO: use cases -- direct and indirect. music, art, game design, simulations for RL (paper\cite{ha2018world})}
+
+\r{\TD{Generative Deep Learning} makes a point that (paraphrasing) ``categorizing data is not enough, we should try to understand how and why the data came to existence in the first place.''}
 
 
 % see p130[118] of Mastering ML w/SKL

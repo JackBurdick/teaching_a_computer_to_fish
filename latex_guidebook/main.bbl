@@ -78,10 +78,24 @@
 {\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
   techniques of algorithmic differentiation}, vol.~105, Siam, 2008.
 
+\bibitem{guo2016entity}
+{\sc C.~Guo and F.~Berkhahn}, {\em Entity embeddings of categorical variables},
+  arXiv preprint arXiv:1604.06737,  (2016).
+
+\bibitem{ha2018world}
+{\sc D.~Ha and J.~Schmidhuber}, {\em World models}, arXiv preprint
+  arXiv:1803.10122,  (2018).
+
 \bibitem{hansen1990neural}
 {\sc L.~K. Hansen and P.~Salamon}, {\em Neural network ensembles}, IEEE
   Transactions on Pattern Analysis \& Machine Intelligence,  (1990),
   pp.~993--1001.
+
+\bibitem{he2015delving}
+{\sc K.~He, X.~Zhang, S.~Ren, and J.~Sun}, {\em Delving deep into rectifiers:
+  Surpassing human-level performance on imagenet classification}, in
+  Proceedings of the IEEE international conference on computer vision, 2015,
+  pp.~1026--1034.
 
 \bibitem{hinton2015distilling}
 {\sc G.~Hinton, O.~Vinyals, and J.~Dean}, {\em Distilling the knowledge in a
@@ -180,6 +194,11 @@
   representations by back-propagating errors}, Cognitive modeling, 5 (1988),
   p.~1.
 
+\bibitem{salimans2016weight}
+{\sc T.~Salimans and D.~P. Kingma}, {\em Weight normalization: A simple
+  reparameterization to accelerate training of deep neural networks}, in
+  Advances in Neural Information Processing Systems, 2016, pp.~901--909.
+
 \bibitem{sennrich2015improving}
 {\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
   translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
@@ -190,6 +209,10 @@
   {\em Learning from simulated and unsupervised images through adversarial
   training}, in Proceedings of the IEEE conference on computer vision and
   pattern recognition, 2017, pp.~2107--2116.
+
+\bibitem{simonyan2014very}
+{\sc K.~Simonyan and A.~Zisserman}, {\em Very deep convolutional networks for
+  large-scale image recognition}, arXiv preprint arXiv:1409.1556,  (2014).
 
 \bibitem{smith2017cyclical}
 {\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
@@ -241,6 +264,12 @@
 {\sc Q.~Xie, Z.~Dai, E.~Hovy, M.-T. Luong, and Q.~V. Le}, {\em Unsupervised
   data augmentation}, arXiv preprint arXiv:1904.12848,  (2019).
 
+\bibitem{xie2017aggregated}
+{\sc S.~Xie, R.~Girshick, P.~Doll{\'a}r, Z.~Tu, and K.~He}, {\em Aggregated
+  residual transformations for deep neural networks}, in Proceedings of the
+  IEEE conference on computer vision and pattern recognition, 2017,
+  pp.~1492--1500.
+
 \bibitem{yun2019cutmix}
 {\sc S.~Yun, D.~Han, S.~J. Oh, S.~Chun, J.~Choe, and Y.~Yoo}, {\em Cutmix:
   Regularization strategy to train strong classifiers with localizable
@@ -253,6 +282,10 @@
 \bibitem{zhang2017mixup}
 {\sc H.~Zhang, M.~Cisse, Y.~N. Dauphin, and D.~Lopez-Paz}, {\em mixup: Beyond
   empirical risk minimization}, arXiv preprint arXiv:1710.09412,  (2017).
+
+\bibitem{zhang2019fixup}
+{\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
+  learning without normalization}, arXiv preprint arXiv:1901.09321,  (2019).
 
 \bibitem{zoph2019learning}
 {\sc B.~Zoph, E.~D. Cubuk, G.~Ghiasi, T.-Y. Lin, J.~Shlens, and Q.~V. Le}, {\em

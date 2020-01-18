@@ -8,11 +8,11 @@ A level-1 auxiliary file: ethics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
+A level-1 auxiliary file: bloopers.aux
 A level-1 auxiliary file: quickref.aux
-A level-1 auxiliary file: tensorflow.aux
-A level-1 auxiliary file: examples.aux
-A level-1 auxiliary file: yamlflow.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: examples.aux
+A level-1 auxiliary file: yeahml.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: fit_somewhere.aux
 A level-1 auxiliary file: research/overview.aux
@@ -26,6 +26,10 @@ Repeated entry---line 452 of file TCF.bib
  : @article{reed2014training
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 501 of file TCF.bib
+ : @article{huang2017snapshot
+ :                           ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
 Warning--to sort, need author or key in cloudHW_google_cloud
@@ -35,4 +39,4 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-(There were 2 error messages)
+(There were 3 error messages)
