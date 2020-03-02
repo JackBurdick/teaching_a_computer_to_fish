@@ -4,8 +4,10 @@
 
 \TD{figure showing the importance of initialization strategies for different architectures after \textit{n} layers}
 
+\r{motivated partially by reducing the possibility of exploding or vanishing gradients.}
 
-\subsection{Parameter types}
+
+\subsection{Parameter types (the initialization of)}
 
 \TD{TODO: different types of parameters may benefit from different strategies}
 
@@ -24,20 +26,27 @@ Break symmetry -- two things:
 % HUGO talk
 \TD{initializing with negative values may encourage sparsity?}
 
+\TD{fan in and fan out}
+
+\subsection{Normal Vs Uniform}
+
 
 \subsection{Strategies}
 
 \TD{TODO: strategies overview}
 
-\TD{Kaiming initialization \cite{he2015delving}}
 
 \TD{fixup initialization \cite{zhang2019fixup}}
 
-\subsubsection{glotrot}
+\TD{LeCun \cite{lecun2012efficient}}
+
+\subsubsection{Glorot or Xavier}
+
+\TD{\cite{glorot2010understanding}}
 
 \subsubsection{he}
 
-
+\TD{Kaiming initialization \cite{he2015delving}}
 
 \subsubsection{Implementation}
 
