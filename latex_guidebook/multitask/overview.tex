@@ -1,0 +1,122 @@
+\section{Overview}
+
+\TD{overview}
+
+\r{learn model with parameters that solve multiple tasks -- don't care about generalizing to new tasks}
+
+\r{A task here is something we are }
+
+\subsection{Same loss function, different data distribution}
+
+\r{same loss function across all tasks, different distribution over inputs for each task -- same kind of output tasks -- e.g. per-language handwriting recognition, personalized spam filter -- spam for one person might different from one person to the next}
+
+\r{multi-label learning. loss function and distribution over inputs is the same across tasks -- different kind of output tasks -- e.g. CelebA attribute recognition, is one wearing hat? hair color? scene understanding -- depth? keypoints?}
+
+\subsection{Different loss function}
+
+\r{e.g. one task may be predicting a discrete variable and another is predicting a continuous variable.}
+
+\r{another example may be if you care more about one task than another}
+
+\subsection{training network}
+
+\r{task descriptor -- simplest could be a one hot encoded vector of task index}
+
+
+\r{multiplicative gating}
+
+\r{opposite ends of the spectrum -- i) single network (but essentially two sub networks), no shared parameters across tasks ii) same network until end, then concatenate task descriptor}
+
+\TD{figure}
+
+\r{task descriptor may be ``added in'' (concateated) at different points in the network -- which would result in more task specific parameters}
+
+
+\r{shared vs task specific parameters}
+
+\r{split parameter vector into shared and specific parameter vectors --  task specific parameters only optimized with respect to the objective for a given task, whereas shared are optimized over all tasks}
+
+\subsection{conditioning task descriptor}
+
+\r{``how you condition on the task descriptor is equivalent to choosing where and how to share parameters''}
+
+\r{there are many different choices -- which are currently considered problem dependent and are guided by intuion and knowledge about the problem (e.g. if you know two are similar they may share more information, less similar, maybe share less) -- currently more of an art}
+
+\r{i) concatenation/additive-based conditioning}
+
+\r{concatenation-based conditioning}
+
+\TD{figure}
+
+\r{additive conditioning}
+
+\TD{figure}
+
+\r{but in effect they are the same}
+\TD{explain/understand}
+
+\r{determining how similar tasks are to one another}
+
+\r{ii) multi-headed architecture -- (\TD{ruder '17?})}
+
+\r{from youtube paper -- that when correlation betweent tasks is low, it may harm the learning process}
+
+\r{share initial layers then diverge}
+
+\r{iii) multiplicative conditioning}
+
+\r{similar to additive, only you multiply -- more expressive than additive, (multiplicative interactions, not just additive))}
+
+\r{more complex choices -- ``cross stitch networks'' \TD{(Misra, Shrivastava, Gupta, Herber '16)}, ``multi-Task attention Network'' \TD{(Liu, Johns, Davison '18)}, ``Deep Relation Networks ''\TD{Long, Wang, '15}, ``Sluice Networks'' \TD{Ruder, Bingel, Augenstein, Sogaard '17}}
+
+\subsection{optimizing the objective}
+
+%% presented in stanford lecture \TD{cite}
+\r{Basic}
+\begin{itemize}[noitemsep,topsep=0pt]
+	% ensure tasks are sampled uniformly - regardless of data quantity
+	% however depending on desires/knowledge this may change
+	\item sample mini-batch of tasks
+	\item sample mini-bath of datapoints
+	\item compute loss on mini-batch
+	\item backprop loss to compute gradient
+	\item apply gradient with optimizer
+\end{itemize}
+
+\r{important to note that task labels should be on the same scale (for instance in the case of regression -- otherwise the loss function will, by default, optimize for one of the tasks more than the other)}
+
+\r{Challenges}
+\begin{itemize}[noitemsep,topsep=0pt]
+	% there may be a Finn paper on this with Multi-task CIFAR-100
+	\item Negative transfer -- data from one task is adversely affecting the training of the other tasks
+	\item sample mini-bath of datapoints
+	\item compute loss on mini-batch
+	\item backprop loss to compute gradient
+	\item apply gradient with optimizer
+\end{itemize}
+
+\r{negative transfer -- why? -- i) optimization challenges (caused by i) task interference and ii) tasks learning at different rates and ii) limited representational capacity (multi-task networks generally need to be much larger than single task)}
+
+\r{if the data is really unbalanced for different tasks, then it may learn the task with a lot of data and miss out on the task with smaller amounts of data.}
+
+
+\r{another way we could view multi-task learning is as a form or regularization}
+
+\r{each task has it's own form of supervison -- not necessarily about sharing inputs, about sharing supervision. each task corresponds to different amounts of supervison and those can be used for building more flexible representations}
+
+\r{if there is negative transfer -- share less across tasks. if overfitting, maybe need to share more}
+
+\r{sharing / not sharing is not binary, in that we could do something like soft parameter sharing}
+
+\TD{``recommending what video to watch next''\cite{zhao2019recommending}}
+
+\TD{from youtube paper ``Multi-gate Mixture-of-Experts (MMoE)'' -- form of soft-parameter sharing}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item shared bottom layer
+	\item allow different parts of the network to ``specialize'' (expert NNs)
+	\item decide which expert to use for some input / task combination
+	\item compute features from selected expert
+	\item compute output (takes as input the output from the expert)
+\end{itemize}
+
+\TD{interesting visualization where they looked at which experts were ``consulted'' for each task.}

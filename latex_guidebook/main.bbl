@@ -74,6 +74,12 @@
   online learning and stochastic optimization}, Journal of Machine Learning
   Research, 12 (2011), pp.~2121--2159.
 
+\bibitem{glorot2010understanding}
+{\sc X.~Glorot and Y.~Bengio}, {\em Understanding the difficulty of training
+  deep feedforward neural networks}, in Proceedings of the thirteenth
+  international conference on artificial intelligence and statistics, 2010,
+  pp.~249--256.
+
 \bibitem{griewank2008evaluating}
 {\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
   techniques of algorithmic differentiation}, vol.~105, Siam, 2008.
@@ -132,6 +138,11 @@
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
+
+\bibitem{lecun2012efficient}
+{\sc Y.~A. LeCun, L.~Bottou, G.~B. Orr, and K.-R. M{\"u}ller}, {\em Efficient
+  backprop}, in Neural networks: Tricks of the trade, Springer, 2012,
+  pp.~9--48.
 
 \bibitem{lemley2017smart}
 {\sc J.~Lemley, S.~Bazrafkan, and P.~Corcoran}, {\em Smart augmentation
@@ -286,6 +297,12 @@
 \bibitem{zhang2019fixup}
 {\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
   learning without normalization}, arXiv preprint arXiv:1901.09321,  (2019).
+
+\bibitem{zhao2019recommending}
+{\sc Z.~Zhao, L.~Hong, L.~Wei, J.~Chen, A.~Nath, S.~Andrews, A.~Kumthekar,
+  M.~Sathiamoorthy, X.~Yi, and E.~Chi}, {\em Recommending what video to watch
+  next: a multitask ranking system}, in Proceedings of the 13th ACM Conference
+  on Recommender Systems, 2019, pp.~43--51.
 
 \bibitem{zoph2019learning}
 {\sc B.~Zoph, E.~D. Cubuk, G.~Ghiasi, T.-Y. Lin, J.~Shlens, and Q.~V. Le}, {\em

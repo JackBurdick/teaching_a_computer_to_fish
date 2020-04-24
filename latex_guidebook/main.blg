@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
@@ -8,6 +10,8 @@ A level-1 auxiliary file: ethics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
+A level-1 auxiliary file: multitask.aux
+A level-1 auxiliary file: meta.aux
 A level-1 auxiliary file: bloopers.aux
 A level-1 auxiliary file: quickref.aux
 A level-1 auxiliary file: conclusion.aux
@@ -39,4 +43,45 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
+You've used 64 entries,
+            2030 wiz_defined-function locations,
+            813 strings with 14656 characters,
+and the built_in function-call counts, 20953 in all, are:
+= -- 1885
+> -- 1155
+< -- 0
++ -- 464
+- -- 395
+* -- 1697
+:= -- 3352
+add.period$ -- 80
+call.type$ -- 64
+change.case$ -- 385
+chr.to.int$ -- 0
+cite$ -- 73
+duplicate$ -- 913
+empty$ -- 1514
+format.name$ -- 395
+if$ -- 4323
+int.to.chr$ -- 0
+int.to.str$ -- 64
+missing$ -- 58
+newline$ -- 211
+num.names$ -- 111
+pop$ -- 460
+preamble$ -- 1
+purify$ -- 323
+quote$ -- 0
+skip$ -- 632
+stack$ -- 0
+substring$ -- 1047
+swap$ -- 301
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 252
+warning$ -- 9
+while$ -- 176
+width$ -- 66
+write$ -- 547
 (There were 3 error messages)
