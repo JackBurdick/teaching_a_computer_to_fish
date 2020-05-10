@@ -17,3 +17,71 @@
 \TD{where $k$ is the number of examples you're learning from}
 
 \TD{Evaluating meta-learning algorithms}
+
+\section{evaluation}
+
+\r{omniglot dataset --- 1623 characters, 50 alphabets, each character = 20 instances, many classes few examples}
+
+
+\section{Adaptation approaches}
+
+\subsection{Black-Box Adaptation}
+
+\r{LSTMs or NMTs -- e.g. \cite{santoro2016meta}. NMT, external memory mechanism for storing information from training, and accessing that information when infering on new data points (in a differentiable way).}
+
+% from lect 3, ~33min
+\r{NMT is not permutation invariant, Feedforward and average is.\cite{garnelo2018conditional}}
+
+\r{fast and slow weights -- where ``slow'' weights are related to the meta parameters and the ``fast'' weights are related to the task specific parameters.}
+
+\r{meta-networks \cite{munkhdalai2017meta}}
+
+\section{Optimization-based meta-learning}
+
+\r{acquire task specific parameters through optimization -- differentiate through to the meta parameters.}
+
+\r{meta-parameters act as a prior -- e.g. initialization then fine-tune. This is often associated with ``transfer learning'', where you train a network on some task then use those parameters for a new task. ``reusing features, and changing how those features are used for a new task -- not necessarily creating new features''.}
+
+
+% ``computational graph with embedded gradient operator'' -- Fin Youtube 3
+% learn initialization but replace gradient update with learned network Ravi + Larochelle '17
+% MAML - benefit of inductive bias w/out losing expressivness of gradient d.
+\r{Model-Agnostic Meta Learning \TD{CITE}}
+
+
+% adaptation to individual tasks given an individual dataset
+
+% optimization-based approach algo, lect 3 of Finn youtube
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item sample task
+	\item sample disjoint datasets
+	\item update fine-tuning parameters?
+	\item update meta parameters
+\end{itemize}
+
+% SNAIL, MetaNetworks
+
+% in a probabilistic interp -- the meta parameters serve as a prior e.g. initialization for fine-tuning
+% other forms of priors
+% - Bayesian Linear regression on learned features (Rajeswaran et al implicit MAML '19)
+% - Closed-form or convex optimization on learned features
+% -- ridge regression, logistic regression (Bertinetto et al R2-D2 '19)
+% -- SVM -- Lee et al. MetaOptNet '19
+
+
+% Finn L4
+\r{challenges}
+\r{choosing an arhictecture that is effective for the inner gradient step. One idea is Progressive nerual architecture search + MAML (Kim et al. Auto-Meta). a finding; non-standard (deep and narrow) were effective for MAML}
+% simple tricks can help optimization
+\r{Bi-level optimization is tricky -- inner and outer optimization. Couple ideas: - automatically learn inner learning rate, tune outer (Li et al. Meta-SGD,Behl et al. AlphaMAML} \r{- optimize only a subset of params in the inner loop (Zhou et al. DEML, Zintgraf et al. CAVIA)} \r{- Decouple inner learning rate, Batch norm statistics per-step (Antoniou et al. MAML++)}\r{- Introduce context variables for increased expressive power (Finn et al. bias transformation, Zintgraf el al. CAVIA)}
+r{Backpropagating through many inner gradient steps is compute and memory intensive}
+% ~16min in L4
+\r{approaches: - \TD{unsure -- (Finn et al. first-order MAML '17, Nichol et al. Reptile '18)}}
+
+
+\section{Non-Parametric Few-Shot Learning}
+\r{siamese networks, matching networks, prototypical networks}
+
+
+\section{Meta-Learning Algorithms}
+% comparisons of approaches

@@ -120,3 +120,58 @@
 \end{itemize}
 
 \TD{interesting visualization where they looked at which experts were ``consulted'' for each task.}
+
+
+%%%%%
+\r{one end of the spectrum}
+\r{each task may have subtasks}
+\r{downsides of multiple single tasks networks:}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item expensive at testtime
+	\item no feature sharing, potential overfitting
+\end{itemize}
+
+\r{benefit: decoupled functionality -- iterate on one thing by holding everything else constant}
+
+\TD{Cite Karpathy youtube}
+\r{other end of the spectrum}
+\r{benefit: less expensive at test time}
+\r{downsides of multiple lightweight heads on single backbone:}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item tasks may "fight" for the same shared capacity -- complicated relationship
+	\item fully coupled functionality
+\end{itemize}
+
+\section{Relationships}
+
+% TODO: this section outline is from the Karpathy youtube
+
+\subsection{Architecture}
+\TD{which tasks should be grouped together~\cite{standley2019tasks} -- how many backbones, and how should the heads be allocated?}
+
+\r{task weights -- as hyperparameters -- typically a bruteforce solution -- one example may be \cite{kirillov2019panoptic} -- this is ok for small number of tasks (two or so), but becomes intractable very fast.}
+
+\subsection{loss}
+
+% Karpathy youtube
+\r{considerations}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item loss function scale (e.g. classification vs regression and and within type scale)
+	\item importance
+	\item difficulty
+	\item data considerations (volume, noise, etc)
+\end{itemize}
+
+\subsection{Training Dynamics}
+
+\r{within-task oversampling (example from Karpathy talk is traffic light color -- green/red oversampled largely compared to orange and other)} \TD{attempt to semi-balance the batches to correct for label imbalance}
+
+\r{across-task balances}
+
+\r{Scheduling of batches is complex -- if a dataset has batch that contains a label for multiple objectives -- but by performing ``training'' with the other label, you may be altering the batch distributions you are considering}
+
+\r{what is early stopping for MTL?}
+
+\section{interesting considerations}
+
+\r{collaboration with multiple distributed people on an multi-task model isn't exactly straight forward.}

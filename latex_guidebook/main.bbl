@@ -74,6 +74,11 @@
   online learning and stochastic optimization}, Journal of Machine Learning
   Research, 12 (2011), pp.~2121--2159.
 
+\bibitem{garnelo2018conditional}
+{\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
+  M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
+  neural processes}, arXiv preprint arXiv:1807.01613,  (2018).
+
 \bibitem{glorot2010understanding}
 {\sc X.~Glorot and Y.~Bengio}, {\em Understanding the difficulty of training
   deep feedforward neural networks}, in Proceedings of the thirteenth
@@ -135,6 +140,11 @@
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
   arXiv preprint arXiv:1412.6980,  (2014).
 
+\bibitem{kirillov2019panoptic}
+{\sc A.~Kirillov, R.~Girshick, K.~He, and P.~Doll{\'a}r}, {\em Panoptic feature
+  pyramid networks}, in Proceedings of the IEEE Conference on Computer Vision
+  and Pattern Recognition, 2019, pp.~6399--6408.
+
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
@@ -171,6 +181,11 @@
   training: a regularization method for supervised and semi-supervised
   learning}, IEEE transactions on pattern analysis and machine intelligence, 41
   (2018), pp.~1979--1993.
+
+\bibitem{munkhdalai2017meta}
+{\sc T.~Munkhdalai and H.~Yu}, {\em Meta networks}, in Proceedings of the 34th
+  International Conference on Machine Learning-Volume 70, JMLR. org, 2017,
+  pp.~2554--2563.
 
 \bibitem{papernot2018deep}
 {\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
@@ -210,6 +225,11 @@
   reparameterization to accelerate training of deep neural networks}, in
   Advances in Neural Information Processing Systems, 2016, pp.~901--909.
 
+\bibitem{santoro2016meta}
+{\sc A.~Santoro, S.~Bartunov, M.~Botvinick, D.~Wierstra, and T.~Lillicrap},
+  {\em Meta-learning with memory-augmented neural networks}, in International
+  conference on machine learning, 2016, pp.~1842--1850.
+
 \bibitem{sennrich2015improving}
 {\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
   translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
@@ -240,10 +260,20 @@
   learning rate, increase the batch size}, arXiv preprint arXiv:1711.00489,
   (2017).
 
+\bibitem{snell2017prototypical}
+{\sc J.~Snell, K.~Swersky, and R.~Zemel}, {\em Prototypical networks for
+  few-shot learning}, in Advances in neural information processing systems,
+  2017, pp.~4077--4087.
+
 \bibitem{springenberg2014striving}
 {\sc J.~T. Springenberg, A.~Dosovitskiy, T.~Brox, and M.~Riedmiller}, {\em
   Striving for simplicity: The all convolutional net}, arXiv preprint
   arXiv:1412.6806,  (2014).
+
+\bibitem{standley2019tasks}
+{\sc T.~Standley, A.~R. Zamir, D.~Chen, L.~Guibas, J.~Malik, and S.~Savarese},
+  {\em Which tasks should be learned together in multi-task learning?}, arXiv
+  preprint arXiv:1905.07553,  (2019).
 
 \bibitem{szegedy2016rethinking}
 {\sc C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna}, {\em

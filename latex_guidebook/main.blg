@@ -12,6 +12,7 @@ A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
 A level-1 auxiliary file: multitask.aux
 A level-1 auxiliary file: meta.aux
+A level-1 auxiliary file: Optimization.aux
 A level-1 auxiliary file: bloopers.aux
 A level-1 auxiliary file: quickref.aux
 A level-1 auxiliary file: conclusion.aux
@@ -43,45 +44,45 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-You've used 64 entries,
+You've used 70 entries,
             2030 wiz_defined-function locations,
-            813 strings with 14656 characters,
-and the built_in function-call counts, 20953 in all, are:
-= -- 1885
-> -- 1155
+            841 strings with 15786 characters,
+and the built_in function-call counts, 23806 in all, are:
+= -- 2150
+> -- 1318
 < -- 0
-+ -- 464
-- -- 395
-* -- 1697
-:= -- 3352
-add.period$ -- 80
-call.type$ -- 64
-change.case$ -- 385
++ -- 528
+- -- 453
+* -- 1925
+:= -- 3781
+add.period$ -- 86
+call.type$ -- 70
+change.case$ -- 432
 chr.to.int$ -- 0
-cite$ -- 73
-duplicate$ -- 913
-empty$ -- 1514
-format.name$ -- 395
-if$ -- 4323
+cite$ -- 79
+duplicate$ -- 1035
+empty$ -- 1718
+format.name$ -- 453
+if$ -- 4935
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 58
-newline$ -- 211
-num.names$ -- 111
-pop$ -- 460
+int.to.str$ -- 70
+missing$ -- 64
+newline$ -- 229
+num.names$ -- 123
+pop$ -- 518
 preamble$ -- 1
-purify$ -- 323
+purify$ -- 364
 quote$ -- 0
-skip$ -- 632
+skip$ -- 727
 stack$ -- 0
-substring$ -- 1047
-swap$ -- 301
+substring$ -- 1237
+swap$ -- 353
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 252
+type$ -- 276
 warning$ -- 9
-while$ -- 176
-width$ -- 66
-write$ -- 547
+while$ -- 200
+width$ -- 72
+write$ -- 600
 (There were 3 error messages)
