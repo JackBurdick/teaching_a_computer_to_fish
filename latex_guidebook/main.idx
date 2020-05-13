@@ -2,8 +2,8 @@
 \indexentry{rank}{9}
 \indexentry{critical points}{10}
 \indexentry{stationary points}{10}
-\indexentry{global minimum}{10}
-\indexentry{global maximum}{10}
+\indexentry{global minimum}{11}
+\indexentry{global maximum}{11}
 \indexentry{element-wise}{13}
 \indexentry{one-hot encoding}{22}
 \indexentry{one-of-k encoding}{22}
@@ -20,7 +20,7 @@
 \indexentry{multi-label classification}{38}
 \indexentry{Problem transformation}{38}
 \indexentry{inappropriate minima}{42}
-\indexentry{Grid search}{49}
+\indexentry{Grid search}{48}
 \indexentry{Randomized search}{49}
 \indexentry{peeking}{61}
 \indexentry{model capacity}{62}
@@ -36,7 +36,7 @@
 \indexentry{Ridge regression}{72}
 \indexentry{Tikhonov regularization}{72}
 \indexentry{inverted dropout}{76}
-\indexentry{freezing}{76}
+\indexentry{freezing}{77}
 \indexentry{generalized linear model}{85}
 \indexentry{Ordinary Lease Squares (OLS)}{86}
 \indexentry{Linear Least Squares}{86}

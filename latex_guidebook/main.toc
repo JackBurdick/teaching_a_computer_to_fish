@@ -17,23 +17,23 @@
 \contentsline {section}{\numberline {2.4}Text Books}{7}
 \contentsline {chapter}{\numberline {3}Prerequisites}{9}
 \contentsline {section}{\numberline {3.1}Math Notation}{9}
-\contentsline {section}{\numberline {3.2}Calculus}{10}
-\contentsline {subsection}{\numberline {3.2.1}Derivatives}{10}
+\contentsline {section}{\numberline {3.2}Calculus}{9}
+\contentsline {subsection}{\numberline {3.2.1}Derivatives}{11}
 \contentsline {subsection}{\numberline {3.2.2}Chain Rule}{12}
 \contentsline {section}{\numberline {3.3}Boolean Logic}{12}
-\contentsline {section}{\numberline {3.4}Linear Algebra}{13}
-\contentsline {subsection}{\numberline {3.4.1}Overview}{13}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Scalars (0D tensors)}{13}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Vectors (1D tensors)}{13}
+\contentsline {section}{\numberline {3.4}Linear Algebra}{12}
+\contentsline {subsection}{\numberline {3.4.1}Overview}{12}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Scalars (0D tensors)}{12}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Vectors (1D tensors)}{12}
 \contentsline {subsubsection}{\numberline {3.4.1.3}Matrices (2D tensors)}{13}
 \contentsline {subsection}{\numberline {3.4.2}Matrix Arithmetic}{13}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Matrices}{14}
-\contentsline {paragraph}{\numberline {3.4.2.1.1}Addition, Subtraction}{14}
-\contentsline {paragraph}{\numberline {3.4.2.1.2}Multiplication, Division}{14}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Scalar}{14}
-\contentsline {paragraph}{\numberline {3.4.2.2.1}Addition, Subtraction}{14}
-\contentsline {paragraph}{\numberline {3.4.2.2.2}Multiplication, Division}{14}
-\contentsline {section}{\numberline {3.5}Graph Theory}{14}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Matrices}{13}
+\contentsline {paragraph}{\numberline {3.4.2.1.1}Addition, Subtraction}{13}
+\contentsline {paragraph}{\numberline {3.4.2.1.2}Multiplication, Division}{13}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Scalar}{13}
+\contentsline {paragraph}{\numberline {3.4.2.2.1}Addition, Subtraction}{13}
+\contentsline {paragraph}{\numberline {3.4.2.2.2}Multiplication, Division}{13}
+\contentsline {section}{\numberline {3.5}Graph Theory}{13}
 \contentsline {part}{II\hspace {1em}Data}{15}
 \contentsline {section}{\numberline {3.6}Bias}{18}
 \contentsline {subsection}{\numberline {3.6.1}Types of Bias}{18}
@@ -98,7 +98,7 @@
 \contentsline {subsection}{\numberline {3.10.1}Types of Splits}{29}
 \contentsline {subsection}{\numberline {3.10.2}k-Fold Cross Validation}{31}
 \contentsline {subsubsection}{\numberline {3.10.2.1}k-Fold Validation with shuffling}{31}
-\contentsline {subsection}{\numberline {3.10.3}Sampling}{32}
+\contentsline {subsection}{\numberline {3.10.3}Sampling}{31}
 \contentsline {paragraph}{\numberline {3.10.3.0.1}Representative Data}{32}
 \contentsline {paragraph}{\numberline {3.10.3.0.2}Representative Data}{32}
 \contentsline {part}{III\hspace {1em}Foundations}{33}
@@ -158,7 +158,7 @@
 \contentsline {subsubsection}{\numberline {4.10.1.2}Batch size}{48}
 \contentsline {subsection}{\numberline {4.10.2}Hyper-Parameter Optimization}{48}
 \contentsline {subsubsection}{\numberline {4.10.2.1}Coordinate Descent}{48}
-\contentsline {subsubsection}{\numberline {4.10.2.2}Grid Search}{49}
+\contentsline {subsubsection}{\numberline {4.10.2.2}Grid Search}{48}
 \contentsline {subsubsection}{\numberline {4.10.2.3}Randomized Search}{49}
 \contentsline {subsubsection}{\numberline {4.10.2.4}Other Methods: Automated / Model-based Methods}{49}
 \contentsline {paragraph}{\numberline {4.10.2.4.1}Bayesian Methods}{49}
@@ -232,7 +232,7 @@
 \contentsline {subsubsection}{\numberline {9.0.1.3}Early Stopping}{72}
 \contentsline {subsubsection}{\numberline {9.0.1.4}Parameter Norm Penalties}{72}
 \contentsline {paragraph}{\numberline {9.0.1.4.1}L2 Regularization}{72}
-\contentsline {paragraph}{\numberline {9.0.1.4.2}L1 Regularization}{72}
+\contentsline {paragraph}{\numberline {9.0.1.4.2}L1 Regularization}{73}
 \contentsline {paragraph}{\numberline {9.0.1.4.3}Elastic Net Regularization}{73}
 \contentsline {subsection}{\numberline {9.0.2}Dataset Augmentation}{73}
 \contentsline {subsubsection}{\numberline {9.0.2.1}Two Dimensional Data}{74}
@@ -242,7 +242,7 @@
 \contentsline {subsection}{\numberline {9.0.4}Ensemble Methods}{76}
 \contentsline {subsection}{\numberline {9.0.5}Adversarial Training}{76}
 \contentsline {subsection}{\numberline {9.0.6}Transfer Learning}{76}
-\contentsline {subsubsection}{\numberline {9.0.6.1}Normalization}{76}
+\contentsline {subsubsection}{\numberline {9.0.6.1}Normalization}{77}
 \contentsline {paragraph}{\numberline {9.0.6.1.1}Instance normalization}{77}
 \contentsline {paragraph}{\numberline {9.0.6.1.2}Layer normalization}{77}
 \contentsline {paragraph}{\numberline {9.0.6.1.3}Batch normalization}{77}
@@ -444,74 +444,80 @@
 \contentsline {chapter}{\numberline {19}Multi-Task Learning}{147}
 \contentsline {section}{\numberline {19.1}Overview}{147}
 \contentsline {subsection}{\numberline {19.1.1}Same loss function, different data distribution}{147}
-\contentsline {subsection}{\numberline {19.1.2}Different loss function}{147}
+\contentsline {subsection}{\numberline {19.1.2}Different loss function}{148}
 \contentsline {subsection}{\numberline {19.1.3}training network}{148}
 \contentsline {subsection}{\numberline {19.1.4}conditioning task descriptor}{148}
 \contentsline {subsection}{\numberline {19.1.5}optimizing the objective}{149}
 \contentsline {section}{\numberline {19.2}Relationships}{150}
 \contentsline {subsection}{\numberline {19.2.1}Architecture}{150}
-\contentsline {subsection}{\numberline {19.2.2}loss}{150}
+\contentsline {subsection}{\numberline {19.2.2}loss}{151}
 \contentsline {subsection}{\numberline {19.2.3}Training Dynamics}{151}
 \contentsline {section}{\numberline {19.3}interesting considerations}{151}
-\contentsline {part}{VII\hspace {1em}meta-learning}{153}
-\contentsline {chapter}{\numberline {20}Meta Learning}{155}
-\contentsline {section}{\numberline {20.1}Overview}{155}
-\contentsline {subsection}{\numberline {20.1.1}k-shot learning}{155}
-\contentsline {section}{\numberline {20.2}evaluation}{155}
-\contentsline {section}{\numberline {20.3}Adaptation approaches}{156}
-\contentsline {subsection}{\numberline {20.3.1}Black-Box Adaptation}{156}
-\contentsline {section}{\numberline {20.4}Optimization-based meta-learning}{156}
-\contentsline {section}{\numberline {20.5}Non-Parametric Few-Shot Learning}{157}
-\contentsline {section}{\numberline {20.6}Meta-Learning Algorithms}{157}
-\contentsline {part}{VIII\hspace {1em}Brief Reference}{159}
-\contentsline {chapter}{\numberline {21}Optimization}{161}
-\contentsline {section}{\numberline {21.1}Quantization}{161}
-\contentsline {subsection}{\numberline {21.1.1}When}{161}
-\contentsline {subsubsection}{\numberline {21.1.1.1}during training}{161}
-\contentsline {subsubsection}{\numberline {21.1.1.2}post-training}{161}
-\contentsline {section}{\numberline {21.2}Weight Pruning}{161}
-\contentsline {section}{\numberline {21.3}Topology}{161}
-\contentsline {subsection}{\numberline {21.3.1}Distillation}{162}
-\contentsline {subsection}{\numberline {21.3.2}Tensor Decomposition}{162}
-\contentsline {chapter}{\numberline {22}Mistakes and Bloopers}{163}
-\contentsline {chapter}{\numberline {23}Environment}{165}
-\contentsline {chapter}{\numberline {24}Common Libraries}{167}
-\contentsline {part}{IX\hspace {1em}Moving Forward}{169}
-\contentsline {section}{\numberline {24.1}What's Next}{171}
-\contentsline {part}{X\hspace {1em}End To End Examples}{173}
-\contentsline {chapter}{\numberline {25}EndToEnd}{175}
-\contentsline {section}{\numberline {25.1}Structured}{175}
-\contentsline {subsection}{\numberline {25.1.1}Linear Regression}{175}
-\contentsline {subsection}{\numberline {25.1.2}KNN}{175}
-\contentsline {section}{\numberline {25.2}Image}{175}
-\contentsline {subsection}{\numberline {25.2.1}Image Classification}{175}
-\contentsline {subsection}{\numberline {25.2.2}Image Segmentation}{175}
-\contentsline {subsection}{\numberline {25.2.3}Adversarial Exmaples}{175}
-\contentsline {subsection}{\numberline {25.2.4}AutoEncoder}{175}
-\contentsline {subsection}{\numberline {25.2.5}Generative Adversarial Network}{175}
-\contentsline {section}{\numberline {25.3}TimeSeries}{176}
-\contentsline {section}{\numberline {25.4}Text}{176}
-\contentsline {subsection}{\numberline {25.4.1}Sentiment Analysis}{176}
-\contentsline {section}{\numberline {25.5}Audio}{176}
-\contentsline {subsection}{\numberline {25.5.1}Audio to Text}{176}
-\contentsline {part}{XI\hspace {1em}Yeahml}{177}
-\contentsline {chapter}{\numberline {26}Overview}{179}
-\contentsline {chapter}{\numberline {27}How To}{181}
-\contentsline {part}{XII\hspace {1em}appendix}{183}
-\contentsline {chapter}{\numberline {28}TODO:}{185}
-\contentsline {section}{\numberline {28.1}Imputing Missing Values}{185}
-\contentsline {section}{\numberline {28.2}Anomaly Detection}{185}
-\contentsline {subsection}{\numberline {28.2.1}methods}{185}
-\contentsline {subsubsection}{\numberline {28.2.1.1}PCA}{185}
-\contentsline {section}{\numberline {28.3}labeling data}{186}
-\contentsline {section}{\numberline {28.4}Group Segmentation}{186}
-\contentsline {part}{XIII\hspace {1em}Dump Space}{187}
-\contentsline {subsection}{\numberline {28.4.1}Restricted Boltzmann Machines}{192}
-\contentsline {subsection}{\numberline {28.4.2}Greek letters}{194}
-\contentsline {subsection}{\numberline {28.4.3}Basic Log Math}{194}
-\contentsline {subsection}{\numberline {28.4.4}Basic Matrix Math}{194}
-\contentsline {subsection}{\numberline {28.4.5}Basic Linear Algebra}{194}
-\contentsline {subsection}{\numberline {28.4.6}Representation Learning}{194}
-\contentsline {subsection}{\numberline {28.4.7}others}{194}
-\contentsline {part}{XIV\hspace {1em}Research}{195}
-\contentsline {chapter}{\numberline {29}Ongoing Research}{197}
+\contentsline {section}{\numberline {19.4}Parameter Sharing}{151}
+\contentsline {subsection}{\numberline {19.4.1}Hard parameter sharing}{151}
+\contentsline {subsection}{\numberline {19.4.2}Soft parameter sharing}{152}
+\contentsline {subsection}{\numberline {19.4.3}Other}{152}
+\contentsline {section}{\numberline {19.5}Mechanisms}{152}
+\contentsline {part}{VII\hspace {1em}meta-learning}{155}
+\contentsline {chapter}{\numberline {20}Meta Learning}{157}
+\contentsline {section}{\numberline {20.1}Overview}{157}
+\contentsline {subsection}{\numberline {20.1.1}k-shot learning}{157}
+\contentsline {section}{\numberline {20.2}evaluation}{157}
+\contentsline {section}{\numberline {20.3}Adaptation approaches}{158}
+\contentsline {subsection}{\numberline {20.3.1}Black-Box Adaptation}{158}
+\contentsline {section}{\numberline {20.4}Optimization-based meta-learning}{158}
+\contentsline {section}{\numberline {20.5}Non-Parametric Few-Shot Learning}{159}
+\contentsline {section}{\numberline {20.6}Meta-Learning Algorithms}{159}
+\contentsline {part}{VIII\hspace {1em}Brief Reference}{161}
+\contentsline {chapter}{\numberline {21}Optimization}{163}
+\contentsline {section}{\numberline {21.1}Quantization}{163}
+\contentsline {subsection}{\numberline {21.1.1}When}{163}
+\contentsline {subsubsection}{\numberline {21.1.1.1}during training}{163}
+\contentsline {subsubsection}{\numberline {21.1.1.2}post-training}{163}
+\contentsline {section}{\numberline {21.2}Weight Pruning}{163}
+\contentsline {section}{\numberline {21.3}Topology}{163}
+\contentsline {subsection}{\numberline {21.3.1}Distillation}{164}
+\contentsline {subsection}{\numberline {21.3.2}Tensor Decomposition}{164}
+\contentsline {chapter}{\numberline {22}Mistakes and Bloopers}{165}
+\contentsline {chapter}{\numberline {23}Environment}{167}
+\contentsline {chapter}{\numberline {24}Common Libraries}{169}
+\contentsline {part}{IX\hspace {1em}Moving Forward}{171}
+\contentsline {section}{\numberline {24.1}What's Next}{173}
+\contentsline {part}{X\hspace {1em}End To End Examples}{175}
+\contentsline {chapter}{\numberline {25}EndToEnd}{177}
+\contentsline {section}{\numberline {25.1}Structured}{177}
+\contentsline {subsection}{\numberline {25.1.1}Linear Regression}{177}
+\contentsline {subsection}{\numberline {25.1.2}KNN}{177}
+\contentsline {section}{\numberline {25.2}Image}{177}
+\contentsline {subsection}{\numberline {25.2.1}Image Classification}{177}
+\contentsline {subsection}{\numberline {25.2.2}Image Segmentation}{177}
+\contentsline {subsection}{\numberline {25.2.3}Adversarial Exmaples}{177}
+\contentsline {subsection}{\numberline {25.2.4}AutoEncoder}{177}
+\contentsline {subsection}{\numberline {25.2.5}Generative Adversarial Network}{177}
+\contentsline {section}{\numberline {25.3}TimeSeries}{178}
+\contentsline {section}{\numberline {25.4}Text}{178}
+\contentsline {subsection}{\numberline {25.4.1}Sentiment Analysis}{178}
+\contentsline {section}{\numberline {25.5}Audio}{178}
+\contentsline {subsection}{\numberline {25.5.1}Audio to Text}{178}
+\contentsline {part}{XI\hspace {1em}Yeahml}{179}
+\contentsline {chapter}{\numberline {26}Overview}{181}
+\contentsline {chapter}{\numberline {27}How To}{183}
+\contentsline {part}{XII\hspace {1em}appendix}{185}
+\contentsline {chapter}{\numberline {28}TODO:}{187}
+\contentsline {section}{\numberline {28.1}Imputing Missing Values}{187}
+\contentsline {section}{\numberline {28.2}Anomaly Detection}{187}
+\contentsline {subsection}{\numberline {28.2.1}methods}{187}
+\contentsline {subsubsection}{\numberline {28.2.1.1}PCA}{187}
+\contentsline {section}{\numberline {28.3}labeling data}{188}
+\contentsline {section}{\numberline {28.4}Group Segmentation}{188}
+\contentsline {part}{XIII\hspace {1em}Dump Space}{189}
+\contentsline {subsection}{\numberline {28.4.1}Restricted Boltzmann Machines}{194}
+\contentsline {subsection}{\numberline {28.4.2}Greek letters}{195}
+\contentsline {subsection}{\numberline {28.4.3}Basic Log Math}{196}
+\contentsline {subsection}{\numberline {28.4.4}Basic Matrix Math}{196}
+\contentsline {subsection}{\numberline {28.4.5}Basic Linear Algebra}{196}
+\contentsline {subsection}{\numberline {28.4.6}Representation Learning}{196}
+\contentsline {subsection}{\numberline {28.4.7}others}{196}
+\contentsline {section}{\numberline {28.5}research to include}{197}
+\contentsline {part}{XIV\hspace {1em}Research}{199}
+\contentsline {chapter}{\numberline {29}Ongoing Research}{201}

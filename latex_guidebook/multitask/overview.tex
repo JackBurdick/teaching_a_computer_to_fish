@@ -4,7 +4,18 @@
 
 \r{learn model with parameters that solve multiple tasks -- don't care about generalizing to new tasks}
 
+\r{may also be refered to as joint learning or learning with auxiliary tasks and is closely related to meta learning \TD{ref} or learning to learn.}
+
 \r{A task here is something we are }
+
+\r{Ruder~\cite{DBLP:journals/corr/Ruder17a} motivates multi-task learning in three different ways:}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item biologically -- when learning new tasks we often use knowledge acquired from other tasks
+	\item pedagogical -- learn foundational skills before learning more complex skills
+	\item machine learning -- MTL may provide a form of inductive transfer, which may cause a model to prefer some hypotheses over others or may cause the model to prefer hypotheses that explain more than one task
+\end{itemize}
+
 
 \subsection{Same loss function, different data distribution}
 
@@ -175,3 +186,52 @@
 \section{interesting considerations}
 
 \r{collaboration with multiple distributed people on an multi-task model isn't exactly straight forward.}
+
+\section{Parameter Sharing}
+
+\r{hard or soft parameter sharing}
+
+\subsection{Hard parameter sharing}
+
+\r{sharing hidden layers between tasks. This, depending on the capacity of the model and requirements of the task, may require the model to build/find representations that are useful beyond a single task -- reducing the risk of overfitting.}
+
+\TD{figure of hard parameter sharing}
+
+\subsection{Soft parameter sharing}
+
+\r{each task has it's own model, but the parameters between corresponding layers are regularized.}
+
+\TD{figure of soft parameter sharing}
+
+\subsection{Other}
+
+\TD{Deep Relationship Networks~\cite{DBLP:journals/corr/Long015a}, rely on a pre-defined structure but use maxrix priors on fully connected layers, allowing the model to learn the relationship between tasks.}
+
+\TD{dynamically widens a thin network greedily, promoting grouping of related tasks ~\cite{DBLP:journals/corr/LuKZCJF16}}
+
+\TD{Cross-stitch Networks for Multi-task Learning~\cite{DBLP:journals/corr/MisraSGH16} begin as two separate models (the same as if soft parameter sharing was being used) then ``cross-stitch'' units.}
+
+\r{NLP -- task hierarchy. ``“low-level” tasks are better kept at the lowerlayers, enabling the higher-level tasks to make use of the shared representation of the lower-level tasks.''\cite{sogaard2016deep}.  \TD{A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks \cite{DBLP:journals/corr/HashimotoXTS16}}}
+
+\r{rather than learning the structure of sharing, \TD{Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics \cite{DBLP:journals/corr/KendallGC17}} consider the uncertainty of each task }
+
+\TD{tensor factorization~\cite{DBLP:journals/corr/YangH16}}
+
+\TD{Sluice Networks, learning which layers and subspaces to share~\cite{ruder2019latent}}
+
+
+
+\section{Mechanisms}
+
+\r{from ruder\cite{DBLP:journals/corr/Ruder17a} citing \TD{Caruana}}
+
+
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item implicit data augmentation -- two tasks that have different noise patterns, may learn better representations though averaging the noise patterns
+	\item attention focusing -- e.g. if is very difficult (noisy, or high-dimensional), a model may have trouble differentiating the relevant features and by using additional tasks, the model may be able to use the additional information to determine which features are relevant. This may be dependent on task related-ness?
+	\item Eavesdropping -- learning task relevant to a task from another task. In one task, learning a feature may be easier than the other. hints \TD{https://www.sciencedirect.com/science/article/pii/0885064X9090006Y}
+	\item representation bias -- MTL biases model to prefer representations that are useful to many tasks, not just one. \TD{A Model of Inductive Bias Learning \cite{DBLP:journals/corr/abs-1106-0245}}
+	\item Regularization -- introduces an inductive bias
+\end{itemize}
+

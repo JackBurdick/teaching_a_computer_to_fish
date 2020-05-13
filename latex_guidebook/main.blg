@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
@@ -20,6 +18,7 @@ A level-1 auxiliary file: examples.aux
 A level-1 auxiliary file: yeahml.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: fit_somewhere.aux
+A level-1 auxiliary file: research_to_include.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
 Database file #1: TCF.bib
@@ -35,6 +34,7 @@ Repeated entry---line 501 of file TCF.bib
  : @article{huang2017snapshot
  :                           ,
 I'm skipping whatever remains of this entry
+Database file #2: arxiv.bib
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
 Warning--to sort, need author or key in cloudHW_google_cloud
@@ -44,45 +44,4 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-You've used 70 entries,
-            2030 wiz_defined-function locations,
-            841 strings with 15786 characters,
-and the built_in function-call counts, 23806 in all, are:
-= -- 2150
-> -- 1318
-< -- 0
-+ -- 528
-- -- 453
-* -- 1925
-:= -- 3781
-add.period$ -- 86
-call.type$ -- 70
-change.case$ -- 432
-chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 1035
-empty$ -- 1718
-format.name$ -- 453
-if$ -- 4935
-int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 64
-newline$ -- 229
-num.names$ -- 123
-pop$ -- 518
-preamble$ -- 1
-purify$ -- 364
-quote$ -- 0
-skip$ -- 727
-stack$ -- 0
-substring$ -- 1237
-swap$ -- 353
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 276
-warning$ -- 9
-while$ -- 200
-width$ -- 72
-write$ -- 600
 (There were 3 error messages)

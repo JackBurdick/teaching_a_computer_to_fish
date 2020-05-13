@@ -51,6 +51,10 @@
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
 
+\bibitem{DBLP:journals/corr/abs-1106-0245}
+{\sc J.~Baxter}, {\em A model of inductive bias learning}, CoRR, abs/1106.0245
+  (2011).
+
 \bibitem{baydin2017online}
 {\sc A.~G. Baydin, R.~Cornish, D.~M. Rubio, M.~Schmidt, and F.~Wood}, {\em
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
@@ -102,6 +106,11 @@
   Transactions on Pattern Analysis \& Machine Intelligence,  (1990),
   pp.~993--1001.
 
+\bibitem{DBLP:journals/corr/HashimotoXTS16}
+{\sc K.~Hashimoto, C.~Xiong, Y.~Tsuruoka, and R.~Socher}, {\em A joint
+  many-task model: Growing a neural network for multiple {NLP} tasks}, CoRR,
+  abs/1611.01587 (2016).
+
 \bibitem{he2015delving}
 {\sc K.~He, X.~Zhang, S.~Ren, and J.~Sun}, {\em Delving deep into rectifiers:
   Surpassing human-level performance on imagenet classification}, in
@@ -136,6 +145,11 @@
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
 
+\bibitem{DBLP:journals/corr/KendallGC17}
+{\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
+  uncertainty to weigh losses for scene geometry and semantics}, CoRR,
+  abs/1705.07115 (2017).
+
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
   arXiv preprint arXiv:1412.6980,  (2014).
@@ -168,13 +182,26 @@
   of an algorithm as a taylor expansion of the local rounding errors}, Master's
   Thesis (in Finnish), Univ. Helsinki,  (1970), pp.~6--7.
 
+\bibitem{DBLP:journals/corr/Long015a}
+{\sc M.~Long and J.~Wang}, {\em Learning multiple tasks with deep relationship
+  networks}, CoRR, abs/1506.02117 (2015).
+
 \bibitem{loshchilov2016sgdr}
 {\sc I.~Loshchilov and F.~Hutter}, {\em Sgdr: stochastic gradient descent with
   restarts}, Learning, 10 (2016), p.~3.
 
+\bibitem{DBLP:journals/corr/LuKZCJF16}
+{\sc Y.~Lu, A.~Kumar, S.~Zhai, Y.~Cheng, T.~Javidi, and R.~S. Feris}, {\em
+  Fully-adaptive feature sharing in multi-task networks with applications in
+  person attribute classification}, CoRR, abs/1611.05377 (2016).
+
 \bibitem{masters2018revisiting}
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
   neural networks}, arXiv preprint arXiv:1804.07612,  (2018).
+
+\bibitem{DBLP:journals/corr/MisraSGH16}
+{\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
+  networks for multi-task learning}, CoRR, abs/1604.03539 (2016).
 
 \bibitem{miyato2018virtual}
 {\sc T.~Miyato, S.-i. Maeda, M.~Koyama, and S.~Ishii}, {\em Virtual adversarial
@@ -209,6 +236,15 @@
 {\sc S.~Reed, H.~Lee, D.~Anguelov, C.~Szegedy, D.~Erhan, and A.~Rabinovich},
   {\em Training deep neural networks on noisy labels with bootstrapping}, arXiv
   preprint arXiv:1412.6596,  (2014).
+
+\bibitem{DBLP:journals/corr/Ruder17a}
+{\sc S.~Ruder}, {\em An overview of multi-task learning in deep neural
+  networks}, CoRR, abs/1706.05098 (2017).
+
+\bibitem{ruder2019latent}
+{\sc S.~Ruder, J.~Bingel, I.~Augenstein, and A.~S{\o}gaard}, {\em Latent
+  multi-task architecture learning}, in Proceedings of the AAAI Conference on
+  Artificial Intelligence, vol.~33, 2019, pp.~4822--4829.
 
 \bibitem{ruderman2018learned}
 {\sc A.~Ruderman, N.~Rabinowitz, A.~S. Morcos, and D.~Zoran}, {\em Learned
@@ -265,6 +301,12 @@
   few-shot learning}, in Advances in neural information processing systems,
   2017, pp.~4077--4087.
 
+\bibitem{sogaard2016deep}
+{\sc A.~S{\o}gaard and Y.~Goldberg}, {\em Deep multi-task learning with low
+  level tasks supervised at lower layers}, in Proceedings of the 54th Annual
+  Meeting of the Association for Computational Linguistics (Volume 2: Short
+  Papers), 2016, pp.~231--235.
+
 \bibitem{springenberg2014striving}
 {\sc J.~T. Springenberg, A.~Dosovitskiy, T.~Brox, and M.~Riedmiller}, {\em
   Striving for simplicity: The all convolutional net}, arXiv preprint
@@ -311,6 +353,10 @@
   IEEE conference on computer vision and pattern recognition, 2017,
   pp.~1492--1500.
 
+\bibitem{DBLP:journals/corr/YangH16}
+{\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
+  learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
+
 \bibitem{yun2019cutmix}
 {\sc S.~Yun, D.~Han, S.~J. Oh, S.~Chun, J.~Choe, and Y.~Yoo}, {\em Cutmix:
   Regularization strategy to train strong classifiers with localizable
@@ -327,6 +373,10 @@
 \bibitem{zhang2019fixup}
 {\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
   learning without normalization}, arXiv preprint arXiv:1901.09321,  (2019).
+
+\bibitem{DBLP:journals/corr/ZhangY17aa}
+{\sc Y.~Zhang and Q.~Yang}, {\em A survey on multi-task learning}, CoRR,
+  abs/1707.08114 (2017).
 
 \bibitem{zhao2019recommending}
 {\sc Z.~Zhao, L.~Hong, L.~Wei, J.~Chen, A.~Nath, S.~Andrews, A.~Kumthekar,
