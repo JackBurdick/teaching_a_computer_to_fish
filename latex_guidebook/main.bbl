@@ -182,6 +182,10 @@
   of an algorithm as a taylor expansion of the local rounding errors}, Master's
   Thesis (in Finnish), Univ. Helsinki,  (1970), pp.~6--7.
 
+\bibitem{DBLP:journals/corr/abs-1803-10704}
+{\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
+  with attention}, CoRR, abs/1803.10704 (2018).
+
 \bibitem{DBLP:journals/corr/Long015a}
 {\sc M.~Long and J.~Wang}, {\em Learning multiple tasks with deep relationship
   networks}, CoRR, abs/1506.02117 (2015).
@@ -194,6 +198,12 @@
 {\sc Y.~Lu, A.~Kumar, S.~Zhai, Y.~Cheng, T.~Javidi, and R.~S. Feris}, {\em
   Fully-adaptive feature sharing in multi-task networks with applications in
   person attribute classification}, CoRR, abs/1611.05377 (2016).
+
+\bibitem{ma2018modeling}
+{\sc J.~Ma, Z.~Zhao, X.~Yi, J.~Chen, L.~Hong, and E.~H. Chi}, {\em Modeling
+  task relationships in multi-task learning with multi-gate
+  mixture-of-experts}, in Proceedings of the 24th ACM SIGKDD International
+  Conference on Knowledge Discovery \& Data Mining, 2018, pp.~1930--1939.
 
 \bibitem{masters2018revisiting}
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep

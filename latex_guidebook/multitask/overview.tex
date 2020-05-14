@@ -195,9 +195,13 @@
 
 \r{sharing hidden layers between tasks. This, depending on the capacity of the model and requirements of the task, may require the model to build/find representations that are useful beyond a single task -- reducing the risk of overfitting.}
 
+\r{hard parameter sharing \cite{caruana1993multitask}}
+
 \TD{figure of hard parameter sharing}
 
 \subsection{Soft parameter sharing}
+
+\r{soft parmeter sharing~\cite{duong2015low}}
 
 \r{each task has it's own model, but the parameters between corresponding layers are regularized.}
 
@@ -218,6 +222,12 @@
 \TD{tensor factorization~\cite{DBLP:journals/corr/YangH16}}
 
 \TD{Sluice Networks, learning which layers and subspaces to share~\cite{ruder2019latent}}
+
+\TD{End-to-End Multi-Task Learning with Attention \cite{DBLP:journals/corr/abs-1803-10704}}
+
+
+\TD{Multi-gate MoE (MMoE) -- explicitly learns to model task relationship from data~\cite{ma2018modeling}}
+
 
 
 
