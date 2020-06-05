@@ -60,6 +60,21 @@
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
 
+\bibitem{bromley1994signature}
+{\sc J.~Bromley, I.~Guyon, Y.~LeCun, E.~S{\"a}ckinger, and R.~Shah}, {\em
+  Signature verification using a" siamese" time delay neural network}, in
+  Advances in neural information processing systems, 1994, pp.~737--744.
+
+\bibitem{caruana1993multitask}
+{\sc R.~Caruana}, {\em Multitask learning: A knowledge-based source of
+  inductive bias icml}, Google Scholar Google Scholar Digital Library Digital
+  Library,  (1993).
+
+\bibitem{DBLP:journals/corr/ChenCZH17}
+{\sc W.~Chen, X.~Chen, J.~Zhang, and K.~Huang}, {\em Beyond triplet loss: a
+  deep quadruplet network for person re-identification}, CoRR, abs/1704.01719
+  (2017).
+
 \bibitem{cubuk2018autoaugment}
 {\sc E.~D. Cubuk, B.~Zoph, D.~Mane, V.~Vasudevan, and Q.~V. Le}, {\em
   Autoaugment: Learning augmentation policies from data}, arXiv preprint
@@ -77,6 +92,13 @@
 {\sc J.~Duchi, E.~Hazan, and Y.~Singer}, {\em Adaptive subgradient methods for
   online learning and stochastic optimization}, Journal of Machine Learning
   Research, 12 (2011), pp.~2121--2159.
+
+\bibitem{duong2015low}
+{\sc L.~Duong, T.~Cohn, S.~Bird, and P.~Cook}, {\em Low resource dependency
+  parsing: Cross-lingual parameter sharing in a neural network parser}, in
+  Proceedings of the 53rd Annual Meeting of the Association for Computational
+  Linguistics and the 7th International Joint Conference on Natural Language
+  Processing (Volume 2: Short Papers), 2015, pp.~845--850.
 
 \bibitem{garnelo2018conditional}
 {\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
@@ -238,6 +260,11 @@
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
 
+\bibitem{rawal2020synthetic}
+{\sc A.~Rawal, J.~Lehman, F.~P. Such, J.~Clune, and K.~O. Stanley}, {\em
+  Synthetic petri dish: A novel surrogate model for rapid architecture search},
+  arXiv preprint arXiv:2005.13092,  (2020).
+
 \bibitem{reddi2019convergence}
 {\sc S.~J. Reddi, S.~Kale, and S.~Kumar}, {\em On the convergence of adam and
   beyond}, arXiv preprint arXiv:1904.09237,  (2019).
@@ -276,10 +303,19 @@
   {\em Meta-learning with memory-augmented neural networks}, in International
   conference on machine learning, 2016, pp.~1842--1850.
 
+\bibitem{DBLP:journals/corr/SchroffKP15}
+{\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
+  embedding for face recognition and clustering}, CoRR, abs/1503.03832 (2015).
+
 \bibitem{sennrich2015improving}
 {\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
   translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
   (2015).
+
+\bibitem{shazeer2017outrageously}
+{\sc N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~Le, G.~Hinton, and
+  J.~Dean}, {\em Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer}, arXiv preprint arXiv:1701.06538,  (2017).
 
 \bibitem{shrivastava2017learning}
 {\sc A.~Shrivastava, T.~Pfister, O.~Tuzel, J.~Susskind, W.~Wang, and R.~Webb},

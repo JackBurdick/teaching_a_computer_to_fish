@@ -512,7 +512,7 @@
 \contentsline {section}{\numberline {28.4}Group Segmentation}{188}
 \contentsline {part}{XIII\hspace {1em}Dump Space}{189}
 \contentsline {subsection}{\numberline {28.4.1}Restricted Boltzmann Machines}{194}
-\contentsline {subsection}{\numberline {28.4.2}Greek letters}{195}
+\contentsline {subsection}{\numberline {28.4.2}Greek letters}{196}
 \contentsline {subsection}{\numberline {28.4.3}Basic Log Math}{196}
 \contentsline {subsection}{\numberline {28.4.4}Basic Matrix Math}{196}
 \contentsline {subsection}{\numberline {28.4.5}Basic Linear Algebra}{196}
