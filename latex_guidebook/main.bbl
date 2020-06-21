@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{cloudHW_amazon_aws}
 {\em Amazon aws. [{O}nline]}.
@@ -64,6 +64,10 @@
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
 
+\bibitem{DBLP:journals/corr/BritzGLL17}
+{\sc D.~Britz, A.~Goldie, M.~Luong, and Q.~V. Le}, {\em Massive exploration of
+  neural machine translation architectures}, CoRR, abs/1703.03906 (2017).
+
 \bibitem{bromley1994signature}
 {\sc J.~Bromley, I.~Guyon, Y.~LeCun, E.~S{\"a}ckinger, and R.~Shah}, {\em
   Signature verification using a" siamese" time delay neural network}, in
@@ -78,6 +82,10 @@
 {\sc W.~Chen, X.~Chen, J.~Zhang, and K.~Huang}, {\em Beyond triplet loss: a
   deep quadruplet network for person re-identification}, CoRR, abs/1704.01719
   (2017).
+
+\bibitem{DBLP:journals/corr/ChengDL16}
+{\sc J.~Cheng, L.~Dong, and M.~Lapata}, {\em Long short-term memory-networks
+  for machine reading}, CoRR, abs/1601.06733 (2016).
 
 \bibitem{cubuk2018autoaugment}
 {\sc E.~D. Cubuk, B.~Zoph, D.~Mane, V.~Vasudevan, and Q.~V. Le}, {\em
@@ -109,11 +117,20 @@
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
   neural processes}, arXiv preprint arXiv:1807.01613,  (2018).
 
+\bibitem{Ghorbani2019DermGANSG}
+{\sc A.~Ghorbani, V.~Natarajan, D.~Coz, and Y.~Liu}, {\em Dermgan: Synthetic
+  generation of clinical skin images with pathology}, ArXiv, abs/1911.08716
+  (2019).
+
 \bibitem{glorot2010understanding}
 {\sc X.~Glorot and Y.~Bengio}, {\em Understanding the difficulty of training
   deep feedforward neural networks}, in Proceedings of the thirteenth
   international conference on artificial intelligence and statistics, 2010,
   pp.~249--256.
+
+\bibitem{DBLP:journals/corr/GravesWD14}
+{\sc A.~Graves, G.~Wayne, and I.~Danihelka}, {\em Neural turing machines},
+  CoRR, abs/1410.5401 (2014).
 
 \bibitem{griewank2008evaluating}
 {\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
@@ -225,6 +242,10 @@
   Fully-adaptive feature sharing in multi-task networks with applications in
   person attribute classification}, CoRR, abs/1611.05377 (2016).
 
+\bibitem{DBLP:journals/corr/LuongPM15}
+{\sc M.~Luong, H.~Pham, and C.~D. Manning}, {\em Effective approaches to
+  attention-based neural machine translation}, CoRR, abs/1508.04025 (2015).
+
 \bibitem{ma2018modeling}
 {\sc J.~Ma, Z.~Zhao, X.~Yi, J.~Chen, L.~Hong, and E.~H. Chi}, {\em Modeling
   task relationships in multi-task learning with multi-gate
@@ -263,6 +284,11 @@
 \bibitem{qian1999momentum}
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
+
+\bibitem{Radford2015UnsupervisedRL}
+{\sc A.~Radford, L.~Metz, and S.~Chintala}, {\em Unsupervised representation
+  learning with deep convolutional generative adversarial networks}, CoRR,
+  abs/1511.06434 (2015).
 
 \bibitem{rawal2020synthetic}
 {\sc A.~Rawal, J.~Lehman, F.~P. Such, J.~Clune, and K.~O. Stanley}, {\em
@@ -367,6 +393,10 @@
   {\em Which tasks should be learned together in multi-task learning?}, arXiv
   preprint arXiv:1905.07553,  (2019).
 
+\bibitem{DBLP:journals/corr/SutskeverVL14}
+{\sc I.~Sutskever, O.~Vinyals, and Q.~V. Le}, {\em Sequence to sequence
+  learning with neural networks}, CoRR, abs/1409.3215 (2014).
+
 \bibitem{szegedy2016rethinking}
 {\sc C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna}, {\em
   Rethinking the inception architecture for computer vision}, in Proceedings of
@@ -377,6 +407,23 @@
 {\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
   data augmentation approach for learning deep models}, in Advances in neural
   information processing systems, 2017, pp.~2797--2806.
+
+\bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
+{\sc A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  L.~Kaiser, and I.~Polosukhin}, {\em Attention is all you need}, CoRR,
+  abs/1706.03762 (2017).
+
+\bibitem{Vinyals2015PointerN}
+{\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
+  abs/1506.03134 (2015).
+
+\bibitem{DBLP:journals/corr/abs-1711-07971}
+{\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural
+  networks}, CoRR, abs/1711.07971 (2017).
+
+\bibitem{weng2018attention}
+{\sc L.~Weng}, {\em Attention? attention!}, lilianweng.github.io/lil-log,
+  (2018).
 
 \bibitem{wilson2003general}
 {\sc D.~R. Wilson and T.~R. Martinez}, {\em The general inefficiency of batch
@@ -403,6 +450,11 @@
   IEEE conference on computer vision and pattern recognition, 2017,
   pp.~1492--1500.
 
+\bibitem{DBLP:journals/corr/XuBKCCSZB15}
+{\sc K.~Xu, J.~Ba, R.~Kiros, K.~Cho, A.~C. Courville, R.~Salakhutdinov, R.~S.
+  Zemel, and Y.~Bengio}, {\em Show, attend and tell: Neural image caption
+  generation with visual attention}, CoRR, abs/1502.03044 (2015).
+
 \bibitem{DBLP:journals/corr/YangH16}
 {\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
   learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
@@ -423,6 +475,11 @@
 \bibitem{zhang2019fixup}
 {\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
   learning without normalization}, arXiv preprint arXiv:1901.09321,  (2019).
+
+\bibitem{Zhang2019SelfAttentionGA}
+{\sc H.~Zhang, I.~J. Goodfellow, D.~N. Metaxas, and A.~Odena}, {\em
+  Self-attention generative adversarial networks}, ArXiv, abs/1805.08318
+  (2019).
 
 \bibitem{DBLP:journals/corr/ZhangY17aa}
 {\sc Y.~Zhang and Q.~Yang}, {\em A survey on multi-task learning}, CoRR,

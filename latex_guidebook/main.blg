@@ -22,18 +22,6 @@ A level-1 auxiliary file: research_to_include.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
 Database file #1: TCF.bib
-Repeated entry---line 256 of file TCF.bib
- : @article{zeiler2012adadelta
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 452 of file TCF.bib
- : @article{reed2014training
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 501 of file TCF.bib
- : @article{huang2017snapshot
- :                           ,
-I'm skipping whatever remains of this entry
 Database file #2: arxiv.bib
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
@@ -44,4 +32,4 @@ Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty journal in dozat2016incorporating
-(There were 3 error messages)
+(There were 9 warnings)
