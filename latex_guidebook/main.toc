@@ -363,19 +363,20 @@
 \contentsline {subsection}{\numberline {13.5.1}Maintaining States}{118}
 \contentsline {subsection}{\numberline {13.5.2}Addressing Vanishing and Exploding Gradients}{118}
 \contentsline {section}{\numberline {13.6}Architecture}{118}
-\contentsline {subsection}{\numberline {13.6.1}Cell Advancements}{118}
-\contentsline {subsubsection}{\numberline {13.6.1.1}LSTM}{118}
-\contentsline {paragraph}{\numberline {13.6.1.1.1}Fully Connected Layers}{118}
+\contentsline {subsection}{\numberline {13.6.1}Attention}{118}
+\contentsline {subsection}{\numberline {13.6.2}Cell Advancements}{118}
+\contentsline {subsubsection}{\numberline {13.6.2.1}LSTM}{118}
+\contentsline {paragraph}{\numberline {13.6.2.1.1}Fully Connected Layers}{118}
 \contentsline {subparagraph}{Main}{119}
 \contentsline {subparagraph}{Forget}{119}
-\contentsline {subparagraph}{Input}{120}
-\contentsline {subparagraph}{Output}{120}
-\contentsline {paragraph}{\numberline {13.6.1.1.2}Other}{120}
-\contentsline {subparagraph}{Peephole Connections}{120}
-\contentsline {subsubsection}{\numberline {13.6.1.2}GRU}{121}
-\contentsline {subsection}{\numberline {13.6.2}Initialization}{121}
-\contentsline {subsection}{\numberline {13.6.3}Activation Functions}{121}
-\contentsline {subsection}{\numberline {13.6.4}Notes -- add}{121}
+\contentsline {subparagraph}{Input}{119}
+\contentsline {subparagraph}{Output}{119}
+\contentsline {paragraph}{\numberline {13.6.2.1.2}Other}{121}
+\contentsline {subparagraph}{Peephole Connections}{121}
+\contentsline {subsubsection}{\numberline {13.6.2.2}GRU}{121}
+\contentsline {subsection}{\numberline {13.6.3}Initialization}{121}
+\contentsline {subsection}{\numberline {13.6.4}Activation Functions}{121}
+\contentsline {subsection}{\numberline {13.6.5}Notes -- add}{121}
 \contentsline {chapter}{\numberline {14}Unsupervised}{123}
 \contentsline {subsection}{\numberline {14.0.1}TODO}{123}
 \contentsline {section}{\numberline {14.1}Clustering}{124}

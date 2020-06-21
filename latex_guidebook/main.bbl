@@ -51,6 +51,10 @@
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
 
+\bibitem{Bahdanau2015NeuralMT}
+{\sc D.~Bahdanau, K.~Cho, and Y.~Bengio}, {\em Neural machine translation by
+  jointly learning to align and translate}, CoRR, abs/1409.0473 (2015).
+
 \bibitem{DBLP:journals/corr/abs-1106-0245}
 {\sc J.~Baxter}, {\em A model of inductive bias learning}, CoRR, abs/1106.0245
   (2011).
