@@ -112,6 +112,22 @@
   Linguistics and the 7th International Joint Conference on Natural Language
   Processing (Volume 2: Short Papers), 2015, pp.~845--850.
 
+\bibitem{DBLP:journals/corr/abs-1803-03635}
+{\sc J.~Frankle and M.~Carbin}, {\em The lottery ticket hypothesis: Training
+  pruned neural networks}, CoRR, abs/1803.03635 (2018).
+
+\bibitem{DBLP:journals/corr/abs-1903-01611}
+{\sc J.~Frankle, G.~K. Dziugaite, D.~M. Roy, and M.~Carbin}, {\em The lottery
+  ticket hypothesis at scale}, CoRR, abs/1903.01611 (2019).
+
+\bibitem{Frankle2020TheEP}
+{\sc J.~Frankle, D.~J. Schwab, and A.~S. Morcos}, {\em The early phase of
+  neural network training}, ArXiv, abs/2002.10365 (2020).
+
+\bibitem{DBLP:journals/corr/abs-1906-04358}
+{\sc A.~Gaier and D.~Ha}, {\em Weight agnostic neural networks}, CoRR,
+  abs/1906.04358 (2019).
+
 \bibitem{garnelo2018conditional}
 {\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
@@ -139,6 +155,10 @@
 \bibitem{guo2016entity}
 {\sc C.~Guo and F.~Berkhahn}, {\em Entity embeddings of categorical variables},
   arXiv preprint arXiv:1604.06737,  (2016).
+
+\bibitem{DBLP:journals/corr/GuoPSW17}
+{\sc C.~Guo, G.~Pleiss, Y.~Sun, and K.~Q. Weinberger}, {\em On calibration of
+  modern neural networks}, CoRR, abs/1706.04599 (2017).
 
 \bibitem{ha2018world}
 {\sc D.~Ha and J.~Schmidhuber}, {\em World models}, arXiv preprint
@@ -188,6 +208,10 @@
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
 
+\bibitem{kaya2019deep}
+{\sc M.~Kaya and H.~{\c{S}}. Bilge}, {\em Deep metric learning: A survey},
+  Symmetry, 11 (2019), p.~1066.
+
 \bibitem{DBLP:journals/corr/KendallGC17}
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
   uncertainty to weigh losses for scene geometry and semantics}, CoRR,
@@ -206,10 +230,19 @@
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
 
+\bibitem{lange2020_lottery_ticket_hypothesis}
+{\sc R.~T. Lange}, {\em The lottery ticket hypothesis: A survey},
+  https://roberttlange.github.io/year-archive/posts/2020/06/lottery-ticket-hypothesis/,
+   (2020).
+
 \bibitem{lecun2012efficient}
 {\sc Y.~A. LeCun, L.~Bottou, G.~B. Orr, and K.-R. M{\"u}ller}, {\em Efficient
   backprop}, in Neural networks: Tricks of the trade, Springer, 2012,
   pp.~9--48.
+
+\bibitem{DBLP:journals/corr/abs-1810-02340}
+{\sc N.~Lee, T.~Ajanthan, and P.~H.~S. Torr}, {\em {SNIP:} single-shot network
+  pruning based on connection sensitivity}, CoRR, abs/1810.02340 (2018).
 
 \bibitem{lemley2017smart}
 {\sc J.~Lemley, S.~Bazrafkan, and P.~Corcoran}, {\em Smart augmentation
@@ -266,6 +299,15 @@
   learning}, IEEE transactions on pattern analysis and machine intelligence, 41
   (2018), pp.~1979--1993.
 
+\bibitem{Morcos2019OneTT}
+{\sc A.~S. Morcos, H.~Yu, M.~Paganini, and Y.~Tian}, {\em One ticket to win
+  them all: generalizing lottery ticket initializations across datasets and
+  optimizers}, in NeurIPS, 2019.
+
+\bibitem{DBLP:journals/corr/abs-1906-02629}
+{\sc R.~M{\"{u}}ller, S.~Kornblith, and G.~E. Hinton}, {\em When does label
+  smoothing help?}, CoRR, abs/1906.02629 (2019).
+
 \bibitem{munkhdalai2017meta}
 {\sc T.~Munkhdalai and H.~Yu}, {\em Meta networks}, in Proceedings of the 34th
   International Conference on Machine Learning-Volume 70, JMLR. org, 2017,
@@ -281,6 +323,11 @@
   Regularizing neural networks by penalizing confident output distributions},
   arXiv preprint arXiv:1701.06548,  (2017).
 
+\bibitem{DBLP:journals/corr/PereyraTCKH17}
+{\sc G.~Pereyra, G.~Tucker, J.~Chorowski, L.~Kaiser, and G.~E. Hinton}, {\em
+  Regularizing neural networks by penalizing confident output distributions},
+  CoRR, abs/1701.06548 (2017).
+
 \bibitem{qian1999momentum}
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
@@ -289,6 +336,11 @@
 {\sc A.~Radford, L.~Metz, and S.~Chintala}, {\em Unsupervised representation
   learning with deep convolutional generative adversarial networks}, CoRR,
   abs/1511.06434 (2015).
+
+\bibitem{Rahaman2019OnTS}
+{\sc N.~Rahaman, A.~Baratin, D.~Arpit, F.~Dr{\"a}xler, M.~Lin, F.~A. Hamprecht,
+  Y.~Bengio, and A.~C. Courville}, {\em On the spectral bias of neural
+  networks}, in ICML, 2019.
 
 \bibitem{rawal2020synthetic}
 {\sc A.~Rawal, J.~Lehman, F.~P. Such, J.~Clune, and K.~O. Stanley}, {\em
@@ -303,6 +355,10 @@
 {\sc S.~Reed, H.~Lee, D.~Anguelov, C.~Szegedy, D.~Erhan, and A.~Rabinovich},
   {\em Training deep neural networks on noisy labels with bootstrapping}, arXiv
   preprint arXiv:1412.6596,  (2014).
+
+\bibitem{Renda2020ComparingRA}
+{\sc A.~Renda, J.~Frankle, and M.~Carbin}, {\em Comparing rewinding and
+  fine-tuning in neural network pruning}, ArXiv, abs/2003.02389 (2020).
 
 \bibitem{DBLP:journals/corr/Ruder17a}
 {\sc S.~Ruder}, {\em An overview of multi-task learning in deep neural
@@ -332,6 +388,11 @@
 {\sc A.~Santoro, S.~Bartunov, M.~Botvinick, D.~Wierstra, and T.~Lillicrap},
   {\em Meta-learning with memory-augmented neural networks}, in International
   conference on machine learning, 2016, pp.~1842--1850.
+
+\bibitem{Saxe2013ExactST}
+{\sc A.~M. Saxe, J.~L. McClelland, and S.~Ganguli}, {\em Exact solutions to the
+  nonlinear dynamics of learning in deep linear neural networks}, CoRR,
+  abs/1312.6120 (2013).
 
 \bibitem{DBLP:journals/corr/SchroffKP15}
 {\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
@@ -403,6 +464,11 @@
   the IEEE conference on computer vision and pattern recognition, 2016,
   pp.~2818--2826.
 
+\bibitem{Tanaka2020PruningNN}
+{\sc H.~Tanaka, D.~Kunin, D.~L.~K. Yamins, and S.~Ganguli}, {\em Pruning neural
+  networks without any data by iteratively conserving synaptic flow}, ArXiv,
+  abs/2006.05467 (2020).
+
 \bibitem{tran2017bayesian}
 {\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
   data augmentation approach for learning deep models}, in Advances in neural
@@ -459,6 +525,16 @@
 {\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
   learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
 
+\bibitem{You2020DrawingET}
+{\sc H.~You, C.~Li, P.~Xu, Y.~Fu, Y.~Wang, X.~Chen, Y.~Lin, Z.~Wang, and
+  R.~Baraniuk}, {\em Drawing early-bird tickets: Towards more efficient
+  training of deep networks}, ArXiv, abs/1909.11957 (2020).
+
+\bibitem{Yu2020PlayingTL}
+{\sc H.~Yu, S.~Edunov, Y.~Tian, and A.~S. Morcos}, {\em Playing the lottery
+  with rewards and multiple languages: lottery tickets in rl and nlp}, ArXiv,
+  abs/1906.02768 (2020).
+
 \bibitem{yun2019cutmix}
 {\sc S.~Yun, D.~Han, S.~J. Oh, S.~Chun, J.~Choe, and Y.~Yoo}, {\em Cutmix:
   Regularization strategy to train strong classifiers with localizable
@@ -490,6 +566,10 @@
   M.~Sathiamoorthy, X.~Yi, and E.~Chi}, {\em Recommending what video to watch
   next: a multitask ranking system}, in Proceedings of the 13th ACM Conference
   on Recommender Systems, 2019, pp.~43--51.
+
+\bibitem{DBLP:journals/corr/abs-1905-01067}
+{\sc H.~Zhou, J.~Lan, R.~Liu, and J.~Yosinski}, {\em Deconstructing lottery
+  tickets: Zeros, signs, and the supermask}, CoRR, abs/1905.01067 (2019).
 
 \bibitem{zoph2019learning}
 {\sc B.~Zoph, E.~D. Cubuk, G.~Ghiasi, T.-Y. Lin, J.~Shlens, and Q.~V. Le}, {\em

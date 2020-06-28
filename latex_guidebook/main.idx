@@ -22,58 +22,58 @@
 \indexentry{inappropriate minima}{42}
 \indexentry{Grid search}{48}
 \indexentry{Randomized search}{49}
-\indexentry{peeking}{61}
-\indexentry{model capacity}{62}
-\indexentry{Overfitting}{62}
-\indexentry{Underfitting}{62}
-\indexentry{Variance}{63}
-\indexentry{Bias}{63}
-\indexentry{Type I error}{66}
-\indexentry{Type II error}{66}
-\indexentry{Pearson's R}{69}
-\indexentry{Voronoi tessellation}{70}
-\indexentry{Voronoi region}{70}
-\indexentry{Ridge regression}{72}
-\indexentry{Tikhonov regularization}{72}
-\indexentry{inverted dropout}{76}
-\indexentry{freezing}{77}
-\indexentry{generalized linear model}{85}
-\indexentry{Ordinary Lease Squares (OLS)}{86}
-\indexentry{Linear Least Squares}{86}
-\indexentry{residuals}{86}
-\indexentry{residual sum of squares (RSS)}{87}
-\indexentry{odds ratio}{88}
-\indexentry{logit}{88}
-\indexentry{discrimination threshold}{88}
-\indexentry{lazy learner}{88}
-\indexentry{Support Vector Machine (SVM)}{91}
-\indexentry{Sequential Minimal Optimization (SMO)}{91}
-\indexentry{independent and identically distributed (i.i.d)}{92}
-\indexentry{ID3 algorithm}{94}
-\indexentry{J48}{94}
-\indexentry{Heaviside step function}{99}
-\indexentry{unit step function}{99}
-\indexentry{universal approximators}{100}
-\indexentry{input layer}{100}
-\indexentry{hidden layer}{100}
-\indexentry{output layer}{100}
-\indexentry{credit assignment problem}{102}
-\indexentry{sigmoid}{103}
-\indexentry{ReLUN}{107}
-\indexentry{data distillation}{111}
-\indexentry{reverse-mode differentiation}{112}
-\indexentry{symbolic differentiation}{112}
-\indexentry{image quantization}{128}
-\indexentry{silhouette coefficient}{130}
-\indexentry{Principal Component Analysis (PCA)}{131}
-\indexentry{Karhunen-Love Transform (KLM)}{131}
-\indexentry{covarience matrix}{131}
-\indexentry{manifold}{133}
-\indexentry{bagging}{143}
-\indexentry{boostrap aggregating}{143}
-\indexentry{sampling with replacement|see{bagging}}{143}
-\indexentry{bootstrap samples}{143}
-\indexentry{subagging}{144}
-\indexentry{sampling without replacement|see{subagging}}{144}
-\indexentry{subspace sampling}{144}
-\indexentry{blending}{145}
+\indexentry{peeking}{63}
+\indexentry{model capacity}{64}
+\indexentry{Overfitting}{64}
+\indexentry{Underfitting}{64}
+\indexentry{Variance}{65}
+\indexentry{Bias}{65}
+\indexentry{Type I error}{68}
+\indexentry{Type II error}{68}
+\indexentry{Pearson's R}{71}
+\indexentry{Voronoi tessellation}{72}
+\indexentry{Voronoi region}{72}
+\indexentry{Ridge regression}{74}
+\indexentry{Tikhonov regularization}{74}
+\indexentry{inverted dropout}{78}
+\indexentry{freezing}{79}
+\indexentry{generalized linear model}{87}
+\indexentry{Ordinary Lease Squares (OLS)}{88}
+\indexentry{Linear Least Squares}{88}
+\indexentry{residuals}{88}
+\indexentry{residual sum of squares (RSS)}{89}
+\indexentry{odds ratio}{90}
+\indexentry{logit}{90}
+\indexentry{discrimination threshold}{90}
+\indexentry{lazy learner}{90}
+\indexentry{Support Vector Machine (SVM)}{93}
+\indexentry{Sequential Minimal Optimization (SMO)}{93}
+\indexentry{independent and identically distributed (i.i.d)}{94}
+\indexentry{ID3 algorithm}{96}
+\indexentry{J48}{96}
+\indexentry{Heaviside step function}{101}
+\indexentry{unit step function}{101}
+\indexentry{universal approximators}{102}
+\indexentry{input layer}{102}
+\indexentry{hidden layer}{102}
+\indexentry{output layer}{102}
+\indexentry{credit assignment problem}{104}
+\indexentry{sigmoid}{105}
+\indexentry{ReLUN}{109}
+\indexentry{data distillation}{113}
+\indexentry{reverse-mode differentiation}{114}
+\indexentry{symbolic differentiation}{114}
+\indexentry{image quantization}{130}
+\indexentry{silhouette coefficient}{132}
+\indexentry{Principal Component Analysis (PCA)}{133}
+\indexentry{Karhunen-Love Transform (KLM)}{133}
+\indexentry{covarience matrix}{133}
+\indexentry{manifold}{135}
+\indexentry{bagging}{145}
+\indexentry{boostrap aggregating}{145}
+\indexentry{sampling with replacement|see{bagging}}{145}
+\indexentry{bootstrap samples}{145}
+\indexentry{subagging}{146}
+\indexentry{sampling without replacement|see{subagging}}{146}
+\indexentry{subspace sampling}{146}
+\indexentry{blending}{147}

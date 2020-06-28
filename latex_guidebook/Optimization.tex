@@ -1,6 +1,19 @@
-\chapter{Optimization}
+\chapter{Model ``Compression''}
 
 % this section will likely be moved around
+motivation
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Model (output) performance
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item regularization (through reduction of number of parameters)
+	\end{itemize}
+	\item Model performance
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item memory/storage --- by creating physically smaller networks
+		\item energy --- computation, latency, which supports edge depolyments
+	\end{itemize}
+\end{itemize}
 
 \section{Quantization}
 
@@ -21,7 +34,74 @@
 
 \section{Weight Pruning}
 
+%TODO: https://github.com/he-y/Awesome-Pruning -- repo of recent pruning work
+
+% intial skeleton influence by:
+\TD{The initial structure and citations were heavily influenced by \cite{lange2020_lottery_ticket_hypothesis}}
+
+\TD{SNIP: Single-shot Network Pruning based on Connection Sensitivity \cite{DBLP:journals/corr/abs-1810-02340}}
+
 \r{reduces the overall number of parameters}
+
+\r{in practice, this often refers to setting the parameters of a particular ``node'' to zero and making it untrainable during training.}
+
+\TD{Comparing Rewinding and Fine-tuning in Neural Network Pruning \cite{Renda2020ComparingRA} --- Learning rate rewinding}
+
+\TD{Deconstructing Lottery Tickets: Zero \cite{DBLP:journals/corr/abs-1905-01067} --- SuperMasks}
+
+\TD{The Early Phase of Neural Network Training \cite{Frankle2020TheEP}}
+
+% `` identify highly sparse trainable subnetworks at initialization, without ever training, or indeed without ever looking at the data''
+\TD{Synaptic Flow Pruning (SynFlow) --- Pruning neural networks without any data by iteratively conserving synaptic flow \cite{Tanaka2020PruningNN}}
+
+% code: https://github.com/varungohil/Generalizing-Lottery-Tickets
+\TD{One ticket to win them all: generalizing lottery ticket initializations across datasets and optimizers \cite{Morcos2019OneTT}}
+
+
+\subsubsection{What to remove}
+
+
+
+\paragraph{relationship of nodes to nodes pruned}
+
+\subparagraph{unstructured}
+
+\r{no consideration for relationship between pruned weights}
+
+\subparagraph{structured}
+
+\r{prunes ``groups'' of weights.}
+
+\paragraph{relationship of nodes to architecture}
+
+\subparagraph{local}
+
+\r{enforcment of a percent of weights pruned at each layer}
+
+\subparagraph{global}
+
+\r{total percent of weights are pruned, no restriction layer wise.}
+
+\subsubsection{Deciding what to remove}
+
+\r{common thought: large magnitude parameters are ``more important'' and thus should be removed less --- which is counterintuitive to concepts such as l2 regularization which penalize large magnitude parameters.}
+
+\TD{other techniques}
+
+\subsubsection{When to prune}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Before training
+	\item During training
+	\item After training
+\end{itemize}
+
+\subsubsection{Pruning mechanism}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item One shot (prune all at once)
+	\item Iterative
+\end{itemize}
 
 \section{Topology}
 
@@ -31,4 +111,21 @@
 
 \subsection{Tensor Decomposition}
 % Not sure what this is -- from coursera
+
+
+% TODO: this fits somewhere in this chapter, but not necessarily `here'
+\subsection{The Lottery Ticket Hypothesis}
+
+
+\TD{Original paper --- The Lottery Ticket Hypothesis: Training Pruned Neural Networks \cite{DBLP:journals/corr/abs-1803-03635} --- iterative pruning. Dense network at initialization contains a number of ``winning tickets''}
+
+
+\TD{Stabilizing the Lottery Ticket Hypothesis \cite{DBLP:journals/corr/abs-1903-01611}}
+
+\TD{IMP with rewind}
+
+% CODE: https://github.com/RICE-EIC/Early-Bird-Tickets
+\TD{Drawing early-bird tickets: Towards more efficient training of deep networks \cite{You2020DrawingET}}
+
+\TD{Playing the lottery with rewards and multiple languages: lottery tickets in RL and NLP \cite{Yu2020PlayingTL}}
 
