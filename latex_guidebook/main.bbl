@@ -240,6 +240,11 @@
   backprop}, in Neural networks: Tricks of the trade, Springer, 2012,
   pp.~9--48.
 
+\bibitem{lee2013pseudo}
+{\sc D.-H. Lee}, {\em Pseudo-label: The simple and efficient semi-supervised
+  learning method for deep neural networks}, in Workshop on challenges in
+  representation learning, ICML, vol.~3, 2013.
+
 \bibitem{DBLP:journals/corr/abs-1810-02340}
 {\sc N.~Lee, T.~Ajanthan, and P.~H.~S. Torr}, {\em {SNIP:} single-shot network
   pruning based on connection sensitivity}, CoRR, abs/1810.02340 (2018).
@@ -317,6 +322,12 @@
 {\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
   confident, interpretable and robust deep learning}, arXiv preprint
   arXiv:1803.04765,  (2018).
+
+\bibitem{papineni2002bleu}
+{\sc K.~Papineni, S.~Roukos, T.~Ward, and W.-J. Zhu}, {\em Bleu: a method for
+  automatic evaluation of machine translation}, in Proceedings of the 40th
+  annual meeting of the Association for Computational Linguistics, 2002,
+  pp.~311--318.
 
 \bibitem{pereyra2017regularizing}
 {\sc G.~Pereyra, G.~Tucker, J.~Chorowski, {\L}.~Kaiser, and G.~Hinton}, {\em

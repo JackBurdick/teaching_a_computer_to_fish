@@ -1,4 +1,4 @@
-\subsection{Qualitative Evalutation: Performance Metrics}
+\section{Qualitative Evalutation: Performance Metrics}
 
 % NOTE: the term for this section should be ``performance metrics'' that are metrics related to model performance
 
@@ -7,198 +7,37 @@
 % TODO: this para needs to be merged with the prev section and moved to where it is decided it best fits
 \emph{Cost} is frequently used interchangeably with loss. Technically, loss refers to the error on a single example and cost is the average of the loss across the entire training set.
 
-\subsubsection{Confusion Matrix}
-\textcolor{blue}{A confusion matrix (sometimes referred to as a table of confusion, or contingency table) XXXXXXXX}
 
-%% Confusion matrix
-\begin{table}
-	\centering
-	\begin{tabular}{l|l|c|c|}
-		\multicolumn{2}{c}{}&\multicolumn{2}{c}{Ground Truth}\\ 
-		\cline{3-4}
-		\multicolumn{2}{c|}{}&Positive&Negative\\ 
-		\cline{2-4}
-		\multirow{2}{*}{\rotatebox{90}{Pred}}& Positive & $TP$ & $FP$ \\ 
-		\cline{2-4}
-		& Negative & $FN$ & $TN$ \\ 
-		\cline{2-4}
-	\end{tabular}
-	\caption{Example confusion matrix}
-	\label{tab:sample_conf_matrix}
-\end{table}
+\TD{Need to rethink this definition and placement.}
+\r{here I'm defining (perhaps inappropriately) metics as not not differentiable --- at least without any clever manipulations.  That is all ``losses'' (found in \TD{section}) could be considered metrics, but it is unlikely that the metrics in this section would be used as a loss function.}
 
-\textcolor{blue}{From the confusion matrix:}
-
-\begin{itemize}
-	
-\item \textit{TP (True Positive)}: ``hit'', correct positive prediction. The ground truth is positive and the prediction is positive.
-
-\item \textit{TN (True Negative)}: correct rejection. The ground truth is negative and the prediction is negative.
-
-\item \textit{FP (False Positive)}: False alarm or Type I error\index{Type I error}. The ground truth is negative, but the prediction is positive.
-
-\item \textit{FN (False Negative)}: Miss or Type II error\index{Type II error}. The ground truth is positive, but the prediction is negative.
-	
-\end{itemize}
-
-\subsubsection{Classification Metrics}
-
-\textcolor{blue}{The below measures of performance are calculated with the indicated equation with values obtained from the confusion matrix XXXXXXXX}
-
-\begin{itemize}
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Accuracy (ACC)}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions. \textcolor{blue}{this is typically the ``go to metric'', however, accuracy may give a false sense of XXXXX and is particularly not very informative if dealing with skewed (unbalanced data) --- see example in \textcolor{red}{local ref?}}
-
-\begin{equation}
-{\frac{TP+TN}{TP+TN+FP+FN}}
-\label{eq:accuracy}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Misclassification rate}, (Eq.~\ref{eq:misclassification_def}): \textcolor{blue}{the ``opposite'' of accuracy}.
-
-\begin{equation}
-{\frac{FP+FN}{TP+TN+FP+FN}}
-\label{eq:misclassification_def}
-\end{equation}
+% % https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213
+\TD{BLEU Score\cite{papineni2002bleu}}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Sensitivity (recall, hit rate, true positive rate (TPR))}, (Eq.~\ref{eq:sensitivity}): the ratio of true positives that are correctly identified.
+\subsection{discrete}
 
-\begin{equation}
-{\frac{TP}{TP+FN}}
-\label{eq:sensitivity}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Specificity (true negative rate (TNR))}, (Eq.~\ref{eq:specificity}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{TN}{TN+FP}}
-\label{eq:specificity}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Precision (positive predictive value (PPV))}, (Eq.~\ref{eq:precision}): the ratio of positives that are, in fact, positive. If the classifier predicts positive, how often is is correct?
-
-\begin{equation}
-{\frac{TP}{TP+FP}}
-\label{eq:precision}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Negative Predictive Value (NPV)}, (Eq.~\ref{eq:npv}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{TN}{TN+FN}}
-\label{eq:npv}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Miss Rate (False Negative Rate (FNR))}, (Eq.~\ref{eq:miss_rate}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{FN}{FN+TP}}
-\label{eq:miss_rate}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Fall-Out (False Positive Rate (FPR))}, (Eq.~\ref{eq:fall_out}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{FP}{FP+TN}}
-\label{eq:fall_out}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{False Discovery Rate (FDR)}, (Eq.~\ref{eq:false_discovery}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{FP}{FP+TP}}
-\label{eq:false_discovery}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{False Omission Rate (FOR)}, (Eq.~\ref{eq:false_omission}): \textcolor{blue}{XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{FN}{FN+TN}}
-\label{eq:false_omission}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% TODO: define harmonic mean somewhere
-\item \textit{F-1 Score}, (Eq.~\ref{eq:f1_metric}): \textcolor{blue}{F1 is the \textcolor{red}{harmonic mean} of precision and sensitivity XXXXXXXXXX. The F1 score will penalize classifiers more as the difference between the precision and sensitivity increases.}.
-
-\begin{equation}
-{\frac{2TP}{2TP+FP+FN}}
-\label{eq:f1_metric}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is  an alternative to the F1 score for evaluating binary classifiers. MCC is useful even when the ratio of class in the data is severely imbalanced. the XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}}
-\label{eq:mcc_metric}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Informedness (Bookmaker Informedness (BM))}, (Eq.~\ref{eq:informed_metric}): \textcolor{blue}{Informedness is the XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{TP}{TP+FN}+\frac{TN}{TN+FP}-1}
-\label{eq:informed_metric}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Markedness (MK)}, (Eq.~\ref{eq:markedness_metric}): \textcolor{blue}{Markedness is the XXXXXXXXXX}.
-
-\begin{equation}
-{\frac{TP}{TP+FP}+\frac{TN}{TN+FN}-1}
-\label{eq:markedness_metric}
-\end{equation}
+\r{classification}
 
 
+\subsubsection{Common Metrics}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve. The larger the auROC, the better.
-\end{itemize}
+\input{./nested/basics/metrics/discrete/common}
 
-\subsubsection{Precision-Recall curve}
+% TODO: continuous probability rank score.
 
-\TD{Diagram}
+\subsection{continuous}
 
-\r{choice of the threshold to use moving forward}
+\TD{does this section even belong here --- wouldn't this, by default, belong in the discrete section?}
 
-\r{auROC \ALR used}
-
-\subsubsection{Regression Metrics}
-
-\textcolor{blue}{It is important to note that regression performance metrics must ignore the direction of the error, otherwise the positive and negative errors would cancel each other out and the overall score would appear artificially optimistic \textcolor{blue}{see local figure}. This is typically corrected for by either taking the absolute value or the square of the value. An important consideration will be how severely outliers should be penalized, as a squared component will result in a larger penalization than an absolute value.}
+\r{It is important to note that regression performance metrics must ignore the direction of the error, otherwise the positive and negative errors would cancel each other out and the overall score would appear artificially optimistic \textcolor{blue}{see local figure}. This is typically corrected for by either taking the absolute value or the square of the value. An important consideration will be how severely outliers should be penalized, as a squared component will result in a larger penalization than an absolute value.}
 
 \textcolor{green}{todo: Figure showing $\pm$errors and how direction is important}
 
+\subsubsection{Common Metrics}
 
+ \input{./nested/basics/metrics/continuous/common}
 
-\begin{itemize}
-\item \textit{Mean Absolute Error (MAE)}, (Eq.~\ref{eq:mae_def}): \textcolor{blue}{the average of the absolute values of the errors of the predictions}.
-	
-\begin{equation}
-{MAE = \frac{1}{n}\sum_{i=0}^{n-1}|y_i - \hat{y}_i| }
-\label{eq:mae_def}
-\end{equation}
-	
-\item \textit{Mean Squared Error (MSE, or Mean Squared Deviation (MSD))}, (Eq.~\ref{eq:mse_def}): \textcolor{blue}{the average of the squared values of the errors of the predictions}.
-	
-\begin{equation}
-{MSE = \frac{1}{n}\sum_{i=0}^{n-1}(y_i - \hat{y}_i)^2}
-\label{eq:mse_def}
-\end{equation}
-	
-\end{itemize}
 
 
 \subsubsection{Additional Metrics}
