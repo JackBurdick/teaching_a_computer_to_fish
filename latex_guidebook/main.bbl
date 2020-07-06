@@ -55,6 +55,11 @@
 {\sc D.~Bahdanau, K.~Cho, and Y.~Bengio}, {\em Neural machine translation by
   jointly learning to align and translate}, CoRR, abs/1409.0473 (2015).
 
+\bibitem{Bansal2020DoesTW}
+{\sc G.~Bansal, T.~Wu, J.~Zhu, R.~Fok, B.~Nushi, E.~Kamar, M.~T. Ribeiro, and
+  D.~S. Weld}, {\em Does the whole exceed its parts? the effect of ai
+  explanations on complementary team performance}, 2020.
+
 \bibitem{DBLP:journals/corr/abs-1106-0245}
 {\sc J.~Baxter}, {\em A model of inductive bias learning}, CoRR, abs/1106.0245
   (2011).
@@ -73,6 +78,11 @@
   Signature verification using a" siamese" time delay neural network}, in
   Advances in neural information processing systems, 1994, pp.~737--744.
 
+\bibitem{Carion2020EndtoEndOD}
+{\sc N.~Carion, F.~Massa, G.~Synnaeve, N.~Usunier, A.~M. Kirillov, and
+  S.~Zagoruyko}, {\em End-to-end object detection with transformers}, ArXiv,
+  abs/2005.12872 (2020).
+
 \bibitem{caruana1993multitask}
 {\sc R.~Caruana}, {\em Multitask learning: A knowledge-based source of
   inductive bias icml}, Google Scholar Google Scholar Digital Library Digital
@@ -87,10 +97,27 @@
 {\sc J.~Cheng, L.~Dong, and M.~Lapata}, {\em Long short-term memory-networks
   for machine reading}, CoRR, abs/1601.06733 (2016).
 
+\bibitem{DBLP:journals/corr/abs-1904-10509}
+{\sc R.~Child, S.~Gray, A.~Radford, and I.~Sutskever}, {\em Generating long
+  sequences with sparse transformers}, CoRR, abs/1904.10509 (2019).
+
+\bibitem{Chuang2020DebiasedCL}
+{\sc C.-Y. Chuang, J.~A. Robinson, L.~Yen‐Chen, A.~Torralba, and S.~Jegelka},
+  {\em Debiased contrastive learning}, 2020.
+
+\bibitem{Cordonnier2020MultiHeadAC}
+{\sc J.-B. Cordonnier, A.~Loukas, and M.~Jaggi}, {\em Multi-head attention:
+  Collaborate instead of concatenate}, ArXiv, abs/2006.16362 (2020).
+
 \bibitem{cubuk2018autoaugment}
 {\sc E.~D. Cubuk, B.~Zoph, D.~Mane, V.~Vasudevan, and Q.~V. Le}, {\em
   Autoaugment: Learning augmentation policies from data}, arXiv preprint
   arXiv:1805.09501,  (2018).
+
+\bibitem{DBLP:journals/corr/abs-1901-02860}
+{\sc Z.~Dai, Z.~Yang, Y.~Yang, J.~G. Carbonell, Q.~V. Le, and
+  R.~Salakhutdinov}, {\em Transformer-xl: Attentive language models beyond a
+  fixed-length context}, CoRR, abs/1901.02860 (2019).
 
 \bibitem{devries2017improved}
 {\sc T.~DeVries and G.~W. Taylor}, {\em Improved regularization of
@@ -99,6 +126,11 @@
 
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
+
+\bibitem{Du2019SpineNetLS}
+{\sc X.~Du, T.-Y. Lin, P.~Jin, G.~Ghiasi, M.~Tan, Y.~Cui, Q.~V. Le, and
+  X.~Song}, {\em Spinenet: Learning scale-permuted backbone for recognition and
+  localization}, ArXiv, abs/1912.05027 (2019).
 
 \bibitem{duchi2011adaptive}
 {\sc J.~Duchi, E.~Hazan, and Y.~Singer}, {\em Adaptive subgradient methods for
@@ -144,6 +176,11 @@
   international conference on artificial intelligence and statistics, 2010,
   pp.~249--256.
 
+\bibitem{Goyal2019RecurrentIM}
+{\sc A.~Goyal, A.~Lamb, J.~Hoffmann, S.~Sodhani, S.~Levine, Y.~Bengio, and
+  B.~Sch{\"o}lkopf}, {\em Recurrent independent mechanisms}, ArXiv,
+  abs/1909.10893 (2019).
+
 \bibitem{DBLP:journals/corr/GravesWD14}
 {\sc A.~Graves, G.~Wayne, and I.~Danihelka}, {\em Neural turing machines},
   CoRR, abs/1410.5401 (2014).
@@ -151,6 +188,12 @@
 \bibitem{griewank2008evaluating}
 {\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
   techniques of algorithmic differentiation}, vol.~105, Siam, 2008.
+
+\bibitem{Grill2020BootstrapYO}
+{\sc J.-B. Grill, F.~Strub, F.~Altch{\'e}, C.~Tallec, P.~H. Richemond,
+  E.~Buchatskaya, C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot,
+  K.~Kavukcuoglu, R.~Munos, and M.~Valko}, {\em Bootstrap your own latent: A
+  new approach to self-supervised learning}, ArXiv, abs/2006.07733 (2020).
 
 \bibitem{guo2016entity}
 {\sc C.~Guo and F.~Berkhahn}, {\em Entity embeddings of categorical variables},
@@ -208,6 +251,11 @@
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
 
+\bibitem{Katharopoulos2020TransformersAR}
+{\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
+  are rnns: Fast autoregressive transformers with linear attention}, ArXiv,
+  abs/2006.16236 (2020).
+
 \bibitem{kaya2019deep}
 {\sc M.~Kaya and H.~{\c{S}}. Bilge}, {\em Deep metric learning: A survey},
   Symmetry, 11 (2019), p.~1066.
@@ -254,6 +302,16 @@
   learning an optimal data augmentation strategy}, Ieee Access, 5 (2017),
   pp.~5858--5869.
 
+\bibitem{Lepikhin2020GShardSG}
+{\sc D.~Lepikhin, H.~Lee, Y.~Xu, D.~Chen, O.~Firat, Y.-P. Huang, M.~Krikun,
+  N.~Shazeer, and Z.~Chen}, {\em Gshard: Scaling giant models with conditional
+  computation and automatic sharding}, ArXiv, abs/2006.16668 (2020).
+
+\bibitem{Lewkowycz2020TheLL}
+{\sc A.~Lewkowycz, Y.~Bahri, E.~Dyer, J.~Sohl-Dickstein, and G.~Gur-Ari}, {\em
+  The large learning rate phase of deep learning: the catapult mechanism},
+  ArXiv, abs/2003.02218 (2020).
+
 \bibitem{lim2019fast}
 {\sc S.~Lim, I.~Kim, T.~Kim, C.~Kim, and S.~Kim}, {\em Fast autoaugment}, arXiv
   preprint arXiv:1905.00397,  (2019).
@@ -266,6 +324,11 @@
 \bibitem{DBLP:journals/corr/abs-1803-10704}
 {\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
   with attention}, CoRR, abs/1803.10704 (2018).
+
+\bibitem{Locatello2020ObjectCentricLW}
+{\sc F.~Locatello, D.~Weissenborn, T.~Unterthiner, A.~Mahendran, G.~Heigold,
+  J.~Uszkoreit, A.~Dosovitskiy, and T.~Kipf}, {\em Object-centric learning with
+  slot attention}, ArXiv, abs/2006.15055 (2020).
 
 \bibitem{DBLP:journals/corr/Long015a}
 {\sc M.~Long and J.~Wang}, {\em Learning multiple tasks with deep relationship
@@ -298,6 +361,11 @@
 {\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
   networks for multi-task learning}, CoRR, abs/1604.03539 (2016).
 
+\bibitem{DBLP:journals/corr/abs-1810-03993}
+{\sc M.~Mitchell, S.~Wu, A.~Zaldivar, P.~Barnes, L.~Vasserman, B.~Hutchinson,
+  E.~Spitzer, I.~D. Raji, and T.~Gebru}, {\em Model cards for model reporting},
+  CoRR, abs/1810.03993 (2018).
+
 \bibitem{miyato2018virtual}
 {\sc T.~Miyato, S.-i. Maeda, M.~Koyama, and S.~Ishii}, {\em Virtual adversarial
   training: a regularization method for supervised and semi-supervised
@@ -317,6 +385,15 @@
 {\sc T.~Munkhdalai and H.~Yu}, {\em Meta networks}, in Proceedings of the 34th
   International Conference on Machine Learning-Volume 70, JMLR. org, 2017,
   pp.~2554--2563.
+
+\bibitem{Nado2020EvaluatingPB}
+{\sc Z.~Nado, S.~Padhy, D.~Sculley, A.~D'Amour, B.~Lakshminarayanan, and
+  J.~Snoek}, {\em Evaluating prediction-time batch normalization for robustness
+  under covariate shift}, ArXiv, abs/2006.10963 (2020).
+
+\bibitem{Nikolenko2019SyntheticDF}
+{\sc S.~I. Nikolenko}, {\em Synthetic data for deep learning}, ArXiv,
+  abs/1909.11512 (2019).
 
 \bibitem{papernot2018deep}
 {\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
@@ -339,6 +416,10 @@
   Regularizing neural networks by penalizing confident output distributions},
   CoRR, abs/1701.06548 (2017).
 
+\bibitem{Qi2020DeepIL}
+{\sc H.~Qi, C.~You, X.~Wang, Y.~Ma, and J.~Malik}, {\em Deep isometric learning
+  for visual recognition}, ArXiv, abs/2006.16992 (2020).
+
 \bibitem{qian1999momentum}
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
@@ -347,6 +428,11 @@
 {\sc A.~Radford, L.~Metz, and S.~Chintala}, {\em Unsupervised representation
   learning with deep convolutional generative adversarial networks}, CoRR,
   abs/1511.06434 (2015).
+
+\bibitem{Rae2020CompressiveTF}
+{\sc J.~W. Rae, A.~Potapenko, S.~M. Jayakumar, and T.~P. Lillicrap}, {\em
+  Compressive transformers for long-range sequence modelling}, ArXiv,
+  abs/1911.05507 (2020).
 
 \bibitem{Rahaman2019OnTS}
 {\sc N.~Rahaman, A.~Baratin, D.~Arpit, F.~Dr{\"a}xler, M.~Lin, F.~A. Hamprecht,
@@ -490,6 +576,11 @@
   L.~Kaiser, and I.~Polosukhin}, {\em Attention is all you need}, CoRR,
   abs/1706.03762 (2017).
 
+\bibitem{Vig2020BERTologyMB}
+{\sc J.~Vig, A.~Madani, L.~R. Varshney, C.~Xiong, R.~Socher, and N.~F. Rajani},
+  {\em Bertology meets biology: Interpreting attention in protein language
+  models}, bioRxiv,  (2020).
+
 \bibitem{Vinyals2015PointerN}
 {\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
   abs/1506.03134 (2015).
@@ -511,6 +602,11 @@
 {\sc D.~H. Wolpert, W.~G. Macready, et~al.}, {\em No free lunch theorems for
   optimization}, IEEE transactions on evolutionary computation, 1 (1997),
   pp.~67--82.
+
+\bibitem{Wortsman2020SupermasksIS}
+{\sc M.~Wortsman, V.~Ramanujan, R.~Liu, A.~Kembhavi, M.~Rastegari, J.~Yosinski,
+  and A.~Farhadi}, {\em Supermasks in superposition}, ArXiv, abs/2006.14769
+  (2020).
 
 \bibitem{xie2016disturblabel}
 {\sc L.~Xie, J.~Wang, Z.~Wei, M.~Wang, and Q.~Tian}, {\em Disturblabel:

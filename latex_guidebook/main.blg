@@ -4,17 +4,18 @@ A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
 A level-1 auxiliary file: data.aux
 A level-1 auxiliary file: basics.aux
-A level-1 auxiliary file: ethics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
 A level-1 auxiliary file: multitask.aux
 A level-1 auxiliary file: meta.aux
-A level-1 auxiliary file: Optimization.aux
+A level-1 auxiliary file: applied.aux
+A level-1 auxiliary file: ethics.aux
+A level-1 auxiliary file: opinions.aux
+A level-1 auxiliary file: examples.aux
+A level-1 auxiliary file: ideas.aux
 A level-1 auxiliary file: bloopers.aux
 A level-1 auxiliary file: quickref.aux
-A level-1 auxiliary file: conclusion.aux
-A level-1 auxiliary file: examples.aux
 A level-1 auxiliary file: yeahml.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: fit_somewhere.aux
@@ -31,6 +32,8 @@ Warning--to sort, need author or key in cloudHW_nvidia_cloud
 Warning--to sort, need author or key in tf_playground
 Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
+Warning--empty booktitle in Bansal2020DoesTW
+Warning--empty booktitle in Chuang2020DebiasedCL
 Warning--empty journal in dozat2016incorporating
 Warning--can't use both volume and number fields in lee2013pseudo
-(There were 10 warnings)
+(There were 12 warnings)
