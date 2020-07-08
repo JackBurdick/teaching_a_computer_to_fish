@@ -223,6 +223,11 @@
   Proceedings of the IEEE international conference on computer vision, 2015,
   pp.~1026--1034.
 
+\bibitem{DBLP:journals/corr/abs-1812-01187}
+{\sc T.~He, Z.~Zhang, H.~Zhang, Z.~Zhang, J.~Xie, and M.~Li}, {\em Bag of
+  tricks for image classification with convolutional neural networks}, CoRR,
+  abs/1812.01187 (2018).
+
 \bibitem{hinton2015distilling}
 {\sc G.~Hinton, O.~Vinyals, and J.~Dean}, {\em Distilling the knowledge in a
   neural network}, arXiv preprint arXiv:1503.02531,  (2015).
@@ -260,6 +265,10 @@
 {\sc M.~Kaya and H.~{\c{S}}. Bilge}, {\em Deep metric learning: A survey},
   Symmetry, 11 (2019), p.~1066.
 
+\bibitem{Ke2020RethinkingPE}
+{\sc G.~Ke, D.~He, and T.-Y. Liu}, {\em Rethinking positional encoding in
+  language pre-training}, ArXiv, abs/2006.15595 (2020).
+
 \bibitem{DBLP:journals/corr/KendallGC17}
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
   uncertainty to weigh losses for scene geometry and semantics}, CoRR,
@@ -273,6 +282,14 @@
 {\sc A.~Kirillov, R.~Girshick, K.~He, and P.~Doll{\'a}r}, {\em Panoptic feature
   pyramid networks}, in Proceedings of the IEEE Conference on Computer Vision
   and Pattern Recognition, 2019, pp.~6399--6408.
+
+\bibitem{Kirillov2019PointRendIS}
+{\sc A.~M. Kirillov, Y.~Wu, K.~He, and R.~B. Girshick}, {\em Pointrend: Image
+  segmentation as rendering}, ArXiv, abs/1912.08193 (2019).
+
+\bibitem{Kitaev2020ReformerTE}
+{\sc N.~Kitaev, L.~Kaiser, and A.~Levskaya}, {\em Reformer: The efficient
+  transformer}, ArXiv, abs/2001.04451 (2020).
 
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
@@ -550,6 +567,11 @@
 {\sc T.~Standley, A.~R. Zamir, D.~Chen, L.~Guibas, J.~Malik, and S.~Savarese},
   {\em Which tasks should be learned together in multi-task learning?}, arXiv
   preprint arXiv:1905.07553,  (2019).
+
+\bibitem{DBLP:journals/corr/abs-1904-03011}
+{\sc G.~Strezoski, N.~van Noord, and M.~Worring}, {\em Learning task
+  relatedness in multi-task learning for images in context}, CoRR,
+  abs/1904.03011 (2019).
 
 \bibitem{DBLP:journals/corr/SutskeverVL14}
 {\sc I.~Sutskever, O.~Vinyals, and Q.~V. Le}, {\em Sequence to sequence

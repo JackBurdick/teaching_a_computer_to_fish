@@ -443,8 +443,7 @@
 \contentsline {subsection}{\numberline {18.0.1}Image}{141}
 \contentsline {subsubsection}{\numberline {18.0.1.1}Image Classification}{141}
 \contentsline {subsection}{\numberline {18.0.2}Object Detection}{142}
-\contentsline {subsection}{\numberline {18.0.3}Semantic Segmentation}{142}
-\contentsline {subsection}{\numberline {18.0.4}Instance Segmentation}{142}
+\contentsline {subsection}{\numberline {18.0.3}Segmentation}{142}
 \contentsline {section}{\numberline {18.1}Text: Natural Language Processing}{142}
 \contentsline {section}{\numberline {18.2}Structured data: Tablular}{142}
 \contentsline {section}{\numberline {18.3}Other Common Architectures}{142}
