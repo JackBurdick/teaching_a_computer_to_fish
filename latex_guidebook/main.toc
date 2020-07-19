@@ -440,34 +440,35 @@
 \contentsline {subsection}{\numberline {17.1.1}Examples}{139}
 \contentsline {subsection}{\numberline {17.1.2}TODO}{139}
 \contentsline {chapter}{\numberline {18}Common Architectures}{141}
-\contentsline {subsection}{\numberline {18.0.1}Image}{141}
-\contentsline {subsubsection}{\numberline {18.0.1.1}Image Classification}{141}
+\contentsline {subsection}{\numberline {18.0.1}Spatial Data}{141}
+\contentsline {subsubsection}{\numberline {18.0.1.1}Convolutional Approaches}{141}
+\contentsline {subsubsection}{\numberline {18.0.1.2}Image Classification}{141}
 \contentsline {subsection}{\numberline {18.0.2}Object Detection}{142}
 \contentsline {subsection}{\numberline {18.0.3}Segmentation}{142}
 \contentsline {section}{\numberline {18.1}Text: Natural Language Processing}{142}
 \contentsline {section}{\numberline {18.2}Structured data: Tablular}{142}
 \contentsline {section}{\numberline {18.3}Other Common Architectures}{142}
-\contentsline {chapter}{\numberline {19}Model Compression}{143}
-\contentsline {chapter}{\numberline {20}Model ``Compression''}{145}
-\contentsline {section}{\numberline {20.1}Quantization}{145}
-\contentsline {subsection}{\numberline {20.1.1}When}{145}
-\contentsline {subsubsection}{\numberline {20.1.1.1}during training}{145}
-\contentsline {subsubsection}{\numberline {20.1.1.2}post-training}{145}
-\contentsline {section}{\numberline {20.2}Weight Pruning}{145}
-\contentsline {subsubsection}{\numberline {20.2.0.1}What to remove}{146}
-\contentsline {paragraph}{\numberline {20.2.0.1.1}relationship of nodes to nodes pruned}{146}
-\contentsline {subparagraph}{unstructured}{146}
-\contentsline {subparagraph}{structured}{146}
-\contentsline {paragraph}{\numberline {20.2.0.1.2}relationship of nodes to architecture}{146}
-\contentsline {subparagraph}{local}{146}
-\contentsline {subparagraph}{global}{146}
-\contentsline {subsubsection}{\numberline {20.2.0.2}Deciding what to remove}{146}
-\contentsline {subsubsection}{\numberline {20.2.0.3}When to prune}{146}
-\contentsline {subsubsection}{\numberline {20.2.0.4}Pruning mechanism}{147}
-\contentsline {section}{\numberline {20.3}Topology}{147}
-\contentsline {subsection}{\numberline {20.3.1}Distillation}{147}
-\contentsline {subsection}{\numberline {20.3.2}Tensor Decomposition}{147}
-\contentsline {subsection}{\numberline {20.3.3}The Lottery Ticket Hypothesis}{147}
+\contentsline {chapter}{\numberline {19}Model ``Compression''}{143}
+\contentsline {section}{\numberline {19.1}Quantization}{143}
+\contentsline {subsection}{\numberline {19.1.1}When}{143}
+\contentsline {subsubsection}{\numberline {19.1.1.1}during training}{143}
+\contentsline {subsubsection}{\numberline {19.1.1.2}post-training}{143}
+\contentsline {section}{\numberline {19.2}Weight Pruning}{143}
+\contentsline {subsubsection}{\numberline {19.2.0.1}What to remove}{144}
+\contentsline {paragraph}{\numberline {19.2.0.1.1}relationship of nodes to nodes pruned}{144}
+\contentsline {subparagraph}{unstructured}{144}
+\contentsline {subparagraph}{structured}{144}
+\contentsline {paragraph}{\numberline {19.2.0.1.2}relationship of nodes to architecture}{144}
+\contentsline {subparagraph}{local}{144}
+\contentsline {subparagraph}{global}{144}
+\contentsline {subsubsection}{\numberline {19.2.0.2}Deciding what to remove}{144}
+\contentsline {subsubsection}{\numberline {19.2.0.3}When to prune}{144}
+\contentsline {subsubsection}{\numberline {19.2.0.4}Pruning mechanism}{145}
+\contentsline {section}{\numberline {19.3}Topology}{145}
+\contentsline {subsection}{\numberline {19.3.1}Distillation}{145}
+\contentsline {subsection}{\numberline {19.3.2}Tensor Decomposition}{145}
+\contentsline {subsection}{\numberline {19.3.3}The Lottery Ticket Hypothesis}{145}
+\contentsline {chapter}{\numberline {20}Training Dynamics}{147}
 \contentsline {part}{V\hspace {1em}Ensembling}{149}
 \contentsline {chapter}{\numberline {21}Ensemble Methods}{151}
 \contentsline {section}{\numberline {21.1}Overview}{151}
@@ -510,64 +511,69 @@
 \contentsline {section}{\numberline {24.4}Optimization-based meta-learning}{170}
 \contentsline {section}{\numberline {24.5}Non-Parametric Few-Shot Learning}{171}
 \contentsline {section}{\numberline {24.6}Meta-Learning Algorithms}{171}
-\contentsline {part}{VIII\hspace {1em}Model Releases: Using+Monitoring Models}{173}
-\contentsline {chapter}{\numberline {25}Model Reporting}{175}
-\contentsline {chapter}{\numberline {26}Deployment}{177}
-\contentsline {chapter}{\numberline {27}Monitoring}{179}
-\contentsline {part}{IX\hspace {1em}Ethics}{181}
-\contentsline {chapter}{\numberline {28}Ethics}{183}
-\contentsline {section}{\numberline {28.1}Overview}{183}
-\contentsline {section}{\numberline {28.2}Pieces to fit together}{183}
-\contentsline {section}{\numberline {28.3}Should something be published}{183}
-\contentsline {section}{\numberline {28.4}Further information}{183}
-\contentsline {section}{\numberline {28.5}bias}{184}
-\contentsline {section}{\numberline {28.6}Thoughts}{184}
-\contentsline {part}{X\hspace {1em}My Opinions: Moving Forward}{185}
-\contentsline {chapter}{\numberline {29}My opinions}{187}
-\contentsline {part}{XI\hspace {1em}Applications}{189}
-\contentsline {chapter}{\numberline {30}EndToEnd}{191}
-\contentsline {section}{\numberline {30.1}Structured}{191}
-\contentsline {subsection}{\numberline {30.1.1}Linear Regression}{191}
-\contentsline {subsection}{\numberline {30.1.2}KNN}{191}
-\contentsline {section}{\numberline {30.2}Image}{191}
-\contentsline {subsection}{\numberline {30.2.1}Image Classification}{191}
-\contentsline {subsection}{\numberline {30.2.2}Image Segmentation}{191}
-\contentsline {subsection}{\numberline {30.2.3}Adversarial Exmaples}{191}
-\contentsline {subsection}{\numberline {30.2.4}AutoEncoder}{191}
-\contentsline {subsection}{\numberline {30.2.5}Generative Adversarial Network}{191}
-\contentsline {section}{\numberline {30.3}TimeSeries}{192}
-\contentsline {section}{\numberline {30.4}Text}{192}
-\contentsline {subsection}{\numberline {30.4.1}Sentiment Analysis}{192}
-\contentsline {section}{\numberline {30.5}Audio}{192}
-\contentsline {subsection}{\numberline {30.5.1}Audio to Text}{192}
-\contentsline {section}{\numberline {30.6}Recommendation Systems}{192}
-\contentsline {chapter}{\numberline {31}Interesting (to me) Applications}{193}
-\contentsline {section}{\numberline {31.1}Fit Somewhere}{193}
-\contentsline {part}{XII\hspace {1em}Brief Reference}{195}
-\contentsline {chapter}{\numberline {32}Mistakes and Bloopers}{197}
-\contentsline {chapter}{\numberline {33}Environment}{199}
-\contentsline {chapter}{\numberline {34}Common Libraries}{201}
-\contentsline {part}{XIII\hspace {1em}Yeahml}{203}
-\contentsline {chapter}{\numberline {35}Overview}{205}
-\contentsline {chapter}{\numberline {36}How To}{207}
-\contentsline {part}{XIV\hspace {1em}appendix}{209}
-\contentsline {chapter}{\numberline {37}TODO:}{211}
-\contentsline {section}{\numberline {37.1}Imputing Missing Values}{211}
-\contentsline {section}{\numberline {37.2}Anomaly Detection}{211}
-\contentsline {subsection}{\numberline {37.2.1}methods}{211}
-\contentsline {subsubsection}{\numberline {37.2.1.1}PCA}{211}
-\contentsline {section}{\numberline {37.3}labeling data}{212}
-\contentsline {section}{\numberline {37.4}Group Segmentation}{212}
-\contentsline {part}{XV\hspace {1em}Dump Space}{213}
-\contentsline {subsection}{\numberline {37.4.1}Restricted Boltzmann Machines}{218}
-\contentsline {subsection}{\numberline {37.4.2}Greek letters}{220}
-\contentsline {subsection}{\numberline {37.4.3}Basic Log Math}{220}
-\contentsline {subsection}{\numberline {37.4.4}Basic Matrix Math}{220}
-\contentsline {subsection}{\numberline {37.4.5}Basic Linear Algebra}{220}
-\contentsline {subsection}{\numberline {37.4.6}Representation Learning}{220}
-\contentsline {subsection}{\numberline {37.4.7}others}{220}
-\contentsline {section}{\numberline {37.5}research to include}{221}
-\contentsline {subsection}{\numberline {37.5.1}Adversarial Examples}{221}
-\contentsline {subsection}{\numberline {37.5.2}GANs}{221}
-\contentsline {part}{XVI\hspace {1em}Research}{223}
-\contentsline {chapter}{\numberline {38}Ongoing Research}{225}
+\contentsline {part}{VIII\hspace {1em}Interpretability}{173}
+\contentsline {chapter}{\numberline {25}Interpretability, Analysis}{175}
+\contentsline {section}{\numberline {25.1}overview}{175}
+\contentsline {section}{\numberline {25.2}dump space}{175}
+\contentsline {section}{\numberline {25.3}Memorization}{175}
+\contentsline {part}{IX\hspace {1em}Model Releases: Using+Monitoring Models}{177}
+\contentsline {chapter}{\numberline {26}Model Reporting}{179}
+\contentsline {chapter}{\numberline {27}Deployment}{181}
+\contentsline {chapter}{\numberline {28}Monitoring}{183}
+\contentsline {part}{X\hspace {1em}Ethics}{185}
+\contentsline {chapter}{\numberline {29}Ethics}{187}
+\contentsline {section}{\numberline {29.1}Overview}{187}
+\contentsline {section}{\numberline {29.2}Pieces to fit together}{187}
+\contentsline {section}{\numberline {29.3}Should something be published}{187}
+\contentsline {section}{\numberline {29.4}Further information}{187}
+\contentsline {section}{\numberline {29.5}bias}{188}
+\contentsline {section}{\numberline {29.6}Thoughts}{188}
+\contentsline {part}{XI\hspace {1em}My Opinions: Moving Forward}{189}
+\contentsline {chapter}{\numberline {30}My opinions}{191}
+\contentsline {part}{XII\hspace {1em}Applications}{193}
+\contentsline {chapter}{\numberline {31}EndToEnd}{195}
+\contentsline {section}{\numberline {31.1}Structured}{195}
+\contentsline {subsection}{\numberline {31.1.1}Linear Regression}{195}
+\contentsline {subsection}{\numberline {31.1.2}KNN}{195}
+\contentsline {section}{\numberline {31.2}Image}{195}
+\contentsline {subsection}{\numberline {31.2.1}Image Classification}{195}
+\contentsline {subsection}{\numberline {31.2.2}Image Segmentation}{195}
+\contentsline {subsection}{\numberline {31.2.3}Adversarial Exmaples}{195}
+\contentsline {subsection}{\numberline {31.2.4}AutoEncoder}{195}
+\contentsline {subsection}{\numberline {31.2.5}Generative Adversarial Network}{195}
+\contentsline {section}{\numberline {31.3}TimeSeries}{196}
+\contentsline {section}{\numberline {31.4}Text}{196}
+\contentsline {subsection}{\numberline {31.4.1}Sentiment Analysis}{196}
+\contentsline {section}{\numberline {31.5}Audio}{196}
+\contentsline {subsection}{\numberline {31.5.1}Audio to Text}{196}
+\contentsline {section}{\numberline {31.6}Recommendation Systems}{196}
+\contentsline {chapter}{\numberline {32}Interesting (to me) Applications}{197}
+\contentsline {section}{\numberline {32.1}Fit Somewhere}{197}
+\contentsline {part}{XIII\hspace {1em}Brief Reference}{199}
+\contentsline {chapter}{\numberline {33}Mistakes and Bloopers}{201}
+\contentsline {chapter}{\numberline {34}Environment}{203}
+\contentsline {chapter}{\numberline {35}Common Libraries}{205}
+\contentsline {part}{XIV\hspace {1em}Yeahml}{207}
+\contentsline {chapter}{\numberline {36}Overview}{209}
+\contentsline {chapter}{\numberline {37}How To}{211}
+\contentsline {part}{XV\hspace {1em}appendix}{213}
+\contentsline {chapter}{\numberline {38}TODO:}{215}
+\contentsline {section}{\numberline {38.1}Imputing Missing Values}{215}
+\contentsline {section}{\numberline {38.2}Anomaly Detection}{215}
+\contentsline {subsection}{\numberline {38.2.1}methods}{215}
+\contentsline {subsubsection}{\numberline {38.2.1.1}PCA}{215}
+\contentsline {section}{\numberline {38.3}labeling data}{216}
+\contentsline {section}{\numberline {38.4}Group Segmentation}{216}
+\contentsline {part}{XVI\hspace {1em}Dump Space}{217}
+\contentsline {subsection}{\numberline {38.4.1}Restricted Boltzmann Machines}{222}
+\contentsline {subsection}{\numberline {38.4.2}Greek letters}{224}
+\contentsline {subsection}{\numberline {38.4.3}Basic Log Math}{224}
+\contentsline {subsection}{\numberline {38.4.4}Basic Matrix Math}{224}
+\contentsline {subsection}{\numberline {38.4.5}Basic Linear Algebra}{224}
+\contentsline {subsection}{\numberline {38.4.6}Representation Learning}{224}
+\contentsline {subsection}{\numberline {38.4.7}others}{224}
+\contentsline {section}{\numberline {38.5}research to include}{225}
+\contentsline {subsection}{\numberline {38.5.1}Adversarial Examples}{225}
+\contentsline {subsection}{\numberline {38.5.2}GANs}{225}
+\contentsline {part}{XVII\hspace {1em}Research}{227}
+\contentsline {chapter}{\numberline {39}Ongoing Research}{229}

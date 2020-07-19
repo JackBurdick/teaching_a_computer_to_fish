@@ -47,6 +47,10 @@
   machine learning on heterogeneous distributed systems}, arXiv preprint
   arXiv:1603.04467,  (2016).
 
+\bibitem{DBLP:journals/corr/abs-1711-08856}
+{\sc A.~Achille, M.~Rovere, and S.~Soatto}, {\em Critical learning periods in
+  deep neural networks}, CoRR, abs/1711.08856 (2017).
+
 \bibitem{alber2018backprop}
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
@@ -256,6 +260,11 @@
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
 
+\bibitem{jiang2020exploring}
+{\sc Z.~Jiang, C.~Zhang, K.~Talwar, and M.~C. Mozer}, {\em Exploring the
+  memorization-generalization continuum in deep learning}, arXiv preprint
+  arXiv:2002.03206,  (2020).
+
 \bibitem{Katharopoulos2020TransformersAR}
 {\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
   are rnns: Fast autoregressive transformers with linear attention}, ArXiv,
@@ -273,6 +282,11 @@
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
   uncertainty to weigh losses for scene geometry and semantics}, CoRR,
   abs/1705.07115 (2017).
+
+\bibitem{DBLP:journals/corr/abs-1901-06032}
+{\sc A.~Khan, A.~Sohail, U.~Zahoora, and A.~S. Qureshi}, {\em A survey of the
+  recent architectures of deep convolutional neural networks}, CoRR,
+  abs/1901.06032 (2019).
 
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
@@ -369,6 +383,10 @@
   task relationships in multi-task learning with multi-gate
   mixture-of-experts}, in Proceedings of the 24th ACM SIGKDD International
   Conference on Knowledge Discovery \& Data Mining, 2018, pp.~1930--1939.
+
+\bibitem{mangalam2019deep}
+{\sc K.~Mangalam and V.~U. Prabhu}, {\em Do deep neural networks learn shallow
+  learnable examples first?},  (2019).
 
 \bibitem{masters2018revisiting}
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
