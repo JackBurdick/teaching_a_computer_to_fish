@@ -87,10 +87,19 @@
   S.~Zagoruyko}, {\em End-to-end object detection with transformers}, ArXiv,
   abs/2005.12872 (2020).
 
+\bibitem{DBLP:journals/corr/CarliniW16a}
+{\sc N.~Carlini and D.~A. Wagner}, {\em Towards evaluating the robustness of
+  neural networks}, CoRR, abs/1608.04644 (2016).
+
 \bibitem{caruana1993multitask}
 {\sc R.~Caruana}, {\em Multitask learning: A knowledge-based source of
   inductive bias icml}, Google Scholar Google Scholar Digital Library Digital
   Library,  (1993).
+
+\bibitem{DBLP:journals/corr/abs-1810-00069}
+{\sc A.~Chakraborty, M.~Alam, V.~Dey, A.~Chattopadhyay, and D.~Mukhopadhyay},
+  {\em Adversarial attacks and defences: {A} survey}, CoRR, abs/1810.00069
+  (2018).
 
 \bibitem{DBLP:journals/corr/ChenCZH17}
 {\sc W.~Chen, X.~Chen, J.~Zhang, and K.~Huang}, {\em Beyond triplet loss: a
@@ -180,6 +189,10 @@
   international conference on artificial intelligence and statistics, 2010,
   pp.~249--256.
 
+\bibitem{Goodfellow2015ExplainingAH}
+{\sc I.~J. Goodfellow, J.~Shlens, and C.~Szegedy}, {\em Explaining and
+  harnessing adversarial examples}, CoRR, abs/1412.6572 (2015).
+
 \bibitem{Goyal2019RecurrentIM}
 {\sc A.~Goyal, A.~Lamb, J.~Hoffmann, S.~Sodhani, S.~Levine, Y.~Bengio, and
   B.~Sch{\"o}lkopf}, {\em Recurrent independent mechanisms}, ArXiv,
@@ -198,6 +211,10 @@
   E.~Buchatskaya, C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot,
   K.~Kavukcuoglu, R.~Munos, and M.~Valko}, {\em Bootstrap your own latent: A
   new approach to self-supervised learning}, ArXiv, abs/2006.07733 (2020).
+
+\bibitem{Gu2015TowardsDN}
+{\sc S.~Gu and L.~Rigazio}, {\em Towards deep neural network architectures
+  robust to adversarial examples}, CoRR, abs/1412.5068 (2015).
 
 \bibitem{guo2016entity}
 {\sc C.~Guo and F.~Berkhahn}, {\em Entity embeddings of categorical variables},
@@ -384,6 +401,11 @@
   mixture-of-experts}, in Proceedings of the 24th ACM SIGKDD International
   Conference on Knowledge Discovery \& Data Mining, 2018, pp.~1930--1939.
 
+\bibitem{Madry2018TowardsDL}
+{\sc A.~Madry, A.~Makelov, L.~Schmidt, D.~Tsipras, and A.~Vladu}, {\em Towards
+  deep learning models resistant to adversarial attacks}, ArXiv, abs/1706.06083
+  (2018).
+
 \bibitem{mangalam2019deep}
 {\sc K.~Mangalam and V.~U. Prabhu}, {\em Do deep neural networks learn shallow
   learnable examples first?},  (2019).
@@ -425,6 +447,16 @@
 {\sc Z.~Nado, S.~Padhy, D.~Sculley, A.~D'Amour, B.~Lakshminarayanan, and
   J.~Snoek}, {\em Evaluating prediction-time batch normalization for robustness
   under covariate shift}, ArXiv, abs/2006.10963 (2020).
+
+\bibitem{Nakkiran2020DeepDD}
+{\sc P.~Nakkiran, G.~Kaplun, Y.~Bansal, T.~Yang, B.~Barak, and I.~Sutskever},
+  {\em Deep double descent: Where bigger models and more data hurt}, ArXiv,
+  abs/1912.02292 (2020).
+
+\bibitem{DBLP:journals/corr/NguyenYC14}
+{\sc A.~M. Nguyen, J.~Yosinski, and J.~Clune}, {\em Deep neural networks are
+  easily fooled: High confidence predictions for unrecognizable images}, CoRR,
+  abs/1412.1897 (2014).
 
 \bibitem{Nikolenko2019SyntheticDF}
 {\sc S.~I. Nikolenko}, {\em Synthetic data for deep learning}, ArXiv,
@@ -600,6 +632,11 @@
   Rethinking the inception architecture for computer vision}, in Proceedings of
   the IEEE conference on computer vision and pattern recognition, 2016,
   pp.~2818--2826.
+
+\bibitem{Szegedy2014IntriguingPO}
+{\sc C.~Szegedy, W.~Zaremba, I.~Sutskever, J.~Bruna, D.~Erhan, I.~J.
+  Goodfellow, and R.~Fergus}, {\em Intriguing properties of neural networks},
+  CoRR, abs/1312.6199 (2014).
 
 \bibitem{Tanaka2020PruningNN}
 {\sc H.~Tanaka, D.~Kunin, D.~L.~K. Yamins, and S.~Ganguli}, {\em Pruning neural
