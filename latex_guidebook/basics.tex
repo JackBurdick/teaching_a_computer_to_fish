@@ -107,8 +107,19 @@ Classification involves predicting categorical (discrete) or qualitative output 
 
 \textcolor{blue}{Binary classification (benign vs malignant) and multi-class classification (identifying many different skin diseases).}
 
-\subsection{Multi-label classification}
-\textcolor{blue}{TODO: {multi-label classification}\index{multi-label classification} --- where a classifier assigns multiple labels to each instance}
+\subsection{Multi-class}
+
+% TODO:
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item \TD{macro averaged: all classes independently, averaged}
+	\item \TD{micro averaged:}
+	\item \TD{weighted: macro, weighted by sample frequency}
+\end{itemize}
+
+
+\subsection{Multi-label}
+\TD{TODO: {multi-label classification}\index{multi-label classification} --- where a classifier assigns multiple labels to each instance}
+
 
 % TODO: placement
 \textcolor{blue}{Evaluating every output node for every example can quickly become computationally expensive. approximate version of softmax. i) candidate sampling (tf.nn.sampled\_softmax\_loss()) \textcolor{red}{calculates the output for all of the positive labels, but will only calculate the label for a random sample of negatives. Where the number of negatives sampled is a a hyperparameter} ii) noise-contrastive estimation (tf.nn.nce\_loss()) \textcolor{red}{approximates the denominator of softmax by modeling the distribution of outputs}. Typically, these two methods may be used during training, but the full softmax function will be used during inference.}
@@ -212,6 +223,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \r{find an explicity solution to the function}
 
 \paragraph{Singular Value Decomposition (SVD)}
+% TODO: read: https://twitter.com/WomenInStat/status/1285610321747611653
 
 \r{Singular Value Decomposition (SVD) --- technique used to help solve problems like ``near degeneracies'' (\textcolor{green}{TODO: unsure of this --- also see Press et al. 1992 for an introduction})}
 
@@ -256,9 +268,9 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \label{eq:MSE_def}
 \end{equation}
 
-\textcolor{blue}{The MSE may be hard to interpret since the error is squared. \textcolor{red}{example}}
+\r{The MSE may be hard to interpret since the error is squared. \textcolor{red}{example}}
 
-\textcolor{blue}{Root mean squared error, which is simply the root of the MSE. (\ref{eq:RMSE_def})}
+\r{Root mean squared error, which is simply the root of the MSE. (\ref{eq:RMSE_def})}
 
 \begin{equation}
 {RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2}}
@@ -269,6 +281,9 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 % TODO: again, need to devise a better way to organize this section (loss functions)
 \textcolor{red}{Cross entropy or log loss. \textcolor{red}{CITE} (related to Shannon's information theory \textcolor{red}{CITE})}
+
+% TODO, include in losses?: penealize highly confident, highly incorrect
+\TD{Log loss: def + interpretation}
 
 
 %% classification example
@@ -403,32 +418,30 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \section{Kernel Methods}
 \label{sec:kernel_trick}
 
-\textcolor{blue}{Adding non-linear features to data in attempt linearly separate the data.}
+\r{Adding non-linear features to data in attempt linearly separate the data.}
 
  %Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting
 
-\textcolor{blue}{Transform the training data onto a higher dimensional feature space}
+\r{Transform the training data onto a higher dimensional feature space}
 
 % see p177[165] of mastering ML with SKL
 
-\textcolor{blue}{The kernel is a function that XXXXXXXXXX}
-
-\textcolor{blue}{Choosing an appropriate kernel can be challenging}
+\r{Choosing an appropriate kernel can be challenging}
 
 % computing the distance (scalar products) of data points for the expanded feature representation --- but doesn't compute the expansion
 
 % see p180[168] of mastering ML w/SKL for more on kernels
-\textcolor{blue}{Some commonly used kernels include polynomial, RBF, sigmoid, Guassian, and linear kernels}
+\r{Some commonly used kernels include polynomial, RBF, sigmoid, Guassian, and linear kernels}
 
-\textcolor{blue}{commonly used in SVMs (see \textcolor{red}{local ref}), the kernel trick can be used with any model that can be expressed in terms of the dot product of two feature vectors.}
+\r{commonly used in SVMs (see \textcolor{red}{local ref}), the kernel trick can be used with any model that can be expressed in terms of the dot product of two feature vectors.}
 
-\textcolor{blue}{the mapping function is not fully computed due to the kernel trick}
+\r{the mapping function is not fully computed due to the kernel trick}
 
 \subsection{Kernel Trick}
 
 \subsection{Kernels}
 
-\textcolor{blue}{There are many kernel functions. Choosing the ``best'' kernel will depend on the current problem.}
+\r{There are many kernel functions. Choosing the ``best'' kernel will depend on the current problem.}
 
 \textcolor{red}{kernel functions are continuous and symmetric}
 
@@ -444,7 +457,7 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \subsubsection{Polynomial}
 
-\textcolor{blue}{polynomial computes all possible polynomials of the original features up to a certain degree}
+\r{polynomial computes all possible polynomials of the original features up to a certain degree}
 
 \textcolor{blue}{parameters: slope ($\alpha$), constant $c$, polynomial degree $d$}
 \begin{equation}

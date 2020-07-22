@@ -20,22 +20,23 @@
 
 \textcolor{blue}{From the confusion matrix:}
 
-\begin{itemize}
+% TODO: index type-II and type-II
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item \textit{TP (True Positive)}: ``hit'', correct positive prediction. The ground truth is positive and the prediction is positive.
 	
-\item \textit{TP (True Positive)}: ``hit'', correct positive prediction. The ground truth is positive and the prediction is positive.
-
-\item \textit{TN (True Negative)}: correct rejection. The ground truth is negative and the prediction is negative.
-
-\item \textit{FP (False Positive)}: False alarm or Type I error\index{Type I error}. The ground truth is negative, but the prediction is positive.
-
-\item \textit{FN (False Negative)}: Miss or Type II error\index{Type II error}. The ground truth is positive, but the prediction is negative.
+	\item \textit{TN (True Negative)}: correct rejection. The ground truth is negative and the prediction is negative.
 	
+	\item \textit{FP (False Positive)}: False alarm or Type-I error\index{Type I error}. The ground truth is negative, but the prediction is positive.
+	
+	\item \textit{FN (False Negative)}: Miss or Type-II error\index{Type II error}. The ground truth is positive, but the prediction is negative.
 \end{itemize}
 
 \subsubsection{Classification Metrics}
 
 \textcolor{blue}{The below measures of performance are calculated with the indicated equation with values obtained from the confusion matrix XXXXXXXX}
 
+
+% TODO: these may belong in an appendix
 \begin{itemize}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,12 +154,30 @@
 \end{equation}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{AUC (Area Under the Curve)}, is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve. The larger the auROC, the better.
 \end{itemize}
 
+\subsubsection{AUC (Area Under the Curve)}
+
+%TODO: index all metrics
+
+\r{AUC is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve. The larger the auROC, the better.}
+
+\TD{select the best threshold from ROC curve.}
+
+\TD{interpretation}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item $0$: --- The model is exceptionally bad (but if you flip the output, is it actually exceptionally good), likely something is wrong
+	\item $0 - 0.5$: --- If no mistakes are made, the mode is doing worse than random guessing
+	\item $0.5$: --- The model is making random guesses
+	\item $0.5 - 1$: --- interpretation here is highly specific to the problem being worked on. The model is doing better than random guessing but less than perfect.
+	\item $1$: --- The inverse of the value $0$, the model is exceptionally good, likely something is wrong
+\end{itemize}
+
+\r{often used as an important metric for binary classification tasks, though isn't necessarily ``the'' metric of interest (\TD{see sec: ref --- sensitivity/precision may be more important})}
+
+
 \subsubsection{Precision-Recall curve}
+% TODO: read https://stats.stackexchange.com/questions/7207/roc-vs-precision-and-recall-curves
 
 \TD{Diagram}
 
