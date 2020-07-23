@@ -37,7 +37,7 @@
 
 
 % TODO: these may belong in an appendix
-\begin{itemize}
+\begin{itemize}[noitemsep,topsep=0pt]
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item \textit{Accuracy (ACC)}, (Eq.~\ref{eq:accuracy}): the ratio of correct predictions to the total number of predictions. \textcolor{blue}{this is typically the ``go to metric'', however, accuracy may give a false sense of XXXXX and is particularly not very informative if dealing with skewed (unbalanced data) --- see example in \textcolor{red}{local ref?}}
@@ -130,7 +130,7 @@
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is  an alternative to the F1 score for evaluating binary classifiers. MCC is useful even when the ratio of class in the data is severely imbalanced. the XXXXXXXXXX}.
+\item \textit{Matthews Correlation Coefficient (MCC)}, (Eq.~\ref{eq:mcc_metric}): \textcolor{blue}{MCC is  an alternative to the F1 score for evaluating binary classifiers. MCC is useful even when the ratio of class in the data is severely imbalanced. The output is $[-1,1]$, where 1 would be considered a perfect prediction and -1 an imperfect and 0 being random.}.
 
 \begin{equation}
 {\frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}}

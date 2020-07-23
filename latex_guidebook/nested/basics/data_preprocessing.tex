@@ -1,33 +1,33 @@
 \section{Data Preparation}
 
-\textcolor{blue}{TODO: direct and indirect importance of datapreparation. indirect: feature engineering allows for more elegant and efficient solutions (e.g. calculating the time with a CNN of a clock face vs engineered features for the angles of the large and small hand.) }
+\TD{TODO: direct and indirect importance of datapreparation. indirect: feature engineering allows for more elegant and efficient solutions (e.g. calculating the time with a CNN of a clock face vs engineered features for the angles of the large and small hand.)}
 
 \subsection{Data Pre-processing}
 
-\textcolor{blue}{Data is rarely obtained in a form that is necessary for optimal performance of a learning algorithm. Data can be missing, can contain a mix of categorical and quantitative, can contain values on vastly different scales, etc.}
+\r{Data is rarely obtained in a form that is necessary for optimal performance of a learning algorithm. Data can be missing, can contain a mix of categorical and quantitative, can contain values on vastly different scales, etc.}
 
-\textcolor{blue}{Building a good representation of your data -- feature extraction/engineering}
+\r{Building a good representation of your data -- feature extraction/engineering}
 
-\textcolor{blue}{It is important to note that any parameters related to data pre-processing, such as feature scaling and dimensionality reduction, are obtained solely from observing the training set. The parameters for these methods obtained on the training set are then later applied to the test set. This is important since if these preprocessing parameters were obtained on the entire dataset and included the test set, the the model performance may be overoptimistic since then when applying the methods to the unseen data.}
+\r{It is important to note that any parameters related to data pre-processing, such as feature scaling and dimensionality reduction, are obtained solely from observing the training set. The parameters for these methods obtained on the training set are then later applied to the test set. This is important since if these preprocessing parameters were obtained on the entire dataset and included the test set, the model performance may be overoptimistic since then when applying the methods to the unseen data.}
 
-\textcolor{blue}{make sure to use data that is relevant to the objective/problem.}
+\r{make sure to use data that is relevant to the objective/problem.}
 
 % TODO: case study example
 
-\textcolor{blue}{make sure the data can be known at prediction time. e.g. will there be a delay between activity and being able to access that data at the data repository?}
+\r{make sure the data can be known at prediction time. e.g. will there be a delay between activity and being able to access that data at the data repository?}
 
 % TODO: case study example
 
 % TODO: expand
-\textcolor{blue}{features should be numeric and have a meaningful magnitude (see below). In addition to being meaningful, the magnitude should be on a similar (small) range. e.g. if some data has one feature on a range 70,000-500,000 (estimated home value) and another feature on a 0-5 range (maybe number of bathrooms in a house), the higher values, in addition to being viewed as more meaningful (higher weights), large gradient updates may result that don't allow the network to converge (the updates are not fine grained enough).}
+\r{features should be numeric and have a meaningful magnitude (see below). In addition to being meaningful, the magnitude should be on a similar (small) range. e.g. if some data has one feature on a range 70,000-500,000 (estimated home value) and another feature on a 0-5 range (maybe number of bathrooms in a house), the higher values, in addition to being viewed as more meaningful (higher weights), large gradient updates may result that don't allow the network to converge (the updates are not fine grained enough).}
 
 % TODO: case study example
 
 \r{pre-processing may be used to reduce the dimensionality of the data, before training.}
 
-\textcolor{blue}{make sure ``enough'' examples exist for the particular feature}
+\r{make sure ``enough'' examples exist for the particular feature}
 
-\textcolor{blue}{Don't mix magic values with values you already have. For example, if we have ratings 0-10, don't include a new column for rated vs not rated.}
+\r{Don't mix magic values with values you already have. For example, if we have ratings 0-10, don't include a new column for rated vs not rated.}
 
 \subsection{Handling Missing Data}
 
@@ -51,17 +51,32 @@
 
 \r{continuous -- binning}
 
+% TODO: rare category
+\TD{including an additional category for a rare category, a category that acts as a catch-all (meaning, it may actually be composed of many categories), but was not originally seen in the data at the time of preprocessing. This category may also be called or considered an unknown category.}
+
 \paragraph{Encoding}
+
+\TD{storage as a sparse datatype. -- \TD{example showing the storage saving}}
 
 \textcolor{blue}{It may seem intuitive to represent categorical data with an integer value. However, this may not always be best. Let's pretend we're representing United States with arbitrary integer values and we assign values alphabetically; Alabama: 0, Alaska: 1, Arizona: 2, Arkansas: 3, California: 4, ..., Wisconsin: 48, Wyoming: 49. So far so good. \textcolor{red}{However, these values indirectly imply a relationship (that may not actually exist)} -- and imply that some states are more similar to one another than others (for instance, this encoding seemingly indicates that Alabama as most related to Alaska.) }
 
-\textcolor{blue}{{one-hot encoding}\index{one-hot encoding} or one-of-k encoding\index{one-of-k encoding} is a method of encoding which represents each explanatory variable as a binary feature}
+\r{{one-hot encoding}\index{one-hot encoding} or one-of-k encoding\index{one-of-k encoding} is a method of encoding which represents each explanatory variable as a binary feature}
 
-\textcolor{blue}{one-hot encoding reduces the relationship}
+\r{one-hot encoding reduces the relationship}
 
-\textcolor{green}{TODO: show example of one hot encoding}
+\TD{TODO: show example of one hot encoding}
 
-\textcolor{blue}{will lead to {sparse vectors}\index{sparse vectors} -- high dimensional vectors. This is memory intensive (some libraries have methods to address this --- SciPy and Pandas).}
+\r{will lead to {sparse vectors}\index{sparse vectors} -- high dimensional vectors. This is memory intensive (some libraries have methods to address this --- SciPy and Pandas).}
+
+\subparagraph{binarization}
+
+%TODO: index
+\TD{rather than using one hot encoding, features could be binarized.}
+
+
+\subparagraph{Target Encoding}
+
+\TD{convert a categorical value to the mean target variable associated with the given category (calculating the mean from the training split).}
 
 \subsubsection{Feature Scaling, Normalization}
 
@@ -125,11 +140,13 @@
 
 \paragraph{Discretization and Binning}
 
-\textcolor{blue}{An example for this may be housing prices and latitude.}
+\r{An example for this may be housing prices and latitude.}
 
 % ? tf.feature_column.bucketized_column
 
-\textcolor{blue}{rather than store a floating point, bins could be created. would like to keep the information (latitude may be useful, but the magnitude here is not useful (even if normalized) and so binning may be a great option)}
+\r{rather than store a floating point, bins could be created. would like to keep the information (latitude may be useful, but the magnitude here is not useful (even if normalized) and so binning may be a great option)}
+
+\r{treat numerical features as categorical.}
 
 % TODO: figure for latitude (housing prices) and values pre/post binning
 
@@ -147,6 +164,27 @@
 
 \subsubsection{Feature Engineering}
 
-\textcolor{blue}{feature engineering is the process of altering the values of the data such that the problem becomes easier to solve as a result of expressing the data in a simplier/more relevant way. this usually required domain knowledge.}
+\r{feature engineering is the process of altering the values of the data such that the problem becomes easier to solve as a result of expressing the data in a simplier/more relevant way. this usually required domain knowledge.}
 
-\textcolor{green}{TODO: p.102 of Keras book fchollete uses a clock example that is very nice.}
+\r{Any transformation (normalization, creation of new features, or alteration) of a feature may be considered feature engineering.}
+
+\TD{TODO: p.102 of Keras book fchollete uses a clock example that is very nice.}
+
+\TD{Date and time transformations}
+
+\TD{aggregation}
+
+\TD{statistics --- mean, median, max, min, unique, skew}
+
+\subsection{Data Types}
+
+% TODO: think this through a bit...
+
+
+\subsection{Imagery}
+
+\subsection{Time series}
+
+% TODO: https://github.com/blue-yonder/tsfresh
+
+\subsection{Text data}
