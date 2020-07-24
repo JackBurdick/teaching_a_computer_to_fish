@@ -202,6 +202,11 @@
 {\sc A.~Graves, G.~Wayne, and I.~Danihelka}, {\em Neural turing machines},
   CoRR, abs/1410.5401 (2014).
 
+\bibitem{DBLP:journals/corr/GreffSKSS15}
+{\sc K.~Greff, R.~K. Srivastava, J.~Koutn{\'{\i}}k, B.~R. Steunebrink, and
+  J.~Schmidhuber}, {\em {LSTM:} {A} search space odyssey}, CoRR, abs/1503.04069
+  (2015).
+
 \bibitem{griewank2008evaluating}
 {\sc A.~Griewank and A.~Walther}, {\em Evaluating derivatives: principles and
   techniques of algorithmic differentiation}, vol.~105, Siam, 2008.
@@ -282,6 +287,10 @@
   memorization-generalization continuum in deep learning}, arXiv preprint
   arXiv:2002.03206,  (2020).
 
+\bibitem{Kalchbrenner2016GridLS}
+{\sc N.~Kalchbrenner, I.~Danihelka, and A.~Graves}, {\em Grid long short-term
+  memory}, CoRR, abs/1507.01526 (2016).
+
 \bibitem{Katharopoulos2020TransformersAR}
 {\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
   are rnns: Fast autoregressive transformers with linear attention}, ArXiv,
@@ -325,6 +334,10 @@
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
+
+\bibitem{DBLP:journals/corr/KoutnikGGS14}
+{\sc J.~Koutn{\'{\i}}k, K.~Greff, F.~J. Gomez, and J.~Schmidhuber}, {\em A
+  clockwork {RNN}}, CoRR, abs/1402.3511 (2014).
 
 \bibitem{lange2020_lottery_ticket_hypothesis}
 {\sc R.~T. Lange}, {\em The lottery ticket hypothesis: A survey},
@@ -708,6 +721,10 @@
 \bibitem{DBLP:journals/corr/YangH16}
 {\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
   learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
+
+\bibitem{DBLP:journals/corr/YaoCVDD15}
+{\sc K.~Yao, T.~Cohn, K.~Vylomova, K.~Duh, and C.~Dyer}, {\em Depth-gated
+  {LSTM}}, CoRR, abs/1508.03790 (2015).
 
 \bibitem{You2020DrawingET}
 {\sc H.~You, C.~Li, P.~Xu, Y.~Fu, Y.~Wang, X.~Chen, Y.~Lin, Z.~Wang, and

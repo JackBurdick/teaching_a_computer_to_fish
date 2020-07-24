@@ -1,3 +1,43 @@
 \section{feature selection}
 
 \TD{TODO: selecting features}
+
+\subsection{why}
+
+reducing number of features
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item reducing number of features
+	\item helping to understand feature importance
+\end{itemize}
+
+\subsection{methods}
+
+
+%% simple "naive"?
+\TD{remove features with low variance (can manually set some threshold)}
+
+\TD{remove features with high correlation}
+
+\TD{univariate feature selection -- scoring each feature individually against a target. many options: }
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Mutual information and maximal information coefficient (MIC)
+	\item Pearson Correlation
+	\item ANOVA
+	\item Distance correlation
+	\item F-test
+	\item chi$^2$ (data must be non-negative)
+	\item Model based ranking
+\end{itemize}
+
+% TODO: redo this greedy section
+\r{in model based ranking, the idea is to use a model to select which features are the most predictive}
+\r{the model based approach may be used in one of two ways}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item greedy feature selection: iteratively go through features and ``keep'' a feature if it improves the loss/metric of interest. \TD{expand on this: start with one feature, then continually include more}
+	\item recursive feature elimination (RFE): the opposite, start with all features, then remove them one by one as a result of least importance (measured on loss or metric of interest)
+\end{itemize}
+
+
+
+

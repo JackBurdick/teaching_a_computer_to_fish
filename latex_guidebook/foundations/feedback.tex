@@ -66,6 +66,8 @@ Two well known main problems with RNNs.
 
 \subsubsection{LSTM}
 
+% TODO: Nice overview of LSTMs: https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
 Introduced in 1997 %\cite{hochreiter1997long}
 
 \r{detect long term dependencies in sequence}
@@ -75,6 +77,20 @@ Introduced in 1997 %\cite{hochreiter1997long}
 \r{Main motivation: learning what to store in the long-term state and what to ``forget''.}
 
 \r{at each time step, some information is ``stored'' and some information is ``forgotten''.}
+
+\paragraph{variants}
+
+\TD{Depth-Gated LSTM \cite{DBLP:journals/corr/YaoCVDD15}}
+
+\TD{A Clockwork RNN \cite{DBLP:journals/corr/KoutnikGGS14}}
+
+\TD{LSTM: A Search Space Odyssey \cite{DBLP:journals/corr/GreffSKSS15} --- survey of LSTM variants --- all variants are essentially equal.}
+	
+
+\paragraph{other directions}
+
+% interesting paper on ``grid LSTMs'' -- not sure why they never become popular
+\TD{Grid Long Short-Term Memory \cite{Kalchbrenner2016GridLS}}
 
 \paragraph{Fully Connected Layers}
 

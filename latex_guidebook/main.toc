@@ -108,9 +108,11 @@
 \contentsline {subsubsection}{\numberline {3.10.5.5}Other Notes}{30}
 \contentsline {subsection}{\numberline {3.10.6}Audio}{30}
 \contentsline {section}{\numberline {3.11}feature selection}{30}
-\contentsline {section}{\numberline {3.12}Partitioning Data}{30}
-\contentsline {subsection}{\numberline {3.12.1}Types of Splits}{30}
-\contentsline {subsection}{\numberline {3.12.2}k-Fold Cross Validation}{32}
+\contentsline {subsection}{\numberline {3.11.1}why}{30}
+\contentsline {subsection}{\numberline {3.11.2}methods}{30}
+\contentsline {section}{\numberline {3.12}Partitioning Data}{31}
+\contentsline {subsection}{\numberline {3.12.1}Types of Splits}{31}
+\contentsline {subsection}{\numberline {3.12.2}k-Fold Cross Validation}{33}
 \contentsline {subsubsection}{\numberline {3.12.2.1}k-Fold Validation with shuffling}{33}
 \contentsline {subsection}{\numberline {3.12.3}Sampling}{33}
 \contentsline {paragraph}{\numberline {3.12.3.0.1}Representative Data}{33}
@@ -377,12 +379,14 @@
 \contentsline {section}{\numberline {13.6}Architecture}{121}
 \contentsline {subsection}{\numberline {13.6.1}Cell Advancements}{121}
 \contentsline {subsubsection}{\numberline {13.6.1.1}LSTM}{121}
-\contentsline {paragraph}{\numberline {13.6.1.1.1}Fully Connected Layers}{121}
-\contentsline {subparagraph}{Main}{121}
-\contentsline {subparagraph}{Forget}{121}
+\contentsline {paragraph}{\numberline {13.6.1.1.1}variants}{121}
+\contentsline {paragraph}{\numberline {13.6.1.1.2}other directions}{121}
+\contentsline {paragraph}{\numberline {13.6.1.1.3}Fully Connected Layers}{121}
+\contentsline {subparagraph}{Main}{122}
+\contentsline {subparagraph}{Forget}{122}
 \contentsline {subparagraph}{Input}{123}
 \contentsline {subparagraph}{Output}{123}
-\contentsline {paragraph}{\numberline {13.6.1.1.2}Other}{123}
+\contentsline {paragraph}{\numberline {13.6.1.1.4}Other}{123}
 \contentsline {subparagraph}{Peephole Connections}{123}
 \contentsline {subsubsection}{\numberline {13.6.1.2}GRU}{124}
 \contentsline {subsection}{\numberline {13.6.2}Initialization}{124}
@@ -508,7 +512,7 @@
 \contentsline {subsection}{\numberline {24.1.1}Same loss function, different data distribution}{163}
 \contentsline {subsection}{\numberline {24.1.2}Different loss function}{164}
 \contentsline {subsection}{\numberline {24.1.3}training network}{164}
-\contentsline {subsection}{\numberline {24.1.4}conditioning task descriptor}{164}
+\contentsline {subsection}{\numberline {24.1.4}Conditioning task descriptor}{164}
 \contentsline {subsection}{\numberline {24.1.5}optimizing the objective}{165}
 \contentsline {section}{\numberline {24.2}Relationships}{166}
 \contentsline {subsection}{\numberline {24.2.1}Architecture}{166}
