@@ -37,43 +37,43 @@
 \indexentry{Tikhonov regularization}{78}
 \indexentry{inverted dropout}{82}
 \indexentry{freezing}{82}
-\indexentry{generalized linear model}{89}
-\indexentry{Ordinary Lease Squares (OLS)}{90}
-\indexentry{Linear Least Squares}{90}
-\indexentry{residuals}{90}
-\indexentry{residual sum of squares (RSS)}{91}
-\indexentry{odds ratio}{92}
-\indexentry{logit}{92}
-\indexentry{discrimination threshold}{92}
-\indexentry{lazy learner}{92}
-\indexentry{Support Vector Machine (SVM)}{95}
-\indexentry{Sequential Minimal Optimization (SMO)}{95}
-\indexentry{independent and identically distributed (i.i.d)}{96}
-\indexentry{ID3 algorithm}{98}
-\indexentry{J48}{98}
-\indexentry{Heaviside step function}{103}
-\indexentry{unit step function}{103}
-\indexentry{universal approximators}{104}
-\indexentry{input layer}{104}
-\indexentry{hidden layer}{104}
-\indexentry{output layer}{104}
-\indexentry{credit assignment problem}{106}
-\indexentry{sigmoid}{107}
-\indexentry{ReLUN}{111}
-\indexentry{data distillation}{115}
-\indexentry{reverse-mode differentiation}{116}
-\indexentry{symbolic differentiation}{116}
-\indexentry{image quantization}{132}
-\indexentry{silhouette coefficient}{134}
-\indexentry{Principal Component Analysis (PCA)}{135}
-\indexentry{Karhunen-Love Transform (KLM)}{135}
-\indexentry{covarience matrix}{135}
-\indexentry{manifold}{137}
-\indexentry{bagging}{155}
-\indexentry{boostrap aggregating}{155}
-\indexentry{sampling with replacement|see{bagging}}{155}
-\indexentry{bootstrap samples}{155}
-\indexentry{subagging}{156}
-\indexentry{sampling without replacement|see{subagging}}{156}
-\indexentry{subspace sampling}{156}
-\indexentry{blending}{157}
+\indexentry{generalized linear model}{91}
+\indexentry{Ordinary Lease Squares (OLS)}{92}
+\indexentry{Linear Least Squares}{92}
+\indexentry{residuals}{92}
+\indexentry{residual sum of squares (RSS)}{93}
+\indexentry{odds ratio}{94}
+\indexentry{logit}{94}
+\indexentry{discrimination threshold}{94}
+\indexentry{lazy learner}{94}
+\indexentry{Support Vector Machine (SVM)}{97}
+\indexentry{Sequential Minimal Optimization (SMO)}{97}
+\indexentry{independent and identically distributed (i.i.d)}{98}
+\indexentry{ID3 algorithm}{100}
+\indexentry{J48}{100}
+\indexentry{Heaviside step function}{105}
+\indexentry{unit step function}{105}
+\indexentry{universal approximators}{106}
+\indexentry{input layer}{106}
+\indexentry{hidden layer}{106}
+\indexentry{output layer}{106}
+\indexentry{credit assignment problem}{108}
+\indexentry{sigmoid}{109}
+\indexentry{ReLUN}{113}
+\indexentry{data distillation}{117}
+\indexentry{reverse-mode differentiation}{118}
+\indexentry{symbolic differentiation}{118}
+\indexentry{image quantization}{134}
+\indexentry{silhouette coefficient}{136}
+\indexentry{Principal Component Analysis (PCA)}{137}
+\indexentry{Karhunen-Love Transform (KLM)}{137}
+\indexentry{covarience matrix}{137}
+\indexentry{manifold}{139}
+\indexentry{bagging}{157}
+\indexentry{boostrap aggregating}{157}
+\indexentry{sampling with replacement|see{bagging}}{157}
+\indexentry{bootstrap samples}{157}
+\indexentry{subagging}{158}
+\indexentry{sampling without replacement|see{subagging}}{158}
+\indexentry{subspace sampling}{158}
+\indexentry{blending}{159}

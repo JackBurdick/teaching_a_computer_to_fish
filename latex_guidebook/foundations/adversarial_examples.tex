@@ -2,6 +2,10 @@
 \chapter{Adversarial Machine Learning}
 %TODO: I'm not convinced this is the right location for this section
 
+% TODO: my mental model on this section isn't quite clear -- the backdoor learning survey seperates based on training/inference, but I'm not sure that's the ``right'' mental model for myself... I personally view it (currently) more along the lines of altering the model or leaving the model untouched and exploiting the model based on altered inputs (soley).
+
+\TD{Backdoor Learning: A Survey \cite{Li2020BackdoorLA}, \r{distinguishes backdoor learning as soemthing different than adversarial learning. Where adversarial learning is concerned with the inference process, backdoor learning is concerned with the training process (in the context of security). However, we will be discussing these topics outside the focus of a security-centric lens.}}
+
 \TD{survey \TD{Adversarial Attacks and Defences: {A \cite{DBLP:journals/corr/abs-1810-00069}}}}
 
 \TD{a bit cat and mouse}
@@ -43,3 +47,26 @@
 \section{Implications}
 
 \TD{section on implications}
+
+\section{Backdoor Learning}
+
+\TD{Certified and empirical backdoor attacks/defenses.}
+
+\r{Backdoor Learning: A Survey \cite{Li2020BackdoorLA}}
+
+\r{first paper in the space \TD{BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain \cite{DBLP:journals/corr/abs-1708-06733}}. The model performs as expected when testing samples when the backdoor is not activated, but once the backdoor is activated, the model output can be controlled by the attacker-specified information.}
+
+
+\section{Uses (non-exploitive) for Backdoor}
+
+\r{\TD{Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring \cite{DBLP:journals/corr/abs-1802-04633}} uses backdoor attacks to verify model ownership.}
+
+\r{\TD{Towards Probabilistic Verification of Machine Unlearning \cite{Sommer2020TowardsPV}} use an approach to verify whether data was truly removed when requested.}
+
+
+\section{To Include}
+
+\r{poisoning vs non-poisoning}
+
+
+\r{non-poisoning attack: \TD{Backdooring Convolutional Neural Networks via Targeted Weight Perturbations \cite{DBLP:journals/corr/abs-1812-03128}}}
