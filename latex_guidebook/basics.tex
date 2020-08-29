@@ -160,7 +160,17 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 
 \section{Training}
 
-\subsection{Cost, Loss Function}
+\TD{Difference between the loss and metric functions}
+
+\r{Metrics are what we care about and how we, as humans, measure the performance.}
+
+\r{Loss is a proxy for the metric}
+
+\TD{distinction: losses are differentiable, metrics are not \TD{show the importance of this somewhere}}
+
+\subsection{Performance}
+
+\subsubsection{Cost, Loss Function}
 
 \textcolor{red}{Cost and Loss functions -- I'm not sure why I didn't have this yet?}
 
@@ -183,6 +193,8 @@ One-versus-one (OvO) -- train a binary classifier for every pair
 \textcolor{blue}{Loss calculation. TODO: example for linear linear regression and why sum of loss will cancel out terms. \textcolor{red}{point to local ref.}}
 
 \r{``surrogate loss'' --- takes a classification problem and turns it to a continuous/smooth surface.}
+
+\subsubsection{Metrics}
 
 \subsection{Error Functions}
 

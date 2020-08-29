@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
+White space in argument---line 2 of file introduction.aux
+ : \citation{\cite
+ :                 {samuel1962artificial}}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
 A level-1 auxiliary file: data.aux
@@ -38,4 +42,4 @@ Warning--empty booktitle in Chuang2020DebiasedCL
 Warning--empty journal in dozat2016incorporating
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
-(There were 13 warnings)
+(There was 1 error message)

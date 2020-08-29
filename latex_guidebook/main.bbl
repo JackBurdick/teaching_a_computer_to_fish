@@ -790,6 +790,10 @@
 {\sc M.~D. Zeiler}, {\em Adadelta: an adaptive learning rate method}, arXiv
   preprint arXiv:1212.5701,  (2012).
 
+\bibitem{DBLP:journals/corr/ZeilerF13}
+{\sc M.~D. Zeiler and R.~Fergus}, {\em Visualizing and understanding
+  convolutional networks}, CoRR, abs/1311.2901 (2013).
+
 \bibitem{zhang2017mixup}
 {\sc H.~Zhang, M.~Cisse, Y.~N. Dauphin, and D.~Lopez-Paz}, {\em mixup: Beyond
   empirical risk minimization}, arXiv preprint arXiv:1710.09412,  (2017).

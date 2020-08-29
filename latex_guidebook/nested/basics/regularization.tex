@@ -1,8 +1,12 @@
 \chapter{Improving Generalizability}
 
+\r{The methods shown in the upcoming sections aim to reduce overfitting, but at the cost of potentially limiting the ability of the model. That is, it is worth while avoiding these methods until you overfitting is certain \TD{ref section about determining overfitting}.}
+
 \subsection{Parameter Regularization}
 
 \r{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
+
+
 
 % TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
 
@@ -251,7 +255,13 @@ r{at test time, multiply the values by the expectation, not the on/off mask}
 
 % TODO: is this talked about anywhere else? this is probably the best place for it.
 
-\textcolor{green}{TODO: transfer learning -- explanation, implementation in TensorFlow, and in YamlFlow \r{if general enough, the lower features may be reusable}}
+\TD{TODO: transfer learning, using -- explanation}
+
+\TD{tool that may sometimes be efficient way of getting to potentially more accurate approximations, faster. \TD{citations}}
+
+% TODO: index
+\r{using parameters or pre-trained components from a model/task for a new model/task.  Process of adapting these components to a new model/task is called fine-tuning}
+
 
 \begin{figure}[htp]
 	\centering
