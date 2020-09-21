@@ -1,0 +1,45 @@
+\section{Data Imbalance}
+
+\TD{A Survey of Predictive Modelling under Imbalanced Distributions \cite{DBLP:journals/corr/BrancoTR15}}
+
+\r{An ``imbalance in the data'' may have many meanings. That is, the labels could be imbalanced (e.g. in a binary classifier, there may be n times the number of instances with the label p when compared to the label q), the features may be imbalanced, (e.g. facial recognition is being performed on collected images that are composed of overwhemingly white, male, brown hair, clean shaven, hazel eye individuals), or it may mean a combination of the above.}
+
+\r{this poses a problem, as typically the optimization process treats all samples individually and equally, which may (often does) pose problems when creating predictions on imbalanced data}
+
+\r{Two main high level approaches to addressing this issue. You can either modify the (or utilize a combination of the listed):}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item data
+	\item model
+	\item post-processing
+\end{itemize}
+
+\r{data modification approaches aim to create a quisi-balanced representation, often through some re-sampling scheme. Simple example for would be to down-sampling the overrepresented class and upsampling the underrepresented class -- where class here might mean target variable or feature attribute.}
+
+\r{when discussing class imbalance in reference to a continuous variable, the term skewed is often used to describe the data, whereas unbalanced or imbalanced is used for discrete variables}
+
+\TD{relevance function --- }
+
+\subsection{Methods}
+
+\TD{paper to read: \TD{Self-paced Ensemble for Highly Imbalanced Massive Data Classification \cite{Liu2020SelfpacedEF}}}
+
+\subsubsection{Data}
+
+\r{as mentioned, under/oversampling scheme}
+
+\TD{Methods -- SMOTE, SMOGN}
+
+\subsubsection{Model}
+
+\TD{Utility-based Regression --- penalty based on \TD{relevance function}}
+
+\subsubsection{Post processing}
+
+\subsection{Evaluation}
+
+\r{Difficult to discuss class imbalance without discussing the importance of having appropriate metrics in place to evaluate the methods. \TD{point to example of disease test where 1 out of N are positive --- acc is very high, yet...}}
+
+\TD{point to metrics section and specific metrics that may be useful for various scenarios}
+
+
+

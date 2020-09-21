@@ -373,6 +373,8 @@
 
 \r{In the Backward pass, the previously calcuated derivatives are used to compute the adjustments to the parameters --- propagated in reverse through the network (from cost function to input layer) and each node is updated -- \TD{TODO: expand}.}
 
+\r{backpropagation\cite{alber2018backprop}}
+
 \r{Many optimization schemes \TD{local ref} may be used to adjust the parameters by using the calculated derivatives from the forward pass.}
 
 \r{The calculated derivatives are used by the majority of training algorithms}
@@ -386,7 +388,7 @@
 
 % See p207 of DL
 
-\r{also sometimes called \IDI{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
+
 
 \r{\IDI{symbolic differentiation} --- compute a gradient function for the chain (chain rule) mapping parameter values to gradient values}
 
@@ -401,6 +403,46 @@
 \TD{TODO: chain rule}
 
 \r{Backpropagation is typically used with an optimization algorithm (see \textcolor{red}{local ref?})}
+
+\subsection{Autodiff}
+
+\TD{Autodifferentiation (\IDI{autodiff})}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Manual differentiation
+	\item Finite difference approximation
+	\item Autodiff
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Forward-mode autodiff
+		\item Reverse-mode autodiff
+	\end{itemize}
+\end{itemize}
+
+\TD{automatic differentiation may be used to estimate derivatives numerically as the derivative is not always known.}
+
+\r{Tensorflow uses \IDI{reverse-mode differentiation}.  Calculate the contribution that each parameter had on the loss value}
+
+\subsubsection{Manual differentiation}
+
+\r{calculus ``by hand''}
+
+\subsubsection{Finite difference approximation}
+
+\r{using infinitely close points on a function to calculate the slope of line passing through these points.}
+
+%TODO: very nice code example in hands on ML that is worth including here
+
+\TD{specific equation, Newton's difference quotient}
+
+\subsubsection{Forward-mode autodiff}
+
+% TODO: same flaw as above, more accurate, but requires just as many passes -- which is ``unfeasible'' for large scale NN
+
+\TD{dual numbers}
+
+\subsubsection{Reverse-mode autodiff}
+
+% TODO: only two passes needed
 
 \subsection{Multi-layer perceptrons}
 

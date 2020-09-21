@@ -191,7 +191,7 @@
 
 
 %%
-\TD{Kohonen networks (self-organizing maps)}
+\TD{Kohonen networks (self-organizing maps) \TD{Improving Self-Organizing Maps with Unsupervised Feature Extraction \cite{Khacef2020ImprovingSM}}}
 
 %%
 % p.20 of Neural Networks 
@@ -248,14 +248,11 @@
 %% Look into
 \TD{Max norm constraints --- enforce an absolute upper bound.}
 
-%% related to backprop - used by tensorflow
-\TD{automatic differentiation may be sued to estimate derivatives numerically as the derivative is not always known.}
-
 
 %% Unsupervised pretraining - 2006, Hinton
 \TD{greedy layer-wise unsupervised pretraining. greedy since each portion of the network is trained independently. Typically, today, layers are trained jointly using backpropagation}
 
-\r{backpropagation\cite{alber2018backprop}}
+
 
 \subsection{Restricted Boltzmann Machines}
 \r{Restricted Boltzmann machines (RBMs) -- no output layer}
@@ -376,6 +373,7 @@
 
 % what it is, etc.
 \TD{Metric learning}
+
 % TODO: possibly useful: https://towardsdatascience.com/metric-learning-loss-functions-5b67b3da99a5
 \TD{metric learning survey \cite{kaya2019deep}}
 
@@ -388,6 +386,10 @@
 
 
 
+% https://machinelearningmastery.com/cross-entropy-for-machine-learning/ says KL = calculat relative entropy between two
+% x-entropy = calc total entropy between distributions
+% TODO: read https://machinelearningmastery.com/cross-entropy-for-machine-learning/
+\r{cross-entropy -- used to calculate the difference between two probability distributions, related to KL Divergence, but different. }
 %%%%%%%%%%%%%%%%%%%%%
 
 

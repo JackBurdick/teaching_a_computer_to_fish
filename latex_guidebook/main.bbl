@@ -69,6 +69,10 @@
   D.~S. Weld}, {\em Does the whole exceed its parts? the effect of ai
   explanations on complementary team performance}, 2020.
 
+\bibitem{DBLP:journals/corr/abs-1904-09330}
+{\sc P.~Bashivan, M.~Schrimpf, R.~Ajemian, I.~Rish, M.~Riemer, and Y.~Tu}, {\em
+  Continual learning with self-organizing maps}, CoRR, abs/1904.09330 (2019).
+
 \bibitem{DBLP:journals/corr/abs-1106-0245}
 {\sc J.~Baxter}, {\em A model of inductive bias learning}, CoRR, abs/1106.0245
   (2011).
@@ -77,6 +81,10 @@
 {\sc A.~G. Baydin, R.~Cornish, D.~M. Rubio, M.~Schmidt, and F.~Wood}, {\em
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
+
+\bibitem{DBLP:journals/corr/BrancoTR15}
+{\sc P.~Branco, L.~Torgo, and R.~P. Ribeiro}, {\em A survey of predictive
+  modelling under imbalanced distributions}, CoRR, abs/1505.01658 (2015).
 
 \bibitem{DBLP:journals/corr/BritzGLL17}
 {\sc D.~Britz, A.~Goldie, M.~Luong, and Q.~V. Le}, {\em Massive exploration of
@@ -169,6 +177,10 @@
 \bibitem{DBLP:journals/corr/abs-1803-03635}
 {\sc J.~Frankle and M.~Carbin}, {\em The lottery ticket hypothesis: Training
   pruned neural networks}, CoRR, abs/1803.03635 (2018).
+
+\bibitem{Frankle2020PruningNN}
+{\sc J.~Frankle, G.~Dziugaite, D.~M. Roy, and M.~Carbin}, {\em Pruning neural
+  networks at initialization: Why are we missing the mark?}, 2020.
 
 \bibitem{DBLP:journals/corr/abs-1903-01611}
 {\sc J.~Frankle, G.~K. Dziugaite, D.~M. Roy, and M.~Carbin}, {\em The lottery
@@ -283,6 +295,9 @@
   networks}, in Advances in Neural Information Processing Systems, 2017,
   pp.~1729--1739.
 
+\bibitem{Hooker2020TheHL}
+{\sc S.~Hooker}, {\em The hardware lottery}, ArXiv, abs/2009.06489 (2020).
+
 \bibitem{hornik1991approximation}
 {\sc K.~Hornik}, {\em Approximation capabilities of multilayer feedforward
   networks}, Neural networks, 4 (1991), pp.~251--257.
@@ -335,6 +350,10 @@
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
   uncertainty to weigh losses for scene geometry and semantics}, CoRR,
   abs/1705.07115 (2017).
+
+\bibitem{Khacef2020ImprovingSM}
+{\sc L.~Khacef, L.~Rodriguez, and B.~Miramond}, {\em Improving self-organizing
+  maps with unsupervised feature extraction}, ArXiv, abs/2009.02174 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1901-06032}
 {\sc A.~Khan, A.~Sohail, U.~Zahoora, and A.~S. Qureshi}, {\em A survey of the
@@ -416,6 +435,12 @@
 \bibitem{DBLP:journals/corr/abs-1803-10704}
 {\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
   with attention}, CoRR, abs/1803.10704 (2018).
+
+\bibitem{Liu2020SelfpacedEF}
+{\sc Z.~Liu, W.~Cao, Z.~Gao, J.~Bian, H.~Chen, Y.~Chang, and T.~Liu}, {\em
+  Self-paced ensemble for highly imbalanced massive data classification}, 2020
+  IEEE 36th International Conference on Data Engineering (ICDE),  (2020),
+  pp.~841--852.
 
 \bibitem{Locatello2020ObjectCentricLW}
 {\sc F.~Locatello, D.~Weissenborn, T.~Unterthiner, A.~Mahendran, G.~Heigold,
@@ -522,6 +547,11 @@
   annual meeting of the Association for Computational Linguistics, 2002,
   pp.~311--318.
 
+\bibitem{DBLP:journals/corr/abs-1802-07569}
+{\sc G.~I. Parisi, R.~Kemker, J.~L. Part, C.~Kanan, and S.~Wermter}, {\em
+  Continual lifelong learning with neural networks: {A} review}, CoRR,
+  abs/1802.07569 (2018).
+
 \bibitem{pereyra2017regularizing}
 {\sc G.~Pereyra, G.~Tucker, J.~Chorowski, {\L}.~Kaiser, and G.~Hinton}, {\em
   Regularizing neural networks by penalizing confident output distributions},
@@ -563,6 +593,10 @@
 \bibitem{reddi2019convergence}
 {\sc S.~J. Reddi, S.~Kale, and S.~Kumar}, {\em On the convergence of adam and
   beyond}, arXiv preprint arXiv:1904.09237,  (2019).
+
+\bibitem{Reed2020EvaluatingSP}
+{\sc C.~Reed, S.~Metzger, A.~Srinivas, T.~Darrell, and K.~Keutzer}, {\em
+  Evaluating self-supervised pretraining without using labels}, 2020.
 
 \bibitem{reed2014training}
 {\sc S.~Reed, H.~Lee, D.~Anguelov, C.~Szegedy, D.~Erhan, and A.~Rabinovich},
@@ -701,6 +735,10 @@
   networks without any data by iteratively conserving synaptic flow}, ArXiv,
   abs/2006.05467 (2020).
 
+\bibitem{Tay2020EfficientTA}
+{\sc Y.~Tay, M.~Dehghani, D.~Bahri, and D.~Metzler}, {\em Efficient
+  transformers: A survey}, ArXiv, abs/2009.06732 (2020).
+
 \bibitem{tran2017bayesian}
 {\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
   data augmentation approach for learning deep models}, in Advances in neural
@@ -719,6 +757,15 @@
 \bibitem{Vinyals2015PointerN}
 {\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
   abs/1506.03134 (2015).
+
+\bibitem{Wang2020BayesianOF}
+{\sc L.~Wang, F.~Dernoncourt, and T.~Bui}, {\em Bayesian optimization for
+  selecting efficient machine learning models}, ArXiv, abs/2008.00386 (2020).
+
+\bibitem{Wang2020KnowledgeDA}
+{\sc L.~Wang and K.-J. Yoon}, {\em Knowledge distillation and student-teacher
+  learning for visual intelligence: A review and new outlooks}, ArXiv,
+  abs/2004.05937 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1711-07971}
 {\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural

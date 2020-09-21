@@ -13,6 +13,8 @@ A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
 A level-1 auxiliary file: multitask.aux
 A level-1 auxiliary file: meta.aux
+A level-1 auxiliary file: continual_learning.aux
+A level-1 auxiliary file: self_supervised_learning.aux
 A level-1 auxiliary file: interpretability.aux
 A level-1 auxiliary file: applied.aux
 A level-1 auxiliary file: ethics.aux
@@ -40,6 +42,8 @@ Warning--to sort, need author or key in convnet_js
 Warning--empty booktitle in Bansal2020DoesTW
 Warning--empty booktitle in Chuang2020DebiasedCL
 Warning--empty journal in dozat2016incorporating
+Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
+Warning--empty booktitle in Reed2020EvaluatingSP
 (There was 1 error message)
