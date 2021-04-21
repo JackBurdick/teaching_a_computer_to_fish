@@ -174,6 +174,10 @@
   Linguistics and the 7th International Joint Conference on Natural Language
   Processing (Volume 2: Short Papers), 2015, pp.~845--850.
 
+\bibitem{Evci2019RiggingTL}
+{\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
+  lottery: Making all tickets winners}, ArXiv, abs/1911.11134 (2019).
+
 \bibitem{DBLP:journals/corr/abs-1803-03635}
 {\sc J.~Frankle and M.~Carbin}, {\em The lottery ticket hypothesis: Training
   pruned neural networks}, CoRR, abs/1803.03635 (2018).
@@ -511,6 +515,11 @@
 \bibitem{DBLP:journals/corr/abs-1906-02629}
 {\sc R.~M{\"{u}}ller, S.~Kornblith, and G.~E. Hinton}, {\em When does label
   smoothing help?}, CoRR, abs/1906.02629 (2019).
+
+\bibitem{Mundt2020AWV}
+{\sc M.~Mundt, Y.~W. Hong, I.~Pliushch, and V.~Ramesh}, {\em A wholistic view
+  of continual learning with deep neural networks: Forgotten lessons and the
+  bridge to active and open world learning}, ArXiv, abs/2009.01797 (2020).
 
 \bibitem{munkhdalai2017meta}
 {\sc T.~Munkhdalai and H.~Yu}, {\em Meta networks}, in Proceedings of the 34th

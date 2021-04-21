@@ -70,13 +70,13 @@
 \indexentry{Karhunen-Love Transform (KLM)}{141}
 \indexentry{covarience matrix}{141}
 \indexentry{manifold}{143}
-\indexentry{bagging}{161}
-\indexentry{boostrap aggregating}{161}
-\indexentry{sampling with replacement|see{bagging}}{161}
-\indexentry{bootstrap samples}{161}
-\indexentry{subagging}{162}
-\indexentry{sampling without replacement|see{subagging}}{162}
-\indexentry{subspace sampling}{162}
-\indexentry{blending}{163}
-\indexentry{catastrophic forgetting}{183}
-\indexentry{continual learning}{183}
+\indexentry{bagging}{163}
+\indexentry{boostrap aggregating}{163}
+\indexentry{sampling with replacement|see{bagging}}{163}
+\indexentry{bootstrap samples}{163}
+\indexentry{subagging}{164}
+\indexentry{sampling without replacement|see{subagging}}{164}
+\indexentry{subspace sampling}{164}
+\indexentry{blending}{165}
+\indexentry{catastrophic forgetting}{185}
+\indexentry{continual learning}{185}
