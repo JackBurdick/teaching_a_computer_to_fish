@@ -150,7 +150,7 @@ latex_guidebook/nested/basics/*.aux
 latex_guidebook/util_scripts/\.ipynb_checkpoints/
 latex_guidebook/_markdown_main/
 latex_guidebook/main\.markdown\.*
-latex_guidebook/sync_imgs/
+# latex_guidebook/sync_imgs/
 latex_guidebook/tensorflow/*.log
 latex_guidebook/tensorflow/*.aux
 latex_guidebook/main\.synctex\.gz\(busy\)
