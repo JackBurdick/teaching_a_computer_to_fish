@@ -1,9 +1,7 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
-White space in argument---line 2 of file introduction.aux
- : \citation{\cite
- :                 {samuel1962artificial}}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: community.aux
 A level-1 auxiliary file: prerequisites.aux
 A level-1 auxiliary file: data.aux
@@ -46,4 +44,45 @@ Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
-(There was 1 error message)
+You've used 197 entries,
+            2030 wiz_defined-function locations,
+            1484 strings with 42067 characters,
+and the built_in function-call counts, 64867 in all, are:
+= -- 5426
+> -- 4630
+< -- 0
++ -- 1846
+- -- 1629
+* -- 5848
+:= -- 11141
+add.period$ -- 213
+call.type$ -- 197
+change.case$ -- 1401
+chr.to.int$ -- 0
+cite$ -- 212
+duplicate$ -- 2556
+empty$ -- 4001
+format.name$ -- 1629
+if$ -- 12591
+int.to.chr$ -- 0
+int.to.str$ -- 197
+missing$ -- 191
+newline$ -- 610
+num.names$ -- 377
+pop$ -- 1428
+preamble$ -- 1
+purify$ -- 1206
+quote$ -- 0
+skip$ -- 1601
+stack$ -- 0
+substring$ -- 2155
+swap$ -- 682
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 784
+warning$ -- 15
+while$ -- 478
+width$ -- 200
+write$ -- 1622
+(There were 15 warnings)

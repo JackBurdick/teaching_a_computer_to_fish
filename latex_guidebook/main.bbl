@@ -104,6 +104,11 @@
 {\sc N.~Carlini and D.~A. Wagner}, {\em Towards evaluating the robustness of
   neural networks}, CoRR, abs/1608.04644 (2016).
 
+\bibitem{Caron2020UnsupervisedLO}
+{\sc M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin},
+  {\em Unsupervised learning of visual features by contrasting cluster
+  assignments}, ArXiv, abs/2006.09882 (2020).
+
 \bibitem{caruana1993multitask}
 {\sc R.~Caruana}, {\em Multitask learning: A knowledge-based source of
   inductive bias icml}, Google Scholar Google Scholar Digital Library Digital
@@ -114,10 +119,28 @@
   {\em Adversarial attacks and defences: {A} survey}, CoRR, abs/1810.00069
   (2018).
 
+\bibitem{Chen2020ASF}
+{\sc T.~Chen, S.~Kornblith, M.~Norouzi, and G.~E. Hinton}, {\em A simple
+  framework for contrastive learning of visual representations}, ArXiv,
+  abs/2002.05709 (2020).
+
+\bibitem{Chen2020BigSM}
+{\sc T.~Chen, S.~Kornblith, K.~Swersky, M.~Norouzi, and G.~E. Hinton}, {\em Big
+  self-supervised models are strong semi-supervised learners}, ArXiv,
+  abs/2006.10029 (2020).
+
 \bibitem{DBLP:journals/corr/ChenCZH17}
 {\sc W.~Chen, X.~Chen, J.~Zhang, and K.~Huang}, {\em Beyond triplet loss: a
   deep quadruplet network for person re-identification}, CoRR, abs/1704.01719
   (2017).
+
+\bibitem{Chen2020ImprovedBW}
+{\sc X.~Chen, H.~Fan, R.~B. Girshick, and K.~He}, {\em Improved baselines with
+  momentum contrastive learning}, ArXiv, abs/2003.04297 (2020).
+
+\bibitem{Chen2020ExploringSS}
+{\sc X.~Chen and K.~He}, {\em Exploring simple siamese representation
+  learning}, ArXiv, abs/2011.10566 (2020).
 
 \bibitem{DBLP:journals/corr/ChengDL16}
 {\sc J.~Cheng, L.~Dong, and M.~Lapata}, {\em Long short-term memory-networks
@@ -273,6 +296,11 @@
   many-task model: Growing a neural network for multiple {NLP} tasks}, CoRR,
   abs/1611.01587 (2016).
 
+\bibitem{DBLP:journals/corr/abs-1911-05722}
+{\sc K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~B. Girshick}, {\em Momentum contrast
+  for unsupervised visual representation learning}, CoRR, abs/1911.05722
+  (2019).
+
 \bibitem{he2015delving}
 {\sc K.~He, X.~Zhang, S.~Ren, and J.~Sun}, {\em Delving deep into rectifiers:
   Surpassing human-level performance on imagenet classification}, in
@@ -314,6 +342,11 @@
 \bibitem{inoue2018data}
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
+
+\bibitem{Jaegle2021PerceiverGP}
+{\sc A.~Jaegle, F.~Gimeno, A.~Brock, A.~Zisserman, O.~Vinyals, and
+  J.~Carreira}, {\em Perceiver: General perception with iterative attention},
+  ArXiv, abs/2103.03206 (2021).
 
 \bibitem{jiang2020exploring}
 {\sc Z.~Jiang, C.~Zhang, K.~Talwar, and M.~C. Mozer}, {\em Exploring the
@@ -640,6 +673,11 @@
   reparameterization to accelerate training of deep neural networks}, in
   Advances in Neural Information Processing Systems, 2016, pp.~901--909.
 
+\bibitem{samuel1962artificial}
+{\sc A.~L. Samuel}, {\em Artificial intelligence: a frontier of automation},
+  The Annals of the American Academy of Political and Social Science, 340
+  (1962), pp.~10--20.
+
 \bibitem{santoro2016meta}
 {\sc A.~Santoro, S.~Bartunov, M.~Botvinick, D.~Wierstra, and T.~Lillicrap},
   {\em Meta-learning with memory-augmented neural networks}, in International
@@ -668,6 +706,11 @@
 {\sc N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~Le, G.~Hinton, and
   J.~Dean}, {\em Outrageously large neural networks: The sparsely-gated
   mixture-of-experts layer}, arXiv preprint arXiv:1701.06538,  (2017).
+
+\bibitem{Shi2020RunAF}
+{\sc H.~Shi, D.~Luo, S.~Tang, J.~Wang, and Y.~Zhuang}, {\em Run away from your
+  teacher: Understanding byol by a novel self-supervised approach}, ArXiv,
+  abs/2011.10944 (2020).
 
 \bibitem{shrivastava2017learning}
 {\sc A.~Shrivastava, T.~Pfister, O.~Tuzel, J.~Susskind, W.~Wang, and R.~Webb},
@@ -841,6 +884,11 @@
 {\sc S.~Yun, D.~Han, S.~J. Oh, S.~Chun, J.~Choe, and Y.~Yoo}, {\em Cutmix:
   Regularization strategy to train strong classifiers with localizable
   features}, arXiv preprint arXiv:1905.04899,  (2019).
+
+\bibitem{Zbontar2021BarlowTS}
+{\sc J.~Zbontar, L.~Jing, I.~Misra, Y.~LeCun, and S.~Deny}, {\em Barlow twins:
+  Self-supervised learning via redundancy reduction}, ArXiv, abs/2103.03230
+  (2021).
 
 \bibitem{zeiler2012adadelta}
 {\sc M.~D. Zeiler}, {\em Adadelta: an adaptive learning rate method}, arXiv
