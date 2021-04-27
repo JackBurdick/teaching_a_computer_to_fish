@@ -246,6 +246,11 @@
   B.~Sch{\"o}lkopf}, {\em Recurrent independent mechanisms}, ArXiv,
   abs/1909.10893 (2019).
 
+\bibitem{Goyal2021SelfsupervisedPO}
+{\sc P.~Goyal, M.~Caron, B.~Lefaudeux, M.~Xu, P.~Wang, V.~Pai, M.~Singh,
+  V.~Liptchinsky, I.~Misra, A.~Joulin, and P.~Bojanowski}, {\em Self-supervised
+  pretraining of visual features in the wild}, ArXiv, abs/2103.01988 (2021).
+
 \bibitem{DBLP:journals/corr/GravesWD14}
 {\sc A.~Graves, G.~Wayne, and I.~Danihelka}, {\em Neural turing machines},
   CoRR, abs/1410.5401 (2014).
@@ -616,6 +621,11 @@
 {\sc A.~Radford, L.~Metz, and S.~Chintala}, {\em Unsupervised representation
   learning with deep convolutional generative adversarial networks}, CoRR,
   abs/1511.06434 (2015).
+
+\bibitem{Radosavovic2020DesigningND}
+{\sc I.~Radosavovic, R.~P. Kosaraju, R.~B. Girshick, K.~He, and P.~Doll{\'a}r},
+  {\em Designing network design spaces}, 2020 IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR),  (2020), pp.~10425--10433.
 
 \bibitem{Rae2020CompressiveTF}
 {\sc J.~W. Rae, A.~Potapenko, S.~M. Jayakumar, and T.~P. Lillicrap}, {\em

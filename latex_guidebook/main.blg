@@ -44,45 +44,45 @@ Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
-You've used 197 entries,
+You've used 199 entries,
             2030 wiz_defined-function locations,
-            1484 strings with 42067 characters,
-and the built_in function-call counts, 64867 in all, are:
-= -- 5426
-> -- 4630
+            1495 strings with 42645 characters,
+and the built_in function-call counts, 65932 in all, are:
+= -- 5519
+> -- 4716
 < -- 0
-+ -- 1846
-- -- 1629
-* -- 5848
-:= -- 11141
-add.period$ -- 213
-call.type$ -- 197
-change.case$ -- 1401
++ -- 1880
+- -- 1661
+* -- 5949
+:= -- 11316
+add.period$ -- 215
+call.type$ -- 199
+change.case$ -- 1423
 chr.to.int$ -- 0
-cite$ -- 212
-duplicate$ -- 2556
-empty$ -- 4001
-format.name$ -- 1629
-if$ -- 12591
+cite$ -- 214
+duplicate$ -- 2590
+empty$ -- 4052
+format.name$ -- 1661
+if$ -- 12803
 int.to.chr$ -- 0
-int.to.str$ -- 197
-missing$ -- 191
-newline$ -- 610
-num.names$ -- 377
-pop$ -- 1428
+int.to.str$ -- 199
+missing$ -- 193
+newline$ -- 616
+num.names$ -- 381
+pop$ -- 1448
 preamble$ -- 1
-purify$ -- 1206
+purify$ -- 1226
 quote$ -- 0
-skip$ -- 1601
+skip$ -- 1631
 stack$ -- 0
-substring$ -- 2155
-swap$ -- 682
+substring$ -- 2209
+swap$ -- 698
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 784
+type$ -- 792
 warning$ -- 15
-while$ -- 478
-width$ -- 200
-write$ -- 1622
+while$ -- 484
+width$ -- 202
+write$ -- 1639
 (There were 15 warnings)
