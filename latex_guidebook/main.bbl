@@ -173,6 +173,11 @@
   convolutional neural networks with cutout}, arXiv preprint arXiv:1708.04552,
   (2017).
 
+\bibitem{Ding2021RepMLPRC}
+{\sc X.~Ding, X.~Zhang, J.~Han, and G.~Ding}, {\em Repmlp: Re-parameterizing
+  convolutions into fully-connected layers for image recognition}, ArXiv,
+  abs/2105.01883 (2021).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
@@ -201,6 +206,10 @@
 {\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
   lottery: Making all tickets winners}, ArXiv, abs/1911.11134 (2019).
 
+\bibitem{foster2019generative}
+{\sc D.~Foster}, {\em Generative deep learning: teaching machines to paint,
+  write, compose, and play}, O'Reilly Media, 2019.
+
 \bibitem{DBLP:journals/corr/abs-1803-03635}
 {\sc J.~Frankle and M.~Carbin}, {\em The lottery ticket hypothesis: Training
   pruned neural networks}, CoRR, abs/1803.03635 (2018).
@@ -216,6 +225,11 @@
 \bibitem{Frankle2020TheEP}
 {\sc J.~Frankle, D.~J. Schwab, and A.~S. Morcos}, {\em The early phase of
   neural network training}, ArXiv, abs/2002.10365 (2020).
+
+\bibitem{fukushima1982neocognitron}
+{\sc K.~Fukushima and S.~Miyake}, {\em Neocognitron: A self-organizing neural
+  network model for a mechanism of visual pattern recognition}, in Competition
+  and cooperation in neural nets, Springer, 1982, pp.~267--285.
 
 \bibitem{DBLP:journals/corr/abs-1906-04358}
 {\sc A.~Gaier and D.~Ha}, {\em Weight agnostic neural networks}, CoRR,
@@ -236,6 +250,11 @@
   deep feedforward neural networks}, in Proceedings of the thirteenth
   international conference on artificial intelligence and statistics, 2010,
   pp.~249--256.
+
+\bibitem{Goodfellow2014GenerativeAN}
+{\sc I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley,
+  S.~Ozair, A.~C. Courville, and Y.~Bengio}, {\em Generative adversarial
+  networks}, ArXiv, abs/1406.2661 (2014).
 
 \bibitem{Goodfellow2015ExplainingAH}
 {\sc I.~J. Goodfellow, J.~Shlens, and C.~Szegedy}, {\em Explaining and
@@ -338,6 +357,10 @@
 \bibitem{hornik1991approximation}
 {\sc K.~Hornik}, {\em Approximation capabilities of multilayer feedforward
   networks}, Neural networks, 4 (1991), pp.~251--257.
+
+\bibitem{DBLP:journals/corr/abs-1709-01507}
+{\sc J.~Hu, L.~Shen, and G.~Sun}, {\em Squeeze-and-excitation networks}, CoRR,
+  abs/1709.01507 (2017).
 
 \bibitem{huang2017snapshot}
 {\sc G.~Huang, Y.~Li, G.~Pleiss, Z.~Liu, J.~E. Hopcroft, and K.~Q. Weinberger},
@@ -474,6 +497,10 @@
   of an algorithm as a taylor expansion of the local rounding errors}, Master's
   Thesis (in Finnish), Univ. Helsinki,  (1970), pp.~6--7.
 
+\bibitem{Liu2021PayAT}
+{\sc H.~Liu, Z.~Dai, D.~R. So, and Q.~V. Le}, {\em Pay attention to mlps},
+  ArXiv, abs/2105.08050 (2021).
+
 \bibitem{DBLP:journals/corr/abs-1803-10704}
 {\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
   with attention}, CoRR, abs/1803.10704 (2018).
@@ -524,6 +551,11 @@
 \bibitem{masters2018revisiting}
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
   neural networks}, arXiv preprint arXiv:1804.07612,  (2018).
+
+\bibitem{MelasKyriazi2021DoYE}
+{\sc L.~Melas-Kyriazi}, {\em Do you even need attention? a stack of
+  feed-forward layers does surprisingly well on imagenet}, ArXiv,
+  abs/2105.02723 (2021).
 
 \bibitem{DBLP:journals/corr/MisraSGH16}
 {\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
@@ -678,6 +710,10 @@
   representations by back-propagating errors}, Cognitive modeling, 5 (1988),
   p.~1.
 
+\bibitem{DBLP:journals/corr/abs-2103-05180}
+{\sc L.~Ruthotto and E.~Haber}, {\em An introduction to deep generative
+  modeling}, CoRR, abs/2103.05180 (2021).
+
 \bibitem{salimans2016weight}
 {\sc T.~Salimans and D.~P. Kingma}, {\em Weight normalization: A simple
   reparameterization to accelerate training of deep neural networks}, in
@@ -697,6 +733,10 @@
 {\sc A.~M. Saxe, J.~L. McClelland, and S.~Ganguli}, {\em Exact solutions to the
   nonlinear dynamics of learning in deep linear neural networks}, CoRR,
   abs/1312.6120 (2013).
+
+\bibitem{schmidhuber1992learning}
+{\sc J.~Schmidhuber}, {\em Learning factorial codes by predictability
+  minimization}, Neural computation, 4 (1992), pp.~863--879.
 
 \bibitem{DBLP:journals/corr/SchroffKP15}
 {\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
@@ -800,6 +840,12 @@
 \bibitem{Tay2020EfficientTA}
 {\sc Y.~Tay, M.~Dehghani, D.~Bahri, and D.~Metzler}, {\em Efficient
   transformers: A survey}, ArXiv, abs/2009.06732 (2020).
+
+\bibitem{Touvron2021ResMLPFN}
+{\sc H.~Touvron, P.~Bojanowski, M.~Caron, M.~Cord, A.~El-Nouby, E.~Grave,
+  A.~Joulin, G.~Synnaeve, J.~Verbeek, and H.~J'egou}, {\em Resmlp: Feedforward
+  networks for image classification with data-efficient training}, ArXiv,
+  abs/2105.03404 (2021).
 
 \bibitem{tran2017bayesian}
 {\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
