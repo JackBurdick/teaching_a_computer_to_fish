@@ -240,6 +240,11 @@
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
   neural processes}, arXiv preprint arXiv:1807.01613,  (2018).
 
+\bibitem{geron2019hands}
+{\sc A.~G{\'e}ron}, {\em Hands-on machine learning with Scikit-Learn, Keras,
+  and TensorFlow: Concepts, tools, and techniques to build intelligent
+  systems}, O'Reilly Media, 2019.
+
 \bibitem{Ghorbani2019DermGANSG}
 {\sc A.~Ghorbani, V.~Natarajan, D.~Coz, and Y.~Liu}, {\em Dermgan: Synthetic
   generation of clinical skin images with pathology}, ArXiv, abs/1911.08716
@@ -340,6 +345,11 @@
 {\sc G.~Hinton, O.~Vinyals, and J.~Dean}, {\em Distilling the knowledge in a
   neural network}, arXiv preprint arXiv:1503.02531,  (2015).
 
+\bibitem{DBLP:journals/corr/abs-1207-0580}
+{\sc G.~E. Hinton, N.~Srivastava, A.~Krizhevsky, I.~Sutskever, and
+  R.~Salakhutdinov}, {\em Improving neural networks by preventing co-adaptation
+  of feature detectors}, CoRR, abs/1207.0580 (2012).
+
 \bibitem{ho2019population}
 {\sc D.~Ho, E.~Liang, I.~Stoica, P.~Abbeel, and X.~Chen}, {\em Population based
   augmentation: Efficient learning of augmentation policy schedules}, arXiv
@@ -370,6 +380,11 @@
 \bibitem{inoue2018data}
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
+
+\bibitem{DBLP:journals/corr/IoffeS15}
+{\sc S.~Ioffe and C.~Szegedy}, {\em Batch normalization: Accelerating deep
+  network training by reducing internal covariate shift}, CoRR, abs/1502.03167
+  (2015).
 
 \bibitem{Jaegle2021PerceiverGP}
 {\sc A.~Jaegle, F.~Gimeno, A.~Brock, A.~Zisserman, O.~Vinyals, and
@@ -428,6 +443,10 @@
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
   arXiv preprint arXiv:1412.6980,  (2014).
+
+\bibitem{Kingma2014AutoEncodingVB}
+{\sc D.~P. Kingma and M.~Welling}, {\em Auto-encoding variational bayes}, CoRR,
+  abs/1312.6114 (2014).
 
 \bibitem{kirillov2019panoptic}
 {\sc A.~Kirillov, R.~Girshick, K.~He, and P.~Doll{\'a}r}, {\em Panoptic feature
@@ -807,6 +826,12 @@
   Striving for simplicity: The all convolutional net}, arXiv preprint
   arXiv:1412.6806,  (2014).
 
+\bibitem{JMLR:v15:srivastava14a}
+{\sc N.~Srivastava, G.~Hinton, A.~Krizhevsky, I.~Sutskever, and
+  R.~Salakhutdinov}, {\em Dropout: A simple way to prevent neural networks from
+  overfitting}, Journal of Machine Learning Research, 15 (2014),
+  pp.~1929--1958.
+
 \bibitem{standley2019tasks}
 {\sc T.~Standley, A.~R. Zamir, D.~Chen, L.~Guibas, J.~Malik, and S.~Savarese},
   {\em Which tasks should be learned together in multi-task learning?}, arXiv
@@ -897,6 +922,10 @@
 {\sc M.~Wortsman, V.~Ramanujan, R.~Liu, A.~Kembhavi, M.~Rastegari, J.~Yosinski,
   and A.~Farhadi}, {\em Supermasks in superposition}, ArXiv, abs/2006.14769
   (2020).
+
+\bibitem{Wu2021RethinkingI}
+{\sc Y.~Wu and J.~Johnson}, {\em Rethinking "batch" in batchnorm}, ArXiv,
+  abs/2105.07576 (2021).
 
 \bibitem{xie2016disturblabel}
 {\sc L.~Xie, J.~Wang, Z.~Wei, M.~Wang, and Q.~Tian}, {\em Disturblabel:

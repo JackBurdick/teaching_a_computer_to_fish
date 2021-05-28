@@ -186,21 +186,24 @@
 
 % TODO: explain dropout
 
+\r{Dropout -- ref original paper (Hinton? -- intuitive, inspired by bank -- that defrauding the bank would require cooperation between employees to defraud the bank \TD{cite})}.
+
+\r{Dropout (proposed in ``Improving Neural Networks by Preventing Co-Adaption of Feature Dectors''~\cite{DBLP:journals/corr/abs-1207-0580}, and popularized by Nitish et.al in ``Dropout: a Simple Way to Prevent Nerual Networks from Overfitting''~\cite{JMLR:v15:srivastava14a}}
+
 \r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation if using dropout in the ``standard way''. However dropout is occassionally used for evaluation in attempt to quantify model uncertainty \TD{CITATION}}
 
 \r{keeps a neuron active by a hyperparameterized probability.}
 
-\r{Forces the network to learn mappings even in the absence of all the information.}
+\r{used in any/all neurons in the network (other than the output neruons).}
 
-\r{prevents the network from becoming too dependent on certain inputs or groups of inputs.}
+\r{think about where dropout is used. That is when you use dropout at any given nueron the upstream paths transversing that particular neuron are also affected (in this case, ``turned off''), as well downstream connections (but often only modified, not entirely turned off since they often still have other inputs) }
 
-\r{combines \textcolor{red}{similarly to ensembling} many different nerual network architectures}
+\r{Forces the network to learn mappings even in the absence of all the information, that is the network is forced to consider the values of other values and can't rely on a smaller number of values or groups of values. Said another way, the network is prevented from becoming too dependent on certain inputs or features.}
 
-% TODO: include Srivastava et al 2014 (ref on p251 of DL)
-\r{Dropout -- ref original paper (Hinton? -- intuitive, inspired by bank -- that defrauding the bank would require cooperation between employees to defraud the bank)}.
+\r{In this way, dropout can be thought of as sort of an ensembling method. When dropout is in use during training, each loop technically produces a different network that is then trained for the given task. During the next loop, a different network is used. As Aurélien Géron~\cite{geron2019hands} describes, if you train for 10,000 training steps (where dropout is used), you will have likely (almost certainly) trained 10,000 different neural networks. It's true that each network is not indpendant (they share weights), but they are different. More generally, a network with $N$ activations with dropout present, there exist $2^N$ possible networks ($2$ since each activation/neuron/value can have either an `on` or `off` state.) and thus, the use of all of these networks at once can be considered an ensembling of sorts.}
 
+\TD{create figure of this ensemble of many networks.}
 
-\r{one way to view this is to imagine dropout as a way to push units that are not only useful inthe presence of other units and prevent units from co-adopting one another.}
 
 % TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
 
@@ -220,17 +223,20 @@
 	\label{fig:regularization_dropout_overview_test}
 \end{figure}
 
+\r{It is worth pointing out that since dropout is only applied at training time, comparing the loss curve of training and inference (validation splits) will be a bit misleading since the full ensemble network is used for calculating the validation loss/metrics and only the component \TD{is there a better word than this?} networks are used for the training set.}
+
+\r{Additionally, if you run the training set through multiple times, you may find slightly different results. Again, this is because while dropout is on, you'll find that a slightly different network is used. \TD{This idea can be exploited at inference time to get uncertainty estimates.}}
+
 \r{some important notes about the implementation. The outputs at test time should be equivalent to their expected outputs at training time (which is altered due to the application of dropout).}
 
 \r{One potential solution to this problem is to scale the outputs during inference in a way that compensates for the dropout probability.  For example, if the dropout rate was set to $0.5$, then it would become necessary to halve the neurons outputs at test time in order to keep the expected output the neurons have learned during training.  However, this may not be ideal in practice since it would require scaling all the neuron outputs at test time (where performance is often critical and more important).}
 
-r{at test time, multiply the values by the expectation, not the on/off mask}
+\r{at test time, multiply the values by the expectation, not the on/off mask}
 
-\r{dropout creates an ensemble of many networks (in a cheap way)}
-
-\TD{create figure of this ensemble of many networks.}
 
 \r{Another, perhaps more desirable solution, would be to use \IDI{inverted dropout}. This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
+
+
 
 % `drop block''?
 \TD{investigate more structured dropout.}
@@ -287,7 +293,17 @@ r{at test time, multiply the values by the expectation, not the on/off mask}
 
 \paragraph{Batch normalization}
 
+\TD{Show / explain}
+
+\TD{Batch Normalization: Accelerating Deep Network Training by Reducing	Internal Covariate Shift \cite{DBLP:journals/corr/IoffeS15}}
+
+\r{similar to dropout \ALR, the behavior of batch norm is different at training time and inference time.}
+
+\r{Standard implementation is to calculate the population values using an exponential moving average (EMA).}
+
 %TODO: here!
+
+\TD{{Rethinking "Batch" in BatchNorm}~\cite{Wu2021RethinkingI} concludes that using EMA as the method for calculating the population statistics is not ideal. They show that during the early epochs, the xxxxxxx.}
 
 \r{An adaptive re-parameterization.}
 
