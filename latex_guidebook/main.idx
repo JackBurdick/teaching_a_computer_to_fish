@@ -33,10 +33,10 @@
 \indexentry{Pearson's R}{76}
 \indexentry{Voronoi tessellation}{77}
 \indexentry{Voronoi region}{77}
-\indexentry{Ridge regression}{80}
-\indexentry{Tikhonov regularization}{80}
-\indexentry{inverted dropout}{84}
-\indexentry{freezing}{86}
+\indexentry{Ridge regression}{82}
+\indexentry{Tikhonov regularization}{82}
+\indexentry{inverted dropout}{85}
+\indexentry{freezing}{85}
 \indexentry{generalized linear model}{95}
 \indexentry{Ordinary Lease Squares (OLS)}{96}
 \indexentry{Linear Least Squares}{96}
@@ -80,4 +80,4 @@
 \indexentry{blending}{169}
 \indexentry{catastrophic forgetting}{189}
 \indexentry{continual learning}{189}
-\indexentry{universal approximators}{249}
+\indexentry{universal approximators}{247}

@@ -116,12 +116,6 @@
 \contentsline {subsection}{\numberline {3.12.3}Sampling}{33}%
 \contentsline {paragraph}{\numberline {3.12.3.0.1}Representative Data}{34}%
 \contentsline {paragraph}{\numberline {3.12.3.0.2}Representative Data}{35}%
-\contentsline {section}{\numberline {3.13}Data Imbalance}{35}%
-\contentsline {subsection}{\numberline {3.13.1}Methods}{36}%
-\contentsline {subsubsection}{\numberline {3.13.1.1}Data}{36}%
-\contentsline {subsubsection}{\numberline {3.13.1.2}Model}{36}%
-\contentsline {subsubsection}{\numberline {3.13.1.3}Post processing}{36}%
-\contentsline {subsection}{\numberline {3.13.2}Evaluation}{36}%
 \contentsline {part}{III\hspace {1em}Foundations}{37}%
 \contentsline {chapter}{\numberline {4}Basics}{39}%
 \contentsline {section}{\numberline {4.1}Overview}{39}%
@@ -263,28 +257,29 @@
 \contentsline {paragraph}{\numberline {9.1.2.2.3}Multi-label Classification}{77}%
 \contentsline {subsubsection}{\numberline {9.1.2.3}Choosing the "right" metrics}{77}%
 \contentsline {chapter}{\numberline {10}Improving Generalizability}{79}%
-\contentsline {subsection}{\numberline {10.0.1}Parameter Regularization}{79}%
-\contentsline {subsubsection}{\numberline {10.0.1.1}Why Regularization}{79}%
-\contentsline {subsubsection}{\numberline {10.0.1.2}Types of Regularization}{80}%
-\contentsline {subsubsection}{\numberline {10.0.1.3}Early Stopping}{80}%
-\contentsline {subsubsection}{\numberline {10.0.1.4}Parameter Norm Penalties}{80}%
-\contentsline {paragraph}{\numberline {10.0.1.4.1}L2 Regularization}{80}%
-\contentsline {paragraph}{\numberline {10.0.1.4.2}L1 Regularization}{80}%
-\contentsline {paragraph}{\numberline {10.0.1.4.3}Elastic Net Regularization}{81}%
-\contentsline {subsection}{\numberline {10.0.2}Dataset Augmentation}{81}%
-\contentsline {subsubsection}{\numberline {10.0.2.1}Two Dimensional Data}{82}%
-\contentsline {subsubsection}{\numberline {10.0.2.2}Learning Augmentation}{82}%
-\contentsline {paragraph}{\numberline {10.0.2.2.1}AutoAugment}{82}%
-\contentsline {subsection}{\numberline {10.0.3}Dropout}{83}%
-\contentsline {subsection}{\numberline {10.0.4}Ensemble Methods}{85}%
-\contentsline {subsection}{\numberline {10.0.5}Adversarial Training}{85}%
-\contentsline {subsection}{\numberline {10.0.6}Transfer Learning}{85}%
-\contentsline {subsubsection}{\numberline {10.0.6.1}Normalization}{86}%
-\contentsline {paragraph}{\numberline {10.0.6.1.1}Instance normalization}{86}%
-\contentsline {paragraph}{\numberline {10.0.6.1.2}Layer normalization}{86}%
-\contentsline {paragraph}{\numberline {10.0.6.1.3}Batch normalization}{86}%
-\contentsline {paragraph}{\numberline {10.0.6.1.4}Group normalization}{87}%
-\contentsline {section}{\numberline {10.1}Output regularization}{87}%
+\contentsline {section}{\numberline {10.1}Data}{80}%
+\contentsline {subsection}{\numberline {10.1.1}Data Collection}{80}%
+\contentsline {subsection}{\numberline {10.1.2}Augmentation}{80}%
+\contentsline {subsection}{\numberline {10.1.3}Sampling}{80}%
+\contentsline {section}{\numberline {10.2}Architecture}{81}%
+\contentsline {section}{\numberline {10.3}Training Pattern}{81}%
+\contentsline {subsubsection}{\numberline {10.3.0.1}Early Stopping}{81}%
+\contentsline {subsection}{\numberline {10.3.1}Parameter Regularization}{81}%
+\contentsline {subsubsection}{\numberline {10.3.1.1}Types of Regularization}{81}%
+\contentsline {subsubsection}{\numberline {10.3.1.2}Parameter Norm Penalties}{81}%
+\contentsline {paragraph}{\numberline {10.3.1.2.1}L2 Regularization}{82}%
+\contentsline {paragraph}{\numberline {10.3.1.2.2}L1 Regularization}{82}%
+\contentsline {paragraph}{\numberline {10.3.1.2.3}Elastic Net Regularization}{83}%
+\contentsline {subsection}{\numberline {10.3.2}Dropout}{83}%
+\contentsline {subsection}{\numberline {10.3.3}Ensemble Methods}{85}%
+\contentsline {subsection}{\numberline {10.3.4}Adversarial Training}{85}%
+\contentsline {subsection}{\numberline {10.3.5}Transfer Learning}{85}%
+\contentsline {subsubsection}{\numberline {10.3.5.1}Normalization}{86}%
+\contentsline {paragraph}{\numberline {10.3.5.1.1}Instance normalization}{86}%
+\contentsline {paragraph}{\numberline {10.3.5.1.2}Layer normalization}{86}%
+\contentsline {paragraph}{\numberline {10.3.5.1.3}Batch normalization}{86}%
+\contentsline {paragraph}{\numberline {10.3.5.1.4}Group normalization}{87}%
+\contentsline {section}{\numberline {10.4}Output regularization}{87}%
 \contentsline {chapter}{\numberline {11}Distributed Methods}{89}%
 \contentsline {section}{\numberline {11.1}Data Parallelism}{89}%
 \contentsline {section}{\numberline {11.2}Model Parallelism}{89}%
@@ -598,27 +593,31 @@
 \contentsline {chapter}{\numberline {38}Mistakes and Bloopers}{221}%
 \contentsline {chapter}{\numberline {39}Environment}{223}%
 \contentsline {chapter}{\numberline {40}Common Libraries}{225}%
-\contentsline {part}{XIV\hspace {1em}Yeahml}{227}%
-\contentsline {chapter}{\numberline {41}Overview}{229}%
-\contentsline {chapter}{\numberline {42}How To}{231}%
-\contentsline {part}{XV\hspace {1em}appendix}{233}%
-\contentsline {chapter}{\numberline {43}TODO:}{235}%
-\contentsline {section}{\numberline {43.1}Imputing Missing Values}{235}%
-\contentsline {section}{\numberline {43.2}Anomaly Detection}{235}%
-\contentsline {subsection}{\numberline {43.2.1}methods}{235}%
-\contentsline {subsubsection}{\numberline {43.2.1.1}PCA}{235}%
-\contentsline {section}{\numberline {43.3}labeling data}{236}%
-\contentsline {section}{\numberline {43.4}Group Segmentation}{236}%
-\contentsline {part}{XVI\hspace {1em}Dump Space}{237}%
-\contentsline {subsection}{\numberline {43.4.1}Restricted Boltzmann Machines}{242}%
-\contentsline {subsection}{\numberline {43.4.2}Greek letters}{243}%
-\contentsline {subsection}{\numberline {43.4.3}Basic Log Math}{244}%
-\contentsline {subsection}{\numberline {43.4.4}Basic Matrix Math}{244}%
-\contentsline {subsection}{\numberline {43.4.5}Basic Linear Algebra}{244}%
-\contentsline {subsection}{\numberline {43.4.6}Representation Learning}{244}%
-\contentsline {subsection}{\numberline {43.4.7}others}{244}%
-\contentsline {section}{\numberline {43.5}research to include}{245}%
-\contentsline {part}{XVII\hspace {1em}Appendix}{247}%
-\contentsline {chapter}{\numberline {44}Appendix}{249}%
-\contentsline {section}{\numberline {44.1}Minor Explanations}{249}%
-\contentsline {subsection}{\numberline {44.1.1}Convolution vs Cross-Correlation}{249}%
+\contentsline {part}{XIV\hspace {1em}appendix}{227}%
+\contentsline {chapter}{\numberline {41}TODO:}{229}%
+\contentsline {section}{\numberline {41.1}Imputing Missing Values}{229}%
+\contentsline {section}{\numberline {41.2}Anomaly Detection}{229}%
+\contentsline {subsection}{\numberline {41.2.1}methods}{229}%
+\contentsline {subsubsection}{\numberline {41.2.1.1}PCA}{229}%
+\contentsline {section}{\numberline {41.3}labeling data}{230}%
+\contentsline {section}{\numberline {41.4}Group Segmentation}{230}%
+\contentsline {part}{XV\hspace {1em}Dump Space}{231}%
+\contentsline {subsection}{\numberline {41.4.1}Restricted Boltzmann Machines}{236}%
+\contentsline {subsection}{\numberline {41.4.2}Greek letters}{237}%
+\contentsline {subsection}{\numberline {41.4.3}Basic Log Math}{238}%
+\contentsline {subsection}{\numberline {41.4.4}Basic Matrix Math}{238}%
+\contentsline {subsection}{\numberline {41.4.5}Basic Linear Algebra}{238}%
+\contentsline {subsection}{\numberline {41.4.6}Representation Learning}{238}%
+\contentsline {subsection}{\numberline {41.4.7}others}{238}%
+\contentsline {section}{\numberline {41.5}research to include}{239}%
+\contentsline {part}{XVI\hspace {1em}Appendix}{241}%
+\contentsline {chapter}{\numberline {42}Augmentation Techniques}{243}%
+\contentsline {section}{\numberline {42.1}Data Imbalance}{243}%
+\contentsline {subsection}{\numberline {42.1.1}Methods}{244}%
+\contentsline {subsubsection}{\numberline {42.1.1.1}Data}{244}%
+\contentsline {subsubsection}{\numberline {42.1.1.2}Model}{244}%
+\contentsline {subsubsection}{\numberline {42.1.1.3}Post processing}{245}%
+\contentsline {subsection}{\numberline {42.1.2}Evaluation}{245}%
+\contentsline {chapter}{\numberline {43}Appendix}{247}%
+\contentsline {section}{\numberline {43.1}Minor Explanations}{247}%
+\contentsline {subsection}{\numberline {43.1.1}Convolution vs Cross-Correlation}{247}%

@@ -25,6 +25,7 @@ A level-1 auxiliary file: yeahml.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: fit_somewhere.aux
 A level-1 auxiliary file: research_to_include.aux
+A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
 Database file #1: TCF.bib
@@ -46,7 +47,7 @@ Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
 You've used 215 entries,
             2030 wiz_defined-function locations,
-            1578 strings with 45513 characters,
+            1579 strings with 45540 characters,
 and the built_in function-call counts, 70808 in all, are:
 = -- 5932
 > -- 5025

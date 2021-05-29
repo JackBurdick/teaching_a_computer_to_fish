@@ -1,33 +1,89 @@
 \chapter{Improving Generalizability}
 
-\r{The methods shown in the upcoming sections aim to reduce overfitting, but at the cost of potentially limiting the ability of the model. That is, it is worth while avoiding these methods until you overfitting is certain \TD{ref section about determining overfitting}.}
-
-\subsection{Parameter Regularization}
-
-\r{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
-
-
-
-% TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
-
-\r{Helps prevent the model from memorizing noise in the training data.}
-
-
-\subsubsection{Why Regularization}
+\r{The methods shown in the upcoming sections aim to reduce overfitting. That is, these methods aim to prevent the model from becoming too specialized to the training dataset in hopes that it will generalize to data that it has not specifically seen. It is worth noting that by implementing some of these methods (e.g. reducing the model capacity), the model often has less ability to model the training set as well as it might otherwise be able to. This is ok, but worth remembering such that some of the methods aren't used before they are necessary \TD{section on determining overfitting}.}
 
 % TODO: index overfitting
 \r{overfitting: a practical definition may include observing the training loss to improve while the validation loss degrades. \TD{possibly mention \\cite{Nakkiran2020DeepDD}}}
 
 \r{Overfitting --- too complex --- Occam's razor --- hypothesis with the fewest assumptions is best}
 
-\r{modification made to improve generalization.}
+\r{A specific instance of improving generalization might be accounting for imblance. Either in the labels or in the features.  Section \ref{app_data_imbalance} discusses this topic and strategies in more detail.}
+
+\r{Typicaly types of modifications that are made to improve generalization.}
 
 \begin{itemize}[noitemsep,topsep=0pt]
-	\item Data --- Increase amount of data (even potentially artificially e.g. augmentation)
+	\item Data
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Increase ammount of data
+		\item Augmentation
+		\item Sampling
+	\end{itemize}
 	\item Architecture --- Reduce complexity of model e.g. applying parameter constraints, and/or reduce overall number of parameters
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Reduce complexity/number of parameters
+		\item Ensembling
+		\item Constraints
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Directly on parameters
+			\item Through additional losses/tasks
+		\end{itemize}
+	\end{itemize}
+	\item Training Pattern
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Early stopping
+	\end{itemize}
 \end{itemize}
 
+
+\section{Data}
+
+\subsection{Data Collection}
+
+\r{Arguably the best way to increase generalizability of a model is to train the model on more data. However, as readers may already be aware, this is not always easy. Collecting more data may not be time/cost effective, or even possible.}
+
+\r{``free'' data in that the ``cost'' is minor computation}
+
+\subsection{Augmentation}
+
+\r{Dataset augmentation is \textcolor{green}{TODO}}
+
+\r{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
+
+
+\r{invariances in the data}
+
+\r{For specific techniques, see~\ref{app_aug_techniques}}
+
+\TD{Beyond improving generalization, augmentation may be used in other contexts as well, such as in helping quantify uncertainty -- \TD{see ref ---\TD{Augmenting the test set. A simple augmentation (horizontal filliping) was performed on the test set in \cite{simonyan2014very} -- where the prediction of the original and augmented images are averaged to obtain the final output score.} }}
+
+
+\subsection{Sampling}
+
+\r{The line between the techniques described here and ``augmentation'' might be a little blurred, in that sampling might technically be considered a augmentation technique (and I'm not even sure ``sampling'' is the appropriate title). But the intended distinction is that in augmentation, we are diliberately altering something (e.g. the input data) and in sampling, we are altering the number of times an architecture sees a particular instance in a training dataset.}
+
+
+
+
+
+\section{Architecture}
+
+\section{Training Pattern}
+
+\subsubsection{Early Stopping}
+
+\r{see p.243 of DL, papers Bishop 1995 and Sjoberg and Ljung 1995}
+
 % TODO: note about regularization --- the smaller the value, the stronger the regularization.
+
+\subsection{Parameter Regularization}
+
+\r{Collection of techniques used to help generalize a model -- which may help prevent overfitting. Typically regularization penalizes complexity of a model.}
+
+
+% TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
+
+\r{Helps prevent the model from memorizing noise in the training data.}
+
 
 \subsubsection{Types of Regularization}
 
@@ -51,10 +107,6 @@
 	\item Adversarial Training
 \end{itemize}
 
-
-\subsubsection{Early Stopping}
-
-\r{see p.243 of DL, papers Bishop 1995 and Sjoberg and Ljung 1995}
 
 
 \subsubsection{Parameter Norm Penalties}
@@ -109,76 +161,6 @@
 \r{Linearly combines the $L^1$ (feature selection) and $L^2$ (generalizability) penalties used by both LASSO and ridge regression. The cost is having two parameters (as opposed to just one when using either L1 or L2).}
 
 \TD{TODO: figure}.
-
-
-\subsection{Dataset Augmentation}
-
-% NOTE: maybe I need to nest this?
-\r{regularization technique}
-
-\r{Arguably the best way to increase generalizability of a model is to train the model on more data. However, as readers may already be aware, this is not always easy. Collecting more data may not be time/cost effective, or even possible.}
-
-\r{``free'' data in that the ``cost'' is minor computation}
-
-\r{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
-
-
-\r{invariances in the data}
-
-%TODO: here!
-
-\r{Dataset augmentation is \textcolor{green}{TODO}}
-
-% TODO: this might be the wrong heading.. Originally I was thinking ``spatial`` but I think that's worse
-
-\TD{Augmenting the test set. A simple augmentation (horizontal filliping) was performed on the test set in \cite{simonyan2014very} -- where the prediction of the original and augmented images are averaged to obtain the final output score.}
-
-
-\subsubsection{Two Dimensional Data}
-
-\r{Including Imagery}
-
-\r{flip, rotate. color/channel manipulation}
-
-\r{mixup\cite{zhang2017mixup}}
-
-\r{cutout\cite{devries2017improved}}
-
-\r{cutmix\cite{yun2019cutmix}}
-
-\TD{language -- back translation\cite{sennrich2015improving}}
-
-% TODO: blog about this: https://ai.googleblog.com/2019/07/advancing-semi-supervised-learning-with.html
-\TD{unsupervised augmentation\cite{xie2019unsupervised}}
-
-
-\subsubsection{Learning Augmentation}
-
-% TODO: not sure this belongs here
-\r{Sample Pairing\cite{inoue2018data}}
-
-\r{Smart Augmentation\cite{lemley2017smart}}
-
-\r{GAN\cite{shrivastava2017learning}}
-
-\r{population based augmentation (PBA)\cite{ho2019population}}
-
-\r{Bayesian data augmentation\cite{tran2017bayesian}}
-
-
-\paragraph{AutoAugment}
-
-\r{AutoAugment\cite{cubuk2018autoaugment}}
-
-\r{Comment that AutoAugment can be applied directly to a dataset as well as transfer the learned policies to new datasets.}
-
-\TD{figure of loop. controller, strategy, child network, update controller}
-
-\r{Fast AutoAugment\cite{lim2019fast} improves upon the original search strategy in the original AutoAugment paper.}
-
-\r{Unsupervised Augmentation}
-
-\TD{autoaugment for object detection \cite{zoph2019learning}}
 
 
 

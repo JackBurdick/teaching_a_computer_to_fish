@@ -1,4 +1,55 @@
+%% techniques
+\chapter{Augmentation Techniques}
+\label{app_aug_techniques}
+
+\r{Including Imagery}
+
+\r{flip, rotate. color/channel manipulation}
+
+\r{mixup\cite{zhang2017mixup}}
+
+\r{cutout\cite{devries2017improved}}
+
+\r{cutmix\cite{yun2019cutmix}}
+
+\TD{language -- back translation\cite{sennrich2015improving}}
+
+% TODO: blog about this: https://ai.googleblog.com/2019/07/advancing-semi-supervised-learning-with.html
+\TD{unsupervised augmentation\cite{xie2019unsupervised}}
+
+
+%% learning augmentation
+
+% TODO: not sure this belongs here
+\r{Sample Pairing\cite{inoue2018data}}
+
+\r{Smart Augmentation\cite{lemley2017smart}}
+
+\r{GAN\cite{shrivastava2017learning}}
+
+\r{population based augmentation (PBA)\cite{ho2019population}}
+
+\r{Bayesian data augmentation\cite{tran2017bayesian}}
+
+
+%% autoaugment
+
+\r{AutoAugment\cite{cubuk2018autoaugment}}
+
+\r{Comment that AutoAugment can be applied directly to a dataset as well as transfer the learned policies to new datasets.}
+
+\TD{figure of loop. controller, strategy, child network, update controller}
+
+\r{Fast AutoAugment\cite{lim2019fast} improves upon the original search strategy in the original AutoAugment paper.}
+
+\r{Unsupervised Augmentation}
+
+\TD{autoaugment for object detection \cite{zoph2019learning}}
+
 \section{Data Imbalance}
+\label{app_data_imbalance}
+
+% TODO: special case of augmentation??
 
 \TD{A Survey of Predictive Modelling under Imbalanced Distributions \cite{DBLP:journals/corr/BrancoTR15}}
 
@@ -40,6 +91,3 @@
 \r{Difficult to discuss class imbalance without discussing the importance of having appropriate metrics in place to evaluate the methods. \TD{point to example of disease test where 1 out of N are positive --- acc is very high, yet...}}
 
 \TD{point to metrics section and specific metrics that may be useful for various scenarios}
-
-
-
