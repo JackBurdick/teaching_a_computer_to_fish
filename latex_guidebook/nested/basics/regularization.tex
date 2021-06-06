@@ -31,6 +31,7 @@
 	\item Training Pattern
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item Early stopping
+		\item Stochastic Behavior
 	\end{itemize}
 \end{itemize}
 
@@ -63,17 +64,95 @@
 
 
 
-
-
 \section{Architecture}
 
 \section{Training Pattern}
 
-\subsubsection{Early Stopping}
+\subsection{Early Stopping}
 
 \r{see p.243 of DL, papers Bishop 1995 and Sjoberg and Ljung 1995}
 
 % TODO: note about regularization --- the smaller the value, the stronger the regularization.
+
+
+\subsection{Stochastic Behavior}
+
+\subsubsection{Dropout}
+
+\r{``Dropout'' as a node in a computational graph may be considered an architectural structure change, but the method itself affects the training pattern in possibly not obvious ways. }
+
+% TODO: explain dropout
+
+\r{Dropout -- ref original paper (Hinton? -- intuitive, inspired by bank -- that defrauding the bank would require cooperation between employees to defraud the bank \TD{cite})}.
+
+\r{Dropout (proposed in ``Improving Neural Networks by Preventing Co-Adaption of Feature Dectors''~\cite{DBLP:journals/corr/abs-1207-0580}, and popularized by Nitish et.al in ``Dropout: a Simple Way to Prevent Nerual Networks from Overfitting''~\cite{JMLR:v15:srivastava14a}}
+
+\r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation if using dropout in the ``standard way''. However dropout is occassionally used for evaluation in attempt to quantify model uncertainty \TD{CITATION}}
+
+\r{keeps a neuron active by a hyperparameterized probability.}
+
+\r{used in any/all neurons in the network (other than the output neruons).}
+
+\r{think about where dropout is used. That is when you use dropout at any given nueron the upstream paths transversing that particular neuron are also affected (in this case, ``turned off''), as well downstream connections (but often only modified, not entirely turned off since they often still have other inputs) }
+
+\r{Forces the network to learn mappings even in the absence of all the information, that is the network is forced to consider the values of other values and can't rely on a smaller number of values or groups of values. Said another way, the network is prevented from becoming too dependent on certain inputs or features.}
+
+\r{In this way, dropout can be thought of as sort of an ensembling method. When dropout is in use during training, each loop technically produces a different network that is then trained for the given task. During the next loop, a different network is used. As Aurélien Géron~\cite{geron2019hands} describes, if you train for 10,000 training steps (where dropout is used), you will have likely (almost certainly) trained 10,000 different neural networks. It's true that each network is not indpendant (they share weights), but they are different. More generally, a network with $N$ activations with dropout present, there exist $2^N$ possible networks ($2$ since each activation/neuron/value can have either an `on` or `off` state.) and thus, the use of all of these networks at once can be considered an ensembling of sorts.}
+
+\TD{create figure of this ensemble of many networks.}
+
+
+% TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{\TD{Graph of an example function including dropout. three separate training iterations and how the network changes}}
+	\label{fig:regularization_dropout_overview_training}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{Same graph during test --- no dropout applied}}
+	\label{fig:regularization_dropout_overview_test}
+\end{figure}
+
+\r{It is worth pointing out that since dropout is only applied at training time, comparing the loss curve of training and inference (validation splits) will be a bit misleading since the full ensemble network is used for calculating the validation loss/metrics and only the component \TD{is there a better word than this?} networks are used for the training set.}
+
+\r{Additionally, if you run the training set through multiple times, you may find slightly different results. Again, this is because while dropout is on, you'll find that a slightly different network is used. \TD{This idea can be exploited at inference time to get uncertainty estimates.}}
+
+\r{some important notes about the implementation. The outputs at test time should be equivalent to their expected outputs at training time (which is altered due to the application of dropout).}
+
+\r{Couple solutions}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item scale the outputs during inference
+	\item
+\end{itemize}
+
+\r{One potential solution to this problem is to scale the outputs during inference in a way that compensates for the dropout probability.  For example, if the dropout rate was set to $0.5$, then it would become necessary to halve the neurons outputs at test time in order to keep the expected output the neurons have learned during training.  However, this may not be ideal in practice since it would require scaling all the neuron outputs at test time (where performance is often critical and more important).}
+
+\r{at test time, multiply the values by the expectation, not the on/off mask}
+
+\r{Another, perhaps more desirable solution, would be to use \IDI{inverted dropout}. The cs231n~\cite{cs231n} course provides a concise explaination and example code on this topic.}
+
+\r{This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
+
+
+\TD{DropConnect~\cite{wan2013regularization} is similar to dropout, except that individual weights are disabled, not entire individual nodes and can be considered a generalization of dropout.}
+
+\TD{figure showing difference}
+
+% `drop block''?
+\TD{investigate more structured dropout.}
+
+% helps learn ``multiple paths''/simulates ensembles
+
+\TD{alpha dropout\cite{DBLP:journals/corr/KlambauerUMH17}}
+
+\TD{link to ensemble section}
 
 \subsection{Parameter Regularization}
 
@@ -163,70 +242,6 @@
 \TD{TODO: figure}.
 
 
-
-\subsection{Dropout}
-
-% TODO: explain dropout
-
-\r{Dropout -- ref original paper (Hinton? -- intuitive, inspired by bank -- that defrauding the bank would require cooperation between employees to defraud the bank \TD{cite})}.
-
-\r{Dropout (proposed in ``Improving Neural Networks by Preventing Co-Adaption of Feature Dectors''~\cite{DBLP:journals/corr/abs-1207-0580}, and popularized by Nitish et.al in ``Dropout: a Simple Way to Prevent Nerual Networks from Overfitting''~\cite{JMLR:v15:srivastava14a}}
-
-\r{It is important to note that dropout is only present during training. i.e. dropout does not occur during test/evaluation if using dropout in the ``standard way''. However dropout is occassionally used for evaluation in attempt to quantify model uncertainty \TD{CITATION}}
-
-\r{keeps a neuron active by a hyperparameterized probability.}
-
-\r{used in any/all neurons in the network (other than the output neruons).}
-
-\r{think about where dropout is used. That is when you use dropout at any given nueron the upstream paths transversing that particular neuron are also affected (in this case, ``turned off''), as well downstream connections (but often only modified, not entirely turned off since they often still have other inputs) }
-
-\r{Forces the network to learn mappings even in the absence of all the information, that is the network is forced to consider the values of other values and can't rely on a smaller number of values or groups of values. Said another way, the network is prevented from becoming too dependent on certain inputs or features.}
-
-\r{In this way, dropout can be thought of as sort of an ensembling method. When dropout is in use during training, each loop technically produces a different network that is then trained for the given task. During the next loop, a different network is used. As Aurélien Géron~\cite{geron2019hands} describes, if you train for 10,000 training steps (where dropout is used), you will have likely (almost certainly) trained 10,000 different neural networks. It's true that each network is not indpendant (they share weights), but they are different. More generally, a network with $N$ activations with dropout present, there exist $2^N$ possible networks ($2$ since each activation/neuron/value can have either an `on` or `off` state.) and thus, the use of all of these networks at once can be considered an ensembling of sorts.}
-
-\TD{create figure of this ensemble of many networks.}
-
-
-% TODO: find recent paper I saw mentioned on twitter.... (4July) it may be in my pocket
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
-	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
-	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
-	\caption{\TD{Graph of an example function including dropout. three separate training iterations and how the network changes}}
-	\label{fig:regularization_dropout_overview_training}
-\end{figure}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
-	\caption{\TD{Same graph during test --- no dropout applied}}
-	\label{fig:regularization_dropout_overview_test}
-\end{figure}
-
-\r{It is worth pointing out that since dropout is only applied at training time, comparing the loss curve of training and inference (validation splits) will be a bit misleading since the full ensemble network is used for calculating the validation loss/metrics and only the component \TD{is there a better word than this?} networks are used for the training set.}
-
-\r{Additionally, if you run the training set through multiple times, you may find slightly different results. Again, this is because while dropout is on, you'll find that a slightly different network is used. \TD{This idea can be exploited at inference time to get uncertainty estimates.}}
-
-\r{some important notes about the implementation. The outputs at test time should be equivalent to their expected outputs at training time (which is altered due to the application of dropout).}
-
-\r{One potential solution to this problem is to scale the outputs during inference in a way that compensates for the dropout probability.  For example, if the dropout rate was set to $0.5$, then it would become necessary to halve the neurons outputs at test time in order to keep the expected output the neurons have learned during training.  However, this may not be ideal in practice since it would require scaling all the neuron outputs at test time (where performance is often critical and more important).}
-
-\r{at test time, multiply the values by the expectation, not the on/off mask}
-
-
-\r{Another, perhaps more desirable solution, would be to use \IDI{inverted dropout}. This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
-
-
-
-% `drop block''?
-\TD{investigate more structured dropout.}
-
-% helps learn ``multiple paths''/simulates ensembles
-
-
-\TD{alpha dropout}
 
 \subsection{Ensemble Methods}
 

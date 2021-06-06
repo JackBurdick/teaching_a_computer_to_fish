@@ -21,15 +21,17 @@ A level-1 auxiliary file: examples.aux
 A level-1 auxiliary file: ideas.aux
 A level-1 auxiliary file: bloopers.aux
 A level-1 auxiliary file: quickref.aux
-A level-1 auxiliary file: yeahml.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: fit_somewhere.aux
 A level-1 auxiliary file: research_to_include.aux
 A level-1 auxiliary file: appendix/regularization.aux
+A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
+Reallocated field_info (elt_size=4) to 10129 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
+Warning--to sort, need author or key in cs231n
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
 Warning--to sort, need author or key in cloudHW_google_cloud
@@ -45,45 +47,45 @@ Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
-You've used 215 entries,
+You've used 223 entries,
             2030 wiz_defined-function locations,
-            1579 strings with 45540 characters,
-and the built_in function-call counts, 70808 in all, are:
-= -- 5932
-> -- 5025
+            1619 strings with 46767 characters,
+and the built_in function-call counts, 73472 in all, are:
+= -- 6179
+> -- 5149
 < -- 0
-+ -- 2003
-- -- 1767
-* -- 6368
-:= -- 12151
-add.period$ -- 231
-call.type$ -- 215
-change.case$ -- 1522
++ -- 2055
+- -- 1809
+* -- 6575
+:= -- 12560
+add.period$ -- 239
+call.type$ -- 223
+change.case$ -- 1567
 chr.to.int$ -- 0
-cite$ -- 230
-duplicate$ -- 2801
-empty$ -- 4377
-format.name$ -- 1767
-if$ -- 13762
+cite$ -- 239
+duplicate$ -- 2924
+empty$ -- 4583
+format.name$ -- 1809
+if$ -- 14325
 int.to.chr$ -- 0
-int.to.str$ -- 215
-missing$ -- 211
-newline$ -- 664
-num.names$ -- 413
-pop$ -- 1545
+int.to.str$ -- 223
+missing$ -- 218
+newline$ -- 688
+num.names$ -- 427
+pop$ -- 1593
 preamble$ -- 1
-purify$ -- 1311
+purify$ -- 1348
 quote$ -- 0
-skip$ -- 1771
+skip$ -- 1869
 stack$ -- 0
-substring$ -- 2390
-swap$ -- 756
+substring$ -- 2555
+swap$ -- 801
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 852
-warning$ -- 15
-while$ -- 524
-width$ -- 218
-write$ -- 1771
-(There were 15 warnings)
+type$ -- 884
+warning$ -- 16
+while$ -- 550
+width$ -- 226
+write$ -- 1837
+(There were 16 warnings)

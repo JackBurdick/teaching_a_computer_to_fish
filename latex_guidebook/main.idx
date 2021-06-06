@@ -30,13 +30,13 @@
 \indexentry{Bias}{69}
 \indexentry{Type I error}{72}
 \indexentry{Type II error}{72}
-\indexentry{Pearson's R}{76}
-\indexentry{Voronoi tessellation}{77}
-\indexentry{Voronoi region}{77}
-\indexentry{Ridge regression}{82}
-\indexentry{Tikhonov regularization}{82}
-\indexentry{inverted dropout}{85}
-\indexentry{freezing}{85}
+\indexentry{Pearson's R}{77}
+\indexentry{Voronoi tessellation}{78}
+\indexentry{Voronoi region}{78}
+\indexentry{inverted dropout}{83}
+\indexentry{Ridge regression}{84}
+\indexentry{Tikhonov regularization}{84}
+\indexentry{freezing}{86}
 \indexentry{generalized linear model}{95}
 \indexentry{Ordinary Lease Squares (OLS)}{96}
 \indexentry{Linear Least Squares}{96}
@@ -80,4 +80,4 @@
 \indexentry{blending}{169}
 \indexentry{catastrophic forgetting}{189}
 \indexentry{continual learning}{189}
-\indexentry{universal approximators}{247}
+\indexentry{universal approximators}{249}

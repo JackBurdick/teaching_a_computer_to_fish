@@ -97,7 +97,7 @@
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item \textit{Fall-Out (False Positive Rate (FPR))}, (Eq.~\ref{eq:fall_out}): \textcolor{blue}{XXXXXXXXXX}.
+\item \textit{False Positive Rate (FPR) (Fall-Out, false alarm rate)}, (Eq.~\ref{eq:fall_out}): \textcolor{blue}{XXXXXXXXXX}.
 
 \begin{equation}
 {\frac{FP}{FP+TN}}
@@ -158,20 +158,54 @@
 
 \subsubsection{AUC (Area Under the Curve)}
 
+\TD{ROC (Receiver Operating Characteristics) curve --- predicting the probability of a binary outcome}
 %TODO: index all metrics
 
-\r{AUC is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve. The larger the auROC, the better.}
+\TD{create visualization for two distributions and create the ROC curve figure}
 
-\TD{select the best threshold from ROC curve.}
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{AUC dists}}
+	\label{fig:auc_dist}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{three AUC curves}}
+	\label{fig:auroc_curves}
+\end{figure}
+
+\TD{when considering a multi-class (e.g. $n$ class) model, $n$ curves can be produced using a OvR or OvA strategy}
+
+\r{plot of ``positive rates'' --- that is where the False positive rate is on the x-axis and the true positive rate is on the y-axis}
+
+False Positive Rate (FPR) (Fall-Out, false alarm rate)), (Eq.~\ref{eq:fall_out}) [x-axis] vs true positive rate (TPR) (sensitivity, recall, hit rate), (Eq.~\ref{eq:sensitivity}) [y-axis]
+
+\begin{equation}
+\textmd{FPR} \textmd{ vs } \textmd{TPR} =	{\frac{FP}{FP+TN}} \textmd{vs} {\frac{TP}{TP+FN}} 
+	\label{eq:roc}
+\end{equation}
+
+\r{AUC is a single value representing the area under an ROC curve. Though generally referred to as the AUC, the term is correctly abbreviated AUROC, specifying that the curve is an ROC curve. The larger the auROC, the better. Useful metric for summarizing how the model is performing at different thresholds}
+
+\TD{select the best threshold from ROC curve that gives the desired balance between false positives and false negatives.}
 
 \TD{interpretation}
 \begin{itemize}[noitemsep,topsep=0pt]
 	\item $0$: --- The model is exceptionally bad (but if you flip the output, is it actually exceptionally good), likely something is wrong
-	\item $0 - 0.5$: --- If no mistakes are made, the mode is doing worse than random guessing
+	\item $0 - 0.5$: --- If no mistakes are made, the mode is doing worse than random guessing.
 	\item $0.5$: --- The model is making random guesses
 	\item $0.5 - 1$: --- interpretation here is highly specific to the problem being worked on. The model is doing better than random guessing but less than perfect.
 	\item $1$: --- The inverse of the value $0$, the model is exceptionally good, likely something is wrong
 \end{itemize}
+
+\r{It's worth noting, that really, the distance from 0.5 is desired. That is a model that produces a $0.1$ is potentially better than a model that produces a $0.6$, that is because if the prediction was ``flipped'', the $0.1$ value would be $0.9$.}
 
 \r{often used as an important metric for binary classification tasks, though isn't necessarily ``the'' metric of interest (\TD{see sec: ref --- sensitivity/precision may be more important})}
 
@@ -182,5 +216,8 @@
 \TD{Diagram}
 
 \r{choice of the threshold to use moving forward}
+
+% https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/
+\r{auROC curves may be more informative when there is roughly the same number of classes, whereas PR curves may be more informative when there is a large class imbalance.\cite{davis2006relationship}}
 
 \r{auROC \ALR used}

@@ -1,0 +1,67 @@
+\chapter{Statsy Stuff}
+
+% TOOD: decide if/where this belongs, organization, titles, etc
+
+\section{Experimental Design}
+
+\r{Basic Principals}
+
+\r{
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Randomization
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Every treatment has the same probability
+		\end{itemize}
+		\item Replication
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Repeat the experiment ``enough'' times
+		\end{itemize}
+		\item Control
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Reduce/eliminate variance from other factors
+		\end{itemize}
+	\end{itemize}
+}
+
+\section{``tests''}
+
+\r{accept or reject null hypothesis}
+
+\TD{degrees of freedom, \r{number of outcomes, minus 1?}}
+
+\r{critical values \r{typically use the 0.05 column, i.e. $95$ sure you're accepting or rejecting}}
+
+\subsection{T test}
+
+\TD{Gosset -- published under "student". student t test\cite{student1908probable}}
+
+\r{a ratio of signal to noise --- is the differnce in means between two groups significant }
+
+\r{use t-table -- one or two-tailed, with degrees of freedom, to obtain critical value}
+
+\r{degrees of freedom}
+
+\TD{Assumptions: }
+\r{\begin{itemize}[noitemsep,topsep=0pt]
+		\item normal distribution
+		\item similar variance
+		\item similar size of datapoints
+	\end{itemize}
+}
+
+\r{independent}
+
+\r{dependent (paired) -- example same population multiple times}
+
+
+\begin{equation}
+	{\textrm{t-value} = \frac{ \textrm{diff in means}}{\textrm{variability between groups}} = \frac{ |\bar{X}_1 - \bar{X}_2|}{ 
+			\sqrt{ \frac{ {std_1}^2 }{ n_1 } + \frac{ {std_2}^2 }{ n_2 }}}}
+	\label{eq:paired_t_test}
+\end{equation}
+\r{source: https://magoosh.com/statistics/how-to-perform-an-independent-sample-t-test/}
+
+
+\subsection{Chi-Squared Test}
+
+\r{Carl Pearsons Chi-Squared Test. is the variation in your data due to chance?}

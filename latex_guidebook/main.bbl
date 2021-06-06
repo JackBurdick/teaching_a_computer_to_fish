@@ -10,6 +10,9 @@
 \newblock \url{http://cs.stanford.edu/people/karpathy/convnetjs/}.
 \newblock Accessed: 2018-06-21.
 
+\bibitem{cs231n}
+{\em Cs231n: Convolutional neural networks for visual recognition}.
+
 \bibitem{deeplearnjs}
 {\em deeplearn.js. [{O}nline]}.
 \newblock \url{https://deeplearnjs.org/}.
@@ -158,6 +161,10 @@
 {\sc J.-B. Cordonnier, A.~Loukas, and M.~Jaggi}, {\em Multi-head attention:
   Collaborate instead of concatenate}, ArXiv, abs/2006.16362 (2020).
 
+\bibitem{DBLP:journals/corr/abs-2009-09796}
+{\sc M.~Crawshaw}, {\em Multi-task learning with deep neural networks: {A}
+  survey}, CoRR, abs/2009.09796 (2020).
+
 \bibitem{cubuk2018autoaugment}
 {\sc E.~D. Cubuk, B.~Zoph, D.~Mane, V.~Vasudevan, and Q.~V. Le}, {\em
   Autoaugment: Learning augmentation policies from data}, arXiv preprint
@@ -167,6 +174,11 @@
 {\sc Z.~Dai, Z.~Yang, Y.~Yang, J.~G. Carbonell, Q.~V. Le, and
   R.~Salakhutdinov}, {\em Transformer-xl: Attentive language models beyond a
   fixed-length context}, CoRR, abs/1901.02860 (2019).
+
+\bibitem{davis2006relationship}
+{\sc J.~Davis and M.~Goadrich}, {\em The relationship between precision-recall
+  and roc curves}, in Proceedings of the 23rd international conference on
+  Machine learning, 2006, pp.~233--240.
 
 \bibitem{devries2017improved}
 {\sc T.~DeVries and G.~W. Taylor}, {\em Improved regularization of
@@ -239,6 +251,10 @@
 {\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
   neural processes}, arXiv preprint arXiv:1807.01613,  (2018).
+
+\bibitem{DBLP:journals/corr/abs-1807-01622}
+{\sc M.~Garnelo, J.~Schwarz, D.~Rosenbaum, F.~Viola, D.~J. Rezende, S.~M.~A.
+  Eslami, and Y.~W. Teh}, {\em Neural processes}, CoRR, abs/1807.01622 (2018).
 
 \bibitem{geron2019hands}
 {\sc A.~G{\'e}ron}, {\em Hands-on machine learning with Scikit-Learn, Keras,
@@ -461,6 +477,10 @@
 {\sc N.~Kitaev, L.~Kaiser, and A.~Levskaya}, {\em Reformer: The efficient
   transformer}, ArXiv, abs/2001.04451 (2020).
 
+\bibitem{DBLP:journals/corr/KlambauerUMH17}
+{\sc G.~Klambauer, T.~Unterthiner, A.~Mayr, and S.~Hochreiter}, {\em
+  Self-normalizing neural networks}, CoRR, abs/1706.02515 (2017).
+
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
@@ -468,6 +488,11 @@
 \bibitem{DBLP:journals/corr/KoutnikGGS14}
 {\sc J.~Koutn{\'{\i}}k, K.~Greff, F.~J. Gomez, and J.~Schmidhuber}, {\em A
   clockwork {RNN}}, CoRR, abs/1402.3511 (2014).
+
+\bibitem{krawczyk2016learning}
+{\sc B.~Krawczyk}, {\em Learning from imbalanced data: open challenges and
+  future directions}, Progress in Artificial Intelligence, 5 (2016),
+  pp.~221--232.
 
 \bibitem{lange2020_lottery_ticket_hypothesis}
 {\sc R.~T. Lange}, {\em The lottery ticket hypothesis: A survey},
@@ -842,6 +867,10 @@
   relatedness in multi-task learning for images in context}, CoRR,
   abs/1904.03011 (2019).
 
+\bibitem{student1908probable}
+{\sc Student}, {\em The probable error of a mean}, Biometrika,  (1908),
+  pp.~1--25.
+
 \bibitem{DBLP:journals/corr/SutskeverVL14}
 {\sc I.~Sutskever, O.~Vinyals, and Q.~V. Le}, {\em Sequence to sequence
   learning with neural networks}, CoRR, abs/1409.3215 (2014).
@@ -890,6 +919,11 @@
 \bibitem{Vinyals2015PointerN}
 {\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
   abs/1506.03134 (2015).
+
+\bibitem{wan2013regularization}
+{\sc L.~Wan, M.~Zeiler, S.~Zhang, Y.~Le~Cun, and R.~Fergus}, {\em
+  Regularization of neural networks using dropconnect}, in International
+  conference on machine learning, PMLR, 2013, pp.~1058--1066.
 
 \bibitem{Wang2020BayesianOF}
 {\sc L.~Wang, F.~Dernoncourt, and T.~Bui}, {\em Bayesian optimization for
