@@ -85,6 +85,11 @@
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
 
+\bibitem{box1964analysis}
+{\sc G.~E. Box and D.~R. Cox}, {\em An analysis of transformations}, Journal of
+  the Royal Statistical Society: Series B (Methodological), 26 (1964),
+  pp.~211--243.
+
 \bibitem{DBLP:journals/corr/BrancoTR15}
 {\sc P.~Branco, L.~Torgo, and R.~P. Ribeiro}, {\em A survey of predictive
   modelling under imbalanced distributions}, CoRR, abs/1505.01658 (2015).
@@ -180,6 +185,12 @@
   and roc curves}, in Proceedings of the 23rd international conference on
   Machine learning, 2006, pp.~233--240.
 
+\bibitem{deng2013improving}
+{\sc A.~Deng, Y.~Xu, R.~Kohavi, and T.~Walker}, {\em Improving the sensitivity
+  of online controlled experiments by utilizing pre-experiment data}, in
+  Proceedings of the sixth ACM international conference on Web search and data
+  mining, 2013, pp.~123--132.
+
 \bibitem{devries2017improved}
 {\sc T.~DeVries and G.~W. Taylor}, {\em Improved regularization of
   convolutional neural networks with cutout}, arXiv preprint arXiv:1708.04552,
@@ -217,6 +228,10 @@
 \bibitem{Evci2019RiggingTL}
 {\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
   lottery: Making all tickets winners}, ArXiv, abs/1911.11134 (2019).
+
+\bibitem{fisher1992statistical}
+{\sc R.~A. Fisher}, {\em Statistical methods for research workers}, in
+  Breakthroughs in statistics, Springer, 1992, pp.~66--70.
 
 \bibitem{foster2019generative}
 {\sc D.~Foster}, {\em Generative deep learning: teaching machines to paint,
@@ -890,6 +905,10 @@
 {\sc H.~Tanaka, D.~Kunin, D.~L.~K. Yamins, and S.~Ganguli}, {\em Pruning neural
   networks without any data by iteratively conserving synaptic flow}, ArXiv,
   abs/2006.05467 (2020).
+
+\bibitem{tangcontrol}
+{\sc Y.~Tang, C.~Huang, D.~Kastelman, and J.~Bauman}, {\em Control using
+  predictions as covariates in switchback experiments}.
 
 \bibitem{Tay2020EfficientTA}
 {\sc Y.~Tay, M.~Dehghani, D.~Bahri, and D.~Metzler}, {\em Efficient

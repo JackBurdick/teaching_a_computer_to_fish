@@ -41,19 +41,22 @@
 
 \r{degrees of freedom}
 
-\TD{Assumptions: }
+\TD{Assumptions: randomly selected}
 \r{\begin{itemize}[noitemsep,topsep=0pt]
-		\item normal distribution
+		\item Measurement scale is coninuous/ordinal scale
+		\item randomly selected (representative of population)
+		\item normal distribution,
 		\item similar variance
-		\item similar size of datapoints
 	\end{itemize}
 }
+% 		\item similar size of datapoints
 
 \r{independent}
 
 \r{dependent (paired) -- example same population multiple times}
 
 
+\r{Correlated (or paired) T-Test}
 \begin{equation}
 	{\textrm{t-value} = \frac{ \textrm{diff in means}}{\textrm{variability between groups}} = \frac{ |\bar{X}_1 - \bar{X}_2|}{ 
 			\sqrt{ \frac{ {std_1}^2 }{ n_1 } + \frac{ {std_2}^2 }{ n_2 }}}}
@@ -65,3 +68,94 @@
 \subsection{Chi-Squared Test}
 
 \r{Carl Pearsons Chi-Squared Test. is the variation in your data due to chance?}
+
+
+\section{Power Analysis}
+
+\r{often used to determine the size of the experiment necessary to detect a given effect/treatment. May also be used determine the power of an experiment after it has been performed (given the effect/treatment size and the size of the experiement)}
+
+\r{power --- the probability of detecting an effect/treatment, provided an effect/treatment is present}
+
+\r{\textit{e.g.} a power value of $0.7$ would signify that $70\%$ of the time, the there is a significant difference between the effect/treatment group and the control group}
+
+\r{power, effect size, sample size, and alpha}
+
+
+\section{Analysis of Variance (ANOVA)}
+
+\r{Splits and observed aggregate into systematic factors and random factors. Determine the influence that an independent variable has. Fisher analysis of variance\cite{fisher1992statistical}}
+
+\r{if no true variance exists, the ANOVA's F-ratio should be 1 or near 1.}
+
+\begin{equation}
+	{\textrm{ANOVA coefficient} = \frac{ \textrm{MST}}{\textrm{MSE}} = \frac{  \textrm{Mean Sum of Squares due to Treatment}}{ 
+			 \textrm{Mean Sum of Squres due to Error}}}
+	\label{eq:anova}
+\end{equation}
+
+
+\section{Transforms}
+
+\TD{Box-Cox transformation\cite{box1964analysis}: George Box and David Cox}
+
+\r{lambda $\lambda$, which varies from $\neg5$ to $5$}
+
+\r{lambda is selected on which value gives the best approximation of a normal distribution}
+
+
+\r{Formula for positive data}
+\begin{equation}
+	\begin{cases} 
+		\frac
+		{y^\lambda - 1}
+		{\lambda},  & \lambda \neq 0; \\
+	    \log y, & \lambda = 0. \\
+	\end{cases}
+\end{equation}
+
+
+
+\r{Formula that could be used for negative y-values}
+\begin{equation}
+	\begin{cases} 
+		\frac
+		{({{y + \lambda_2}})^{\lambda_1} - 1}
+		{\lambda_1},  & {\lambda_1} \neq 0; \\
+		\log ({y+{\lambda_2}}), & {\lambda_1} = 0. \\
+	\end{cases}
+\end{equation}
+
+
+
+\section{Variance Reduction Methods}
+
+\TD{An experiement who's treatment effect is small relative to the metrics variance is considered weaker/underpowered, when compared to an experiment who's variance is smaller -- (this explanation needs work)}
+
+% \includegraphics[width=0.5\textwidth]{example-image-a}\hfil
+\TD{add X and Y names (Effect and Variance)}
+\begin{figure}
+	\begin{subfigure}{6cm}
+		\centering\includegraphics[width=5cm]{example-image-a}
+		\caption{Low Effect, High Variance: Two wide mostly overlapping distributions}
+	\end{subfigure}
+	\begin{subfigure}{6cm}
+		\centering\includegraphics[width=5cm]{example-image-b}
+		\caption{High Effect, High Variance: Two wide mostly non-overlapping overlapping distributions}
+	\end{subfigure}
+	
+	\begin{subfigure}{6cm}
+		\centering\includegraphics[width=5cm]{example-image-c}
+		\caption{Low Effect, Low Variance: Two narrow mostly overlapping overlapping distributions}
+	\end{subfigure}
+	\begin{subfigure}{6cm}
+		\centering\includegraphics[width=5cm]{example-image-c}
+		\caption{High Effect, Low Variance: Two narrow mostly non-overlapping overlapping distributions}
+	\end{subfigure}
+\end{figure}
+
+\r{CUPED methods (\textbf{C}ontrolled \textbf{U}sing \textbf{P}re-\textbf{E}xperiment \textbf{D}ata)\cite{deng2013improving}}
+
+\r{Out of DoorDash --- CUPAC methods (\textbf{C}ontrol \textbf{U}sing \textbf{P}redictions as \textbf{C}ovariates)\cite{tangcontrol}}
+
+\r{reduction of pre-experiment variance to help strengthen experiments power}
+

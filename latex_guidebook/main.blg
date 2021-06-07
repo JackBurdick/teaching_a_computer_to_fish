@@ -28,7 +28,7 @@ A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
-Reallocated field_info (elt_size=4) to 10129 items from 5000.
+Reallocated field_info (elt_size=4) to 10221 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
 Warning--to sort, need author or key in cs231n
@@ -47,45 +47,47 @@ Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
-You've used 223 entries,
+Warning--empty journal in tangcontrol
+Warning--empty year in tangcontrol
+You've used 227 entries,
             2030 wiz_defined-function locations,
-            1619 strings with 46767 characters,
-and the built_in function-call counts, 73472 in all, are:
-= -- 6179
-> -- 5149
+            1640 strings with 47456 characters,
+and the built_in function-call counts, 75017 in all, are:
+= -- 6326
+> -- 5215
 < -- 0
-+ -- 2055
-- -- 1809
-* -- 6575
-:= -- 12560
-add.period$ -- 239
-call.type$ -- 223
-change.case$ -- 1567
++ -- 2082
+- -- 1831
+* -- 6689
+:= -- 12789
+add.period$ -- 243
+call.type$ -- 227
+change.case$ -- 1590
 chr.to.int$ -- 0
-cite$ -- 239
-duplicate$ -- 2924
-empty$ -- 4583
-format.name$ -- 1809
-if$ -- 14325
+cite$ -- 245
+duplicate$ -- 2999
+empty$ -- 4707
+format.name$ -- 1831
+if$ -- 14661
 int.to.chr$ -- 0
-int.to.str$ -- 223
-missing$ -- 218
-newline$ -- 688
-num.names$ -- 427
-pop$ -- 1593
+int.to.str$ -- 227
+missing$ -- 222
+newline$ -- 700
+num.names$ -- 435
+pop$ -- 1623
 preamble$ -- 1
-purify$ -- 1348
+purify$ -- 1367
 quote$ -- 0
-skip$ -- 1869
+skip$ -- 1926
 stack$ -- 0
-substring$ -- 2555
-swap$ -- 801
+substring$ -- 2664
+swap$ -- 831
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 884
-warning$ -- 16
-while$ -- 550
-width$ -- 226
-write$ -- 1837
-(There were 16 warnings)
+type$ -- 900
+warning$ -- 18
+while$ -- 567
+width$ -- 230
+write$ -- 1871
+(There were 18 warnings)
