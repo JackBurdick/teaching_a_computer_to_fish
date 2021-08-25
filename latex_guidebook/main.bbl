@@ -63,6 +63,9 @@
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
 
+\bibitem{allison2001missing}
+{\sc P.~D. Allison}, {\em Missing data}, Sage publications, 2001.
+
 \bibitem{Bahdanau2015NeuralMT}
 {\sc D.~Bahdanau, K.~Cho, and Y.~Bengio}, {\em Neural machine translation by
   jointly learning to align and translate}, CoRR, abs/1409.0473 (2015).
@@ -810,6 +813,10 @@
 {\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
   translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
   (2015).
+
+\bibitem{shannon1948mathematical}
+{\sc C.~E. Shannon}, {\em A mathematical theory of communication}, The Bell
+  system technical journal, 27 (1948), pp.~379--423.
 
 \bibitem{shazeer2017outrageously}
 {\sc N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~Le, G.~Hinton, and

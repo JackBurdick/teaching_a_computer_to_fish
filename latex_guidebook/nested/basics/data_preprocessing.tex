@@ -41,7 +41,8 @@
 
 \r{Estimating the missing data}
 
-\r{More detailed imputation information can be found in \ref{appendix:imputing_missing_values}}
+\r{Imputation, interpolation, More detailed imputation information can be found in \ref{appendix:imputing_missing_values}}
+
 
 \subsubsection{Handling Categorical Data}
 
@@ -187,4 +188,18 @@
 
 % TODO: https://github.com/blue-yonder/tsfresh
 
+\TD{upsamping and downsampling -- often to match other sampling frequency, but may be for any number of reasons. When upsampling, this can often be framed as a ``missing data'' problem \ALR}
+
+\TD{smoothing --- \TD{exponential smoothing}}
+
+ \TD{smoothing--- Holt's method (with a trend), Holt-Winters smoothing (with a trend and seasonality)}
+ 
+ \TD{other smoothing techniques, more computationally expensive --- Kalman filters, LOESS (locally estimated scater plot smoothing)}
+ 
+ \TD{Seasonality -- a recurring trend in which the frequency is predictable/stable. cyclical is used to describe cycles in which the frequency is unpredicable, that is the cycles will have an uncertain duration.}
+ 
+ % TODO: smoothing the first values
+
 \subsection{Text data}
+
+

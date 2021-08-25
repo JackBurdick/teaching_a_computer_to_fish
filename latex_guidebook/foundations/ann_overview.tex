@@ -358,7 +358,7 @@
 
 \TD{Example}
 
-\paragraph{Forward pass}
+\subsubsection{Forward pass}
 
 \r{In the forward pass inputs are propagated through the network and derivatives of the error functuion, with respect to the parameters (weights and biases) are evaluated. Propagation o ferrors through the network, calculating the derivatives, can be applied to may different error functions.}
 
@@ -366,7 +366,7 @@
 
 \r{During this stage is when the errors are propagated through the network.}
 
-\paragraph{Backward pass}
+\subsubsection{Backward pass}
 
 \r{In the Backward pass, the previously calcuated derivatives are used to compute the adjustments to the parameters --- propagated in reverse through the network (from cost function to input layer) and each node is updated -- \TD{TODO: expand}.}
 
@@ -440,112 +440,3 @@
 \subsubsection{Reverse-mode autodiff}
 
 % TODO: only two passes needed
-
-\subsection{Multi-layer perceptrons}
-
-% TODO: this doesn't really belong here.. will need ot work on placement
-
-\subsection{Operations}
-
-\subsection{Convolution}
-% TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them
-
-% TODO: https://arxiv.org/abs/1904.11486
-% https://www.youtube.com/watch?v=HjewNBZz00w
-
-
-\r{Convolutions are built upon a lie -- that is we refer to the opperation as a convolution, yet it is in fact a cross-correlation operation since we don't rotate the kernel 180$\deg$. However, it is convention to refer to the operation as a convolution. For more, please see section \ref{conv_vs_cross}}
-
-\r{translational invariance --- a property that relates to how a systems decisions are insensitive to the location of a features within an input. That is, if we're looking for an object or feature, our system shouldn't change if the object is in different locations within the input}
-
-\TD{Neocognitron -- CNN paper prior to ``CNN''\cite{fukushima1982neocognitron}}
-
-% Survey on CNNs
-% TODO: a lot here -- good read
-\TD{A Survey of the Recent Architectures of Deep Convolutional Neural Networks \cite{DBLP:journals/corr/abs-1901-06032}}
-
-
-\TD{Squeeze-and-Excitation Networks \cite{DBLP:journals/corr/abs-1709-01507}}
-
-
-% Graham Taylor
-\r{weighted averaging operation in time or space}
-
-
-\r{translation equivariant --- }
-
-\r{DNN on an image may not take advantage of the ``stationarity'' (statistics) of an image. Patterns don't depend on the spatial location.}
-
-\r{spatial hierarchies --- \TD{TODO: figure raw data, abstract edges+, then more distinct images, then closer output to the output, then the final label}}
-
-\textcolor{red}{local ref to TensorFlow implementation}
-
-\r{typcially a feature extraction phase (consisting of convolutional and pooling layers) followed by a classifier block (dense layers).}
-
-%%%% popular layer types
-\textcolor{green}{TODO: feature maps, (height, width, and depth (also called channels axis)). Stride, filter size, depth. talk about parameters}
-
-\r{The output feature map (every dimension in the depth axis is a feature/filter) --- after a convolution operation the depth of a layer is no longer representative of a color channel (like RGB), it is now representative of a feature extracted by the convolutional operation, these are called filters.}
-
-\TD{Strided Convolution\cite{springenberg2014striving}}
-
-\TD{Dilated Convolution --- `atrous' convolution. (famously used by wavenet), which is convenient in time series analysis.}
-
-\r{weight tieing}
-
-
-\textcolor{green}{TODO: figure}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
-	\caption{Figure example of convolution operation on 2d image \textcolor{green}{TODO}}
-	\label{fig:conv_2d_example_calc}
-\end{figure}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
-	\caption{Figure example of convolution operation on 3d image \textcolor{green}{TODO}}
-	\label{fig:conv_2d_depth_example_calc}
-\end{figure}
-
-\textcolor{green}{TODO: examples of how different filter values and strides can effect the output dimensions.}
-
-
-
-
-\subsection{Pooling}
-% TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them -- pooling really does not belong under feed forward
-
-\TD{TODO: examples of max vs average pooling}
-
-%%%%%% research
-\textcolor{blue}{Pooling may not fully determine learned deformation stability -- possibly filter smoothness\cite{ruderman2018learned}}
-
-\r{downsampling}
-
-\r{Why? importance of reducing the number of params.}
-
-\TD{L2-pooling}
-
-\TD{L2-pooling over the features or channels.}
-
-\TD{additional --- learned/parameterized pooling}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
-	\caption{Figure example of max pooling operation on 2d image \textcolor{green}{TODO: I want this figure to be basic 2d}}
-	\label{fig:pooling_max_2d_ex_a}
-\end{figure}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-b}\hfil
-	\caption{Figure example of average pooling operation on 3d image \textcolor{green}{TODO: I want this figure to be 3d}}
-	\label{fig:pooling_avg_3d_ex_a}
-\end{figure}
-
-
-\r{may be better to use convolutional layers in place of the pooling layers\cite{springenberg2014striving}}

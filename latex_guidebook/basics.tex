@@ -66,13 +66,15 @@
 
 \section{Type of Learning}
 
-\r{Three main types of machine learning: supervised, unsupervised, and reinforcement. Semi-supervised learning is yet another area of machine learning, which lies somewhere between supervised and unsupervised learning.}
+%That is, there are more exciting areas of coverstaion than getting hung up on the categorizations of these types of ``learning''. 
+% TODO: link FB blog post
+\r{Typically, three main types of machine learning are described: supervised, unsupervised, and reinforcement. However, there exist other subareas (e.g. semi-supervised learning, self-supervised learning, \TD{more}), and then within/across these divisions, there are further subdivisions that exist (e.g. contrastive learning, ciriculum learning, \TD{more}). And in reality, these lines are explicit or exact. One example has recently become popular is the definition of ``unsupervised learning'' and how the name is a bit of a miscategorization in that there are often many more training signals (labels, though not called labels) when using this paradigm than say in an binary image classifier in which there is a single label assignment per input (e.g. cat vs dog.)}
 
 % From ML for Predictive Data Analytics
 \textcolor{blue}{Another way to group types of learning -- Information-based, similarity-based, probability-based, and error-based}
 
-
-
+% TODO: did I come up with these definitions or find them somewhere? - 18July21
+\r{however, in the intrest of consistency, the typcial definitions are defined below.}
 \begin{itemize}[noitemsep,topsep=0pt]
 	\item Supervised Learning (\ALR)
 	\begin{itemize}[noitemsep,topsep=0pt]
@@ -85,10 +87,6 @@
 	\item{Reinforcement (\ALR)}
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item \r{Reinforcement learning does not learn from labeled pairs of inputs and outputs, rather it learns from `feedback' from decisions that are not explicitly corrected. Information is still supplied to the system as to whether the networks outputs are good or bad, but no actual desired values are given. Goal -- develop an \emph{agent} that improves it's performance based on interactions with an \emph{environment} based on a \emph{reward}}
-	\end{itemize}
-	\item Semisupervised Learning (\ALR)
-	\begin{itemize}[noitemsep,topsep=0pt]
-		\item \r{makes use of both supervised and unsupervised data.}
 	\end{itemize}
 \end{itemize}
 

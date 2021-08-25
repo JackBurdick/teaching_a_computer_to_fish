@@ -9,75 +9,75 @@
 \indexentry{one-of-k encoding}{23}
 \indexentry{sparse vectors}{23}
 \indexentry{interquartile range}{24}
-\indexentry{kernel trick}{27}
-\indexentry{corpus}{28}
-\indexentry{vocabulary}{28}
-\indexentry{bag-of-words}{29}
+\indexentry{kernel trick}{28}
+\indexentry{corpus}{29}
+\indexentry{vocabulary}{29}
+\indexentry{bag-of-words}{30}
 \indexentry{tf-idf}{30}
 \indexentry{information leaks}{32}
-\indexentry{lucky split}{32}
+\indexentry{lucky split}{34}
 \indexentry{reducible error}{40}
 \indexentry{multi-label classification}{42}
-\indexentry{Problem transformation}{42}
+\indexentry{Problem transformation}{43}
 \indexentry{inappropriate minima}{46}
-\indexentry{Grid search}{53}
-\indexentry{Randomized search}{53}
-\indexentry{peeking}{67}
-\indexentry{model capacity}{68}
-\indexentry{Overfitting}{68}
-\indexentry{Underfitting}{69}
-\indexentry{Variance}{69}
-\indexentry{Bias}{69}
-\indexentry{Type I error}{72}
-\indexentry{Type II error}{72}
-\indexentry{Pearson's R}{77}
-\indexentry{Voronoi tessellation}{78}
-\indexentry{Voronoi region}{78}
-\indexentry{inverted dropout}{83}
-\indexentry{Ridge regression}{84}
-\indexentry{Tikhonov regularization}{84}
-\indexentry{freezing}{86}
-\indexentry{generalized linear model}{95}
-\indexentry{Ordinary Lease Squares (OLS)}{96}
-\indexentry{Linear Least Squares}{96}
-\indexentry{residuals}{96}
-\indexentry{residual sum of squares (RSS)}{97}
-\indexentry{odds ratio}{98}
-\indexentry{logit}{98}
-\indexentry{discrimination threshold}{98}
-\indexentry{lazy learner}{98}
-\indexentry{Support Vector Machine (SVM)}{101}
-\indexentry{Sequential Minimal Optimization (SMO)}{101}
-\indexentry{independent and identically distributed (i.i.d)}{102}
-\indexentry{ID3 algorithm}{104}
-\indexentry{J48}{104}
-\indexentry{Heaviside step function}{109}
-\indexentry{unit step function}{109}
-\indexentry{universal approximators}{110}
-\indexentry{input layer}{110}
-\indexentry{hidden layer}{110}
-\indexentry{output layer}{110}
-\indexentry{credit assignment problem}{112}
-\indexentry{sigmoid}{113}
-\indexentry{ReLUN}{117}
-\indexentry{data distillation}{121}
-\indexentry{symbolic differentiation}{122}
-\indexentry{autodiff}{122}
-\indexentry{reverse-mode differentiation}{122}
-\indexentry{image quantization}{140}
-\indexentry{silhouette coefficient}{142}
-\indexentry{Principal Component Analysis (PCA)}{143}
-\indexentry{Karhunen-Love Transform (KLM)}{143}
-\indexentry{covarience matrix}{143}
-\indexentry{manifold}{145}
-\indexentry{bagging}{167}
-\indexentry{boostrap aggregating}{167}
-\indexentry{sampling with replacement|see{bagging}}{167}
-\indexentry{bootstrap samples}{167}
-\indexentry{subagging}{168}
-\indexentry{sampling without replacement|see{subagging}}{168}
-\indexentry{subspace sampling}{168}
-\indexentry{blending}{169}
-\indexentry{catastrophic forgetting}{189}
-\indexentry{continual learning}{189}
-\indexentry{universal approximators}{253}
+\indexentry{Grid search}{54}
+\indexentry{Randomized search}{54}
+\indexentry{peeking}{69}
+\indexentry{model capacity}{70}
+\indexentry{Overfitting}{70}
+\indexentry{Underfitting}{71}
+\indexentry{Variance}{71}
+\indexentry{Bias}{71}
+\indexentry{Type I error}{74}
+\indexentry{Type II error}{74}
+\indexentry{Pearson's R}{79}
+\indexentry{Voronoi tessellation}{80}
+\indexentry{Voronoi region}{80}
+\indexentry{inverted dropout}{85}
+\indexentry{Ridge regression}{86}
+\indexentry{Tikhonov regularization}{86}
+\indexentry{freezing}{88}
+\indexentry{generalized linear model}{97}
+\indexentry{Ordinary Lease Squares (OLS)}{98}
+\indexentry{Linear Least Squares}{98}
+\indexentry{residuals}{98}
+\indexentry{residual sum of squares (RSS)}{99}
+\indexentry{odds ratio}{100}
+\indexentry{logit}{100}
+\indexentry{discrimination threshold}{100}
+\indexentry{lazy learner}{102}
+\indexentry{Support Vector Machine (SVM)}{104}
+\indexentry{Sequential Minimal Optimization (SMO)}{105}
+\indexentry{independent and identically distributed (i.i.d)}{106}
+\indexentry{ID3 algorithm}{108}
+\indexentry{J48}{108}
+\indexentry{Heaviside step function}{113}
+\indexentry{unit step function}{113}
+\indexentry{universal approximators}{114}
+\indexentry{input layer}{114}
+\indexentry{hidden layer}{114}
+\indexentry{output layer}{114}
+\indexentry{credit assignment problem}{116}
+\indexentry{sigmoid}{117}
+\indexentry{ReLUN}{121}
+\indexentry{data distillation}{125}
+\indexentry{symbolic differentiation}{126}
+\indexentry{autodiff}{126}
+\indexentry{reverse-mode differentiation}{126}
+\indexentry{image quantization}{144}
+\indexentry{silhouette coefficient}{146}
+\indexentry{Principal Component Analysis (PCA)}{147}
+\indexentry{Karhunen-Love Transform (KLM)}{147}
+\indexentry{covarience matrix}{147}
+\indexentry{manifold}{149}
+\indexentry{bagging}{171}
+\indexentry{boostrap aggregating}{171}
+\indexentry{sampling with replacement|see{bagging}}{171}
+\indexentry{bootstrap samples}{171}
+\indexentry{subagging}{172}
+\indexentry{sampling without replacement|see{subagging}}{172}
+\indexentry{subspace sampling}{172}
+\indexentry{blending}{173}
+\indexentry{catastrophic forgetting}{193}
+\indexentry{continual learning}{193}
+\indexentry{universal approximators}{261}

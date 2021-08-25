@@ -6,6 +6,9 @@
 
 % potentially ``irrelvant''/~uninterpretible in value to the researcher
 
+% did I already write this somewhere
+\r{often we use a loss as a proxy for our performance metric. Most often because the performance metric is not differentiable \textit{e.g.} accuracy results in a binary output. We may also have a different loss function from our performance measure because we wish to penalize/constrain the model during training in a way that is seperate from how we report results \textit{e.g.} using MSE and MAE}
+
 \subsection{fit somewhere}
 
 \subsubsection{Contrastive Losses}
@@ -13,12 +16,76 @@
 \TD{link to secion on self-supervised learning}
 
 
+\subsection{Discrete}
 
-\subsection{Overview}
+\r{classification}
+
+
+\subsubsection{Cross-Entropy}
+
+%TODO: https://colah.github.io/posts/2015-09-Visual-Information/
+
+\TD{A mathematical theory of communication \cite{shannon1948mathematical}}
+
+
+\r{cross entropy --- difference between two probability distributions. similar, but not the same as KL-divergence}
+
+\r{entropy, information theory --- the average length of bits necessary to encode a distribution of events}
+
+\r{if cross entropy is perfect, it will be equal to the entropy of the distribution itself (the intrinsic iunpredictability)}
+
+\r{binary cross entropy (in the context of loss functions, may be called/interchanged with logistic loss / log loss, even though they are not the exact same.)}
+
+% https://machinelearningmastery.com/cross-entropy-for-machine-learning/
+\r{KL-divergence is the measure of ``\textbf{extra bits}'' need to encode an event from $q$, instead of $p$, where as cross-entropy is the \textbf{total number} of bits}
+
+\r{cross entropy of itself will be the entropy}
+
+\r{NOTE: cross entropy is not symmetric,\textit{i.e.}calculating the cross entropy of one distribution $p$ from another $q$, is different from the cross entropy of $q$ from $p$}
+
+
+ %  + \textrm{}(\textrm{}) \\
+
+
+
+\begin{equation}
+	\begin{split}
+		\textrm{cross-entropy(preds, targets) } & =  \textrm{entropy} (\textrm{preds}) + \textrm{kl\_divergence}(\textrm{preds, targets})\\
+		& = -(\textrm{sum}(\textrm{pred}) \times \log (\textrm{pred}) )+ KL(\textrm{preds, targets})\\
+		& =  -\sum_{i=1}^{n}p(x_i)\log p(x_i)+ KL(\textrm{preds, targets}) \\
+		& =  -\sum_{i=1}^{n}p(x_i)\log p(x_i)+ sum(\textrm{preds} * \log ( \frac{\textrm{preds}}{\textrm{targets}} ) \\
+		& =  -\sum_{i=1}^{n}p(x_i)\log p(x_i)+ \sum_{i=1}^{n}p(x_i)\log \frac{p(x_i)}{q(x_i)} 
+	\end{split}
+\end{equation}
+
+\r{sometimes (more often) the entropy equation is the negative sum, but it can also be written as the following positive case (using the identity $ \log ( \frac{1}{a} )  = - \log (a) $)}
+
+\begin{equation}
+	\begin{split}
+		\textrm{entropy} (\textrm{preds})  & =  -(\textrm{sum}(\textrm{pred}) \times \log (\textrm{pred}) )\\
+		& = - \sum_{i=1}^{n}p(x_i)\log p(x_i) \\
+		& =   \sum_{i=1}^{n}p(x_i)\log ( \frac{1}{p(x_i) } )
+	\end{split}
+\end{equation}
+
+
+\r{if using $log_{10}$, the units are ``bits'', if using $log_2$, the units are ``nats''}
+
+\r{binary cross-entropy referes to cross-entropy of two classes, whereas categrorical cross-entropy referes to the cross-entropy of multiple ($n$) classes (where $n > 2$)}
+
+% label smoothing
+\subsection{label smoothing}
+\TD{Label smoothing}
+\TD{When Does Label Smoothing Help? \cite{DBLP:journals/corr/abs-1906-02629}}
+\TD{Regularizing Neural Networks by Penalizing Confident Output Distributions \cite{DBLP:journals/corr/PereyraTCKH17}}
+
+
+
+\subsection{Continuous}
 
 \r{training objective -- continuous}
 
-\subsection{Losses}
+\subsubsection{Losses}
 
 \TD{ELBO (Evidence Lower BOund)}
 
@@ -28,14 +95,6 @@
 \TD{Mean Absolute Percentage Error (MAPE)}
 
 
-\subsubsection{scalar}
+\subsection{Distribution}
 
-\subsubsection{distribution}
-
-
-% label smoothing
-\subsection{label smoothing}
-\TD{Label smoothing}
-\TD{When Does Label Smoothing Help? \cite{DBLP:journals/corr/abs-1906-02629}}
-\TD{Regularizing Neural Networks by Penalizing Confident Output Distributions \cite{DBLP:journals/corr/PereyraTCKH17}}
 

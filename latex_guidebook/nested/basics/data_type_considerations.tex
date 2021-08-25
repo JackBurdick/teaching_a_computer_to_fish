@@ -15,7 +15,7 @@
 % TODO: placement and naming
 \subsubsection{Kernel}
 
-\textcolor{blue}{the following can't be separated linearly as is.}
+\r{The following data ( ~\ref{fig:kernelized_2class4clust_2dimg} ) can't be separated linearly in it's existing form.}
 
 % {{{kernelized_2class4clust_2dimg}}}
 \begin{figure}
@@ -24,7 +24,7 @@
 \label{fig:kernelized_2class4clust_2dimg}
 \end{figure}
 
-\r{but what if we produce a new feature (feature 1 ** 2). Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting. The {kernel trick}\index{kernel trick} (discussed in more detail in \ref{sec:kernel_trick}) allows for a classifier to learn in a higher-dimensional space, without actually computing these (potentially computationally limiting) representations.}
+\r{However, what if we were produce a new feature. In this case, we'll create the feature squared ($feature_1^2$)}.
 
 % {{{kernelized_2class4clust_3dimg}}}
 \begin{figure}
@@ -32,6 +32,10 @@
 \includegraphics[width=0.65\textwidth]{./sync_imgs/kernelized/2class4clust/3dimg.png}
 \label{fig:kernelized_2class4clust_3dimg}
 \end{figure}
+
+\r{By creating this new feature (as shown in figure ~\ref{fig:kernelized_2class4clust_3dimg}), we are now able to linearly seperate the data.}
+
+ \r{Adding non-linear features is a powerful method for allowing linear methods to separate non-linear data. However, which features, combinations of features, and types of features is often not easily known. And adding may of these features may become computationally limiting. The {kernel trick}\index{kernel trick} (discussed in more detail in \ref{sec:kernel_trick}) allows for a classifier to learn in a higher-dimensional space, without actually computing these (potentially computationally limiting) representations.}
 
 
 \subsubsection{Feature Crosses}

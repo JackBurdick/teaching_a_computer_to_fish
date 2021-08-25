@@ -1,17 +1,66 @@
 \chapter{TODO:}
 
+
+\section{Time Zones}
+
+\r{Dealing with time zones are a colossal pain and should be avoided at all costs.}
+
+\section{Types of missingness}
+
+\TD{Data is rarely ever truly missing at random. Often the result of some unknown systematic error.}
+
+% NOTE: I find this confusing, needs to be beefed up.
+\r{Base types of missing data \cite{allison2001missing}}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Missing at Random (MAR)
+	\item Missing Completely at Random
+	\item Ignorable (structurally missing)
+	\item Nonignorable (missing not at random)
+\end{itemize}
+
+\paragraph{Missing at Random (MAR)}
+
+\r{Can predict via other given data}
+
+\paragraph{Missing Completely at Random}
+
+\r{Completely unrelated to any given data}
+
+\paragraph{ Ignorable (structurally missing)}
+
+\r{Missing for a logical reason}
+
+\paragraph{Nonignorable (missing not at random)}
+
+\TD{UNSURE}
+
+
+
 \section{Imputing Missing Values}
 \label{appendix:imputing_missing_values}
 
 \r{fill missing values}
 
+\subsection{Imputation}
+
+\r{Based on observations from the entire dataset}
+
 % static
 \TD{mean}
 \TD{median}
 
+
+\subsection{Interpolation}
+
+\r{Based on observations from neighboring datapoints.  Interpolation can be viewed as a subset of imputation.}
+
 % dynamic
 \TD{linear}
 \TD{Advanced}
+\TD{LForward or reverse fill. Note that technically a reverse is a ``lookahead''}
+\TD{Moving/Rolling values (\textit{e.g.} average or median)}
+
+\TD{NOTE: averages could be either geometric or exponentially weighted moving averages (giving more weight to more recent data)}
 
 % other
 \TD{predicting}
@@ -42,3 +91,15 @@
 \section{Group Segmentation}
 
 \TD{clustering}
+
+\section{Time Series Concepts}
+
+\TD{Stationarity --- the level of stability. Can we expect to predict the future given the past?}
+
+\TD{Self-correlation --- }
+
+\TD{Spurious correlations --- relationships that appear to be causal, but are not}
+
+
+
+

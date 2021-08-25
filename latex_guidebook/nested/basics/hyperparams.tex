@@ -4,6 +4,7 @@
 \subsection{Parameters: "tuning knobs"}
 
 \subsubsection{Learning Rate}
+\label{hp_learning_rate}
 
 \TD{TODO: Learning rate overview}
 
@@ -19,8 +20,13 @@
 
 \TD{The large learning rate phase of deep learning: the catapult mechanism \cite{Lewkowycz2020TheLL}}
 
-\r{}
+\paragraph{Schedule}
 
+\r{Rather than keep the same learning rate during all of training, the learning rate is adjusted during training according to a ``schedule''.}
+
+\paragraph{Descriminative/Differential}
+
+\r{FastAI -- ``discriminative'' however, typically shows up as ``differential'' learning rate. Rather than use the same learning rate for all layers/components, different layers/components use different learning rates.}
 
 \paragraph{research}
 

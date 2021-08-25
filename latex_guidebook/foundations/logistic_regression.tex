@@ -1,22 +1,36 @@
 \section{Logistic Regression}
 
-\textcolor{blue}{Despite the `regression' bit in the name, logistic regression is a classification model}
+\r{Despite the `regression' bit in the name, logistic regression (logit regression) is a classification model}
 
-\textcolor{blue}{odds ratio\index{odds ratio} (Eq.~\ref{eq:odds_ratio}), where $p$ is representative of the probability of a positive (event we aim to predict) event.}
+\r{Similar to linear regression \ALR, logistic regression computes the weightedf sum of the input features plus a bias term. However, rather than output the result directly, a logistic of the result is output. The logistic, is sigmoid \ALR that outputs a value between 0 and 1}
+
+\r{estimates the probability that an instance $x$ belongs in a class}
+
+
+\r{odds, or odds ratio\index{odds ratio} (Eq.~\ref{eq:odds_ratio}), where $p$ is representative of the probability of a positive (event we aim to predict) event and is defined as the probability of the event occuring divided by the probability of the event not occuring (see Eq~\ref{eq:odds_ratio}).  As an example, if the probability of an event happening it $10\%$, then the odds of the event happening are $\frac{0.10}{1-0.10} = {1:9}$}
 
 \begin{equation}
 {\frac{p}{1-p}}
 \label{eq:odds_ratio}
 \end{equation}
 
-\textcolor{blue}{A logit\index{logit} function (Eq.~\ref{eq:logit_def}) is the logarithm of the odds ratio (log-odds)}
+\r{A logit\index{logit} is the log of the odds of the event happening. (Eq.~\ref{eq:logit_def}) (log-odds)}
 
 \begin{equation}
 {logit(p)=\log{\frac{p}{1-p}}}
 \label{eq:logit_def}
 \end{equation}
 
-\textcolor{blue}{logistic function (sigmoid function) (Eq.~\ref{eq:sigmoid_def}) -- the inverse of a logit function and corresponds to the probability that a certain sample belongs to a particular, positive, class. If the response variable value meats or exceeds the {discrimination threshold}\index{discrimination threshold}, the positive class is predicted.}
+
+\begin{figure}[htp]
+	\centering
+	    \includegraphics[width=0.33\textwidth]{example-image-a}\hfil
+		\includegraphics[width=0.33\textwidth]{example-image-b}\hfil
+	\caption{\TD{The logit value is on the range $-inf$ to $inf$ and sigmoid is on the range $0$ to $1$}}
+	\label{fig:logit_vs_sigmoid}
+\end{figure}
+
+\r{logistic function (sigmoid function) (Eq.~\ref{eq:sigmoid_def}) -- the inverse of a logit function and corresponds to the probability that a certain sample belongs to a particular, positive, class. If the response variable value meets or exceeds the {discrimination threshold}\index{discrimination threshold}, the positive class is predicted. As described later, the \ALR{} softmax function is used to extend to multi-class}
 
 \begin{equation}
 {S(x)={\frac{1}{1+e^{-x}}}={\frac{e^x}{e^x+1}}}
@@ -25,3 +39,63 @@
 
 % TODO: placement/link around sigmoid func
 \textcolor{red}{regularization is important in logistic regression since the activation function will never reach zero and attempting to do so (e.g. longer training) can lead to weights being driven to $-inf$ or $+inf$. also, near the asymptotes, the gradient is quite small}
+
+\begin{equation}
+cost =	\left\{
+	\begin{array}{ll}
+		-\log (\hat{p}) & \textrm{if }  y = 1 \\
+		-\log (1 - \hat{p}) & \textrm{if }  y = 0 \\
+	\end{array} 
+	\right.
+\end{equation}
+
+
+\begin{equation}
+	\begin{split}
+		\textrm{log loss} & =  \textrm{avg over all instances} ( \textrm{cost} ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m} ( \textrm{cost} ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m}(   (\textrm{target}) \times \textrm{cost}_ \textrm{true} +  (1 - \textrm{target}) \times \textrm{cost}_ \textrm{false} ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m}( y^{(i)} \log ({\hat{p}}^{(i)}) +(1-y^{(i)}) \log (1 - \hat{p}^{(i)}) )
+	\end{split}
+\end{equation}
+
+\r{unlike linear regression, there is no presently known closed form equation for computing the parameters that minimizes the cost function.}
+
+\r{the equation for the partial derivatives is the same as for linear regression, only with the addition of the sigmoid}
+
+\begin{equation}
+	\begin{split}
+		 \textrm{derivative}_ \textrm{partial} & =  \textrm{avg over all instances} ( \textrm{error}_\textrm{pred} *  \textrm{feature}) \\
+		& =  \textrm{avg}((\sigma ( \textrm{pred}) -  \textrm{target}) *  \textrm{feature}) \\
+		& = \frac{1}{m} \sum_{i=1}^{m}(\sigma ( \textrm{pred}) -  \textrm{target}) *  \textrm{feature} \\
+		& = \frac{1}{m} \sum_{i=1}^{m}(\sigma ( \theta^T x^{(i)}) -  y^{(i)})) *  x_j 
+	\end{split}
+\end{equation}
+
+\subsection{Softmax Regression}
+
+%TODO: index
+
+\r{Softmax regression which may also be called Multinomial Logistic Regression, creates multi-class prediction by predicting one class from $n$ classes.}
+
+\TD{the softmax function effectively drives small values to/near zero and pushes large values toward 1 -- where the sum of all values is equal to 1.}
+
+\r{Let's pretend we want to make predictions over multiple classes}
+
+\r{The softmax function (may also be called the normalized exponential)}
+
+\r{The cost function is similar to above, now only averaging over each class}
+
+\begin{equation}
+	\begin{split}
+		\textrm{cross entropy cost} & =  \textrm{avg}_\textrm{instance}  \textrm{avg}_\textrm{class}( \textrm{cost} ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m}  \frac{1}{k} \sum_{i=1}^{k}  ( \textrm{cost} ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m}  \frac{1}{k} \sum_{i=1}^{k}  ( (\textrm{p. instance belongs to class k}) \log ({\hat{p}}^{(i)}_k) ) \\
+		& =  \frac{1}{m} \sum_{i=1}^{m}  \frac{1}{k} \sum_{i=1}^{k}  ( y^{(i)}_k \log ({\hat{p}}^{(i)}_k) ) 
+	\end{split}
+\end{equation}
+
+\r{in the equation above, it's worth noting that when $k$ is equal to $2$, the cost function is equivalent to The Logistic Regression cost function \ALR}
+
+
+\r{\ALR cross entropy}

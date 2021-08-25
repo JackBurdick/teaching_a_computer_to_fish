@@ -265,7 +265,7 @@
 \TD{tool that may sometimes be efficient way of getting to potentially more accurate approximations, faster. \TD{citations}}
 
 % TODO: index
-\r{using parameters or pre-trained components from a model/task for a new model/task.  Process of adapting these components to a new model/task is called fine-tuning}
+\r{using parameters or pre-trained components from a model/task for a new model/task.  In practice, this often amounts to running inputs through a network that has been previously trained, and obtaining ``embeddings'' from this model (sometimes at an abitrary layer in the network), and then using these ``embeddings'' to train a later model. The process of adapting these components to a new model/task is called fine-tuning}
 
 
 \begin{figure}[htp]
@@ -275,7 +275,20 @@
 	\label{fig:transfer_learning_subfigs_a}
 \end{figure}
 
-\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable'' see \textcolor{red}{local TF ref} for the TensorFlow implementation and \textcolor{red}{local YF ref} for the YamlFlow implementation. In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network}
+\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable''.}
+
+% In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network
+
+\TD{Paper on transfer learning effectivness..}
+
+\r{One difficulty of fine tuning is knowing where and by how much to either freeze or learn. That is should you freeze the first $n\%$ of the network, why not $m\%$?. Maybe you should leave the entire network trainable? But if the entire network is trianable, the previously learned (and presumably useful features), may be erased by the updates. Aside from selecting where to make the distinction, the main method used to combat these issues is to modify the learning rate. There are two core methods to adjusting the learning rate to address these issues.}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Learning rate schedule
+	\item Layer-wise learning rates
+\end{itemize}
+
+\TD{These methods are described in more detail in section ~\ref{hp_learning_rate}}
 
 % TODO: this likely does not belong here...
 \subsubsection{Normalization}
