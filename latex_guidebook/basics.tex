@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%% obligatory "No Free Lunch"
 % TODO: there is more to the no free lunch than simply this.
-\r{I'm not sure it's possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states ``No single classifier works best across all possible scenarios''~\cite{wolpert1997no}}
+\r{LIkely not possible to discuss machine learning without at least mentioning the ``No Free Lunch'' theorem, which states, roughly ``No single [model] works best across all possible scenarios''~\cite{wolpert1997no}}
 
 % “You can’t learn from data without making assumptions”
 \TD{A Lot to unpack here.}
@@ -22,11 +22,10 @@
 
 \section{Workflow Overview / Blue Print}
 
-% TODO: does not belong here
-\r{feature extraction -- (manual or learned) == ``classification''}
 
 % TODO: this will need to be checked+rechecked+redone
 \r{1. explore, 2. create datasets, 3. benchmark}
+
 \begin{enumerate}[noitemsep,topsep=0pt]
 	\item Problem definition
 	\item Hypothesis?
@@ -68,10 +67,10 @@
 
 %That is, there are more exciting areas of coverstaion than getting hung up on the categorizations of these types of ``learning''. 
 % TODO: link FB blog post
-\r{Typically, three main types of machine learning are described: supervised, unsupervised, and reinforcement. However, there exist other subareas (e.g. semi-supervised learning, self-supervised learning, \TD{more}), and then within/across these divisions, there are further subdivisions that exist (e.g. contrastive learning, ciriculum learning, \TD{more}). And in reality, these lines are explicit or exact. One example has recently become popular is the definition of ``unsupervised learning'' and how the name is a bit of a miscategorization in that there are often many more training signals (labels, though not called labels) when using this paradigm than say in an binary image classifier in which there is a single label assignment per input (e.g. cat vs dog.)}
+\r{Typically, three main types of machine learning are described: supervised, unsupervised, and reinforcement. However, there exist other subareas (e.g. semi-supervised learning, self-supervised learning, \TD{more}), and then within/across these divisions, there are further subdivisions that exist (e.g. contrastive learning, ciriculum learning, \TD{more}). And in reality, these lines aren't always explicit or exact. One example has recently become popular is the definition of ``unsupervised learning'' and how the name is a bit of a miscategorization in that there are often many more training signals (labels, though not called labels) when using this paradigm than say in an binary image classifier in which there is a single label assignment per input (e.g. cat vs dog.)}
 
 % From ML for Predictive Data Analytics
-\textcolor{blue}{Another way to group types of learning -- Information-based, similarity-based, probability-based, and error-based}
+\r{Another way to group types of learning -- Information-based, similarity-based, probability-based, and error-based}
 
 % TODO: did I come up with these definitions or find them somewhere? - 18July21
 \r{however, in the intrest of consistency, the typcial definitions are defined below.}
@@ -229,7 +228,13 @@ Classification involves predicting categorical (discrete) or qualitative output 
 \r{can be used for regression or classification (though typically for regression)}
 
  
-\paragraph{Normal Equations}
+\paragraph{Normal Equation}
+
+%TODO: this belongs elsewhere -- maybe appendix?
+
+\TD{pseudo inverse, moore penrose}
+
+\TD{can't fit in memory --> gradient decent}
 
 \r{find an explicity solution to the function}
 
@@ -249,6 +254,8 @@ Classification involves predicting categorical (discrete) or qualitative output 
 \r{If a derivative of the activation function is differentiable, the derivatives of the error function with respect to the weight parameters can then be evaluated. The derivatives can then be used by gradient-based optimization algorithms to find the minimum of the error function \TD{local ref - sec on optimizers}}
 
 \r{update the parameters one iteration at a time --- sequential, pattern-based, update}
+
+\TD{equation}
 
 
 \subsubsection{Global vs Local Minima}

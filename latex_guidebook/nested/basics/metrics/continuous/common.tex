@@ -1,20 +1,50 @@
 % TODO: this section likely doens't belong in it's current location
 
-\begin{itemize}[noitemsep,topsep=0pt]
-\item \textit{Mean Absolute Error (MAE)}, (Eq.~\ref{eq:mae_def}): \r{the average of the absolute values of the errors of the predictions}.
-	
+% TODO: combine loss/metric information
+
+
+\textit{Mean Absolute Error (MAE)}, (Eq.~\ref{eq:mae_def}): \r{the average of the absolute values of the errors of the predictions}.
+
+% TODO: MAE = median unbiased estimator
+
 \begin{equation}
-{MAE = \frac{1}{n}\sum_{i=0}^{n-1}|y_i - \hat{y}_i| }
+{\textrm{MAE} = \frac{1}{n}\sum_{i=0}^{n-1}|y_i - \hat{y}_i| }
 \label{eq:mae_def}
 \end{equation}
-	
-\item \textit{Mean Squared Error (MSE, or Mean Squared Deviation (MSD))}, (Eq.~\ref{eq:mse_def}): \r{the average of the squared values of the errors of the predictions}.
+
+% TODO: MSE and RMSE = mean unbiased estimator
+
+\textit{Mean Squared Error (MSE, or Mean Squared Deviation (MSD))}, (Eq.~\ref{eq:mse_def}): \r{the average of the squared values of the errors of the predictions}.
 	
 \begin{equation}
-{MSE = \frac{1}{n}\sum_{i=0}^{n-1}(y_i - \hat{y}_i)^2}
+{\textrm{MSE} = \frac{1}{n}\sum_{i=0}^{n-1}(y_i - \hat{y}_i)^2}
 \label{eq:mse_def}
 \end{equation}
-	
-\end{itemize}
+
+\r{The quadratic term will heavily weigh the predictions that are ``very'' wrong. \TD{work on phrasing here}}
+
+
+\textit{Root Mean Squared Error (RMSE}, (Eq.~\ref{eq:rmse_def}): \r{the square root of the average of the squared values of the errors of the predictions}.
+
+\begin{equation}
+	{\textrm{RMSE} = \sqrt{\frac{1}{n}\sum_{i=0}^{n-1}(y_i - \hat{y}_i)^2}}
+	\label{eq:rmse_def}
+\end{equation}
+
+\r{The root mean squared error, still weights the outliers more heavily, but makes the final result a bit more interpretable by taking the square root}
+
+\TD{it might be worth including an example here -- maybe two examples. one example with 1 outlier, and another example with multiple outliers}
+
+\textit{Huber loss}, (Eq.~\ref{eq:huber_def}): \r{$\delta$ is a constant threshold. If the difference value is less than the threshold, the squared loss is used, otherwise the linear term is used. This attempts to give the benefit of both the MSE/MAE losses.}.
+
+\begin{equation}
+	{\textrm{HL}_\delta = \frac{1}{n}\sum_{i=0}^{n-1} 
+		\begin{cases} 
+			\frac{1}{2}(y_i - \hat{y}_i)^2 & \textrm{for}|y_i - \hat{y}_i| \le \delta \\
+			\delta |y_i - \hat{y}_i| -  \frac{1}{2} \delta^2 & \textrm{otherwise} 
+	\end{cases}}
+	\label{eq:huber_def}
+\end{equation}
+
 
 \TD{quadratic weighted kappa (QWK), also known as Cohen's kappa}
