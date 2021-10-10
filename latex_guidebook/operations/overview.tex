@@ -8,7 +8,7 @@
 
 % this reads strangely --> DNN on an image may not take advantage of the ``stationarity'' (statistics) of an image.
 
-\r{When using a standard dense layer, all inputs are treated independently. However, adjacent pixels, on average, are highly highly correlated. Convolutions architecturally build in an implicit spatial structure to consider these spatial.}
+\r{When using a standard dense layer, all inputs are treated independently. However, adjacent pixels, on average, are highly highly correlated. For example, if there is a texture in the image, a similar pattern of pixels may occur repeatedly. Convolutions architecturally build in an implicit spatial structure to consider these spatial.}
 
 % TODO: I'm not sure how I'm going to structure these yet or where I'll be placing them
 
@@ -19,6 +19,8 @@
 \r{Convolutions are built upon a lie -- that is we refer to the opperation as a convolution, yet it is in fact a cross-correlation operation since we don't rotate the kernel 180$\deg$. However, it is convention to refer to the operation as a convolution. For more, please see section \ref{conv_vs_cross}}
 
 \r{translational invariance --- a property that relates to how a systems decisions are insensitive to the location of a features within an input. That is, if we're looking for an object or feature, our system shouldn't change if the object is in different locations within the input}
+
+\TD{``Filter factorization'' (not the exact same definition of mathematical factorization)-- one $5\times5$ filter vs $2$ $3\times3$ filters stacked.  in the $5\times5$ there are $5\times5 = 25$ parameters, in the $3\times3$, there are $3\times3 \times 2 = 18$ learnable parameters, resulting in a ``cheaper'' operation.}
 
 \TD{Neocognitron -- CNN paper prior to ``CNN''\cite{fukushima1982neocognitron}}
 

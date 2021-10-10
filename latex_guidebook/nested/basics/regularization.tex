@@ -1,6 +1,10 @@
 \chapter{Improving Generalizability}
 
-\r{The methods shown in the upcoming sections aim to reduce overfitting. That is, these methods aim to prevent the model from becoming too specialized to the training dataset in hopes that it will generalize to data that it has not specifically seen. It is worth noting that by implementing some of these methods (e.g. reducing the model capacity), the model often has less ability to model the training set as well as it might otherwise be able to. This is ok, but worth remembering such that some of the methods aren't used before they are necessary \TD{section on determining overfitting}.}
+\r{The methods shown in the upcoming sections aim to reduce overfitting. That is, these methods aim to prevent the model from becoming too specialized to the training dataset in hopes that it will generalize to data that it has not specifically seen during training (e.g from the ``test'' set).}
+
+\r{By implementing some of these methods (e.g. reducing the model capacity), the model often has less ability to model the training set as well as it might otherwise be able to. This is ok, high performance on the test set is the ultimate goal.}
+
+%  some of the methods aren't used before they are necessary \TD{section on determining overfitting}
 
 % TODO: index overfitting
 \r{overfitting: a practical definition may include observing the training loss to improve while the validation loss degrades. \TD{possibly mention \\cite{Nakkiran2020DeepDD}}}
@@ -163,7 +167,11 @@
 
 % TODO: figure of loss plot showing a steep training and shallow+divergent val/test loss
 
+\r{imposes a penalty on the parameters}
+
 \r{Helps prevent the model from memorizing noise in the training data.}
+
+\r{Discourages the learned mapping/function/model from becoming too complex}
 
 
 \subsubsection{Types of Regularization}
@@ -265,7 +273,7 @@
 \TD{tool that may sometimes be efficient way of getting to potentially more accurate approximations, faster. \TD{citations}}
 
 % TODO: index
-\r{using parameters or pre-trained components from a model/task for a new model/task.  In practice, this often amounts to running inputs through a network that has been previously trained, and obtaining ``embeddings'' from this model (sometimes at an abitrary layer in the network), and then using these ``embeddings'' to train a later model. The process of adapting these components to a new model/task is called fine-tuning}
+\r{using parameters or pre-trained components from a model/task for a new model/task.  In practice, this often amounts to running inputs through a network that has been previously trained, and obtaining ``embeddings'' from this model (sometimes at an abitrary layer in the network), and then using these ``embeddings'' as input to train an additional model on the desired task. The process of adapting these components to a new model/task is called fine-tuning}
 
 
 \begin{figure}[htp]
@@ -279,7 +287,7 @@
 
 % In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network
 
-\TD{Paper on transfer learning effectivness..}
+\TD{Scaling Laws for Transfer \cite{DBLP:journals/corr/abs-2102-01293}}
 
 \r{One difficulty of fine tuning is knowing where and by how much to either freeze or learn. That is should you freeze the first $n\%$ of the network, why not $m\%$?. Maybe you should leave the entire network trainable? But if the entire network is trianable, the previously learned (and presumably useful features), may be erased by the updates. Aside from selecting where to make the distinction, the main method used to combat these issues is to modify the learning rate. There are two core methods to adjusting the learning rate to address these issues.}
 
@@ -303,6 +311,8 @@
 
 \paragraph{Layer normalization}
 
+\TD{Layer Normalization \cite{Ba2016LayerN}}
+
 \paragraph{Batch normalization}
 
 \TD{Show / explain}
@@ -310,6 +320,8 @@
 \TD{Batch Normalization: Accelerating Deep Network Training by Reducing	Internal Covariate Shift \cite{DBLP:journals/corr/IoffeS15}}
 
 \r{similar to dropout \ALR, the behavior of batch norm is different at training time and inference time.}
+
+\r{normalizes values across a batch of data. Where the normalization is controlled by two learned parameters. The ``center'' and ``scale''.}
 
 \r{Standard implementation is to calculate the population values using an exponential moving average (EMA).}
 
@@ -328,9 +340,10 @@
 
 \r{seems to help when both under and over fitting.}
 
-\r{order: pre-act, then batch norm, then activate.}
+\r{order, up for debate and often described as either pre-activation operation, then activation, then batch norm, or pre-activation operation, then batch norm, then activation.}
 
 \r{$\gamma$ and $\beta$ parameters that are learned parameters. These params could effectively undo the normalization caused (if ``learned'' to do so.)}
+
 
 \begin{enumerate}[noitemsep,topsep=0pt]
 	\item batch statistics
@@ -341,6 +354,11 @@
 	\item normalize the pre-activation
 	\item $\gamma$ and $\beta$ --- learned rescalling
 \end{enumerate}
+
+\TD{Rethinking "Batch" in BatchNorm \cite{DBLP:journals/corr/abs-2105-07576}}
+
+% TODO: haven't read this paper yet 9Oct21 (I don't think...)
+\TD{How Does Batch Normalization Help Optimization? \cite{Santurkar2018HowDB}}
 
 
 % Graham Taylor talk
@@ -353,6 +371,8 @@
 
 
 \paragraph{Group normalization}
+
+\TD{Group Normalization \cite{DBLP:journals/corr/abs-1803-08494}}
 
 
 \section{Output regularization}

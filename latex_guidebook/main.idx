@@ -64,12 +64,12 @@
 \indexentry{symbolic differentiation}{128}
 \indexentry{autodiff}{128}
 \indexentry{reverse-mode differentiation}{128}
-\indexentry{image quantization}{146}
-\indexentry{silhouette coefficient}{148}
-\indexentry{Principal Component Analysis (PCA)}{149}
-\indexentry{Karhunen-Love Transform (KLM)}{149}
-\indexentry{covarience matrix}{149}
-\indexentry{manifold}{151}
+\indexentry{image quantization}{144}
+\indexentry{silhouette coefficient}{146}
+\indexentry{Principal Component Analysis (PCA)}{147}
+\indexentry{Karhunen-Love Transform (KLM)}{147}
+\indexentry{covarience matrix}{147}
+\indexentry{manifold}{149}
 \indexentry{bagging}{173}
 \indexentry{boostrap aggregating}{173}
 \indexentry{sampling with replacement|see{bagging}}{173}

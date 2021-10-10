@@ -28,11 +28,40 @@ Images and Videos
 % Graham Taylor talk
 \r{alexnet, network-in-network, inception/google lenet (end with $1 \times 1 \times N_{classes}$ into a global average pooling layer), vggnet}
 
-\r{Resnet (similar to highway networks) --- skip connections ``residual modual/block'' (dynamically adjusting depth) (others in this time: fractal nets, stochastic XXXX nets, where skip connections are shortcut paths)}
+% TODO: I'm not sure where this belongs
+\TD{$1 \times 1 \times$ convolution explaination --- useful for adjusting the number of features in the feature dimension, either up or down.}
+
+\TD{Inception module --- rather than manually choosing proper\``best'' filter size, ``let the model choose''.}
+
+\r{Resnet (\TD{Deep Residual Learning for Image Recognition \cite{DBLP:journals/corr/HeZRS15}}, similar to highway networks) --- skip connections ``residual modual/block'' (dynamically adjusting depth) (others in this time: fractal nets, stochastic XXXX nets, where skip connections are shortcut paths)}
 
 \r{DenseNet --- where these skip connections are taken to an extreme. also, concatenation, not summation}
 
-\r{Squeeze and Excitation network --- adaptive recalibration of feature maps. \TD{TODO}}
+% TODO: not sure where this belongs yet
+\paragraph{skip connections}
+
+
+\r{three popular explainations (as described in \cite{lakshmanan2021practical}).}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Addition opperation makes the task ``easier''
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Detailed by the authors of the original paper. That it is easier to predict the ``residue''/delta between the input and output rather than the solely the desired output.
+	\end{itemize}
+	\item Residual connections make the network effectively shallower 
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Described in \TD{Residual Networks are Exponential Ensembles of Relatively Shallow Networks \cite{DBLP:journals/corr/VeitWB16}. The connections effectively create an ensemble of shallower networks. The network then learns to select the best path/subnetwork for each instance.}
+	\end{itemize}
+	\item Loss topological ``smoothing'' (TODO: change term)
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \TD{show figure. \TD{Visualizing the Loss Landscape of Neural Nets \cite{DBLP:journals/corr/abs-1712-09913}}}
+	\end{itemize}
+\end{itemize}
+
+
+
+\TD{SqueezeNet \cite{DBLP:journals/corr/IandolaMAHDK16} ``fire modules'', contraction and expansion}
+
+\r{Squeeze and Excitation network --- adaptive recalibration of feature maps. \cite{DBLP:journals/corr/abs-1709-01507} }
 
 % fit into an architecture ``timeline''
 \TD{ResNeXt\cite{xie2017aggregated}}
@@ -50,6 +79,17 @@ Images and Videos
 \r{fast R-CNN proposed regions by using the feature maps from a layer from a CNN that was previously trained (VGG or Resnet, for example). after identifying the regions, then crop-resize, then CNN over each region, then get output (class + bbox regression.)}
 
 \r{faster r-cnn. Insert a region proposal network (RPN) to predict proposals from features --- in this architecture, there are actually four losses to jointly train 1) object/net RPN, 2) box/net RPN, 3) Class prediction, and 4) final bounding box score.}
+
+
+% TODO: YOLO object detection
+\TD{You Only Look Once: Unifie \cite{DBLP:journals/corr/RedmonDGF15}}
+% TODO more object detection
+\TD{Mask R-CNN \cite{DBLP:journals/corr/HeGDG17}}
+\TD{Faster R-CNN: \cite{DBLP:journals/corr/RenHG015}}
+\TD{SSD: \cite{DBLP:journals/corr/LiuAESR15}}
+
+% 
+\TD{Focal Loss (RetinaNet) \cite{DBLP:journals/corr/abs-1708-02002}}
 
 
 \subsection{Segmentation}
