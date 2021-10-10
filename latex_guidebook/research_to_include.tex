@@ -1,8 +1,6 @@
 \section{research to include}
 
 
-\TD{A Survey on Multi-Task Learning \cite{DBLP:journals/corr/ZhangY17aa}}
-
 
 %% 
 \TD{On Calibration of Modern Neural Networks \cite{DBLP:journals/corr/GuoPSW17}}
@@ -48,22 +46,14 @@
 \TD{Synthetic Data for Deep Learning \cite{Nikolenko2019SyntheticDF}}
 
 
-% ``heads learn redundant key/query projections'' --> share
-% https://github.com/epfml/collaborative-attention
-\TD{Multi-Head Attention: Collaborate Instead of Concatenate \cite{Cordonnier2020MultiHeadAC}}
-
 % Sparsely-Gated MoE > 600B -- significant: 1T weights, but issues --
 \TD{GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding \cite{Lepikhin2020GShardSG}}
 
 
-% multi-task === task relatedness
-\TD{Learning Task Relatedness in Multi-Task Learning for Images in Context \cite{DBLP:journals/corr/abs-1904-03011}}
-
 % 
 \TD{Bag of Tricks for Image Classification with Convolutional Neural Networks \cite{DBLP:journals/corr/abs-1812-01187}}
 
-% TODO: read https://openai.com/blog/deep-double-descent/
-\TD{Deep Double Descent: Where Bigger Models and More Data Hurt \cite{Nakkiran2020DeepDD}}
+
 
 
 % TODO: group convolutions: https://colah.github.io/posts/2014-12-Groups-Convolution/
@@ -73,6 +63,7 @@
 % TODO: index TTA
 \TD{Greedy Policy Search: A Simple Baseline for Learnable Test-Time Augmentation \cite{Molchanov2020GreedyPS} (TTA)}
 
+\TD{Training independent subnetworks for robust prediction \cite{DBLP:journals/corr/abs-2010-06610} --- MIMO, achieve the benefits of ensembled neural networks ``without the multiple forward passes''.}
 
 
 % NOTE: possible paper on hyper parameter optimization
@@ -82,22 +73,10 @@
 \TD{The Hardware Lottery \cite{Hooker2020TheHL}}
 
 
-% RigL -- training sparse networks
-\TD{Rigging the Lottery: Making All Tickets Winners \cite{Evci2019RiggingTL}}
 
-\TD{Perceiver: General Perception with Iterative Attention \cite{Jaegle2021PerceiverGP}}
 \TD{pretraining with \textit{random} images, i.e. not Imagenet --- Self-supervised Pretraining of Visual Features in the Wild \cite{Goyal2021SelfsupervisedPO}}
 
 \TD{RegNet --- Designing Network Design Spaces \cite{Radosavovic2020DesigningND}}
-
-Conncurrent papers released looking to replace attention with MLPs.
-\r{\begin{itemize}[noitemsep,topsep=0pt]
-		\item\TD{ResMLP: Feedforward networks for image classification with data-efficient training \cite{Touvron2021ResMLPFN}}
-		\item \TD{RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition \cite{Ding2021RepMLPRC}}
-		\item \TD{Pay Attention to MLPs \cite{Liu2021PayAT}}
-		\item \TD{Do You Even Need Attention? A Stack of Feed-Forward Layers Does Surprisingly Well on ImageNet \cite{MelasKyriazi2021DoYE}}
-	\end{itemize}
-}
 
 
 
@@ -107,16 +86,10 @@ Conncurrent papers released looking to replace attention with MLPs.
 
 
 
-% consistency in latent space w/without augementations in VAE
-\TD{Consistency Regularization for Variational Auto-Encoders \cite{DBLP:journals/corr/abs-2105-14859}}
-
 
 \TD{Torch.manual\_seed(3407) is all you need: On the influence of random seeds in deep learning architectures for computer vision \cite{Picard2021Torchmanual} ``even if the variance is not very large, it is surprisingly easy to find an outlier that performs much better or much worse than the average''. Shows that pretraining reduces variance, but it is still present. Limitations worth noting, but likely won't chage the high level message (HP are finiky, results can vary)}
 
 \TD{Data and its (dis)contents: A survey of dataset development and use in machine learning research \cite{Paullada2020DataAI} ``Survey the many concerns raised about the way we collect and use data in machine learning and advocate that a more cautious and thorough understanding of data is necessary to address several of the practical and ethical issues of the field'' Bring up legal issues of creating datasets (Montreal data license)}
-
-\TD{Training independent subnetworks for robust prediction \cite{DBLP:journals/corr/abs-2010-06610} --- MIMO, achieve the benefits of ensembled neural networks ``without the multiple forward passes''.}
-
 
 
 
@@ -127,23 +100,10 @@ Conncurrent papers released looking to replace attention with MLPs.
 % TODO: ~show that MoEs and ensembles complementary features and work well together
 \TD{Sparse MoEs meet Efficient Ensembles \cite{Allingham2021SparseMM}}
 
-\TD{NIPS 2016 Tutorial: Generative Adversarial Networks \cite{DBLP:journals/corr/Goodfellow17}}
-
-
-% TODO: capsule networks
-\TD{Dynamic Routing Between Capsules \cite{DBLP:journals/corr/abs-1710-09829}}
-
-
-
 
 % TODO: DenseNet
 \TD{Densely Connected Convolutional Networks \cite{DBLP:journals/corr/HuangLW16a}}
 
-
-
-
-% TODO: meta learning?
-\TD{Learning to learn by gradient descent by gradient descent \cite{DBLP:journals/corr/AndrychowiczDGH16} use a neural network to perform optimization -- could reuse between related tasks?}
 
 
 % TODO: justification of DL concepts mathematically (haven't read this yet...)
@@ -171,9 +131,35 @@ Conncurrent papers released looking to replace attention with MLPs.
 \TD{Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks \cite{DBLP:journals/corr/ZhuPIE17}}
 
 
+% TODO: read https://openai.com/blog/deep-double-descent/
+\TD{Deep Double Descent: Where Bigger Models and More Data Hurt \cite{Nakkiran2020DeepDD}}
+
 \TD{GROKKING: GENERALIZATION BEYOND OVERFIT-TING ON SMALL ALGORITHMIC DATASETS \cite{power2021grokking}}
 
 
 % tf lattice
 \TD{Monotonic Calibrated Interpolated Look-Up Tables \cite{DBLP:journals/corr/GuptaCPVCMM15}}
+
+
+%% vision transformers
+\TD{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale \cite{DBLP:journals/corr/abs-2010-11929}}
+% TODO: still need to read
+\TD{Vision Transformers are Robust Learners \cite{DBLP:journals/corr/abs-2105-07581}}
+
+
+% MLP resurgence
+\TD{Do You Even Need Attention? A \cite{DBLP:journals/corr/abs-2105-02723}}
+\TD{gMLP (Pay Attention to MLPs) \cite{DBLP:journals/corr/abs-2105-08050}}
+\TD{MLP-Mixer: An all-MLP Architecture for Vision \cite{DBLP:journals/corr/abs-2105-01601}}
+\TD{RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition \cite{DBLP:journals/corr/abs-2105-01883}}
+\TD{ResMLP: Feedforward networks for image classification with data-efficient training \cite{DBLP:journals/corr/abs-2105-03404}}
+Conncurrent papers released looking to replace attention with MLPs.
+ \TD{Do You Even Need Attention? A Stack of Feed-Forward Layers Does Surprisingly Well on ImageNet \cite{MelasKyriazi2021DoYE}}
+
+
+
+
+
+% student teacher, transfering attention from one network to another, transfer learning?
+\TD{Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer \cite{DBLP:journals/corr/ZagoruykoK16a}}
 

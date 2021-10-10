@@ -16,6 +16,8 @@
 % https://www.youtube.com/watch?v=HjewNBZz00w
 
 
+\TD{LeNet-5 \cite{lecun1998gradient}}
+
 \r{Convolutions are built upon a lie -- that is we refer to the opperation as a convolution, yet it is in fact a cross-correlation operation since we don't rotate the kernel 180$\deg$. However, it is convention to refer to the operation as a convolution. For more, please see section \ref{conv_vs_cross}}
 
 \r{translational invariance --- a property that relates to how a systems decisions are insensitive to the location of a features within an input. That is, if we're looking for an object or feature, our system shouldn't change if the object is in different locations within the input}
@@ -254,7 +256,8 @@ Introduced in 1997 %\cite{hochreiter1997long}
 
 \section{Capsule Networks}
 
-\TD{TODO}
+% TODO: capsule networks
+\TD{Dynamic Routing Between Capsules \cite{DBLP:journals/corr/abs-1710-09829}}
 
 \section{Attention}
 
@@ -282,6 +285,10 @@ Introduced in 1997 %\cite{hochreiter1997long}
 %\TD{Nice table comparing mechanisms https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html}
 
 \TD{in above post\cite{weng2018attention}: soft vs hard attention and global vs local attention}
+
+% ``heads learn redundant key/query projections'' --> share
+% https://github.com/epfml/collaborative-attention
+\TD{Multi-Head Attention: Collaborate Instead of Concatenate \cite{Cordonnier2020MultiHeadAC}}
 
 \subsection{transformers}
 

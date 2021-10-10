@@ -492,6 +492,7 @@
 \contentsline {subsubsection}{\numberline {20.2.0.4}Pruning mechanism}{161}%
 \contentsline {section}{\numberline {20.3}Topology}{161}%
 \contentsline {subsection}{\numberline {20.3.1}Distillation}{161}%
+\contentsline {paragraph}{\numberline {20.3.1.0.1}Knowledge Transfer}{161}%
 \contentsline {subsection}{\numberline {20.3.2}Tensor Decomposition}{161}%
 \contentsline {subsection}{\numberline {20.3.3}The Lottery Ticket Hypothesis}{161}%
 \contentsline {chapter}{\numberline {21}Training Dynamics}{163}%
