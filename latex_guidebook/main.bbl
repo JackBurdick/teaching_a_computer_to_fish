@@ -82,9 +82,18 @@
   T.~Schaul, and N.~de~Freitas}, {\em Learning to learn by gradient descent by
   gradient descent}, CoRR, abs/1606.04474 (2016).
 
+\bibitem{DBLP:journals/corr/abs-1712-06651}
+{\sc R.~Arandjelovic and A.~Zisserman}, {\em Objects that sound}, CoRR,
+  abs/1712.06651 (2017).
+
 \bibitem{Arjovsky2017WassersteinG}
 {\sc M.~Arjovsky, S.~Chintala, and L.~Bottou}, {\em Wasserstein gan}, ArXiv,
   abs/1701.07875 (2017).
+
+\bibitem{DBLP:journals/corr/abs-1911-05371}
+{\sc Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi}, {\em Self-labelling via
+  simultaneous clustering and representation learning}, CoRR, abs/1911.05371
+  (2019).
 
 \bibitem{Ba2016LayerN}
 {\sc J.~Ba, J.~R. Kiros, and G.~E. Hinton}, {\em Layer normalization}, ArXiv,
@@ -116,6 +125,10 @@
 {\sc Y.~Bengio}, {\em Estimating or propagating gradients through stochastic
   neurons}, CoRR, abs/1305.2982 (2013).
 
+\bibitem{Bingham2021AutoInitAS}
+{\sc G.~Bingham and R.~Miikkulainen}, {\em Autoinit: Analytic signal-preserving
+  weight initialization for neural networks}, ArXiv, abs/2109.08958 (2021).
+
 \bibitem{box1964analysis}
 {\sc G.~E. Box and D.~R. Cox}, {\em An analysis of transformations}, Journal of
   the Royal Statistical Society: Series B (Methodological), 26 (1964),
@@ -129,10 +142,19 @@
 {\sc D.~Britz, A.~Goldie, M.~Luong, and Q.~V. Le}, {\em Massive exploration of
   neural machine translation architectures}, CoRR, abs/1703.03906 (2017).
 
+\bibitem{DBLP:journals/corr/abs-2102-06171}
+{\sc A.~Brock, S.~De, S.~L. Smith, and K.~Simonyan}, {\em High-performance
+  large-scale image recognition without normalization}, CoRR, abs/2102.06171
+  (2021).
+
 \bibitem{bromley1994signature}
 {\sc J.~Bromley, I.~Guyon, Y.~LeCun, E.~S{\"a}ckinger, and R.~Shah}, {\em
   Signature verification using a" siamese" time delay neural network}, in
   Advances in neural information processing systems, 1994, pp.~737--744.
+
+\bibitem{brownlee2021WeightInit}
+{\sc J.~Brownlee}, {\em {Weight Initialization for Deep Learning Neural
+  Networks}}, 02 2021.
 
 \bibitem{Carion2020EndtoEndOD}
 {\sc N.~Carion, F.~Massa, G.~Synnaeve, N.~Usunier, A.~M. Kirillov, and
@@ -142,6 +164,11 @@
 \bibitem{DBLP:journals/corr/CarliniW16a}
 {\sc N.~Carlini and D.~A. Wagner}, {\em Towards evaluating the robustness of
   neural networks}, CoRR, abs/1608.04644 (2016).
+
+\bibitem{DBLP:journals/corr/abs-1905-01278}
+{\sc M.~Caron, P.~Bojanowski, J.~Mairal, and A.~Joulin}, {\em Leveraging
+  large-scale uncurated data for unsupervised pre-training of visual features},
+  CoRR, abs/1905.01278 (2019).
 
 \bibitem{Caron2020UnsupervisedLO}
 {\sc M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin},
@@ -197,6 +224,12 @@
 {\sc F.~Chollet}, {\em Xception: Deep learning with depthwise separable
   convolutions}, CoRR, abs/1610.02357 (2016).
 
+\bibitem{chopra2005learning}
+{\sc S.~Chopra, R.~Hadsell, and Y.~LeCun}, {\em Learning a similarity metric
+  discriminatively, with application to face verification}, in 2005 IEEE
+  Computer Society Conference on Computer Vision and Pattern Recognition
+  (CVPR'05), vol.~1, IEEE, 2005, pp.~539--546.
+
 \bibitem{Chuang2020DebiasedCL}
 {\sc C.-Y. Chuang, J.~A. Robinson, L.~Yen‐Chen, A.~Torralba, and S.~Jegelka},
   {\em Debiased contrastive learning}, 2020.
@@ -249,11 +282,24 @@
 {\sc C.~Doersch}, {\em Tutorial on variational autoencoders}, ArXiv,
   abs/1606.05908 (2016).
 
+\bibitem{DBLP:journals/corr/DoerschGE15}
+{\sc C.~Doersch, A.~Gupta, and A.~A. Efros}, {\em Unsupervised visual
+  representation learning by context prediction}, CoRR, abs/1505.05192 (2015).
+
+\bibitem{DBLP:journals/corr/abs-1708-07860}
+{\sc C.~Doersch and A.~Zisserman}, {\em Multi-task self-supervised visual
+  learning}, CoRR, abs/1708.07860 (2017).
+
 \bibitem{DBLP:journals/corr/abs-2010-11929}
 {\sc A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
   T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit,
   and N.~Houlsby}, {\em An image is worth 16x16 words: Transformers for image
   recognition at scale}, CoRR, abs/2010.11929 (2020).
+
+\bibitem{DBLP:journals/corr/DosovitskiySRB14}
+{\sc A.~Dosovitskiy, J.~T. Springenberg, M.~A. Riedmiller, and T.~Brox}, {\em
+  Discriminative unsupervised feature learning with convolutional neural
+  networks}, CoRR, abs/1406.6909 (2014).
 
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
@@ -282,6 +328,11 @@
 \bibitem{Evci2019RiggingTL}
 {\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
   lottery: Making all tickets winners}, ArXiv, abs/1911.11134 (2019).
+
+\bibitem{DBLP:journals/corr/FernandoBGG16}
+{\sc B.~Fernando, H.~Bilen, E.~Gavves, and S.~Gould}, {\em Self-supervised
+  video representation learning with odd-one-out networks}, CoRR,
+  abs/1611.06646 (2016).
 
 \bibitem{fisher1992statistical}
 {\sc R.~A. Fisher}, {\em Statistical methods for research workers}, in
@@ -316,6 +367,10 @@
 {\sc A.~Gaier and D.~Ha}, {\em Weight agnostic neural networks}, CoRR,
   abs/1906.04358 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1712-04323}
+{\sc C.~Gallicchio and A.~Micheli}, {\em Deep echo state network (deepesn): {A}
+  brief survey}, CoRR, abs/1712.04323 (2017).
+
 \bibitem{garnelo2018conditional}
 {\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
@@ -330,10 +385,24 @@
   and TensorFlow: Concepts, tools, and techniques to build intelligent
   systems}, O'Reilly Media, 2019.
 
+\bibitem{DBLP:journals/corr/abs-1810-12890}
+{\sc G.~Ghiasi, T.~Lin, and Q.~V. Le}, {\em Dropblock: {A} regularization
+  method for convolutional networks}, CoRR, abs/1810.12890 (2018).
+
 \bibitem{Ghorbani2019DermGANSG}
 {\sc A.~Ghorbani, V.~Natarajan, D.~Coz, and Y.~Liu}, {\em Dermgan: Synthetic
   generation of clinical skin images with pathology}, ArXiv, abs/1911.08716
   (2019).
+
+\bibitem{DBLP:journals/corr/abs-1803-07728}
+{\sc S.~Gidaris, P.~Singh, and N.~Komodakis}, {\em Unsupervised representation
+  learning by predicting image rotations}, CoRR, abs/1803.07728 (2018).
+
+\bibitem{DBLP:journals/corr/abs-1905-11286}
+{\sc B.~Ginsburg, P.~Castonguay, O.~Hrinchuk, O.~Kuchaiev, V.~Lavrukhin,
+  R.~Leary, J.~Li, H.~Nguyen, and J.~M. Cohen}, {\em Stochastic gradient
+  methods with layer-wise adaptive moments for training of deep networks},
+  CoRR, abs/1905.11286 (2019).
 
 \bibitem{glorot2010understanding}
 {\sc X.~Glorot and Y.~Bengio}, {\em Understanding the difficulty of training
@@ -428,6 +497,10 @@
   A.~M. Dai, and D.~Tran}, {\em Training independent subnetworks for robust
   prediction}, CoRR, abs/2010.06610 (2020).
 
+\bibitem{Hayou2021RobustPA}
+{\sc S.~Hayou, J.-F. Ton, A.~Doucet, and Y.~W. Teh}, {\em Robust pruning at
+  initialization}, in ICLR, 2021.
+
 \bibitem{DBLP:journals/corr/abs-1911-05722}
 {\sc K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~B. Girshick}, {\em Momentum contrast
   for unsupervised visual representation learning}, CoRR, abs/1911.05722
@@ -451,6 +524,16 @@
 {\sc T.~He, Z.~Zhang, H.~Zhang, Z.~Zhang, J.~Xie, and M.~Li}, {\em Bag of
   tricks for image classification with convolutional neural networks}, CoRR,
   abs/1812.01187 (2018).
+
+\bibitem{Hendrycks2020AugMixAS}
+{\sc D.~Hendrycks, N.~Mu, E.~D. Cubuk, B.~Zoph, J.~Gilmer, and
+  B.~Lakshminarayanan}, {\em Augmix: A simple data processing method to improve
+  robustness and uncertainty}, ArXiv, abs/1912.02781 (2020).
+
+\bibitem{DBLP:journals/corr/abs-2006-08217}
+{\sc B.~Heo, S.~Chun, S.~J. Oh, D.~Han, S.~Yun, Y.~Uh, and J.~Ha}, {\em Slowing
+  down the weight norm increase in momentum-based optimizers}, CoRR,
+  abs/2006.08217 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1811-03233}
 {\sc B.~Heo, M.~Lee, S.~Yun, and J.~Y. Choi}, {\em Knowledge transfer via
@@ -505,6 +588,10 @@
 {\sc G.~Huang, Z.~Liu, and K.~Q. Weinberger}, {\em Densely connected
   convolutional networks}, CoRR, abs/1608.06993 (2016).
 
+\bibitem{DBLP:journals/corr/HuangSLSW16}
+{\sc G.~Huang, Y.~Sun, Z.~Liu, D.~Sedra, and K.~Q. Weinberger}, {\em Deep
+  networks with stochastic depth}, CoRR, abs/1603.09382 (2016).
+
 \bibitem{DBLP:journals/corr/HuangW17a}
 {\sc Z.~Huang and N.~Wang}, {\em Like what you like: Knowledge distill via
   neuron selectivity transfer}, CoRR, abs/1707.01219 (2017).
@@ -523,6 +610,12 @@
   network training by reducing internal covariate shift}, CoRR, abs/1502.03167
   (2015).
 
+\bibitem{jaeger2001echo}
+{\sc H.~Jaeger}, {\em The “echo state” approach to analysing and training
+  recurrent neural networks-with an erratum note}, Bonn, Germany: German
+  National Research Center for Information Technology GMD Technical Report, 148
+  (2001), p.~13.
+
 \bibitem{DBLP:journals/corr/abs-2107-14795}
 {\sc A.~Jaegle, S.~Borgeaud, J.~Alayrac, C.~Doersch, C.~Ionescu, D.~Ding,
   S.~Koppula, D.~Zoran, A.~Brock, E.~Shelhamer, O.~J. H{\'{e}}naff, M.~M.
@@ -539,6 +632,10 @@
 {\sc Z.~Jiang, C.~Zhang, K.~Talwar, and M.~C. Mozer}, {\em Exploring the
   memorization-generalization continuum in deep learning}, arXiv preprint
   arXiv:2002.03206,  (2020).
+
+\bibitem{DBLP:journals/corr/abs-1902-06162}
+{\sc L.~Jing and Y.~Tian}, {\em Self-supervised visual feature learning with
+  deep neural networks: {A} survey}, CoRR, abs/1902.06162 (2019).
 
 \bibitem{Kairouz2019AdvancesAO}
 {\sc P.~Kairouz, H.~B. McMahan, B.~Avent, A.~Bellet, M.~Bennis, A.~N. Bhagoji,
@@ -622,6 +719,10 @@
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
   Mit Press, 2019.
 
+\bibitem{DBLP:journals/corr/abs-1901-09005}
+{\sc A.~Kolesnikov, X.~Zhai, and L.~Beyer}, {\em Revisiting self-supervised
+  visual representation learning}, CoRR, abs/1901.09005 (2019).
+
 \bibitem{DBLP:journals/corr/KoutnikGGS14}
 {\sc J.~Koutn{\'{\i}}k, K.~Greff, F.~J. Gomez, and J.~Schmidhuber}, {\em A
   clockwork {RNN}}, CoRR, abs/1402.3511 (2014).
@@ -645,6 +746,10 @@
 {\sc R.~T. Lange}, {\em The lottery ticket hypothesis: A survey},
   https://roberttlange.github.io/year-archive/posts/2020/06/lottery-ticket-hypothesis/,
    (2020).
+
+\bibitem{DBLP:journals/corr/LarssonMS16}
+{\sc G.~Larsson, M.~Maire, and G.~Shakhnarovich}, {\em Learning representations
+  for automatic colorization}, CoRR, abs/1603.06668 (2016).
 
 \bibitem{DBLP:journals/corr/abs-2010-05113}
 {\sc P.~H. Le{-}Khac, G.~Healy, and A.~F. Smeaton}, {\em Contrastive
@@ -710,6 +815,11 @@
 {\sc H.~Liu, Z.~Dai, D.~R. So, and Q.~V. Le}, {\em Pay attention to mlps},
   CoRR, abs/2105.08050 (2021).
 
+\bibitem{DBLP:journals/corr/abs-1908-03265}
+{\sc L.~Liu, H.~Jiang, P.~He, W.~Chen, X.~Liu, J.~Gao, and J.~Han}, {\em On the
+  variance of the adaptive learning rate and beyond}, CoRR, abs/1908.03265
+  (2019).
+
 \bibitem{DBLP:journals/corr/abs-1803-10704}
 {\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
   with attention}, CoRR, abs/1803.10704 (2018).
@@ -724,6 +834,11 @@
   Self-paced ensemble for highly imbalanced massive data classification}, 2020
   IEEE 36th International Conference on Data Engineering (ICDE),  (2020),
   pp.~841--852.
+
+\bibitem{DBLP:journals/corr/abs-2103-14030}
+{\sc Z.~Liu, Y.~Lin, Y.~Cao, H.~Hu, Y.~Wei, Z.~Zhang, S.~Lin, and B.~Guo}, {\em
+  Swin transformer: Hierarchical vision transformer using shifted windows},
+  CoRR, abs/2103.14030 (2021).
 
 \bibitem{Locatello2020ObjectCentricLW}
 {\sc F.~Locatello, D.~Weissenborn, T.~Unterthiner, A.~Mahendran, G.~Heigold,
@@ -779,6 +894,14 @@
 \bibitem{DBLP:journals/corr/MisraSGH16}
 {\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
   networks for multi-task learning}, CoRR, abs/1604.03539 (2016).
+
+\bibitem{DBLP:journals/corr/abs-1912-01991}
+{\sc I.~Misra and L.~van~der Maaten}, {\em Self-supervised learning of
+  pretext-invariant representations}, CoRR, abs/1912.01991 (2019).
+
+\bibitem{DBLP:journals/corr/MisraZH16}
+{\sc I.~Misra, C.~L. Zitnick, and M.~Hebert}, {\em Unsupervised learning using
+  sequential verification for action recognition}, CoRR, abs/1603.08561 (2016).
 
 \bibitem{DBLP:journals/corr/abs-2104-12871}
 {\sc M.~Mitchell}, {\em Why {AI} is harder than we think}, CoRR, abs/2104.12871
@@ -844,6 +967,11 @@
   uncertainty? evaluating predictive uncertainty under dataset shift}, in
   NeurIPS, 2019.
 
+\bibitem{pal1978computer}
+{\sc S.~Pal, A.~Datta, and D.~D. Majumder}, {\em Computer recognition of vowel
+  sounds using a self-supervised learning algorithm}, J. Anatomical Soc. India,
+  6 (1978), pp.~117--123.
+
 \bibitem{papernot2018deep}
 {\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
   confident, interpretable and robust deep learning}, arXiv preprint
@@ -860,6 +988,11 @@
   Continual lifelong learning with neural networks: {A} review}, CoRR,
   abs/1802.07569 (2018).
 
+\bibitem{Park2019SpecAugmentAS}
+{\sc D.~S. Park, W.~Chan, Y.~Zhang, C.-C. Chiu, B.~Zoph, E.~D. Cubuk, and Q.~V.
+  Le}, {\em Specaugment: A simple data augmentation method for automatic speech
+  recognition}, in INTERSPEECH, 2019.
+
 \bibitem{DBLP:journals/corr/abs-1904-05068}
 {\sc W.~Park, D.~Kim, Y.~Lu, and M.~Cho}, {\em Relational knowledge
   distillation}, CoRR, abs/1904.05068 (2019).
@@ -871,6 +1004,16 @@
 \bibitem{DBLP:journals/corr/abs-1803-10837}
 {\sc N.~Passalis and A.~Tefas}, {\em Probabilistic knowledge transfer for deep
   representation learning}, CoRR, abs/1803.10837 (2018).
+
+\bibitem{DBLP:journals/corr/PathakKDDE16}
+{\sc D.~Pathak, P.~Kr{\"{a}}henb{\"{u}}hl, J.~Donahue, T.~Darrell, and A.~A.
+  Efros}, {\em Context encoders: Feature learning by inpainting}, CoRR,
+  abs/1604.07379 (2016).
+
+\bibitem{DBLP:journals/corr/abs-2104-10350}
+{\sc D.~A. Patterson, J.~Gonzalez, Q.~V. Le, C.~Liang, L.~Munguia,
+  D.~Rothchild, D.~R. So, M.~Texier, and J.~Dean}, {\em Carbon emissions and
+  large neural network training}, CoRR, abs/2104.10350 (2021).
 
 \bibitem{DBLP:journals/corr/abs-2105-07581}
 {\sc S.~Paul and P.~Chen}, {\em Vision transformers are robust learners}, CoRR,
@@ -905,6 +1048,11 @@
 {\sc A.~Power, Y.~Burda, H.~Edwards, I.~Babuschkin, and V.~Misra}, {\em
   Grokking: Generalization beyond overfit-ting on small algorithmic datasets},
   in ICLR MATH-AI Workshop, 2021.
+
+\bibitem{DBLP:journals/corr/abs-1907-07804}
+{\sc S.~Pramanik, P.~Agrawal, and A.~Hussain}, {\em Omninet: {A} unified
+  architecture for multi-modal multi-task learning}, CoRR, abs/1907.07804
+  (2019).
 
 \bibitem{Qi2020DeepIL}
 {\sc H.~Qi, C.~You, X.~Wang, Y.~Ma, and J.~Malik}, {\em Deep isometric learning
@@ -1025,6 +1173,11 @@
   nonlinear dynamics of learning in deep linear neural networks}, CoRR,
   abs/1312.6120 (2013).
 
+\bibitem{schmidhuber1990making}
+{\sc J.~Schmidhuber}, {\em Making the world differentiable: On using
+  self-supervised fully recurrent neual networks for dynamic reinforcement
+  learning and planning in non-stationary environments},  (1990).
+
 \bibitem{schmidhuber1992learning}
 {\sc J.~Schmidhuber}, {\em Learning factorial codes by predictability
   minimization}, Neural computation, 4 (1992), pp.~863--879.
@@ -1052,6 +1205,10 @@
   J.~Dean}, {\em Outrageously large neural networks: The sparsely-gated
   mixture-of-experts layer}, arXiv preprint arXiv:1701.06538,  (2017).
 
+\bibitem{DBLP:journals/corr/abs-1804-04235}
+{\sc N.~Shazeer and M.~Stern}, {\em Adafactor: Adaptive learning rates with
+  sublinear memory cost}, CoRR, abs/1804.04235 (2018).
+
 \bibitem{Shi2020RunAF}
 {\sc H.~Shi, D.~Luo, S.~Tang, J.~Wang, and Y.~Zhuang}, {\em Run away from your
   teacher: Understanding byol by a novel self-supervised approach}, ArXiv,
@@ -1070,6 +1227,10 @@
 \bibitem{DBLP:journals/corr/abs-2105-14859}
 {\sc S.~Sinha and A.~B. Dieng}, {\em Consistency regularization for variational
   auto-encoders}, CoRR, abs/2105.14859 (2021).
+
+\bibitem{DBLP:journals/corr/Smith15a}
+{\sc L.~N. Smith}, {\em No more pesky learning rate guessing games}, CoRR,
+  abs/1506.01186 (2015).
 
 \bibitem{smith2017cyclical}
 {\sc L.~N. Smith}, {\em Cyclical learning rates for training neural networks},
@@ -1131,6 +1292,10 @@
 {\sc Student}, {\em The probable error of a mean}, Biometrika,  (1908),
   pp.~1--25.
 
+\bibitem{DBLP:journals/corr/abs-1909-11825}
+{\sc Y.~Sun, E.~Tzeng, T.~Darrell, and A.~A. Efros}, {\em Unsupervised domain
+  adaptation through self-supervision}, CoRR, abs/1909.11825 (2019).
+
 \bibitem{DBLP:journals/corr/SutskeverVL14}
 {\sc I.~Sutskever, O.~Vinyals, and Q.~V. Le}, {\em Sequence to sequence
   learning with neural networks}, CoRR, abs/1409.3215 (2014).
@@ -1189,6 +1354,10 @@
 {\sc F.~Tung and G.~Mori}, {\em Similarity-preserving knowledge distillation},
   CoRR, abs/1907.09682 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1807-03748}
+{\sc A.~van~den Oord, Y.~Li, and O.~Vinyals}, {\em Representation learning with
+  contrastive predictive coding}, CoRR, abs/1807.03748 (2018).
+
 \bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
 {\sc A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin}, {\em Attention is all you need}, CoRR,
@@ -1233,6 +1402,14 @@
 \bibitem{weng2018attention}
 {\sc L.~Weng}, {\em Attention? attention!}, lilianweng.github.io/lil-log,
   (2018).
+
+\bibitem{weng2019selfsup}
+{\sc L.~"Weng}, {\em "self-supervised representation learning"},
+  "lilianweng.github.io/lil-log",  ("2019").
+
+\bibitem{weng2021contrastive}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em "contrastive
+  representation learning"}, "lilianweng.github.io/lil-log",  ("2021").
 
 \bibitem{wilson2003general}
 {\sc D.~R. Wilson and T.~R. Martinez}, {\em The general inefficiency of batch
@@ -1284,6 +1461,11 @@
   Zemel, and Y.~Bengio}, {\em Show, attend and tell: Neural image caption
   generation with visual attention}, CoRR, abs/1502.03044 (2015).
 
+\bibitem{DBLP:journals/corr/abs-1912-03330}
+{\sc X.~Yan, I.~Misra, A.~Gupta, D.~Ghadiyaram, and D.~Mahajan}, {\em
+  Clusterfit: Improving generalization of visual representations}, CoRR,
+  abs/1912.03330 (2019).
+
 \bibitem{DBLP:journals/corr/YangH16}
 {\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
   learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
@@ -1291,6 +1473,11 @@
 \bibitem{DBLP:journals/corr/YaoCVDD15}
 {\sc K.~Yao, T.~Cohn, K.~Vylomova, K.~Duh, and C.~Dyer}, {\em Depth-gated
   {LSTM}}, CoRR, abs/1508.03790 (2015).
+
+\bibitem{DBLP:journals/corr/abs-2006-00719}
+{\sc Z.~Yao, A.~Gholami, S.~Shen, K.~Keutzer, and M.~W. Mahoney}, {\em
+  {ADAHESSIAN:} an adaptive second order optimizer for machine learning}, CoRR,
+  abs/2006.00719 (2020).
 
 \bibitem{yim2017gift}
 {\sc J.~Yim, D.~Joo, J.~Bae, and J.~Kim}, {\em A gift from knowledge
@@ -1331,6 +1518,11 @@
 {\sc M.~D. Zeiler and R.~Fergus}, {\em Visualizing and understanding
   convolutional networks}, CoRR, abs/1311.2901 (2013).
 
+\bibitem{DBLP:journals/corr/abs-1905-03670}
+{\sc X.~Zhai, A.~Oliver, A.~Kolesnikov, and L.~Beyer}, {\em
+  S\({}^{\mbox{4}}\)l: Self-supervised semi-supervised learning}, CoRR,
+  abs/1905.03670 (2019).
+
 \bibitem{zhang2017mixup}
 {\sc H.~Zhang, M.~Cisse, Y.~N. Dauphin, and D.~Lopez-Paz}, {\em mixup: Beyond
   empirical risk minimization}, arXiv preprint arXiv:1710.09412,  (2017).
@@ -1344,15 +1536,35 @@
   Self-attention generative adversarial networks}, ArXiv, abs/1805.08318
   (2019).
 
+\bibitem{DBLP:journals/corr/abs-1907-08610}
+{\sc M.~R. Zhang, J.~Lucas, G.~E. Hinton, and J.~Ba}, {\em Lookahead optimizer:
+  k steps forward, 1 step back}, CoRR, abs/1907.08610 (2019).
+
+\bibitem{DBLP:journals/corr/abs-1904-11486}
+{\sc R.~Zhang}, {\em Making convolutional networks shift-invariant again},
+  CoRR, abs/1904.11486 (2019).
+
+\bibitem{DBLP:journals/corr/ZhangIE16}
+{\sc R.~Zhang, P.~Isola, and A.~A. Efros}, {\em Colorful image colorization},
+  CoRR, abs/1603.08511 (2016).
+
 \bibitem{DBLP:journals/corr/ZhangY17aa}
 {\sc Y.~Zhang and Q.~Yang}, {\em A survey on multi-task learning}, CoRR,
   abs/1707.08114 (2017).
+
+\bibitem{DBLP:journals/corr/abs-2105-12723}
+{\sc Z.~Zhang, H.~Zhang, L.~Zhao, T.~Chen, and T.~Pfister}, {\em Aggregating
+  nested transformers}, CoRR, abs/2105.12723 (2021).
 
 \bibitem{zhao2019recommending}
 {\sc Z.~Zhao, L.~Hong, L.~Wei, J.~Chen, A.~Nath, S.~Andrews, A.~Kumthekar,
   M.~Sathiamoorthy, X.~Yi, and E.~Chi}, {\em Recommending what video to watch
   next: a multitask ranking system}, in Proceedings of the 13th ACM Conference
   on Recommender Systems, 2019, pp.~43--51.
+
+\bibitem{DBLP:journals/corr/abs-1708-04896}
+{\sc Z.~Zhong, L.~Zheng, G.~Kang, S.~Li, and Y.~Yang}, {\em Random erasing data
+  augmentation}, CoRR, abs/1708.04896 (2017).
 
 \bibitem{DBLP:journals/corr/abs-1905-01067}
 {\sc H.~Zhou, J.~Lan, R.~Liu, and J.~Yosinski}, {\em Deconstructing lottery

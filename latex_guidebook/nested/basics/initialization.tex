@@ -1,10 +1,18 @@
 \section{Initialization}
 
+\TD{initialization --- how we define/set the initial values of parameters}
+
+\TD{largely focused on neuralnetworks initialization}
+
 \TD{TODO: initialization methods and importance}
 
 \TD{figure showing the importance of initialization strategies for different architectures after \textit{n} layers}
 
 \r{motivated partially by reducing the possibility of exploding or vanishing gradients.}
+
+\TD{AutoInit: Analytic Signal-Preserving Weight Initialization for Neural Networks \cite{Bingham2021AutoInitAS}}
+
+\TD{basic idea: initialize with small random values, typically from uniform or gaussian --- more advanced: hueristics based on characteristics --- motivation: }
 
 
 \subsection{Parameter types (the initialization of)}
@@ -33,6 +41,10 @@ Break symmetry -- two things:
 
 \subsection{Strategies}
 
+% TODO: Nice write up: https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/
+% also possibly useful: https://machinelearningmastery.com/why-initialize-a-neural-network-with-random-weights/
+\TD{write up\cite{brownlee2021WeightInit}}
+
 \TD{TODO: strategies overview}
 
 
@@ -43,6 +55,10 @@ Break symmetry -- two things:
 \subsubsection{Glorot or Xavier}
 
 \TD{\cite{glorot2010understanding}}
+
+\r{xavier: derived based on linear activations (which isn't true for modern architectures)}
+
+
 
 \subsubsection{he}
 

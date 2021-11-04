@@ -1,12 +1,110 @@
 \chapter{Self-Supervised Learning (SSL)}
 
-\r{``rebranded unsupervised''?}
 
-\r{learn from data, even without labels present}
+% https://twitter.com/phillip_isola/status/1216902657702617093
+% points out the schmidhuber1990making paper and pal1978computer
+\TD{Possible first occurance\cite{pal1978computer}}
+\TD{Making the World Differentiable\cite{schmidhuber1990making}}
+
+%% possible survey
+\TD{Self-supervised Visual Feature Learning with Deep Neural Networks  \cite{DBLP:journals/corr/abs-1902-06162}}
 
 \TD{Evaluating Self-Supervised Pretraining Without Using Labels \cite{Reed2020EvaluatingSP}}
 
+\TD{Revisiting Self-Supervised Visual Representation Learning \cite{DBLP:journals/corr/abs-1901-09005}}
+
+
+\r{``rebranded unsupervised''?}
+
+\r{learn from data, even without explicit labels present}
+
+\r{motivation --- labels are expensive, unlabeled data is vast}
+
+\TD{pretext task or auxiliary task and downstream task}
+
+\r{Nice write up\cite{weng2019selfsup}}
+
+% combining supervised and unsupervised -- link to multi-task
+\TD{S4L: Self-Supervised Semi-Supervised Learning \cite{DBLP:journals/corr/abs-1905-03670}}
+\TD{Unsupervised Domain Adaptation through Self-Supervision \cite{DBLP:journals/corr/abs-1909-11825}}
+
+\section{Pretext Tasks}
+
+%%%%%
+% TODO: taxonomy/list of examples
+
+\TD{section for listed ``category'' along with papers that use effectively}
+
+\r{\begin{itemize}[noitemsep,topsep=0pt]
+	\item relative positioning --- \TD{Unsupervised Visual Representation Learning by Context Prediction \cite{DBLP:journals/corr/DoerschGE15}}
+	\item Colorization --- \TD{Colorful Image Colorization \cite{DBLP:journals/corr/ZhangIE16}}, \TD{Learning Representations for Automatic Colorization \cite{DBLP:journals/corr/LarssonMS16}}
+	\item Perturb Images --- \TD{Discriminative Unsupervised Feature Learning with Convolutional Neural Networks \cite{DBLP:journals/corr/DosovitskiySRB14}}
+	\item Image transformations --- \TD{Unsupervised Representation Learning by Predicting Image Rotations \cite{DBLP:journals/corr/abs-1803-07728}}
+	\item Video, predict valid sequence --- \TD{Shuffle and Learn: Unsupervised Learning using Sequential Verification for Action Recognition \cite{DBLP:journals/corr/MisraZH16}}, \TD{Self-Supervised Video Representation Learning With Odd-One-Out Networks \cite{DBLP:journals/corr/FernandoBGG16}}
+	\item Image Inpainting --- \TD{Context Encoders: Feature Learning by Inpainting \cite{DBLP:journals/corr/PathakKDDE16}}
+\end{itemize}}
+
 %% contrastive losses
+
+\section{Contrastive Learning}
+
+\TD{nice write up\cite{weng2021contrastive}}
+
+\TD{Representation Learning with Contrastive Predictive Coding --- CPC \cite{DBLP:journals/corr/abs-1807-03748}}
+
+\TD{instance discrimination}
+
+\TD{Momentum Contrast for Unsupervised Visual Representation Learning \cite{DBLP:journals/corr/abs-1911-05722}}
+
+\TD{Moco V2 --- Improved Baselines with Momentum Contrastive Learning \cite{Chen2020ImprovedBW}}
+
+\TD{PIRL --- Self-Supervised Learning of Pretext-Invariant Representations \cite{DBLP:journals/corr/abs-1912-01991}}
+
+
+\TD{Barlow Twins: Self-Supervised Learning via Redundancy Reduction [cross-correlation matrix loss] \cite{Zbontar2021BarlowTS}}
+
+\subsection{Explicit Contrastive Methods}
+
+\subsection{``Non-Contrastive'' Methods}
+
+
+
+\subsubsection{Cluster}
+
+\TD{ClusterFit: Improving Generalization of Visual Representations \cite{DBLP:journals/corr/abs-1912-03330}}
+
+\TD{(DeeperCluster) Leveraging Large-Scale Uncurated Data for Unsupervised Pre-training of Visual Features \cite{DBLP:journals/corr/abs-1905-01278}}
+
+\TD{SWAV paper ---  Unsupervised Learning of Visual Features by Contrasting Cluster Assignments \cite{Caron2020UnsupervisedLO}}
+
+\TD{SeLA --- Self-labelling via simultaneous clustering and representation learning \cite{DBLP:journals/corr/abs-1911-05371}}
+
+\subsubsection{Distillation}
+
+\TD{Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning \cite{Grill2020BootstrapYO}}
+% NOTE: I don't understand why RAFT hasn't received more attention, this seems like a very good idea
+\TD{Run Away From your Teacher: Understanding BYOL by a Novel Self-Supervised Approach \cite{Shi2020RunAF}}
+
+
+\TD{SimSiam paper [stop-gradient] --- Exploring Simple Siamese Representation Learning \cite{Chen2020ExploringSS}}
+
+
+
+% CPC
+% SIMCLR
+% MOCO
+% SWAV
+% BYOL
+% SIMSIAM --> 
+
+
+%%%%%%%%%%%
+
+% TODO: Super blog. https://lilianweng.github.io/lil-log/2021/05/31/contrastive-representation-learning.html
+% cite this blog
+
+%TODO: read this paper
+\TD{Learning a similarity metric discriminatively\cite{chopra2005learning}}
 
 % TODO: this paper likely belongs elsewhere
 \TD{Siamese networks \cite{bromley1994signature}}
@@ -19,21 +117,9 @@
 
 \TD{Contrastive Representation Learning: A \cite{DBLP:journals/corr/abs-2010-05113}}
 
-\TD{Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning \cite{Grill2020BootstrapYO}}
-
-% NOTE: I don't understand why RAFT hasn't received more attention, this seems like a very good idea
-\TD{Run Away From your Teacher: Understanding BYOL by a Novel Self-Supervised Approach \cite{Shi2020RunAF}}
-
-\TD{SWAV paper ---  Unsupervised Learning of Visual Features by Contrasting Cluster Assignments \cite{Caron2020UnsupervisedLO}}
-
-\TD{SimSiam paper [stop-gradient] --- Exploring Simple Siamese Representation Learning \cite{Chen2020ExploringSS}}
-
-\TD{Barlow Twins: Self-Supervised Learning via Redundancy Reduction [cross-correlation matrix loss] \cite{Zbontar2021BarlowTS}}
-
-\TD{Momentum Contrast for Unsupervised Visual Representation Learning \cite{DBLP:journals/corr/abs-1911-05722}}
 
 \TD{SimCLR --- A Simple Framework for Contrastive Learning of Visual Representations [https://github.com/google-research/simclr] \cite{Chen2020ASF}}
-
-\TD{Moco V2 --- Improved Baselines with Momentum Contrastive Learning \cite{Chen2020ImprovedBW}}
-
 \TD{SimCLRv2 --- Big Self-Supervised Models are Strong Semi-Supervised Learners [https://github.com/google-research/simclr] \cite{Chen2020BigSM}}
+
+
+\TD{Multi-task Self-Supervised Visual Learning \cite{DBLP:journals/corr/abs-1708-07860}}

@@ -35,9 +35,13 @@
 % TODO: this section may not belong here - may belong in an "advanced section"
 
 %%%% learning rates
-\textcolor{blue}{cyclic learning rate~\cite{smith2017cyclical}}
+\r{cyclic learning rate~\cite{smith2017cyclical}}
 
-\textcolor{blue}{sgdr: stochastic gradient descent with restarts~\cite{loshchilov2016sgdr} (SGDR). The learning rate is decreased from the max value along a curve (cosine, shown in Eq.\ref{eq:sgdr_def}, where $n_{max}^i$ and $n_{min}^i$ are ranges for the learning rate, $T_i$ represents epochs, $T_{cur}$ is how many epochs have been performed since the last restart). The authors also suggest making each next cycle longer than the previous cycle by a constant $T_mul$ may be beneficial.}
+\r{Cosine --- sgdr: stochastic gradient descent with restarts~\cite{loshchilov2016sgdr} (SGDR). The learning rate is decreased from the max value along a curve (cosine, shown in Eq.\ref{eq:sgdr_def}, where $n_{max}^i$ and $n_{min}^i$ are ranges for the learning rate, $T_i$ represents epochs, $T_{cur}$ is how many epochs have been performed since the last restart). The authors also suggest making each next cycle longer than the previous cycle by a constant $T_mul$ may be beneficial.}
+
+\TD{Triangular --- No More Pesky Learning Rate Guessing Games \cite{DBLP:journals/corr/Smith15a}}
+
+\TD{Secion 3.2 in SpecAugment describe a schedule \cite{Park2019SpecAugmentAS}}
 
 \r{LR annealing, Cosine anealing ($1/2$ cosine curve)}
 
@@ -50,7 +54,7 @@
 
 \subsubsection{Batch size}
 
-\textcolor{green}{TODO: batch size overview}
+\TD{TODO: batch size overview}
 
 \r{anywhere from a single instance to the entire training set size.}
 

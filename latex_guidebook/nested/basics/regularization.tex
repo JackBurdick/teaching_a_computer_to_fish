@@ -146,6 +146,12 @@
 
 \r{This applies the same principal as outlined above, only the scaling occurs at training time rather that at test time. That is, during training, any neuron whose activation was not turned off, has the output divided by the dropout rate before being propagation to the next layer.  This way, at test time, no scaling is required.}
 
+% helps learn ``multiple paths''/simulates ensembles
+\TD{link to ensemble section}
+
+\subsubsection{Others}
+
+\TD{``during training, for each mini-batch, randomly drop a subset of layers and bypass them with the identity function'' --- Deep Networks with Stochastic Depth \cite{DBLP:journals/corr/HuangSLSW16}}
 
 \TD{DropConnect~\cite{wan2013regularization} is similar to dropout, except that individual weights are disabled, not entire individual nodes and can be considered a generalization of dropout.}
 
@@ -154,11 +160,13 @@
 % `drop block''?
 \TD{investigate more structured dropout.}
 
-% helps learn ``multiple paths''/simulates ensembles
+
+\TD{structured --- ``contiguous region of a feature map are dropped together'' DropBlock  \cite{DBLP:journals/corr/abs-1810-12890}}
+
 
 \TD{alpha dropout\cite{DBLP:journals/corr/KlambauerUMH17}}
 
-\TD{link to ensemble section}
+
 
 \subsection{Parameter Regularization}
 

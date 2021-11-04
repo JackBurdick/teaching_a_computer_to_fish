@@ -28,9 +28,10 @@ A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
-Reallocated field_info (elt_size=4) to 11739 items from 5000.
+Reallocated field_info (elt_size=4) to 12820 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--to sort, need author or key in cs231n
 Warning--to sort, need author or key in cloudHW_amazon_aws
 Warning--to sort, need author or key in cloudHW_floydhub
@@ -48,47 +49,48 @@ Warning--empty booktitle in Frankle2020PruningNN
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty journal in mangalam2019deep
 Warning--empty booktitle in Reed2020EvaluatingSP
+Warning--empty journal in schmidhuber1990making
 Warning--empty journal in tangcontrol
 Warning--empty year in tangcontrol
-You've used 293 entries,
+You've used 340 entries,
             2030 wiz_defined-function locations,
-            1963 strings with 60594 characters,
-and the built_in function-call counts, 95420 in all, are:
-= -- 7968
-> -- 6784
+            2199 strings with 69868 characters,
+and the built_in function-call counts, 108956 in all, are:
+= -- 9065
+> -- 7775
 < -- 0
-+ -- 2708
-- -- 2385
-* -- 8599
-:= -- 16438
-add.period$ -- 309
-call.type$ -- 293
-change.case$ -- 2065
++ -- 3099
+- -- 2728
+* -- 9854
+:= -- 18863
+add.period$ -- 356
+call.type$ -- 340
+change.case$ -- 2378
 chr.to.int$ -- 0
-cite$ -- 312
-duplicate$ -- 3786
-empty$ -- 5891
-format.name$ -- 2385
-if$ -- 18481
+cite$ -- 360
+duplicate$ -- 4331
+empty$ -- 6710
+format.name$ -- 2728
+if$ -- 21024
 int.to.chr$ -- 0
-int.to.str$ -- 293
-missing$ -- 290
-newline$ -- 898
-num.names$ -- 566
-pop$ -- 2066
+int.to.str$ -- 340
+missing$ -- 336
+newline$ -- 1039
+num.names$ -- 659
+pop$ -- 2352
 preamble$ -- 1
-purify$ -- 1778
+purify$ -- 2044
 quote$ -- 0
-skip$ -- 2385
+skip$ -- 2703
 stack$ -- 0
-substring$ -- 3152
-swap$ -- 1000
+substring$ -- 3456
+swap$ -- 1113
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1160
-warning$ -- 19
-while$ -- 710
-width$ -- 296
-write$ -- 2402
-(There were 19 warnings)
+type$ -- 1348
+warning$ -- 20
+while$ -- 810
+width$ -- 343
+write$ -- 2781
+(There were 20 warnings)
