@@ -28,7 +28,7 @@ A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
-Reallocated field_info (elt_size=4) to 12820 items from 5000.
+Reallocated field_info (elt_size=4) to 13119 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -52,45 +52,45 @@ Warning--empty booktitle in Reed2020EvaluatingSP
 Warning--empty journal in schmidhuber1990making
 Warning--empty journal in tangcontrol
 Warning--empty year in tangcontrol
-You've used 340 entries,
+You've used 353 entries,
             2030 wiz_defined-function locations,
-            2199 strings with 69868 characters,
-and the built_in function-call counts, 108956 in all, are:
-= -- 9065
-> -- 7775
+            2261 strings with 72579 characters,
+and the built_in function-call counts, 113336 in all, are:
+= -- 9418
+> -- 8129
 < -- 0
-+ -- 3099
-- -- 2728
-* -- 9854
-:= -- 18863
-add.period$ -- 356
-call.type$ -- 340
-change.case$ -- 2378
++ -- 3241
+- -- 2855
+* -- 10270
+:= -- 19638
+add.period$ -- 369
+call.type$ -- 353
+change.case$ -- 2482
 chr.to.int$ -- 0
-cite$ -- 360
-duplicate$ -- 4331
-empty$ -- 6710
-format.name$ -- 2728
-if$ -- 21024
+cite$ -- 373
+duplicate$ -- 4491
+empty$ -- 6955
+format.name$ -- 2855
+if$ -- 21848
 int.to.chr$ -- 0
-int.to.str$ -- 340
-missing$ -- 336
-newline$ -- 1039
-num.names$ -- 659
-pop$ -- 2352
+int.to.str$ -- 353
+missing$ -- 349
+newline$ -- 1078
+num.names$ -- 684
+pop$ -- 2452
 preamble$ -- 1
-purify$ -- 2044
+purify$ -- 2135
 quote$ -- 0
-skip$ -- 2703
+skip$ -- 2796
 stack$ -- 0
-substring$ -- 3456
-swap$ -- 1113
+substring$ -- 3563
+swap$ -- 1148
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1348
+type$ -- 1400
 warning$ -- 20
-while$ -- 810
-width$ -- 343
-write$ -- 2781
+while$ -- 838
+width$ -- 356
+write$ -- 2886
 (There were 20 warnings)

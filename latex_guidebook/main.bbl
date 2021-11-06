@@ -358,6 +358,11 @@
 {\sc J.~Frankle, D.~J. Schwab, and A.~S. Morcos}, {\em The early phase of
   neural network training}, ArXiv, abs/2002.10365 (2020).
 
+\bibitem{DBLP:journals/corr/abs-2003-00152}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Training batchnorm
+  and only batchnorm: On the expressive power of random features in cnns},
+  CoRR, abs/2003.00152 (2020).
+
 \bibitem{fukushima1982neocognitron}
 {\sc K.~Fukushima and S.~Miyake}, {\em Neocognitron: A self-organizing neural
   network model for a mechanism of visual pattern recognition}, in Competition
@@ -802,6 +807,10 @@
 {\sc S.~Lim, I.~Kim, T.~Kim, C.~Kim, and S.~Kim}, {\em Fast autoaugment}, arXiv
   preprint arXiv:1905.00397,  (2019).
 
+\bibitem{Lin2020DTLETDT}
+{\sc J.~Lin, Q.~Wang, R.~K. Ward, and Z.~J. Wang}, {\em Dt-let: Deep transfer
+  learning by exploring where to transfer}, ArXiv, abs/1809.08541 (2020).
+
 \bibitem{DBLP:journals/corr/abs-1708-02002}
 {\sc T.~Lin, P.~Goyal, R.~B. Girshick, K.~He, and P.~Doll{\'{a}}r}, {\em Focal
   loss for dense object detection}, CoRR, abs/1708.02002 (2017).
@@ -810,6 +819,10 @@
 {\sc S.~Linnainmaa}, {\em The representation of the cumulative rounding error
   of an algorithm as a taylor expansion of the local rounding errors}, Master's
   Thesis (in Finnish), Univ. Helsinki,  (1970), pp.~6--7.
+
+\bibitem{DBLP:journals/corr/abs-2004-02967}
+{\sc H.~Liu, A.~Brock, K.~Simonyan, and Q.~V. Le}, {\em Evolving
+  normalization-activation layers}, CoRR, abs/2004.02967 (2020).
 
 \bibitem{DBLP:journals/corr/abs-2105-08050}
 {\sc H.~Liu, Z.~Dai, D.~R. So, and Q.~V. Le}, {\em Pay attention to mlps},
@@ -961,6 +974,12 @@
 {\sc S.~I. Nikolenko}, {\em Synthetic data for deep learning}, ArXiv,
   abs/1909.11512 (2019).
 
+\bibitem{oquab2014learning}
+{\sc M.~Oquab, L.~Bottou, I.~Laptev, and J.~Sivic}, {\em Learning and
+  transferring mid-level image representations using convolutional neural
+  networks}, in Proceedings of the IEEE conference on computer vision and
+  pattern recognition, 2014, pp.~1717--1724.
+
 \bibitem{Ovadia2019CanYT}
 {\sc Y.~Ovadia, E.~Fertig, J.~Ren, Z.~Nado, D.~Sculley, S.~Nowozin, J.~V.
   Dillon, B.~Lakshminarayanan, and J.~Snoek}, {\em Can you trust your model's
@@ -1092,6 +1111,11 @@
   Synthetic petri dish: A novel surrogate model for rapid architecture search},
   arXiv preprint arXiv:2005.13092,  (2020).
 
+\bibitem{DBLP:journals/corr/RazavianASC14}
+{\sc A.~S. Razavian, H.~Azizpour, J.~Sullivan, and S.~Carlsson}, {\em {CNN}
+  features off-the-shelf: an astounding baseline for recognition}, CoRR,
+  abs/1403.6382 (2014).
+
 \bibitem{reddi2019convergence}
 {\sc S.~J. Reddi, S.~Kale, and S.~Kumar}, {\em On the convergence of adam and
   beyond}, arXiv preprint arXiv:1904.09237,  (2019).
@@ -1117,6 +1141,11 @@
 \bibitem{Renda2020ComparingRA}
 {\sc A.~Renda, J.~Frankle, and M.~Carbin}, {\em Comparing rewinding and
   fine-tuning in neural network pruning}, ArXiv, abs/2003.02389 (2020).
+
+\bibitem{DBLP:journals/corr/abs-1904-04334}
+{\sc S.~Rezaei and X.~Liu}, {\em A target-agnostic attack on deep models:
+  Exploiting security vulnerabilities of transfer learning}, CoRR,
+  abs/1904.04334 (2019).
 
 \bibitem{Romero2015FitNetsHF}
 {\sc A.~Romero, N.~Ballas, S.~E. Kahou, A.~Chassang, C.~Gatta, and Y.~Bengio},
@@ -1195,6 +1224,11 @@
 {\sc R.~Sennrich, B.~Haddow, and A.~Birch}, {\em Improving neural machine
   translation models with monolingual data}, arXiv preprint arXiv:1511.06709,
   (2015).
+
+\bibitem{DBLP:journals/corr/abs-1905-08232}
+{\sc A.~Shafahi, P.~Saadatpanah, C.~Zhu, A.~Ghiasi, C.~Studer, D.~W. Jacobs,
+  and T.~Goldstein}, {\em Adversarially robust transfer learning}, CoRR,
+  abs/1905.08232 (2019).
 
 \bibitem{shannon1948mathematical}
 {\sc C.~E. Shannon}, {\em A mathematical theory of communication}, The Bell
@@ -1316,6 +1350,10 @@
   Goodfellow, and R.~Fergus}, {\em Intriguing properties of neural networks},
   CoRR, abs/1312.6199 (2014).
 
+\bibitem{DBLP:journals/corr/abs-1808-01974}
+{\sc C.~Tan, F.~Sun, T.~Kong, W.~Zhang, C.~Yang, and C.~Liu}, {\em A survey on
+  deep transfer learning}, CoRR, abs/1808.01974 (2018).
+
 \bibitem{Tanaka2020PruningNN}
 {\sc H.~Tanaka, D.~Kunin, D.~L.~K. Yamins, and S.~Ganguli}, {\em Pruning neural
   networks without any data by iteratively conserving synaptic flow}, ArXiv,
@@ -1386,6 +1424,16 @@
   Regularization of neural networks using dropconnect}, in International
   conference on machine learning, PMLR, 2013, pp.~1058--1066.
 
+\bibitem{Wang2021AugMaxAC}
+{\sc H.~Wang, C.~Xiao, J.~Kossaifi, Z.~Yu, A.~Anandkumar, and Z.~Wang}, {\em
+  Augmax: Adversarial composition of random augmentations for robust training},
+  ArXiv, abs/2110.13771 (2021).
+
+\bibitem{wang2019pay}
+{\sc K.~Wang, X.~Gao, Y.~Zhao, X.~Li, D.~Dou, and C.-Z. Xu}, {\em Pay attention
+  to features, transfer learn faster cnns}, in International Conference on
+  Learning Representations, 2019.
+
 \bibitem{Wang2020BayesianOF}
 {\sc L.~Wang, F.~Dernoncourt, and T.~Bui}, {\em Bayesian optimization for
   selecting efficient machine learning models}, ArXiv, abs/2008.00386 (2020).
@@ -1420,6 +1468,11 @@
 {\sc D.~H. Wolpert, W.~G. Macready, et~al.}, {\em No free lunch theorems for
   optimization}, IEEE transactions on evolutionary computation, 1 (1997),
   pp.~67--82.
+
+\bibitem{Wortsman2021RobustFO}
+{\sc M.~Wortsman, G.~Ilharco, M.~Li, J.~W. Kim, H.~Hajishirzi, A.~Farhadi,
+  H.~Namkoong, and L.~Schmidt}, {\em Robust fine-tuning of zero-shot models},
+  ArXiv, abs/2109.01903 (2021).
 
 \bibitem{Wortsman2020SupermasksIS}
 {\sc M.~Wortsman, V.~Ramanujan, R.~Liu, A.~Kembhavi, M.~Rastegari, J.~Yosinski,
@@ -1485,6 +1538,10 @@
   in Proceedings of the IEEE Conference on Computer Vision and Pattern
   Recognition, 2017, pp.~4133--4141.
 
+\bibitem{DBLP:journals/corr/YosinskiCBL14}
+{\sc J.~Yosinski, J.~Clune, Y.~Bengio, and H.~Lipson}, {\em How transferable
+  are features in deep neural networks?}, CoRR, abs/1411.1792 (2014).
+
 \bibitem{You2020DrawingET}
 {\sc H.~You, C.~Li, P.~Xu, Y.~Fu, Y.~Wang, X.~Chen, Y.~Lin, Z.~Wang, and
   R.~Baraniuk}, {\em Drawing early-bird tickets: Towards more efficient
@@ -1535,6 +1592,11 @@
 {\sc H.~Zhang, I.~J. Goodfellow, D.~N. Metaxas, and A.~Odena}, {\em
   Self-attention generative adversarial networks}, ArXiv, abs/1805.08318
   (2019).
+
+\bibitem{DBLP:journals/corr/abs-2002-11242}
+{\sc J.~Zhang, X.~Xu, B.~Han, G.~Niu, L.~Cui, M.~Sugiyama, and M.~S.
+  Kankanhalli}, {\em Attacks which do not kill training make adversarial
+  learning stronger}, CoRR, abs/2002.11242 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1907-08610}
 {\sc M.~R. Zhang, J.~Lucas, G.~E. Hinton, and J.~Ba}, {\em Lookahead optimizer:

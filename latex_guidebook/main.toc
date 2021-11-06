@@ -281,12 +281,13 @@
 \contentsline {subsection}{\numberline {10.3.4}Ensemble Methods}{90}%
 \contentsline {subsection}{\numberline {10.3.5}Adversarial Training}{90}%
 \contentsline {subsection}{\numberline {10.3.6}Transfer Learning}{90}%
-\contentsline {subsubsection}{\numberline {10.3.6.1}Normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.6.1.1}Instance normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.6.1.2}Layer normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.6.1.3}Batch normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.6.1.4}Group normalization}{92}%
-\contentsline {section}{\numberline {10.4}Output regularization}{92}%
+\contentsline {subsubsection}{\numberline {10.3.6.1}Potential downsides of TL}{91}%
+\contentsline {subsection}{\numberline {10.3.7}Normalization}{91}%
+\contentsline {paragraph}{\numberline {10.3.7.0.1}Instance normalization}{91}%
+\contentsline {paragraph}{\numberline {10.3.7.0.2}Layer normalization}{91}%
+\contentsline {paragraph}{\numberline {10.3.7.0.3}Batch normalization}{92}%
+\contentsline {paragraph}{\numberline {10.3.7.0.4}Group normalization}{93}%
+\contentsline {section}{\numberline {10.4}Output regularization}{93}%
 \contentsline {chapter}{\numberline {11}Distributed Methods}{95}%
 \contentsline {section}{\numberline {11.1}Data Parallelism}{95}%
 \contentsline {section}{\numberline {11.2}Model Parallelism}{95}%
@@ -635,7 +636,7 @@
 \contentsline {chapter}{\numberline {44}Augmentation Techniques}{261}%
 \contentsline {section}{\numberline {44.1}Data Imbalance or Unbalanced Data}{262}%
 \contentsline {subsection}{\numberline {44.1.1}Methods}{262}%
-\contentsline {subsubsection}{\numberline {44.1.1.1}Data}{262}%
+\contentsline {subsubsection}{\numberline {44.1.1.1}Data}{263}%
 \contentsline {subsubsection}{\numberline {44.1.1.2}Model}{263}%
 \contentsline {subsubsection}{\numberline {44.1.1.3}Post processing}{263}%
 \contentsline {subsection}{\numberline {44.1.2}Evaluation}{263}%
