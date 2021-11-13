@@ -669,6 +669,13 @@
   are rnns: Fast autoregressive transformers with linear attention}, ArXiv,
   abs/2006.16236 (2020).
 
+\bibitem{DBLP:journals/corr/abs-2010-02013}
+{\sc K.~Katsiapis, A.~Karmarkar, A.~Altay, A.~Zaks, N.~Polyzotis, A.~Ramesh,
+  B.~Mathes, G.~Vasudevan, I.~Giannoumis, J.~Wilkiewicz, J.~Simsa, J.~Hong,
+  M.~Trott, N.~Lutz, P.~A. Dournov, R.~Crowe, S.~Sirajuddin, T.~B. Warkentin,
+  and Z.~Li}, {\em Towards {ML} engineering: {A} brief history of tensorflow
+  extended {(TFX)}}, CoRR, abs/2010.02013 (2020).
+
 \bibitem{kaya2019deep}
 {\sc M.~Kaya and H.~{\c{S}}. Bilge}, {\em Deep metric learning: A survey},
   Symmetry, 11 (2019), p.~1066.
@@ -965,6 +972,11 @@
   {\em Deep double descent: Where bigger models and more data hurt}, ArXiv,
   abs/1912.02292 (2020).
 
+\bibitem{Narayanaswamy2017LearningDR}
+{\sc S.~Narayanaswamy, B.~Paige, J.-W. van~de Meent, A.~Desmaison, N.~D.
+  Goodman, P.~Kohli, F.~D. Wood, and P.~H.~S. Torr}, {\em Learning disentangled
+  representations with semi-supervised deep generative models}, in NIPS, 2017.
+
 \bibitem{DBLP:journals/corr/NguyenYC14}
 {\sc A.~M. Nguyen, J.~Yosinski, and J.~Clune}, {\em Deep neural networks are
   easily fooled: High confidence predictions for unrecognizable images}, CoRR,
@@ -990,6 +1002,10 @@
 {\sc S.~Pal, A.~Datta, and D.~D. Majumder}, {\em Computer recognition of vowel
   sounds using a self-supervised learning algorithm}, J. Anatomical Soc. India,
   6 (1978), pp.~117--123.
+
+\bibitem{DBLP:journals/corr/abs-2011-09926}
+{\sc A.~Paleyes, R.~Urma, and N.~D. Lawrence}, {\em Challenges in deploying
+  machine learning: a survey of case studies}, CoRR, abs/2011.09926 (2020).
 
 \bibitem{papernot2018deep}
 {\sc N.~Papernot and P.~McDaniel}, {\em Deep k-nearest neighbors: Towards
@@ -1214,6 +1230,12 @@
 \bibitem{DBLP:journals/corr/SchroffKP15}
 {\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
   embedding for face recognition and clustering}, CoRR, abs/1503.03832 (2015).
+
+\bibitem{sculley2015hidden}
+{\sc D.~Sculley, G.~Holt, D.~Golovin, E.~Davydov, T.~Phillips, D.~Ebner,
+  V.~Chaudhary, M.~Young, J.-F. Crespo, and D.~Dennison}, {\em Hidden technical
+  debt in machine learning systems}, Advances in neural information processing
+  systems, 28 (2015), pp.~2503--2511.
 
 \bibitem{DBLP:journals/corr/SelvarajuDVCPB16}
 {\sc R.~R. Selvaraju, A.~Das, R.~Vedantam, M.~Cogswell, D.~Parikh, and
