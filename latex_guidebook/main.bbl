@@ -938,6 +938,12 @@
   learning}, IEEE transactions on pattern analysis and machine intelligence, 41
   (2018), pp.~1979--1993.
 
+\bibitem{mnih2015human}
+{\sc V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~A. Rusu, J.~Veness, M.~G.
+  Bellemare, A.~Graves, M.~Riedmiller, A.~K. Fidjeland, G.~Ostrovski, et~al.},
+  {\em Human-level control through deep reinforcement learning}, nature, 518
+  (2015), pp.~529--533.
+
 \bibitem{Molchanov2020GreedyPS}
 {\sc D.~Molchanov, A.~Lyzhov, Y.~Molchanova, A.~Ashukha, and D.~P. Vetrov},
   {\em Greedy policy search: A simple baseline for learnable test-time
@@ -1163,6 +1169,11 @@
   Exploiting security vulnerabilities of transfer learning}, CoRR,
   abs/1904.04334 (2019).
 
+\bibitem{riedmiller2005neural}
+{\sc M.~Riedmiller}, {\em Neural fitted q iteration--first experiences with a
+  data efficient neural reinforcement learning method}, in European conference
+  on machine learning, Springer, 2005, pp.~317--328.
+
 \bibitem{Romero2015FitNetsHF}
 {\sc A.~Romero, N.~Ballas, S.~E. Kahou, A.~Chassang, C.~Gatta, and Y.~Bengio},
   {\em Fitnets: Hints for thin deep nets}, CoRR, abs/1412.6550 (2015).
@@ -1217,6 +1228,10 @@
 {\sc A.~M. Saxe, J.~L. McClelland, and S.~Ganguli}, {\em Exact solutions to the
   nonlinear dynamics of learning in deep linear neural networks}, CoRR,
   abs/1312.6120 (2013).
+
+\bibitem{Schaul2016PrioritizedER}
+{\sc T.~Schaul, J.~Quan, I.~Antonoglou, and D.~Silver}, {\em Prioritized
+  experience replay}, CoRR, abs/1511.05952 (2016).
 
 \bibitem{schmidhuber1990making}
 {\sc J.~Schmidhuber}, {\em Making the world differentiable: On using
@@ -1418,6 +1433,10 @@
 {\sc A.~van~den Oord, Y.~Li, and O.~Vinyals}, {\em Representation learning with
   contrastive predictive coding}, CoRR, abs/1807.03748 (2018).
 
+\bibitem{DBLP:journals/corr/HasseltGS15}
+{\sc H.~van Hasselt, A.~Guez, and D.~Silver}, {\em Deep reinforcement learning
+  with double q-learning}, CoRR, abs/1509.06461 (2015).
+
 \bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
 {\sc A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin}, {\em Attention is all you need}, CoRR,
@@ -1468,6 +1487,10 @@
 \bibitem{DBLP:journals/corr/abs-1711-07971}
 {\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural
   networks}, CoRR, abs/1711.07971 (2017).
+
+\bibitem{DBLP:journals/corr/WangFL15}
+{\sc Z.~Wang, N.~de~Freitas, and M.~Lanctot}, {\em Dueling network
+  architectures for deep reinforcement learning}, CoRR, abs/1511.06581 (2015).
 
 \bibitem{weng2018attention}
 {\sc L.~Weng}, {\em Attention? attention!}, lilianweng.github.io/lil-log,

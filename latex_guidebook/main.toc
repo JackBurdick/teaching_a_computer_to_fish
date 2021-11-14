@@ -563,95 +563,96 @@
 \contentsline {subsubsection}{\numberline {30.2.2.2}Distillation}{202}%
 \contentsline {part}{VIII\hspace {1em}Reinforcement}{205}%
 \contentsline {chapter}{\numberline {31}Reinforcement Learning}{207}%
-\contentsline {part}{IX\hspace {1em}Interpretability}{209}%
-\contentsline {chapter}{\numberline {32}Interpretability, Analysis}{211}%
-\contentsline {section}{\numberline {32.1}overview}{211}%
-\contentsline {section}{\numberline {32.2}dump space}{211}%
-\contentsline {section}{\numberline {32.3}Memorization}{211}%
-\contentsline {part}{X\hspace {1em}Model Releases: Using+Monitoring Models}{213}%
-\contentsline {chapter}{\numberline {33}Experimental Design}{215}%
-\contentsline {section}{\numberline {33.1}Overview}{215}%
-\contentsline {chapter}{\numberline {34}Model Reporting}{217}%
-\contentsline {chapter}{\numberline {35}Deployment}{219}%
-\contentsline {chapter}{\numberline {36}Monitoring}{221}%
-\contentsline {chapter}{\numberline {37}Papers to read}{223}%
-\contentsline {part}{XI\hspace {1em}Ethics}{225}%
-\contentsline {chapter}{\numberline {38}Ethics}{227}%
-\contentsline {section}{\numberline {38.1}Overview}{227}%
-\contentsline {section}{\numberline {38.2}Pieces to fit together}{227}%
-\contentsline {section}{\numberline {38.3}Should something be published}{227}%
-\contentsline {section}{\numberline {38.4}Further information}{227}%
-\contentsline {section}{\numberline {38.5}bias}{228}%
-\contentsline {section}{\numberline {38.6}Thoughts}{228}%
-\contentsline {section}{\numberline {38.7}To add}{228}%
-\contentsline {section}{\numberline {38.8}examples}{228}%
-\contentsline {part}{XII\hspace {1em}My Opinions: Moving Forward}{229}%
-\contentsline {chapter}{\numberline {39}My opinions}{231}%
-\contentsline {part}{XIII\hspace {1em}Applications}{233}%
-\contentsline {chapter}{\numberline {40}EndToEnd}{235}%
-\contentsline {section}{\numberline {40.1}Structured}{236}%
-\contentsline {subsection}{\numberline {40.1.1}Linear Regression}{236}%
-\contentsline {subsection}{\numberline {40.1.2}KNN}{236}%
-\contentsline {section}{\numberline {40.2}Image}{236}%
-\contentsline {subsection}{\numberline {40.2.1}Image Classification}{236}%
-\contentsline {subsection}{\numberline {40.2.2}Image Segmentation}{236}%
-\contentsline {subsection}{\numberline {40.2.3}Adversarial Exmaples}{236}%
-\contentsline {subsection}{\numberline {40.2.4}AutoEncoder}{236}%
-\contentsline {section}{\numberline {40.3}TimeSeries}{236}%
-\contentsline {section}{\numberline {40.4}Text}{236}%
-\contentsline {subsection}{\numberline {40.4.1}Sentiment Analysis}{236}%
-\contentsline {section}{\numberline {40.5}Audio}{236}%
-\contentsline {subsection}{\numberline {40.5.1}Audio to Text}{236}%
-\contentsline {section}{\numberline {40.6}Recommendation Systems}{236}%
-\contentsline {chapter}{\numberline {41}Interesting (to me) Applications}{237}%
-\contentsline {section}{\numberline {41.1}Fit Somewhere}{237}%
-\contentsline {part}{XIV\hspace {1em}Brief Reference}{239}%
-\contentsline {chapter}{\numberline {42}Mistakes and Bloopers}{241}%
-\contentsline {chapter}{\numberline {43}Environment}{243}%
-\contentsline {chapter}{\numberline {44}Common Libraries}{245}%
-\contentsline {part}{XV\hspace {1em}appendix}{247}%
-\contentsline {chapter}{\numberline {45}TODO:}{249}%
-\contentsline {section}{\numberline {45.1}Time Zones}{249}%
-\contentsline {section}{\numberline {45.2}Types of missingness}{249}%
-\contentsline {paragraph}{\numberline {45.2.0.0.1}Missing at Random (MAR)}{249}%
-\contentsline {paragraph}{\numberline {45.2.0.0.2}Missing Completely at Random}{249}%
-\contentsline {paragraph}{\numberline {45.2.0.0.3} Ignorable (structurally missing)}{249}%
-\contentsline {paragraph}{\numberline {45.2.0.0.4}Nonignorable (missing not at random)}{250}%
-\contentsline {section}{\numberline {45.3}Imputing Missing Values}{250}%
-\contentsline {subsection}{\numberline {45.3.1}Imputation}{250}%
-\contentsline {subsection}{\numberline {45.3.2}Interpolation}{250}%
-\contentsline {section}{\numberline {45.4}Anomaly Detection}{250}%
-\contentsline {subsection}{\numberline {45.4.1}methods}{250}%
-\contentsline {subsubsection}{\numberline {45.4.1.1}PCA}{250}%
-\contentsline {section}{\numberline {45.5}labeling data}{251}%
-\contentsline {section}{\numberline {45.6}Group Segmentation}{251}%
-\contentsline {section}{\numberline {45.7}Time Series Concepts}{251}%
-\contentsline {part}{XVI\hspace {1em}Dump Space}{253}%
-\contentsline {subsection}{\numberline {45.7.1}Restricted Boltzmann Machines}{258}%
-\contentsline {subsection}{\numberline {45.7.2}Greek letters}{260}%
-\contentsline {subsection}{\numberline {45.7.3}Basic Log Math}{260}%
-\contentsline {subsection}{\numberline {45.7.4}Basic Matrix Math}{260}%
-\contentsline {subsection}{\numberline {45.7.5}Basic Linear Algebra}{260}%
-\contentsline {subsection}{\numberline {45.7.6}Representation Learning}{260}%
-\contentsline {subsection}{\numberline {45.7.7}others}{260}%
-\contentsline {section}{\numberline {45.8}research to include}{262}%
-\contentsline {part}{XVII\hspace {1em}Appendix}{265}%
-\contentsline {chapter}{\numberline {46}Augmentation Techniques}{267}%
-\contentsline {section}{\numberline {46.1}Data Imbalance or Unbalanced Data}{268}%
-\contentsline {subsection}{\numberline {46.1.1}Methods}{268}%
-\contentsline {subsubsection}{\numberline {46.1.1.1}Data}{269}%
-\contentsline {subsubsection}{\numberline {46.1.1.2}Model}{269}%
-\contentsline {subsubsection}{\numberline {46.1.1.3}Post processing}{269}%
-\contentsline {subsection}{\numberline {46.1.2}Evaluation}{269}%
-\contentsline {chapter}{\numberline {47}Statsy Stuff}{271}%
-\contentsline {section}{\numberline {47.1}Experimental Design}{271}%
-\contentsline {section}{\numberline {47.2}``tests''}{272}%
-\contentsline {subsection}{\numberline {47.2.1}T test}{272}%
-\contentsline {subsection}{\numberline {47.2.2}Chi-Squared Test}{272}%
-\contentsline {section}{\numberline {47.3}Power Analysis}{272}%
-\contentsline {section}{\numberline {47.4}Analysis of Variance (ANOVA)}{273}%
-\contentsline {section}{\numberline {47.5}Transforms}{273}%
-\contentsline {section}{\numberline {47.6}Variance Reduction Methods}{273}%
-\contentsline {chapter}{\numberline {48}Appendix}{277}%
-\contentsline {section}{\numberline {48.1}Minor Explanations}{277}%
-\contentsline {subsection}{\numberline {48.1.1}Convolution vs Cross-Correlation}{277}%
+\contentsline {chapter}{\numberline {32}Dump Space / papers to include}{209}%
+\contentsline {part}{IX\hspace {1em}Interpretability}{211}%
+\contentsline {chapter}{\numberline {33}Interpretability, Analysis}{213}%
+\contentsline {section}{\numberline {33.1}overview}{213}%
+\contentsline {section}{\numberline {33.2}dump space}{213}%
+\contentsline {section}{\numberline {33.3}Memorization}{213}%
+\contentsline {part}{X\hspace {1em}Model Releases: Using+Monitoring Models}{215}%
+\contentsline {chapter}{\numberline {34}Experimental Design}{217}%
+\contentsline {section}{\numberline {34.1}Overview}{217}%
+\contentsline {chapter}{\numberline {35}Model Reporting}{219}%
+\contentsline {chapter}{\numberline {36}Deployment}{221}%
+\contentsline {chapter}{\numberline {37}Monitoring}{223}%
+\contentsline {chapter}{\numberline {38}Papers to read}{225}%
+\contentsline {part}{XI\hspace {1em}Ethics}{227}%
+\contentsline {chapter}{\numberline {39}Ethics}{229}%
+\contentsline {section}{\numberline {39.1}Overview}{229}%
+\contentsline {section}{\numberline {39.2}Pieces to fit together}{229}%
+\contentsline {section}{\numberline {39.3}Should something be published}{229}%
+\contentsline {section}{\numberline {39.4}Further information}{229}%
+\contentsline {section}{\numberline {39.5}bias}{230}%
+\contentsline {section}{\numberline {39.6}Thoughts}{230}%
+\contentsline {section}{\numberline {39.7}To add}{230}%
+\contentsline {section}{\numberline {39.8}examples}{230}%
+\contentsline {part}{XII\hspace {1em}My Opinions: Moving Forward}{231}%
+\contentsline {chapter}{\numberline {40}My opinions}{233}%
+\contentsline {part}{XIII\hspace {1em}Applications}{235}%
+\contentsline {chapter}{\numberline {41}EndToEnd}{237}%
+\contentsline {section}{\numberline {41.1}Structured}{238}%
+\contentsline {subsection}{\numberline {41.1.1}Linear Regression}{238}%
+\contentsline {subsection}{\numberline {41.1.2}KNN}{238}%
+\contentsline {section}{\numberline {41.2}Image}{238}%
+\contentsline {subsection}{\numberline {41.2.1}Image Classification}{238}%
+\contentsline {subsection}{\numberline {41.2.2}Image Segmentation}{238}%
+\contentsline {subsection}{\numberline {41.2.3}Adversarial Exmaples}{238}%
+\contentsline {subsection}{\numberline {41.2.4}AutoEncoder}{238}%
+\contentsline {section}{\numberline {41.3}TimeSeries}{238}%
+\contentsline {section}{\numberline {41.4}Text}{238}%
+\contentsline {subsection}{\numberline {41.4.1}Sentiment Analysis}{238}%
+\contentsline {section}{\numberline {41.5}Audio}{238}%
+\contentsline {subsection}{\numberline {41.5.1}Audio to Text}{238}%
+\contentsline {section}{\numberline {41.6}Recommendation Systems}{238}%
+\contentsline {chapter}{\numberline {42}Interesting (to me) Applications}{239}%
+\contentsline {section}{\numberline {42.1}Fit Somewhere}{239}%
+\contentsline {part}{XIV\hspace {1em}Brief Reference}{241}%
+\contentsline {chapter}{\numberline {43}Mistakes and Bloopers}{243}%
+\contentsline {chapter}{\numberline {44}Environment}{245}%
+\contentsline {chapter}{\numberline {45}Common Libraries}{247}%
+\contentsline {part}{XV\hspace {1em}appendix}{249}%
+\contentsline {chapter}{\numberline {46}TODO:}{251}%
+\contentsline {section}{\numberline {46.1}Time Zones}{251}%
+\contentsline {section}{\numberline {46.2}Types of missingness}{251}%
+\contentsline {paragraph}{\numberline {46.2.0.0.1}Missing at Random (MAR)}{251}%
+\contentsline {paragraph}{\numberline {46.2.0.0.2}Missing Completely at Random}{251}%
+\contentsline {paragraph}{\numberline {46.2.0.0.3} Ignorable (structurally missing)}{251}%
+\contentsline {paragraph}{\numberline {46.2.0.0.4}Nonignorable (missing not at random)}{252}%
+\contentsline {section}{\numberline {46.3}Imputing Missing Values}{252}%
+\contentsline {subsection}{\numberline {46.3.1}Imputation}{252}%
+\contentsline {subsection}{\numberline {46.3.2}Interpolation}{252}%
+\contentsline {section}{\numberline {46.4}Anomaly Detection}{252}%
+\contentsline {subsection}{\numberline {46.4.1}methods}{252}%
+\contentsline {subsubsection}{\numberline {46.4.1.1}PCA}{252}%
+\contentsline {section}{\numberline {46.5}labeling data}{253}%
+\contentsline {section}{\numberline {46.6}Group Segmentation}{253}%
+\contentsline {section}{\numberline {46.7}Time Series Concepts}{253}%
+\contentsline {part}{XVI\hspace {1em}Dump Space}{255}%
+\contentsline {subsection}{\numberline {46.7.1}Restricted Boltzmann Machines}{260}%
+\contentsline {subsection}{\numberline {46.7.2}Greek letters}{262}%
+\contentsline {subsection}{\numberline {46.7.3}Basic Log Math}{262}%
+\contentsline {subsection}{\numberline {46.7.4}Basic Matrix Math}{262}%
+\contentsline {subsection}{\numberline {46.7.5}Basic Linear Algebra}{262}%
+\contentsline {subsection}{\numberline {46.7.6}Representation Learning}{262}%
+\contentsline {subsection}{\numberline {46.7.7}others}{262}%
+\contentsline {section}{\numberline {46.8}research to include}{264}%
+\contentsline {part}{XVII\hspace {1em}Appendix}{267}%
+\contentsline {chapter}{\numberline {47}Augmentation Techniques}{269}%
+\contentsline {section}{\numberline {47.1}Data Imbalance or Unbalanced Data}{270}%
+\contentsline {subsection}{\numberline {47.1.1}Methods}{270}%
+\contentsline {subsubsection}{\numberline {47.1.1.1}Data}{271}%
+\contentsline {subsubsection}{\numberline {47.1.1.2}Model}{271}%
+\contentsline {subsubsection}{\numberline {47.1.1.3}Post processing}{271}%
+\contentsline {subsection}{\numberline {47.1.2}Evaluation}{271}%
+\contentsline {chapter}{\numberline {48}Statsy Stuff}{273}%
+\contentsline {section}{\numberline {48.1}Experimental Design}{273}%
+\contentsline {section}{\numberline {48.2}``tests''}{274}%
+\contentsline {subsection}{\numberline {48.2.1}T test}{274}%
+\contentsline {subsection}{\numberline {48.2.2}Chi-Squared Test}{274}%
+\contentsline {section}{\numberline {48.3}Power Analysis}{274}%
+\contentsline {section}{\numberline {48.4}Analysis of Variance (ANOVA)}{275}%
+\contentsline {section}{\numberline {48.5}Transforms}{275}%
+\contentsline {section}{\numberline {48.6}Variance Reduction Methods}{275}%
+\contentsline {chapter}{\numberline {49}Appendix}{279}%
+\contentsline {section}{\numberline {49.1}Minor Explanations}{279}%
+\contentsline {subsection}{\numberline {49.1.1}Convolution vs Cross-Correlation}{279}%
