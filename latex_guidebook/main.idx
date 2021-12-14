@@ -33,10 +33,10 @@
 \indexentry{Pearson's R}{79}
 \indexentry{Voronoi tessellation}{80}
 \indexentry{Voronoi region}{80}
-\indexentry{inverted dropout}{87}
-\indexentry{Ridge regression}{88}
-\indexentry{Tikhonov regularization}{88}
-\indexentry{freezing}{90}
+\indexentry{inverted dropout}{88}
+\indexentry{Ridge regression}{90}
+\indexentry{Tikhonov regularization}{90}
+\indexentry{freezing}{91}
 \indexentry{generalized linear model}{101}
 \indexentry{Ordinary Lease Squares (OLS)}{102}
 \indexentry{Linear Least Squares}{102}
@@ -70,14 +70,14 @@
 \indexentry{Karhunen-Love Transform (KLM)}{151}
 \indexentry{covarience matrix}{151}
 \indexentry{manifold}{153}
-\indexentry{bagging}{177}
-\indexentry{boostrap aggregating}{177}
-\indexentry{sampling with replacement|see{bagging}}{177}
-\indexentry{bootstrap samples}{177}
-\indexentry{subagging}{178}
-\indexentry{sampling without replacement|see{subagging}}{178}
-\indexentry{subspace sampling}{178}
-\indexentry{blending}{179}
-\indexentry{catastrophic forgetting}{199}
-\indexentry{continual learning}{199}
-\indexentry{universal approximators}{279}
+\indexentry{bagging}{179}
+\indexentry{boostrap aggregating}{179}
+\indexentry{sampling with replacement|see{bagging}}{179}
+\indexentry{bootstrap samples}{179}
+\indexentry{subagging}{180}
+\indexentry{sampling without replacement|see{subagging}}{180}
+\indexentry{subspace sampling}{180}
+\indexentry{blending}{181}
+\indexentry{catastrophic forgetting}{201}
+\indexentry{continual learning}{201}
+\indexentry{universal approximators}{281}

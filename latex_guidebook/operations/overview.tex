@@ -268,6 +268,8 @@ Introduced in 1997 %\cite{hochreiter1997long}
 
 \section{Attention}
 
+\TD{Self-attention Does Not Need $O(n^{2})$ Memory~\cite{Rabe2021SelfattentionDN}}
+
 %TODO: another blog to checkout https://distill.pub/2016/augmented-rnns/
 
 \r{overview can be found here\cite{weng2018attention}}
@@ -296,6 +298,24 @@ Introduced in 1997 %\cite{hochreiter1997long}
 % ``heads learn redundant key/query projections'' --> share
 % https://github.com/epfml/collaborative-attention
 \TD{Multi-Head Attention: Collaborate Instead of Concatenate \cite{Cordonnier2020MultiHeadAC}}
+
+% soft vs hard and global vs local
+
+\TD{Describes two variants: a ``hard'' stochastic attention mechanism (trainable via ``maximizing an approximate variational lower bound'' or REINFORCE) and a ``soft'' deterministic attention mechanism(trainable by standard back-propagation) \cite{DBLP:journals/corr/XuBKCCSZB15}. Soft attention --- scores to all entities (is differenetiable but expensive) and hard attention --- only selects one entity (non-differentiable (and complicated, reinforcement learning), but requires less computation at inference)}
+
+
+
+\subsubsection{Scoring Functions}
+
+% TODO: https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html#summary
+\TD{table from \cite{weng2018attention}}
+
+
+\section{Self-Attention}
+
+\r{sometimes refered to as ``intra-attention''\cite{DBLP:journals/corr/VaswaniSPUJGKP17}. Keys, queries and values are all derived from the same sequence. \TD{Self-attention transforms a sequence to create a representation of itself.}}
+
+
 
 \subsection{transformers}
 
@@ -336,8 +356,20 @@ Introduced in 1997 %\cite{hochreiter1997long}
 
 % TODO: read https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html
 
+\section{Mixture of Experts (MoE)}
 
-\section{NTM (Neural Turing Machines)}
-% nerual network + external memory storage
-% controller + memory
-\TD{Neural Turing Machines \cite{DBLP:journals/corr/GravesWD14}}
+\TD{Breaking down a problem (task) into multiple sub-problems (sub-tasks), training and expert in each sub-problem, then learning a meta/gating model that routes information to a specific expert and combines outputs}
+
+% Divide and conquer vs meta-learning approach
+
+
+\TD{High level steps}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Decompose task into subtasks
+	\item Learn ``expert'' for each subtask 
+	\item Decide which expert to use (gating model or gating expert)
+	\item Combine outputs as needed (pool/aggregate/select)
+\end{itemize}
+
+\TD{``20 years MoE''~\cite{yuksel2012twenty}}
+

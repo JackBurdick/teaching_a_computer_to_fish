@@ -124,6 +124,11 @@
 % TODO: define harmonic mean somewhere
 \item \textit{F-1 Score}, (Eq.~\ref{eq:f1_metric}): \textcolor{blue}{F1 is the \textcolor{red}{harmonic mean} of precision and sensitivity XXXXXXXXXX. The F1 score will penalize classifiers more as the difference between the precision and sensitivity increases.}.
 
+\TD{harmonic mean is like taking average, but places emphasis on the lower number}
+
+% F1 = 2 * (precision * recall) / (precision + recall)
+% https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
+
 \begin{equation}
 {\frac{2TP}{2TP+FP+FN}}
 \label{eq:f1_metric}

@@ -48,9 +48,76 @@
 
 \r{``free'' data in that the ``cost'' is minor computation}
 
+\subsubsection{Data Labeling}
+
+%TODO: later sections likely belong in an appendix
+
+\r{Labeling unlabed data}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item semi-supervised
+	\item active learning
+	\item weak supervision
+\end{itemize}
+
+\paragraph{Semi-supervised}
+
+\TD{label propagation}
+
+\TD{Book~\cite{chapelle2010semi}}
+
+\TD{using GANs: Improved Techniques for Training GANs~\cite{DBLP:journals/corr/SalimansGZCRC16}}
+
+\TD{Temporal Ensembling for Semi-Supervised Learning~\cite{DBLP:journals/corr/LaineA16}}
+
+\paragraph{Active Learning}
+
+\TD{A Survey of Deep Active Learning~\cite{DBLP:journals/corr/abs-2009-00236}}
+
+\TD{intelligently sample data. Select instances that would be most informative for training}
+
+\TD{Intelligent sampling could use a few different methods}
+
+\TD{life cycle could include: taking unlabeled data, using the active learning sampler to pick instances, using a human annotator for these points, then using this new labeled set for or in addition to the current training set for training}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Margin Sampling
+	\item Cluster Based Sampling
+	\item Query-by-committee
+	\item Region-based Sampling
+\end{itemize}
+
+\subparagraph{Margin Sampling}
+
+\r{Select instances that are nearest to the decision boundary (margin) e.g. the most uncertain and train on these points}
+
+\subparagraph{Cluster Based Sampling}
+
+\r{sample from the well formed clusters}
+
+\subparagraph{Query-by-Committee}
+
+\r{train and ensemble of models and sample from the data points that the models disagree on.}
+
+\subparagraph{Region-based Sampling}
+
+\r{Run several algorithms (from above) on different portions of the space}
+
+
+\paragraph{Weak Supervision}
+
+\TD{Weak supervision: https://ai.stanford.edu/blog/weak-supervision/}
+
+\TD{Snorkel: Rapid Training Data Creation with Weak Supervision~\cite{DBLP:journals/corr/abs-1711-10160}}
+
+
 \subsection{Augmentation}
 
 \r{Dataset augmentation is \textcolor{green}{TODO}}
+
+\r{adds examples that are similar to real}
+
+\TD{Usupervised data augmentation: UDA}
 
 \r{Please note, augmentation must be done responsibly. For example, if performing digit recognition, it would not be wise to perform rotational or flip transformations on the data since, depending on the specific data, a 6, rotated 180 or flipped vertically may now appear as a 9.}
 

@@ -264,30 +264,38 @@
 \contentsline {chapter}{\numberline {10}Improving Generalizability}{83}%
 \contentsline {section}{\numberline {10.1}Data}{84}%
 \contentsline {subsection}{\numberline {10.1.1}Data Collection}{84}%
-\contentsline {subsection}{\numberline {10.1.2}Augmentation}{84}%
-\contentsline {subsection}{\numberline {10.1.3}Sampling}{84}%
-\contentsline {section}{\numberline {10.2}Architecture}{85}%
-\contentsline {section}{\numberline {10.3}Training Pattern}{85}%
-\contentsline {subsection}{\numberline {10.3.1}Early Stopping}{85}%
-\contentsline {subsection}{\numberline {10.3.2}Stochastic Behavior}{85}%
-\contentsline {subsubsection}{\numberline {10.3.2.1}Dropout}{85}%
-\contentsline {subsubsection}{\numberline {10.3.2.2}Others}{87}%
-\contentsline {subsection}{\numberline {10.3.3}Parameter Regularization}{88}%
-\contentsline {subsubsection}{\numberline {10.3.3.1}Types of Regularization}{88}%
-\contentsline {subsubsection}{\numberline {10.3.3.2}Parameter Norm Penalties}{88}%
-\contentsline {paragraph}{\numberline {10.3.3.2.1}L2 Regularization}{88}%
-\contentsline {paragraph}{\numberline {10.3.3.2.2}L1 Regularization}{88}%
-\contentsline {paragraph}{\numberline {10.3.3.2.3}Elastic Net Regularization}{89}%
-\contentsline {subsection}{\numberline {10.3.4}Ensemble Methods}{90}%
-\contentsline {subsection}{\numberline {10.3.5}Adversarial Training}{90}%
-\contentsline {subsection}{\numberline {10.3.6}Transfer Learning}{90}%
-\contentsline {subsubsection}{\numberline {10.3.6.1}Potential downsides of TL}{91}%
-\contentsline {subsection}{\numberline {10.3.7}Normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.7.0.1}Instance normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.7.0.2}Layer normalization}{91}%
-\contentsline {paragraph}{\numberline {10.3.7.0.3}Batch normalization}{92}%
-\contentsline {paragraph}{\numberline {10.3.7.0.4}Group normalization}{93}%
-\contentsline {section}{\numberline {10.4}Output regularization}{93}%
+\contentsline {subsubsection}{\numberline {10.1.1.1}Data Labeling}{84}%
+\contentsline {paragraph}{\numberline {10.1.1.1.1}Semi-supervised}{84}%
+\contentsline {paragraph}{\numberline {10.1.1.1.2}Active Learning}{84}%
+\contentsline {subparagraph}{Margin Sampling}{85}%
+\contentsline {subparagraph}{Cluster Based Sampling}{85}%
+\contentsline {subparagraph}{Query-by-Committee}{85}%
+\contentsline {subparagraph}{Region-based Sampling}{85}%
+\contentsline {paragraph}{\numberline {10.1.1.1.3}Weak Supervision}{85}%
+\contentsline {subsection}{\numberline {10.1.2}Augmentation}{85}%
+\contentsline {subsection}{\numberline {10.1.3}Sampling}{86}%
+\contentsline {section}{\numberline {10.2}Architecture}{86}%
+\contentsline {section}{\numberline {10.3}Training Pattern}{86}%
+\contentsline {subsection}{\numberline {10.3.1}Early Stopping}{86}%
+\contentsline {subsection}{\numberline {10.3.2}Stochastic Behavior}{86}%
+\contentsline {subsubsection}{\numberline {10.3.2.1}Dropout}{86}%
+\contentsline {subsubsection}{\numberline {10.3.2.2}Others}{89}%
+\contentsline {subsection}{\numberline {10.3.3}Parameter Regularization}{89}%
+\contentsline {subsubsection}{\numberline {10.3.3.1}Types of Regularization}{89}%
+\contentsline {subsubsection}{\numberline {10.3.3.2}Parameter Norm Penalties}{89}%
+\contentsline {paragraph}{\numberline {10.3.3.2.1}L2 Regularization}{90}%
+\contentsline {paragraph}{\numberline {10.3.3.2.2}L1 Regularization}{90}%
+\contentsline {paragraph}{\numberline {10.3.3.2.3}Elastic Net Regularization}{91}%
+\contentsline {subsection}{\numberline {10.3.4}Ensemble Methods}{91}%
+\contentsline {subsection}{\numberline {10.3.5}Adversarial Training}{91}%
+\contentsline {subsection}{\numberline {10.3.6}Transfer Learning}{91}%
+\contentsline {subsubsection}{\numberline {10.3.6.1}Potential downsides of TL}{92}%
+\contentsline {subsection}{\numberline {10.3.7}Normalization}{92}%
+\contentsline {paragraph}{\numberline {10.3.7.0.1}Instance normalization}{93}%
+\contentsline {paragraph}{\numberline {10.3.7.0.2}Layer normalization}{93}%
+\contentsline {paragraph}{\numberline {10.3.7.0.3}Batch normalization}{93}%
+\contentsline {paragraph}{\numberline {10.3.7.0.4}Group normalization}{94}%
+\contentsline {section}{\numberline {10.4}Output regularization}{94}%
 \contentsline {chapter}{\numberline {11}Distributed Methods}{95}%
 \contentsline {section}{\numberline {11.1}Data Parallelism}{95}%
 \contentsline {section}{\numberline {11.2}Model Parallelism}{95}%
@@ -408,8 +416,10 @@
 \contentsline {subsection}{\numberline {15.4.2}Notes -- add}{140}%
 \contentsline {section}{\numberline {15.5}Capsule Networks}{140}%
 \contentsline {section}{\numberline {15.6}Attention}{141}%
-\contentsline {subsection}{\numberline {15.6.1}transformers}{141}%
-\contentsline {section}{\numberline {15.7}NTM (Neural Turing Machines)}{141}%
+\contentsline {subsubsection}{\numberline {15.6.0.1}Scoring Functions}{141}%
+\contentsline {section}{\numberline {15.7}Self-Attention}{141}%
+\contentsline {subsection}{\numberline {15.7.1}transformers}{141}%
+\contentsline {section}{\numberline {15.8}Mixture of Experts (MoE)}{142}%
 \contentsline {chapter}{\numberline {16}Applied Neural Networks}{143}%
 \contentsline {section}{\numberline {16.1}Single Modality}{143}%
 \contentsline {subsection}{\numberline {16.1.1}N-Dimensional Structure}{143}%
@@ -499,160 +509,168 @@
 \contentsline {paragraph}{\numberline {20.3.1.0.1}Knowledge Transfer}{165}%
 \contentsline {subsection}{\numberline {20.3.2}Tensor Decomposition}{166}%
 \contentsline {subsection}{\numberline {20.3.3}The Lottery Ticket Hypothesis}{166}%
-\contentsline {chapter}{\numberline {21}Training Dynamics}{167}%
-\contentsline {chapter}{\numberline {22}Adversarial Machine Learning}{169}%
-\contentsline {section}{\numberline {22.1}Attacks}{169}%
-\contentsline {section}{\numberline {22.2}Defenses}{170}%
-\contentsline {section}{\numberline {22.3}Implications}{170}%
-\contentsline {section}{\numberline {22.4}Backdoor Learning}{170}%
-\contentsline {section}{\numberline {22.5}Uses (non-exploitive) for Backdoor}{170}%
-\contentsline {section}{\numberline {22.6}To Include}{170}%
-\contentsline {chapter}{\numberline {23}Graph Neural Networks}{171}%
-\contentsline {chapter}{\numberline {24}Generative}{173}%
-\contentsline {section}{\numberline {24.1}Generative Adversarial Networks (GANs)}{173}%
-\contentsline {section}{\numberline {24.2}Variational AutoEncoder}{173}%
-\contentsline {part}{V\hspace {1em}Ensembling}{175}%
-\contentsline {chapter}{\numberline {25}Ensemble Methods}{177}%
-\contentsline {section}{\numberline {25.1}Overview}{177}%
-\contentsline {subsection}{\numberline {25.1.1}Approaches to Creating Ensembles}{177}%
-\contentsline {subsubsection}{\numberline {25.1.1.1}Bagging}{177}%
-\contentsline {subsubsection}{\numberline {25.1.1.2}Boosting}{178}%
-\contentsline {paragraph}{\numberline {25.1.1.2.1}Examples}{178}%
-\contentsline {subparagraph}{AdaBoost}{178}%
-\contentsline {subsubsection}{\numberline {25.1.1.3}Bagging Vs Boosting}{179}%
-\contentsline {subsection}{\numberline {25.1.2}Stacking}{179}%
-\contentsline {subsection}{\numberline {25.1.3}Examples}{179}%
-\contentsline {subsubsection}{\numberline {25.1.3.1}Random Forests}{179}%
-\contentsline {chapter}{\numberline {26}Term dump}{181}%
-\contentsline {subsection}{\numberline {26.0.1}Distributions}{181}%
-\contentsline {part}{VI\hspace {1em}multitask}{183}%
-\contentsline {chapter}{\numberline {27}Multi-Task Learning}{185}%
-\contentsline {section}{\numberline {27.1}Overview}{185}%
-\contentsline {subsection}{\numberline {27.1.1}Same loss function, different data distribution}{185}%
-\contentsline {subsection}{\numberline {27.1.2}Different loss function}{186}%
-\contentsline {subsection}{\numberline {27.1.3}training network}{186}%
-\contentsline {subsection}{\numberline {27.1.4}Conditioning task descriptor}{186}%
-\contentsline {subsection}{\numberline {27.1.5}optimizing the objective}{187}%
-\contentsline {section}{\numberline {27.2}Relationships}{188}%
-\contentsline {subsection}{\numberline {27.2.1}Architecture}{188}%
-\contentsline {subsection}{\numberline {27.2.2}loss}{189}%
-\contentsline {subsection}{\numberline {27.2.3}Training Dynamics}{189}%
-\contentsline {section}{\numberline {27.3}interesting considerations}{189}%
-\contentsline {section}{\numberline {27.4}Parameter Sharing}{189}%
-\contentsline {subsection}{\numberline {27.4.1}Hard parameter sharing}{189}%
-\contentsline {subsection}{\numberline {27.4.2}Soft parameter sharing}{190}%
-\contentsline {subsection}{\numberline {27.4.3}Other}{190}%
-\contentsline {section}{\numberline {27.5}Mechanisms}{190}%
-\contentsline {part}{VII\hspace {1em}meta-learning}{193}%
-\contentsline {chapter}{\numberline {28}Meta Learning}{195}%
-\contentsline {section}{\numberline {28.1}Overview}{195}%
-\contentsline {subsection}{\numberline {28.1.1}k-shot learning}{195}%
-\contentsline {section}{\numberline {28.2}evaluation}{195}%
-\contentsline {section}{\numberline {28.3}Adaptation approaches}{196}%
-\contentsline {subsection}{\numberline {28.3.1}Black-Box Adaptation}{196}%
-\contentsline {section}{\numberline {28.4}Optimization-based meta-learning}{196}%
-\contentsline {section}{\numberline {28.5}Non-Parametric Few-Shot Learning}{197}%
-\contentsline {section}{\numberline {28.6}Meta-Learning Algorithms}{197}%
-\contentsline {chapter}{\numberline {29}Continual learning}{199}%
-\contentsline {chapter}{\numberline {30}Self-Supervised Learning (SSL)}{201}%
-\contentsline {section}{\numberline {30.1}Pretext Tasks}{201}%
-\contentsline {section}{\numberline {30.2}Contrastive Learning}{202}%
-\contentsline {subsection}{\numberline {30.2.1}Explicit Contrastive Methods}{202}%
-\contentsline {subsection}{\numberline {30.2.2}``Non-Contrastive'' Methods}{202}%
-\contentsline {subsubsection}{\numberline {30.2.2.1}Cluster}{202}%
-\contentsline {subsubsection}{\numberline {30.2.2.2}Distillation}{202}%
-\contentsline {part}{VIII\hspace {1em}Reinforcement}{205}%
-\contentsline {chapter}{\numberline {31}Reinforcement Learning}{207}%
-\contentsline {chapter}{\numberline {32}Dump Space / papers to include}{209}%
-\contentsline {part}{IX\hspace {1em}Interpretability}{211}%
-\contentsline {chapter}{\numberline {33}Interpretability, Analysis}{213}%
-\contentsline {section}{\numberline {33.1}overview}{213}%
-\contentsline {section}{\numberline {33.2}dump space}{213}%
-\contentsline {section}{\numberline {33.3}Memorization}{213}%
-\contentsline {part}{X\hspace {1em}Model Releases: Using+Monitoring Models}{215}%
-\contentsline {chapter}{\numberline {34}Experimental Design}{217}%
-\contentsline {section}{\numberline {34.1}Overview}{217}%
-\contentsline {chapter}{\numberline {35}Model Reporting}{219}%
-\contentsline {chapter}{\numberline {36}Deployment}{221}%
-\contentsline {chapter}{\numberline {37}Monitoring}{223}%
-\contentsline {chapter}{\numberline {38}Papers to read}{225}%
-\contentsline {part}{XI\hspace {1em}Ethics}{227}%
-\contentsline {chapter}{\numberline {39}Ethics}{229}%
-\contentsline {section}{\numberline {39.1}Overview}{229}%
-\contentsline {section}{\numberline {39.2}Pieces to fit together}{229}%
-\contentsline {section}{\numberline {39.3}Should something be published}{229}%
-\contentsline {section}{\numberline {39.4}Further information}{229}%
-\contentsline {section}{\numberline {39.5}bias}{230}%
-\contentsline {section}{\numberline {39.6}Thoughts}{230}%
-\contentsline {section}{\numberline {39.7}To add}{230}%
-\contentsline {section}{\numberline {39.8}examples}{230}%
-\contentsline {part}{XII\hspace {1em}My Opinions: Moving Forward}{231}%
-\contentsline {chapter}{\numberline {40}My opinions}{233}%
-\contentsline {part}{XIII\hspace {1em}Applications}{235}%
-\contentsline {chapter}{\numberline {41}EndToEnd}{237}%
-\contentsline {section}{\numberline {41.1}Structured}{238}%
-\contentsline {subsection}{\numberline {41.1.1}Linear Regression}{238}%
-\contentsline {subsection}{\numberline {41.1.2}KNN}{238}%
-\contentsline {section}{\numberline {41.2}Image}{238}%
-\contentsline {subsection}{\numberline {41.2.1}Image Classification}{238}%
-\contentsline {subsection}{\numberline {41.2.2}Image Segmentation}{238}%
-\contentsline {subsection}{\numberline {41.2.3}Adversarial Exmaples}{238}%
-\contentsline {subsection}{\numberline {41.2.4}AutoEncoder}{238}%
-\contentsline {section}{\numberline {41.3}TimeSeries}{238}%
-\contentsline {section}{\numberline {41.4}Text}{238}%
-\contentsline {subsection}{\numberline {41.4.1}Sentiment Analysis}{238}%
-\contentsline {section}{\numberline {41.5}Audio}{238}%
-\contentsline {subsection}{\numberline {41.5.1}Audio to Text}{238}%
-\contentsline {section}{\numberline {41.6}Recommendation Systems}{238}%
-\contentsline {chapter}{\numberline {42}Interesting (to me) Applications}{239}%
-\contentsline {section}{\numberline {42.1}Fit Somewhere}{239}%
-\contentsline {part}{XIV\hspace {1em}Brief Reference}{241}%
-\contentsline {chapter}{\numberline {43}Mistakes and Bloopers}{243}%
-\contentsline {chapter}{\numberline {44}Environment}{245}%
-\contentsline {chapter}{\numberline {45}Common Libraries}{247}%
-\contentsline {part}{XV\hspace {1em}appendix}{249}%
-\contentsline {chapter}{\numberline {46}TODO:}{251}%
-\contentsline {section}{\numberline {46.1}Time Zones}{251}%
-\contentsline {section}{\numberline {46.2}Types of missingness}{251}%
-\contentsline {paragraph}{\numberline {46.2.0.0.1}Missing at Random (MAR)}{251}%
-\contentsline {paragraph}{\numberline {46.2.0.0.2}Missing Completely at Random}{251}%
-\contentsline {paragraph}{\numberline {46.2.0.0.3} Ignorable (structurally missing)}{251}%
-\contentsline {paragraph}{\numberline {46.2.0.0.4}Nonignorable (missing not at random)}{252}%
-\contentsline {section}{\numberline {46.3}Imputing Missing Values}{252}%
-\contentsline {subsection}{\numberline {46.3.1}Imputation}{252}%
-\contentsline {subsection}{\numberline {46.3.2}Interpolation}{252}%
-\contentsline {section}{\numberline {46.4}Anomaly Detection}{252}%
-\contentsline {subsection}{\numberline {46.4.1}methods}{252}%
-\contentsline {subsubsection}{\numberline {46.4.1.1}PCA}{252}%
-\contentsline {section}{\numberline {46.5}labeling data}{253}%
-\contentsline {section}{\numberline {46.6}Group Segmentation}{253}%
-\contentsline {section}{\numberline {46.7}Time Series Concepts}{253}%
-\contentsline {part}{XVI\hspace {1em}Dump Space}{255}%
-\contentsline {subsection}{\numberline {46.7.1}Restricted Boltzmann Machines}{260}%
-\contentsline {subsection}{\numberline {46.7.2}Greek letters}{262}%
-\contentsline {subsection}{\numberline {46.7.3}Basic Log Math}{262}%
-\contentsline {subsection}{\numberline {46.7.4}Basic Matrix Math}{262}%
-\contentsline {subsection}{\numberline {46.7.5}Basic Linear Algebra}{262}%
-\contentsline {subsection}{\numberline {46.7.6}Representation Learning}{262}%
-\contentsline {subsection}{\numberline {46.7.7}others}{262}%
-\contentsline {section}{\numberline {46.8}research to include}{264}%
-\contentsline {part}{XVII\hspace {1em}Appendix}{267}%
-\contentsline {chapter}{\numberline {47}Augmentation Techniques}{269}%
-\contentsline {section}{\numberline {47.1}Data Imbalance or Unbalanced Data}{270}%
-\contentsline {subsection}{\numberline {47.1.1}Methods}{270}%
-\contentsline {subsubsection}{\numberline {47.1.1.1}Data}{271}%
-\contentsline {subsubsection}{\numberline {47.1.1.2}Model}{271}%
-\contentsline {subsubsection}{\numberline {47.1.1.3}Post processing}{271}%
-\contentsline {subsection}{\numberline {47.1.2}Evaluation}{271}%
-\contentsline {chapter}{\numberline {48}Statsy Stuff}{273}%
-\contentsline {section}{\numberline {48.1}Experimental Design}{273}%
-\contentsline {section}{\numberline {48.2}``tests''}{274}%
-\contentsline {subsection}{\numberline {48.2.1}T test}{274}%
-\contentsline {subsection}{\numberline {48.2.2}Chi-Squared Test}{274}%
-\contentsline {section}{\numberline {48.3}Power Analysis}{274}%
-\contentsline {section}{\numberline {48.4}Analysis of Variance (ANOVA)}{275}%
-\contentsline {section}{\numberline {48.5}Transforms}{275}%
-\contentsline {section}{\numberline {48.6}Variance Reduction Methods}{275}%
-\contentsline {chapter}{\numberline {49}Appendix}{279}%
-\contentsline {section}{\numberline {49.1}Minor Explanations}{279}%
-\contentsline {subsection}{\numberline {49.1.1}Convolution vs Cross-Correlation}{279}%
+\contentsline {chapter}{\numberline {21}External Memory}{167}%
+\contentsline {section}{\numberline {21.1}Neural Turning Machines}{167}%
+\contentsline {section}{\numberline {21.2}Other}{167}%
+\contentsline {chapter}{\numberline {22}Training Dynamics}{169}%
+\contentsline {chapter}{\numberline {23}Adversarial Machine Learning}{171}%
+\contentsline {section}{\numberline {23.1}Attacks}{171}%
+\contentsline {section}{\numberline {23.2}Defenses}{172}%
+\contentsline {section}{\numberline {23.3}Implications}{172}%
+\contentsline {section}{\numberline {23.4}Backdoor Learning}{172}%
+\contentsline {section}{\numberline {23.5}Uses (non-exploitive) for Backdoor}{172}%
+\contentsline {section}{\numberline {23.6}To Include}{172}%
+\contentsline {chapter}{\numberline {24}Graph Neural Networks}{173}%
+\contentsline {chapter}{\numberline {25}Generative}{175}%
+\contentsline {section}{\numberline {25.1}Generative Adversarial Networks (GANs)}{175}%
+\contentsline {section}{\numberline {25.2}Variational AutoEncoder}{175}%
+\contentsline {part}{V\hspace {1em}Ensembling}{177}%
+\contentsline {chapter}{\numberline {26}Ensemble Methods}{179}%
+\contentsline {section}{\numberline {26.1}Overview}{179}%
+\contentsline {subsection}{\numberline {26.1.1}Approaches to Creating Ensembles}{179}%
+\contentsline {subsubsection}{\numberline {26.1.1.1}Bagging}{179}%
+\contentsline {subsubsection}{\numberline {26.1.1.2}Boosting}{180}%
+\contentsline {paragraph}{\numberline {26.1.1.2.1}Examples}{180}%
+\contentsline {subparagraph}{AdaBoost}{180}%
+\contentsline {subsubsection}{\numberline {26.1.1.3}Bagging Vs Boosting}{181}%
+\contentsline {subsection}{\numberline {26.1.2}Stacking}{181}%
+\contentsline {subsection}{\numberline {26.1.3}Examples}{181}%
+\contentsline {subsubsection}{\numberline {26.1.3.1}Random Forests}{181}%
+\contentsline {chapter}{\numberline {27}Term dump}{183}%
+\contentsline {part}{VI\hspace {1em}multitask}{185}%
+\contentsline {chapter}{\numberline {28}Multi-Task Learning}{187}%
+\contentsline {section}{\numberline {28.1}Overview}{187}%
+\contentsline {subsection}{\numberline {28.1.1}Same loss function, different data distribution}{187}%
+\contentsline {subsection}{\numberline {28.1.2}Different loss function}{188}%
+\contentsline {subsection}{\numberline {28.1.3}training network}{188}%
+\contentsline {subsection}{\numberline {28.1.4}Conditioning task descriptor}{188}%
+\contentsline {subsection}{\numberline {28.1.5}optimizing the objective}{189}%
+\contentsline {section}{\numberline {28.2}Relationships}{190}%
+\contentsline {subsection}{\numberline {28.2.1}Architecture}{190}%
+\contentsline {subsection}{\numberline {28.2.2}loss}{191}%
+\contentsline {subsection}{\numberline {28.2.3}Training Dynamics}{191}%
+\contentsline {section}{\numberline {28.3}interesting considerations}{191}%
+\contentsline {section}{\numberline {28.4}Parameter Sharing}{191}%
+\contentsline {subsection}{\numberline {28.4.1}Hard parameter sharing}{191}%
+\contentsline {subsection}{\numberline {28.4.2}Soft parameter sharing}{192}%
+\contentsline {subsection}{\numberline {28.4.3}Other}{192}%
+\contentsline {section}{\numberline {28.5}Mechanisms}{192}%
+\contentsline {part}{VII\hspace {1em}meta-learning}{195}%
+\contentsline {chapter}{\numberline {29}Meta Learning}{197}%
+\contentsline {section}{\numberline {29.1}Overview}{197}%
+\contentsline {subsection}{\numberline {29.1.1}k-shot learning}{197}%
+\contentsline {section}{\numberline {29.2}evaluation}{197}%
+\contentsline {section}{\numberline {29.3}Adaptation approaches}{198}%
+\contentsline {subsection}{\numberline {29.3.1}Black-Box Adaptation}{198}%
+\contentsline {section}{\numberline {29.4}Optimization-based meta-learning}{198}%
+\contentsline {section}{\numberline {29.5}Non-Parametric Few-Shot Learning}{199}%
+\contentsline {section}{\numberline {29.6}Meta-Learning Algorithms}{199}%
+\contentsline {chapter}{\numberline {30}Continual learning}{201}%
+\contentsline {chapter}{\numberline {31}Self-Supervised Learning (SSL)}{203}%
+\contentsline {section}{\numberline {31.1}Pretext Tasks}{203}%
+\contentsline {section}{\numberline {31.2}Contrastive Learning}{204}%
+\contentsline {subsection}{\numberline {31.2.1}Explicit Contrastive Methods}{204}%
+\contentsline {subsection}{\numberline {31.2.2}``Non-Contrastive'' Methods}{204}%
+\contentsline {subsubsection}{\numberline {31.2.2.1}Cluster}{204}%
+\contentsline {subsubsection}{\numberline {31.2.2.2}Distillation}{204}%
+\contentsline {part}{VIII\hspace {1em}Reinforcement}{207}%
+\contentsline {chapter}{\numberline {32}Reinforcement Learning}{209}%
+\contentsline {chapter}{\numberline {33}Dump Space / papers to include}{211}%
+\contentsline {part}{IX\hspace {1em}Interpretability}{213}%
+\contentsline {chapter}{\numberline {34}Interpretability, Analysis}{215}%
+\contentsline {section}{\numberline {34.1}overview}{215}%
+\contentsline {section}{\numberline {34.2}dump space}{215}%
+\contentsline {section}{\numberline {34.3}Memorization}{215}%
+\contentsline {part}{X\hspace {1em}Model Releases: Using+Monitoring Models}{217}%
+\contentsline {chapter}{\numberline {35}Experimental Design}{219}%
+\contentsline {section}{\numberline {35.1}Overview}{219}%
+\contentsline {chapter}{\numberline {36}Model Reporting}{221}%
+\contentsline {chapter}{\numberline {37}Deployment}{223}%
+\contentsline {chapter}{\numberline {38}Monitoring}{225}%
+\contentsline {chapter}{\numberline {39}Papers to read}{227}%
+\contentsline {part}{XI\hspace {1em}Ethics}{229}%
+\contentsline {chapter}{\numberline {40}Ethics}{231}%
+\contentsline {section}{\numberline {40.1}Overview}{231}%
+\contentsline {section}{\numberline {40.2}Pieces to fit together}{231}%
+\contentsline {section}{\numberline {40.3}Should something be published}{231}%
+\contentsline {section}{\numberline {40.4}Further information}{231}%
+\contentsline {section}{\numberline {40.5}bias}{232}%
+\contentsline {section}{\numberline {40.6}Thoughts}{232}%
+\contentsline {section}{\numberline {40.7}To add}{232}%
+\contentsline {section}{\numberline {40.8}examples}{232}%
+\contentsline {part}{XII\hspace {1em}My Opinions: Moving Forward}{233}%
+\contentsline {chapter}{\numberline {41}My opinions}{235}%
+\contentsline {part}{XIII\hspace {1em}Applications}{237}%
+\contentsline {chapter}{\numberline {42}EndToEnd}{239}%
+\contentsline {section}{\numberline {42.1}Structured}{240}%
+\contentsline {subsection}{\numberline {42.1.1}Linear Regression}{240}%
+\contentsline {subsection}{\numberline {42.1.2}KNN}{240}%
+\contentsline {section}{\numberline {42.2}Image}{240}%
+\contentsline {subsection}{\numberline {42.2.1}Image Classification}{240}%
+\contentsline {subsection}{\numberline {42.2.2}Image Segmentation}{240}%
+\contentsline {subsection}{\numberline {42.2.3}Adversarial Exmaples}{240}%
+\contentsline {subsection}{\numberline {42.2.4}AutoEncoder}{240}%
+\contentsline {section}{\numberline {42.3}TimeSeries}{240}%
+\contentsline {section}{\numberline {42.4}Text}{240}%
+\contentsline {subsection}{\numberline {42.4.1}Sentiment Analysis}{240}%
+\contentsline {section}{\numberline {42.5}Audio}{240}%
+\contentsline {subsection}{\numberline {42.5.1}Audio to Text}{240}%
+\contentsline {section}{\numberline {42.6}Recommendation Systems}{240}%
+\contentsline {chapter}{\numberline {43}Interesting (to me) Applications}{241}%
+\contentsline {section}{\numberline {43.1}Fit Somewhere}{241}%
+\contentsline {part}{XIV\hspace {1em}Brief Reference}{243}%
+\contentsline {chapter}{\numberline {44}Mistakes and Bloopers}{245}%
+\contentsline {chapter}{\numberline {45}Environment}{247}%
+\contentsline {chapter}{\numberline {46}Common Libraries}{249}%
+\contentsline {part}{XV\hspace {1em}appendix}{251}%
+\contentsline {chapter}{\numberline {47}TODO:}{253}%
+\contentsline {section}{\numberline {47.1}Time Zones}{253}%
+\contentsline {section}{\numberline {47.2}Types of missingness}{253}%
+\contentsline {paragraph}{\numberline {47.2.0.0.1}Missing at Random (MAR)}{253}%
+\contentsline {paragraph}{\numberline {47.2.0.0.2}Missing Completely at Random}{253}%
+\contentsline {paragraph}{\numberline {47.2.0.0.3} Ignorable (structurally missing)}{253}%
+\contentsline {paragraph}{\numberline {47.2.0.0.4}Nonignorable (missing not at random)}{254}%
+\contentsline {section}{\numberline {47.3}Imputing Missing Values}{254}%
+\contentsline {subsection}{\numberline {47.3.1}Imputation}{254}%
+\contentsline {subsection}{\numberline {47.3.2}Interpolation}{254}%
+\contentsline {section}{\numberline {47.4}Anomaly Detection}{254}%
+\contentsline {subsection}{\numberline {47.4.1}methods}{254}%
+\contentsline {subsubsection}{\numberline {47.4.1.1}PCA}{254}%
+\contentsline {section}{\numberline {47.5}labeling data}{255}%
+\contentsline {section}{\numberline {47.6}Group Segmentation}{255}%
+\contentsline {section}{\numberline {47.7}Time Series Concepts}{255}%
+\contentsline {part}{XVI\hspace {1em}Dump Space}{257}%
+\contentsline {subsection}{\numberline {47.7.1}Restricted Boltzmann Machines}{262}%
+\contentsline {subsection}{\numberline {47.7.2}Greek letters}{264}%
+\contentsline {subsection}{\numberline {47.7.3}Basic Log Math}{264}%
+\contentsline {subsection}{\numberline {47.7.4}Basic Matrix Math}{264}%
+\contentsline {subsection}{\numberline {47.7.5}Basic Linear Algebra}{264}%
+\contentsline {subsection}{\numberline {47.7.6}Representation Learning}{264}%
+\contentsline {subsection}{\numberline {47.7.7}others}{264}%
+\contentsline {section}{\numberline {47.8}research to include}{266}%
+\contentsline {part}{XVII\hspace {1em}Appendix}{269}%
+\contentsline {chapter}{\numberline {48}Augmentation Techniques}{271}%
+\contentsline {section}{\numberline {48.1}Data Imbalance or Unbalanced Data}{272}%
+\contentsline {subsection}{\numberline {48.1.1}Methods}{272}%
+\contentsline {subsubsection}{\numberline {48.1.1.1}Data}{273}%
+\contentsline {subsubsection}{\numberline {48.1.1.2}Model}{273}%
+\contentsline {subsubsection}{\numberline {48.1.1.3}Post processing}{273}%
+\contentsline {subsection}{\numberline {48.1.2}Evaluation}{273}%
+\contentsline {chapter}{\numberline {49}Statsy Stuff}{275}%
+\contentsline {section}{\numberline {49.1}Experimental Design}{275}%
+\contentsline {section}{\numberline {49.2}``tests''}{275}%
+\contentsline {subsection}{\numberline {49.2.1}T test}{276}%
+\contentsline {subsection}{\numberline {49.2.2}Chi-Squared Test}{276}%
+\contentsline {section}{\numberline {49.3}Power Analysis}{276}%
+\contentsline {section}{\numberline {49.4}Analysis of Variance (ANOVA)}{277}%
+\contentsline {section}{\numberline {49.5}Transforms}{277}%
+\contentsline {section}{\numberline {49.6}Variance Reduction Methods}{277}%
+\contentsline {section}{\numberline {49.7}Distributions}{279}%
+\contentsline {subsection}{\numberline {49.7.1}Common Distributions}{279}%
+\contentsline {subsubsection}{\numberline {49.7.1.1}Normal Distribution / Gaussian Distribution}{279}%
+\contentsline {subsubsection}{\numberline {49.7.1.2}Uniform Distribution}{279}%
+\contentsline {subsubsection}{\numberline {49.7.1.3}Bernoulli Distribution}{279}%
+\contentsline {subsubsection}{\numberline {49.7.1.4}Poisson Distribution}{279}%
+\contentsline {chapter}{\numberline {50}Appendix}{281}%
+\contentsline {section}{\numberline {50.1}Minor Explanations}{281}%
+\contentsline {subsection}{\numberline {50.1.1}Convolution vs Cross-Correlation}{281}%
