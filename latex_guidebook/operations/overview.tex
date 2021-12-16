@@ -268,6 +268,11 @@ Introduced in 1997 %\cite{hochreiter1997long}
 
 \section{Attention}
 
+\r{``An attention function can be described as mapping a query and a set of key-value pairs to an output,
+	where the query, keys, values, and output are all vectors. The output is computed as a weighted sum
+	of the values, where the weight assigned to each value is computed by a compatibility function of the
+	query with the corresponding key.'' \cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
 \TD{Self-attention Does Not Need $O(n^{2})$ Memory~\cite{Rabe2021SelfattentionDN}}
 
 %TODO: another blog to checkout https://distill.pub/2016/augmented-rnns/
@@ -304,6 +309,9 @@ Introduced in 1997 %\cite{hochreiter1997long}
 \TD{Describes two variants: a ``hard'' stochastic attention mechanism (trainable via ``maximizing an approximate variational lower bound'' or REINFORCE) and a ``soft'' deterministic attention mechanism(trainable by standard back-propagation) \cite{DBLP:journals/corr/XuBKCCSZB15}. Soft attention --- scores to all entities (is differenetiable but expensive) and hard attention --- only selects one entity (non-differentiable (and complicated, reinforcement learning), but requires less computation at inference)}
 
 
+% TODO: does this make sense?
+\TD{Non-linear projection for K,Q, and V~\cite{DBLP:journals/corr/abs-2111-10017}}
+
 
 \subsubsection{Scoring Functions}
 
@@ -311,13 +319,15 @@ Introduced in 1997 %\cite{hochreiter1997long}
 \TD{table from \cite{weng2018attention}}
 
 
-\section{Self-Attention}
+\subsection{Self-Attention}
 
 \r{sometimes refered to as ``intra-attention''\cite{DBLP:journals/corr/VaswaniSPUJGKP17}. Keys, queries and values are all derived from the same sequence. \TD{Self-attention transforms a sequence to create a representation of itself.}}
 
 
 
 \subsection{transformers}
+
+% possibly useful: http://nlp.seas.harvard.edu/2018/04/03/attention.html
 
 \TD{survey of recent transformer architectures \TD{Efficient Transformers: A Survey \cite{Tay2020EfficientTA}}}
 
@@ -355,6 +365,122 @@ Introduced in 1997 %\cite{hochreiter1997long}
 
 
 % TODO: read https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html
+
+
+\subsection{Positional Encodings}
+
+\TD{Positional embedding and positional encoding tend to be used interchangably. However, typically an encoding means ``fixed'' while an embedding means ``learned'' or ``trainable''.}
+
+% TODO: example of how word order matters (not is a good example)
+
+\r{Attention/transformers view the inputs as sets, that is there is no order associated with each input. All information enters the attention block at once. This is in contrast to something like a recurrent model, in which the order of the inputs is implicit.}
+
+\r{trade off: potentially faster (remove the dependancy of doing operations sequentially) and can also possibly help capture longer range dependancies (without additional complexity e.g. skip connections)}
+
+\r{(re)introducing order to the input by including additional information -- the ``positional embedding''.}
+
+\r{NOTE: Great blog posts on this subject~\cite{kazemnejad_2021, kernes_2021, kernes_2021B}}
+
+\subsubsection{Positional Encoding Value}
+
+\r{why not add linear/progressive value signifying order?}
+
+\r{This would be called an aboslute positional embedding}
+
+\r{Include index information [0, n], where n is the length of the sentance (minus 1). This could lead to magnitude issues. Where the singal from the word embeddings is ``washed out'' by the positional embedding.  Another consideration is that (may or may not be an issue depending on the application) is that you'd like to ensure you have the largest sequence in the training set that you expect to see in evaluation set. For example, if you only see sequences of length $25$ in the training data and then see a sequence of length $32$ during inference. The model will be unsure what to do with values $25 - 31$ (zero indexing). Depending on how you include the positional embedding (e.g. additive or concat), the model may misinterpret the values or be largely/entirely unsure what to make of these previously unseen values.}
+	
+	
+\r{To address this you could either increase the magnitude of the word embeddings or normalize/scale the positional embedding.}
+
+\r{However, niether are ideal.}
+
+\r{Increasing the magnitude of the word embeddings would possibly work, though you may consider issues with exploding values in the network, but you'd still have a similar issue to what would happen if you normalized the positional embedding. }
+
+\r{That is, the normalized positional embeddings may encode different information when the sentances are longer or shorter -- the delta between words in a 5 word sentance vs a 20 word sentance doesn't have a consistent meaning}
+
+% NOTE: haven't read this yet (I don't think, though the link is purple...)
+\TD{Self-Attention with Relative Position Representations~\cite{DBLP:journals/corr/abs-1803-02155}}
+
+\r{Ideally the embedding would be able to account for all the issues we discussed.}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item consistent delta between each position
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item regardless of sequence length, if an instance is one instance away from another, the positional encoding should be the same e.g. in a length four sequence the positional encoding should be the same from instances $1$ and $2$ as it is for instances $19$ and $20$ in a length $22$ sequence.
+		\end{itemize}
+	\item generalize to sequence lengths unseen in training
+\end{itemize}
+
+\r{additionally, we'd prefer to have each instance in the sequence be unique. That is the positional encoding for one instance shouldn't be the same as another in the same sequence (e.g. two words in a sentance).}
+
+\paragraph{Positional Encoding Value(s)}
+
+\r{Rather than use a single value, a possible solution is to use an array of values.}
+
+\TD{Relative positional encoding (rather than absolute).}
+
+
+\TD{What if we were to use a binary array to represent each location?}
+
+\TD{issue with binary}
+
+\TD{}
+
+
+\TD{CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings~\cite{DBLP:journals/corr/abs-2106-03143}}
+
+% NOTE: possibly relevant: https://aclanthology.org/2021.emnlp-main.266.pdf
+
+\paragraph{Sinusoidal}
+
+\TD{include figure with multiple frequencies and points on the x and y axis leading to embeddings}
+
+\subsection{Positional Embeddings (learned ``encodings'')}
+
+% possibly useful: https://theaisummer.com/positional-embeddings/
+
+\TD{Learning to Encode Position for Transformer with Continuous Dynamical Model~\cite{DBLP:journals/corr/abs-2003-09229}}
+
+
+\TD{What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding~\cite{DBLP:journals/corr/abs-2010-04903}}
+
+\subsubsection{Including Positional Embeddings}
+
+% someones thoughts on  additive vs concat: https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/
+
+\paragraph{Additive}
+
+\TD{saves memory (over concatenation -- less dimensions)}
+
+\TD{figure}
+
+\paragraph{Concatenation}
+
+\TD{figure}
+
+
+\section{MLP-Mixer}
+
+\r{MLPs that are used to ``mix'' tokens (spatial) and ``mix'' channels (features)}
+
+% possible blog: https://wandb.ai/wandb_fc/pytorch-image-models/reports/Is-MLP-Mixer-a-CNN-in-Disguise---Vmlldzo4NDE1MTU
+
+% MLP resurgence
+\TD{Do You Even Need Attention? A \cite{DBLP:journals/corr/abs-2105-02723}}
+
+\TD{gMLP (Pay Attention to MLPs) \cite{DBLP:journals/corr/abs-2105-08050}}
+
+\TD{MLP-Mixer: An all-MLP Architecture for Vision \cite{DBLP:journals/corr/abs-2105-01601}}
+
+\TD{RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition \cite{DBLP:journals/corr/abs-2105-01883}}
+
+\TD{ResMLP: Feedforward networks for image classification with data-efficient training \cite{DBLP:journals/corr/abs-2105-03404}}
+Conncurrent papers released looking to replace attention with MLPs.
+
+\TD{Do You Even Need Attention? A Stack of Feed-Forward Layers Does Surprisingly Well on ImageNet \cite{MelasKyriazi2021DoYE}}
+
+
+
 
 \section{Mixture of Experts (MoE)}
 

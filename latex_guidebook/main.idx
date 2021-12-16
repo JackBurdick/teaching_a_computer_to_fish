@@ -64,20 +64,20 @@
 \indexentry{symbolic differentiation}{130}
 \indexentry{autodiff}{130}
 \indexentry{reverse-mode differentiation}{130}
-\indexentry{image quantization}{148}
-\indexentry{silhouette coefficient}{150}
-\indexentry{Principal Component Analysis (PCA)}{151}
-\indexentry{Karhunen-Love Transform (KLM)}{151}
-\indexentry{covarience matrix}{151}
-\indexentry{manifold}{153}
-\indexentry{bagging}{179}
-\indexentry{boostrap aggregating}{179}
-\indexentry{sampling with replacement|see{bagging}}{179}
-\indexentry{bootstrap samples}{179}
-\indexentry{subagging}{180}
-\indexentry{sampling without replacement|see{subagging}}{180}
-\indexentry{subspace sampling}{180}
-\indexentry{blending}{181}
-\indexentry{catastrophic forgetting}{201}
-\indexentry{continual learning}{201}
-\indexentry{universal approximators}{281}
+\indexentry{image quantization}{152}
+\indexentry{silhouette coefficient}{154}
+\indexentry{Principal Component Analysis (PCA)}{155}
+\indexentry{Karhunen-Love Transform (KLM)}{155}
+\indexentry{covarience matrix}{155}
+\indexentry{manifold}{157}
+\indexentry{bagging}{183}
+\indexentry{boostrap aggregating}{183}
+\indexentry{sampling with replacement|see{bagging}}{183}
+\indexentry{bootstrap samples}{183}
+\indexentry{subagging}{184}
+\indexentry{sampling without replacement|see{subagging}}{184}
+\indexentry{subspace sampling}{184}
+\indexentry{blending}{185}
+\indexentry{catastrophic forgetting}{205}
+\indexentry{continual learning}{205}
+\indexentry{universal approximators}{285}

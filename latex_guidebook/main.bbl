@@ -54,6 +54,11 @@
   your weakness into a strength: Watermarking deep neural networks by
   backdooring}, CoRR, abs/1802.04633 (2018).
 
+\bibitem{DBLP:journals/corr/abs-2111-10017}
+{\sc J.~Ahn, J.~Hong, J.~Ju, and H.~Jung}, {\em Rethinking query, key, and
+  value embedding in vision transformer under tiny model constraints}, CoRR,
+  abs/2111.10017 (2021).
+
 \bibitem{DBLP:journals/corr/abs-1904-05835}
 {\sc S.~Ahn, S.~X. Hu, A.~C. Damianou, N.~D. Lawrence, and Z.~Dai}, {\em
   Variational information distillation for knowledge transfer}, CoRR,
@@ -717,6 +722,10 @@
 {\sc M.~Kaya and H.~{\c{S}}. Bilge}, {\em Deep metric learning: A survey},
   Symmetry, 11 (2019), p.~1066.
 
+\bibitem{kazemnejad_2021}
+{\sc A.~Kazemnejad}, {\em Transformer architecture: The positional encoding -
+  amirhossein kazemnejad's blog}, 2021.
+
 \bibitem{Ke2020RethinkingPE}
 {\sc G.~Ke, D.~He, and T.-Y. Liu}, {\em Rethinking positional encoding in
   language pre-training}, ArXiv, abs/2006.15595 (2020).
@@ -725,6 +734,14 @@
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
   uncertainty to weigh losses for scene geometry and semantics}, CoRR,
   abs/1705.07115 (2017).
+
+\bibitem{kernes_2021}
+{\sc J.~Kernes}, {\em {Master Positional Encoding: Part I - Towards Data
+  Science}}, 02 2021.
+
+\bibitem{kernes_2021B}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em {Master Positional
+  Encoding: Part II - Towards Data Science}}, 02 2021.
 
 \bibitem{Khacef2020ImprovingSM}
 {\sc L.~Khacef, L.~Rodriguez, and B.~Miramond}, {\em Improving self-organizing
@@ -851,6 +868,11 @@
 {\sc Y.~Li, B.~Wu, Y.~Jiang, Z.~Li, and S.-T. Xia}, {\em Backdoor learning: A
   survey}, ArXiv, abs/2007.08745 (2020).
 
+\bibitem{DBLP:journals/corr/abs-2106-03143}
+{\sc T.~Likhomanenko, Q.~Xu, R.~Collobert, G.~Synnaeve, and A.~Rogozhnikov},
+  {\em {CAPE:} encoding relative positions with continuous augmented positional
+  embeddings}, CoRR, abs/2106.03143 (2021).
+
 \bibitem{lim2019fast}
 {\sc S.~Lim, I.~Kim, T.~Kim, C.~Kim, and S.~Kim}, {\em Fast autoaugment}, arXiv
   preprint arXiv:1905.00397,  (2019).
@@ -893,6 +915,11 @@
 {\sc W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~E. Reed, C.~Fu, and A.~C.
   Berg}, {\em {SSD:} single shot multibox detector}, CoRR, abs/1512.02325
   (2015).
+
+\bibitem{DBLP:journals/corr/abs-2003-09229}
+{\sc X.~Liu, H.~Yu, I.~S. Dhillon, and C.~Hsieh}, {\em Learning to encode
+  position for transformer with continuous dynamical model}, CoRR,
+  abs/2003.09229 (2020).
 
 \bibitem{Liu2020SelfpacedEF}
 {\sc Z.~Liu, W.~Cao, Z.~Gao, J.~Bian, H.~Chen, Y.~Chang, and T.~Liu}, {\em
@@ -1343,6 +1370,10 @@
 {\sc C.~E. Shannon}, {\em A mathematical theory of communication}, The Bell
   system technical journal, 27 (1948), pp.~379--423.
 
+\bibitem{DBLP:journals/corr/abs-1803-02155}
+{\sc P.~Shaw, J.~Uszkoreit, and A.~Vaswani}, {\em Self-attention with relative
+  position representations}, CoRR, abs/1803.02155 (2018).
+
 \bibitem{shazeer2017outrageously}
 {\sc N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~Le, G.~Hinton, and
   J.~Dean}, {\em Outrageously large neural networks: The sparsely-gated
@@ -1568,6 +1599,11 @@
 \bibitem{DBLP:journals/corr/abs-1711-07971}
 {\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural
   networks}, CoRR, abs/1711.07971 (2017).
+
+\bibitem{DBLP:journals/corr/abs-2010-04903}
+{\sc Y.~Wang and Y.~Chen}, {\em What do position embeddings learn? an empirical
+  study of pre-trained language model positional encoding}, CoRR,
+  abs/2010.04903 (2020).
 
 \bibitem{DBLP:journals/corr/WangFL15}
 {\sc Z.~Wang, N.~de~Freitas, and M.~Lanctot}, {\em Dueling network
