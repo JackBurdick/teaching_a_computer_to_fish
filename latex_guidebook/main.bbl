@@ -133,6 +133,14 @@
 {\sc G.~Bingham and R.~Miikkulainen}, {\em Autoinit: Analytic signal-preserving
   weight initialization for neural networks}, ArXiv, abs/2109.08958 (2021).
 
+\bibitem{DBLP:journals/corr/abs-2112-04426}
+{\sc S.~Borgeaud, A.~Mensch, J.~Hoffmann, T.~Cai, E.~Rutherford, K.~Millican,
+  G.~van~den Driessche, J.~Lespiau, B.~Damoc, A.~Clark, D.~de~Las~Casas,
+  A.~Guy, J.~Menick, R.~Ring, T.~Hennigan, S.~Huang, L.~Maggiore, C.~Jones,
+  A.~Cassirer, A.~Brock, M.~Paganini, G.~Irving, O.~Vinyals, S.~Osindero,
+  K.~Simonyan, J.~W. Rae, E.~Elsen, and L.~Sifre}, {\em Improving language
+  models by retrieving from trillions of tokens}, CoRR, abs/2112.04426 (2021).
+
 \bibitem{box1964analysis}
 {\sc G.~E. Box and D.~R. Cox}, {\em An analysis of transformations}, Journal of
   the Royal Statistical Society: Series B (Methodological), 26 (1964),
@@ -173,6 +181,11 @@
   C.~Flynn, T.~K. Gilbert, L.~Dyer, S.~Khan, Y.~Bengio, and M.~Anderljung},
   {\em Toward trustworthy {AI} development: Mechanisms for supporting
   verifiable claims}, CoRR, abs/2004.07213 (2020).
+
+\bibitem{DBLP:journals/corr/abs-2010-06682}
+{\sc T.~T. Cai, J.~Frankle, D.~J. Schwab, and A.~S. Morcos}, {\em Are all
+  negatives created equal in contrastive instance discrimination?}, CoRR,
+  abs/2010.06682 (2020).
 
 \bibitem{Carion2020EndtoEndOD}
 {\sc N.~Carion, F.~Massa, G.~Synnaeve, N.~Usunier, A.~M. Kirillov, and
@@ -242,6 +255,10 @@
 {\sc R.~Child, S.~Gray, A.~Radford, and I.~Sutskever}, {\em Generating long
   sequences with sparse transformers}, CoRR, abs/1904.10509 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1907-05550}
+{\sc D.~Choi, A.~Passos, C.~J. Shallue, and G.~E. Dahl}, {\em Faster neural
+  network training with data echoing}, CoRR, abs/1907.05550 (2019).
+
 \bibitem{DBLP:journals/corr/Chollet16a}
 {\sc F.~Chollet}, {\em Xception: Deep learning with depthwise separable
   convolutions}, CoRR, abs/1610.02357 (2016).
@@ -261,6 +278,10 @@
   the entscheidungs problcm. proceedings of the london mathematical society, 2
   s. vol. 42 (1936--1937), pp. 230--265.}, The Journal of Symbolic Logic, 2
   (1937), pp.~42--43.
+
+\bibitem{Collins2017CapacityAT}
+{\sc J.~Collins, J.~Sohl-Dickstein, and D.~Sussillo}, {\em Capacity and
+  trainability in recurrent neural networks}, ArXiv, abs/1611.09913 (2017).
 
 \bibitem{Cordonnier2020MultiHeadAC}
 {\sc J.-B. Cordonnier, A.~Loukas, and M.~Jaggi}, {\em Multi-head attention:
@@ -329,6 +350,10 @@
   Discriminative unsupervised feature learning with convolutional neural
   networks}, CoRR, abs/1406.6909 (2014).
 
+\bibitem{doya1993universality}
+{\sc K.~Doya}, {\em Universality of fully connected recurrent neural networks},
+  Dept. of Biology, UCSD, Tech. Rep,  (1993).
+
 \bibitem{dozat2016incorporating}
 {\sc T.~Dozat}, {\em Incorporating nesterov momentum into adam},  (2016).
 
@@ -352,6 +377,10 @@
   Proceedings of the 53rd Annual Meeting of the Association for Computational
   Linguistics and the 7th International Joint Conference on Natural Language
   Processing (Volume 2: Short Papers), 2015, pp.~845--850.
+
+\bibitem{Evci2022Head2ToeUI}
+{\sc U.~Evci, V.~Dumoulin, H.~Larochelle, and M.~C. Mozer}, {\em Head2toe:
+  Utilizing intermediate representations for better transfer learning}, 2022.
 
 \bibitem{Evci2019RiggingTL}
 {\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
@@ -490,6 +519,15 @@
   K.~Kavukcuoglu, R.~Munos, and M.~Valko}, {\em Bootstrap your own latent: A
   new approach to self-supervised learning}, ArXiv, abs/2006.07733 (2020).
 
+\bibitem{DBLP:journals/corr/GuLGTL16}
+{\sc S.~Gu, T.~P. Lillicrap, Z.~Ghahramani, R.~E. Turner, and S.~Levine}, {\em
+  Q-prop: Sample-efficient policy gradient with an off-policy critic}, CoRR,
+  abs/1611.02247 (2016).
+
+\bibitem{DBLP:journals/corr/GuLSL16}
+{\sc S.~Gu, T.~P. Lillicrap, I.~Sutskever, and S.~Levine}, {\em Continuous deep
+  q-learning with model-based acceleration}, CoRR, abs/1603.00748 (2016).
+
 \bibitem{Gu2015TowardsDN}
 {\sc S.~Gu and L.~Rigazio}, {\em Towards deep neural network architectures
   robust to adversarial examples}, CoRR, abs/1412.5068 (2015).
@@ -562,6 +600,11 @@
 {\sc T.~He, Z.~Zhang, H.~Zhang, Z.~Zhang, J.~Xie, and M.~Li}, {\em Bag of
   tricks for image classification with convolutional neural networks}, CoRR,
   abs/1812.01187 (2018).
+
+\bibitem{DBLP:journals/corr/abs-2103-10957}
+{\sc O.~J. H{\'{e}}naff, S.~Koppula, J.~Alayrac, A.~van~den Oord, O.~Vinyals,
+  and J.~Carreira}, {\em Efficient visual pretraining with contrastive
+  detection}, CoRR, abs/2103.10957 (2021).
 
 \bibitem{Hendrycks2020AugMixAS}
 {\sc D.~Hendrycks, N.~Mu, E.~D. Cubuk, B.~Zoph, J.~Gilmer, and
@@ -684,6 +727,11 @@
 {\sc L.~Jing and Y.~Tian}, {\em Self-supervised visual feature learning with
   deep neural networks: {A} survey}, CoRR, abs/1902.06162 (2019).
 
+\bibitem{jozefowicz2015empirical}
+{\sc R.~Jozefowicz, W.~Zaremba, and I.~Sutskever}, {\em An empirical
+  exploration of recurrent network architectures}, in International conference
+  on machine learning, PMLR, 2015, pp.~2342--2350.
+
 \bibitem{Kairouz2019AdvancesAO}
 {\sc P.~Kairouz, H.~B. McMahan, B.~Avent, A.~Bellet, M.~Bennis, A.~N. Bhagoji,
   K.~Bonawitz, Z.~Charles, G.~Cormode, R.~Cummings, R.~G.~L. D'Oliveira, S.~E.
@@ -705,6 +753,15 @@
 \bibitem{Kalchbrenner2016GridLS}
 {\sc N.~Kalchbrenner, I.~Danihelka, and A.~Graves}, {\em Grid long short-term
   memory}, CoRR, abs/1507.01526 (2016).
+
+\bibitem{DBLP:journals/corr/abs-2104-05514}
+{\sc G.~Karamanolakis, S.~Mukherjee, G.~Zheng, and A.~H. Awadallah}, {\em
+  Self-training with weak supervision}, CoRR, abs/2104.05514 (2021).
+
+\bibitem{DBLP:journals/corr/abs-2107-02331}
+{\sc S.~Karamcheti, R.~Krishna, L.~Fei{-}Fei, and C.~D. Manning}, {\em Mind
+  your outliers! investigating the negative impact of outliers on active
+  learning for visual question answering}, CoRR, abs/2107.02331 (2021).
 
 \bibitem{Katharopoulos2020TransformersAR}
 {\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
@@ -751,6 +808,11 @@
 {\sc A.~Khan, A.~Sohail, U.~Zahoora, and A.~S. Qureshi}, {\em A survey of the
   recent architectures of deep convolutional neural networks}, CoRR,
   abs/1901.06032 (2019).
+
+\bibitem{DBLP:journals/corr/abs-2004-11362}
+{\sc P.~Khosla, P.~Teterwak, C.~Wang, A.~Sarna, Y.~Tian, P.~Isola,
+  A.~Maschinot, C.~Liu, and D.~Krishnan}, {\em Supervised contrastive
+  learning}, CoRR, abs/2004.11362 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1802-04977}
 {\sc J.~Kim, S.~Park, and N.~Kwak}, {\em Paraphrasing complex network: Network
@@ -873,6 +935,11 @@
   {\em {CAPE:} encoding relative positions with continuous augmented positional
   embeddings}, CoRR, abs/2106.03143 (2021).
 
+\bibitem{Lillicrap2016ContinuousCW}
+{\sc T.~P. Lillicrap, J.~J. Hunt, A.~Pritzel, N.~M.~O. Heess, T.~Erez,
+  Y.~Tassa, D.~Silver, and D.~Wierstra}, {\em Continuous control with deep
+  reinforcement learning}, CoRR, abs/1509.02971 (2016).
+
 \bibitem{lim2019fast}
 {\sc S.~Lim, I.~Kim, T.~Kim, C.~Kim, and S.~Kim}, {\em Fast autoaugment}, arXiv
   preprint arXiv:1905.00397,  (2019).
@@ -931,6 +998,10 @@
 {\sc Z.~Liu, Y.~Lin, Y.~Cao, H.~Hu, Y.~Wei, Z.~Zhang, S.~Lin, and B.~Guo}, {\em
   Swin transformer: Hierarchical vision transformer using shifted windows},
   CoRR, abs/2103.14030 (2021).
+
+\bibitem{Liu2022ACF}
+{\sc Z.~Liu, H.~Mao, C.-Y. Wu, C.~Feichtenhofer, T.~Darrell, and S.~Xie}, {\em
+  A convnet for the 2020s}, 2022.
 
 \bibitem{Locatello2020ObjectCentricLW}
 {\sc F.~Locatello, D.~Weissenborn, T.~Unterthiner, A.~Mahendran, G.~Heigold,
@@ -1171,6 +1242,11 @@
   Grokking: Generalization beyond overfit-ting on small algorithmic datasets},
   in ICLR MATH-AI Workshop, 2021.
 
+\bibitem{Power2022GrokkingGB}
+{\sc A.~Power, Y.~Burda, H.~Edwards, I.~Babuschkin, and V.~Misra}, {\em
+  Grokking: Generalization beyond overfitting on small algorithmic datasets},
+  ArXiv, abs/2201.02177 (2022).
+
 \bibitem{DBLP:journals/corr/abs-1907-07804}
 {\sc S.~Pramanik, P.~Agrawal, and A.~Hussain}, {\em Omninet: {A} unified
   architecture for multi-modal multi-task learning}, CoRR, abs/1907.07804
@@ -1203,6 +1279,24 @@
   {\em Designing network design spaces}, 2020 IEEE/CVF Conference on Computer
   Vision and Pattern Recognition (CVPR),  (2020), pp.~10425--10433.
 
+\bibitem{DBLP:journals/corr/abs-2112-11446}
+{\sc J.~W. Rae, S.~Borgeaud, T.~Cai, K.~Millican, J.~Hoffmann, H.~F. Song,
+  J.~Aslanides, S.~Henderson, R.~Ring, S.~Young, E.~Rutherford, T.~Hennigan,
+  J.~Menick, A.~Cassirer, R.~Powell, G.~van~den Driessche, L.~A. Hendricks,
+  M.~Rauh, P.~Huang, A.~Glaese, J.~Welbl, S.~Dathathri, S.~Huang, J.~Uesato,
+  J.~Mellor, I.~Higgins, A.~Creswell, N.~McAleese, A.~Wu, E.~Elsen, S.~M.
+  Jayakumar, E.~Buchatskaya, D.~Budden, E.~Sutherland, K.~Simonyan,
+  M.~Paganini, L.~Sifre, L.~Martens, X.~L. Li, A.~Kuncoro, A.~Nematzadeh,
+  E.~Gribovskaya, D.~Donato, A.~Lazaridou, A.~Mensch, J.~Lespiau,
+  M.~Tsimpoukelli, N.~Grigorev, D.~Fritz, T.~Sottiaux, M.~Pajarskas, T.~Pohlen,
+  Z.~Gong, D.~Toyama, C.~de~Masson~d'Autume, Y.~Li, T.~Terzi, V.~Mikulik,
+  I.~Babuschkin, A.~Clark, D.~de~Las~Casas, A.~Guy, C.~Jones, J.~Bradbury,
+  M.~Johnson, B.~A. Hechtman, L.~Weidinger, I.~Gabriel, W.~S. Isaac,
+  E.~Lockhart, S.~Osindero, L.~Rimell, C.~Dyer, O.~Vinyals, K.~Ayoub,
+  J.~Stanway, L.~Bennett, D.~Hassabis, K.~Kavukcuoglu, and G.~Irving}, {\em
+  Scaling language models: Methods, analysis {\&} insights from training
+  gopher}, CoRR, abs/2112.11446 (2021).
+
 \bibitem{Rae2020CompressiveTF}
 {\sc J.~W. Rae, A.~Potapenko, S.~M. Jayakumar, and T.~P. Lillicrap}, {\em
   Compressive transformers for long-range sequence modelling}, ArXiv,
@@ -1212,6 +1306,11 @@
 {\sc N.~Rahaman, A.~Baratin, D.~Arpit, F.~Dr{\"a}xler, M.~Lin, F.~A. Hamprecht,
   Y.~Bengio, and A.~C. Courville}, {\em On the spectral bias of neural
   networks}, in ICML, 2019.
+
+\bibitem{Rahman2021MachineLA}
+{\sc M.~S. Rahman, F.~Khomh, A.~Hamidi, J.~Cheng, G.~Antoniol, and
+  H.~Washizaki}, {\em Machine learning application development: Practitioners'
+  insights}, ArXiv, abs/2112.15277 (2021).
 
 \bibitem{DBLP:journals/corr/abs-1711-10160}
 {\sc A.~Ratner, S.~H. Bach, H.~R. Ehrenberg, J.~A. Fries, S.~Wu, and
@@ -1345,6 +1444,15 @@
 {\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
   embedding for face recognition and clustering}, CoRR, abs/1503.03832 (2015).
 
+\bibitem{Schulman2016HighDimensionalCC}
+{\sc J.~Schulman, P.~Moritz, S.~Levine, M.~I. Jordan, and P.~Abbeel}, {\em
+  High-dimensional continuous control using generalized advantage estimation},
+  CoRR, abs/1506.02438 (2016).
+
+\bibitem{DBLP:journals/corr/SchulmanWDRK17}
+{\sc J.~Schulman, F.~Wolski, P.~Dhariwal, A.~Radford, and O.~Klimov}, {\em
+  Proximal policy optimization algorithms}, CoRR, abs/1707.06347 (2017).
+
 \bibitem{sculley2015hidden}
 {\sc D.~Sculley, G.~Holt, D.~Golovin, E.~Davydov, T.~Phillips, D.~Ebner,
   V.~Chaudhary, M.~Young, J.-F. Crespo, and D.~Dennison}, {\em Hidden technical
@@ -1469,6 +1577,10 @@
 \bibitem{DBLP:journals/corr/abs-1909-11825}
 {\sc Y.~Sun, E.~Tzeng, T.~Darrell, and A.~A. Efros}, {\em Unsupervised domain
   adaptation through self-supervision}, CoRR, abs/1909.11825 (2019).
+
+\bibitem{DBLP:journals/corr/abs-2111-09839}
+{\sc Y.~Sung, V.~Nair, and C.~Raffel}, {\em Training neural networks with fixed
+  sparse masks}, CoRR, abs/2111.09839 (2021).
 
 \bibitem{DBLP:journals/corr/SutskeverVL14}
 {\sc I.~Sutskever, O.~Vinyals, and Q.~V. Le}, {\em Sequence to sequence

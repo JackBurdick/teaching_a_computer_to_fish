@@ -26,3 +26,22 @@
 \TD{Noisy DQN --- Noisy Networks for Exploration \cite{DBLP:journals/corr/FortunatoAPMOGM17}}
 
 \TD{Combine ideas from prior work\cite{DBLP:journals/corr/HasseltGS15,Schaul2016PrioritizedER,DBLP:journals/corr/WangFL15,DBLP:journals/corr/MnihBMGLHSK16,DBLP:journals/corr/BellemareDM17,DBLP:journals/corr/FortunatoAPMOGM17} Rainbow: Combining Improvements in Deep Reinforcement Learning \cite{DBLP:journals/corr/abs-1710-02298}}
+
+\TD{Proximal Policy Optimization (PPO)~\cite{DBLP:journals/corr/SchulmanWDRK17}}
+
+% combine on policy and off policy
+\TD{Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic~\cite{DBLP:journals/corr/GuLGTL16}}
+
+
+\r{GAE: generalized advantage estimation. lambda return, mixture of multi-step bootstrapping. when $\lambda = 0$, equivalent to TD-estimation, when $\lambda = 1$, equivalent to infinity step boostrapping (monte carlo estimation). lambda is a hyperparameter}
+\TD{High-Dimensional Continuous Control Using Generalized Advantage Estimation~\cite{Schulman2016HighDimensionalCC}}
+
+
+%  "Actor-Critic" but grey area, more DQN for continuous action spaces
+% replay buffer and soft updates to target network
+% soft update: rather than copy network updates to target networks every n timesteps (10k for atari paper), the weights are slowly mixed in every timestep (0.01%)
+\r{DDPG: Deep Deterministic Policy Gradient}
+\TD{Continuous control with deep reinforcement learning~\cite{Lillicrap2016ContinuousCW}}
+
+% normalized adantage functions (NAF)
+\TD{Continuous Deep Q-Learning with Model-based Acceleration~\cite{DBLP:journals/corr/GuLSL16}}
