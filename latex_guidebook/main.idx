@@ -37,47 +37,48 @@
 \indexentry{Ridge regression}{90}
 \indexentry{Tikhonov regularization}{90}
 \indexentry{freezing}{92}
-\indexentry{generalized linear model}{101}
-\indexentry{Ordinary Lease Squares (OLS)}{102}
-\indexentry{Linear Least Squares}{102}
-\indexentry{residuals}{103}
-\indexentry{residual sum of squares (RSS)}{103}
-\indexentry{odds ratio}{104}
-\indexentry{logit}{104}
-\indexentry{discrimination threshold}{105}
-\indexentry{lazy learner}{106}
-\indexentry{Support Vector Machine (SVM)}{109}
-\indexentry{Sequential Minimal Optimization (SMO)}{109}
-\indexentry{independent and identically distributed (i.i.d)}{110}
-\indexentry{ID3 algorithm}{112}
-\indexentry{J48}{112}
-\indexentry{Heaviside step function}{117}
-\indexentry{unit step function}{117}
-\indexentry{universal approximators}{118}
-\indexentry{input layer}{118}
-\indexentry{hidden layer}{118}
-\indexentry{output layer}{118}
-\indexentry{credit assignment problem}{120}
-\indexentry{sigmoid}{121}
-\indexentry{ReLUN}{125}
-\indexentry{data distillation}{129}
-\indexentry{symbolic differentiation}{130}
-\indexentry{autodiff}{130}
-\indexentry{reverse-mode differentiation}{130}
-\indexentry{image quantization}{154}
-\indexentry{silhouette coefficient}{156}
-\indexentry{Principal Component Analysis (PCA)}{157}
-\indexentry{Karhunen-Love Transform (KLM)}{157}
-\indexentry{covarience matrix}{157}
-\indexentry{manifold}{159}
-\indexentry{bagging}{185}
-\indexentry{boostrap aggregating}{185}
-\indexentry{sampling with replacement|see{bagging}}{185}
-\indexentry{bootstrap samples}{185}
-\indexentry{subagging}{186}
-\indexentry{sampling without replacement|see{subagging}}{186}
-\indexentry{subspace sampling}{186}
-\indexentry{blending}{187}
-\indexentry{catastrophic forgetting}{207}
-\indexentry{continual learning}{207}
-\indexentry{universal approximators}{289}
+\indexentry{generalized linear model}{103}
+\indexentry{Ordinary Lease Squares (OLS)}{104}
+\indexentry{Linear Least Squares}{104}
+\indexentry{residuals}{105}
+\indexentry{residual sum of squares (RSS)}{105}
+\indexentry{odds ratio}{106}
+\indexentry{logit}{106}
+\indexentry{discrimination threshold}{107}
+\indexentry{lazy learner}{108}
+\indexentry{Support Vector Machine (SVM)}{111}
+\indexentry{Sequential Minimal Optimization (SMO)}{111}
+\indexentry{independent and identically distributed (i.i.d)}{112}
+\indexentry{ID3 algorithm}{114}
+\indexentry{J48}{114}
+\indexentry{Heaviside step function}{119}
+\indexentry{unit step function}{119}
+\indexentry{universal approximators}{120}
+\indexentry{input layer}{120}
+\indexentry{hidden layer}{120}
+\indexentry{output layer}{120}
+\indexentry{credit assignment problem}{122}
+\indexentry{sigmoid}{123}
+\indexentry{ReLUN}{127}
+\indexentry{data distillation}{131}
+\indexentry{symbolic differentiation}{132}
+\indexentry{autodiff}{132}
+\indexentry{reverse-mode differentiation}{132}
+\indexentry{image quantization}{156}
+\indexentry{silhouette coefficient}{158}
+\indexentry{Principal Component Analysis (PCA)}{159}
+\indexentry{Karhunen-Love Transform (KLM)}{159}
+\indexentry{covarience matrix}{159}
+\indexentry{manifold}{161}
+\indexentry{bagging}{187}
+\indexentry{boostrap aggregating}{187}
+\indexentry{sampling with replacement|see{bagging}}{187}
+\indexentry{bootstrap samples}{187}
+\indexentry{subagging}{188}
+\indexentry{sampling without replacement|see{subagging}}{188}
+\indexentry{subspace sampling}{188}
+\indexentry{blending}{189}
+\indexentry{continual learning}{209}
+\indexentry{lifelong learning}{209}
+\indexentry{catastrophic forgetting}{209}
+\indexentry{universal approximators}{291}

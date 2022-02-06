@@ -1,6 +1,6 @@
 \chapter{Continual learning}
 
-\r{\IDI{catastrophic forgetting}, \IDI{continual learning}}
+\r{\IDI{continual learning}~\cite{ring1994continual} or \IDI{lifelong learning}~\cite{thrun1998lifelong}, where a model may continue to learn new tasks/data over time.}
 
 \TD{Continual Lifelong Learning with Neural Networks: \cite{DBLP:journals/corr/abs-1802-07569}}
 
@@ -9,3 +9,24 @@
 
 \TD{A holistic View of Continual Learning with Deep Neural Networks: Forgotten Lessons and the Bridge to Active and Open World Learning \cite{Mundt2020AWV}}
 
+
+\section{Catastrophic Forgetting}
+
+\r{\IDI{catastrophic forgetting}~\cite{MCCLOSKEY1989109} -- ``forgetting'' or previous knowledge.  May be with respect to previously learned tasks or distributions of data.}
+
+% provides a overview of recent methods, though I'm not personally convinced w/their results
+\TD{Wide Neural Networks Forget Less Catastrophically~\cite{DBLP:journals/corr/abs-2110-11526}}
+
+\subsection{Overcoming catastrophic forgetting}
+
+\subsubsection{Regularization-based}
+
+\r{retain ``important'' parameters}
+
+\subsubsection{Expansion-based}
+
+\r{increase capacity/new modules for new tasks}
+
+\subsubsection{Replay-based Methods}
+
+\r{store portions of data that are relevant for certain tasks}

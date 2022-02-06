@@ -220,6 +220,11 @@
 {\sc O.~Chapelle, B.~Scholkopf, and A.~Zien}, {\em Semi-Supervised Learning},
   Adaptive Computation and Machine Learning series, MIT Press, 2010.
 
+\bibitem{DBLP:journals/corr/abs-2106-01345}
+{\sc L.~Chen, K.~Lu, A.~Rajeswaran, K.~Lee, A.~Grover, M.~Laskin, P.~Abbeel,
+  A.~Srinivas, and I.~Mordatch}, {\em Decision transformer: Reinforcement
+  learning via sequence modeling}, CoRR, abs/2106.01345 (2021).
+
 \bibitem{Chen2020ASF}
 {\sc T.~Chen, S.~Kornblith, M.~Norouzi, and G.~E. Hinton}, {\em A simple
   framework for contrastive learning of visual representations}, ArXiv,
@@ -718,6 +723,10 @@
   J.~Carreira}, {\em Perceiver: General perception with iterative attention},
   CoRR, abs/2103.03206 (2021).
 
+\bibitem{DBLP:journals/corr/abs-2106-02039}
+{\sc M.~Janner, Q.~Li, and S.~Levine}, {\em Reinforcement learning as one big
+  sequence modeling problem}, CoRR, abs/2106.02039 (2021).
+
 \bibitem{jiang2020exploring}
 {\sc Z.~Jiang, C.~Zhang, K.~Talwar, and M.~C. Mozer}, {\em Exploring the
   memorization-generalization continuum in deep learning}, arXiv preprint
@@ -1021,6 +1030,11 @@
   Fully-adaptive feature sharing in multi-task networks with applications in
   person attribute classification}, CoRR, abs/1611.05377 (2016).
 
+\bibitem{DBLP:journals/corr/abs-2106-05956}
+{\sc E.~S. Lubana, R.~P. Dick, and H.~Tanaka}, {\em Beyond batchnorm: Towards a
+  general understanding of normalization in deep learning}, CoRR,
+  abs/2106.05956 (2021).
+
 \bibitem{DBLP:journals/corr/LuongPM15}
 {\sc M.~Luong, H.~Pham, and C.~D. Manning}, {\em Effective approaches to
   attention-based neural machine translation}, CoRR, abs/1508.04025 (2015).
@@ -1044,6 +1058,11 @@
 {\sc D.~Masters and C.~Luschi}, {\em Revisiting small batch training for deep
   neural networks}, arXiv preprint arXiv:1804.07612,  (2018).
 
+\bibitem{MCCLOSKEY1989109}
+{\sc M.~McCloskey and N.~J. Cohen}, {\em Catastrophic interference in
+  connectionist networks: The sequential learning problem}, vol.~24 of
+  Psychology of Learning and Motivation, Academic Press, 1989, pp.~109--165.
+
 \bibitem{DBLP:journals/corr/abs-2105-02723}
 {\sc L.~Melas{-}Kyriazi}, {\em Do you even need attention? {A} stack of
   feed-forward layers does surprisingly well on imagenet}, CoRR, abs/2105.02723
@@ -1053,6 +1072,11 @@
 {\sc L.~Melas-Kyriazi}, {\em Do you even need attention? a stack of
   feed-forward layers does surprisingly well on imagenet}, ArXiv,
   abs/2105.02723 (2021).
+
+\bibitem{DBLP:journals/corr/abs-2110-11526}
+{\sc S.~Mirzadeh, A.~Chaudhry, H.~Hu, R.~Pascanu, D.~G{\"{o}}r{\"{u}}r, and
+  M.~Farajtabar}, {\em Wide neural networks forget less catastrophically},
+  CoRR, abs/2110.11526 (2021).
 
 \bibitem{DBLP:journals/corr/MisraSGH16}
 {\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
@@ -1367,6 +1391,10 @@
   data efficient neural reinforcement learning method}, in European conference
   on machine learning, Springer, 2005, pp.~317--328.
 
+\bibitem{ring1994continual}
+{\sc M.~B. Ring et~al.}, {\em Continual learning in reinforcement
+  environments},  (1994).
+
 \bibitem{Romero2015FitNetsHF}
 {\sc A.~Romero, N.~Ballas, S.~E. Kahou, A.~Chassang, C.~Gatta, and Y.~Bengio},
   {\em Fitnets: Hints for thin deep nets}, CoRR, abs/1412.6550 (2015).
@@ -1618,6 +1646,10 @@
 \bibitem{Tay2020EfficientTA}
 {\sc Y.~Tay, M.~Dehghani, D.~Bahri, and D.~Metzler}, {\em Efficient
   transformers: A survey}, ArXiv, abs/2009.06732 (2020).
+
+\bibitem{thrun1998lifelong}
+{\sc S.~Thrun}, {\em Lifelong learning algorithms}, in Learning to learn,
+  Springer, 1998, pp.~181--209.
 
 \bibitem{thrun1993issues}
 {\sc S.~Thrun and A.~Schwartz}, {\em Issues in using function approximation for
