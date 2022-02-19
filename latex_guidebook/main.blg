@@ -9,10 +9,12 @@ A level-1 auxiliary file: basics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
-A level-1 auxiliary file: multitask.aux
-A level-1 auxiliary file: meta.aux
 A level-1 auxiliary file: continual_learning.aux
 A level-1 auxiliary file: self_supervised_learning.aux
+A level-1 auxiliary file: multi_overview.aux
+A level-1 auxiliary file: transfer_learning.aux
+A level-1 auxiliary file: multitask.aux
+A level-1 auxiliary file: meta.aux
 A level-1 auxiliary file: reinforcement.aux
 A level-1 auxiliary file: interpretability.aux
 A level-1 auxiliary file: applied.aux
@@ -29,7 +31,7 @@ A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
-Reallocated field_info (elt_size=4) to 14545 items from 5000.
+Reallocated field_info (elt_size=4) to 15189 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -47,6 +49,8 @@ Warning--empty booktitle in Chuang2020DebiasedCL
 Warning--empty journal in dozat2016incorporating
 Warning--empty booktitle in Evci2022Head2ToeUI
 Warning--empty booktitle in Frankle2020PruningNN
+Warning--empty journal in grosseadaptive
+Warning--empty year in grosseadaptive
 Warning--can't use both volume and number fields in lee2013pseudo
 Warning--empty booktitle in Liu2022ACF
 Warning--empty journal in mangalam2019deep
@@ -56,45 +60,45 @@ Warning--empty journal in ring1994continual
 Warning--empty journal in schmidhuber1990making
 Warning--empty journal in tangcontrol
 Warning--empty year in tangcontrol
-You've used 415 entries,
+You've used 443 entries,
             2030 wiz_defined-function locations,
-            2572 strings with 88677 characters,
-and the built_in function-call counts, 139176 in all, are:
-= -- 11454
-> -- 10513
+            2709 strings with 94222 characters,
+and the built_in function-call counts, 147599 in all, are:
+= -- 12156
+> -- 11089
 < -- 0
-+ -- 4190
-- -- 3738
-* -- 12846
-:= -- 24236
-add.period$ -- 429
-call.type$ -- 415
-change.case$ -- 3109
++ -- 4418
+- -- 3936
+* -- 13600
+:= -- 25702
+add.period$ -- 457
+call.type$ -- 443
+change.case$ -- 3292
 chr.to.int$ -- 0
-cite$ -- 438
-duplicate$ -- 5279
-empty$ -- 8184
-format.name$ -- 3738
-if$ -- 26646
+cite$ -- 468
+duplicate$ -- 5631
+empty$ -- 8716
+format.name$ -- 3936
+if$ -- 28268
 int.to.chr$ -- 0
-int.to.str$ -- 415
-missing$ -- 409
-newline$ -- 1262
-num.names$ -- 808
-pop$ -- 3067
+int.to.str$ -- 443
+missing$ -- 437
+newline$ -- 1346
+num.names$ -- 864
+pop$ -- 3239
 preamble$ -- 1
-purify$ -- 2701
+purify$ -- 2856
 quote$ -- 0
-skip$ -- 3304
+skip$ -- 3522
 stack$ -- 0
-substring$ -- 4179
-swap$ -- 1349
+substring$ -- 4445
+swap$ -- 1437
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1646
-warning$ -- 23
-while$ -- 989
-width$ -- 418
-write$ -- 3390
-(There were 23 warnings)
+type$ -- 1758
+warning$ -- 25
+while$ -- 1053
+width$ -- 446
+write$ -- 3615
+(There were 25 warnings)

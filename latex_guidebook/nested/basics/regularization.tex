@@ -341,73 +341,14 @@
 
 \subsection{Adversarial Training}
 
+% TODO:
 
 
-\subsection{Transfer Learning}
-
-%TODO: read this survey
-\TD{A Survey on Deep Transfer Learning \cite{DBLP:journals/corr/abs-1808-01974}}
-
-\TD{How transferable are features in deep neural networks? \cite{DBLP:journals/corr/YosinskiCBL14}}
-\TD{CNN Features off-the-shelf: an Astounding Baseline for Recognition \cite{DBLP:journals/corr/RazavianASC14}}
-
-% TODO: haven't read this one (I don't think), but looks relevant
-\TD{Learning and transferring mid-level image representations using convolutional neural networks\cite{oquab2014learning}}
-\TD{Pay attention to features, transfer learn faster CNNs\cite{wang2019pay}}
-
-% TODO: is this talked about anywhere else? this is probably the best place for it.
-
-\TD{TODO: transfer learning, using -- explanation}
-
-\TD{tool that may sometimes be efficient way of getting to potentially more accurate approximations, faster. \TD{citations}}
-
-% TODO: index
-\r{using parameters or pre-trained components from a model/task for a new model/task.  In practice, this often amounts to running inputs through a network that has been previously trained, and obtaining ``embeddings'' from this model (sometimes at an abitrary layer in the network), and then using these ``embeddings'' as input to train an additional model on the desired task. The process of adapting these components to a new model/task is called fine-tuning}
-
-
-\TD{Head2Toe: Utilizing Intermediate Representations for Better Transfer Learning~\cite{Evci2022Head2ToeUI}}
-
-
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}\hfil
-	\caption{Figure example layer hierarchy and where/when to transfer/freeze params -- this will be 1-2 figures and include many sub-figures \textcolor{green}{TODO}}
-	\label{fig:transfer_learning_subfigs_a}
-\end{figure}
-
-\textcolor{green}{{freezing}\index{freezing} parameters or a layer means preventing the parameters from being updated during training. This is often controlled by a parameter called ``trainable''.}
-
-% In relation to transfer learning and freezing, mention the difficulty of propagating updates though a large network
-
-\TD{Scaling Laws for Transfer \cite{DBLP:journals/corr/abs-2102-01293}}
-
-\r{One difficulty of fine tuning is knowing where and by how much to either freeze or learn. That is should you freeze the first $n\%$ of the network, why not $m\%$?. Maybe you should leave the entire network trainable? But if the entire network is trianable, the previously learned (and presumably useful features), may be erased by the updates. Aside from selecting where to make the distinction, the main method used to combat these issues is to modify the learning rate. There are two core methods to adjusting the learning rate to address these issues.}
-
-\begin{itemize}[noitemsep,topsep=0pt]
-	\item Learning rate schedule
-	\item Layer-wise learning rates
-\end{itemize}
-
-\TD{These methods are described in more detail in section ~\ref{hp_learning_rate}}
-
-
-\TD{Adversarially robust transfer learning \cite{DBLP:journals/corr/abs-1905-08232}}
-
-% TODO: check this paper out
-\TD{DT-LET: Deep Transfer Learning by Exploring where to Transfer \cite{Lin2020DTLETDT}}
-
-\subsubsection{Potential downsides of TL}
-
-\TD{biases, attacks}
-
-\TD{A Target-Agnostic Attack on Deep Models: Exploiting Security Vulnerabilities of Transfer Learning \cite{DBLP:journals/corr/abs-1904-04334}}
 
 % TODO: this likely does not belong here...
 \subsection{Normalization}
 
-% TODO: Read this
-\TD{Evolving Normalization-Activation Layers \cite{DBLP:journals/corr/abs-2004-02967}}
+\r{Normalizations role on training dynamics is actively studied and can behave differently in different modalities and architectures.  For example, though batch norm is largely considered ``helpful'' in feed forward networks, batch norm, it's not as clear in recurrent neural networks and has lead to altered formulations such as ``sequence-wise normalization''~\cite{Laurent2016BatchNR}  ``recurrent batch normaliziation''~\cite{DBLP:journals/corr/CooijmansBLC16}}
 
 % TODO: Analysis on normalization layers 
 \TD{Beyond BatchNorm: Towards a General Understanding of Normalization  in Deep Learning~\cite{DBLP:journals/corr/abs-2106-05956}}
@@ -416,13 +357,47 @@
 
 \TD{TODO: figure showing differences}
 
+
+
+\paragraph{Proxy Normalization}
+
+\TD{Proxy-Normalizing Activations to Match Batch Normalization while Removing Batch Dependence~\cite{DBLP:journals/corr/abs-2106-03743}}
+
+
+\subsubsection{Activation-Based Layers}
+
+\r{BatchNorm, LayerNorm, Intance Norm, Group Norm, Filter Response Normalization Variance Normalization, EvoNormBO, EvoNoRMSO}
+
+\r{act on the activations of the layers}
+
 \paragraph{Instance normalization}
 
-\r{see section in preprocessing \textcolor{red}{local ref?}}
+\TD{Instance Normalization: The Missing Ingredient for Fast Stylization~\cite{DBLP:journals/corr/UlyanovVL16}}
 
-\paragraph{Layer normalization}
+\paragraph{Layer Normalization}
 
 \TD{Layer Normalization \cite{Ba2016LayerN}}
+
+\paragraph{Group Normalization}
+
+\TD{Group Normalization \cite{DBLP:journals/corr/abs-1803-08494}}
+
+\paragraph{Filter Response Normalization}
+
+\TD{Filter Response Normalization Layer: Eliminating Batch Dependence
+	in the Training of Deep Neural Networks~\cite{DBLP:journals/corr/abs-1911-09737}}
+
+\paragraph{Variance Normalization}
+
+\TD{Variance Normalization~\cite{Daneshmand2020TheoreticalUO}}
+
+
+\paragraph{EvoNorm BO and EvoNoRMSO}
+% TODO: Read this
+\TD{Evolving Normalization-Activation Layers \cite{DBLP:journals/corr/abs-2004-02967}}
+
+
+
 
 \paragraph{Batch normalization}
 
@@ -476,6 +451,7 @@
 
 
 % Graham Taylor talk
+\r{paper~\cite{DBLP:journals/corr/abs-1905-02161}}
 \begin{itemize}[noitemsep,topsep=0pt]
 	\item turn down other regularization
 	\item fixes first and second moments which may suppress information in these moments.
@@ -484,9 +460,84 @@
 \TD{work related to adversarial spheres. --- with batch norm, the result was more reflective of the batch, not the entire dataset (which makes sense, right?)}
 
 
-\paragraph{Group normalization}
 
-\TD{Group Normalization \cite{DBLP:journals/corr/abs-1803-08494}}
+\r{Lubana et al.~\cite{DBLP:journals/corr/abs-2106-05956} aggregate beneficial properties of batch normalization as follows}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item propagating informative activation patterns in deeper layers
+	\item reduced dependence on initialization
+	\item faster convergence via removeal of outlier eigenvalues
+	\item auto-tuning of leraning rates
+	\item equivalent to modern adaptive optimizers
+	\item smoothing of loss landscape
+\end{itemize}
+
+\r{Lubana et al.~\cite{DBLP:journals/corr/abs-2106-05956} aggregate potential areas where batch normalization doesn't work as well}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item small batch-sizes
+	\item shifts in distributions from original training
+	\item in meta-learning, can lead to transdutive inference
+	\item in adversarial learning, can affect accuracy by estimating incorrect statistics
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% batch normalization
+
+\TD{Batch Normalization Provably Avoids Rank Collapse for Randomly Initialised Deep Networks~\cite{Daneshmand2020TheoreticalUO}}
+
+\TD{The Shattered Gradients Problem~\cite{DBLP:journals/corr/BalduzziFLLMM17}}
+
+\TD{Batch Normalization Biases Deep Residual Networks Towards Shallow Paths~\cite{DBLP:journals/corr/abs-2002-10444}}
+
+\TD{Is normalization indispensable for training deep neural network?~\cite{shao2020normalization}}
+
+\TD{Fixup Initialization: Residual Learning Without Normalization~\cite{DBLP:journals/corr/abs-1901-09321}}
+
+\TD{The Normalization Method for Alleviating Pathological Sharpness in Wide Neural Networks~\cite{Karakida2019TheNM}}
+
+\TD{Understanding Batch Normalization~\cite{DBLP:journals/corr/abs-1806-02375}}
+
+\TD{Theoretical Analysis of Auto Rate-Tuning by Batch Normalization~\cite{DBLP:journals/corr/abs-1812-03981}}
+
+\TD{Noether's Learning Dynamics: The Role of Kinetic Symmetry Breaking
+	in Deep Learning~\cite{DBLP:journals/corr/abs-2105-02716}}
+
+\TD{Adaptive Gradient Methods, Normalization, and Weight Decay~\cite{grosseadaptive}}
+
+\TD{Gradient Centralization~\cite{DBLP:journals/corr/abs-2004-01461}}
+
+\TD{Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized
+	Models~\cite{DBLP:journals/corr/Ioffe17}}
+
+\TD{Four Things Everyone Should Know to Improve Batch Normalization~\cite{DBLP:journals/corr/abs-1906-03548}}
+
+\TD{Transferable normalization: Towards improving transferability of deep neural network~\cite{wang2019transferable}}
+
+\TD{TaskNorm: Rethinking Batch Normalization for Meta-Learning~\cite{Bronskill2020TaskNormRB}}
+
+\TD{Batch Normalization is a Cause of Adversarial Vulnerability~\cite{DBLP:journals/corr/abs-1905-02161}}
+
+\TD{Adversarial Examples Improve Image Recognition~\cite{DBLP:journals/corr/abs-1911-09665}}
+%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\subsubsection{Parametric Layers}
+
+\paragraph{Weight Normalization}
+
+\TD{Weight Normalization~\cite{DBLP:journals/corr/SalimansK16}}
+
+
+\paragraph{Scaled Weight Standardization}
+
+% TODO: read this
+\TD{Scaled Weight Standardization~\cite{DBLP:journals/corr/abs-2101-08692} paper also introduced Signal Propagation Plots (SPPs)}
+
+\r{built as an improvement to}
+\TD{Weight Standardization~\cite{DBLP:journals/corr/abs-1903-10520}}
+
+\TD{Centered weight normalization in accelerating training of deep neural networks~\cite{huang2017centered}}
 
 
 \section{Output regularization}

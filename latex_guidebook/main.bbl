@@ -90,6 +90,10 @@
 {\sc M.~Arjovsky, S.~Chintala, and L.~Bottou}, {\em Wasserstein gan}, ArXiv,
   abs/1701.07875 (2017).
 
+\bibitem{DBLP:journals/corr/abs-1812-03981}
+{\sc S.~Arora, Z.~Li, and K.~Lyu}, {\em Theoretical analysis of auto
+  rate-tuning by batch normalization}, CoRR, abs/1812.03981 (2018).
+
 \bibitem{DBLP:journals/corr/abs-1911-05371}
 {\sc Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi}, {\em Self-labelling via
   simultaneous clustering and representation learning}, CoRR, abs/1911.05371
@@ -102,6 +106,11 @@
 \bibitem{Bahdanau2015NeuralMT}
 {\sc D.~Bahdanau, K.~Cho, and Y.~Bengio}, {\em Neural machine translation by
   jointly learning to align and translate}, CoRR, abs/1409.0473 (2015).
+
+\bibitem{DBLP:journals/corr/BalduzziFLLMM17}
+{\sc D.~Balduzzi, M.~Frean, L.~Leary, J.~P. Lewis, K.~W. Ma, and
+  B.~McWilliams}, {\em The shattered gradients problem: If resnets are the
+  answer, then what is the question?}, CoRR, abs/1702.08591 (2017).
 
 \bibitem{Bansal2020DoesTW}
 {\sc G.~Bansal, T.~Wu, J.~Zhu, R.~Fok, B.~Nushi, E.~Kamar, M.~T. Ribeiro, and
@@ -133,6 +142,10 @@
 {\sc G.~Bingham and R.~Miikkulainen}, {\em Autoinit: Analytic signal-preserving
   weight initialization for neural networks}, ArXiv, abs/2109.08958 (2021).
 
+\bibitem{DBLP:journals/corr/abs-1806-02375}
+{\sc J.~Bjorck, C.~P. Gomes, and B.~Selman}, {\em Understanding batch
+  normalization}, CoRR, abs/1806.02375 (2018).
+
 \bibitem{DBLP:journals/corr/abs-2112-04426}
 {\sc S.~Borgeaud, A.~Mensch, J.~Hoffmann, T.~Cai, E.~Rutherford, K.~Millican,
   G.~van~den Driessche, J.~Lespiau, B.~Damoc, A.~Clark, D.~de~Las~Casas,
@@ -154,6 +167,11 @@
 {\sc D.~Britz, A.~Goldie, M.~Luong, and Q.~V. Le}, {\em Massive exploration of
   neural machine translation architectures}, CoRR, abs/1703.03906 (2017).
 
+\bibitem{DBLP:journals/corr/abs-2101-08692}
+{\sc A.~Brock, S.~De, and S.~L. Smith}, {\em Characterizing signal propagation
+  to close the performance gap in unnormalized resnets}, CoRR, abs/2101.08692
+  (2021).
+
 \bibitem{DBLP:journals/corr/abs-2102-06171}
 {\sc A.~Brock, S.~De, S.~L. Smith, and K.~Simonyan}, {\em High-performance
   large-scale image recognition without normalization}, CoRR, abs/2102.06171
@@ -163,6 +181,11 @@
 {\sc J.~Bromley, I.~Guyon, Y.~LeCun, E.~S{\"a}ckinger, and R.~Shah}, {\em
   Signature verification using a" siamese" time delay neural network}, in
   Advances in neural information processing systems, 1994, pp.~737--744.
+
+\bibitem{Bronskill2020TaskNormRB}
+{\sc J.~Bronskill, J.~Gordon, J.~Requeima, S.~Nowozin, and R.~E. Turner}, {\em
+  Tasknorm: Rethinking batch normalization for meta-learning}, ArXiv,
+  abs/2003.03284 (2020).
 
 \bibitem{brownlee2021WeightInit}
 {\sc J.~Brownlee}, {\em {Weight Initialization for Deep Learning Neural
@@ -288,6 +311,10 @@
 {\sc J.~Collins, J.~Sohl-Dickstein, and D.~Sussillo}, {\em Capacity and
   trainability in recurrent neural networks}, ArXiv, abs/1611.09913 (2017).
 
+\bibitem{DBLP:journals/corr/CooijmansBLC16}
+{\sc T.~Cooijmans, N.~Ballas, C.~Laurent, and A.~C. Courville}, {\em Recurrent
+  batch normalization}, CoRR, abs/1603.09025 (2016).
+
 \bibitem{Cordonnier2020MultiHeadAC}
 {\sc J.-B. Cordonnier, A.~Loukas, and M.~Jaggi}, {\em Multi-head attention:
   Collaborate instead of concatenate}, ArXiv, abs/2006.16362 (2020).
@@ -311,10 +338,19 @@
   R.~Salakhutdinov}, {\em Transformer-xl: Attentive language models beyond a
   fixed-length context}, CoRR, abs/1901.02860 (2019).
 
+\bibitem{Daneshmand2020TheoreticalUO}
+{\sc H.~Daneshmand, J.~M. Kohler, F.~R. Bach, T.~Hofmann, and A.~Lucchi}, {\em
+  Batch normalization provably avoids rank collapse for randomly initialised
+  deep networks}, ArXiv, abs/2003.01652 (2020).
+
 \bibitem{davis2006relationship}
 {\sc J.~Davis and M.~Goadrich}, {\em The relationship between precision-recall
   and roc curves}, in Proceedings of the 23rd international conference on
   Machine learning, 2006, pp.~233--240.
+
+\bibitem{DBLP:journals/corr/abs-2002-10444}
+{\sc S.~De and S.~L. Smith}, {\em Batch normalization biases deep residual
+  networks towards shallow paths}, CoRR, abs/2002.10444 (2020).
 
 \bibitem{deng2013improving}
 {\sc A.~Deng, Y.~Xu, R.~Kohavi, and T.~Walker}, {\em Improving the sensitivity
@@ -443,6 +479,11 @@
 {\sc C.~Gallicchio and A.~Micheli}, {\em Deep echo state network (deepesn): {A}
   brief survey}, CoRR, abs/1712.04323 (2017).
 
+\bibitem{DBLP:journals/corr/abs-1905-02161}
+{\sc A.~Galloway, A.~Golubeva, T.~Tanay, M.~Moussa, and G.~W. Taylor}, {\em
+  Batch normalization is a cause of adversarial vulnerability}, CoRR,
+  abs/1905.02161 (2019).
+
 \bibitem{garnelo2018conditional}
 {\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
@@ -523,6 +564,10 @@
   E.~Buchatskaya, C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot,
   K.~Kavukcuoglu, R.~Munos, and M.~Valko}, {\em Bootstrap your own latent: A
   new approach to self-supervised learning}, ArXiv, abs/2006.07733 (2020).
+
+\bibitem{grosseadaptive}
+{\sc R.~Grosse}, {\em Adaptive gradient methods, normalization, and weight
+  decay}.
 
 \bibitem{DBLP:journals/corr/GuLGTL16}
 {\sc S.~Gu, T.~P. Lillicrap, Z.~Ghahramani, R.~E. Turner, and S.~Levine}, {\em
@@ -683,6 +728,12 @@
 {\sc G.~Huang, Y.~Sun, Z.~Liu, D.~Sedra, and K.~Q. Weinberger}, {\em Deep
   networks with stochastic depth}, CoRR, abs/1603.09382 (2016).
 
+\bibitem{huang2017centered}
+{\sc L.~Huang, X.~Liu, Y.~Liu, B.~Lang, and D.~Tao}, {\em Centered weight
+  normalization in accelerating training of deep neural networks}, in
+  Proceedings of the IEEE International Conference on Computer Vision, 2017,
+  pp.~2803--2811.
+
 \bibitem{DBLP:journals/corr/HuangW17a}
 {\sc Z.~Huang and N.~Wang}, {\em Like what you like: Knowledge distill via
   neuron selectivity transfer}, CoRR, abs/1707.01219 (2017).
@@ -695,6 +746,10 @@
 \bibitem{inoue2018data}
 {\sc H.~Inoue}, {\em Data augmentation by pairing samples for images
   classification}, arXiv preprint arXiv:1801.02929,  (2018).
+
+\bibitem{DBLP:journals/corr/Ioffe17}
+{\sc S.~Ioffe}, {\em Batch renormalization: Towards reducing minibatch
+  dependence in batch-normalized models}, CoRR, abs/1702.03275 (2017).
 
 \bibitem{DBLP:journals/corr/IoffeS15}
 {\sc S.~Ioffe and C.~Szegedy}, {\em Batch normalization: Accelerating deep
@@ -762,6 +817,11 @@
 \bibitem{Kalchbrenner2016GridLS}
 {\sc N.~Kalchbrenner, I.~Danihelka, and A.~Graves}, {\em Grid long short-term
   memory}, CoRR, abs/1507.01526 (2016).
+
+\bibitem{Karakida2019TheNM}
+{\sc R.~Karakida, S.~Akaho, and S.~Amari}, {\em The normalization method for
+  alleviating pathological sharpness in wide neural networks}, in NeurIPS,
+  2019.
 
 \bibitem{DBLP:journals/corr/abs-2104-05514}
 {\sc G.~Karamanolakis, S.~Mukherjee, G.~Zheng, and A.~H. Awadallah}, {\em
@@ -874,6 +934,11 @@
   classification with deep convolutional neural networks}, Advances in neural
   information processing systems, 25 (2012), pp.~1097--1105.
 
+\bibitem{DBLP:journals/corr/abs-2106-03743}
+{\sc A.~Labatie, D.~Masters, Z.~Eaton{-}Rosen, and C.~Luschi}, {\em
+  Proxy-normalizing activations to match batch normalization while removing
+  batch dependence}, CoRR, abs/2106.03743 (2021).
+
 \bibitem{DBLP:journals/corr/LaineA16}
 {\sc S.~Laine and T.~Aila}, {\em Temporal ensembling for semi-supervised
   learning}, CoRR, abs/1610.02242 (2016).
@@ -891,6 +956,11 @@
 \bibitem{DBLP:journals/corr/LarssonMS16}
 {\sc G.~Larsson, M.~Maire, and G.~Shakhnarovich}, {\em Learning representations
   for automatic colorization}, CoRR, abs/1603.06668 (2016).
+
+\bibitem{Laurent2016BatchNR}
+{\sc C.~Laurent, G.~Pereyra, P.~Brakel, Y.~Zhang, and Y.~Bengio}, {\em Batch
+  normalized recurrent neural networks}, 2016 IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP),  (2016), pp.~2657--2661.
 
 \bibitem{DBLP:journals/corr/abs-2010-05113}
 {\sc P.~H. Le{-}Khac, G.~Healy, and A.~F. Smeaton}, {\em Contrastive
@@ -1284,6 +1354,10 @@
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
 
+\bibitem{DBLP:journals/corr/abs-1903-10520}
+{\sc S.~Qiao, H.~Wang, C.~Liu, W.~Shen, and A.~L. Yuille}, {\em Weight
+  standardization}, CoRR, abs/1903.10520 (2019).
+
 \bibitem{Rabe2021SelfattentionDN}
 {\sc M.~N. Rabe and C.~Staats}, {\em Self-attention does not need $o(n^2)$
   memory}, 2021.
@@ -1431,6 +1505,11 @@
   X.~Chen}, {\em Improved techniques for training gans}, CoRR, abs/1606.03498
   (2016).
 
+\bibitem{DBLP:journals/corr/SalimansK16}
+{\sc T.~Salimans and D.~P. Kingma}, {\em Weight normalization: {A} simple
+  reparameterization to accelerate training of deep neural networks}, CoRR,
+  abs/1602.07868 (2016).
+
 \bibitem{salimans2016weight}
 {\sc T.~Salimans and D.~P. Kingma}, {\em Weight normalization: A simple
   reparameterization to accelerate training of deep neural networks}, in
@@ -1467,6 +1546,10 @@
 \bibitem{schmidhuber1992learning}
 {\sc J.~Schmidhuber}, {\em Learning factorial codes by predictability
   minimization}, Neural computation, 4 (1992), pp.~863--879.
+
+\bibitem{Schoenholz2017DeepIP}
+{\sc S.~S. Schoenholz, J.~Gilmer, S.~Ganguli, and J.~Sohl-Dickstein}, {\em Deep
+  information propagation}, ArXiv, abs/1611.01232 (2017).
 
 \bibitem{DBLP:journals/corr/SchroffKP15}
 {\sc F.~Schroff, D.~Kalenichenko, and J.~Philbin}, {\em Facenet: {A} unified
@@ -1506,6 +1589,11 @@
 {\sc C.~E. Shannon}, {\em A mathematical theory of communication}, The Bell
   system technical journal, 27 (1948), pp.~379--423.
 
+\bibitem{shao2020normalization}
+{\sc J.~Shao, K.~Hu, C.~Wang, X.~Xue, and B.~Raj}, {\em Is normalization
+  indispensable for training deep neural network?}, Advances in Neural
+  Information Processing Systems, 33 (2020), pp.~13434--13444.
+
 \bibitem{DBLP:journals/corr/abs-1803-02155}
 {\sc P.~Shaw, J.~Uszkoreit, and A.~Vaswani}, {\em Self-attention with relative
   position representations}, CoRR, abs/1803.02155 (2018).
@@ -1533,6 +1621,11 @@
 \bibitem{simonyan2014very}
 {\sc K.~Simonyan and A.~Zisserman}, {\em Very deep convolutional networks for
   large-scale image recognition}, arXiv preprint arXiv:1409.1556,  (2014).
+
+\bibitem{DBLP:journals/corr/abs-1911-09737}
+{\sc S.~Singh and S.~Krishnan}, {\em Filter response normalization layer:
+  Eliminating batch dependence in the training of deep neural networks}, CoRR,
+  abs/1911.09737 (2019).
 
 \bibitem{DBLP:journals/corr/abs-2105-14859}
 {\sc S.~Sinha and A.~B. Dieng}, {\em Consistency regularization for variational
@@ -1602,6 +1695,10 @@
 {\sc Student}, {\em The probable error of a mean}, Biometrika,  (1908),
   pp.~1--25.
 
+\bibitem{DBLP:journals/corr/abs-1906-03548}
+{\sc C.~Summers and M.~J. Dinneen}, {\em Four things everyone should know to
+  improve batch normalization}, CoRR, abs/1906.03548 (2019).
+
 \bibitem{DBLP:journals/corr/abs-1909-11825}
 {\sc Y.~Sun, E.~Tzeng, T.~Darrell, and A.~A. Efros}, {\em Unsupervised domain
   adaptation through self-supervision}, CoRR, abs/1909.11825 (2019).
@@ -1633,6 +1730,10 @@
 \bibitem{DBLP:journals/corr/abs-1808-01974}
 {\sc C.~Tan, F.~Sun, T.~Kong, W.~Zhang, C.~Yang, and C.~Liu}, {\em A survey on
   deep transfer learning}, CoRR, abs/1808.01974 (2018).
+
+\bibitem{DBLP:journals/corr/abs-2105-02716}
+{\sc H.~Tanaka and D.~Kunin}, {\em Noether's learning dynamics: The role of
+  kinetic symmetry breaking in deep learning}, CoRR, abs/2105.02716 (2021).
 
 \bibitem{Tanaka2020PruningNN}
 {\sc H.~Tanaka, D.~Kunin, D.~L.~K. Yamins, and S.~Ganguli}, {\em Pruning neural
@@ -1685,6 +1786,10 @@
 {\sc A.~M. Turing et~al.}, {\em On computable numbers, with an application to
   the entscheidungsproblem}, J. of Math, 58 (1936), p.~5.
 
+\bibitem{DBLP:journals/corr/UlyanovVL16}
+{\sc D.~Ulyanov, A.~Vedaldi, and V.~S. Lempitsky}, {\em Instance normalization:
+  The missing ingredient for fast stylization}, CoRR, abs/1607.08022 (2016).
+
 \bibitem{DBLP:journals/corr/abs-1807-03748}
 {\sc A.~van~den Oord, Y.~Li, and O.~Vinyals}, {\em Representation learning with
   contrastive predictive coding}, CoRR, abs/1807.03748 (2018).
@@ -1711,6 +1816,10 @@
 {\sc J.~Vig, A.~Madani, L.~R. Varshney, C.~Xiong, R.~Socher, and N.~F. Rajani},
   {\em Bertology meets biology: Interpreting attention in protein language
   models}, bioRxiv,  (2020).
+
+\bibitem{vinyals2017model}
+{\sc O.~Vinyals}, {\em “model vs optimization meta learning}, in NIPS 2017
+  Metalearning Symposium, 2017.
 
 \bibitem{Vinyals2015PointerN}
 {\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
@@ -1743,6 +1852,11 @@
 \bibitem{DBLP:journals/corr/abs-1711-07971}
 {\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural
   networks}, CoRR, abs/1711.07971 (2017).
+
+\bibitem{wang2019transferable}
+{\sc X.~Wang, Y.~Jin, M.~Long, J.~Wang, and M.~I. Jordan}, {\em Transferable
+  normalization: Towards improving transferability of deep neural networks},
+  Advances in neural information processing systems, 32 (2019).
 
 \bibitem{DBLP:journals/corr/abs-2010-04903}
 {\sc Y.~Wang and Y.~Chen}, {\em What do position embeddings learn? an empirical
@@ -1800,6 +1914,10 @@
 {\sc Z.~Wu, S.~Pan, F.~Chen, G.~Long, C.~Zhang, and P.~S. Yu}, {\em A
   comprehensive survey on graph neural networks}, CoRR, abs/1901.00596 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1911-09665}
+{\sc C.~Xie, M.~Tan, B.~Gong, J.~Wang, A.~L. Yuille, and Q.~V. Le}, {\em
+  Adversarial examples improve image recognition}, CoRR, abs/1911.09665 (2019).
+
 \bibitem{xie2016disturblabel}
 {\sc L.~Xie, J.~Wang, Z.~Wei, M.~Wang, and Q.~Tian}, {\em Disturblabel:
   Regularizing cnn on the loss layer}, in Proceedings of the IEEE Conference on
@@ -1843,6 +1961,11 @@
   distillation: Fast optimization, network minimization and transfer learning},
   in Proceedings of the IEEE Conference on Computer Vision and Pattern
   Recognition, 2017, pp.~4133--4141.
+
+\bibitem{DBLP:journals/corr/abs-2004-01461}
+{\sc H.~Yong, J.~Huang, X.~Hua, and L.~Zhang}, {\em Gradient centralization:
+  {A} new optimization technique for deep neural networks}, CoRR,
+  abs/2004.01461 (2020).
 
 \bibitem{DBLP:journals/corr/YosinskiCBL14}
 {\sc J.~Yosinski, J.~Clune, Y.~Bengio, and H.~Lipson}, {\em How transferable
@@ -1898,6 +2021,10 @@
 \bibitem{zhang2019fixup}
 {\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
   learning without normalization}, arXiv preprint arXiv:1901.09321,  (2019).
+
+\bibitem{DBLP:journals/corr/abs-1901-09321}
+{\sc H.~Zhang, Y.~N. Dauphin, and T.~Ma}, {\em Fixup initialization: Residual
+  learning without normalization}, CoRR, abs/1901.09321 (2019).
 
 \bibitem{Zhang2019SelfAttentionGA}
 {\sc H.~Zhang, I.~J. Goodfellow, D.~N. Metaxas, and A.~Odena}, {\em

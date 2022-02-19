@@ -36,7 +36,6 @@
 \indexentry{inverted dropout}{88}
 \indexentry{Ridge regression}{90}
 \indexentry{Tikhonov regularization}{90}
-\indexentry{freezing}{92}
 \indexentry{generalized linear model}{103}
 \indexentry{Ordinary Lease Squares (OLS)}{104}
 \indexentry{Linear Least Squares}{104}
@@ -78,7 +77,8 @@
 \indexentry{sampling without replacement|see{subagging}}{188}
 \indexentry{subspace sampling}{188}
 \indexentry{blending}{189}
-\indexentry{continual learning}{209}
-\indexentry{lifelong learning}{209}
-\indexentry{catastrophic forgetting}{209}
-\indexentry{universal approximators}{291}
+\indexentry{continual learning}{193}
+\indexentry{lifelong learning}{193}
+\indexentry{catastrophic forgetting}{193}
+\indexentry{freezing}{203}
+\indexentry{universal approximators}{293}
