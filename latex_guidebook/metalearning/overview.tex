@@ -2,12 +2,19 @@
 
 \TD{learning to learn -- learning new tasks}
 
+\TD{The distinction between meta learning and transfer learning is that meta-learning is concerned with optimizing performance over multiple tasks, whereas in transfer learning, typically one is most concerned with optimizing/fine-tunining to a specific downstream task.}
+
+\TD{Meta-learning is closely related to multi-task learning and the distinction is that in multi-task learning, the tasks are fixed whereas in meta-learning, the objective is to be able to learn a new task.}
+
+% quote fron Finn lecture 2
+\r{``in some ways multi-task is a prereq for meta learning -- if you can't learn/solve the training tasks, you won't be able to learn new tasks''-- two ways to view meta-learning algorithms i) mechanistic view ii) probabilistic view.}
+
+\r{use our experience from before in some way, that is learn parameters on some tasks such that we can use the learned parameters to solve new tasks}
 
 
-\section{Taxonomy}
+\subsection{taxonomy}
 
-\TD{Deep meta-leaning is often subdivided into three main subsections~\cite{vinyals2017model}}
-
+\TD{Deep meta-leaning has historically be subdivided into three main subsections~\cite{vinyals2017model}}
 
 \begin{itemize}[noitemsep,topsep=0pt]
 	\item Metric-based
@@ -15,15 +22,197 @@
 	\item Optimization-based
 \end{itemize}
 
+\TD{More recently, a multi dimensional taxonomy has been proposed~\cite{Hospedales2021MetaLearningIN}}
+
+\TD{For better or worse, this section will adapt a slightly altered two dimensional taxonomy, consisting of the outter optimization (renamed, but adapted from the ``meta-optimizer''~\cite{Hospedales2021MetaLearningIN}) and an inner optimization (which will be more similar to the standard division into metric, model, and optimization).}
+
+\section{Outer Optimization}
+
+\r{The outter loop}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item gradient
+	\item RL
+	\item Evolution
+\end{itemize}
+
+\section{Inner Optimization}
+
+\TD{A Survey of Deep Meta-Learning~\cite{DBLP:journals/corr/abs-2010-03522}}
+
+
+\subsection{Embedding Functions / Metric-based Meta-Learning}
+
+\TD{Contrastive Learning is Just Meta-Learning~\cite{ni2022contrastive}}
+\TD{Unsupervised Learning via Meta-Learning~\cite{DBLP:journals/corr/abs-1810-02334}}
+
+\r{No changes are made the the network, rely solely on comparisons to known previous input (in the meta learned feature space)}
+
+\TD{Find a feature extractor that is capable of representing the data for comparison.}
+
+\subsubsection{Implementations}
+
+\r{The following are commonly discussed implementations}
+
+\paragraph{Siamese Neural Networks}
+
+\r{Siamese Neural Networks~\cite{bromley1994signature}, not designed to perform well across all tasks, yet shown to be useful~\cite{Koch2015SiameseNN}}
+
+\paragraph{Matching Networks}
+
+\TD{Matching Networks for One Shot Learning~\cite{Vinyals2016MatchingNF}}
+
+\paragraph{Prototypical Networks}
+
+\r{compare new inputs to class prototypes}
+
+\TD{Prototypical Networks for Few-shot Learning~\cite{snell2017prototypical}}
+
+\paragraph{Relation Networks}
+
+\r{trainable similarity metric}
+
+\TD{Learning to Compare: Relation Network for Few-Shot Learning~\cite{Sung2018LearningTC}}
+
+\paragraph{Attentive Recurrent Comparators}
+
+\r{RNN to learn pairwise comparisons}
+
+\TD{Attentive Recurrent Comparators~\cite{Shyam2017AttentiveRC}}
+
+\paragraph{Graph neural Netwosk}
+
+\TD{Few-Shot Learning with Graph Neural Networks~\cite{Satorras2018FewShotLW}}
+
+\paragraph{TADAM}
+
+%TODO: unclear if this for sure belongs here
+\TD{TADAM:~\cite{DBLP:journals/corr/abs-1805-10123}}
+
+\paragraph{TEAM}
+
+%TODO: unclear if this for sure belongs here
+\TD{Transductive Episodic-Wise Adaptive Metric for Few-Shot Learning~\cite{DBLP:journals/corr/abs-1910-02224}}
+
+\subsection{Model-based Meta-Learning -- Memory Enhanced}
+
+\r{Adaptive neural network, uses a memory module}
+
+
+\subsubsection{Implementations}
+
+\r{commonly discussed implementations}
+
+\paragraph{Memory-augmented Neural networks (MANNs)}
+
+\r{LSTMs or NMTs -- e.g. \cite{santoro2016meta}. NMT, external memory mechanism for storing information from training, and accessing that information when infering on new data points (in a differentiable way).}
+
+\paragraph{Meta networks}
+
+\TD{Meta Networks~\cite{DBLP:journals/corr/MunkhdalaiY17}}
+
+\paragraph{Simple Neural Attentive Meta-Learner (SNAIL)}
+
+\TD{A Simple Neural Attentive Meta-Learner~\cite{Mishra2018ASN}}
+
+\subsection{Model-based Meta-Learning -- No additional memory}
+
+\subsubsection{Implementations}
+
+\paragraph{Conditional Neural Processes}
+
+\TD{Conditional Neural Processes~\cite{Garnelo2018ConditionalNP}}
+
+\paragraph{Neural Statistician}
+
+\TD{Towards a Neural Statistician~\cite{Edwards2017TowardsAN}}
+
+
+\subsection{Optimization-based Meta-Learning}
+
+\r{inner and outter optimization}
+
+\r{acquire task specific parameters through optimization -- differentiate through to the meta parameters.}
+
+% update: I think this is from the Finn lectures, but would need to check
+\r{meta-parameters act as a prior -- e.g. initialization then fine-tune. This is often associated with ``transfer learning'', where you train a network on some task then use those parameters for a new task. ``reusing features, and changing how those features are used for a new task -- not necessarily creating new features''.}
+
+% adaptation to individual tasks given an individual dataset
+
+% optimization-based approach algo, lect 3 of Finn youtube
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item sample task
+	\item sample disjoint datasets
+	\item update fine-tuning parameters?
+	\item update meta parameters
+\end{itemize}
+
+\subsubsection{Implementations}
+
+\r{commonly discussed implementations}
+
+\subsubsection{Implementations}
+
+\paragraph{Model-Agnostic Meta-Learning (MAML) and FOMAML}
+
+% ``computational graph with embedded gradient operator'' -- Fin Youtube 3
+% learn initialization but replace gradient update with learned network Ravi + Larochelle '17
+% MAML - benefit of inductive bias w/out losing expressivness of gradient d.
+
+\TD{Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks~\cite{DBLP:journals/corr/FinnAL17}}
+
+\r{first order}
+
+\TD{How to train your MAML~\cite{DBLP:journals/corr/abs-1810-09502}}
+
+\paragraph{Meta-learning with implicit Gradients (iMAML)}
+
+\TD{Meta-Learning with Implicit Gradients~\cite{DBLP:journals/corr/abs-1909-04630}}
+
+\paragraph{Follow the Meta Leader (FTML)}
+
+\r{Online}
+
+\TD{Online Meta-Learning~\cite{DBLP:journals/corr/abs-1902-08438}}
+
+\paragraph{Meta-SGD}
+
+\r{learning rates for params}
+
+\TD{Meta-SGD: Learning to Learn Quickly for Few Shot Learning~\cite{DBLP:journals/corr/LiZCL17}}
+
+\paragraph{Reptile}
+
+\r{samples task}
+\TD{Reptile: a Scalable Metalearning Algorithm~\cite{Nichol2018ReptileAS}}
+
+\paragraph{Latent Embedding Optimizaiton (LEO)}
+
+\r{learn lower dimensional latent embedding space}
+
+\TD{Meta-Learning with Latent Embedding Optimization~\cite{DBLP:journals/corr/abs-1807-05960}}
+
+\paragraph{Uncertainty}
+
+\subparagraph{LLAMA (Laplace Approximations for Meta-Aadaptation)}
+
+\r{bring uncertainty into MAML}
+
+\TD{Recasting Gradient-Based Meta-Learning as Hierarchical Bayes~\cite{DBLP:journals/corr/abs-1801-08930}}
+
+\subparagraph{PLATIPUS (Probabilistic LATent model for Incorporating Priors and Uncertainty in few-Shot learning)}
+
+\TD{Probabilistic Model-Agnostic Meta-Learning~\cite{DBLP:journals/corr/abs-1806-02817}}
+
+\subparagraph{Bayesian MAML (BMAML)}
+
+\TD{Bayesian Model-Agnostic Meta-Learning~\cite{DBLP:journals/corr/abs-1806-03836}}
 
 % TODO: meta learning?
 \TD{Learning to learn by gradient descent by gradient descent \cite{DBLP:journals/corr/AndrychowiczDGH16} use a neural network to perform optimization -- could reuse between related tasks?}
 
 
-% quote fron Finn lecture 2
-\r{``in some ways multi-task is a prereq for meta learning -- if you can't learn/solve the training tasks, you won't be able to learn new tasks''-- two ways to view meta-learning algorithms i) mechanistic view ii) probabilistic view.}
-
-\r{use our experience from before in some way, that is learn parameters on some tasks such that we can use the learned parameters to solve new tasks}
+\section{Other}
 
 \TD{adaptation}
 
@@ -35,16 +224,7 @@
 
 \TD{Evaluating meta-learning algorithms}
 
-\section{evaluation}
 
-\r{omniglot dataset --- 1623 characters, 50 alphabets, each character = 20 instances, many classes few examples}
-
-
-\section{Adaptation approaches}
-
-\subsection{Black-Box Adaptation}
-
-\r{LSTMs or NMTs -- e.g. \cite{santoro2016meta}. NMT, external memory mechanism for storing information from training, and accessing that information when infering on new data points (in a differentiable way).}
 
 % from lect 3, ~33min
 \r{NMT is not permutation invariant, Feedforward and average is.\cite{garnelo2018conditional}}
@@ -53,28 +233,10 @@
 
 \r{meta-networks \cite{munkhdalai2017meta}}
 
-\section{Optimization-based meta-learning}
-
-\r{acquire task specific parameters through optimization -- differentiate through to the meta parameters.}
-
-\r{meta-parameters act as a prior -- e.g. initialization then fine-tune. This is often associated with ``transfer learning'', where you train a network on some task then use those parameters for a new task. ``reusing features, and changing how those features are used for a new task -- not necessarily creating new features''.}
 
 
-% ``computational graph with embedded gradient operator'' -- Fin Youtube 3
-% learn initialization but replace gradient update with learned network Ravi + Larochelle '17
-% MAML - benefit of inductive bias w/out losing expressivness of gradient d.
-\r{Model-Agnostic Meta Learning \TD{CITE}}
 
 
-% adaptation to individual tasks given an individual dataset
-
-% optimization-based approach algo, lect 3 of Finn youtube
-\begin{itemize}[noitemsep,topsep=0pt]
-	\item sample task
-	\item sample disjoint datasets
-	\item update fine-tuning parameters?
-	\item update meta parameters
-\end{itemize}
 
 % SNAIL, MetaNetworks
 
@@ -88,17 +250,25 @@
 
 % Finn L4
 \r{challenges}
+
 \r{choosing an arhictecture that is effective for the inner gradient step. One idea is Progressive nerual architecture search + MAML (Kim et al. Auto-Meta). a finding; non-standard (deep and narrow) were effective for MAML}
 % simple tricks can help optimization
-\r{Bi-level optimization is tricky -- inner and outer optimization. Couple ideas: - automatically learn inner learning rate, tune outer (Li et al. Meta-SGD,Behl et al. AlphaMAML} \r{- optimize only a subset of params in the inner loop (Zhou et al. DEML, Zintgraf et al. CAVIA)} \r{- Decouple inner learning rate, Batch norm statistics per-step (Antoniou et al. MAML++)}\r{- Introduce context variables for increased expressive power (Finn et al. bias transformation, Zintgraf el al. CAVIA)}
+
+\r{Bi-level optimization is tricky -- inner and outer optimization. Couple ideas: - automatically learn inner learning rate, tune outer (Li et al. Meta-SGD,Behl et al. AlphaMAML} 
+
+\r{- optimize only a subset of params in the inner loop (Zhou et al. DEML, Zintgraf et al. CAVIA)}
+
+\r{- Decouple inner learning rate, Batch norm statistics per-step (Antoniou et al. MAML++)}
+ 
+\r{- Introduce context variables for increased expressive power (Finn et al. bias transformation, Zintgraf el al. CAVIA)}
 r{Backpropagating through many inner gradient steps is compute and memory intensive}
 % ~16min in L4
 \r{approaches: - \TD{unsure -- (Finn et al. first-order MAML '17, Nichol et al. Reptile '18)}}
 
 
-\section{Non-Parametric Few-Shot Learning}
-\r{siamese networks, matching networks, prototypical networks}
 
-
-\section{Meta-Learning Algorithms}
+\section{Other / To include}
 % comparisons of approaches
+
+% augmentation in Meta-learning
+\TD{Meta Dropout: Learning to Perturb Features for Generalization~\cite{DBLP:journals/corr/abs-1905-12914}}

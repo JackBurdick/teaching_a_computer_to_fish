@@ -82,6 +82,10 @@
   T.~Schaul, and N.~de~Freitas}, {\em Learning to learn by gradient descent by
   gradient descent}, CoRR, abs/1606.04474 (2016).
 
+\bibitem{DBLP:journals/corr/abs-1810-09502}
+{\sc A.~Antoniou, H.~Edwards, and A.~J. Storkey}, {\em How to train your
+  {MAML}}, CoRR, abs/1810.09502 (2018).
+
 \bibitem{DBLP:journals/corr/abs-1712-06651}
 {\sc R.~Arandjelovic and A.~Zisserman}, {\em Objects that sound}, CoRR,
   abs/1712.06651 (2017).
@@ -419,6 +423,10 @@
   Linguistics and the 7th International Joint Conference on Natural Language
   Processing (Volume 2: Short Papers), 2015, pp.~845--850.
 
+\bibitem{Edwards2017TowardsAN}
+{\sc H.~Edwards and A.~J. Storkey}, {\em Towards a neural statistician}, ArXiv,
+  abs/1606.02185 (2017).
+
 \bibitem{Evci2022Head2ToeUI}
 {\sc U.~Evci, V.~Dumoulin, H.~Larochelle, and M.~C. Mozer}, {\em Head2toe:
   Utilizing intermediate representations for better transfer learning}, 2022.
@@ -431,6 +439,18 @@
 {\sc B.~Fernando, H.~Bilen, E.~Gavves, and S.~Gould}, {\em Self-supervised
   video representation learning with odd-one-out networks}, CoRR,
   abs/1611.06646 (2016).
+
+\bibitem{DBLP:journals/corr/FinnAL17}
+{\sc C.~Finn, P.~Abbeel, and S.~Levine}, {\em Model-agnostic meta-learning for
+  fast adaptation of deep networks}, CoRR, abs/1703.03400 (2017).
+
+\bibitem{DBLP:journals/corr/abs-1902-08438}
+{\sc C.~Finn, A.~Rajeswaran, S.~M. Kakade, and S.~Levine}, {\em Online
+  meta-learning}, CoRR, abs/1902.08438 (2019).
+
+\bibitem{DBLP:journals/corr/abs-1806-02817}
+{\sc C.~Finn, K.~Xu, and S.~Levine}, {\em Probabilistic model-agnostic
+  meta-learning}, CoRR, abs/1806.02817 (2018).
 
 \bibitem{fisher1992statistical}
 {\sc R.~A. Fisher}, {\em Statistical methods for research workers}, in
@@ -489,6 +509,11 @@
   M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~Eslami}, {\em Conditional
   neural processes}, arXiv preprint arXiv:1807.01613,  (2018).
 
+\bibitem{Garnelo2018ConditionalNP}
+{\sc M.~Garnelo, D.~Rosenbaum, C.~J. Maddison, T.~Ramalho, D.~Saxton,
+  M.~Shanahan, Y.~W. Teh, D.~J. Rezende, and S.~M.~A. Eslami}, {\em Conditional
+  neural processes}, in ICML, 2018.
+
 \bibitem{DBLP:journals/corr/abs-1807-01622}
 {\sc M.~Garnelo, J.~Schwarz, D.~Rosenbaum, F.~Viola, D.~J. Rezende, S.~M.~A.
   Eslami, and Y.~W. Teh}, {\em Neural processes}, CoRR, abs/1807.01622 (2018).
@@ -545,6 +570,11 @@
 {\sc P.~Goyal, M.~Caron, B.~Lefaudeux, M.~Xu, P.~Wang, V.~Pai, M.~Singh,
   V.~Liptchinsky, I.~Misra, A.~Joulin, and P.~Bojanowski}, {\em Self-supervised
   pretraining of visual features in the wild}, ArXiv, abs/2103.01988 (2021).
+
+\bibitem{DBLP:journals/corr/abs-1801-08930}
+{\sc E.~Grant, C.~Finn, S.~Levine, T.~Darrell, and T.~L. Griffiths}, {\em
+  Recasting gradient-based meta-learning as hierarchical bayes}, CoRR,
+  abs/1801.08930 (2018).
 
 \bibitem{DBLP:journals/corr/GravesWD14}
 {\sc A.~Graves, G.~Wayne, and I.~Danihelka}, {\em Neural turing machines},
@@ -711,6 +741,15 @@
 {\sc K.~Hornik}, {\em Approximation capabilities of multilayer feedforward
   networks}, Neural networks, 4 (1991), pp.~251--257.
 
+\bibitem{Hospedales2021MetaLearningIN}
+{\sc T.~M. Hospedales, A.~Antoniou, P.~Micaelli, and A.~J. Storkey}, {\em
+  Meta-learning in neural networks: A survey}, IEEE transactions on pattern
+  analysis and machine intelligence, PP (2021).
+
+\bibitem{DBLP:journals/corr/abs-1810-02334}
+{\sc K.~Hsu, S.~Levine, and C.~Finn}, {\em Unsupervised learning via
+  meta-learning}, CoRR, abs/1810.02334 (2018).
+
 \bibitem{DBLP:journals/corr/abs-1709-01507}
 {\sc J.~Hu, L.~Shen, and G.~Sun}, {\em Squeeze-and-excitation networks}, CoRR,
   abs/1709.01507 (2017).
@@ -737,6 +776,10 @@
 \bibitem{DBLP:journals/corr/HuangW17a}
 {\sc Z.~Huang and N.~Wang}, {\em Like what you like: Knowledge distill via
   neuron selectivity transfer}, CoRR, abs/1707.01219 (2017).
+
+\bibitem{DBLP:journals/corr/abs-2010-03522}
+{\sc M.~Huisman, J.~N. van Rijn, and A.~Plaat}, {\em A survey of deep
+  meta-learning}, CoRR, abs/2010.03522 (2020).
 
 \bibitem{DBLP:journals/corr/IandolaMAHDK16}
 {\sc F.~N. Iandola, M.~W. Moskewicz, K.~Ashraf, S.~Han, W.~J. Dally, and
@@ -887,6 +930,10 @@
 {\sc J.~Kim, S.~Park, and N.~Kwak}, {\em Paraphrasing complex network: Network
   compression via factor transfer}, CoRR, abs/1802.04977 (2018).
 
+\bibitem{DBLP:journals/corr/abs-1806-03836}
+{\sc T.~Kim, J.~Yoon, O.~Dia, S.~Kim, Y.~Bengio, and S.~Ahn}, {\em Bayesian
+  model-agnostic meta-learning}, CoRR, abs/1806.03836 (2018).
+
 \bibitem{kingma2014adam}
 {\sc D.~P. Kingma and J.~Ba}, {\em Adam: A method for stochastic optimization},
   arXiv preprint arXiv:1412.6980,  (2014).
@@ -911,6 +958,10 @@
 \bibitem{DBLP:journals/corr/KlambauerUMH17}
 {\sc G.~Klambauer, T.~Unterthiner, A.~Mayr, and S.~Hochreiter}, {\em
   Self-normalizing neural networks}, CoRR, abs/1706.02515 (2017).
+
+\bibitem{Koch2015SiameseNN}
+{\sc G.~R. Koch}, {\em Siamese neural networks for one-shot image recognition},
+  2015.
 
 \bibitem{kochenderfer2019algorithms}
 {\sc M.~J. Kochenderfer and T.~A. Wheeler}, {\em Algorithms for Optimization},
@@ -982,6 +1033,10 @@
   learning method for deep neural networks}, in Workshop on challenges in
   representation learning, ICML, vol.~3, 2013.
 
+\bibitem{DBLP:journals/corr/abs-1905-12914}
+{\sc H.~Lee, T.~Nam, E.~Yang, and S.~J. Hwang}, {\em Meta dropout: Learning to
+  perturb features for generalization}, CoRR, abs/1905.12914 (2019).
+
 \bibitem{DBLP:journals/corr/abs-1810-02340}
 {\sc N.~Lee, T.~Ajanthan, and P.~H.~S. Torr}, {\em {SNIP:} single-shot network
   pruning based on connection sensitivity}, CoRR, abs/1810.02340 (2018).
@@ -1008,6 +1063,10 @@
 \bibitem{Li2020BackdoorLA}
 {\sc Y.~Li, B.~Wu, Y.~Jiang, Z.~Li, and S.-T. Xia}, {\em Backdoor learning: A
   survey}, ArXiv, abs/2007.08745 (2020).
+
+\bibitem{DBLP:journals/corr/LiZCL17}
+{\sc Z.~Li, F.~Zhou, F.~Chen, and H.~Li}, {\em Meta-sgd: Learning to learn
+  quickly for few shot learning}, CoRR, abs/1707.09835 (2017).
 
 \bibitem{DBLP:journals/corr/abs-2106-03143}
 {\sc T.~Likhomanenko, Q.~Xu, R.~Collobert, G.~Synnaeve, and A.~Rogozhnikov},
@@ -1148,6 +1207,10 @@
   M.~Farajtabar}, {\em Wide neural networks forget less catastrophically},
   CoRR, abs/2110.11526 (2021).
 
+\bibitem{Mishra2018ASN}
+{\sc N.~Mishra, M.~Rohaninejad, X.~Chen, and P.~Abbeel}, {\em A simple neural
+  attentive meta-learner}, in ICLR, 2018.
+
 \bibitem{DBLP:journals/corr/MisraSGH16}
 {\sc I.~Misra, A.~Shrivastava, A.~Gupta, and M.~Hebert}, {\em Cross-stitch
   networks for multi-task learning}, CoRR, abs/1604.03539 (2016).
@@ -1210,6 +1273,10 @@
   International Conference on Machine Learning-Volume 70, JMLR. org, 2017,
   pp.~2554--2563.
 
+\bibitem{DBLP:journals/corr/MunkhdalaiY17}
+{\sc T.~Munkhdalai and H.~Yu}, {\em Meta networks}, CoRR, abs/1703.00837
+  (2017).
+
 \bibitem{Nado2020EvaluatingPB}
 {\sc Z.~Nado, S.~Padhy, D.~Sculley, A.~D'Amour, B.~Lakshminarayanan, and
   J.~Snoek}, {\em Evaluating prediction-time batch normalization for robustness
@@ -1229,10 +1296,23 @@
   Goodman, P.~Kohli, F.~D. Wood, and P.~H.~S. Torr}, {\em Learning disentangled
   representations with semi-supervised deep generative models}, in NIPS, 2017.
 
+\bibitem{DBLP:journals/corr/abs-2008-11687}
+{\sc B.~Neyshabur, H.~Sedghi, and C.~Zhang}, {\em What is being transferred in
+  transfer learning?}, CoRR, abs/2008.11687 (2020).
+
 \bibitem{DBLP:journals/corr/NguyenYC14}
 {\sc A.~M. Nguyen, J.~Yosinski, and J.~Clune}, {\em Deep neural networks are
   easily fooled: High confidence predictions for unrecognizable images}, CoRR,
   abs/1412.1897 (2014).
+
+\bibitem{ni2022contrastive}
+{\sc R.~Ni, M.~Shu, H.~Souri, M.~Goldblum, and T.~Goldstein}, {\em Contrastive
+  learning is just meta-learning}, in International Conference on Learning
+  Representations, 2022.
+
+\bibitem{Nichol2018ReptileAS}
+{\sc A.~Nichol and J.~Schulman}, {\em Reptile: a scalable metalearning
+  algorithm}, arXiv: Learning,  (2018).
 
 \bibitem{Nikolenko2019SyntheticDF}
 {\sc S.~I. Nikolenko}, {\em Synthetic data for deep learning}, ArXiv,
@@ -1243,6 +1323,11 @@
   transferring mid-level image representations using convolutional neural
   networks}, in Proceedings of the IEEE conference on computer vision and
   pattern recognition, 2014, pp.~1717--1724.
+
+\bibitem{DBLP:journals/corr/abs-1805-10123}
+{\sc B.~N. Oreshkin, P.~R. L{\'{o}}pez, and A.~Lacoste}, {\em {TADAM:} task
+  dependent adaptive metric for improved few-shot learning}, CoRR,
+  abs/1805.10123 (2018).
 
 \bibitem{Ovadia2019CanYT}
 {\sc Y.~Ovadia, E.~Fertig, J.~Ren, Z.~Nado, D.~Sculley, S.~Nowozin, J.~V.
@@ -1354,6 +1439,11 @@
 {\sc N.~Qian}, {\em On the momentum term in gradient descent learning
   algorithms}, Neural networks, 12 (1999), pp.~145--151.
 
+\bibitem{DBLP:journals/corr/abs-1910-02224}
+{\sc L.~Qiao, Y.~Shi, J.~Li, Y.~Wang, T.~Huang, and Y.~Tian}, {\em Transductive
+  episodic-wise adaptive metric for few-shot learning}, CoRR, abs/1910.02224
+  (2019).
+
 \bibitem{DBLP:journals/corr/abs-1903-10520}
 {\sc S.~Qiao, H.~Wang, C.~Liu, W.~Shen, and A.~L. Yuille}, {\em Weight
   standardization}, CoRR, abs/1903.10520 (2019).
@@ -1409,6 +1499,10 @@
 {\sc M.~S. Rahman, F.~Khomh, A.~Hamidi, J.~Cheng, G.~Antoniol, and
   H.~Washizaki}, {\em Machine learning application development: Practitioners'
   insights}, ArXiv, abs/2112.15277 (2021).
+
+\bibitem{DBLP:journals/corr/abs-1909-04630}
+{\sc A.~Rajeswaran, C.~Finn, S.~M. Kakade, and S.~Levine}, {\em Meta-learning
+  with implicit gradients}, CoRR, abs/1909.04630 (2019).
 
 \bibitem{DBLP:journals/corr/abs-1711-10160}
 {\sc A.~Ratner, S.~H. Bach, H.~R. Ehrenberg, J.~A. Fries, S.~Wu, and
@@ -1492,6 +1586,11 @@
   representations by back-propagating errors}, Cognitive modeling, 5 (1988),
   p.~1.
 
+\bibitem{DBLP:journals/corr/abs-1807-05960}
+{\sc A.~A. Rusu, D.~Rao, J.~Sygnowski, O.~Vinyals, R.~Pascanu, S.~Osindero, and
+  R.~Hadsell}, {\em Meta-learning with latent embedding optimization}, CoRR,
+  abs/1807.05960 (2018).
+
 \bibitem{DBLP:journals/corr/abs-2103-05180}
 {\sc L.~Ruthotto and E.~Haber}, {\em An introduction to deep generative
   modeling}, CoRR, abs/2103.05180 (2021).
@@ -1528,6 +1627,10 @@
 \bibitem{Santurkar2018HowDB}
 {\sc S.~Santurkar, D.~Tsipras, A.~Ilyas, and A.~Madry}, {\em How does batch
   normalization help optimization?}, in NeurIPS, 2018.
+
+\bibitem{Satorras2018FewShotLW}
+{\sc V.~G. Satorras and J.~Bruna}, {\em Few-shot learning with graph neural
+  networks}, ArXiv, abs/1711.04043 (2018).
 
 \bibitem{Saxe2013ExactST}
 {\sc A.~M. Saxe, J.~L. McClelland, and S.~Ganguli}, {\em Exact solutions to the
@@ -1618,6 +1721,10 @@
   training}, in Proceedings of the IEEE conference on computer vision and
   pattern recognition, 2017, pp.~2107--2116.
 
+\bibitem{Shyam2017AttentiveRC}
+{\sc P.~Shyam, S.~Gupta, and A.~Dukkipati}, {\em Attentive recurrent
+  comparators}, ArXiv, abs/1703.00767 (2017).
+
 \bibitem{simonyan2014very}
 {\sc K.~Simonyan and A.~Zisserman}, {\em Very deep convolutional networks for
   large-scale image recognition}, arXiv preprint arXiv:1409.1556,  (2014).
@@ -1666,6 +1773,12 @@
   Meeting of the Association for Computational Linguistics (Volume 2: Short
   Papers), 2016, pp.~231--235.
 
+\bibitem{DBLP:journals/corr/abs-2001-07685}
+{\sc K.~Sohn, D.~Berthelot, C.~Li, Z.~Zhang, N.~Carlini, E.~D. Cubuk,
+  A.~Kurakin, H.~Zhang, and C.~Raffel}, {\em Fixmatch: Simplifying
+  semi-supervised learning with consistency and confidence}, CoRR,
+  abs/2001.07685 (2020).
+
 \bibitem{Sommer2020TowardsPV}
 {\sc D.~M. Sommer, L.~Song, S.~Wagh, and P.~Mittal}, {\em Towards probabilistic
   verification of machine unlearning}, ArXiv, abs/2003.04247 (2020).
@@ -1702,6 +1815,12 @@
 \bibitem{DBLP:journals/corr/abs-1909-11825}
 {\sc Y.~Sun, E.~Tzeng, T.~Darrell, and A.~A. Efros}, {\em Unsupervised domain
   adaptation through self-supervision}, CoRR, abs/1909.11825 (2019).
+
+\bibitem{Sung2018LearningTC}
+{\sc F.~Sung, Y.~Yang, L.~Zhang, T.~Xiang, P.~H.~S. Torr, and T.~M.
+  Hospedales}, {\em Learning to compare: Relation network for few-shot
+  learning}, 2018 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition,  (2018), pp.~1199--1208.
 
 \bibitem{DBLP:journals/corr/abs-2111-09839}
 {\sc Y.~Sung, V.~Nair, and C.~Raffel}, {\em Training neural networks with fixed
@@ -1821,6 +1940,10 @@
 {\sc O.~Vinyals}, {\em “model vs optimization meta learning}, in NIPS 2017
   Metalearning Symposium, 2017.
 
+\bibitem{Vinyals2016MatchingNF}
+{\sc O.~Vinyals, C.~Blundell, T.~P. Lillicrap, K.~Kavukcuoglu, and
+  D.~Wierstra}, {\em Matching networks for one shot learning}, in NIPS, 2016.
+
 \bibitem{Vinyals2015PointerN}
 {\sc O.~Vinyals, M.~Fortunato, and N.~Jaitly}, {\em Pointer networks}, ArXiv,
   abs/1506.03134 (2015).
@@ -1848,6 +1971,10 @@
 {\sc L.~Wang and K.-J. Yoon}, {\em Knowledge distillation and student-teacher
   learning for visual intelligence: A review and new outlooks}, ArXiv,
   abs/2004.05937 (2020).
+
+\bibitem{DBLP:journals/corr/abs-2010-13166}
+{\sc X.~Wang, Y.~Chen, and W.~Zhu}, {\em A comprehensive survey on curriculum
+  learning}, CoRR, abs/2010.13166 (2020).
 
 \bibitem{DBLP:journals/corr/abs-1711-07971}
 {\sc X.~Wang, R.~B. Girshick, A.~Gupta, and K.~He}, {\em Non-local neural
@@ -2074,6 +2201,11 @@
 {\sc J.~Zhu, T.~Park, P.~Isola, and A.~A. Efros}, {\em Unpaired image-to-image
   translation using cycle-consistent adversarial networks}, CoRR,
   abs/1703.10593 (2017).
+
+\bibitem{DBLP:journals/corr/abs-1911-02685}
+{\sc F.~Zhuang, Z.~Qi, K.~Duan, D.~Xi, Y.~Zhu, H.~Zhu, H.~Xiong, and Q.~He},
+  {\em A comprehensive survey on transfer learning}, CoRR, abs/1911.02685
+  (2019).
 
 \bibitem{zoph2019learning}
 {\sc B.~Zoph, E.~D. Cubuk, G.~Ghiasi, T.-Y. Lin, J.~Shlens, and Q.~V. Le}, {\em
