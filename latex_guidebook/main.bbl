@@ -121,6 +121,11 @@
   D.~S. Weld}, {\em Does the whole exceed its parts? the effect of ai
   explanations on complementary team performance}, 2020.
 
+\bibitem{DBLP:journals/corr/abs-2009-14119}
+{\sc E.~B. Baruch, T.~Ridnik, N.~Zamir, A.~Noy, I.~Friedman, M.~Protter, and
+  L.~Zelnik{-}Manor}, {\em Asymmetric loss for multi-label classification},
+  CoRR, abs/2009.14119 (2020).
+
 \bibitem{DBLP:journals/corr/abs-1904-09330}
 {\sc P.~Bashivan, M.~Schrimpf, R.~Ajemian, I.~Rish, M.~Riemer, and Y.~Tu}, {\em
   Continual learning with self-organizing maps}, CoRR, abs/1904.09330 (2019).
@@ -134,9 +139,17 @@
   Online learning rate adaptation with hypergradient descent}, arXiv preprint
   arXiv:1703.04782,  (2017).
 
+\bibitem{Baydin2022GradientsWB}
+{\sc A.~G. Baydin, B.~A. Pearlmutter, D.~Syme, F.~Wood, and P.~H.~S. Torr},
+  {\em Gradients without backpropagation}, 2022.
+
 \bibitem{DBLP:journals/corr/abs-1305-2982}
 {\sc Y.~Bengio}, {\em Estimating or propagating gradients through stochastic
   neurons}, CoRR, abs/1305.2982 (2013).
+
+\bibitem{Bengio2009CurriculumL}
+{\sc Y.~Bengio, J.~Louradour, R.~Collobert, and J.~Weston}, {\em Curriculum
+  learning}, in ICML '09, 2009.
 
 \bibitem{Bingham2021AutoInitAS}
 {\sc G.~Bingham and R.~Miikkulainen}, {\em Autoinit: Analytic signal-preserving
@@ -472,6 +485,10 @@
 {\sc J.~Frankle, D.~J. Schwab, and A.~S. Morcos}, {\em The early phase of
   neural network training}, ArXiv, abs/2002.10365 (2020).
 
+\bibitem{DBLP:journals/corr/abs-2002-10365}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em The early phase of
+  neural network training}, CoRR, abs/2002.10365 (2020).
+
 \bibitem{DBLP:journals/corr/abs-2003-00152}
 \leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Training batchnorm
   and only batchnorm: On the expressive power of random features in cnns},
@@ -538,6 +555,11 @@
   deep feedforward neural networks}, in Proceedings of the thirteenth
   international conference on artificial intelligence and statistics, 2010,
   pp.~249--256.
+
+\bibitem{DBLP:journals/corr/abs-1905-13277}
+{\sc A.~Golatkar, A.~Achille, and S.~Soatto}, {\em Time matters in regularizing
+  deep networks: Weight decay and data augmentation affect early learning
+  dynamics, matter little near convergence}, CoRR, abs/1905.13277 (2019).
 
 \bibitem{Goodfellow2014GenerativeAN}
 {\sc I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley,
@@ -780,6 +802,11 @@
 {\sc A.~Iscen, G.~Tolias, Y.~Avrithis, and O.~Chum}, {\em Label propagation for
   deep semi-supervised learning}, CoRR, abs/1904.04717 (2019).
 
+\bibitem{DBLP:journals/corr/JaderbergCOVGK16}
+{\sc M.~Jaderberg, W.~M. Czarnecki, S.~Osindero, O.~Vinyals, A.~Graves, and
+  K.~Kavukcuoglu}, {\em Decoupled neural interfaces using synthetic gradients},
+  CoRR, abs/1608.05343 (2016).
+
 \bibitem{jaeger2001echo}
 {\sc H.~Jaeger}, {\em The “echo state” approach to analysing and training
   recurrent neural networks-with an erratum note}, Bonn, Germany: German
@@ -975,6 +1002,11 @@
 {\sc V.~Lakshmanan, M.~G{\"o}rner, and R.~Gillard}, {\em Practical Machine
   Learning for Computer Vision: End-To-End Machine Learning for Images},
   O'Reilly Media, Incorporated, 2021.
+
+\bibitem{Lakshminarayanan2017SimpleAS}
+{\sc B.~Lakshminarayanan, A.~Pritzel, and C.~Blundell}, {\em Simple and
+  scalable predictive uncertainty estimation using deep ensembles}, in NIPS,
+  2017.
 
 \bibitem{lange2020_lottery_ticket_hypothesis}
 {\sc R.~T. Lange}, {\em The lottery ticket hypothesis: A survey},
@@ -1173,6 +1205,11 @@
 {\sc L.~Melas-Kyriazi}, {\em Do you even need attention? a stack of
   feed-forward layers does surprisingly well on imagenet}, ArXiv,
   abs/2105.02723 (2021).
+
+\bibitem{DBLP:journals/corr/abs-2106-07998}
+{\sc M.~Minderer, J.~Djolonga, R.~Romijnders, F.~Hubis, X.~Zhai, N.~Houlsby,
+  D.~Tran, and M.~Lucic}, {\em Revisiting the calibration of modern neural
+  networks}, CoRR, abs/2106.07998 (2021).
 
 \bibitem{DBLP:journals/corr/abs-2110-11526}
 {\sc S.~Mirzadeh, A.~Chaudhry, H.~Hu, R.~Pascanu, D.~G{\"{o}}r{\"{u}}r, and
@@ -1681,6 +1718,10 @@
 {\sc K.~Simonyan and A.~Zisserman}, {\em Very deep convolutional networks for
   large-scale image recognition}, arXiv preprint arXiv:1409.1556,  (2014).
 
+\bibitem{Singh2021OnTD}
+{\sc A.~K. Singh, A.~Bay, B.~Sengupta, and A.~Mirabile}, {\em On the dark side
+  of calibration for modern neural networks}, ArXiv, abs/2106.09385 (2021).
+
 \bibitem{DBLP:journals/corr/abs-1911-09737}
 {\sc S.~Singh and S.~Krishnan}, {\em Filter response normalization layer:
   Eliminating batch dependence in the training of deep neural networks}, CoRR,
@@ -1708,6 +1749,13 @@
 {\sc L.~N. Smith}, {\em A disciplined approach to neural network
   hyper-parameters: Part 1--learning rate, batch size, momentum, and weight
   decay}, arXiv preprint arXiv:1803.09820,  (2018).
+
+\bibitem{Smith2022CyclicalFL}
+{\sc L.~N. Smith}, {\em Cyclical focal loss}, 2022.
+
+\bibitem{Smith2022GeneralCT}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em General cyclical
+  training of neural networks}, 2022.
 
 \bibitem{smith2017don}
 {\sc S.~L. Smith, P.-J. Kindermans, and Q.~V. Le}, {\em Don't decay the
@@ -1859,6 +1907,11 @@
 \bibitem{DBLP:journals/corr/UlyanovVL16}
 {\sc D.~Ulyanov, A.~Vedaldi, and V.~S. Lempitsky}, {\em Instance normalization:
   The missing ingredient for fast stylization}, CoRR, abs/1607.08022 (2016).
+
+\bibitem{Goorbergh2022TheHO}
+{\sc R.~van~den Goorbergh, M.~van Smeden, D.~Timmerman, and B.~V. Calster},
+  {\em The harm of class imbalance corrections for risk prediction models:
+  illustration and simulation using logistic regression}, 2022.
 
 \bibitem{DBLP:journals/corr/abs-1807-03748}
 {\sc A.~van~den Oord, Y.~Li, and O.~Vinyals}, {\em Representation learning with

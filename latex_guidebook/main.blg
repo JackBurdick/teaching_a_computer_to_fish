@@ -9,12 +9,12 @@ A level-1 auxiliary file: basics.aux
 A level-1 auxiliary file: foundations.aux
 A level-1 auxiliary file: ensembles.aux
 A level-1 auxiliary file: terms.aux
-A level-1 auxiliary file: continual_learning.aux
 A level-1 auxiliary file: self_supervised_learning.aux
 A level-1 auxiliary file: multi_overview.aux
 A level-1 auxiliary file: transfer_learning.aux
 A level-1 auxiliary file: multitask.aux
 A level-1 auxiliary file: meta.aux
+A level-1 auxiliary file: continual_learning.aux
 A level-1 auxiliary file: interpretability.aux
 A level-1 auxiliary file: applied.aux
 A level-1 auxiliary file: ethics.aux
@@ -30,7 +30,7 @@ A level-1 auxiliary file: appendix/regularization.aux
 A level-1 auxiliary file: appendix/statistics.aux
 A level-1 auxiliary file: research/overview.aux
 The style file: siam.bst
-Reallocated field_info (elt_size=4) to 15603 items from 5000.
+Reallocated field_info (elt_size=4) to 15879 items from 5000.
 Database file #1: TCF.bib
 Database file #2: arxiv.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -44,6 +44,7 @@ Warning--to sort, need author or key in deeplearnjs
 Warning--to sort, need author or key in convnet_js
 Warning--empty booktitle in Allingham2021SparseMM
 Warning--empty booktitle in Bansal2020DoesTW
+Warning--empty booktitle in Baydin2022GradientsWB
 Warning--empty booktitle in Chuang2020DebiasedCL
 Warning--empty journal in dozat2016incorporating
 Warning--empty booktitle in Evci2022Head2ToeUI
@@ -58,47 +59,50 @@ Warning--empty booktitle in MCCLOSKEY1989109
 Warning--empty booktitle in Reed2020EvaluatingSP
 Warning--empty journal in ring1994continual
 Warning--empty journal in schmidhuber1990making
+Warning--empty booktitle in Smith2022CyclicalFL
+Warning--empty booktitle in Smith2022GeneralCT
 Warning--empty journal in tangcontrol
 Warning--empty year in tangcontrol
-You've used 461 entries,
+Warning--empty booktitle in Goorbergh2022TheHO
+You've used 473 entries,
             2030 wiz_defined-function locations,
-            2789 strings with 96828 characters,
-and the built_in function-call counts, 151980 in all, are:
-= -- 12483
-> -- 11408
+            2840 strings with 99019 characters,
+and the built_in function-call counts, 155564 in all, are:
+= -- 12754
+> -- 11674
 < -- 0
-+ -- 4545
-- -- 4042
-* -- 14000
-:= -- 26512
-add.period$ -- 475
-call.type$ -- 461
-change.case$ -- 3400
++ -- 4653
+- -- 4136
+* -- 14321
+:= -- 27136
+add.period$ -- 487
+call.type$ -- 473
+change.case$ -- 3485
 chr.to.int$ -- 0
-cite$ -- 487
-duplicate$ -- 5827
-empty$ -- 9013
-format.name$ -- 4042
-if$ -- 29074
+cite$ -- 503
+duplicate$ -- 5981
+empty$ -- 9265
+format.name$ -- 4136
+if$ -- 29759
 int.to.chr$ -- 0
-int.to.str$ -- 461
-missing$ -- 455
-newline$ -- 1400
-num.names$ -- 900
-pop$ -- 3351
+int.to.str$ -- 473
+missing$ -- 467
+newline$ -- 1436
+num.names$ -- 922
+pop$ -- 3458
 preamble$ -- 1
-purify$ -- 2946
+purify$ -- 3019
 quote$ -- 0
-skip$ -- 3604
+skip$ -- 3670
 stack$ -- 0
-substring$ -- 4478
-swap$ -- 1459
+substring$ -- 4540
+swap$ -- 1481
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1830
-warning$ -- 26
-while$ -- 1082
-width$ -- 464
-write$ -- 3754
-(There were 26 warnings)
+type$ -- 1878
+warning$ -- 30
+while$ -- 1104
+width$ -- 476
+write$ -- 3846
+(There were 30 warnings)
