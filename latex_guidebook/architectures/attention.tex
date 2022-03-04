@@ -1,0 +1,156 @@
+\chapter{Attention}
+
+\r{``An attention function can be described as mapping a query and a set of key-value pairs to an output,
+	where the query, keys, values, and output are all vectors. The output is computed as a weighted sum
+	of the values, where the weight assigned to each value is computed by a compatibility function of the
+	query with the corresponding key.'' \cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
+\TD{Self-attention Does Not Need $O(n^{2})$ Memory~\cite{Rabe2021SelfattentionDN}}
+
+%TODO: another blog to checkout https://distill.pub/2016/augmented-rnns/
+
+\r{overview can be found here\cite{weng2018attention}}
+
+
+\TD{RNNsearch~\cite{Bahdanau2015NeuralMT}. \TD{MOTIVATION -- rather than ``RNNencdec''}}
+
+% TF attention implementation (https://www.tensorflow.org/tutorials/text/nmt_with_attention)
+
+
+
+\TD{Massive Exploration of Neural Machine Translation Architectures \cite{DBLP:journals/corr/BritzGLL17}}
+
+% TODO: index for transformer
+% 'self-attention'
+\TD{Attention Is All You Need -- Transformer network --- multi-head self-attention mechanism, key-value pairs \cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
+% self-attention \TD{Self-attention, less commonly intra-attention}
+\TD{Long Short-Term Memory-Networks for Machine Reading \cite{DBLP:journals/corr/ChengDL16}}
+
+
+%\TD{Nice table comparing mechanisms https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html}
+
+\TD{in above post\cite{weng2018attention}: soft vs hard attention and global vs local attention}
+
+% ``heads learn redundant key/query projections'' --> share
+% https://github.com/epfml/collaborative-attention
+\TD{Multi-Head Attention: Collaborate Instead of Concatenate \cite{Cordonnier2020MultiHeadAC}}
+
+% soft vs hard and global vs local
+
+\TD{Describes two variants: a ``hard'' stochastic attention mechanism (trainable via ``maximizing an approximate variational lower bound'' or REINFORCE) and a ``soft'' deterministic attention mechanism(trainable by standard back-propagation) \cite{DBLP:journals/corr/XuBKCCSZB15}. Soft attention --- scores to all entities (is differenetiable but expensive) and hard attention --- only selects one entity (non-differentiable (and complicated, reinforcement learning), but requires less computation at inference)}
+
+
+% TODO: does this make sense?
+\TD{Non-linear projection for K,Q, and V~\cite{DBLP:journals/corr/abs-2111-10017}}
+
+
+\section{Scoring/Attention Functions}
+
+% TODO: https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html#summary
+\TD{table from \cite{weng2018attention}}
+
+
+\subsection{Additive}
+
+\TD{NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE\cite{Bahdanau2015NeuralMT}}
+
+\subsection{Dot-Product}
+
+\TD{Effective Approaches to Attention-based Neural Machine Translation \cite{DBLP:journals/corr/LuongPM15}}
+
+\subsection{Scaled Dot-Product}
+
+\TD{Attention Is All You Need -- Transformer network --- multi-head self-attention mechanism, key-value pairs \cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
+
+\subsection{Other}
+
+% TODO: self attention
+\r{sometimes refered to as ``intra-attention''\cite{DBLP:journals/corr/VaswaniSPUJGKP17}. Keys, queries and values are all derived from the same sequence. \TD{Self-attention transforms a sequence to create a representation of itself.}}
+
+
+\section{softmax}
+
+\TD{Softermax: Hardware/Software Co-Design of an Efficient Softmax for Transformers~\cite{DBLP:journals/corr/abs-2103-09301}}
+
+% possibly helpful: https://towardsdatascience.com/google-deepminds-rfa-approximating-softmax-attention-mechanism-in-transformers-d685345bbc18
+\TD{Random Feature Attention~\cite{DBLP:journals/corr/abs-2103-02143}}
+
+\TD{Mixtape: Breaking the Softmax Bottleneck Efficiently~\cite{Yang2019MixtapeBT}}
+
+\TD{cosFormer: Rethinking Softmax in Attention~\cite{Qin2022cosFormerRS}}
+
+\TD{SOFT:~\cite{DBLP:journals/corr/abs-2110-11945}}
+
+\section{Reducing Complexity}
+
+\subsection{Low-Rank}
+
+\subsection{Compression}
+
+\subsubsection{Memory (keys and Values)}
+
+\subsubsection{Query}
+
+\subsection{Structural Sparsity}
+
+\TD{Generating Long Sequences with Sparse Transformers~\cite{DBLP:journals/corr/abs-1904-10509} shows that the attention matrix is commonly sparse after training.}
+
+\subsubsection{Global}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{global attention}}
+	\label{fig:attn_global}
+\end{figure}
+
+\TD{a selection of nodes that can attend to the whole sequence and that can be attended by the whole sequence}
+
+\paragraph{External}
+
+\paragraph{Internal}
+
+
+\subsubsection{Local}
+
+\r{sometimes called sliding window attention}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-b}\hfil
+	\includegraphics[width=0.3\textwidth]{example-image-c}\hfil
+	\caption{\TD{band attention (band, dilated, block local)}}
+	\label{fig:attn_diagonal}
+\end{figure}
+
+\paragraph{Band}
+
+\paragraph{Dialated}
+
+\paragraph{Block Local}
+
+\subsubsection{Random}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{example-image-a}\hfil
+	\caption{\TD{global attention}}
+	\label{fig:attn_random}
+\end{figure}
+
+\subsubsection{Combination}
+
+% TODO: examples
+
+
+
+\chapter{Multi-Headed Attention}
+
+\r{rather than a single head}
+
+\TD{Nothing guarantees that different heads attend to different positions or capture distinct features}
+
+

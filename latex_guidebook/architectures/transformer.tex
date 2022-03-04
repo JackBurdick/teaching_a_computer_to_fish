@@ -1,0 +1,96 @@
+\chapter{Transformer}
+
+% TODO: section is being redone
+
+% TODO: read https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html
+
+% possibly useful: http://nlp.seas.harvard.edu/2018/04/03/attention.html
+
+\TD{A Survey of Transformers~\cite{DBLP:journals/corr/abs-2106-04554}}
+
+\TD{survey of recent transformer architectures \TD{Efficient Transformers: A Survey \cite{Tay2020EfficientTA}}}
+
+
+% Factorized Attention to self-attention
+\TD{Generating Long Sequences with Sparse Transformers \cite{DBLP:journals/corr/abs-1904-10509}}
+
+% include reccurence:  "enables learning dependency beyond a fixed length" + "relative position encodings"
+\TD{Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context \cite{DBLP:journals/corr/abs-1901-02860}}
+
+% extends DBLP:journals/corr/abs-1901-02860 -- 
+% https://github.com/guolinke/TUPE
+\TD{Compressive Transformers for Long-Range Sequence Modeling \cite{Rae2020CompressiveTF}}
+
+% linear attention
+\TD{Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention \cite{Katharopoulos2020TransformersAR}}
+
+% 
+\TD{Transformer with Untied Positional Encoding (TUPE) --- Rethinking Positional Encoding in Language Pre-training \cite{Ke2020RethinkingPE}}
+
+
+
+\TD{Reformer: The Efficient Transformer \cite{Kitaev2020ReformerTE}}
+
+
+% TODO: top-down attention
+% related to self-attention
+% https://twitter.com/thomaskipf/status/1277570203665170432
+\TD{Object-Centric Learning with Slot Attention \cite{Locatello2020ObjectCentricLW}}
+
+\TD{Recurrent Independent Mechanisms \cite{Goyal2019RecurrentIM}}
+
+% DETR -- also object detection
+\TD{End-to-End Object Detection with Transformers \cite{Carion2020EndtoEndOD}}
+
+
+
+\section{Normalization}
+
+
+
+
+\subsection{Normalization Function}
+
+\TD{LayerNormalization \TD{Add reference}}
+
+\TD{AdaNorm, no learnable parameters~\cite{DBLP:journals/corr/abs-1911-07013}}
+
+\TD{PowerNorm~\cite{DBLP:journals/corr/abs-2003-07845}.}
+
+\TD{ReZero~\cite{DBLP:journals/corr/abs-2003-04887}}
+
+\TD{DeepNorm~\cite{Wang2022DeepNetST}}
+
+
+
+\subsection{Normalization Placement}
+
+\TD{Figure}
+
+\subsubsection{Post-LN}
+
+\TD{Original placement, after the residual connections~\cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
+\subsubsection{Pre-LN}
+
+\TD{Possible first use~\cite{DBLP:journals/corr/abs-1803-07416}, as reported~\cite{DBLP:journals/corr/abs-2106-04554}}
+
+
+
+
+
+\section{Positional Transformation}
+
+\TD{Feed forward network}
+
+\TD{Attention is Not All You Need: Pure Attention Loses Rank Doubly Exponentially with Depth~\cite{DBLP:journals/corr/abs-2103-03404}}
+
+\subsection{Replacement}
+
+\TD{Use of Mixture-of-Experts \TD{\ALR}}
+
+\TD{GShard: Scaling Giant Models with Conditional Computation and Automatic
+	Sharding~\cite{DBLP:journals/corr/abs-2006-16668}}
+
+\TD{Switch Transformers: Scaling to Trillion Parameter Models with Simple
+	and Efficient Sparsity~\cite{DBLP:journals/corr/abs-2101-03961}}

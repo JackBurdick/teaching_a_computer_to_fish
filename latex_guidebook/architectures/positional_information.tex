@@ -1,0 +1,89 @@
+\chapter{Positional Encodings}
+
+\TD{Positional embedding and positional encoding tend to be used interchangably. However, typically an encoding means ``fixed'' while an embedding means ``learned'' or ``trainable''.}
+
+% TODO: example of how word order matters (not is a good example)
+
+\r{Attention/transformers view the inputs as sets, that is there is no order associated with each input. All information enters the attention block at once. This is in contrast to something like a recurrent model, in which the order of the inputs is implicit.}
+
+\r{trade off: potentially faster (remove the dependancy of doing operations sequentially) and can also possibly help capture longer range dependancies (without additional complexity e.g. skip connections)}
+
+\r{(re)introducing order to the input by including additional information -- the ``positional embedding''.}
+
+\r{NOTE: Great blog posts on this subject~\cite{kazemnejad_2021, kernes_2021, kernes_2021B}}
+
+\subsubsection{Positional Encoding Value}
+
+\r{why not add linear/progressive value signifying order?}
+
+\r{This would be called an aboslute positional embedding}
+
+\r{Include index information [0, n], where n is the length of the sentance (minus 1). This could lead to magnitude issues. Where the singal from the word embeddings is ``washed out'' by the positional embedding.  Another consideration is that (may or may not be an issue depending on the application) is that you'd like to ensure you have the largest sequence in the training set that you expect to see in evaluation set. For example, if you only see sequences of length $25$ in the training data and then see a sequence of length $32$ during inference. The model will be unsure what to do with values $25 - 31$ (zero indexing). Depending on how you include the positional embedding (e.g. additive or concat), the model may misinterpret the values or be largely/entirely unsure what to make of these previously unseen values.}
+
+
+\r{To address this you could either increase the magnitude of the word embeddings or normalize/scale the positional embedding.}
+
+\r{However, niether are ideal.}
+
+\r{Increasing the magnitude of the word embeddings would possibly work, though you may consider issues with exploding values in the network, but you'd still have a similar issue to what would happen if you normalized the positional embedding. }
+
+\r{That is, the normalized positional embeddings may encode different information when the sentances are longer or shorter -- the delta between words in a 5 word sentance vs a 20 word sentance doesn't have a consistent meaning}
+
+% NOTE: haven't read this yet (I don't think, though the link is purple...)
+\TD{Self-Attention with Relative Position Representations~\cite{DBLP:journals/corr/abs-1803-02155}}
+
+\r{Ideally the embedding would be able to account for all the issues we discussed.}
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item consistent delta between each position
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item regardless of sequence length, if an instance is one instance away from another, the positional encoding should be the same e.g. in a length four sequence the positional encoding should be the same from instances $1$ and $2$ as it is for instances $19$ and $20$ in a length $22$ sequence.
+	\end{itemize}
+	\item generalize to sequence lengths unseen in training
+\end{itemize}
+
+\r{additionally, we'd prefer to have each instance in the sequence be unique. That is the positional encoding for one instance shouldn't be the same as another in the same sequence (e.g. two words in a sentance).}
+
+\paragraph{Positional Encoding Value(s)}
+
+\r{Rather than use a single value, a possible solution is to use an array of values.}
+
+\TD{Relative positional encoding (rather than absolute).}
+
+
+\TD{What if we were to use a binary array to represent each location?}
+
+\TD{issue with binary}
+
+
+
+\TD{CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings~\cite{DBLP:journals/corr/abs-2106-03143}}
+
+% NOTE: possibly relevant: https://aclanthology.org/2021.emnlp-main.266.pdf
+
+\paragraph{Sinusoidal}
+
+\TD{include figure with multiple frequencies and points on the x and y axis leading to embeddings}
+
+\subsection{Positional Embeddings (learned ``encodings'')}
+
+% possibly useful: https://theaisummer.com/positional-embeddings/
+
+\TD{Learning to Encode Position for Transformer with Continuous Dynamical Model~\cite{DBLP:journals/corr/abs-2003-09229}}
+
+
+\TD{What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding~\cite{DBLP:journals/corr/abs-2010-04903}}
+
+\subsubsection{Including Positional Embeddings}
+
+% someones thoughts on  additive vs concat: https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/
+
+\paragraph{Additive}
+
+\TD{saves memory (over concatenation -- less dimensions)}
+
+\TD{figure}
+
+\paragraph{Concatenation}
+
+\TD{figure}

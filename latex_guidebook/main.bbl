@@ -107,6 +107,11 @@
 {\sc J.~Ba, J.~R. Kiros, and G.~E. Hinton}, {\em Layer normalization}, ArXiv,
   abs/1607.06450 (2016).
 
+\bibitem{DBLP:journals/corr/abs-2003-04887}
+{\sc T.~Bachlechner, B.~P. Majumder, H.~H. Mao, G.~W. Cottrell, and J.~J.
+  McAuley}, {\em Rezero is all you need: Fast convergence at large depth},
+  CoRR, abs/2003.04887 (2020).
+
 \bibitem{Bahdanau2015NeuralMT}
 {\sc D.~Bahdanau, K.~Cho, and Y.~Bengio}, {\em Neural machine translation by
   jointly learning to align and translate}, CoRR, abs/1409.0473 (2015).
@@ -393,6 +398,11 @@
 {\sc C.~Doersch and A.~Zisserman}, {\em Multi-task self-supervised visual
   learning}, CoRR, abs/1708.07860 (2017).
 
+\bibitem{DBLP:journals/corr/abs-2103-03404}
+{\sc Y.~Dong, J.~Cordonnier, and A.~Loukas}, {\em Attention is not all you
+  need: Pure attention loses rank doubly exponentially with depth}, CoRR,
+  abs/2103.03404 (2021).
+
 \bibitem{DBLP:journals/corr/abs-2010-11929}
 {\sc A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
   T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit,
@@ -443,6 +453,11 @@
 \bibitem{Evci2019RiggingTL}
 {\sc U.~Evci, T.~Gale, J.~Menick, P.~S. Castro, and E.~Elsen}, {\em Rigging the
   lottery: Making all tickets winners}, ArXiv, abs/1911.11134 (2019).
+
+\bibitem{DBLP:journals/corr/abs-2101-03961}
+{\sc W.~Fedus, B.~Zoph, and N.~Shazeer}, {\em Switch transformers: Scaling to
+  trillion parameter models with simple and efficient sparsity}, CoRR,
+  abs/2101.03961 (2021).
 
 \bibitem{DBLP:journals/corr/FernandoBGG16}
 {\sc B.~Fernando, H.~Bilen, E.~Gavves, and S.~Gould}, {\em Self-supervised
@@ -1055,6 +1070,11 @@
   learning an optimal data augmentation strategy}, Ieee Access, 5 (2017),
   pp.~5858--5869.
 
+\bibitem{DBLP:journals/corr/abs-2006-16668}
+{\sc D.~Lepikhin, H.~Lee, Y.~Xu, D.~Chen, O.~Firat, Y.~Huang, M.~Krikun,
+  N.~Shazeer, and Z.~Chen}, {\em Gshard: Scaling giant models with conditional
+  computation and automatic sharding}, CoRR, abs/2006.16668 (2020).
+
 \bibitem{Lepikhin2020GShardSG}
 {\sc D.~Lepikhin, H.~Lee, Y.~Xu, D.~Chen, O.~Firat, Y.-P. Huang, M.~Krikun,
   N.~Shazeer, and Z.~Chen}, {\em Gshard: Scaling giant models with conditional
@@ -1093,6 +1113,10 @@
 \bibitem{DBLP:journals/corr/abs-1708-02002}
 {\sc T.~Lin, P.~Goyal, R.~B. Girshick, K.~He, and P.~Doll{\'{a}}r}, {\em Focal
   loss for dense object detection}, CoRR, abs/1708.02002 (2017).
+
+\bibitem{DBLP:journals/corr/abs-2106-04554}
+{\sc T.~Lin, Y.~Wang, X.~Liu, and X.~Qiu}, {\em A survey of transformers},
+  CoRR, abs/2106.04554 (2021).
 
 \bibitem{linnainmaa1970representation}
 {\sc S.~Linnainmaa}, {\em The representation of the cumulative rounding error
@@ -1157,6 +1181,11 @@
 \bibitem{loshchilov2016sgdr}
 {\sc I.~Loshchilov and F.~Hutter}, {\em Sgdr: stochastic gradient descent with
   restarts}, Learning, 10 (2016), p.~3.
+
+\bibitem{DBLP:journals/corr/abs-2110-11945}
+{\sc J.~Lu, J.~Yao, J.~Zhang, X.~Zhu, H.~Xu, W.~Gao, C.~Xu, T.~Xiang, and
+  L.~Zhang}, {\em {SOFT:} softmax-free transformer with linear complexity},
+  CoRR, abs/2110.11945 (2021).
 
 \bibitem{DBLP:journals/corr/LuKZCJF16}
 {\sc Y.~Lu, A.~Kumar, S.~Zhai, Y.~Cheng, T.~Javidi, and R.~S. Feris}, {\em
@@ -1403,6 +1432,10 @@
   {\em Correlation congruence for knowledge distillation}, CoRR, abs/1904.01802
   (2019).
 
+\bibitem{DBLP:journals/corr/abs-2103-02143}
+{\sc H.~Peng, N.~Pappas, D.~Yogatama, R.~Schwartz, N.~A. Smith, and L.~Kong},
+  {\em Random feature attention}, CoRR, abs/2103.02143 (2021).
+
 \bibitem{pereyra2017regularizing}
 {\sc G.~Pereyra, G.~Tucker, J.~Chorowski, {\L}.~Kaiser, and G.~Hinton}, {\em
   Regularizing neural networks by penalizing confident output distributions},
@@ -1449,6 +1482,10 @@
 \bibitem{DBLP:journals/corr/abs-1903-10520}
 {\sc S.~Qiao, H.~Wang, C.~Liu, W.~Shen, and A.~L. Yuille}, {\em Weight
   standardization}, CoRR, abs/1903.10520 (2019).
+
+\bibitem{Qin2022cosFormerRS}
+{\sc Z.~Qin, W.~Sun, H.~Deng, D.~Li, Y.~Wei, B.~Lv, J.~Yan, L.~Kong, and
+  Y.~Zhong}, {\em cosformer: Rethinking softmax in attention}, 2022.
 
 \bibitem{Rabe2021SelfattentionDN}
 {\sc M.~N. Rabe and C.~Staats}, {\em Self-attention does not need $o(n^2)$
@@ -1699,6 +1736,10 @@
 {\sc N.~Shazeer and M.~Stern}, {\em Adafactor: Adaptive learning rates with
   sublinear memory cost}, CoRR, abs/1804.04235 (2018).
 
+\bibitem{DBLP:journals/corr/abs-2003-07845}
+{\sc S.~Shen, Z.~Yao, A.~Gholami, M.~W. Mahoney, and K.~Keutzer}, {\em
+  Rethinking batch normalization in transformers}, CoRR, abs/2003.07845 (2020).
+
 \bibitem{Shi2020RunAF}
 {\sc H.~Shi, D.~Luo, S.~Tang, J.~Wang, and Y.~Zhuang}, {\em Run away from your
   teacher: Understanding byol by a novel self-supervised approach}, ArXiv,
@@ -1798,6 +1839,11 @@
 {\sc T.~Standley, A.~R. Zamir, D.~Chen, L.~Guibas, J.~Malik, and S.~Savarese},
   {\em Which tasks should be learned together in multi-task learning?}, arXiv
   preprint arXiv:1905.07553,  (2019).
+
+\bibitem{DBLP:journals/corr/abs-2103-09301}
+{\sc J.~R. Stevens, R.~Venkatesan, S.~Dai, B.~Khailany, and A.~Raghunathan},
+  {\em Softermax: Hardware/software co-design of an efficient softmax for
+  transformers}, CoRR, abs/2103.09301 (2021).
 
 \bibitem{DBLP:journals/corr/abs-1904-03011}
 {\sc G.~Strezoski, N.~van Noord, and M.~Worring}, {\em Learning task
@@ -1917,6 +1963,17 @@
 {\sc A.~van~den Oord, Y.~Li, and O.~Vinyals}, {\em Representation learning with
   contrastive predictive coding}, CoRR, abs/1807.03748 (2018).
 
+\bibitem{DBLP:journals/corr/abs-2004-13379}
+{\sc S.~Vandenhende, S.~Georgoulis, M.~Proesmans, D.~Dai, and L.~V. Gool}, {\em
+  Revisiting multi-task learning in the deep learning era}, CoRR,
+  abs/2004.13379 (2020).
+
+\bibitem{DBLP:journals/corr/abs-1803-07416}
+{\sc A.~Vaswani, S.~Bengio, E.~Brevdo, F.~Chollet, A.~N. Gomez, S.~Gouws,
+  L.~Jones, L.~Kaiser, N.~Kalchbrenner, N.~Parmar, R.~Sepassi, N.~Shazeer, and
+  J.~Uszkoreit}, {\em Tensor2tensor for neural machine translation}, CoRR,
+  abs/1803.07416 (2018).
+
 \bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
 {\sc A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin}, {\em Attention is all you need}, CoRR,
@@ -1952,6 +2009,10 @@
 {\sc L.~Wan, M.~Zeiler, S.~Zhang, Y.~Le~Cun, and R.~Fergus}, {\em
   Regularization of neural networks using dropconnect}, in International
   conference on machine learning, PMLR, 2013, pp.~1058--1066.
+
+\bibitem{Wang2022DeepNetST}
+{\sc H.~Wang, S.~Ma, L.~Dong, S.~Huang, D.~Zhang, and F.~Wei}, {\em Deepnet:
+  Scaling transformers to 1,000 layers}, 2022.
 
 \bibitem{Wang2021AugMaxAC}
 {\sc H.~Wang, C.~Xiao, J.~Kossaifi, Z.~Yu, A.~Anandkumar, and Z.~Wang}, {\em
@@ -2056,6 +2117,10 @@
   IEEE conference on computer vision and pattern recognition, 2017,
   pp.~1492--1500.
 
+\bibitem{DBLP:journals/corr/abs-1911-07013}
+{\sc J.~Xu, X.~Sun, Z.~Zhang, G.~Zhao, and J.~Lin}, {\em Understanding and
+  improving layer normalization}, CoRR, abs/1911.07013 (2019).
+
 \bibitem{DBLP:journals/corr/XuBKCCSZB15}
 {\sc K.~Xu, J.~Ba, R.~Kiros, K.~Cho, A.~C. Courville, R.~Salakhutdinov, R.~S.
   Zemel, and Y.~Bengio}, {\em Show, attend and tell: Neural image caption
@@ -2069,6 +2134,10 @@
 \bibitem{DBLP:journals/corr/YangH16}
 {\sc Y.~Yang and T.~M. Hospedales}, {\em Deep multi-task representation
   learning: {A} tensor factorisation approach}, CoRR, abs/1605.06391 (2016).
+
+\bibitem{Yang2019MixtapeBT}
+{\sc Z.~Yang, T.~Luong, R.~Salakhutdinov, and Q.~V. Le}, {\em Mixtape: Breaking
+  the softmax bottleneck efficiently}, in NeurIPS, 2019.
 
 \bibitem{DBLP:journals/corr/YaoCVDD15}
 {\sc K.~Yao, T.~Cohn, K.~Vylomova, K.~Duh, and C.~Dyer}, {\em Depth-gated
