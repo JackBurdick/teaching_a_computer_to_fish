@@ -45,7 +45,7 @@
 \TD{Non-linear projection for K,Q, and V~\cite{DBLP:journals/corr/abs-2111-10017}}
 
 
-\section{Scoring/Attention Functions}
+\section{Compatibility/Scoring/Attention Functions}
 
 % TODO: https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html#summary
 \TD{table from \cite{weng2018attention}}
@@ -59,6 +59,8 @@
 
 \TD{Effective Approaches to Attention-based Neural Machine Translation \cite{DBLP:journals/corr/LuongPM15}}
 
+\r{exponential to promote sparsity}
+
 \subsection{Scaled Dot-Product}
 
 \TD{Attention Is All You Need -- Transformer network --- multi-head self-attention mechanism, key-value pairs \cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
@@ -68,6 +70,7 @@
 
 % TODO: self attention
 \r{sometimes refered to as ``intra-attention''\cite{DBLP:journals/corr/VaswaniSPUJGKP17}. Keys, queries and values are all derived from the same sequence. \TD{Self-attention transforms a sequence to create a representation of itself.}}
+
 
 
 \section{softmax}
@@ -84,6 +87,10 @@
 \TD{SOFT:~\cite{DBLP:journals/corr/abs-2110-11945}}
 
 \section{Reducing Complexity}
+
+% TODO: not quite sure where linear attention belongs yet
+\TD{Transformers are RNNs: Fast Autoregressive Transformers with Linear
+	Attention~\cite{DBLP:journals/corr/abs-2006-16236}}
 
 \subsection{Low-Rank}
 

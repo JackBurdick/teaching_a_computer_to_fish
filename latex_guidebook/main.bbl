@@ -64,6 +64,11 @@
   Variational information distillation for knowledge transfer}, CoRR,
   abs/1904.05835 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1808-04444}
+{\sc R.~Al{-}Rfou, D.~Choe, N.~Constant, M.~Guo, and L.~Jones}, {\em
+  Character-level language modeling with deeper self-attention}, CoRR,
+  abs/1808.04444 (2018).
+
 \bibitem{alber2018backprop}
 {\sc M.~Alber, I.~Bello, B.~Zoph, P.-J. Kindermans, P.~Ramachandran, and
   Q.~Le}, {\em Backprop evolution}, arXiv preprint arXiv:1808.02822,  (2018).
@@ -147,6 +152,14 @@
 \bibitem{Baydin2022GradientsWB}
 {\sc A.~G. Baydin, B.~A. Pearlmutter, D.~Syme, F.~Wood, and P.~H.~S. Torr},
   {\em Gradients without backpropagation}, 2022.
+
+\bibitem{DBLP:journals/corr/abs-2102-08602}
+{\sc I.~Bello}, {\em Lambdanetworks: Modeling long-range interactions without
+  attention}, CoRR, abs/2102.08602 (2021).
+
+\bibitem{DBLP:journals/corr/abs-1904-09925}
+{\sc I.~Bello, B.~Zoph, A.~Vaswani, J.~Shlens, and Q.~V. Le}, {\em Attention
+  augmented convolutional networks}, CoRR, abs/1904.09925 (2019).
 
 \bibitem{DBLP:journals/corr/abs-1305-2982}
 {\sc Y.~Bengio}, {\em Estimating or propagating gradients through stochastic
@@ -315,6 +328,12 @@
   Computer Society Conference on Computer Vision and Pattern Recognition
   (CVPR'05), vol.~1, IEEE, 2005, pp.~539--546.
 
+\bibitem{DBLP:journals/corr/abs-2009-14794}
+{\sc K.~Choromanski, V.~Likhosherstov, D.~Dohan, X.~Song, A.~Gane,
+  T.~Sarl{\'{o}}s, P.~Hawkins, J.~Davis, A.~Mohiuddin, L.~Kaiser, D.~Belanger,
+  L.~J. Colwell, and A.~Weller}, {\em Rethinking attention with performers},
+  CoRR, abs/2009.14794 (2020).
+
 \bibitem{Chuang2020DebiasedCL}
 {\sc C.-Y. Chuang, J.~A. Robinson, L.~Yen‐Chen, A.~Torralba, and S.~Jegelka},
   {\em Debiased contrastive learning}, 2020.
@@ -351,10 +370,15 @@
   Autoaugment: Learning augmentation policies from data}, arXiv preprint
   arXiv:1805.09501,  (2018).
 
-\bibitem{DBLP:journals/corr/abs-1901-02860}
+\bibitem{Dai2019TransformerXLAL}
 {\sc Z.~Dai, Z.~Yang, Y.~Yang, J.~G. Carbonell, Q.~V. Le, and
   R.~Salakhutdinov}, {\em Transformer-xl: Attentive language models beyond a
-  fixed-length context}, CoRR, abs/1901.02860 (2019).
+  fixed-length context}, ArXiv, abs/1901.02860 (2019).
+
+\bibitem{DBLP:journals/corr/abs-1901-02860}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Transformer-xl:
+  Attentive language models beyond a fixed-length context}, CoRR,
+  abs/1901.02860 (2019).
 
 \bibitem{Daneshmand2020TheoreticalUO}
 {\sc H.~Daneshmand, J.~M. Kohler, F.~R. Bach, T.~Hofmann, and A.~Lucchi}, {\em
@@ -370,11 +394,20 @@
 {\sc S.~De and S.~L. Smith}, {\em Batch normalization biases deep residual
   networks towards shallow paths}, CoRR, abs/2002.10444 (2020).
 
+\bibitem{DBLP:journals/corr/abs-1807-03819}
+{\sc M.~Dehghani, S.~Gouws, O.~Vinyals, J.~Uszkoreit, and L.~Kaiser}, {\em
+  Universal transformers}, CoRR, abs/1807.03819 (2018).
+
 \bibitem{deng2013improving}
 {\sc A.~Deng, Y.~Xu, R.~Kohavi, and T.~Walker}, {\em Improving the sensitivity
   of online controlled experiments by utilizing pre-experiment data}, in
   Proceedings of the sixth ACM international conference on Web search and data
   mining, 2013, pp.~123--132.
+
+\bibitem{DBLP:journals/corr/abs-1810-04805}
+{\sc J.~Devlin, M.~Chang, K.~Lee, and K.~Toutanova}, {\em {BERT:} pre-training
+  of deep bidirectional transformers for language understanding}, CoRR,
+  abs/1810.04805 (2018).
 
 \bibitem{devries2017improved}
 {\sc T.~DeVries and G.~W. Taylor}, {\em Improved regularization of
@@ -541,6 +574,10 @@
 {\sc M.~Garnelo, J.~Schwarz, D.~Rosenbaum, F.~Viola, D.~J. Rezende, S.~M.~A.
   Eslami, and Y.~W. Teh}, {\em Neural processes}, CoRR, abs/1807.01622 (2018).
 
+\bibitem{DBLP:journals/corr/GehringAGYD17}
+{\sc J.~Gehring, M.~Auli, D.~Grangier, D.~Yarats, and Y.~N. Dauphin}, {\em
+  Convolutional sequence to sequence learning}, CoRR, abs/1705.03122 (2017).
+
 \bibitem{geron2019hands}
 {\sc A.~G{\'e}ron}, {\em Hands-on machine learning with Scikit-Learn, Keras,
   and TensorFlow: Concepts, tools, and techniques to build intelligent
@@ -627,6 +664,11 @@
 {\sc R.~Grosse}, {\em Adaptive gradient methods, normalization, and weight
   decay}.
 
+\bibitem{Gu2019InsertionbasedDW}
+{\sc J.~Gu, Q.~Liu, and K.~Cho}, {\em Insertion-based decoding with
+  automatically inferred generation order}, Transactions of the Association for
+  Computational Linguistics, 7 (2019), pp.~661--676.
+
 \bibitem{Gu2015TowardsDN}
 {\sc S.~Gu and L.~Rigazio}, {\em Towards deep neural network architectures
   robust to adversarial examples}, CoRR, abs/1412.5068 (2015).
@@ -647,6 +689,11 @@
 \bibitem{DBLP:journals/corr/GuoPSW17}
 {\sc C.~Guo, G.~Pleiss, Y.~Sun, and K.~Q. Weinberger}, {\em On calibration of
   modern neural networks}, CoRR, abs/1706.04599 (2017).
+
+\bibitem{Guo2019LowRankAL}
+{\sc Q.~Guo, X.~Qiu, X.~Xue, and Z.~Zhang}, {\em Low-rank and locality
+  constrained self-attention for sequence modeling}, IEEE/ACM Transactions on
+  Audio, Speech, and Language Processing, 27 (2019), pp.~2213--2222.
 
 \bibitem{DBLP:journals/corr/GuptaCPVCMM15}
 {\sc M.~R. Gupta, A.~Cotter, J.~Pfeifer, K.~Voevodski, K.~R. Canini,
@@ -694,6 +741,10 @@
   Surpassing human-level performance on imagenet classification}, in
   Proceedings of the IEEE international conference on computer vision, 2015,
   pp.~1026--1034.
+
+\bibitem{He2021DeBERTaDB}
+{\sc P.~He, X.~Liu, J.~Gao, and W.~Chen}, {\em Deberta: Decoding-enhanced bert
+  with disentangled attention}, ArXiv, abs/2006.03654 (2021).
 
 \bibitem{DBLP:journals/corr/abs-1812-01187}
 {\sc T.~He, Z.~Zhang, H.~Zhang, Z.~Zhang, J.~Xie, and M.~Li}, {\em Bag of
@@ -767,6 +818,11 @@
 \bibitem{DBLP:journals/corr/abs-1709-01507}
 {\sc J.~Hu, L.~Shen, and G.~Sun}, {\em Squeeze-and-excitation networks}, CoRR,
   abs/1709.01507 (2017).
+
+\bibitem{Huang2018MusicT}
+{\sc C.-Z.~A. Huang, A.~Vaswani, J.~Uszkoreit, N.~M. Shazeer, I.~Simon,
+  C.~Hawthorne, A.~M. Dai, M.~D. Hoffman, M.~Dinculescu, and D.~Eck}, {\em
+  Music transformer}, arXiv: Learning,  (2018).
 
 \bibitem{huang2017snapshot}
 {\sc G.~Huang, Y.~Li, G.~Pleiss, Z.~Liu, J.~E. Hopcroft, and K.~Q. Weinberger},
@@ -917,6 +973,10 @@
 \bibitem{Ke2020RethinkingPE}
 {\sc G.~Ke, D.~He, and T.-Y. Liu}, {\em Rethinking positional encoding in
   language pre-training}, ArXiv, abs/2006.15595 (2020).
+
+\bibitem{Ke2021RethinkingPE}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Rethinking
+  positional encoding in language pre-training}, ArXiv, abs/2006.15595 (2021).
 
 \bibitem{DBLP:journals/corr/KendallGC17}
 {\sc A.~Kendall, Y.~Gal, and R.~Cipolla}, {\em Multi-task learning using
@@ -1140,6 +1200,11 @@
   variance of the adaptive learning rate and beyond}, CoRR, abs/1908.03265
   (2019).
 
+\bibitem{DBLP:journals/corr/abs-1807-03247}
+{\sc R.~Liu, J.~Lehman, P.~Molino, F.~P. Such, E.~Frank, A.~Sergeev, and
+  J.~Yosinski}, {\em An intriguing failing of convolutional neural networks and
+  the coordconv solution}, CoRR, abs/1807.03247 (2018).
+
 \bibitem{DBLP:journals/corr/abs-1803-10704}
 {\sc S.~Liu, E.~Johns, and A.~J. Davison}, {\em End-to-end multi-task learning
   with attention}, CoRR, abs/1803.10704 (2018).
@@ -1168,6 +1233,11 @@
 \bibitem{Liu2022ACF}
 {\sc Z.~Liu, H.~Mao, C.-Y. Wu, C.~Feichtenhofer, T.~Darrell, and S.~Xie}, {\em
   A convnet for the 2020s}, 2022.
+
+\bibitem{DBLP:journals/corr/abs-2105-08399}
+{\sc A.~Liutkus, O.~C{\'{\i}}fka, S.~Wu, U.~Simsekli, Y.~Yang, and G.~Richard},
+  {\em Relative positional encoding for transformers with linear complexity},
+  CoRR, abs/2105.08399 (2021).
 
 \bibitem{Locatello2020ObjectCentricLW}
 {\sc F.~Locatello, D.~Weissenborn, T.~Unterthiner, A.~Mahendran, G.~Heigold,
@@ -1400,6 +1470,10 @@
 {\sc W.~Park, D.~Kim, Y.~Lu, and M.~Cho}, {\em Relational knowledge
   distillation}, CoRR, abs/1904.05068 (2019).
 
+\bibitem{DBLP:journals/corr/abs-1802-05751}
+{\sc N.~Parmar, A.~Vaswani, J.~Uszkoreit, L.~Kaiser, N.~Shazeer, and A.~Ku},
+  {\em Image transformer}, CoRR, abs/1802.05751 (2018).
+
 \bibitem{DBLP:journals/corr/abs-1802-01528}
 {\sc T.~Parr and J.~Howard}, {\em The matrix calculus you need for deep
   learning}, CoRR, abs/1802.01528 (2018).
@@ -1528,6 +1602,12 @@
 {\sc J.~W. Rae, A.~Potapenko, S.~M. Jayakumar, and T.~P. Lillicrap}, {\em
   Compressive transformers for long-range sequence modelling}, ArXiv,
   abs/1911.05507 (2020).
+
+\bibitem{Raffel2020ExploringTL}
+{\sc C.~Raffel, N.~M. Shazeer, A.~Roberts, K.~Lee, S.~Narang, M.~Matena,
+  Y.~Zhou, W.~Li, and P.~J. Liu}, {\em Exploring the limits of transfer
+  learning with a unified text-to-text transformer}, ArXiv, abs/1910.10683
+  (2020).
 
 \bibitem{DBLP:journals/corr/abs-1909-09157}
 {\sc A.~Raghu, M.~Raghu, S.~Bengio, and O.~Vinyals}, {\em Rapid learning or
@@ -1727,6 +1807,10 @@
 {\sc P.~Shaw, J.~Uszkoreit, and A.~Vaswani}, {\em Self-attention with relative
   position representations}, CoRR, abs/1803.02155 (2018).
 
+\bibitem{DBLP:journals/corr/abs-2002-05202}
+{\sc N.~Shazeer}, {\em {GLU} variants improve transformer}, CoRR,
+  abs/2002.05202 (2020).
+
 \bibitem{shazeer2017outrageously}
 {\sc N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~Le, G.~Hinton, and
   J.~Dean}, {\em Outrageously large neural networks: The sparsely-gated
@@ -1854,6 +1938,10 @@
 {\sc Student}, {\em The probable error of a mean}, Biometrika,  (1908),
   pp.~1--25.
 
+\bibitem{Su2021RoFormerET}
+{\sc J.~Su, Y.~Lu, S.~Pan, B.~Wen, and Y.~Liu}, {\em Roformer: Enhanced
+  transformer with rotary position embedding}, ArXiv, abs/2104.09864 (2021).
+
 \bibitem{DBLP:journals/corr/abs-1906-03548}
 {\sc C.~Summers and M.~J. Dinneen}, {\em Four things everyone should know to
   improve batch normalization}, CoRR, abs/1906.03548 (2019).
@@ -1942,6 +2030,11 @@
 {\sc N.~Tripuraneni, M.~I. Jordan, and C.~Jin}, {\em On the theory of transfer
   learning: The importance of task diversity}, CoRR, abs/2006.11650 (2020).
 
+\bibitem{Tsai2019TransformerDA}
+{\sc Y.-H.~H. Tsai, S.~Bai, M.~Yamada, L.-P. Morency, and R.~Salakhutdinov},
+  {\em Transformer dissection: An unified understanding for transformer’s
+  attention via the lens of kernel}, ArXiv, abs/1908.11775 (2019).
+
 \bibitem{DBLP:journals/corr/abs-1907-09682}
 {\sc F.~Tung and G.~Mori}, {\em Similarity-preserving knowledge distillation},
   CoRR, abs/1907.09682 (2019).
@@ -2009,6 +2102,10 @@
 {\sc L.~Wan, M.~Zeiler, S.~Zhang, Y.~Le~Cun, and R.~Fergus}, {\em
   Regularization of neural networks using dropconnect}, in International
   conference on machine learning, PMLR, 2013, pp.~1058--1066.
+
+\bibitem{Wang2021OnPE}
+{\sc B.~Wang, L.~Shang, C.~Lioma, X.~Jiang, H.~Yang, Q.~Liu, and J.~G.
+  Simonsen}, {\em On position embeddings in bert}, in ICLR, 2021.
 
 \bibitem{Wang2022DeepNetST}
 {\sc H.~Wang, S.~Ma, L.~Dong, S.~Huang, D.~Zhang, and F.~Wei}, {\em Deepnet:

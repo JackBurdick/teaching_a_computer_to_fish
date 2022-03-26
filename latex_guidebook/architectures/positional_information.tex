@@ -12,7 +12,7 @@
 
 \r{NOTE: Great blog posts on this subject~\cite{kazemnejad_2021, kernes_2021, kernes_2021B}}
 
-\subsubsection{Positional Encoding Value}
+\section{Positional Values}
 
 \r{why not add linear/progressive value signifying order?}
 
@@ -55,35 +55,130 @@
 
 \TD{issue with binary}
 
+\subsection{Fixed vs Learned and Relative vs Absolute}
+
+\r{positional information can be included as either absolute or relative.}
+
+\r{Additionally, the included positional information can either be fixed or learned.}
+
+\subsection{Absolute}
+
+\subsubsection{Fixed}
+
+\paragraph{Sinusoidal}
+
+\TD{include figure with multiple frequencies and points on the x and y axis leading to embeddings}
+
+\TD{Sinusoidal used in orginal~\cite{DBLP:journals/corr/VaswaniSPUJGKP17}}
+
+\subsubsection{Learned}
+
+\TD{BERT:~\cite{DBLP:journals/corr/abs-1810-04805}}
+
+% fixed and learned
+\TD{Fixed and learned, uses sinusoidal, but learns the frequency, On Position Embeddings in BERT~\cite{Wang2021OnPE}}
+
+\TD{FLOATER --- Learning to Encode Position for Transformer with Continuous Dynamical Model~\cite{DBLP:journals/corr/abs-2003-09229}}
+
+\subsection{Relative}
+
+% TODO: read - https://www.youtube.com/watch?v=7XHucAvHNKs
+
+\TD{Represent positional relationship between tokens, rather than sequence as a whole}
+
+\TD{Included in the keys and values}
+
+\TD{offset between key and query?}
+
+\TD{InDIGO --- Insertion-based Decoding with Automatically Inferred Generation Order~\cite{Gu2019InsertionbasedDW}}
+
+\TD{Music Transformer~\cite{Huang2018MusicT}}
+
+\TD{Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer~\cite{Raffel2020ExploringTL}}
+
+\TD{Transformer-XL: Attentive Language Models beyond a Fixed-Length Context~\cite{Dai2019TransformerXLAL}}
+
+\TD{DeBERTa: Decoding-enhanced BERT with Disentangled Attention~\cite{He2021DeBERTaDB}}
+
+
+\subsubsection{Fixed}
+
+\subsubsection{Learned}
+
+\TD{relative~\cite{DBLP:journals/corr/abs-1803-02155}}
+
+
+\subsubsection{Use in Linear Transformers}
+
+\TD{whole attention matrix is needed for classical relative positional encodings}
+
+\TD{Relative Positional Encoding for Transformers with Linear Complexity~\cite{DBLP:journals/corr/abs-2105-08399}}
+
+\section{Hybrid approaches}
+
+\TD{ \textbf{T}ransformer with \textbf{U}ntied \textbf{P}ositional \textbf{E}ncoding (TUPE) --- Rethinking Positional Encoding in Language Pre-training~\cite{Ke2021RethinkingPE}}
+
+\TD{RoPE --- RoFormer: Enhanced Transformer with Rotary Position Embedding~\cite{Su2021RoFormerET}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\section{TO INCLUDE}
+
+\TD{What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding~\cite{DBLP:journals/corr/abs-2010-04903}}
 
 
 \TD{CAPE: Encoding Relative Positions with Continuous Augmented Positional Embeddings~\cite{DBLP:journals/corr/abs-2106-03143}}
 
 % NOTE: possibly relevant: https://aclanthology.org/2021.emnlp-main.266.pdf
 
-\paragraph{Sinusoidal}
-
-\TD{include figure with multiple frequencies and points on the x and y axis leading to embeddings}
-
-\subsection{Positional Embeddings (learned ``encodings'')}
 
 % possibly useful: https://theaisummer.com/positional-embeddings/
 
-\TD{Learning to Encode Position for Transformer with Continuous Dynamical Model~\cite{DBLP:journals/corr/abs-2003-09229}}
+
+% Unclear, are these positional embeddings learned?
+\TD{Convolutional Sequence to Sequence Learning~\cite{DBLP:journals/corr/GehringAGYD17}}
 
 
-\TD{What Do Position Embeddings Learn? An Empirical Study of Pre-Trained Language Model Positional Encoding~\cite{DBLP:journals/corr/abs-2010-04903}}
 
-\subsubsection{Including Positional Embeddings}
+
+\section{Including Positional Information}
 
 % someones thoughts on  additive vs concat: https://www.reddit.com/r/MachineLearning/comments/cttefo/d_positional_encoding_in_transformer/exs7d08/
 
-\paragraph{Additive}
+\subsection{Additive}
 
 \TD{saves memory (over concatenation -- less dimensions)}
 
 \TD{figure}
 
-\paragraph{Concatenation}
+\subsection{Concatenation}
 
 \TD{figure}
+
+
+\subsection{Multiple inclusions}
+
+\TD{It's possible the information from the positional values lose their significance after each layer.}
+
+\TD{The following papers include positional information at each layer.}
+
+\TD{learned per-layer positional embedding --- Character-Level Language Modeling with Deeper Self-Attention~\cite{DBLP:journals/corr/abs-1808-04444}}
+
+\TD{also per-layer addition of a positional embedding~\cite{Guo2019LowRankAL, DBLP:journals/corr/abs-2003-09229}}
+
+
+
+\section{Beyond One Dimension}
+
+
+\subsection{Two Dimensional}
+
+\TD{Extend sinusoidal to 2D~\cite{DBLP:journals/corr/abs-1802-05751}}
+
+\TD{An Intriguing Failing of Convolutional Neural Networks and the CoordConv
+	Solution~\cite{DBLP:journals/corr/abs-1807-03247}}
+
+\TD{Attention Augmented Convolutional Networks~\cite{DBLP:journals/corr/abs-1904-09925}}
