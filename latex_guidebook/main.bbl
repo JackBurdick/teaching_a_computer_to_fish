@@ -126,6 +126,11 @@
   B.~McWilliams}, {\em The shattered gradients problem: If resnets are the
   answer, then what is the question?}, CoRR, abs/1702.08591 (2017).
 
+\bibitem{Balestriero2022TheEO}
+{\sc R.~Balestriero, L.~Bottou, and Y.~LeCun}, {\em The effects of
+  regularization and data augmentation are class dependent}, ArXiv,
+  abs/2204.03632 (2022).
+
 \bibitem{Bansal2020DoesTW}
 {\sc G.~Bansal, T.~Wu, J.~Zhu, R.~Fok, B.~Nushi, E.~Kamar, M.~T. Ribeiro, and
   D.~S. Weld}, {\em Does the whole exceed its parts? the effect of ai
@@ -542,6 +547,16 @@
   and only batchnorm: On the expressive power of random features in cnns},
   CoRR, abs/2003.00152 (2020).
 
+\bibitem{DBLP:journals/corr/abs-1808-03578}
+{\sc N.~Frazier{-}Logue and S.~J. Hanson}, {\em Dropout is a special case of
+  the stochastic delta rule: faster and more accurate deep learning}, CoRR,
+  abs/1808.03578 (2018).
+
+\bibitem{Fukushima1969VisualFE}
+{\sc K.~Fukushima}, {\em Visual feature extraction by a multilayered network of
+  analog threshold elements}, IEEE Trans. Syst. Sci. Cybern., 5 (1969),
+  pp.~322--333.
+
 \bibitem{fukushima1982neocognitron}
 {\sc K.~Fukushima and S.~Miyake}, {\em Neocognitron: A self-organizing neural
   network model for a mechanism of visual pattern recognition}, in Competition
@@ -708,6 +723,9 @@
 {\sc L.~K. Hansen and P.~Salamon}, {\em Neural network ensembles}, IEEE
   Transactions on Pattern Analysis \& Machine Intelligence,  (1990),
   pp.~993--1001.
+
+\bibitem{Hanson1990ASV}
+{\sc S.~J. Hanson}, {\em A stochastic version of the delta rule}, 1990.
 
 \bibitem{DBLP:journals/corr/HashimotoXTS16}
 {\sc K.~Hashimoto, C.~Xiong, Y.~Tsuruoka, and R.~Socher}, {\em A joint
@@ -949,6 +967,11 @@
 {\sc S.~Karamcheti, R.~Krishna, L.~Fei{-}Fei, and C.~D. Manning}, {\em Mind
   your outliers! investigating the negative impact of outliers on active
   learning for visual question answering}, CoRR, abs/2107.02331 (2021).
+
+\bibitem{DBLP:journals/corr/abs-2006-16236}
+{\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
+  are rnns: Fast autoregressive transformers with linear attention}, CoRR,
+  abs/2006.16236 (2020).
 
 \bibitem{Katharopoulos2020TransformersAR}
 {\sc A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret}, {\em Transformers
@@ -1267,6 +1290,10 @@
   general understanding of normalization in deep learning}, CoRR,
   abs/2106.05956 (2021).
 
+\bibitem{Luo2022UnderstandingDM}
+{\sc C.~Luo}, {\em Understanding diffusion models: A unified perspective},
+  ArXiv, abs/2208.11970 (2022).
+
 \bibitem{DBLP:journals/corr/LuongPM15}
 {\sc M.~Luong, H.~Pham, and C.~D. Manning}, {\em Effective approaches to
   attention-based neural machine translation}, CoRR, abs/1508.04025 (2015).
@@ -1500,6 +1527,10 @@
 {\sc A.~Paullada, I.~D. Raji, E.~M. Bender, E.~L. Denton, and A.~Hanna}, {\em
   Data and its (dis)contents: A survey of dataset development and use in
   machine learning research}, ArXiv, abs/2012.05345 (2020).
+
+\bibitem{Peiwen2022NormalizedAF}
+{\sc Y.~Peiwen and Z.~Changsheng}, {\em Normalized activation function: Toward
+  better convergence}, 2022.
 
 \bibitem{DBLP:journals/corr/abs-1904-01802}
 {\sc B.~Peng, X.~Jin, J.~Liu, S.~Zhou, Y.~Wu, Y.~Liu, D.~Li, and Z.~Zhang},
@@ -1824,6 +1855,10 @@
 {\sc S.~Shen, Z.~Yao, A.~Gholami, M.~W. Mahoney, and K.~Keutzer}, {\em
   Rethinking batch normalization in transformers}, CoRR, abs/2003.07845 (2020).
 
+\bibitem{DBLP:journals/corr/abs-1812-01243}
+{\sc Z.~Shen, M.~Zhang, S.~Yi, J.~Yan, and H.~Zhao}, {\em Factorized attention:
+  Self-attention with linear complexities}, CoRR, abs/1812.01243 (2018).
+
 \bibitem{Shi2020RunAF}
 {\sc H.~Shi, D.~Luo, S.~Tang, J.~Wang, and Y.~Zhuang}, {\em Run away from your
   teacher: Understanding byol by a novel self-supervised approach}, ArXiv,
@@ -2025,6 +2060,13 @@
 {\sc T.~Tran, T.~Pham, G.~Carneiro, L.~Palmer, and I.~Reid}, {\em A bayesian
   data augmentation approach for learning deep models}, in Advances in neural
   information processing systems, 2017, pp.~2797--2806.
+
+\bibitem{Treviso2022EfficientMF}
+{\sc M.~V. Treviso, T.~Ji, J.-U. Lee, B.~van Aken, Q.~Cao, M.~R. Ciosici,
+  M.~Hassid, K.~Heafield, S.~Hooker, P.~H. Martins, A.~F.~T. Martins,
+  P.~Milder, C.~Raffel, E.~Simpson, N.~Slonim, N.~Balasubramanian,
+  L.~Derczynski, and R.~Schwartz}, {\em Efficient methods for natural language
+  processing: A survey}, 2022.
 
 \bibitem{DBLP:journals/corr/abs-2006-11650}
 {\sc N.~Tripuraneni, M.~I. Jordan, and C.~Jin}, {\em On the theory of transfer
